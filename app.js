@@ -29,6 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (target) {
       target.classList.add("active");
       renderSection(id);
+      
+      // Update URL hash without jumping/reloading
+      if(history.pushState) {
+        history.pushState(null, null, '#' + id);
+      } else {
+        window.location.hash = '#' + id;
+      }
     }
     
     // Highlight the clicked leaf nav-item
@@ -111,5 +118,27 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = IMAGES[key];
       }
     });
+  }
+
+  // --- Check URL Hash for Direct Linking ---
+  if (window.location.hash) {
+    const hashId = window.location.hash.substring(1);
+    if (document.getElementById(hashId) && document.getElementById(hashId).classList.contains('content-section')) {
+      showSection(hashId);
+      // Expand parent menus in the sidebar
+      const navItem = document.querySelector(`.nav-item[data-section="${hashId}"]`);
+      if (navItem) {
+        let currentParent = navItem.closest('.sub-menu');
+        while (currentParent) {
+          currentParent.classList.add('open');
+          if (currentParent.parentElement.classList.contains('nav-parent')) {
+            currentParent.parentElement.classList.add('open');
+          }
+          currentParent = currentParent.parentElement.closest('.sub-menu');
+        }
+      }
+      // Scroll to top just in case
+      window.scrollTo(0, 0);
+    }
   }
 });
