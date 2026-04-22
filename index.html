@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenCore Technical Support Center</title>
+  <meta name="description" content="GenCore 제품 매뉴얼 및 기술 지원 센터">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+    <header class="site-header">
+    <div class="logo-area">
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+      <button id="homeBtn" style="display:flex;align-items:center;background:none;border:none;cursor:pointer;">
+        <h1 data-i18n="site-title">GenCore Technical Support Center</h1>
+      </button>
+    </div>
+    <div class="lang-selector">
+      <button id="langBtn" class="lang-btn" aria-label="Language">
+        <span class="globe">🌐</span>
+        <span id="langBtnLabel">🇰🇷 한국어</span>
+        <span style="font-size:10px;">▼</span>
+      </button>
+      <div id="langDropdown" class="lang-dropdown">
+        <button data-lang="ko" class="active">🇰🇷 한국어</button>
+        <button data-lang="en">🇺🇸 English</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="es">🇪🇸 Español</button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="app-layout">
+    <!-- ===== SIDEBAR ===== -->
+        <nav id="sidebar" class="sidebar">
+      <div class="sidebar-title" data-i18n="nav-menu-label">MENU</div>
+      <div class="nav-item" data-section="section-safety">
+        <span class="icon">⚠️</span>
+        <span data-i18n="nav-safety">취급시 주의사항(공통)</span>
+      </div>
+      <div class="nav-parent" id="nav-user-manual">
+        <div class="nav-item">
+          <span class="icon">📖</span>
+          <span data-i18n="nav-user-manual">사용자 메뉴얼</span>
+          <span class="nav-arrow">▶</span>
+        </div>
+        <div class="sub-menu">
+          <!-- M AIº -->
+          <div class="nav-parent" id="nav-mai">
+            <div class="nav-item">
+              <span data-i18n="nav-mai">M AIº</span>
+              <span class="nav-arrow">▶</span>
+            </div>
+            <div class="sub-menu">
+              <!-- M AIº 소개 -->
+              <div class="nav-parent" id="nav-mai-intro">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-intro">M AIº 소개</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-spec"><span data-i18n="nav-mai-spec">사양</span></div>
+                  <div class="nav-item" data-section="sec-mai-parts"><span data-i18n="nav-mai-parts">부분 명칭</span></div>
+                  <div class="nav-item" data-section="sec-mai-components"><span data-i18n="nav-mai-components">구성품</span></div>
+                </div>
+              </div>
+              <!-- M AIº 설치/ 기본 조작 -->
+              <div class="nav-parent" id="nav-mai-setup">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-setup">설치/ 기본 조작</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-precheck"><span data-i18n="nav-mai-precheck">설치 전 확인 사항</span></div>
+                  <div class="nav-item" data-section="sec-mai-transport"><span data-i18n="nav-mai-transport">제품 운반</span></div>
+                  <div class="nav-item" data-section="sec-mai-cable"><span data-i18n="nav-mai-cable">케이블 연결</span></div>
+                  <div class="nav-item" data-section="sec-mai-power"><span data-i18n="nav-mai-power">전원 켜기/ 끄기, 워밍업</span></div>
+                  <div class="nav-item" data-section="sec-mai-tool-setup"><span data-i18n="nav-mai-tool-setup">공구 세팅</span></div>
+                  <div class="nav-item" data-section="sec-mai-calibration"><span data-i18n="nav-mai-calibration">캘리브레이션</span></div>
+                </div>
+              </div>
+              <!-- M AIº 컨트롤 프로그램 -->
+              <div class="nav-parent" id="nav-mai-ctrl">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-ctrl">컨트롤 프로그램</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-main-page"><span data-i18n="nav-mai-main-page">메인 페이지</span></div>
+                  <div class="nav-item" data-section="sec-mai-tool-list"><span data-i18n="nav-mai-tool-list">툴 리스트 페이지</span></div>
+                  <div class="nav-item" data-section="sec-mai-settings"><span data-i18n="nav-mai-settings">설정 페이지</span></div>
+                </div>
+              </div>
+              <!-- M AIº hyperDENT -->
+              <div class="nav-parent" id="nav-mai-hd">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-hd">hyperDENT</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-hd-install"><span data-i18n="nav-mai-hd-install">설치/ 기본 설정</span></div>
+                  <div class="nav-item" data-section="sec-mai-hd-blank"><span data-i18n="nav-mai-hd-blank">소재(blank)</span></div>
+                  <div class="nav-item" data-section="sec-mai-hd-settings"><span data-i18n="nav-mai-hd-settings">세팅 파일(settings)</span></div>
+                  <div class="nav-item" data-section="sec-mai-hd-features"><span data-i18n="nav-mai-hd-features">사용 방법(features)</span></div>
+                </div>
+              </div>
+              <!-- M AIº 유지 보수 -->
+              <div class="nav-parent" id="nav-mai-maint">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-maint">유지 보수</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-routine"><span data-i18n="nav-mai-routine">수시 관리 사항</span></div>
+                  <div class="nav-item" data-section="sec-mai-tool-care"><span data-i18n="nav-mai-tool-care">공구 관리</span></div>
+                  <div class="nav-item" data-section="sec-mai-collet"><span data-i18n="nav-mai-collet">콜렛 관리</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MillFix -->
+          <div class="nav-parent" id="nav-millfix">
+            <div class="nav-item">
+              <span data-i18n="nav-millfix">MillFix</span>
+              <span class="nav-arrow">▶</span>
+            </div>
+            <div class="sub-menu">
+              <!-- MillFix 소개 -->
+              <div class="nav-parent" id="nav-mf-intro">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-intro">MillFix 소개</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-spec"><span data-i18n="nav-mf-spec">사양</span></div>
+                  <div class="nav-item" data-section="sec-mf-parts"><span data-i18n="nav-mf-parts">부분 명칭</span></div>
+                  <div class="nav-item" data-section="sec-mf-components"><span data-i18n="nav-mf-components">구성품</span></div>
+                </div>
+              </div>
+              <!-- MillFix 설치/ 기본 조작 -->
+              <div class="nav-parent" id="nav-mf-setup">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-setup">설치/ 기본 조작</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-precheck"><span data-i18n="nav-mf-precheck">설치 전 확인 사항</span></div>
+                  <div class="nav-item" data-section="sec-mf-transport"><span data-i18n="nav-mf-transport">제품 운반</span></div>
+                  <div class="nav-item" data-section="sec-mf-cable"><span data-i18n="nav-mf-cable">케이블 연결</span></div>
+                  <div class="nav-item" data-section="sec-mf-power"><span data-i18n="nav-mf-power">전원 켜기/ 끄기, 워밍업</span></div>
+                  <div class="nav-item" data-section="sec-mf-tool-setup"><span data-i18n="nav-mf-tool-setup">공구 세팅</span></div>
+                  <div class="nav-item" data-section="sec-mf-calibration"><span data-i18n="nav-mf-calibration">캘리브레이션</span></div>
+                </div>
+              </div>
+              <!-- MillFix 컨트롤 프로그램 -->
+              <div class="nav-parent" id="nav-mf-ctrl">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-ctrl">컨트롤 프로그램</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-main-page"><span data-i18n="nav-mf-main-page">메인 페이지</span></div>
+                  <div class="nav-item" data-section="sec-mf-tool-list"><span data-i18n="nav-mf-tool-list">툴 리스트 페이지</span></div>
+                  <div class="nav-item" data-section="sec-mf-settings"><span data-i18n="nav-mf-settings">설정 페이지</span></div>
+                </div>
+              </div>
+              <!-- MillFix hyperDENT -->
+              <div class="nav-parent" id="nav-mf-hd">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-hd">hyperDENT</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-hd-install"><span data-i18n="nav-mf-hd-install">설치/ 기본 설정</span></div>
+                  <div class="nav-item" data-section="sec-mf-hd-blanks"><span data-i18n="nav-mf-hd-blanks">소재(blanks)</span></div>
+                  <div class="nav-item" data-section="sec-mf-hd-settings"><span data-i18n="nav-mf-hd-settings">세팅 파일(settings)</span></div>
+                  <div class="nav-item" data-section="sec-mf-hd-features"><span data-i18n="nav-mf-hd-features">사용 방법(features)</span></div>
+                </div>
+              </div>
+              <!-- MillFix 유지 보수 -->
+              <div class="nav-parent" id="nav-mf-maint">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-maint">유지 보수</span>
+                  <span class="nav-arrow">▶</span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-routine"><span data-i18n="nav-mf-routine">수시 관리 사항</span></div>
+                  <div class="nav-item" data-section="sec-mf-tool-care"><span data-i18n="nav-mf-tool-care">공구 관리</span></div>
+                  <div class="nav-item" data-section="sec-mf-collet"><span data-i18n="nav-mf-collet">콜렛 관리</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-parent" id="nav-repair-manual">
+        <div class="nav-item">
+          <span class="icon">🔧</span>
+          <span data-i18n="nav-repair-manual">수리 메뉴얼</span>
+          <span class="nav-arrow">▶</span>
+        </div>
+        <div class="sub-menu">
+          <!-- 수리 - M AIº -->
+          <div class="nav-parent" id="nav-repair-mai">
+            <div class="nav-item">
+              <span data-i18n="nav-mai">M AIº</span>
+              <span class="nav-arrow">▶</span>
+            </div>
+            <div class="sub-menu">
+              <div class="nav-item" data-section="sec-rep-mai-troubleshoot"><span data-i18n="nav-rep-troubleshoot">문제 해결</span></div>
+              <div class="nav-item" data-section="sec-rep-mai-errorcode"><span data-i18n="nav-rep-errorcode">오류 코드 리스트</span></div>
+              <div class="nav-item" data-section="sec-rep-mai-parts-guide"><span data-i18n="nav-rep-parts-guide">소모품/ 부품 교체 가이드</span></div>
+            </div>
+          </div>
+          <!-- 수리 - MillFix -->
+          <div class="nav-parent" id="nav-repair-mf">
+            <div class="nav-item">
+              <span data-i18n="nav-millfix">MillFix</span>
+              <span class="nav-arrow">▶</span>
+            </div>
+            <div class="sub-menu">
+              <div class="nav-item" data-section="sec-rep-mf-troubleshoot"><span data-i18n="nav-rep-troubleshoot">문제 해결</span></div>
+              <div class="nav-item" data-section="sec-rep-mf-parts-guide"><span data-i18n="nav-rep-parts-guide">소모품/ 부품 교체 가이드</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item" data-section="section-tutorial">
+        <span class="icon">🎓</span>
+        <span data-i18n="nav-tutorial">튜토리얼</span>
+      </div>
+      <div class="nav-item" data-section="section-faq">
+        <span class="icon">❓</span>
+        <span data-i18n="nav-faq">자주 묻는 질문</span>
+      </div>
+    </nav>
+
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <!-- HOME -->
+      <section id="section-home" class="content-section active">
+        <h2 data-i18n="section-home-title">GenCore Technical Support Center</h2>
+        <p class="subtitle" data-i18n="section-home-desc">제품 매뉴얼 및 기술 지원 센터에 오신 것을 환영합니다. 좌측 메뉴에서 원하는 항목을 선택해 주세요.</p>
+        <div class="content-card">
+          <h3 data-i18n="card-welcome-title">환영합니다</h3>
+          <p data-i18n="card-welcome-body">GenCore 제품의 설치, 사용, 유지보수에 관한 모든 정보를 이곳에서 확인할 수 있습니다.</p>
+        </div>
+        <div class="content-card">
+          <h3 data-i18n="card-lang-title">다국어 지원</h3>
+          <p data-i18n="card-lang-body">우측 상단의 🌐 아이콘을 클릭하여 한국어, English, 日本語, Español 중 원하는 언어를 선택할 수 있습니다.</p>
+        </div>
+      </section>
+
+      <!-- SAFETY PRECAUTIONS -->
+      <section id="section-safety" class="content-section">
+        <h2>취급 시 주의사항</h2>
+        <p class="subtitle">모든 장비에 공통으로 적용되는 안전 수칙입니다.</p>
+        
+        <div class="content-card">
+          <h3>기본 사용 전 확인</h3>
+          <ul class="card-list">
+            <li><strong>사용 전 숙지</strong><br>장비를 사용하기 전에 본 설명서를 충분히 숙지한 후 사용하십시오.</li>
+            <li><strong>임의 분해 금지</strong><br>임의로 장비를 분해하거나 재조립하지 마십시오.<br>제조사와 사전 협의 없이 분해한 경우, 보증 기간 내라도 기술 지원이 제한될 수 있습니다.</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h3>전기 및 안전 관리</h3>
+          <ul class="card-list">
+            <li><strong>젖은 손 사용 금지</strong><br>물기가 있는 손으로 장비, 케이블, 스위치 및 주변 장치를 만지지 마십시오.<br>본 장비는 전기 제품이므로 반드시 건조한 상태에서 조작하십시오.</li>
+            <li><strong>전원 및 접지 확인</strong><br>전원 연결 시 정격 전압 및 접지 상태를 반드시 확인하십시오.</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h3>장비 동작 중 주의</h3>
+          <ul class="card-list">
+            <li><strong>가공 중 접촉 금지</strong><br>장비가 동작하는 동안 도어를 열거나, 스핀들/공구/가공 중인 소재에 접촉하지 마십시오.</li>
+            <li><strong>비상 상황 대응</strong><br>이상 진동, 소음 또는 탄 냄새 발생 시 즉시 비상 정지 버튼을 누르고 전원을 차단하십시오.</li>
+            <li><strong>M-code 동작 중 조작 금지</strong><br>M-code 실행 중에는 Stop 버튼 조작 외 다른 명령을 입력하지 마십시오.</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h3>가공 전 작업 점검</h3>
+          <ul class="card-list">
+            <li><strong>가공물 내부 확인</strong><br>가공을 시작하기 전에 불필요한 공구나 부스러기가 가공물 내부에 남아 있지 않은지 반드시 확인하십시오.</li>
+            <li><strong>지그 위치 확인</strong><br>CAM 소프트웨어에서 설정한 지그와 동일한 지그를 장비에 정확히 장착한 후 가공을 진행하십시오.</li>
+            <li><strong>공구 상태 점검</strong><br>공구(버)의 마모 상태를 정기적으로 점검하고 필요 시 교체하십시오.</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h3>시스템 및 네트워크 주의사항</h3>
+          <ul class="card-list">
+            <li><strong>프로그램 설치 금지</strong><br>장비 PC에는 별도의 프로그램을 설치하지 마십시오.<br>컨트롤 프로그램과의 충돌 및 오작동을 유발할 수 있으며, 바이러스 백신 소프트웨어에 의한 가공 과정의 지연이 발생할 수 있으므로 설치를 금지합니다.</li>
+            <li><strong>외부 PC 보안 유지</strong><br>장비 PC와 직/간접적으로 연결되는 CAD/CAM PC에 반드시 백신 소프트웨어를 사용하여 바이러스 감염을 예방하십시오.</li>
+            <li><strong>IP 충돌 방지</strong><br>네트워크 IP 충돌 여부를 반드시 확인하십시오.<br>다른 장치의 IP 주소를 10.1.1.1 또는 10.1.1.2로 설정하지 마십시오.</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h3>사용자 안전 및 작업 환경</h3>
+          <ul class="card-list">
+            <li><strong>보호 장비 착용</strong><br>사용자의 안전을 위해 반드시 보호 장비(장갑, 보호안경 등)를 착용하십시오.</li>
+            <li><strong>설치 환경 유지</strong><br>장비의 수평을 유지하고 안정적인 장소에 설치하며, 통풍이 원활한 환경에서 사용하십시오.</li>
+            <li><strong>점검 시 전원 차단</strong><br>유지보수 및 점검은 반드시 전원을 차단한 상태에서 실행하십시오.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- M AIº 소개 - 사양 -->
+      <section id="sec-mai-spec" class="content-section">
+        <h2 data-i18n="nav-mai-spec">사양</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"></div>
+      </section>
+      <section id="sec-mai-parts" class="content-section">
+        <h2 data-i18n="nav-mai-parts">부분 명칭</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-components" class="content-section">
+        <h2 data-i18n="nav-mai-components">구성품</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <!-- M AIº 설치/ 기본 조작 -->
+      <section id="sec-mai-precheck" class="content-section">
+        <h2 data-i18n="nav-mai-precheck">설치 전 확인 사항</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-transport" class="content-section">
+        <h2 data-i18n="nav-mai-transport">제품 운반</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-cable" class="content-section">
+        <h2 data-i18n="nav-mai-cable">케이블 연결</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-power" class="content-section">
+        <h2 data-i18n="nav-mai-power">전원 켜기/ 끄기, 워밍업</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-tool-setup" class="content-section">
+        <h2 data-i18n="nav-mai-tool-setup">공구 세팅</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-calibration" class="content-section">
+        <h2 data-i18n="nav-mai-calibration">캘리브레이션</h2>
+        <p class="subtitle">M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <!-- M AIº 컨트롤 프로그램 -->
+      <section id="sec-mai-main-page" class="content-section">
+        <h2 data-i18n="nav-mai-main-page">메인 페이지</h2>
+        <p class="subtitle">M AIº 컨트롤 프로그램</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-tool-list" class="content-section">
+        <h2 data-i18n="nav-mai-tool-list">툴 리스트 페이지</h2>
+        <p class="subtitle">M AIº 컨트롤 프로그램</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-settings" class="content-section">
+        <h2 data-i18n="nav-mai-settings">설정 페이지</h2>
+        <p class="subtitle">M AIº 컨트롤 프로그램</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <!-- M AIº hyperDENT -->
+      <section id="sec-mai-hd-install" class="content-section">
+        <h2 data-i18n="nav-mai-hd-install">설치/ 기본 설정</h2>
+        <p class="subtitle">M AIº hyperDENT</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-hd-blank" class="content-section">
+        <h2 data-i18n="nav-mai-hd-blank">소재(blank)</h2>
+        <p class="subtitle">M AIº hyperDENT</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-hd-settings" class="content-section">
+        <h2 data-i18n="nav-mai-hd-settings">세팅 파일(settings)</h2>
+        <p class="subtitle">M AIº hyperDENT</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-hd-features" class="content-section">
+        <h2 data-i18n="nav-mai-hd-features">사용 방법(features)</h2>
+        <p class="subtitle">M AIº hyperDENT</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <!-- M AIº 유지 보수 -->
+      <section id="sec-mai-routine" class="content-section">
+        <h2 data-i18n="nav-mai-routine">수시 관리 사항</h2>
+        <p class="subtitle">M AIº 유지 보수</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-tool-care" class="content-section">
+        <h2 data-i18n="nav-mai-tool-care">공구 관리</h2>
+        <p class="subtitle">M AIº 유지 보수</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mai-collet" class="content-section">
+        <h2 data-i18n="nav-mai-collet">콜렛 관리</h2>
+        <p class="subtitle">M AIº 유지 보수</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+
+      <!-- MillFix 소개 -->
+      <section id="sec-mf-spec" class="content-section">
+        <h2 data-i18n="nav-mf-spec">사양</h2>
+        <p class="subtitle">MillFix 소개</p>
+        <div class="content-card"></div>
+      </section>
+      <section id="sec-mf-parts" class="content-section">
+        <h2 data-i18n="nav-mf-parts">부분 명칭</h2>
+        <p class="subtitle">MillFix 소개</p>
+        <div class="content-card"></div>
+      </section>
+      <section id="sec-mf-components" class="content-section">
+        <h2 data-i18n="nav-mf-components">구성품</h2>
+        <p class="subtitle">MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <!-- MillFix 설치/ 기본 조작 -->
+      <section id="sec-mf-precheck" class="content-section">
+        <h2 data-i18n="nav-mf-precheck">설치 전 확인 사항</h2>
+        <p class="subtitle">MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-transport" class="content-section">
+        <h2 data-i18n="nav-mf-transport">제품 운반</h2>
+        <p class="subtitle">MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-cable" class="content-section">
+        <h2 data-i18n="nav-mf-cable">케이블 연결</h2>
+        <p class="subtitle">MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-power" class="content-section">
+        <h2 data-i18n="nav-mf-power">전원 켜기/ 끄기, 워밍업</h2>
+        <p class="subtitle">MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-tool-setup" class="content-section">
+        <h2 data-i18n="nav-mf-tool-setup">공구 세팅</h2>
+        <p class="subtitle">MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-calibration" class="content-section">
+        <h2 data-i18n="nav-mf-calibration">캘리브레이션</h2>
+        <p class="subtitle">MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <!-- MillFix 컨트롤 프로그램 -->
+      <section id="sec-mf-main-page" class="content-section">
+        <h2 data-i18n="nav-mf-main-page">메인 페이지</h2>
+        <p class="subtitle">MillFix 컨트롤 프로그램</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-tool-list" class="content-section">
+        <h2 data-i18n="nav-mf-tool-list">툴 리스트 페이지</h2>
+        <p class="subtitle">MillFix 컨트롤 프로그램</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-settings" class="content-section">
+        <h2 data-i18n="nav-mf-settings">설정 페이지</h2>
+        <p class="subtitle">MillFix 컨트롤 프로그램</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <!-- MillFix hyperDENT -->
+      <section id="sec-mf-hd-install" class="content-section">
+        <h2 data-i18n="nav-mf-hd-install">설치/ 기본 설정</h2>
+        <p class="subtitle">MillFix hyperDENT</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-hd-blanks" class="content-section">
+        <h2 data-i18n="nav-mf-hd-blanks">소재(blanks)</h2>
+        <p class="subtitle">MillFix hyperDENT</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-hd-settings" class="content-section">
+        <h2 data-i18n="nav-mf-hd-settings">세팅 파일(settings)</h2>
+        <p class="subtitle">MillFix hyperDENT</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-hd-features" class="content-section">
+        <h2 data-i18n="nav-mf-hd-features">사용 방법(features)</h2>
+        <p class="subtitle">MillFix hyperDENT</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <!-- MillFix 유지 보수 -->
+      <section id="sec-mf-routine" class="content-section">
+        <h2 data-i18n="nav-mf-routine">수시 관리 사항</h2>
+        <p class="subtitle">MillFix 유지 보수</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-tool-care" class="content-section">
+        <h2 data-i18n="nav-mf-tool-care">공구 관리</h2>
+        <p class="subtitle">MillFix 유지 보수</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-mf-collet" class="content-section">
+        <h2 data-i18n="nav-mf-collet">콜렛 관리</h2>
+        <p class="subtitle">MillFix 유지 보수</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+
+      <!-- REPAIR MANUAL -->
+      <!-- 수리 메뉴얼- M AIº -->
+      <section id="sec-rep-mai-troubleshoot" class="content-section">
+        <h2 data-i18n="nav-rep-troubleshoot">문제 해결</h2>
+        <p class="subtitle">수리 메뉴얼- M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-rep-mai-errorcode" class="content-section">
+        <h2 data-i18n="nav-rep-errorcode">오류 코드 리스트</h2>
+        <p class="subtitle">수리 메뉴얼- M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-rep-mai-parts-guide" class="content-section">
+        <h2 data-i18n="nav-rep-parts-guide">소모품/ 부품 교체 가이드</h2>
+        <p class="subtitle">수리 메뉴얼- M AIº</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+
+      <!-- 수리 메뉴얼- MillFix -->
+      <section id="sec-rep-mf-troubleshoot" class="content-section">
+        <h2 data-i18n="nav-rep-troubleshoot">문제 해결</h2>
+        <p class="subtitle">수리 메뉴얼- MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+      <section id="sec-rep-mf-parts-guide" class="content-section">
+        <h2 data-i18n="nav-rep-parts-guide">소모품/ 부품 교체 가이드</h2>
+        <p class="subtitle">수리 메뉴얼- MillFix</p>
+        <div class="content-card"><p>콘텐츠가 추가될 예정입니다.</p></div>
+      </section>
+
+      <!-- TUTORIAL -->
+      <section id="section-tutorial" class="content-section">
+        <h2 data-i18n="section-tutorial-title">튜토리얼</h2>
+        <p class="subtitle" data-i18n="section-tutorial-desc">단계별 사용 가이드 및 영상 튜토리얼입니다.</p>
+        <div class="content-card">
+          <div class="img-placeholder">이미지 준비 중</div>
+          <p data-i18n="section-tutorial-desc">콘텐츠가 추가될 예정입니다.</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="section-faq" class="content-section">
+        <h2 data-i18n="section-faq-title">자주 묻는 질문</h2>
+        <p class="subtitle" data-i18n="section-faq-desc">고객분들이 자주 문의하시는 질문과 답변입니다.</p>
+        <div class="content-card">
+          <div class="img-placeholder">이미지 준비 중</div>
+          <p data-i18n="section-faq-desc">콘텐츠가 추가될 예정입니다.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <span data-i18n="footer-text">© 2026 GenCore. All rights reserved.</span>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="images.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
