@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Section Switching ---
   const sections = document.querySelectorAll(".content-section");
 
-  function showSection(id) {
+  function showSection(id, pushHistory = true) {
     sections.forEach(s => s.classList.remove("active"));
     // Remove active from all leaf nav-items
     document.querySelectorAll(".nav-item").forEach(n => n.classList.remove("active"));
@@ -31,10 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
       renderSection(id);
       
       // Update URL hash without jumping/reloading
-      if(history.pushState) {
-        history.pushState(null, null, '#' + id);
-      } else {
-        window.location.hash = '#' + id;
+      if (pushHistory) {
+        if(history.pushState) {
+          history.pushState({ id: id }, null, '#' + id);
+        } else {
+          window.location.hash = '#' + id;
+        }
       }
     }
     
@@ -124,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.location.hash) {
     const hashId = window.location.hash.substring(1);
     if (document.getElementById(hashId) && document.getElementById(hashId).classList.contains('content-section')) {
-      showSection(hashId);
+      showSection(hashId, false);
       // Expand parent menus in the sidebar
       const navItem = document.querySelector(`.nav-item[data-section="${hashId}"]`);
       if (navItem) {
@@ -141,4 +143,16 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo(0, 0);
     }
   }
+
+  // --- Handle Browser Back/Forward Buttons ---
+  window.addEventListener("popstate", (e) => {
+    if (window.location.hash) {
+      const hashId = window.location.hash.substring(1);
+      if (document.getElementById(hashId) && document.getElementById(hashId).classList.contains('content-section')) {
+        showSection(hashId, false);
+      }
+    } else {
+      showSection("section-home", false);
+    }
+  });
 });
