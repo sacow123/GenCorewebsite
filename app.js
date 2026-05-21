@@ -160,4 +160,105 @@ document.addEventListener("DOMContentLoaded", () => {
       showSection("section-home", false);
     }
   });
+
+  // ===== TOOL USAGE TIME TOOLTIP SYSTEM =====
+  const TOOL_USAGE_DATA = {
+    T31: { name: 'T31-Z2.0B', times: [{ material: 'Zirconia', time: '3,000 min' }] },
+    T32: { name: 'T32-Z1.0B', times: [{ material: 'Zirconia', time: '2,000 min' }] },
+    T33: { name: 'T33-Z0.6B', times: [{ material: 'Zirconia', time: '1,000 min' }, { material: 'PMMA / PEEK', time: '300 min' }] },
+    T34: { name: 'T34-Z0.3B', times: [{ material: 'Zirconia', time: '600 min' }, { material: 'PMMA / PEEK', time: '200 min' }] },
+    T35: { name: 'T35-G2.0B', times: [{ material: 'Hybrid Ceramic', time: '400 min' }] },
+    T36: { name: 'T36-G1.0B', times: [{ material: 'Hybrid Ceramic', time: '400 min' }] },
+    T37: { name: 'T37-G0.6B', times: [{ material: 'Hybrid Ceramic', time: '300 min' }] },
+    T38: { name: 'T38-M2.0B', times: [{ material: 'PMMA / PEEK', time: '2,000 min' }] },
+    T39: { name: 'T39-M1.0B', times: [{ material: 'PMMA / PEEK', time: '1,500 min' }] },
+    T42: { name: 'T42-M1.5FL', times: [{ material: 'Zirconia', time: '200 min' }, { material: 'PMMA / PEEK', time: '150 min' }] },
+    T43: { name: 'T43-M1.0F', times: [{ material: 'Zirconia', time: '150 min' }, { material: 'PMMA / PEEK', time: '100 min' }] },
+    T44: { name: 'T44-M1.5R', times: [{ material: 'Zirconia', time: '200 min' }, { material: 'PMMA / PEEK', time: '150 min' }] },
+    T45: { name: 'T45-M1.6T', times: [{ material: 'Zirconia', time: '150 min' }, { material: 'PMMA / PEEK', time: '100 min' }] }
+  };
+
+  // Create a reusable tooltip element
+  const toolTooltip = document.createElement('div');
+  toolTooltip.className = 'tool-usage-tooltip';
+  document.body.appendChild(toolTooltip);
+
+  // Get the grid container
+  const toolGrid = document.querySelector('#sec-mf-tools [style*="display:grid"]');
+  if (toolGrid) {
+    const toolCards = toolGrid.querySelectorAll('.parts-card[data-tool-id]');
+
+    toolCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        const toolId = card.dataset.toolId;
+        const data = TOOL_USAGE_DATA[toolId];
+        if (!data) return;
+
+        // Dim other cards
+        toolGrid.classList.add('tool-grid-hover');
+        card.classList.add('tool-active');
+
+        // Build tooltip HTML
+        let rowsHtml = data.times.map(t =>
+          `<div class="usage-row">
+            <span class="usage-material">${t.material}</span>
+            <span class="usage-time">${t.time}</span>
+          </div>`
+        ).join('');
+
+        toolTooltip.innerHTML = `
+          <div class="tooltip-header">
+            <span class="tooltip-icon">⏱️</span>
+            <span class="tooltip-title">${data.name} 권장 사용시간</span>
+          </div>
+          <div class="tooltip-body">${rowsHtml}</div>
+        `;
+
+        // Position the tooltip
+        const cardRect = card.getBoundingClientRect();
+        const gridRect = toolGrid.getBoundingClientRect();
+        const tooltipWidth = 240;
+        const gap = 12;
+
+        // Check if there's enough space on the right within the grid
+        const spaceRight = gridRect.right - cardRect.right;
+        const spaceLeft = cardRect.left - gridRect.left;
+
+        toolTooltip.classList.remove('tooltip-left', 'tooltip-right');
+
+        let tooltipLeft, tooltipTop;
+        tooltipTop = cardRect.top + window.scrollY;
+
+        if (spaceRight >= tooltipWidth + gap) {
+          // Position to the right
+          tooltipLeft = cardRect.right + gap;
+          toolTooltip.classList.add('tooltip-right');
+        } else if (spaceLeft >= tooltipWidth + gap) {
+          // Position to the left
+          tooltipLeft = cardRect.left - tooltipWidth - gap;
+          toolTooltip.classList.add('tooltip-left');
+        } else {
+          // Fallback: position to the right but constrain
+          tooltipLeft = Math.min(cardRect.right + gap, gridRect.right - tooltipWidth);
+          toolTooltip.classList.add('tooltip-right');
+        }
+
+        toolTooltip.style.left = tooltipLeft + 'px';
+        toolTooltip.style.top = tooltipTop + 'px';
+        toolTooltip.style.width = tooltipWidth + 'px';
+        toolTooltip.style.position = 'absolute';
+
+        // Show with slight delay for smoothness
+        requestAnimationFrame(() => {
+          toolTooltip.classList.add('visible');
+        });
+      });
+
+      card.addEventListener('mouseleave', () => {
+        toolGrid.classList.remove('tool-grid-hover');
+        card.classList.remove('tool-active');
+        toolTooltip.classList.remove('visible');
+      });
+    });
+  }
 });

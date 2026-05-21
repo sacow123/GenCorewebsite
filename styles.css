@@ -449,3 +449,122 @@ body {
 }
 
 .section-anchor { display: none !important; }
+
+/* ===== TOOL USAGE TIME TOOLTIP ===== */
+#sec-mf-tools .parts-card[data-tool-id] {
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* When any card in the grid is hovered, dim ALL cards */
+#sec-mf-tools .tool-grid-hover .parts-card[data-tool-id] {
+  opacity: 0.35;
+  filter: grayscale(30%);
+}
+/* The hovered card stays fully visible and pops up */
+#sec-mf-tools .tool-grid-hover .parts-card[data-tool-id].tool-active {
+  opacity: 1;
+  filter: none;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.18), 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 20;
+}
+/* Also dim the empty T40/T41 cards */
+#sec-mf-tools .tool-grid-hover > div:not(.parts-card) {
+  opacity: 0.35;
+  filter: grayscale(30%);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Tooltip container */
+.tool-usage-tooltip {
+  position: absolute;
+  z-index: 100;
+  min-width: 200px;
+  max-width: 280px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.22), 0 4px 12px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(6px) scale(0.97);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  overflow: hidden;
+}
+.tool-usage-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Tooltip header */
+.tool-usage-tooltip .tooltip-header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tool-usage-tooltip .tooltip-header .tooltip-icon {
+  font-size: 18px;
+}
+.tool-usage-tooltip .tooltip-header .tooltip-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.2px;
+}
+
+/* Tooltip body */
+.tool-usage-tooltip .tooltip-body {
+  padding: 12px 16px;
+}
+
+/* Individual usage row */
+.tool-usage-tooltip .usage-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.tool-usage-tooltip .usage-row:last-child {
+  border-bottom: none;
+}
+.tool-usage-tooltip .usage-material {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+}
+.tool-usage-tooltip .usage-time {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.3px;
+}
+
+/* Arrow connector (small triangle) */
+.tool-usage-tooltip::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  border-left: 2px solid var(--primary);
+  border-top: 2px solid var(--primary);
+  z-index: 1;
+}
+.tool-usage-tooltip.tooltip-right::before {
+  left: -7px;
+  top: 24px;
+  transform: rotate(-45deg);
+}
+.tool-usage-tooltip.tooltip-left::before {
+  right: -7px;
+  top: 24px;
+  transform: rotate(135deg);
+}
