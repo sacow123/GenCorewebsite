@@ -363,11 +363,20 @@ const LANG_LABELS = {
   es: "🇪🇸 Español"
 };
 
-let currentLang = localStorage.getItem("gencore-lang") || "ko";
+let currentLang = "ko";
+try {
+  currentLang = localStorage.getItem("gencore-lang") || "ko";
+} catch (e) {
+  console.warn("localStorage not available", e);
+}
 
 function applyLanguage(lang) {
   currentLang = lang;
-  localStorage.setItem("gencore-lang", lang);
+  try {
+    localStorage.setItem("gencore-lang", lang);
+  } catch (e) {
+    console.warn("localStorage not available", e);
+  }
   const dict = TRANSLATIONS[lang];
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");

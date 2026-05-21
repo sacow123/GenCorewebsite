@@ -124,24 +124,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Check URL Hash for Direct Linking ---
   if (window.location.hash) {
-    const hashId = window.location.hash.substring(1);
-    if (document.getElementById(hashId) && document.getElementById(hashId).classList.contains('content-section')) {
-      showSection(hashId, false);
-      // Expand parent menus in the sidebar
-      const navItem = document.querySelector(`.nav-item[data-section="${hashId}"]`);
-      if (navItem) {
-        let currentParent = navItem.closest('.sub-menu');
-        while (currentParent) {
-          currentParent.classList.add('open');
-          if (currentParent.parentElement.classList.contains('nav-parent')) {
-            currentParent.parentElement.classList.add('open');
+    setTimeout(() => {
+      let hashId = window.location.hash.substring(1);
+      // Remove any query params or trailing slashes that might be added by messenger apps
+      hashId = hashId.split('?')[0].split('/')[0];
+      
+      if (document.getElementById(hashId) && document.getElementById(hashId).classList.contains('content-section')) {
+        showSection(hashId, false);
+        // Expand parent menus in the sidebar
+        const navItem = document.querySelector(`.nav-item[data-section="${hashId}"]`);
+        if (navItem) {
+          let currentParent = navItem.closest('.sub-menu');
+          while (currentParent) {
+            currentParent.classList.add('open');
+            if (currentParent.parentElement.classList.contains('nav-parent')) {
+              currentParent.parentElement.classList.add('open');
+            }
+            currentParent = currentParent.parentElement.closest('.sub-menu');
           }
-          currentParent = currentParent.parentElement.closest('.sub-menu');
         }
+        // Scroll to top just in case
+        window.scrollTo(0, 0);
       }
-      // Scroll to top just in case
-      window.scrollTo(0, 0);
-    }
+    }, 50); // slight delay to bypass native anchor jumping
   }
 
   // --- Handle Browser Back/Forward Buttons ---
