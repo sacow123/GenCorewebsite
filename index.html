@@ -3942,11 +3942,17 @@
             mix-blend-mode: screen; /* ONLY blend during pulse to prevent dark bg flash */
           }
           
-          /* Clip-paths to show ONLY the relevant annotation region */
-          #sec-mf-tool-usage .overlay-left { clip-path: polygon(0 0, 48% 0, 48% 100%, 0 100%); }
-          #sec-mf-tool-usage .overlay-right { clip-path: polygon(48% 0, 100% 0, 100% 100%, 48% 100%); }
-          #sec-mf-tool-usage .overlay-topright { clip-path: polygon(48% 0, 100% 0, 100% 30%, 48% 30%); }
-          #sec-mf-tool-usage .overlay-bottomright { clip-path: polygon(48% 30%, 100% 30%, 100% 100%, 48% 30%); }
+          /* Clip-paths to show ONLY the relevant annotation region, tailored per stage to prevent slicing custom drawn lines */
+          /* Stage 1 */
+          #sec-mf-tool-usage .s1-left { clip-path: polygon(0 0, 42% 0, 42% 100%, 0 100%); }
+          #sec-mf-tool-usage .s1-topright { clip-path: polygon(42% 0, 100% 0, 100% 28%, 42% 28%); }
+          #sec-mf-tool-usage .s1-bottomright { clip-path: polygon(42% 28%, 100% 28%, 100% 100%, 42% 100%); }
+          /* Stage 2 */
+          #sec-mf-tool-usage .s2-left { clip-path: polygon(0 0, 40% 0, 40% 100%, 0 100%); }
+          #sec-mf-tool-usage .s2-right { clip-path: polygon(40% 0, 100% 0, 100% 100%, 40% 100%); }
+          /* Stage 3 */
+          #sec-mf-tool-usage .s3-left { clip-path: polygon(0 0, 35% 0, 35% 100%, 0 100%); }
+          #sec-mf-tool-usage .s3-right { clip-path: polygon(35% 0, 100% 0, 100% 100%, 35% 100%); }
 
           #sec-mf-tool-usage .hotspot {
             position: absolute;
@@ -3963,19 +3969,24 @@
           }
           
           /* Fade in ONLY the specific masked overlay based on which hotspot is hovered, restore normal rendering */
-          #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .overlay-left { opacity: 1 !important; mix-blend-mode: normal; }
-          #sec-mf-tool-usage .stage-container:has(>.hotspot-right:hover) .overlay-right { opacity: 1 !important; mix-blend-mode: normal; }
-          #sec-mf-tool-usage .stage-container:has(>.hotspot-topright:hover) .overlay-topright { opacity: 1 !important; mix-blend-mode: normal; }
-          #sec-mf-tool-usage .stage-container:has(>.hotspot-bottomright:hover) .overlay-bottomright { opacity: 1 !important; mix-blend-mode: normal; }
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .s1-left,
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .s2-left,
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .s3-left { opacity: 1 !important; mix-blend-mode: normal; }
+          
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-right:hover) .s2-right,
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-right:hover) .s3-right { opacity: 1 !important; mix-blend-mode: normal; }
+          
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-topright:hover) .s1-topright { opacity: 1 !important; mix-blend-mode: normal; }
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-bottomright:hover) .s1-bottomright { opacity: 1 !important; mix-blend-mode: normal; }
         </style>
 
         <div class="content-card">
           
           <div class="stage-container">
             <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림1.webp" alt="공구 사용시간 설정 1" class="base">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2.webp" alt="설명 좌측" class="hover-overlay overlay-left">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2.webp" alt="설명 우상단" class="hover-overlay overlay-topright">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2.webp" alt="설명 우하단" class="hover-overlay overlay-bottomright">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2.webp" alt="설명 좌측" class="hover-overlay s1-left">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2.webp" alt="설명 우상단" class="hover-overlay s1-topright">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2.webp" alt="설명 우하단" class="hover-overlay s1-bottomright">
             
             <div class="hotspot hotspot-left" style="left: 4.0%; top: 48.0%; width: 31.0%; height: 41.0%;"></div>
             <div class="hotspot hotspot-topright" style="left: 54.9%; top: 14.8%; width: 41.1%; height: 7.8%;"></div>
@@ -3984,8 +3995,8 @@
 
           <div class="stage-container">
             <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림3.webp" alt="공구 사용시간 설정 2" class="base">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림4.webp" alt="설명 좌측" class="hover-overlay overlay-left">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림4.webp" alt="설명 우측" class="hover-overlay overlay-right">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림4.webp" alt="설명 좌측" class="hover-overlay s2-left">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림4.webp" alt="설명 우측" class="hover-overlay s2-right">
             
             <div class="hotspot hotspot-left" style="left: 4.0%; top: 48.0%; width: 31.0%; height: 41.0%;"></div>
             <div class="hotspot hotspot-right" style="left: 53.0%; top: 14.8%; width: 43.8%; height: 35.0%;"></div>
@@ -3993,8 +4004,8 @@
 
           <div class="stage-container" style="margin-bottom:0;">
             <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림5.webp" alt="공구 사용시간 설정 3" class="base">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림6.webp" alt="설명 좌측" class="hover-overlay overlay-left">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림6.webp" alt="설명 우측" class="hover-overlay overlay-right">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림6.webp" alt="설명 좌측" class="hover-overlay s3-left">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림6.webp" alt="설명 우측" class="hover-overlay s3-right">
             
             <div class="hotspot hotspot-left" style="left: 1.0%; top: 1.0%; width: 25.0%; height: 10.0%;"></div>
             <div class="hotspot hotspot-right" style="left: 54.9%; top: 14.8%; width: 41.1%; height: 7.8%;"></div>
