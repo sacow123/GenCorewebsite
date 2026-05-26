@@ -3905,8 +3905,72 @@
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#sec-mf-tool-usage" style="color:#a855f7; text-decoration:none;">#sec-mf-tool-usage</a></div>
         <p class="subtitle">MillFix 컨트롤 프로그램</p>
+        
+        <style>
+          @keyframes pulse-border-tool {
+            0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
+          }
+          #sec-mf-tool-usage .stage-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1524 / 892;
+            background: #000;
+            overflow: visible;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+          }
+          #sec-mf-tool-usage .base {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            user-select: none;
+            -webkit-user-drag: none;
+          }
+          #sec-mf-tool-usage .hotspot {
+            position: absolute;
+            border: 2px solid rgba(255, 204, 0, 0.5);
+            background: transparent;
+            cursor: pointer;
+            z-index: 5;
+            transition: .15s ease;
+            outline: none;
+            animation: pulse-border-tool 2s infinite;
+            padding: 0;
+          }
+          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hotspot {
+            opacity: 0;
+            animation: none;
+          }
+          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hotspot:hover {
+            opacity: 1;
+            border-color: rgba(255, 204, 0, 0.95);
+            background: rgba(255, 204, 0, 0.10);
+            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
+          }
+        </style>
+
         <div class="content-card">
-          <p>콘텐츠가 추가될 예정입니다.</p>
+          
+          <div class="stage-container">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림1.webp" alt="공구 사용시간 설정 1" class="base">
+            <div class="hotspot" style="left: 4.73%; top: 37.16%; width: 28.45%; height: 17.51%;"></div>
+          </div>
+
+          <div class="stage-container">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림3.webp" alt="공구 사용시간 설정 2" class="base">
+            <div class="hotspot" style="left: 6.82%; top: 51.34%; width: 26.38%; height: 34.08%;"></div>
+          </div>
+
+          <div class="stage-container" style="margin-bottom:0;">
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림5.webp" alt="공구 사용시간 설정 3" class="base">
+            <div class="hotspot" style="left: 29.30%; top: 28.02%; width: 60.33%; height: 26.65%;"></div>
+          </div>
+
         </div>
       </section>
 
