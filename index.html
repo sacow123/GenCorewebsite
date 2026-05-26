@@ -3907,6 +3907,11 @@
         <p class="subtitle">MillFix 컨트롤 프로그램</p>
         
         <style>
+          @keyframes pulse-border-tool {
+            0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
+          }
           #sec-mf-tool-usage .stage-container {
             position: relative;
             width: 100%;
@@ -3936,11 +3941,29 @@
           }
           #sec-mf-tool-usage .hotspot {
             position: absolute;
+            border: 2px solid rgba(255, 204, 0, 0.5);
             background: transparent;
             cursor: pointer;
             z-index: 5;
+            transition: .15s ease;
+            outline: none;
+            animation: pulse-border-tool 2s infinite;
+            padding: 0;
+            border-radius: 8px;
           }
-          /* When any hotspot is hovered, show the overlay */
+          /* When any hotspot is hovered: hide all OTHER hotspots */
+          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hotspot {
+            opacity: 0;
+            animation: none;
+          }
+          /* The hovered one stays visible and highlighted */
+          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hotspot:hover {
+            opacity: 1;
+            border-color: rgba(255, 204, 0, 0.95);
+            background: rgba(255, 204, 0, 0.10);
+            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
+          }
+          /* Show the overlay image when any hotspot is hovered */
           #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hover-overlay {
             opacity: 1;
           }
