@@ -3907,11 +3907,6 @@
         <p class="subtitle">MillFix 컨트롤 프로그램</p>
         
         <style>
-          @keyframes pulse-border-tool {
-            0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
-          }
           #sec-mf-tool-usage .stage-container {
             position: relative;
             width: 100%;
@@ -3922,7 +3917,8 @@
             margin-bottom: 40px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.10);
           }
-          #sec-mf-tool-usage .base {
+          #sec-mf-tool-usage .base,
+          #sec-mf-tool-usage .hover-overlay {
             position: absolute;
             inset: 0;
             width: 100%;
@@ -3930,27 +3926,23 @@
             object-fit: contain;
             user-select: none;
             -webkit-user-drag: none;
+            border-radius: 8px;
+          }
+          #sec-mf-tool-usage .hover-overlay {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            pointer-events: none;
+            z-index: 2;
           }
           #sec-mf-tool-usage .hotspot {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5);
             background: transparent;
             cursor: pointer;
             z-index: 5;
-            transition: .15s ease;
-            outline: none;
-            animation: pulse-border-tool 2s infinite;
-            padding: 0;
           }
-          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hotspot {
-            opacity: 0;
-            animation: none;
-          }
-          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hotspot:hover {
+          /* When any hotspot is hovered, show the overlay */
+          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hover-overlay {
             opacity: 1;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
           }
         </style>
 
@@ -3958,17 +3950,31 @@
           
           <div class="stage-container">
             <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림1.webp" alt="공구 사용시간 설정 1" class="base">
-            <div class="hotspot" style="left: 4.73%; top: 37.16%; width: 28.45%; height: 17.51%;"></div>
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2.webp" alt="공구 사용시간 설정 1 설명" class="hover-overlay">
+            
+            <div class="hotspot" style="left: 54.53%; top: 9.05%; width: 41.69%; height: 14.13%;"></div>
+            <div class="hotspot" style="left: 3.50%; top: 24.50%; width: 31.52%; height: 32.03%;"></div>
+            <div class="hotspot" style="left: 53.09%; top: 33.20%; width: 12.41%; height: 61.61%;"></div>
+            <div class="hotspot" style="left: 84.47%; top: 33.20%; width: 12.38%; height: 61.61%;"></div>
           </div>
 
           <div class="stage-container">
             <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림3.webp" alt="공구 사용시간 설정 2" class="base">
-            <div class="hotspot" style="left: 6.82%; top: 51.34%; width: 26.38%; height: 34.08%;"></div>
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림4.webp" alt="공구 사용시간 설정 2 설명" class="hover-overlay">
+            
+            <div class="hotspot" style="left: 54.51%; top: 9.05%; width: 40.42%; height: 78.28%;"></div>
+            <div class="hotspot" style="left: 85.25%; top: 42.00%; width: 9.68%; height: 5.33%;"></div>
+            <div class="hotspot" style="left: 5.39%; top: 44.94%; width: 30.45%; height: 40.98%;"></div>
           </div>
 
           <div class="stage-container" style="margin-bottom:0;">
             <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림5.webp" alt="공구 사용시간 설정 3" class="base">
-            <div class="hotspot" style="left: 29.30%; top: 28.02%; width: 60.33%; height: 26.65%;"></div>
+            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림6.webp" alt="공구 사용시간 설정 3 설명" class="hover-overlay">
+            
+            <div class="hotspot" style="left: 0.63%; top: 0.78%; width: 7.30%; height: 28.26%;"></div>
+            <div class="hotspot" style="left: 49.27%; top: 9.05%; width: 46.92%; height: 44.99%;"></div>
+            <div class="hotspot" style="left: 54.00%; top: 62.00%; width: 9.68%; height: 5.33%;"></div>
+            <div class="hotspot" style="left: 51.25%; top: 82.00%; width: 12.42%; height: 5.33%;"></div>
           </div>
 
         </div>
