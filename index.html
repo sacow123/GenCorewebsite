@@ -3907,10 +3907,10 @@
         <p class="subtitle">MillFix 컨트롤 프로그램</p>
         
         <style>
-          @keyframes pulse-border-tool {
-            0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
+          @keyframes pulse-opacity-tool {
+            0% { opacity: 0; }
+            50% { opacity: 0.6; }
+            100% { opacity: 0; }
           }
           #sec-mf-tool-usage .stage-container {
             position: relative;
@@ -3938,6 +3938,12 @@
             transition: opacity 0.2s ease;
             pointer-events: none;
             z-index: 2;
+            animation: pulse-opacity-tool 2s infinite;
+          }
+          /* Stop pulsing overlay when any hotspot is hovered */
+          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hover-overlay {
+            animation: none;
+            opacity: 0;
           }
           
           /* Clip-paths to show ONLY the relevant annotation region */
@@ -3948,28 +3954,13 @@
 
           #sec-mf-tool-usage .hotspot {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5);
             background: transparent;
             cursor: pointer;
             z-index: 5;
-            transition: .15s ease;
             outline: none;
-            animation: pulse-border-tool 2s infinite;
-            padding: 0;
-            border-radius: 8px;
+            /* Completely invisible - relies entirely on hover-overlay image for visual feedback */
           }
-          /* Hide all other hotspots when one is hovered */
-          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hotspot {
-            opacity: 0;
-            animation: none;
-          }
-          /* Highlight the hovered hotspot */
-          #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hotspot:hover {
-            opacity: 1;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
-          }
+          /* Hotspots remain active even when another is hovered, no need to disable pointer events since there are no overlapping borders to hide anymore */
           
           /* Fade in ONLY the specific masked overlay based on which hotspot is hovered */
           #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .overlay-left { opacity: 1; }
