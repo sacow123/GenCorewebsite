@@ -1,4 +1,6 @@
 {
+  "name": "gencore-manual",
+  "outputDirectory": ".",
   "cleanUrls": true,
 
   "rewrites": [
