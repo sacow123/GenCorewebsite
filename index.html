@@ -3953,20 +3953,20 @@
             pointer-events: none;
             z-index: 2;
             animation: pulse-opacity-tool 2s infinite;
-            mix-blend-mode: screen; /* ONLY blend during pulse to prevent dark bg flash */
+            mix-blend-mode: screen;
           }
           
-          /* Clip-paths to show ONLY the relevant annotation region, tailored per stage to prevent slicing custom drawn lines */
+          /* Clip-paths: 48%/52% gap to prevent yellow boundary lines from bleeding across sides */
           /* Stage 1 */
-          #sec-mf-tool-usage .s1-left { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
-          #sec-mf-tool-usage .s1-topright { clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); }
-          #sec-mf-tool-usage .s1-bottomright { clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); }
+          #sec-mf-tool-usage .s1-left { clip-path: polygon(0 0, 48% 0, 48% 100%, 0 100%); }
+          #sec-mf-tool-usage .s1-topright { clip-path: polygon(52% 0, 100% 0, 100% 100%, 52% 100%); }
+          #sec-mf-tool-usage .s1-bottomright { clip-path: polygon(52% 0, 100% 0, 100% 100%, 52% 100%); }
           /* Stage 2 */
-          #sec-mf-tool-usage .s2-left { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
-          #sec-mf-tool-usage .s2-right { clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); }
+          #sec-mf-tool-usage .s2-left { clip-path: polygon(0 0, 48% 0, 48% 100%, 0 100%); }
+          #sec-mf-tool-usage .s2-right { clip-path: polygon(52% 0, 100% 0, 100% 100%, 52% 100%); }
           /* Stage 3 */
-          #sec-mf-tool-usage .s3-left { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
-          #sec-mf-tool-usage .s3-right { clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); }
+          #sec-mf-tool-usage .s3-left { clip-path: polygon(0 0, 48% 0, 48% 100%, 0 100%); }
+          #sec-mf-tool-usage .s3-right { clip-path: polygon(52% 0, 100% 0, 100% 100%, 52% 100%); }
 
           #sec-mf-tool-usage .hotspot {
             position: absolute;
@@ -3976,22 +3976,22 @@
             outline: none;
             /* Completely invisible - relies entirely on hover-overlay image for visual feedback */
           }
-          /* Hide all hotspots and their pulsing when ANY hotspot is hovered */
+          /* Hide all overlays and their pulsing when ANY hotspot is hovered */
           #sec-mf-tool-usage .stage-container:has(>.hotspot:hover) .hover-overlay {
             animation: none;
             opacity: 0;
           }
           
-          /* Fade in ONLY the specific masked overlay based on which hotspot is hovered, restore normal rendering */
+          /* Fade in ONLY the specific masked overlay based on which hotspot is hovered — keep screen blend mode */
           #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .s1-left,
           #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .s2-left,
-          #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .s3-left { opacity: 1 !important; mix-blend-mode: normal; }
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-left:hover) .s3-left { opacity: 1 !important; }
           
           #sec-mf-tool-usage .stage-container:has(>.hotspot-right:hover) .s2-right,
-          #sec-mf-tool-usage .stage-container:has(>.hotspot-right:hover) .s3-right { opacity: 1 !important; mix-blend-mode: normal; }
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-right:hover) .s3-right { opacity: 1 !important; }
           
-          #sec-mf-tool-usage .stage-container:has(>.hotspot-topright:hover) .s1-topright { opacity: 1 !important; mix-blend-mode: normal; }
-          #sec-mf-tool-usage .stage-container:has(>.hotspot-bottomright:hover) .s1-bottomright { opacity: 1 !important; mix-blend-mode: normal; }
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-topright:hover) .s1-topright { opacity: 1 !important; }
+          #sec-mf-tool-usage .stage-container:has(>.hotspot-bottomright:hover) .s1-bottomright { opacity: 1 !important; }
         </style>
 
         <div class="content-card">
