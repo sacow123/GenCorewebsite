@@ -3919,123 +3919,65 @@
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#sec-mf-tool-usage" style="color:#a855f7; text-decoration:none;">#sec-mf-tool-usage</a></div>
         <p class="subtitle">MillFix 컨트롤 프로그램</p>
-        
-        <style>
-          @keyframes pulse-opacity-tool {
-            0% { opacity: 0; }
-            50% { opacity: 0.9; }
-            100% { opacity: 0; }
-          }
-          #sec-mf-tool-usage .stage-container {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 1524 / 892;
-            background: #000;
-            overflow: visible;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-          }
-          #sec-mf-tool-usage .base {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            user-select: none;
-            -webkit-user-drag: none;
-            border-radius: 8px;
-          }
-          #sec-mf-tool-usage .hover-overlay {
-            position: absolute;
-            top: 0;
-            opacity: 0;
-            transition: opacity 0.25s ease;
-            pointer-events: none;
-            z-index: 2;
-            mix-blend-mode: screen;
-            height: 100%;
-          }
-          #sec-mf-tool-usage .hover-overlay.ov-left {
-            left: 0;
-            width: 48%;
-            object-fit: fill;
-          }
-          #sec-mf-tool-usage .hover-overlay.ov-right {
-            right: 0;
-            width: 48%;
-            object-fit: fill;
-          }
-          #sec-mf-tool-usage .hover-overlay.active {
-            opacity: 1;
-          }
-          #sec-mf-tool-usage .hotspot {
-            position: absolute;
-            background: transparent;
-            cursor: pointer;
-            z-index: 5;
-            outline: none;
-            border: 2px solid rgba(255, 204, 0, 0.4);
-            animation: pulse-border 2s infinite;
-          }
-          #sec-mf-tool-usage .hotspot:hover {
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.08);
-          }
-        </style>
 
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('#sec-mf-tool-usage .stage-container').forEach(function(stage) {
-              var hotspots = stage.querySelectorAll('.hotspot');
-              var overlays = stage.querySelectorAll('.hover-overlay');
-              
-              hotspots.forEach(function(hs) {
-                var side = hs.dataset.side; // "left" or "right"
-                hs.addEventListener('mouseenter', function() {
-                  overlays.forEach(function(ov) { ov.classList.remove('active'); });
-                  stage.querySelectorAll('.hover-overlay.ov-' + side).forEach(function(ov) {
-                    ov.classList.add('active');
-                  });
-                });
-                hs.addEventListener('mouseleave', function() {
-                  overlays.forEach(function(ov) { ov.classList.remove('active'); });
-                });
-              });
-            });
-          });
-        </script>
-
-        <div class="content-card">
-          
-          <div class="stage-container">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림1.webp" alt="공구 사용시간 설정 1" class="base">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2-left.webp" class="hover-overlay ov-left">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림2-right.webp" class="hover-overlay ov-right">
+        <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 40px;">
+          <div style="position:relative; width:100%; aspect-ratio:1524/892; background:#000; overflow:visible; border-radius: inherit;">
+            <img loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;user-select:none;-webkit-user-drag:none;border-radius:inherit;" src="./images/sec-mf-toollifetimesetting/1.webp" alt="공구 사용시간 설정 1" />
             
-            <div class="hotspot" data-side="left" style="left: 4.0%; top: 48.0%; width: 31.0%; height: 41.0%;"></div>
-            <div class="hotspot" data-side="right" style="left: 54.9%; top: 14.8%; width: 41.1%; height: 7.8%;"></div>
-            <div class="hotspot" data-side="right" style="left: 53.0%; top: 33.2%; width: 43.8%; height: 61.6%;"></div>
-          </div>
+            <button class="mf-hotspot" style="left: 4.0%; top: 48.0%; width: 31.0%; height: 41.0%; border-radius: 12px;"></button>
+            <div class="mf-callout" style="left: 36%; top: 50%; min-width: 320px;">
+              <span class="title">공구 수명 도달 알림</span>
+              <span class="desc">공구 사용시간 알람 기능을 활성화합니다.</span>
+            </div>
 
-          <div class="stage-container">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림3.webp" alt="공구 사용시간 설정 2" class="base">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림4-left.webp" class="hover-overlay ov-left">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림4-right.webp" class="hover-overlay ov-right">
+            <button class="mf-hotspot" style="left: 54.9%; top: 14.8%; width: 41.1%; height: 7.8%; border-radius: 20px;"></button>
+            <div class="mf-callout" style="left: auto; right: 46%; top: 24%; min-width: 300px;">
+              <span class="title">소재 별 권장 공구 수명 자동 입력</span>
+              <span class="desc">1. 자동 설정할 소재를 먼저 선택합니다.</span>
+            </div>
+
+            <button class="mf-hotspot" style="left: 53.0%; top: 33.2%; width: 43.8%; height: 61.6%; border-radius: 16px;"></button>
+            <div class="mf-callout" style="left: auto; right: 48%; top: 60%; min-width: 250px;">
+              <span class="title">시간 입력 창</span>
+              <span class="desc">2. 선택한 소재에 맞는 사용시간이 자동으로 입력됩니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 40px;">
+          <div style="position:relative; width:100%; aspect-ratio:1524/892; background:#000; overflow:visible; border-radius: inherit;">
+            <img loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;user-select:none;-webkit-user-drag:none;border-radius:inherit;" src="./images/sec-mf-toollifetimesetting/3.webp" alt="공구 사용시간 설정 2" />
             
-            <div class="hotspot" data-side="left" style="left: 4.0%; top: 48.0%; width: 31.0%; height: 41.0%;"></div>
-            <div class="hotspot" data-side="right" style="left: 53.0%; top: 14.8%; width: 43.8%; height: 35.0%;"></div>
-          </div>
+            <button class="mf-hotspot" style="left: 4.0%; top: 48.0%; width: 31.0%; height: 41.0%; border-radius: 12px;"></button>
+            <div class="mf-callout" style="left: 36%; top: 60%; min-width: 300px;">
+              <span class="title">전체 리셋</span>
+              <span class="desc">공구의 사용시간을 모두 0으로 초기화합니다.</span>
+            </div>
 
-          <div class="stage-container" style="margin-bottom:0;">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림5.webp" alt="공구 사용시간 설정 3" class="base">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림6-left.webp" class="hover-overlay ov-left">
-            <img loading="lazy" src="./images/sec-mf-toollifetimesetting/그림6-right.webp" class="hover-overlay ov-right">
+            <button class="mf-hotspot" style="left: 53.0%; top: 14.8%; width: 43.8%; height: 35.0%; border-radius: 16px;"></button>
+            <div class="mf-callout" style="left: auto; right: 48%; top: 32%; min-width: 300px;">
+              <span class="title">소재 별 권장 공구 수명 자동 입력</span>
+              <span class="desc">하이브리드 세라믹 권장 공구 수명 자동 입력</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
+          <div style="position:relative; width:100%; aspect-ratio:1524/892; background:#000; overflow:visible; border-radius: inherit;">
+            <img loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;user-select:none;-webkit-user-drag:none;border-radius:inherit;" src="./images/sec-mf-toollifetimesetting/5.webp" alt="공구 사용시간 설정 3" />
             
-            <div class="hotspot" data-side="left" style="left: 1.0%; top: 1.0%; width: 25.0%; height: 10.0%;"></div>
-            <div class="hotspot" data-side="right" style="left: 54.9%; top: 14.8%; width: 41.1%; height: 7.8%;"></div>
-          </div>
+            <button class="mf-hotspot" style="left: 1.0%; top: 1.0%; width: 25.0%; height: 10.0%; border-radius: 999px;"></button>
+            <div class="mf-callout" style="left: 27%; top: 2%; min-width: 350px;">
+              <span class="title">공구 리스트 페이지로 돌아가기</span>
+              <span class="desc">수정한 사항이 저장되며 이전 페이지로 돌아갑니다.</span>
+            </div>
 
+            <button class="mf-hotspot" style="left: 54.9%; top: 14.8%; width: 41.1%; height: 7.8%; border-radius: 20px;"></button>
+            <div class="mf-callout" style="left: auto; right: 46%; top: 24%; min-width: 300px;">
+              <span class="title">소재 별 권장 공구 수명 자동 입력</span>
+              <span class="desc">PMMA / PEEK 권장 공구 수명 자동 입력</span>
+            </div>
+          </div>
         </div>
       </section>
 
