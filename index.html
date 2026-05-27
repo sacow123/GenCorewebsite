@@ -3542,6 +3542,12 @@
                 pointer-events: none;
                 transition: .15s ease;
                 border: 1px solid rgba(255, 255, 255, .14);
+              box-shadow: 0 10px 28px rgba(0, 0, 0, .32);
+                opacity: 0;
+                transform: translateY(6px);
+                transition: .15s ease;
+                pointer-events: none;
+                z-index: 10;
               }
 
               .mf-hotspot:hover::after,
@@ -3952,15 +3958,15 @@
           
           /* Clip-paths to show ONLY the relevant annotation region, tailored per stage to prevent slicing custom drawn lines */
           /* Stage 1 */
-          #sec-mf-tool-usage .s1-left { clip-path: polygon(0 0, 42% 0, 42% 100%, 0 100%); }
-          #sec-mf-tool-usage .s1-topright { clip-path: polygon(42% 0, 100% 0, 100% 28%, 42% 28%); }
-          #sec-mf-tool-usage .s1-bottomright { clip-path: polygon(42% 28%, 100% 28%, 100% 100%, 42% 100%); }
+          #sec-mf-tool-usage .s1-left { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
+          #sec-mf-tool-usage .s1-topright { clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); }
+          #sec-mf-tool-usage .s1-bottomright { clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); }
           /* Stage 2 */
-          #sec-mf-tool-usage .s2-left { clip-path: polygon(0 0, 40% 0, 40% 100%, 0 100%); }
-          #sec-mf-tool-usage .s2-right { clip-path: polygon(40% 0, 100% 0, 100% 100%, 40% 100%); }
+          #sec-mf-tool-usage .s2-left { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
+          #sec-mf-tool-usage .s2-right { clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); }
           /* Stage 3 */
-          #sec-mf-tool-usage .s3-left { clip-path: polygon(0 0, 35% 0, 35% 100%, 0 100%); }
-          #sec-mf-tool-usage .s3-right { clip-path: polygon(35% 0, 100% 0, 100% 100%, 35% 100%); }
+          #sec-mf-tool-usage .s3-left { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
+          #sec-mf-tool-usage .s3-right { clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); }
 
           #sec-mf-tool-usage .hotspot {
             position: absolute;
