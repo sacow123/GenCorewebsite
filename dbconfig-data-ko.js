@@ -1,13 +1,13 @@
 const dbConfigDataKO = {
   "Hybrid Ceramic_Abutment Crown bridge_NCS (highnees)": `
-Materials
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Abutment crown bridge
-Add a property
+보철물 유형
+어버트먼트 크라운 브릿지
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-보철물 유형: Abutment crown bridge
+보철물 유형: 어버트먼트 크라운 브릿지
 소재: Hybrid Ceramic Disc / Block
 하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
 해당 템플릿으로 가공하기 위해 준비해야할 것들
@@ -18,22 +18,22 @@ Add a property
 어버트먼트 베이스라인이 설정된 인터페이스는 반드시 스크류 채널이 있어야합니다.
 인터페이스에 설정된 스크류채널을 제외한 다른 홀들은 스크류 채널이 아닌 홀(Holes)로 설정되어야 합니다. .
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려보세요.
--Finishing inside abutment bases [M1.0F_L06]_highness
---어버트먼트 베이스 라인 안쪽을 1.0mm 플랫 공구(T42_M1.5FL_L15)을 이용해 정삭합니다.
----추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. <br>(-로 설정할수록 적합이 헐거워집니다) <br>(+로 설정할수록 적합이 타이트해집니다)
--Fissure machining G0.6B -0
---교합면의 그루브를 0.6mm 공구(T37_G0.6B_L2)를 사용해 가공합니다. 
----계산: 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+Finishing inside abutment bases [M1.0F_L06]_highness
+어버트먼트 베이스 라인 안쪽을 1.0mm 플랫 공구(T43_M1.0F_L06)을 이용해 정삭합니다.
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. <br>(-로 설정할수록 적합이 헐거워집니다) <br>(+로 설정할수록 적합이 타이트해집니다)
+Fissure machining [G0.6B] -0
+교합면의 그루브를 0.6mm 공구(T37_G0.6B_L2)를 사용해 가공합니다. 
+계산: 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
-Tools
+공구
 Comment
 T35
 G2.0B
@@ -55,14 +55,14 @@ M1.6T
 각진 스크류 채널 가공 시에만 선택적으로 사용됩니다. 
 `,
   "Hybrid Ceramic_Abutment Crown_NCS (highnees)": `
-Materials
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Abutment crown
-Add a property
+보철물 유형
+어버트먼트 크라운
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-보철물 유형: Abutment crown
+보철물 유형: 어버트먼트 크라운
 소재: Hybrid Ceramic Disc / Block
 하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
 해당 템플릿으로 가공하기 위해 준비해야할 것들
@@ -73,22 +73,22 @@ Add a property
 스크루 채널은 반드시 인터페이스에 설정되어야만 합니다.
 인터페이스에 설정된 스크류채널을 제외한 다른 홀들은 스크류 채널이 아닌 홀(Holes)로 설정되어야 합니다. .
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Finishing inside abutment bases [M1.0F_L06]_highness
---어버트먼트 베이스 라인 안쪽을 1.0mm 플랫 공구(T42_M1.5FL_L15)을 이용해 정삭합니다.
----추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. <br>(-로 설정할수록 적합이 헐거워집니다) <br>(+로 설정할수록 적합이 타이트해집니다)
--Fissure machining G0.6B -0
---교합면의 그루브를 0.6mm 공구(T37_G0.6B_L2)를 사용해 가공합니다. 
----계산: 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+Finishing inside abutment bases [M1.0F_L06]_highness
+어버트먼트 베이스 라인 안쪽을 1.0mm 플랫 공구(T43_M1.0F_L06)을 이용해 정삭합니다.
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. <br>(-로 설정할수록 적합이 헐거워집니다) <br>(+로 설정할수록 적합이 타이트해집니다)
+Fissure machining [G0.6B] -0
+교합면의 그루브를 0.6mm 공구(T37_G0.6B_L2)를 사용해 가공합니다. 
+계산: 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
-Tools
+공구
 Comment
 T35
 G2.0B
@@ -110,151 +110,171 @@ M1.6T
 각진 스크류 채널 가공 시에만 선택적으로 사용됩니다. 
 `,
   "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X_D0.6": `
-Materials
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Crown bridge
-Crown bridge
-Add a property
+보철물 유형
+Inlay/크라운 브릿지
+크라운 브릿지
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-보철물 유형: 인레이/ 온레이 크랑누 브릿지 혹은 크라운 브릿지( 인레이/ 온레이 크라운 브릿지는 인레이와 크라운이 같이 있는 브릿지의 형태를 말합니다)
+보철물 유형: 인레이/ 온레이 크라운 브릿지 혹은 크라운 브릿지( 인레이/ 온레이 크라운 브릿지는 인레이와 크라운이 같이 있는 브릿지의 형태를 말합니다)
 인레이/ 온레이 혹은 코핑 라인은 필수입니다. 
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
+일반 설정
+ 증분식 경계 옵셋
+ 증분식 경계 각도
+ 만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.  
+Finishing inside copings G1 5x -180
+ 5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+ 여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+ Finishing inside copings G1 3+2x -180
+ 설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+ 여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+ Finishing inside inlays/onlays G1 -180   
+ 인레이/온레이 내면을 1.0mm 공구를 사용해 가공합니다.  
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+ 여유량 : 인레이/온레이 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06) 
+ Fissure machining [G0.6B_L2] -0 
+ 교합면의 그루브를 0.6mm 공구를 사용해 가공합니다. 
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+ Finishing inside copings [G0.6B_L2]    
+ Finishing process inside crowns/copings with 0.6mm diameter tool
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+ Fissure machining [Z0.3BX03] -0
+ 0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
-\t
-Tools
-\t
+공구
 Comment
 
 T35
-\t
 G2.0B
-\t
 
 T36
-\t
 G1.0B
-\t
 
 T37
-\t
 G0.6B
-\t
 
 T42
-\t
 M1.5FL
-\t
 스크류 채널 가공을 위해 사용됩니다. 
-
 T43
-\t
 M1.0F
-\t
 임플란트 인터페이스 인터페이스 가공을 위해 사용됩니다. 
-
 T45
-\t
 M1.6T
-\t
-Optional, When it is applied Angled screw hole.`,
-  "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X": `
-Materials
+각진 스크류 채널 가공 시에만 선택적으로 사용됩니다. 
+선택 사항, 각진 스크류 채널이 적용된 경우.`,
+"Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Crown bridge
-Crown bridge
-Add a property
+보철물 유형
+Inlay/크라운 브릿지
+크라운 브릿지
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-보철물 유형: 인레이/ 온레이 크랑누 브릿지 혹은 크라운 브릿지( 인레이/ 온레이 크라운 브릿지는 인레이와 크라운이 같이 있는 브릿지의 형태를 말합니다)
+보철물 유형: 인레이/ 온레이 크라운 브릿지 혹은 크라운 브릿지( 인레이/ 온레이 크라운 브릿지는 인레이와 크라운이 같이 있는 브릿지의 형태를 말합니다)
 인레이/ 온레이 혹은 코핑 라인은 필수입니다. 
-0.6mm diameter tool is optional
+0.6mm 공구는 선택 사항입니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
-
+일반 설정
+ 증분식 경계 옵셋
+ 증분식 경계 각도
+ 만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.  
+Finishing inside copings G1 5x -180
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+ 여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+ Finishing inside copings G1 3+2x -180
+ 설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+ 여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+Finishing inside inlays/onlays G1 -180   
+ 인레이/온레이 내면을 1.0mm 공구를 사용해 가공합니다.  
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+ 여유량 : 인레이/온레이 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06) 
+ Fissure machining [G0.6B_L2] -0 
+ 교합면의 그루브를 0.6mm 공구를 사용해 가공합니다. 
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+ Finishing inside copings [G0.6B_L2]    
+ Finishing process inside crowns/copings with 0.6mm diameter tool
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+ Fissure machining [Z0.3BX03] -0
+ 0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+ 계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
-\t
-Tools
-\t
 Comment
 
 T35
-\t
 G2.0B
-\t
 
 T36
-\t
 G1.0B
-\t
 
 T37
-\t
 G0.6B
-\t
-Optional (UDA, Fissure machining)
 
 T42
-\t
 M1.5FL
-\t
 스크류 채널 가공을 위해 사용됩니다. 
-
 T43
-\t
 M1.0F
-\t
 임플란트 인터페이스 인터페이스 가공을 위해 사용됩니다. 
-
 T45
-\t
 M1.6T
-\t
-Optional, When it is applied Angled screw hole.`,
-  "Hybrid Ceramic_Crown_SCRP_5X_D0.6": `
-Materials
-Hybrid Ceramic
-Part (Prosthesis)
-Crown
-Add a property
-댓글
+각진 스크류 채널 가공 시에만 선택적으로 사용됩니다. 
+선택 사항, 각진 스크류 채널이 적용된 경우.`,
+"Hybrid Ceramic_Crown_SCRP_5X_D0.6": `
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Crown
-The materials is Hybrid Ceramic Disc/Block
-Setting the Coping lines is mandatory.
+보철물 유형: 크라운
+소재: Hybrid Ceramic Disc/Block
+코핑 라인 설정은 필수입니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Finishing inside copings G1 5x -180
---Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
----계산: 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
----Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.06 ~ 0.06)
----Boundary offset / Bounda
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+Finishing inside copings G1 5x -180
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+계산: 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+Finishing inside copings G1 3+2x -180 
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+Finishing inside inlays/onlays G1 -180
+인레이/온레이 내면을 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+여유량 : 인레이/온레이 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+Fissure machining [G0.6B_L2] -0
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+Finishing inside copings [G0.6B_L2]
+Finishing process inside crowns/copings with 0.6mm diameter tool
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+Fissure machining [Z0.3BX03] -0
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -272,34 +292,50 @@ T37
 \t
 G0.6B
 \t`,
-  "Hybrid Ceramic_Crown_SCRP_5X": `
-Materials
+"Hybrid Ceramic_Crown_SCRP_5X": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Crown
-Add a property
+보철물 유형
+크라운
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Crown
-The materials is Hybrid Ceramic Disc/Block
-Setting the Coping lines is mandatory.
-0.6mm diameter tool is optional
-조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Finishing inside copings G1 5x -180
---Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
----계산: 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
----Allowance : Available to adjust the fit inside of
+보철물 유형: 크라운
+소재: Hybrid Ceramic Disc/Block
+코핑 라인 설정은 필수입니다.
+0.6mm 공구는 선택 사항입니다.
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+Finishing inside copings G1 5x -180
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+계산: 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+Finishing inside copings G1 3+2x -180 
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+Finishing inside inlays/onlays G1 -180
+인레이/온레이 내면을 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+여유량 : 인레이/온레이 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+Fissure machining [G0.6B_L2] -0
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+Finishing inside copings [G0.6B_L2]
+Finishing process inside crowns/copings with 0.6mm diameter tool
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+Fissure machining [Z0.3BX03] -0
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -317,83 +353,43 @@ T37
 \t
 G0.6B
 \t
-Optional (UDA, Fissure machining)`,
-  "Hybrid Ceramic_Inlay/Onlay_D0.6": `
-Materials
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)`,
+"Hybrid Ceramic_Inlay/Onlay_D0.6": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Overall finishing cavity side (cap) G1 -180
---Finishing process on whole cavity side with 1.0mm diameter tool
----Allowance : Available to adjust the fit inside of crowns/copings
----Boundary offset / Boundary angle
--Fissure machining [G1.0B] -0
---Occlusal groove machining process with 1.0mm diameter tool
---Ca
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+Overall finishing cavity side (cap) G1 -180
+캐비티 전체 내면을 1.0mm 공구를 사용해 가공합니다.
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [G1.0B] -0
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+Fissure machining G0.6B -0
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+Overall restmachining cavity side G0.6B -180
+0.6mm 공구를 사용해 캐비티 전체 내면을 잔삭 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
-\t
-Comment
-
-T35
-\t
-G2.0B
-\t
-
-T36
-\t
-G1.0B
-\t
-
-T37
-\t
-G0.6B
-\t`,
-  "Hybrid Ceramic_Inlay/Onlay/ -Slow": `
-Materials
-Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
-댓글
-템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This is for milling more slow than “Hybrid Ceramic_Inlay/Onlay_D0.6”
-조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Overall finishing cavity side (cap) G1 -180
---Finishing process on whole cavity side with 1.0mm diameter tool
----Allowance : Available to adjust the fit inside of crowns/copings
----Boundary offset / Boundary angle
--Fissure machining [
-사용자 정의 영역을 사용하실 수 있습니다. 
-유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
-해당 템플릿에서 사용되는 공구 목록
-Tool pocket #
-\t
-Tools
+공구
 \t
 Comment
 
@@ -411,34 +407,43 @@ T37
 \t
 G0.6B
 \t`,
-  "Hybrid Ceramic_Inlay/Onlay_1st -Cavity": `
-Materials
+"Hybrid Ceramic_Inlay/Onlay/ -Slow": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This template is for milling cavity side only with the way of burial milling. It is available to set no conectors.
-Please milling this cavity side one first.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이것은 “Hybrid Ceramic_인레이/온레이_D0.6” 보다 느리게 가공하기 위한 템플릿입니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Overall finishing cavity side (cap) G1 -180
---Finishing process on whole cavity side with 1.0mm diameter tool
----Allowance : Available t
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려보세요.
+Overall finishing cavity side (cap) G1 -180
+캐비티 전체 내면을 1.0mm 공구를 사용해 가공합니다.
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [G1.0B] -0
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+Fissure machining G0.6B -0
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+Overall restmachining cavity side G0.6B -180
+0.6mm 공구를 사용해 캐비티 전체 내면을 잔삭 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -456,37 +461,82 @@ T37
 \t
 G0.6B
 \t`,
-  "5월 21일 편집": `
+"Hybrid Ceramic_Inlay/Onlay_1st -Cavity": `
+소재
+Hybrid Ceramic
+보철물 유형
+인레이/온레이
+속성 추가
+댓글
+템플릿을 사용하기 위한 조건
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이 템플릿은 매몰 가공 방식으로 캐비티 내면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
+이 캐비티 내면을 먼저 가공해 주십시오.
+조정 가능한 항목들
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+Overall finishing cavity side (cap) G1 -180
+캐비티 전체 내면을 1.0mm 공구를 사용해 가공합니다.
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+사용자 정의 영역을 사용하실 수 있습니다. 
+유형 1 : T36-G1.0B
+유형 3 : T36-G1.0B→T37-G0.6B
+해당 템플릿에서 사용되는 공구 목록
+Tool pocket #
+\t
+공구
+\t
+Comment
+
+T35
+\t
+G2.0B
+\t
+
+T36
+\t
+G1.0B
+\t
+
+T37
+\t
+G0.6B
+\t`,
+"5월 21일 편집": `
 5월 21일 편집
 공유`,
-  "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]": `
-Materials
+"Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This is for milling it 0.05mm bigger than the original design. You can stragically utilize this one.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이것은 원래 디자인보다 0.05mm 크게 가공하기 위한 것입니다. 전략적으로 활용할 수 있습니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Overall finishing cavity side (cap) G1 -180
---Finishing process on whole cavity side with 1.0mm diameter tool
----Allowance : Available to adjust the fit inside of crowns/copings
---Boundary offse
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+Overall finishing cavity side (cap) G1 -180
+캐비티 전체 내면을 1.0mm 공구를 사용해 가공합니다.
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+Boundary offse
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -504,33 +554,35 @@ T37
 \t
 G0.6B
 \t`,
-  "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]": `
-Materials
+"Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This template is for milling cavity side only with the way of burial milling. It is available to set no conectors.
-Please milling this cavity side one first.
-This is for milling it 0.05mm bigger than the original design. You can stragically utilize this one.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이 템플릿은 매몰 가공 방식으로 캐비티 내면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
+이 캐비티 내면을 먼저 가공해 주십시오.
+이것은 원래 디자인보다 0.05mm 크게 가공하기 위한 것입니다. 전략적으로 활용할 수 있습니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Overall finishing cavi
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+Overall finishing cavity side (cap) G1 -180
+캐비티 전체 내면을 1.0mm 공구를 사용해 가공합니다.
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -548,33 +600,32 @@ T37
 \t
 G0.6B
 \t`,
-  "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal [+0.05]": `
-Materials
+"Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal [+0.05]": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This template is for milling occlusal side only with the way of burial milling. It is available to set no conectors.
-Please milling this occlusal side one after cavity side.
-This is for milling it 0.05mm bigger than the original design. You can stragically utilize this one.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이 템플릿은 매몰 가공 방식으로 교합면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
+캐비티 내면을 가공한 후 이 교합면을 가공해 주십시오.
+이것은 원래 디자인보다 0.05mm 크게 가공하기 위한 것입니다. 전략적으로 활용할 수 있습니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Fiss
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -592,34 +643,30 @@ T37
 \t
 G0.6B
 \t`,
-  "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]": `
-Materials
+"Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This is for milling it 0.08mm bigger than the original design. You can stragically utilize this one.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이것은 원래 디자인보다 0.08mm 크게 가공하기 위한 것입니다. 전략적으로 활용할 수 있습니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Overall finishing cavity side (cap) G1 -180
---Finishing process on whole cavity side with 1.0mm diameter tool
----Allowance : Available to adjust the fit inside of crowns/copings
---Boundary offse
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -637,33 +684,32 @@ T37
 \t
 G0.6B
 \t`,
-  "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]": `
-Materials
+"Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This template is for milling cavity side only with the way of burial milling. It is available to set no conectors.
-Please milling this cavity side one first.
-This is for milling it 0.08mm bigger than the original design. You can stragically utilize this one.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이 템플릿은 매몰 가공 방식으로 캐비티 내면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
+이 캐비티 내면을 먼저 가공해 주십시오.
+이것은 원래 디자인보다 0.08mm 크게 가공하기 위한 것입니다. 전략적으로 활용할 수 있습니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Overall finishing cavi
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -681,33 +727,32 @@ T37
 \t
 G0.6B
 \t`,
-  "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal [+0.08]": `
-Materials
+"Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal [+0.08]": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This template is for milling occlusal side only with the way of burial milling. It is available to set no conectors.
-Please milling this occlusal side one after cavity side.
-This is for milling it 0.08mm bigger than the original design. You can stragically utilize this one.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이 템플릿은 매몰 가공 방식으로 교합면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
+캐비티 내면을 가공한 후 이 교합면을 가공해 주십시오.
+이것은 원래 디자인보다 0.08mm 크게 가공하기 위한 것입니다. 전략적으로 활용할 수 있습니다.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Fiss
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -725,32 +770,31 @@ T37
 \t
 G0.6B
 \t`,
-  "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal": `
-Materials
+"Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal": `
+소재
 Hybrid Ceramic
-Part (Prosthesis)
-Inlay/Onlay
-Add a property
+보철물 유형
+인레이/온레이
+속성 추가
 댓글
 템플릿을 사용하기 위한 조건
-The 보철물 유형 is the Inlay/Onlay
-The materials is Hybrid Ceramic Disc/Block
-Setting the Inlay/Onlay lines is mandatory.
-This template is for milling occlusal side only with the way of burial milling. It is available to set no conectors.
-Please milling this occlusal side one after cavity side.
+보철물 유형: 인레이/온레이
+소재: Hybrid Ceramic Disc/Block
+인레이/온레이 라인 설정은 필수입니다.
+이 템플릿은 매몰 가공 방식으로 교합면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
+캐비티 내면을 가공한 후 이 교합면을 가공해 주십시오.
 조정 가능한 항목들
--일반 설정
---증분식 경계 옵셋
---증분식 경계 각도
----만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려세요.
--Fiss
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
 사용자 정의 영역을 사용하실 수 있습니다. 
 유형 1 : T36-G1.0B
-유형 3 : T36-G1.0B, T37-G0.6B
+유형 3 : T36-G1.0B→T37-G0.6B
 해당 템플릿에서 사용되는 공구 목록
 Tool pocket #
 \t
-Tools
+공구
 \t
 Comment
 
@@ -767,5 +811,4046 @@ G1.0B
 T37
 \t
 G0.6B
-\t`
+\t`,
+"PMMA_Abutment crown": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운
+
+소재: PMMA Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside abutment bases [M1.0B_L15]_3+2x
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Abutment Crown bridge": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운 브릿지
+
+소재: PMMA Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside abutment bases [M1.0B_L15] 3+2x
+
+설정된 삽입 경로를 따라 1.0mm 공구를 사용해 어버트먼트 내면을 정삭합니다.
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Abutment Crown bridge_NCS (highnees)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운 브릿지
+소재: PMMA Disc / Block
+하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려보세요.
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside abutment bases [M1.0F_L06]_highness
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Abutment crown_NCS (highnees)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운
+소재: PMMA Disc / Block
+하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+
+증분식 경계 옵셋
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside abutment bases [M1.0F_L06]_highness
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Coping/Crown bridge_SCRP": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운 브릿지/Coping bridge
+
+소재: PMMA Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Coping/Crown_(Fast mill)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운/코핑
+
+소재: PMMA Disc/Block
+
+코핑 라인 설정은 필수입니다
+“PMMA_Coping_Crown_SCRP” 보다 빠른 버전입니다. 
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 2 : T39M1.0B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 3+2xx
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+`,
+  "PMMA_Coping/Crown_Bridge_(Fast mill)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운 브릿지/Coping bridge
+
+소재: PMMA Disc/Block
+
+코핑 라인 설정은 필수입니다
+“PMMA_Coping/Crown Bridge_SCRP” 보다 빠른 버전입니다. 
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 2 : T39M1.0B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 3+2xx
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+`,
+  "PMMA_Coping_Crown_SCRP": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운/코핑
+
+소재: PMMA Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Crown bridge_SCRP_D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운 브릿지
+
+소재: PMMA Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Crown_SCRP_D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운
+
+소재: PMMA Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_denture Teeth": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: denture Teeth
+
+소재: PMMA Disc/Block
+
+별도의 필수 마진 설정은 없습니다. 
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+조정 가능한 항목들
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Flexble denture": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Flexble denture
+
+소재: PMMA Disc/Block
+
+별도의 필수 마진 설정은 없습니다. 
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+조정 가능한 항목들
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Full denture": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Full denture
+
+소재: PMMA Disc/Block
+
+코핑 라인을 설정해야만 합니다. 
+풀 덴쳐 베이스를 가공하기 위한 템플릿입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+선택 사항 (스크류 핏 영역이 있는 스크류 채널 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside long cavities_[M1.0Bx10]_8X
+
+각기 다른 삽입 방향을 가진 8개의 영역으로 나누어 1.0mm 공구로 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside long cavities_[M1.0Bx10] 3+2x
+
+설정된 삽입 경로를 따라 1.0mm 공구로 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Over Structure": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Over Structure
+
+소재: PMMA Disc/Block
+
+코핑 라인 설정은 필수입니다
+IBar와 같은 임플란트 바의 상부 구조물을 가공하기 위한 템플릿입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+선택 사항 (스크류 핏 영역이 있는 스크류 채널 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside long cavities_[M1.0Bx10]_8X
+
+각기 다른 삽입 방향을 가진 8개의 영역으로 나누어 1.0mm 공구로 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside long cavities_[M1.0Bx10] 3+2x
+
+설정된 삽입 경로를 따라 1.0mm 공구로 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PMMA_Partial Frame": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Partial Frame
+
+소재: PMMA Disc/Block
+
+별도의 필수 마진 설정은 없습니다. 
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+조정 가능한 항목들
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_Abutment Crown": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운
+
+소재: PEEK Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside abutment bases [M1.0B_L15]_3+2x
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_Abutment Crown bridge": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운 브릿지
+
+소재: PEEK Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside abutment bases [M1.0B_L15]_3+2x
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_Crown/SCRP Bridge_5x": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운 브릿지/Coping bridge
+
+소재: PEEK Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_Crown/SCRP_5x": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운/코핑
+
+소재: PEEK Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings_[Z0.6X05]_5X
+
+Finishing process inside crowns/copings with 0.6mm diameter tool
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_denture Teeth": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: denture Teeth
+
+소재: PEEK Disc/Block
+
+별도의 필수 마진 설정은 없습니다. 
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+조정 가능한 항목들
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_Flexible denture": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Flexble denture
+
+소재: PEEK Disc/Block
+
+별도의 필수 마진 설정은 없습니다. 
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+조정 가능한 항목들
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_Full denture": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Full denture
+
+소재: PEEK Disc/Block
+
+코핑 라인 설정은 필수입니다 →
+풀 덴쳐 베이스를 가공하기 위한 템플릿입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+선택 사항 (스크류 핏 영역이 있는 스크류 채널 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside long cavities_[M1.0Bx10]_8X
+
+각기 다른 삽입 방향을 가진 8개의 영역으로 나누어 1.0mm 공구로 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside long cavities_[M1.0Bx10] 3+2x
+
+설정된 삽입 경로를 따라 1.0mm 공구로 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_Over Structure": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Over Structure
+
+소재: PEEK Disc/Block
+
+코핑 라인 설정은 필수입니다
+IBar와 같은 임플란트 바의 상부 구조물을 가공하기 위한 템플릿입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+선택 사항 (스크류 핏 영역이 있는 스크류 채널 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+Finishing inside long cavities_[M1.0Bx10]_8X
+
+각기 다른 삽입 방향을 가진 8개의 영역으로 나누어 1.0mm 공구로 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside long cavities_[M1.0Bx10] 3+2x
+
+설정된 삽입 경로를 따라 1.0mm 공구로 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "PEEK_Partial Frame": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Partial Frame
+
+소재: PEEK Disc/Block
+
+별도의 필수 마진 설정은 없습니다. 
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+조정 가능한 항목들
+
+Fissure machining [M1.0B_L15]
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "WAX - Coping": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Coping
+
+소재: Wax Disc
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings D1 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+
+
+Finishing inside copings D1 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+Fissure machining D1
+
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside copings [M1.5FL_L15]
+
+1.5mm 플랫 공구를 사용해 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "WAX - Crown_D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운
+
+소재: Wax Disc
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings D1 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+
+
+Finishing inside copings D1 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+Finishing inside copings FE1.5
+
+1.5mm 플랫 공구를 사용해 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+Fissure machining D0.6
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+`,
+  "Wax_Coping bridge": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Coping bridge
+
+소재: Wax Disc
+
+코핑 라인 설정은 필수입니다
+
+0.6mm 공구는 선택 사항입니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+Finishing inside copings [M1.5FL_L15]
+
+1.5mm 플랫 공구를 사용해 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Wax_Crown bridge_D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운 브릿지 / Inaly/크라운 브릿지
+
+소재: Wax Disc
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Finishing inside copings [M1.5FL_L15]
+
+1.5mm 플랫 공구를 사용해 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다. (Range: -0.06 ~ 0.06)
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+`,
+  "Wax_Inlay/Onlay -D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 인레이/온레이
+
+소재: Wax Disc
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside inlays/onlays D1 -180
+
+인레이/온레이 내면을 1.0mm 공구를 사용해 가공합니다.
+
+여유량 : 인레이/온레이 내면의 적합을 조정할 수 있습니다. (Range: -0.1 ~ 0.1)
+
+
+
+Fissure machining D0.6
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Overall restmachining cavity side D0.6 -180
+
+0.6mm 공구를 사용해 인레이/온레이 내면을 포함한 캐비티 전체를 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+`,
+  "Zirconia_Abutment crown bridge": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운 브릿지
+
+소재: Zirconia Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [Z1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [G1.0B] -0
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니오)
+💡 이 템플릿이 선택되었을 때는 이 공정을 활성화하지 마십시오!
+
+Fissure machining G0.6B -0
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니오)
+💡 이 템플릿이 선택되었을 때는 이 공정을 활성화하지 마십시오!
+
+Overall restmachining cavity side G0.6B -180
+0.6mm 공구를 사용해 캐비티 전체 내면을 잔삭 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining [G1.0B] -0
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니오)
+💡 이 템플릿이 선택되었을 때는 이 공정을 활성화하지 마십시오!
+
+Fissure machining G0.6B -0
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니오)
+💡 이 템플릿이 선택되었을 때는 이 공정을 활성화하지 마십시오!
+
+Overall restmachining cavity side G0.6B -180
+0.6mm 공구를 사용해 캐비티 전체 내면을 잔삭 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining [G1.0B] -0
+교합면의 그루브를 1.0mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니오)
+💡 이 템플릿이 선택되었을 때는 이 공정을 활성화하지 마십시오!
+
+Fissure machining G0.6B -0
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니오)
+💡 이 템플릿이 선택되었을 때는 이 공정을 활성화하지 마십시오!
+
+Overall restmachining cavity side G0.6B -180
+0.6mm 공구를 사용해 캐비티 전체 내면을 잔삭 가공합니다.
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside abutment bases [Z1.0B_L15]
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Abutment Crown Bridge_NCS (B0.6)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운 브릿지 that needs to 0.6mm diameter ball end mill tool machining for the interface.
+
+소재: Zirconia Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [Z1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z1.0B_L15]
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06] (highness)
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Abutment Crown Bridge_NCS (highnees)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운 브릿지 
+
+소재: Zirconia Disc/Block
+
+하이니스 시스템의 인터페이스로 디자인 되어있어야합니다. 
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [Z1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z1.0B_L15]
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06] (highness)
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Abutment Crown Bridge_NCS (Megalink)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운 브릿지
+
+소재: Zirconia Disc/Block
+
+메가링크 시스템의 인터페이스로 디자인 되어있어야 합니다.
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공, 인터페이스 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [Z1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z1.0B_L15]
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]_highness
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FL_L15]_Megalink
+
+1.5mm 플랫 공구를 사용해 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]_Megalink
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+여유량: 어버트먼트 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Abutment crown": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운
+
+소재: Zirconia Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside abutment bases [Z1.0B_L15]
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Abutment Crown_NCS (B0.6)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운 that needs to 0.6mm diameter ball end mill tool machining for the interface.
+
+소재: Zirconia Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside abutment bases [Z1.0B_L15]
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]_highness
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Abutment Crown_NCS (highnees)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운
+
+소재: Zirconia Disc/Block
+
+하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공
+
+T43
+M1.0F
+인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside abutment bases [Z1.0B_L15]
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]_highness
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Abutment Crown_NCS (Megalink)": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 어버트먼트 크라운
+
+소재: Zirconia Disc/Block
+
+메가링크 시스템의 인터페이스로 디자인 되어있어야 합니다. 
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T42
+M1.5FL
+스크류 채널 가공, 인터페이스 가공
+
+T43
+M1.0F
+선택 사항, 인터페이스 가공
+
+T44
+M1.5R
+선택 사항, 인터페이스 가공
+
+T45
+M1.6T
+선택 사항, 각진 스크류 채널이 적용된 경우.
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside abutment bases [Z1.0B_L15]
+
+어버트먼트 베이스 라인 안쪽을 1.0mm 공구를 이용해 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FR_L07]
+
+1.5mm 코너 라운드 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.0F_L06]_highness
+
+1.0mm 플랫 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [M1.5FL_L15]_Megalink
+
+1.5mm 플랫 공구를 사용해 어버트먼트 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]_Megalink
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+여유량: 어버트먼트 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside abutment bases [Z0.6BX05]
+
+0.6mm 공구를 사용하여 어버트먼트 내면을 정삭합니다.
+
+추가. XY 여유량: 어버트먼트 베이스 라인 안쪽의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Coping": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Coping
+
+소재: Zirconia Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [M0.6BX05]
+
+0.6mm 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Coping bridge": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Coping bridge
+
+소재: Zirconia Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside long cavities [Z1.0B_L15] 8X
+
+각기 다른 삽입 경로를 가진 약 8개의 영역으로 나누어 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside long cavities [Z1.0B_L15] 3+2xX
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [M0.6BX05]
+
+0.6mm 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Crown bridge_D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운 브릿지
+
+소재: Zirconia Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside long cavities [Z1.0B_L15] 8X
+
+각기 다른 삽입 경로를 가진 약 8개의 영역으로 나누어 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside long cavities [Z1.0B_L15] 3+2xX
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [M0.6BX05]
+
+0.6mm 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Crown_D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 크라운
+
+소재: Zirconia Disc/Block
+
+코핑 라인 설정은 필수입니다
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [M0.6BX05]
+
+0.6mm 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Inlay/Onlay bridge_D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 인레이/온레이 bridge or Inlay/크라운 브릿지 (* 인레이/온레이 crown bridge is the bridge that consists of both inlays and crowns together)
+
+소재: Zirconia Disc/Block
+
+Setting the 인레이/온레이 or Coping lines is mandatory
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Inlay/Onlay_D0.6": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: 인레이/온레이
+
+소재: Zirconia Disc/Block
+
+Setting the 인레이/온레이 lines is mandatory
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T38
+M2.0B
+
+T39
+M1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항 (내면 정삭)
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [M1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`,
+  "Zirconia_Over Structure": `
+템플릿을 사용하기 위한 조건
+
+보철물 유형: Over Structure
+
+소재: Zirconia Disc/Block
+
+어버트먼트 베이스 라인 설정은 필수입니다.
+
+경계(Emergence) 라인 설정은 필수는 아니지만, 인터페이스 주변부의 텍스처 퀄리티를 위해 설정하시는 걸 권장합니다.
+
+해당 템플릿에서 사용되는 공구 목록
+
+Tool pocket #
+공구
+Comment
+
+T31
+Z2.0B
+
+T32
+Z1.0B
+
+T33
+Z0.6B
+
+T34
+Z0.3B
+선택 사항 (사용자 정의 영역, 교합면 그루브 가공)
+
+T43
+M1.0F
+선택 사항, 내면 가공
+
+사용자 정의 영역을 사용하실 수 있습니다.
+
+Category 1 : T39M1.0B
+
+Category 3 : T39M1.0B→T33-Z0.6B
+
+Category 5 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+Category 2 : T39M1.0B
+
+Category 4 : T39M1.0B→T33-Z0.6B
+
+Category 6 : T39M1.0B→T33-Z0.6B→T34-Z0.3B
+
+조정 가능한 항목들
+
+일반 설정
+증분식 경계 옵셋
+증분식 경계 각도
+만약 계산중에 에러가 발생한다면 해당 수치들을 조금 늘려 다시 시도해보세요.
+
+Finishing inside copings [Z1.0B_L15] 5x
+
+5축 동시 가공으로 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+
+
+Finishing inside copings [M1.0B_L15] 3+2x
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+여유량 : 크라운/코핑 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside long cavities [Z1.0B_L15] 8X
+
+각기 다른 삽입 경로를 가진 약 8개의 영역으로 나누어 긴 캐비티 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Finishing inside long cavities [Z1.0B_L15] 3+2xX
+
+설정된 삽입 경로에 따라 크라운/코핑 내면을 1.0mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+Finishing inside copings [M1.0F_L06]
+
+1.0mm 플랫 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Finishing inside copings [Z0.6BX05]
+
+0.6mm 공구를 사용해 코핑/크라운 내면을 정삭합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+
+추가. XY 여유량: 코핑/크라운 내면의 적합을 조정할 수 있습니다.
+
+Fissure machining [Z0.6BX05]
+
+교합면의 그루브를 0.6mm 공구를 사용해 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 네)
+
+Fissure machining_[Z0.3BX03] (PMMA)
+
+0.3mm 공구를 사용해 교합면 그루브를 가공합니다.
+
+계산 : 해당 과정을 진행 여부를 선택하실 수 있습니다. (기본 설정값: 아니요)
+`
 };

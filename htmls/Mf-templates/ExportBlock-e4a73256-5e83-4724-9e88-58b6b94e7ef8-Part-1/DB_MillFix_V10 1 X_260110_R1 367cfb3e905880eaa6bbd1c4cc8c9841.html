@@ -1,0 +1,749 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>DB_MillFix_V10.1.X_260110_R1</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="367cfb3e-9058-80ea-a6bb-d1c4cc8c9841" class="page sans"><header><h1 class="page-title" dir="auto">DB_MillFix_V10.1.X_260110_R1</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/clock_gray.svg" style="width:14px;height:14px;display:block"/></span>created</th><td><time>2026년 5월 21일 오후 5:48</time></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><p id="367cfb3e-9058-80a8-9eaf-f97f17b3daa8" class=""><a href="https://works.do/xp0JOBc">Download</a></p></div><div style="display:contents" dir="auto"><p id="367cfb3e-9058-809f-8c01-dfaab2516f8c" class="">
+</p></div><div style="display:contents" dir="auto"><hr id="367cfb3e-9058-8091-9332-fedee9673a26"/></div><div style="display:contents" dir="auto"><h3 id="f7bcfb3e-9058-8357-b8f0-01d8795a5957" class="">Summaries</h3></div><div style="display:contents" dir="auto"><p id="af6cfb3e-9058-83a5-b617-0148127064dc" class="">…</p></div><div style="display:contents" dir="auto"><p id="ab4cfb3e-9058-82c7-9ff2-8184677ca9b4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="94fcfb3e-9058-820b-9416-0118049408eb" class="">
+</p></div><div style="display:contents" dir="auto"><hr id="1a7cfb3e-9058-82a2-ac99-01d3a912b41b"/></div><div style="display:contents" dir="ltr"><div id="bdacfb3e-9058-8370-a98e-01d4aa79ebbc" class="collection-content"><h4 class="collection-title">List of Templates</h4><div class="collection-content-wrapper"><table class="collection-content"><colgroup><col style="width:58.333333333333336%"/><col style="width:41.666666666666664%"/></colgroup><thead><tr><th><span class="icon property-icon"><img src="https://app.notion.com/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>이름</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Materials</th></tr></thead><tbody><tr id="706cfb3e-9058-83ae-bcd0-815a4613424f"><td class="cell-title"><a href="Hybrid%20Ceramic_Abutment%20Crown%20bridge_NCS%20(highnees%20706cfb3e905883aebcd0815a4613424f.html">Hybrid Ceramic_Abutment Crown bridge_NCS (highnees)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="45ecfb3e-9058-8332-8f05-810a617ea542"><td class="cell-title"><a href="PMMA_Abutment%20Crown%20bridge_NCS%20(highnees)%2045ecfb3e905883328f05810a617ea542.html">PMMA_Abutment Crown bridge_NCS (highnees)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="979cfb3e-9058-8252-92ab-8114caf4f477"><td class="cell-title"><a href="PMMA_Abutment%20Crown%20bridge%20979cfb3e9058825292ab8114caf4f477.html">PMMA_Abutment Crown bridge</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="e8bcfb3e-9058-8383-947f-0192008db527"><td class="cell-title"><a href="PEEK_Abutment%20Crown%20bridge%20e8bcfb3e90588383947f0192008db527.html">PEEK_Abutment Crown bridge</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="761cfb3e-9058-833c-ab1f-81010e1033d8"><td class="cell-title"><a href="PEEK_Abutment%20Crown%20761cfb3e9058833cab1f81010e1033d8.html">PEEK_Abutment Crown</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="f4ccfb3e-9058-8365-9a6f-81e838263068"><td class="cell-title"><a href="PEEK_Crown%20SCRP%20Bridge_5x%20f4ccfb3e905883659a6f81e838263068.html">PEEK_Crown/SCRP Bridge_5x</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="eeacfb3e-9058-825c-b321-81f33ec28a2d"><td class="cell-title"><a href="PEEK_Crown%20SCRP_5x%20eeacfb3e9058825cb32181f33ec28a2d.html">PEEK_Crown/SCRP_5x</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="610cfb3e-9058-822e-9118-010fa3c03e8f"><td class="cell-title"><a href="PEEK_Over%20Structure%20610cfb3e9058822e9118010fa3c03e8f.html">PEEK_Over Structure</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="476cfb3e-9058-82b9-8ad1-0118bc6c69dc"><td class="cell-title"><a href="PEEK_Full%20denture%20476cfb3e905882b98ad10118bc6c69dc.html">PEEK_Full denture</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="bf6cfb3e-9058-825d-a9ac-81df20a1912a"><td class="cell-title"><a href="PEEK_denture%20Teeth%20bf6cfb3e9058825da9ac81df20a1912a.html">PEEK_denture Teeth</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="b1ecfb3e-9058-828b-82a7-01aa672a0f23"><td class="cell-title"><a href="PEEK_Flexible%20denture%20b1ecfb3e9058828b82a701aa672a0f23.html">PEEK_Flexible denture</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="32ccfb3e-9058-83e6-80c8-01d752943ccf"><td class="cell-title"><a href="PEEK_Partial%20Frame%2032ccfb3e905883e680c801d752943ccf.html">PEEK_Partial Frame</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr id="bd8cfb3e-9058-8267-93d2-8140ff99499d"><td class="cell-title"><a href="PMMA_Abutment%20crown_NCS%20(highnees)%20bd8cfb3e9058826793d28140ff99499d.html">PMMA_Abutment crown_NCS (highnees)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="afbcfb3e-9058-832e-a867-010e5c437135"><td class="cell-title"><a href="PMMA_Abutment%20crown%20afbcfb3e9058832ea867010e5c437135.html">PMMA_Abutment crown</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="77bcfb3e-9058-83af-a2fe-01a4ff24a3f9"><td class="cell-title"><a href="PMMA_Coping%20Crown_Bridge_(Fast%20mill)%2077bcfb3e905883afa2fe01a4ff24a3f9.html">PMMA_Coping/Crown_Bridge_(Fast mill)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="283cfb3e-9058-8208-9602-8138e1e6be8a"><td class="cell-title"><a href="PMMA_Crown%20bridge_SCRP_D0%206%20283cfb3e9058820896028138e1e6be8a.html">PMMA_Crown bridge_SCRP_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="bd0cfb3e-9058-8259-b61b-81b1ed1ca6bd"><td class="cell-title"><a href="PMMA_Coping%20Crown%20bridge_SCRP%20bd0cfb3e90588259b61b81b1ed1ca6bd.html">PMMA_Coping/Crown bridge_SCRP</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="fa1cfb3e-9058-82a4-b892-81054705a002"><td class="cell-title"><a href="PMMA_Coping%20Crown_(Fast%20mill)%20fa1cfb3e905882a4b89281054705a002.html">PMMA_Coping/Crown_(Fast mill)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="388cfb3e-9058-834b-bfcd-01461ba0647e"><td class="cell-title"><a href="PMMA_Crown_SCRP_D0%206%20388cfb3e9058834bbfcd01461ba0647e.html">PMMA_Crown_SCRP_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="de2cfb3e-9058-822d-a4e6-81c081c26803"><td class="cell-title"><a href="PMMA_Coping_Crown_SCRP%20de2cfb3e9058822da4e681c081c26803.html">PMMA_Coping_Crown_SCRP</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="cd9cfb3e-9058-82e9-8c06-015287921150"><td class="cell-title"><a href="PMMA_Over%20Structure%20cd9cfb3e905882e98c06015287921150.html">PMMA_Over Structure</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="beecfb3e-9058-8368-a2fd-01ff367ea469"><td class="cell-title"><a href="PMMA_Full%20denture%20beecfb3e90588368a2fd01ff367ea469.html">PMMA_Full denture</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="f24cfb3e-9058-83e2-bc27-0160b1956026"><td class="cell-title"><a href="PMMA_denture%20Teeth%20f24cfb3e905883e2bc270160b1956026.html">PMMA_denture Teeth</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="11fcfb3e-9058-8297-b3f7-013874a482fa"><td class="cell-title"><a href="PMMA_Flexble%20denture%2011fcfb3e90588297b3f7013874a482fa.html">PMMA_Flexble denture</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="aa5cfb3e-9058-8278-8ea7-012915f44471"><td class="cell-title"><a href="PMMA_Partial%20Frame%20aa5cfb3e905882788ea7012915f44471.html">PMMA_Partial Frame</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-purple">PMMA</span></td></tr><tr id="ce5cfb3e-9058-834b-ae9b-81ba5fa3a25d"><td class="cell-title"><a href="Hybrid%20Ceramic_Abutment%20Crown_NCS%20(highnees)%20ce5cfb3e9058834bae9b81ba5fa3a25d.html">Hybrid Ceramic_Abutment Crown_NCS
+  (highnees)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="f79cfb3e-9058-8286-9925-81a567754a1c"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Crown%20bridge_SCRP_5X_D0%206%20f79cfb3e90588286992581a567754a1c.html">Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="32fcfb3e-9058-8274-a770-01c22d8b07d7"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Crown%20bridge_SCRP_5X%2032fcfb3e90588274a77001c22d8b07d7.html">Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="255cfb3e-9058-8218-8656-0143fbfe51c8"><td class="cell-title"><a href="Hybrid%20Ceramic_Crown_SCRP_5X_D0%206%20255cfb3e9058821886560143fbfe51c8.html">Hybrid Ceramic_Crown_SCRP_5X_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="b8dcfb3e-9058-83b1-8369-81ecb12bbf3c"><td class="cell-title"><a href="Hybrid%20Ceramic_Crown_SCRP_5X%20b8dcfb3e905883b1836981ecb12bbf3c.html">Hybrid Ceramic_Crown_SCRP_5X</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="543cfb3e-9058-83fa-bcd7-01c2cb2d48f9"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_D0%206%20543cfb3e905883fabcd701c2cb2d48f9.html">Hybrid Ceramic_Inlay/Onlay_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="080cfb3e-9058-8341-9d8d-01798f815cfd"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay%20-Slow%20080cfb3e905883419d8d01798f815cfd.html">Hybrid Ceramic_Inlay/Onlay/ -Slow</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="f8acfb3e-9058-8230-b55d-01971659b581"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_1st%20-Cavity%20f8acfb3e90588230b55d01971659b581.html">Hybrid Ceramic_Inlay/Onlay_1st -Cavity</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="53dcfb3e-9058-82c1-a483-01dffc5be159"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_2nd%20-Occlusal%2053dcfb3e905882c1a48301dffc5be159.html">Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="adacfb3e-9058-8219-9f3d-01d7bb357a47"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_D0%206%20%5B+0%2005%5D%20adacfb3e905882199f3d01d7bb357a47.html">Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="9f6cfb3e-9058-8305-a206-81d2ad76b50a"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_1st%20-Cavity%20%5B+0%2005%5D%209f6cfb3e90588305a20681d2ad76b50a.html">Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="375cfb3e-9058-8087-9dff-f301695e1059"><td class="cell-title"><a href="%EC%A0%9C%EB%AA%A9%20%EC%97%86%EC%9D%8C%20375cfb3e905880879dfff301695e1059.html">제목 없음</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="20ecfb3e-9058-834c-bf9a-812d80ffa27c"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_2nd%20-Occlusal%20%5B+0%2005%5D%2020ecfb3e9058834cbf9a812d80ffa27c.html">Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal [+0.05]</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="bfdcfb3e-9058-82c5-a56b-012f44c6cb61"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_D0%206%20%5B+0%2008%5D%20bfdcfb3e905882c5a56b012f44c6cb61.html">Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="403cfb3e-9058-82e7-97c2-8128abda4f24"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_1st%20-Cavity%20%5B+0%2008%5D%20403cfb3e905882e797c28128abda4f24.html">Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="82acfb3e-9058-820f-bc7b-01340bc30b08"><td class="cell-title"><a href="Hybrid%20Ceramic_Inlay%20Onlay_2nd%20-Occlusal%20%5B+0%2008%5D%2082acfb3e9058820fbc7b01340bc30b08.html">Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal [+0.08]</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-gray">Hybrid Ceramic</span></td></tr><tr id="b63cfb3e-9058-83be-ba39-810f1fdcdc97"><td class="cell-title"><a href="Wax_Crown%20bridge_D0%206%20b63cfb3e905883beba39810f1fdcdc97.html">Wax_Crown bridge_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-green">Wax</span></td></tr><tr id="5a4cfb3e-9058-8318-bce1-01cabd9b7d6e"><td class="cell-title"><a href="Wax_Coping%20bridge%205a4cfb3e90588318bce101cabd9b7d6e.html">Wax_Coping bridge</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-green">Wax</span></td></tr><tr id="3d1cfb3e-9058-834c-b688-81e5226ecbe2"><td class="cell-title"><a href="WAX%20-%20Crown_D0%206%203d1cfb3e9058834cb68881e5226ecbe2.html">WAX - Crown_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-green">Wax</span></td></tr><tr id="cf9cfb3e-9058-82ee-a945-81af6994ac89"><td class="cell-title"><a href="WAX%20-%20Coping%20cf9cfb3e905882eea94581af6994ac89.html">WAX - Coping</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-green">Wax</span></td></tr><tr id="b7ecfb3e-9058-8364-995e-01343172cf8c"><td class="cell-title"><a href="Wax_Inlay%20Onlay%20-D0%206%20b7ecfb3e90588364995e01343172cf8c.html">Wax_Inlay/Onlay -D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-green">Wax</span></td></tr><tr id="f13cfb3e-9058-8238-9428-817fc2c0deb7"><td class="cell-title"><a href="Zirconia_Abutment%20Crown%20Bridge_NCS%20(B0%206)%20f13cfb3e905882389428817fc2c0deb7.html">Zirconia_Abutment Crown Bridge_NCS (B0.6)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="7f9cfb3e-9058-827f-8020-01578011e06f"><td class="cell-title"><a href="Zirconia_Abutment%20Crown%20Bridge_NCS%20(highnees)%207f9cfb3e9058827f802001578011e06f.html">Zirconia_Abutment Crown Bridge_NCS
+  (highnees)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="aefcfb3e-9058-83d4-9b70-81542977b201"><td class="cell-title"><a href="Zirconia_Abutment%20Crown%20Bridge_NCS%20(Megalink)%20aefcfb3e905883d49b7081542977b201.html">Zirconia_Abutment Crown Bridge_NCS  (Megalink)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="861cfb3e-9058-82d5-a1a2-81536db41d16"><td class="cell-title"><a href="Zirconia_Abutment%20crown%20bridge%20861cfb3e905882d5a1a281536db41d16.html">Zirconia_Abutment crown bridge</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="d3ccfb3e-9058-8317-b467-81823846a4fd"><td class="cell-title"><a href="Zirconia_Abutment%20Crown_NCS%20(B0%206)%20d3ccfb3e90588317b46781823846a4fd.html">Zirconia_Abutment Crown_NCS (B0.6)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="aa0cfb3e-9058-827f-878b-010455f4e986"><td class="cell-title"><a href="Zirconia_Abutment%20Crown_NCS%20(highnees)%20aa0cfb3e9058827f878b010455f4e986.html">Zirconia_Abutment Crown_NCS (highnees)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="838cfb3e-9058-8361-b8d4-01937b1ed5be"><td class="cell-title"><a href="Zirconia_Abutment%20Crown_NCS%20(Megalink)%20838cfb3e90588361b8d401937b1ed5be.html">Zirconia_Abutment Crown_NCS (Megalink)</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="c59cfb3e-9058-83aa-ba66-0112aef8c616"><td class="cell-title"><a href="Zirconia_Abutment%20crown%20c59cfb3e905883aaba660112aef8c616.html">Zirconia_Abutment crown</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="105cfb3e-9058-8273-b623-815dfb291f8f"><td class="cell-title"><a href="Zirconia_Over%20Structure%20105cfb3e90588273b623815dfb291f8f.html">Zirconia_Over Structure</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="87ccfb3e-9058-8378-a410-01a4a2157700"><td class="cell-title"><a href="Zirconia_Crown%20bridge_D0%206%2087ccfb3e90588378a41001a4a2157700.html">Zirconia_Crown bridge_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="1c8cfb3e-9058-8282-a8e5-0130c10d72fa"><td class="cell-title"><a href="Zirconia_Coping%20bridge%201c8cfb3e90588282a8e50130c10d72fa.html">Zirconia_Coping bridge</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="16dcfb3e-9058-821c-943c-016ad633ffe2"><td class="cell-title"><a href="Zirconia_Crown_D0%206%2016dcfb3e9058821c943c016ad633ffe2.html">Zirconia_Crown_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="1e0cfb3e-9058-8299-80fe-8120b1d75d1e"><td class="cell-title"><a href="Zirconia_Coping%201e0cfb3e9058829980fe8120b1d75d1e.html">Zirconia_Coping</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="60fcfb3e-9058-83d5-b7b5-011befb2ea79"><td class="cell-title"><a href="Zirconia_Inlay%20Onlay%20bridge_D0%206%2060fcfb3e905883d5b7b5011befb2ea79.html">Zirconia_Inlay/Onlay bridge_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr><tr id="3e5cfb3e-9058-831e-a3a0-810f08810010"><td class="cell-title"><a href="Zirconia_Inlay%20Onlay_D0%206%203e5cfb3e9058831ea3a0810f08810010.html">Zirconia_Inlay/Onlay_D0.6</a></td><td class="cell-f~hq"><span class="selected-value select-value-color-red">Zirconia</span></td></tr></tbody></table></div><br/><br/></div></div><div style="display:contents" dir="auto"><hr id="12bcfb3e-9058-837b-bf31-818e2e4baba4"/></div><div style="display:contents" dir="auto"><p id="cfbcfb3e-9058-8219-8e76-818ec4c10a5c" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

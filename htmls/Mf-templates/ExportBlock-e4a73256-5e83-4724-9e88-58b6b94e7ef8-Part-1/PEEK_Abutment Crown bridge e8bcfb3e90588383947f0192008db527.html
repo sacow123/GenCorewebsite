@@ -1,0 +1,759 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>PEEK_Abutment Crown bridge</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e8bcfb3e-9058-8383-947f-0192008db527" class="page sans"><header><h1 class="page-title" dir="auto">PEEK_Abutment Crown bridge</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Materials</th><td><span class="selected-value select-value-color-brown">PEEK</span></td></tr><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Part (Prosthesis)</th><td><span class="selected-value select-value-color-default">Abutment crown bridge</span></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><p id="e69cfb3e-9058-837e-a61c-01c7693ce983" class="">You can select this template,<div class="indented"><div style="display:contents" dir="auto"><ul id="b27cfb3e-9058-836e-9912-8107b25faa58" class="bulleted-list"><li style="list-style-type:disc">The part type is the <strong><span style="border-bottom:0.05em solid">Abutment crown bridge</span></strong></li></ul></div><div style="display:contents" dir="auto"><ul id="199cfb3e-9058-8299-975d-81b25d3a66be" class="bulleted-list"><li style="list-style-type:disc">The materials is <span style="border-bottom:0.05em solid">PEEK</span><strong><span style="border-bottom:0.05em solid"> Disc/Block</span></strong></li></ul></div><div style="display:contents" dir="auto"><ul id="245cfb3e-9058-83f7-b192-012eb5feaa68" class="bulleted-list"><li style="list-style-type:disc">Setting the <span style="border-bottom:0.05em solid">Abutment base</span> lines is mandatory.</li></ul></div><div style="display:contents" dir="auto"><ul id="ed2cfb3e-9058-8335-9d13-01c90ae82f26" class="bulleted-list"><li style="list-style-type:disc">The <span style="border-bottom:0.05em solid">Emergence</span> lines are optional, but it is recommended for better texture quality around interfaces.</li></ul></div><div style="display:contents" dir="auto"><ul id="cf2cfb3e-9058-8210-ab86-01e742174d3f" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid">0.6mm diameter</span> tool is <span style="border-bottom:0.05em solid">optional</span></li></ul></div></div></p></div><div style="display:contents" dir="auto"><p id="ac2cfb3e-9058-82e2-b4a8-01196a12c6cd" class="">
+</p></div><div style="display:contents" dir="auto"><p id="17ecfb3e-9058-8233-84b4-8137b67bb87c" class="">
+</p></div><div style="display:contents" dir="auto"><hr id="036cfb3e-9058-83ab-93eb-012220c8c1a8"/></div><div style="display:contents" dir="auto"><h3 id="27ecfb3e-9058-83cb-a385-816e1118482a" class="">Tools list used</h3></div><div style="display:contents" dir="ltr"><table id="fbacfb3e-9058-82f8-a9c2-8191fbc393ab" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="c01cfb3e-9058-8336-b1e9-012690cda342"><td id="d=[L" class="" style="width:105px">Tool pocket #</td><td id="^~v:" class="" style="width:92px">Tools</td><td id="?^:K" class="" style="width:369px">Comment</td></tr></div><div style="display:contents" dir="ltr"><tr id="726cfb3e-9058-83c0-ba92-01b565029c6a"><td id="d=[L" class="" style="width:105px">T38</td><td id="^~v:" class="" style="width:92px">M2.0B</td><td id="?^:K" class="" style="width:369px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="854cfb3e-9058-8285-8a1b-01b7fe15b383"><td id="d=[L" class="" style="width:105px">T39</td><td id="^~v:" class="" style="width:92px">M1.0B</td><td id="?^:K" class="" style="width:369px"></td></tr></div><div style="display:contents" dir="ltr"><tr id="fd0cfb3e-9058-8395-bca2-819a2b10607f"><td id="d=[L" class="" style="width:105px">T33</td><td id="^~v:" class="" style="width:92px">Z0.6B</td><td id="?^:K" class="" style="width:369px">Optional (UDA, Fissure machining)</td></tr></div><div style="display:contents" dir="ltr"><tr id="b9dcfb3e-9058-839b-8cdb-014f93864c7e"><td id="d=[L" class="" style="width:105px">T34</td><td id="^~v:" class="" style="width:92px">Z0.3B</td><td id="?^:K" class="" style="width:369px">Optional (UDA, Fissure machining)</td></tr></div><div style="display:contents" dir="ltr"><tr id="524cfb3e-9058-83d7-816f-812040721eb9"><td id="d=[L" class="" style="width:105px">T42</td><td id="^~v:" class="" style="width:92px">M1.5FL</td><td id="?^:K" class="" style="width:369px">Screw Channel (SC) machining</td></tr></div><div style="display:contents" dir="ltr"><tr id="f2bcfb3e-9058-8318-927e-818087bde02c"><td id="d=[L" class="" style="width:105px">T43</td><td id="^~v:" class="" style="width:92px">M1.0F</td><td id="?^:K" class="" style="width:369px">Optional, Interface machining</td></tr></div><div style="display:contents" dir="ltr"><tr id="37bcfb3e-9058-8338-b11b-01db06ad5dac"><td id="d=[L" class="" style="width:105px">T44</td><td id="^~v:" class="" style="width:92px">M1.5R</td><td id="?^:K" class="" style="width:369px">Optional, Interface machining</td></tr></div><div style="display:contents" dir="ltr"><tr id="60ccfb3e-9058-830b-99ce-81ae7c8de9b3"><td id="d=[L" class="" style="width:105px">T45</td><td id="^~v:" class="" style="width:92px">M1.6T</td><td id="?^:K" class="" style="width:369px">Optional, When it is applied Angled screw hole.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="2efcfb3e-9058-83d1-9989-018e0d19016a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="afacfb3e-9058-82f6-9aac-01e9165493b0" class="">
+</p></div><div style="display:contents" dir="auto"><hr id="badcfb3e-9058-8234-8c3a-816a6d0856c2"/></div><div style="display:contents" dir="auto"><h3 id="459cfb3e-9058-82b5-a86d-8159409da151" class="">User-defined area(UDA) availble</h3></div><div style="display:contents" dir="auto"><div id="411cfb3e-9058-839f-b5fb-81e9aeade326" class="column-list"><div style="display:contents" dir="auto"><div id="aefcfb3e-9058-83fa-9df4-01ed0a998960" style="width:50%" class="column"><div style="display:contents" dir="auto"><ul id="4edcfb3e-9058-8359-b51f-01c0fd3ea350" class="bulleted-list"><li style="list-style-type:disc">Category 1 : T39-M1.0B</li></ul></div><div style="display:contents" dir="auto"><ul id="c81cfb3e-9058-82d8-a22d-811a5228c8f5" class="bulleted-list"><li style="list-style-type:disc">Category 3 : T39-M1.0B, T33-Z0.6B</li></ul></div><div style="display:contents" dir="auto"><ul id="bddcfb3e-9058-8239-99a4-017a7c5d4f6e" class="bulleted-list"><li style="list-style-type:disc">Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B</li></ul></div></div></div><div style="display:contents" dir="auto"><div id="f50cfb3e-9058-82e0-888a-01f842c10f8b" style="width:50%" class="column"><div style="display:contents" dir="auto"><ul id="9c9cfb3e-9058-8353-8453-015a51db9207" class="bulleted-list"><li style="list-style-type:disc">Category 2 : T39-M1.0B</li></ul></div><div style="display:contents" dir="auto"><ul id="abccfb3e-9058-82ce-9694-015be5ed2c4e" class="bulleted-list"><li style="list-style-type:disc">Category 4 : T39-M1.0B, T33-Z0.6B</li></ul></div><div style="display:contents" dir="auto"><ul id="0d7cfb3e-9058-83d9-ac68-011695e811e3" class="bulleted-list"><li style="list-style-type:disc">Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B</li></ul></div></div></div></div></div><div style="display:contents" dir="auto"><p id="096cfb3e-9058-83f0-99bc-8139aa2f966d" class="">
+</p></div><div style="display:contents" dir="auto"><hr id="7e5cfb3e-9058-8243-a9d2-01e60dcdb97c"/></div><div style="display:contents" dir="auto"><h3 id="e9fcfb3e-9058-8294-8241-81d63106b61c" class="">Overwritable processes</h3></div><div style="display:contents" dir="auto"><p id="e46cfb3e-9058-8285-a6aa-01d83b4ddcfc" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="d03cfb3e-9058-8299-8846-81ca87a732bd" class="bulleted-list"><li style="list-style-type:disc">Finishing inside copings [M1.0B_L15] 5x<div style="display:contents" dir="auto"><p id="4dccfb3e-9058-8359-b20c-01921dc7aeb2" class="">Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool</p></div><div style="display:contents" dir="auto"><ul id="88fcfb3e-9058-8356-a000-013260f2b2bf" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: On)</li></ul></div><div style="display:contents" dir="auto"><ul id="27bcfb3e-9058-8385-b39f-81effede1f27" class="bulleted-list"><li style="list-style-type:circle">Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.06 ~ 0.06)</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="6e3cfb3e-9058-827e-8407-016fe9ae21f4" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="5bfcfb3e-9058-8328-a9c2-01a9f1e6e4fe" class="bulleted-list"><li style="list-style-type:disc">Finishing inside copings [M1.0B_L15] 3+2<div style="display:contents" dir="auto"><p id="629cfb3e-9058-82b0-b769-81d77cdc488e" class="">Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool</p></div><div style="display:contents" dir="auto"><ul id="bfbcfb3e-9058-820a-a0f9-81871e33fcbb" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: Off)</li></ul></div><div style="display:contents" dir="auto"><ul id="fe6cfb3e-9058-83fa-a7a7-01c0e554a47a" class="bulleted-list"><li style="list-style-type:circle">Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.06 ~ 0.06)</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="1b5cfb3e-9058-82a7-b23f-01f9d770132a" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="291cfb3e-9058-8241-87c2-8104d65c9bfd" class="bulleted-list"><li style="list-style-type:disc">Finishing inside abutment bases [M1.0B_L15]_3+2<div style="display:contents" dir="auto"><p id="eadcfb3e-9058-82b3-8a08-016aae12224f" class="">Finishing process inside abutments with 1.0mm diameter tool</p></div></li></ul></div><div style="display:contents" dir="auto"><ul id="329cfb3e-9058-82d9-9a3c-81a99afbb6e6" class="bulleted-list"><li style="list-style-type:disc">Add. Allowance XY: Available to adjust the fit inside abutments</li></ul></div><div style="display:contents" dir="auto"><p id="7e9cfb3e-9058-8268-b4ff-81938eeeb9e5" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="d9fcfb3e-9058-837c-97ac-01a14184335e" class="bulleted-list"><li style="list-style-type:disc">Fissure machining [M1.0B_L15]<div style="display:contents" dir="auto"><p id="a71cfb3e-9058-8376-8082-81092149f9ac" class="">Occlusal groove machining process with 1.0mm diameter tool</p></div><div style="display:contents" dir="auto"><ul id="a34cfb3e-9058-8241-b898-8109a9893342" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: On)</li></ul></div><div style="display:contents" dir="auto"><p id="cc0cfb3e-9058-8291-87cc-01d5c8c7e11d" class="">
+</p></div></li></ul></div><div style="display:contents" dir="auto"><ul id="f0ecfb3e-9058-82ee-8922-81026c94348b" class="bulleted-list"><li style="list-style-type:disc">Finishing inside abutment bases [M1.5R_L07]<div style="display:contents" dir="auto"><p id="8f9cfb3e-9058-833a-a4d4-81073c7cc8f2" class="">Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool</p></div><div style="display:contents" dir="auto"><ul id="644cfb3e-9058-830b-9e6c-018c029db238" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: Off)</li></ul></div><div style="display:contents" dir="auto"><ul id="be2cfb3e-9058-8270-9b5f-8190cb74a752" class="bulleted-list"><li style="list-style-type:circle">Add. Allowance XY: Available to adjust the fit inside abutments</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="c8bcfb3e-9058-83f0-b3b5-01378282439d" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="78dcfb3e-9058-8297-8353-816b3c9cc757" class="bulleted-list"><li style="list-style-type:disc">Finishing inside abutment bases [M1.0F_L06]_highness<div style="display:contents" dir="auto"><p id="31acfb3e-9058-82aa-bcc8-811ad3c2edaa" class="">Finishing process inside abutments with 1.0mm diameter FLAT tool</p></div><div style="display:contents" dir="auto"><ul id="b26cfb3e-9058-8397-8e88-81f8b59329c9" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: Off)</li></ul></div><div style="display:contents" dir="auto"><ul id="221cfb3e-9058-8311-954a-81b147ac93da" class="bulleted-list"><li style="list-style-type:circle">Add. Allowance XY: Available to adjust the fit inside abutments</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="a3bcfb3e-9058-822a-afa2-818a996d0f4c" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="72bcfb3e-9058-82fe-8423-81622187d208" class="bulleted-list"><li style="list-style-type:disc">Finishing inside abutment bases [Z0.6BX05]<div style="display:contents" dir="auto"><p id="162cfb3e-9058-839e-bfaf-010010742e9c" class="">Finishing process inside abutments with 0.6mm diameter tool</p></div><div style="display:contents" dir="auto"><ul id="c2fcfb3e-9058-836a-b032-8110e7d17b74" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: Off)</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="c06cfb3e-9058-836c-bb7d-81c1ae53f8d7" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="c93cfb3e-9058-8373-ae67-01df769f29f0" class="bulleted-list"><li style="list-style-type:disc">Finishing inside copings [Z0.6X05]<div style="display:contents" dir="auto"><p id="32dcfb3e-9058-82c3-a58f-01812a890308" class="">Finishing process inside crowns/copings with 0.6mm diameter tool</p></div><div style="display:contents" dir="auto"><ul id="426cfb3e-9058-833e-9544-01eb05a204f2" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: Off)</li></ul></div><div style="display:contents" dir="auto"><ul id="7adcfb3e-9058-83aa-b36a-016e5975509c" class="bulleted-list"><li style="list-style-type:circle">Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.06 ~ 0.06)</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="cc6cfb3e-9058-8261-b10c-011ff7654ea5" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="171cfb3e-9058-8399-86ee-01cd432fb2d0" class="bulleted-list"><li style="list-style-type:disc">Fissure machining [Z0.6BX05]<div style="display:contents" dir="auto"><p id="58dcfb3e-9058-837b-bb03-01203a626a94" class="">Occlusal groove machining process with 0.6mm diameter tool</p></div><div style="display:contents" dir="auto"><ul id="5a3cfb3e-9058-82f9-9355-0106ec05e697" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: Off)</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="b0ccfb3e-9058-83b9-a5ee-01afe345f294" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="95ecfb3e-9058-8323-ade2-011b05e95298" class="bulleted-list"><li style="list-style-type:disc">Fissure machining [Z0.3BX03] (PMMA)<div style="display:contents" dir="auto"><p id="3b0cfb3e-9058-830b-a2c8-81addcf3269b" class="">Occlusal groove machining process with 0.3mm diameter tool</p></div><div style="display:contents" dir="auto"><ul id="7c1cfb3e-9058-82c6-baa8-818a2135411c" class="bulleted-list"><li style="list-style-type:circle">Calculate : Selectable operate this process or skip, (Default: Off)</li></ul></div><div style="display:contents" dir="auto"><p id="737cfb3e-9058-8229-881d-01eff3eaaf2d" class="">
+</p></div></li></ul></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

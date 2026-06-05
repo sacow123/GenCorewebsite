@@ -1,0 +1,784 @@
+--- WAX/ZIRCONIA ---
+  "WAX - Coping": `
+WAX - Coping
+WAX - Coping
+MaterialsWax	Part (Prosthesis)Coping
+You can select this template,
+The part type is the Coping
+The materials is Wax Disc
+Setting the Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	Optional (UDA, Fissure machining)	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Overwritable processes
+General settings
+Incremental Boundary offset
+Incremental Boundary angle
+Increase these parameters when you get the boundary error during calculation!
+Finishing inside copings D1 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.1 ~ 0.1)
+Boundary offset / Boundary angle
+Finishing inside copings D1 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.1 ~ 0.1)
+Fissure machining D1
+Occlusal groove machining process with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Finishing inside copings [M1.5FL_L15]
+Finishing process inside abutments with 1.5mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments (Range: -0.1 ~ 0.1)
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "WAX - Crown_D0 6": `
+WAX - Crown_D0 6
+WAX - Crown_D0.6
+MaterialsWax	Part (Prosthesis)Crown
+You can select this template,
+The part type is the Crown
+The materials is Wax Disc
+Setting the Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Overwritable processes
+General settings
+Incremental Boundary offset
+Incremental Boundary angle
+Increase these parameters when you get the boundary error during calculation!
+Finishing inside copings D1 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.1 ~ 0.1)
+Boundary offset / Boundary angle
+Finishing inside copings D1 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.1 ~ 0.1)
+Finishing inside copings FE1.5
+Finishing process inside abutments with 1.5mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments (Range: -0.1 ~ 0.1)
+Fissure machining D0.6
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+`,
+  "Wax_Coping bridge": `
+Wax_Coping bridge
+Wax_Coping bridge
+MaterialsWax	Part (Prosthesis)Coping bridge
+You can select this template,
+The part type is the Coping bridge
+The materials is Wax Disc
+Setting the Coping lines is mandatory
+0.6mm diameter tool is optional
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	Optional (UDA, Fissure machining)	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Overwritable processes
+General settings
+Incremental Boundary offset
+Incremental Boundary angle
+Increase these parameters when you get the boundary error during calculation!
+Finishing inside copings [M1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.1 ~ 0.1)
+Boundary offset / Boundary angle
+Finishing inside copings [M1.0B_L15] 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.1 ~ 0.1)
+Finishing inside copings [M1.5FL_L15]
+Finishing process inside abutments with 1.5mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments (Range: -0.1 ~ 0.1)
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Wax_Crown bridge_D0 6": `
+Wax_Crown bridge_D0 6
+Wax_Crown bridge_D0.6
+MaterialsWax	Part (Prosthesis)Crown bridgeInlay/Crown bridge
+You can select this template,
+The part type is the Crown bridge / Inaly/Crown bridge
+The materials is Wax Disc
+Setting the Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Overwritable processes
+General settings
+Incremental Boundary offset
+Incremental Boundary angle
+Increase these parameters when you get the boundary error during calculation!
+Finishing inside copings [M1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.06 ~ 0.06)
+Boundary offset / Boundary angle
+Finishing inside copings [M1.0B_L15] 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings (Range: -0.06 ~ 0.06)
+Finishing inside copings [M1.5FL_L15]
+Finishing process inside abutments with 1.5mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments (Range: -0.06 ~ 0.06)
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+`,
+  "Wax_Inlay Onlay -D0 6": `
+Wax_Inlay Onlay -D0 6
+Wax_Inlay/Onlay -D0.6
+MaterialsWax	Part (Prosthesis)Inlay/Onlay
+You can select this template,
+The part type is the Inlay/Onlay
+The materials is Wax Disc
+Setting the Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	Optional (UDA, Fissure machining)	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Overwritable processes
+General settings
+Incremental Boundary offset
+Incremental Boundary angle
+Increase these parameters when you get the boundary error during calculation!
+Finishing inside inlays/onlays D1 -180
+Finishing process inside inlays/onlays with 1.0mm diameter tool
+Allowance : Available to adjust the fit inside of inlays/onlays (Range: -0.1 ~ 0.1)
+Boundary offset / Boundary angle
+Fissure machining D0.6
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Overall restmachining cavity side D0.6 -180
+Finishing process whole cavity side including inside inlays/onlays with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+`,
+  "Zirconia_Abutment crown bridge": `
+Zirconia_Abutment crown bridge
+Zirconia_Abutment crown bridge
+MaterialsZirconia	Part (Prosthesis)Abutment crown bridge
+You can select this template,
+The part type is the Abutment crown bridge
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T42	M1.5FL	Screw Channel (SC) machining	T43	M1.0F	Optional, Interface machining	T44	M1.5R	Optional, Interface machining	T45	M1.6T	Optional, When it is applied Angled screw hole.	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside copings [Z1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside abutment bases [Z1.0B_L15]
+Finishing process inside abutments with 1.0mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5R_L07]
+Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.0F_L06]_highness
+Finishing process inside abutments with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]
+Finishing process inside abutments with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Abutment Crown Bridge_NCS (B0 6)": `
+Zirconia_Abutment Crown Bridge_NCS (B0 6)
+Zirconia_Abutment Crown Bridge_NCS (B0.6)
+MaterialsZirconia	Part (Prosthesis)Abutment crown bridge
+You can select this template,
+The part type is the Abutment crown bridge that needs to 0.6mm diameter ball end mill tool machining for the interface.
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T42	M1.5FL	Screw Channel (SC) machining	T43	M1.0F	Optional, Interface machining	T44	M1.5R	Optional, Interface machining	T45	M1.6T	Optional, When it is applied Angled screw hole.	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside copings [Z1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside abutment bases [Z1.0B_L15]
+Finishing process inside abutments with 1.0mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5R_L07]
+Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.0F_L06]_highness
+Finishing process inside abutments with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]
+Finishing process inside abutments with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Abutment Crown Bridge_NCS (highnees)": `
+Zirconia_Abutment Crown Bridge_NCS (highnees)
+Zirconia_Abutment Crown Bridge_NCS  (highnees)
+MaterialsZirconia	Part (Prosthesis)Abutment crown bridge
+You can select this template,
+The part type is the Abutment crown bridge that is applied the Highness system Interface
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T42	M1.5FL	Screw Channel (SC) machining	T43	M1.0F	Interface machining	T44	M1.5R	Optional, Interface machining	T45	M1.6T	Optional, When it is applied Angled screw hole.	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside copings [Z1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside abutment bases [Z1.0B_L15]
+Finishing process inside abutments with 1.0mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5R_L07]
+Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.0F_L06]_highness
+Finishing process inside abutments with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]
+Finishing process inside abutments with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Abutment Crown Bridge_NCS (Megalink)": `
+Zirconia_Abutment Crown Bridge_NCS (Megalink)
+Zirconia_Abutment Crown Bridge_NCS  (Megalink)
+MaterialsZirconia	Part (Prosthesis)Abutment crown bridge
+You can select this template,
+The part type is the Abutment crown bridge that is applied the Megalink system Interface
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T42	M1.5FL	Screw Channel (SC) machining, Interface machining	T43	M1.0F	Optional, Interface machining	T44	M1.5R	Optional, Interface machining	T45	M1.6T	Optional, When it is applied Angled screw hole.	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside copings [Z1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside abutment bases [Z1.0B_L15]
+Finishing process inside abutments with 1.0mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5R_L07]
+Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.0F_L06]_highness
+Finishing process inside abutments with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5FL_L15]_Megalink
+Finishing process inside abutments with 1.5mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]_Megalink
+Finishing process inside abutments with 0.6mm diameter tool
+Allowance: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]
+Finishing process inside abutments with 0.6mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Abutment crown": `
+Zirconia_Abutment crown
+Zirconia_Abutment crown
+MaterialsZirconia	Part (Prosthesis)Abutment crown
+You can select this template,
+The part type is the Abutment crown
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T42	M1.5FL	Screw Channel (SC) machining	T43	M1.0F	Optional, Interface machining	T44	M1.5R	Optional, Interface machining	T45	M1.6T	Optional, When it is applied Angled screw hole.	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside abutment bases [Z1.0B_L15]
+Finishing process inside abutments with 1.0mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5R_L07]
+Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.0F_L06]_highness
+Finishing process inside abutments with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]
+Finishing process inside abutments with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Abutment Crown_NCS (B0 6)": `
+Zirconia_Abutment Crown_NCS (B0 6)
+Zirconia_Abutment Crown_NCS (B0.6)
+MaterialsZirconia	Part (Prosthesis)Abutment crown
+You can select this template,
+The part type is the Abutment crown that needs to 0.6mm diameter ball end mill tool machining for the interface.
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T42	M1.5FL	Screw Channel (SC) machining	T43	M1.0F	Optional, Interface machining	T44	M1.5R	Optional, Interface machining	T45	M1.6T	Optional, When it is applied Angled screw hole.	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside abutment bases [Z1.0B_L15]
+Finishing process inside abutments with 1.0mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5R_L07]
+Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.0F_L06]_highness
+Finishing process inside abutments with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]
+Finishing process inside abutments with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Abutment Crown_NCS (highnees)": `
+Zirconia_Abutment Crown_NCS (highnees)
+Zirconia_Abutment Crown_NCS (highnees)
+MaterialsZirconia	Part (Prosthesis)Abutment crown
+You can select this template,
+The part type is the Abutment crown that is applied the Highness system Interface
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T42	M1.5FL	Screw Channel (SC) machining	T43	M1.0F	Interface machining	T44	M1.5R	Optional, Interface machining	T45	M1.6T	Optional, When it is applied Angled screw hole.	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside abutment bases [Z1.0B_L15]
+Finishing process inside abutments with 1.0mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5R_L07]
+Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.0F_L06]_highness
+Finishing process inside abutments with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]
+Finishing process inside abutments with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Abutment Crown_NCS (Megalink)": `
+Zirconia_Abutment Crown_NCS (Megalink)
+Zirconia_Abutment Crown_NCS (Megalink)
+MaterialsZirconia	Part (Prosthesis)Abutment crown
+You can select this template,
+The part type is the Abutment crown that is applied the Megalink system Interface
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T42	M1.5FL	Screw Channel (SC) machining, Interface machining	T43	M1.0F	Optional, Interface machining	T44	M1.5R	Optional, Interface machining	T45	M1.6T	Optional, When it is applied Angled screw hole.	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside abutment bases [Z1.0B_L15]
+Finishing process inside abutments with 1.0mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5R_L07]
+Finishing process inside abutments with 1.5mm diameter CORNERS ROUND tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.0F_L06]_highness
+Finishing process inside abutments with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [M1.5FL_L15]_Megalink
+Finishing process inside abutments with 1.5mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Add. Allowance XY: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]_Megalink
+Finishing process inside abutments with 0.6mm diameter tool
+Allowance: Available to adjust the fit inside abutments
+Finishing inside abutment bases [Z0.6BX05]
+Finishing process inside abutments with 0.6mm diameter tool
+Add. Allowance XY: Available to adjust the fit inside abutments
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Coping": `
+Zirconia_Coping
+Zirconia_Coping
+MaterialsZirconia	Part (Prosthesis)Coping
+You can select this template,
+The part type is the Coping
+The materials is Zirconia Disc/Block
+Setting the Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T38	M2.0B	T39	M1.0B	T33	Z0.6B	Optional (UDA, Fissure machining)	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside copings [M1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside copings [M1.0B_L15] 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside copings [M1.0F_L06]
+Finishing process inside copings/crowns with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Finishing inside copings [M0.6BX05]
+Finishing process inside copings/crowns with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Coping bridge": `
+Zirconia_Coping bridge
+Zirconia_Coping bridge
+MaterialsZirconia	Part (Prosthesis)Coping bridge
+You can select this template,
+The part type is the Coping bridge
+The materials is Zirconia Disc/Block
+Setting the Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T38	M2.0B	T39	M1.0B	T33	Z0.6B	Optional (UDA, Fissure machining)	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+General settings
+Incremental Boundary offset
+Increase these parameters when you get the boundary error during calculation!
+Finishing inside copings [M1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings
+Boundary offset / Boundary angle
+Finishing inside copings [M1.0B_L15] 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside long cavities [Z1.0B_L15] 8X
+Finishing process inside long cavities by separating to around 8 areas that which have a path of insertion each
+Calculate : Selectable operate this process or skip, (Default: Off)
+Finishing inside long cavities [Z1.0B_L15] 3+2X
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Finishing inside copings [M1.0F_L06]
+Finishing process inside copings/crowns with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Finishing inside copings [M0.6BX05]
+Finishing process inside copings/crowns with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Crown bridge_D0 6": `
+Zirconia_Crown bridge_D0 6
+Zirconia_Crown bridge_D0.6
+MaterialsZirconia	Part (Prosthesis)Crown bridge
+You can select this template,
+The part type is the Crown bridge
+The materials is Zirconia Disc/Block
+Setting the Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T38	M2.0B	T39	M1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+General settings
+Incremental Boundary offset
+Increase these parameters when you get the boundary error during calculation!
+Finishing inside copings [M1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings
+Boundary offset / Boundary angle
+Finishing inside copings [M1.0B_L15] 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside long cavities [Z1.0B_L15] 8X
+Finishing process inside long cavities by separating to around 8 areas that which have a path of insertion each
+Calculate : Selectable operate this process or skip, (Default: Off)
+Finishing inside long cavities [Z1.0B_L15] 3+2X
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Finishing inside copings [M1.0F_L06]
+Finishing process inside copings/crowns with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Finishing inside copings [M0.6BX05]
+Finishing process inside copings/crowns with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Crown_D0 6": `
+Zirconia_Crown_D0 6
+Zirconia_Crown_D0.6
+MaterialsZirconia	Part (Prosthesis)Crown
+You can select this template,
+The part type is the Crown
+The materials is Zirconia Disc/Block
+Setting the Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T38	M2.0B	T39	M1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside copings [M1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside copings [M1.0B_L15] 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside copings [M1.0F_L06]
+Finishing process inside copings/crowns with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Finishing inside copings [M0.6BX05]
+Finishing process inside copings/crowns with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Inlay Onlay bridge_D0 6": `
+Zirconia_Inlay Onlay bridge_D0 6
+Zirconia_Inlay/Onlay bridge_D0.6
+MaterialsZirconia	Part (Prosthesis)Inlay/Crown bridge
+You can select this template,
+The part type is the Inlay/Onlay bridge or Inlay/Crown bridge (* Inlay/Onlay crown bridge is the bridge that consists of both inlays and crowns together)
+The materials is Zirconia Disc/Block
+Setting the Inlay/Onlay or Coping lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T38	M2.0B	T39	M1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Overwritable processes
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Inlay Onlay_D0 6": `
+Zirconia_Inlay Onlay_D0 6
+Zirconia_Inlay/Onlay_D0.6
+MaterialsZirconia	Part (Prosthesis)Inlay/Onlay
+You can select this template,
+The part type is the Inlay/Onlay
+The materials is Zirconia Disc/Block
+Setting the Inlay/Onlay lines is mandatory
+Tools list used
+Tool pocket #	Tools	Comment	T38	M2.0B	T39	M1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional (Inside finishing)	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+Finishing inside copings [M1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Allowance : Available to adjust the fit inside of crowns/copings
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,
+  "Zirconia_Over Structure": `
+Zirconia_Over Structure
+Zirconia_Over Structure
+MaterialsZirconia	Part (Prosthesis)Over structure
+You can select this template,
+The part type is the Over Structure
+The materials is Zirconia Disc/Block
+Setting the Abutment base lines is mandatory.
+The Emergence lines are optional, but it is recommended for better texture quality around interfaces.
+Tools list used
+Tool pocket #	Tools	Comment	T31	Z2.0B	T32	Z1.0B	T33	Z0.6B	T34	Z0.3B	Optional (UDA, Fissure machining)	T43	M1.0F	Optional, Inside machining	User-defined area(UDA) availble
+Category 1 : T39-M1.0B
+Category 3 : T39-M1.0B, T33-Z0.6B
+Category 5 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Category 2 : T39-M1.0B
+Category 4 : T39-M1.0B, T33-Z0.6B
+Category 6 : T39-M1.0B, T33-Z0.6B, T34-Z0.3B
+Overwritable processes
+General settings
+Incremental Boundary offset
+Increase these parameters when you get the boundary error during calculation!
+Finishing inside copings [Z1.0B_L15] 5x
+Finishing process inside crowns/copings by simultaneous 5-axis movement with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings
+Boundary offset / Boundary angle
+Finishing inside copings [M1.0B_L15] 3+2
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Allowance : Available to adjust the fit inside of crowns/copings
+Finishing inside long cavities [Z1.0B_L15] 8X
+Finishing process inside long cavities by separating to around 8 areas that which have a path of insertion each
+Calculate : Selectable operate this process or skip, (Default: On)
+Finishing inside long cavities [Z1.0B_L15] 3+2X
+Finishing process inside crowns/copings by the path of insertion that was set with 1.0mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Finishing inside copings [M1.0F_L06]
+Finishing process inside copings/crowns with 1.0mm diameter FLAT tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Finishing inside copings [Z0.6BX05]
+Finishing process inside copings/crowns with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+Add. Allowance XY: Available to adjust the fit inside copings/crowns
+Fissure machining [Z0.6BX05]
+Occlusal groove machining process with 0.6mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: On)
+Fissure machining [Z0.3BX03] (PMMA)
+Occlusal groove machining process with 0.3mm diameter tool
+Calculate : Selectable operate this process or skip, (Default: Off)
+`,

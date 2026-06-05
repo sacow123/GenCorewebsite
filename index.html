@@ -312,7 +312,7 @@
                     <div class="sub-menu">
                       <div class="nav-item" data-section="sec-mf-hd-dbconfig" id="menu-sec-mf-hd-dbconfig"><span data-i18n="nav-mf-hd-dbconfig">데이터베이스(Dbconfig)</span></div>
                       <div class="nav-item" data-section="sec-mf-hd-fixture" id="menu-sec-mf-hd-fixture"><span data-i18n="nav-mf-hd-fixture">픽스처(Fixture)</span></div>
-                      <div class="nav-item" data-section="sec-mf-hd-postprocessor" id="menu-sec-mf-hd-postprocessor"><span data-i18n="nav-mf-hd-postprocessor">포스트프로세서(Postprocessor)</span></div>
+
                     </div>
                   </div>
                   <div class="nav-item" data-section="sec-mf-hd-features" id="menu-sec-mf-hd-features"><span
@@ -619,7 +619,23 @@
         </div>
         <p class="subtitle">M AIº hyperDENT</p>
         <div class="content-card">
-          <p>콘텐츠가 추가될 예정입니다.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px;">
+
+            <!-- Feature 1 -->
+            <div class="feature-card" data-feature-key="block-type-materials"
+              style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px;">
+              <div style="font-size:32px; flex-shrink:0;">📦</div>
+              <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5;">블록 소재 추가 방법</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card" data-feature-key="edit-nc-file"
+              style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px;">
+              <div style="font-size:32px; flex-shrink:0;">✂️</div>
+              <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5;">NC 파일 편집하는 법</p>
+            </div>
+
+          </div>
         </div>
       </section>
       <!-- M AIº 유지 보수 -->
@@ -3880,12 +3896,6 @@
             </div>
 
             <button class="mf-hotspot"
-              style="left: 2%; top: 2%; width: 25%; height: 8%; border-radius: 8px;"></button>
-            <div class="mf-callout" style="left: 2%; top: 12%; min-width: 250px;">
-              <span class="title">공구 리스트 페이지로 돌아가기</span>
-            </div>
-
-            <button class="mf-hotspot"
               style="left: 3.2%; top: 17.8%; width: 10.1%; height: 61.2%; border-radius: 22px;"></button>
             <div class="mf-callout" style="left: 22%; top: 50%; min-width: 400px;">
               <span class="title">공구 사용 시간</span>
@@ -4393,20 +4403,33 @@
         </div>
         <p class="subtitle">MillFix hyperDENT</p>
         <div class="content-card">
-          <p>콘텐츠가 추가될 예정입니다.</p>
+
+          <h3>List of Fixtures (Jigs)</h3>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 20px;">
+
+            <!-- MillFix-Disk -->
+            <div style="background: var(--bg-color, #ffffff); border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+              <h4 style="margin: 0 0 6px 0; color: #1f2937; font-size: 20px;">MillFix-Disk</h4>
+              <p style="margin: 0 0 16px 0; color: var(--text-muted, #6b7280); font-size: 21px;">디스크 밀링용</p>
+              <img loading="lazy" src="images/sec-mf-Fixture/fix_MillFix-Disk.webp" alt="MillFix-Disk fixture" style="width: 100%; border-radius: 8px; object-fit: contain;">
+              <img loading="lazy" src="images/sec-mf-Fixture/disc.webp" alt="MillFix-Disk disc" style="width: 100%; border-radius: 8px; object-fit: contain; margin-top: 12px;">
+            </div>
+
+            <!-- MillFix-Block -->
+            <div style="background: var(--bg-color, #ffffff); border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+              <h4 style="margin: 0 0 6px 0; color: #1f2937; font-size: 20px;">MillFix-Block</h4>
+              <p style="margin: 0 0 16px 0; color: var(--text-muted, #6b7280); font-size: 21px;">블록 밀링용</p>
+              <img loading="lazy" src="images/sec-mf-Fixture/fix_MillFix-block.webp" alt="MillFix-Block fixture" style="width: 100%; border-radius: 8px; object-fit: contain;">
+              <img loading="lazy" src="images/sec-mf-Fixture/block.webp" alt="MillFix-Block block" style="width: 100%; border-radius: 8px; object-fit: contain; margin-top: 12px;">
+            </div>
+
+          </div>
+
         </div>
       </section>
 
-      <section id="sec-mf-hd-postprocessor" class="content-section">
-        <h2 data-i18n="nav-mf-hd-postprocessor">포스트프로세서(Postprocessor)</h2>
-        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-mf-hd-postprocessor" style="color:#a855f7; text-decoration:none;">#sec-mf-hd-postprocessor</a>
-        </div>
-        <p class="subtitle">MillFix hyperDENT</p>
-        <div class="content-card">
-          <p>콘텐츠가 추가될 예정입니다.</p>
-        </div>
-      </section>
+
       <section id="sec-mf-hd-features" class="content-section">
         <h2 data-i18n="nav-mf-hd-features">💡 사용 방법(features)</h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
@@ -4414,7 +4437,23 @@
         </div>
         <p class="subtitle">MillFix hyperDENT</p>
         <div class="content-card">
-          <p>콘텐츠가 추가될 예정입니다.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px;">
+
+            <!-- Feature 1 -->
+            <div class="feature-card" data-feature-key="block-type-materials"
+              style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px;">
+              <div style="font-size:32px; flex-shrink:0;">📦</div>
+              <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5;">블록 소재 추가 방법</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card" data-feature-key="edit-nc-file"
+              style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px;">
+              <div style="font-size:32px; flex-shrink:0;">✂️</div>
+              <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5;">NC 파일 편집하는 법</p>
+            </div>
+
+          </div>
         </div>
       </section>
       <!-- MillFix 유지 보수 -->
@@ -4598,48 +4637,59 @@
               // Remove frontmatter robustly
               let startIdx = 0;
               for (let i = 0; i < lines.length; i++) {
-                // If it hits "Add a property", we know the real content starts shortly after
-                if (lines[i] === 'Add a property') {
-                  startIdx = i + 1;
-                  // Skip garbage lines directly after 'Add a property' like '댓글' or '??'
-                  while (startIdx < lines.length && (
-                    lines[startIdx] === '댓글' || 
-                    lines[startIdx].includes('??') || 
-                    lines[startIdx] === '볤'
-                  )) {
-                    startIdx++;
-                  }
+                if (lines[i].includes('템플릿을 사용하기 위한 조건') || lines[i].includes('The conditions for selecting') || lines[i].includes('조정 가능한 항목들') || lines[i].includes('Overwritable processes')) {
+                  startIdx = i;
                   break;
                 }
               }
               
               if (startIdx > 0 && startIdx < lines.length) {
-                // Slice everything before and including the garbage
+                // Slice everything before the condition block
                 lines = lines.slice(startIdx);
-              }
-              
-              // Remove any residual Notion top-level share buttons
-              while (lines.length > 0 && (lines[0].includes('공유') || lines[0].includes('5월 21일') || lines[0] === '페이지')) {
-                lines = lines.slice(1);
               }
 
             let htmlContent = '';
             
             const headers = [
-              "The conditions for selecting", "템플릿을 사용하기 위한 조건", "선택 조건",
-              "What it needs to Prepare", "준비해야 할 사항", "준비 사항",
-              "Overwritable processes", "덮어쓸 수 있는 공정", "세부 설정",
-              "User-defined area", "사용자 정의 영역", "UDA",
+              "The conditions for selecting", "템플릿을 사용하기 위한 조건", "선택 조건", "You can select this template,",
+              "What it needs to Prepare", "준비해야 할 사항", "준비 사항", "해당 템플릿으로 가공하기 위해 준비해야할 것들",
+              "Overwritable processes", "덮어쓸 수 있는 공정", "세부 설정", "조정 가능한 항목들",
+              "User-defined area", "사용자 정의 영역", "사용자 정의 영역을 사용하실 수 있습니다.",
               "Tools list used", "사용된 공구 목록",
-              "Tools used in this strategy", "해당 템플릿에 사용되는 공구 목록", "사용되는 공구"
+              "Tools used in this strategy", "해당 템플릿에 사용되는 공구 목록", "사용되는 공구", "해당 템플릿에서 사용되는 공구 목록"
             ];
             
             let inTable = false;
             let tableRow = [];
+            let categoryItems = [];
+
+            function flushCategories() {
+              if (categoryItems.length > 0) {
+                htmlContent += '<div style="column-count: 2; column-gap: 20px; margin-bottom: 12px;">';
+                for (let j = 0; j < categoryItems.length; j++) {
+                  let parts = categoryItems[j].split(':');
+                  htmlContent += '<div style="font-weight: 700; display: flex; gap: 8px; margin-bottom: 12px; break-inside: avoid;"><span style="width: 9px; height: 9px; background: #a855f7; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></span><span>' + parts[0] + ': <span style="color: #d946ef; font-style: italic;">' + parts.slice(1).join(':') + '</span></span></div>';
+                }
+                htmlContent += '</div>';
+                categoryItems = [];
+              }
+            }
             
             for (let i = 0; i < lines.length; i++) {
               const line = lines[i];
               if (line === '댓글'  || line === '??') continue;
+              
+              let textContentWithoutDash = line.replace(/^(-+)/, '').trim();
+              let isCategory = textContentWithoutDash.startsWith('Category') || textContentWithoutDash.startsWith('유형');
+              
+              if (!isCategory) {
+                flushCategories();
+              }
+              
+              if (isCategory) {
+                categoryItems.push(textContentWithoutDash);
+                continue;
+              }
               
               let isHeader = false;
               for (const h of headers) {
@@ -4647,6 +4697,9 @@
                   isHeader = true;
                   break;
                 }
+              }
+              if (line.includes('선택 사항') || line.toLowerCase().includes('optional')) {
+                isHeader = false;
               }
               
               if (isHeader) {
@@ -4692,17 +4745,46 @@
                 let dashMatch = line.match(/^(-+)/);
                 let dashCount = dashMatch ? dashMatch[1].length : 0;
                 let textContent = line.replace(/^(-+)/, '').trim();
-                let marginLeft = dashCount * 30; // 20px per dash
+
+                if (dashCount === 0) {
+                    if (textContent.includes(':') && (
+                        textContent.startsWith('Calculate') || textContent.startsWith('Allowance') || 
+                        textContent.startsWith('Add. Allowance') || textContent.startsWith('Boundary') || 
+                        textContent.startsWith('계산') || textContent.startsWith('여유량') || textContent.startsWith('추가') || textContent.startsWith('증분식')
+                    )) {
+                        dashCount = 2;
+                    } else if (textContent === 'General settings' || textContent === '일반 설정' || textContent === '조정 가능한 항목들' || textContent === '사용자 정의 영역을 사용하실 수 있습니다.' || textContent.includes('User-defined area')) {
+                        dashCount = 0;
+                    } else if (textContent === '증분식 경계 옵셋' || textContent === '증분식 경계 각도' || textContent === 'Incremental Boundary offset' || textContent === 'Incremental Boundary angle') {
+                        dashCount = 1;
+                    } else if (textContent.startsWith('만약') || textContent.startsWith('Increase these')) {
+                        dashCount = 2;
+                    } else if (textContent.startsWith('유형') || textContent.startsWith('Category')) {
+                        dashCount = 1;
+                    } else {
+                        let isDesc = false;
+                        if (textContent.endsWith('tool') || textContent.endsWith('.') || textContent.includes('가공합니다') || textContent.includes('시도해보세요') || textContent.includes('늘려보세요') || textContent.includes('권장합니다') || textContent.includes('됩니다') || textContent.includes('바랍니다') || textContent.startsWith('Finishing process') || textContent.startsWith('Occlusal groove') || textContent.startsWith('Roughing process') || textContent.startsWith('Rest machining') || textContent.includes('이용해 정삭합니다') || textContent.includes('위해 사용됩니다')) {
+                            isDesc = true;
+                        }
+                        
+                        if (isDesc) {
+                            dashCount = 1;
+                        } else {
+                            dashCount = 0;
+                        }
+                    }
+                }
+
+                let marginLeft = dashCount * 30; // 30px per dash
                   
-                  if (textContent === 'General settings') {
-                    htmlContent += '<img src="./images/sec-mf-Dbconfig/Boundaryoffsetangle.webp" style="float: right; width: 40%; max-width: 320px; border-radius: 8px; margin: 0 0 16px 24px; object-fit: contain; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">';
+                  if (textContent === 'General settings' || textContent === '일반 설정') {
+                    htmlContent += '<img src="./images/sec-mf-Dbconfig/Boundaryoffsetangle_ko.webp" style="float: right; width: 40%; max-width: 320px; border-radius: 8px; margin: 0 0 16px 24px; object-fit: contain; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">';
                   }
 
-                
                 if (textContent.includes(':')) {
                   const parts = textContent.split(':');
                   htmlContent += '<div style="margin-bottom: 12px; font-weight: 700; display: flex; gap: 8px; margin-left: ' + marginLeft + 'px;"><span style="width: 9px; height: 9px; background: #a855f7; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></span><span>' + parts[0] + ': <span style="color: #d946ef; font-style: italic;">' + parts.slice(1).join(':') + '</span></span></div>';
-                } else if (dashCount === 0 && textContent.length < 50 && !textContent.includes('.') && !textContent.includes(',') && !textContent.includes('-')) {
+                } else if (dashCount === 0) {
                   // Bold subheader (level 1 or any text without bullet-inducing characters)
                   htmlContent += '<div style="margin: 24px 0 12px ' + marginLeft + 'px; font-size: 21px; font-weight: 700; color: #4b5563;">' + textContent + '</div>';
                 } else {
@@ -4712,6 +4794,8 @@
                 }
               }
             }
+            
+            flushCategories();
             
             if (inTable) {
               if (tableRow.length > 0) {
@@ -4730,6 +4814,302 @@
         });
       });
     });
+  </script>
+
+  <!-- ===== Feature Modal ===== -->
+  <div id="feature-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.55); z-index:1100; justify-content:center; align-items:center; padding:20px;">
+    <div style="background:var(--bg-color,#ffffff); border-radius:14px; width:100%; max-width:1200px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 16px 40px rgba(0,0,0,0.25);">
+      <div style="padding:20px 24px; border-bottom:1px solid #e5e7eb; display:flex; justify-content:space-between; align-items:center; flex-shrink:0;">
+        <h3 id="feature-modal-title" style="margin:0; color:#a855f7; font-size:22px; font-weight:700;"></h3>
+        <button id="feature-modal-close" style="background:none; border:none; font-size:26px; cursor:pointer; color:var(--text-muted,#6b7280); line-height:1;">&times;</button>
+      </div>
+      <div id="feature-modal-body" style="padding:28px 32px; overflow-y:auto; flex:1; font-size:16px; line-height:1.7; color:var(--text-color,#374151);">
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    // ── Feature content data ──────────────────────────────────────────
+    const FEATURE_DATA = {
+
+      'block-type-materials': {
+        title: '블록 소재 추가 방법',
+        youtube: 'https://youtu.be/z7Yq7df7on8',
+        steps: [
+          {
+            heading: '1. 형상(Geometry) 만들기',
+            items: [
+              {
+                label: 'a. 추가하려는 블록의 크기를 확인합니다.',
+                desc: '예시: 가로(Width) 12mm, 세로(Height) 14mm, 깊이(Depth) 18mm인 블록을 추가하는 경우입니다.',
+                img: 'images/sec-mf-Features/How to create the block type materials/image 44.webp'
+              },
+              { label: 'b. [Blank type settings]를 엽니다. (단축키: F6)' },
+              {
+                label: 'c. [Geometries] 탭에서 추가할 블록의 형상을 새로 만듭니다.',
+                desc: '기존에 등록된 다른 형상을 참고하면 이해하는 데 도움이 됩니다.'
+              },
+              { label: 'd. [New] 버튼을 클릭합니다.' },
+              {
+                label: 'e. 필요한 값을 모두 입력합니다.',
+                bullets: [
+                  '[Name]을 입력합니다. (<em>영문과 숫자만 사용해 주세요!</em>)',
+                  '[Group]을 [Block]으로 선택합니다.',
+                  '[Height], [Width], [Depth]를 해당 크기에 맞게 입력합니다.',
+                  '[+/-] 값을 입력합니다.<br>(블록 크기 오차 보정 값으로, 권장값은 0.8입니다.)',
+                  '[Is single element geometry]에 체크합니다. (블록 소재는 1회 사용을 의미합니다.)',
+                  '[Apply] 버튼을 클릭합니다.'
+                ]
+              }
+            ]
+          },
+          {
+            heading: '2. 블랭크(Blank) 만들기',
+            items: [
+              {
+                label: 'a. [Blank types] 탭으로 이동해 블록 블랭크를 만듭니다. (기존 블록 중 하나를 복사해 활용할 수 있습니다.)',
+                bullets: [
+                  '[Edit] 버튼을 클릭합니다.',
+                  '[Name]을 입력합니다. (영문과 숫자만 사용해 주세요.)',
+                  '[Geometry]를 방금 만든 형상으로 설정합니다.',
+                  '[Data] 항목의 나머지 내용을 적절하게 설정합니다. (기존 블록을 복사한 경우, 기존 값을 그대로 사용할 수 있습니다.)',
+                  '[Apply] 버튼을 클릭합니다.'
+                ]
+              },
+              { label: 'b. [Blank type settings]를 닫습니다.' }
+            ]
+          },
+          {
+            heading: '3. 만든 블랭크를 픽스처에 연결하기',
+            items: [
+              { label: 'a. [Machining settings]를 엽니다. (단축키: F5)' },
+              { label: 'b. [Fixtures] 탭에서 적절한 지그를 선택합니다.<br>블록 소재의 경우, 블록 지그([MillFix-block])를 선택해야 합니다.' },
+              {
+                label: 'c. 오른쪽의 [Filtering] 탭에서,',
+                bullets: [
+                  '[Edit] 버튼을 클릭합니다.',
+                  '[Blank geometry] 항목에서 방금 만든 형상에 체크가 되어 있는지 확인합니다.<br>체크가 안 되어 있다면 체크해 주세요.',
+                  '[Apply] 버튼을 클릭합니다.'
+                ]
+              },
+              { label: 'd. 모든 창을 닫고, 방금 만든 블록이 정상적으로 표시되는지 확인합니다.' }
+            ]
+          }
+        ]
+      },
+
+      'edit-nc-file': {
+        title: 'NC 파일 편집하는 법',
+        steps: [
+          {
+            heading: '1. 특정 공정부터 시작하도록 NC 파일을 편집하는 방법',
+            items: [
+              {
+                label: '파일을 선택한 뒤 우클릭을 눌러 메뉴를 띄워주세요. 그 후 [Show toolpaths] 버튼을 눌러주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/1.webp'
+              },
+              {
+                label: '하이퍼 뷰가 실행되고, 해당 툴 패스가 나옵니다',
+                img: 'images/sec-mf-Features/How to edit the NC file/2.webp'
+              },
+              {
+                label: '삭제를 원하는 공정들을 선택하신 뒤, 우클릭을 눌러 메뉴를 띄우세요. 그런다음 [delete] 버튼을 눌러 삭제합니다. 만약 12번 공구(M1.0B)부터의 가공을 원한다면, 9번 공구부터 11번 공구까지의(M3.0B~M1.5B) 모든 공정을 선택하세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/3.webp'
+              },
+              {
+                label: '선택한 공정들이 모두 삭제된 모습입니다.',
+                img: 'images/sec-mf-Features/How to edit the NC file/4.webp'
+              },
+              {
+                label: '표시된 부분을 더블클릭해주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/5.webp'
+              },
+              {
+                label: '해당 창이 뜨는데, 여기서 NC 파일의 이름 및 저장 경로를 설정하실 수 있습니다. 그런 다음에 [OK] 버튼을 눌러주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림6.webp'
+              },
+              {
+                label: '방금 전에 변경한 [Test 123] 을 선택후 우클릭으로 메뉴를 띄워주세요. 그런다음 [Generate NC file] 버튼을 눌러 편집한 NC 파일을 생성하세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/7.webp'
+              },
+              {
+                label: '[OK] 버튼을 눌러주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림8.webp'
+              },
+              {
+                label: '한 번 더 [OK] 버튼을 눌러주세요. 해당 메시지는 특정 공정만 남았을 시 뜨는 메시지로, 걱정하실 필요 없습니다.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림9.webp'
+              },
+              {
+                label: '[Test 123] NC 파일이 성공적으로 출력됐습니다.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림10.webp'
+              },
+              {
+                label: '참고 화면',
+                img: 'images/sec-mf-Features/How to edit the NC file/image 21.webp'
+              }
+            ]
+          },
+          {
+            heading: '2. NC 파일을 나누는 방법',
+            items: [
+              {
+                label: '[Edit] 메뉴를 클릭하시고 [New NC Job] 버튼을 눌러주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림11.webp'
+              },
+              {
+                label: '[New NC Job] 이 생성됐습니다.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림12.webp'
+              },
+              {
+                label: '분리하고 싶은 공정을 선택하세요. 이번에 저는 보철물 가공 공정과 커넥터 절단 공정을 분리하려고 합니다.<br/>따라서 저는 모든 커넥터 절단 공정을 선택했습니다.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림13.webp'
+              },
+              {
+                label: '선택했던 공정들을 [New NC Job] 의 Tool Paths 로 드래그 해주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림14.webp'
+              },
+              {
+                label: '커넥터 절단 공정이 분리되었습니다.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림16.webp'
+              },
+              {
+                label: '표시된 항목(New NC Job)을 더블클릭해주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림17.webp'
+              },
+              {
+                label: '해당 창이 뜨는데, 여기서 NC 파일의 이름 및 저장 경로를 설정하실 수 있습니다. 그런 다음에 [OK] 버튼을 눌러주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림18.webp'
+              },
+              {
+                label: '다 됐으면 [OK] 를 눌러주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림19.webp'
+              },
+              {
+                label: '화면에 표시된 버튼을 누른 뒤 우클릭을 하세요. 그런다음 [Generate NC file] 버튼을 눌러 NC 파일을 생성하세요<br/>아까와 같은 방법으로 [connector cut Test 1] NC 파일도 생성해주세요.',
+                img: 'images/sec-mf-Features/How to edit the NC file/image 22.webp'
+              },
+              {
+                label: '전체 공정을 담고있던 NC 파일이 보철물만 가공하는 NC과 커넥터만 절단하는 NC 파일로 분할되었습니다.',
+                img: 'images/sec-mf-Features/How to edit the NC file/그림20.webp'
+              }
+            ]
+          }
+        ]
+      }
+
+    };
+
+    // ── Build modal HTML ──────────────────────────────────────────────
+    function buildFeatureHTML(data) {
+      let html = '';
+
+      // 비디오 튜토리얼 링크
+      if (data.youtube) {
+        html += `<a href="${data.youtube}" target="_blank" rel="noopener"
+          style="display:inline-flex;align-items:center;gap:8px;background:#ff0000;color:#fff;padding:8px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;margin-bottom:24px;">
+          ▶ 비디오 튜토리얼
+        </a>`;
+      }
+
+      for (let i = 0; i < data.steps.length; i++) {
+        const step = data.steps[i];
+        html += `<h4 style="margin:24px 0 16px;font-size:18px;font-weight:700;color:#1f2937;border-left:4px solid #a855f7;padding-left:12px;">${step.heading}</h4>`;
+        for (const item of step.items) {
+          html += `<div style="margin-bottom:24px; border:1px solid #e5e7eb; border-radius:12px; padding:20px; background:#f9fafb; box-shadow:0 2px 8px rgba(0,0,0,0.03);">`;
+          
+          if (item.img) {
+            html += `<div style="margin-bottom:16px; text-align:center;"><img src="${item.img}" loading="lazy" style="max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>`;
+          }
+          
+          html += `<div style="font-weight:600; color:#374151; font-size:16px;">${item.label}</div>`;
+          
+          if (item.desc) {
+            html += `<p style="margin:8px 0 0 0; color:#6b7280; font-size:15px; line-height:1.6;">${item.desc}</p>`;
+          }
+          
+          if (item.bullets) {
+            html += '<ul style="margin:12px 0 0 20px; padding:0; list-style:disc;">';
+            for (const b of item.bullets) {
+              html += `<li style="margin-bottom:6px; color:#4b5563; font-size:15px;">${b}</li>`;
+            }
+            html += '</ul>';
+          }
+          
+          html += `</div>`; // wrapper close
+        }
+        // 마지막 단계 제외하고 구분선 추가
+        if (i < data.steps.length - 1) {
+          html += '<hr style="margin:24px 0;border:0;border-top:1px solid #e5e7eb;">';
+        }
+      }
+      return html;
+    }
+
+    // ── Modal open/close ──────────────────────────────────────────────
+    const modal   = document.getElementById('feature-modal');
+    const mTitle  = document.getElementById('feature-modal-title');
+    const mBody   = document.getElementById('feature-modal-body');
+    const mClose  = document.getElementById('feature-modal-close');
+
+    function openFeatureModal(key) {
+      const data = FEATURE_DATA[key];
+      if (!data) return;
+      mTitle.textContent = data.title;
+      mBody.innerHTML = buildFeatureHTML(data);
+      modal.style.display = 'flex';
+      history.replaceState(null, null, `#feature-${key}`);
+    }
+
+    function closeFeatureModal() {
+      modal.style.display = 'none';
+      const cleanUrl = window.location.pathname + window.location.search;
+      history.replaceState(null, null, cleanUrl);
+    }
+
+    mClose.addEventListener('click', closeFeatureModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeFeatureModal(); });
+
+    // ── Card click + hover ────────────────────────────────────────────
+    function initFeatureCards() {
+      document.querySelectorAll('.feature-card').forEach(card => {
+        // 중복 이벤트 방지
+        if (card.dataset.initDone) return;
+        card.addEventListener('click', () => openFeatureModal(card.dataset.featureKey));
+        card.addEventListener('mouseenter', () => {
+          card.style.boxShadow = '0 8px 24px rgba(168,85,247,0.2)';
+          card.style.transform = 'translateY(-3px)';
+          card.style.borderColor = '#a855f7';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.boxShadow = '0 2px 6px rgba(0,0,0,0.05)';
+          card.style.transform = '';
+          card.style.borderColor = '#e5e7eb';
+        });
+        card.dataset.initDone = 'true';
+      });
+    }
+
+    function checkHashForFeature() {
+      const hash = window.location.hash;
+      if (hash.startsWith('#feature-')) {
+        const key = hash.replace('#feature-', '');
+        if (FEATURE_DATA[key]) {
+          openFeatureModal(key);
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', checkHashForFeature);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initFeatureCards();
+      checkHashForFeature();
+    });
+    // 섹션 전환 후에도 적용되도록 MutationObserver
+    new MutationObserver(initFeatureCards).observe(document.body, { childList: true, subtree: true });
+  })();
   </script>
 </body>
 
