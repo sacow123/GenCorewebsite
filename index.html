@@ -5053,9 +5053,12 @@
     const mBody   = document.getElementById('feature-modal-body');
     const mClose  = document.getElementById('feature-modal-close');
 
-    function openFeatureModal(key) {
+    let lastSectionId = 'sec-mf-hd-features'; // 기본값
+
+    function openFeatureModal(key, originSectionId) {
       const data = FEATURE_DATA[key];
       if (!data) return;
+      if (originSectionId) lastSectionId = originSectionId;
       mTitle.textContent = data.title;
       mBody.innerHTML = buildFeatureHTML(data);
       modal.style.display = 'flex';
@@ -5064,8 +5067,8 @@
 
     function closeFeatureModal() {
       modal.style.display = 'none';
-      const cleanUrl = window.location.pathname + window.location.search;
-      history.replaceState(null, null, cleanUrl);
+      // 창을 닫으면 원래 있던 섹션(또는 기본 섹션)으로 이동
+      window.location.replace('#' + lastSectionId);
     }
 
     mClose.addEventListener('click', closeFeatureModal);
@@ -5076,7 +5079,11 @@
       document.querySelectorAll('.feature-card').forEach(card => {
         // 중복 이벤트 방지
         if (card.dataset.initDone) return;
-        card.addEventListener('click', () => openFeatureModal(card.dataset.featureKey));
+        card.addEventListener('click', (e) => {
+          const section = e.target.closest('section');
+          const sectionId = section ? section.id : 'sec-mf-hd-features';
+          openFeatureModal(card.dataset.featureKey, sectionId);
+        });
         card.addEventListener('mouseenter', () => {
           card.style.boxShadow = '0 8px 24px rgba(168,85,247,0.2)';
           card.style.transform = 'translateY(-3px)';
