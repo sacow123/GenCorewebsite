@@ -8,7 +8,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part type: Abutment crown bridge
-Materials: Hybrid Ceramic Disc / Block
+Materials: Hybrid Ceramic Disk / Block
 The design should be included the interface of the Highness system
 What it needs to Prepare for this strategy(template)
 Margin lines
@@ -63,7 +63,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part type: Abutment crown
-Materials: Hybrid Ceramic Disc / Block
+Materials: Hybrid Ceramic Disk / Block
 The design should be included the interface of the Highness system
 What it needs to Prepare for this strategy(template)
 Margin lines
@@ -119,7 +119,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay crown bridge* or Crown bridge (* Inlay/Onlay crown bridge is the bridge that consists of both inlays and crowns together)
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay or Coping lines is mandatory.
 Overwritable processes
 General settings
@@ -178,7 +178,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay crown bridge* or Crown bridge (* Inlay/Onlay crown bridge is the bridge that consists of both inlays and crowns together)
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay or Coping lines is mandatory.
 0.6mm diameter tool is optional
 Overwritable processes
@@ -238,7 +238,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Crown
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Coping lines is mandatory.
 Overwritable processes
 General settings
@@ -283,7 +283,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Crown
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Coping lines is mandatory.
 0.6mm diameter tool is optional
 Overwritable processes
@@ -329,7 +329,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 Overwritable processes
 General settings
@@ -382,7 +382,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This is for milling more slow than “Hybrid Ceramic_Inlay/Onlay_D0.6”
 Overwritable processes
@@ -436,7 +436,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This template is for milling cavity side only with the way of burial milling. It is available to set no conectors.
 Please milling this cavity side one first.
@@ -498,7 +498,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This is for milling it 0.05mm bigger than the original design. You can stragically utilize this one.
 Overwritable processes
@@ -543,7 +543,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This template is for milling cavity side only with the way of burial milling. It is available to set no conectors.
 Please milling this cavity side one first.
@@ -587,7 +587,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This template is for milling occlusal side only with the way of burial milling. It is available to set no conectors.
 Please milling this occlusal side one after cavity side.
@@ -631,7 +631,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This is for milling it 0.08mm bigger than the original design. You can stragically utilize this one.
 Overwritable processes
@@ -704,7 +704,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This template is for milling cavity side only with the way of burial milling. It is available to set no conectors.
 Please milling this cavity side one first.
@@ -748,7 +748,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This template is for milling occlusal side only with the way of burial milling. It is available to set no conectors.
 Please milling this occlusal side one after cavity side.
@@ -792,7 +792,7 @@ Add a property
 댓글
 The conditions for selecting this strategy(template)
 Part (Prosthesis): Inlay/Onlay
-Materials: Hybrid Ceramic Disc/Block
+Materials: Hybrid Ceramic Disk/Block
 Setting the Inlay/Onlay lines is mandatory.
 This template is for milling occlusal side only with the way of burial milling. It is available to set no conectors.
 Please milling this occlusal side one after cavity side.
@@ -831,7 +831,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -942,7 +942,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown bridge
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -1111,7 +1111,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown bridge that is applied the Highness system Interface
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -1245,7 +1245,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown that is applied the Highness system Interface
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -1355,7 +1355,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown bridge/Coping bridge
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -1456,7 +1456,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown/Coping
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Coping lines is mandatory
 This is fast milling version than “PMMA_Coping_Crown_SCRP”
@@ -1510,7 +1510,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown bridge/Coping bridge
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Coping lines is mandatory
 This is fast milling version than “PMMA_Coping/Crown bridge_SCRP”
@@ -1564,7 +1564,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown/Coping
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -1665,7 +1665,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown bridge/Coping bridge
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -1763,7 +1763,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown/Coping
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -1861,7 +1861,7 @@ The conditions for selecting
 
 Part (Prosthesis): denture Teeth
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting any lines is not mandatory
 
@@ -1910,7 +1910,7 @@ The conditions for selecting
 
 Part (Prosthesis): Flexble denture
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting any lines is not mandatory →
 
@@ -1959,7 +1959,7 @@ The conditions for selecting
 
 Part (Prosthesis): Full denture
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting Coping lines is mandatory →
 This is for milling the full denture bases
@@ -2039,7 +2039,7 @@ The conditions for selecting
 
 Part (Prosthesis): Over Structure
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting Coping lines is mandatory
 This is for milling the supra structure of the implant bar such as iBar
@@ -2119,7 +2119,7 @@ The conditions for selecting
 
 Part (Prosthesis): Partial Frame
 
-Materials: PMMA Disc/Block
+Materials: PMMA Disk/Block
 
 Setting any lines is not mandatory →
 
@@ -2168,7 +2168,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -2279,7 +2279,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown bridge
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -2414,7 +2414,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown bridge/Coping bridge
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -2515,7 +2515,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown/Coping
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -2616,7 +2616,7 @@ The conditions for selecting
 
 Part (Prosthesis): denture Teeth
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting any lines is not mandatory
 
@@ -2665,7 +2665,7 @@ The conditions for selecting
 
 Part (Prosthesis): Flexble denture
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting any lines is not mandatory →
 
@@ -2714,7 +2714,7 @@ The conditions for selecting
 
 Part (Prosthesis): Full denture
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting Coping lines is mandatory →
 This is for milling the full denture bases
@@ -2794,7 +2794,7 @@ The conditions for selecting
 
 Part (Prosthesis): Over Structure
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting Coping lines is mandatory
 This is for milling the supra structure of the implant bar such as iBar
@@ -2870,7 +2870,7 @@ The conditions for selecting
 
 Part (Prosthesis): Partial Frame
 
-Materials: PEEK Disc/Block
+Materials: PEEK Disk/Block
 
 Setting any lines is not mandatory →
 
@@ -2919,7 +2919,7 @@ The conditions for selecting
 
 Part (Prosthesis): Coping
 
-Materials: Wax Disc
+Materials: Wax Disk
 
 Setting the Coping lines is mandatory
 
@@ -3001,7 +3001,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown
 
-Materials: Wax Disc
+Materials: Wax Disk
 
 Setting the Coping lines is mandatory
 
@@ -3076,7 +3076,7 @@ The conditions for selecting
 
 Part (Prosthesis): Coping bridge
 
-Materials: Wax Disc
+Materials: Wax Disk
 
 Setting the Coping lines is mandatory
 
@@ -3154,7 +3154,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown bridge / Inaly/Crown bridge
 
-Materials: Wax Disc
+Materials: Wax Disk
 
 Setting the Coping lines is mandatory
 
@@ -3229,7 +3229,7 @@ The conditions for selecting
 
 Part (Prosthesis): Inlay/Onlay
 
-Materials: Wax Disc
+Materials: Wax Disk
 
 Setting the Coping lines is mandatory
 
@@ -3293,7 +3293,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown bridge
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -3403,7 +3403,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown bridge that needs to 0.6mm diameter ball end mill tool machining for the interface.
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -3513,7 +3513,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown bridge that is applied the Highness system Interface
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -3623,7 +3623,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown bridge that is applied the Megalink system Interface
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -3745,7 +3745,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -3849,7 +3849,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown that needs to 0.6mm diameter ball end mill tool machining for the interface.
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -3953,7 +3953,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown that is applied the Highness system Interface
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -4057,7 +4057,7 @@ The conditions for selecting
 
 Part (Prosthesis): Abutment crown that is applied the Megalink system Interface
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 
@@ -4173,7 +4173,7 @@ The conditions for selecting
 
 Part (Prosthesis): Coping
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -4266,7 +4266,7 @@ The conditions for selecting
 
 Part (Prosthesis): Coping bridge
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -4378,7 +4378,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown bridge
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -4489,7 +4489,7 @@ The conditions for selecting
 
 Part (Prosthesis): Crown
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Coping lines is mandatory
 
@@ -4581,7 +4581,7 @@ The conditions for selecting
 
 Part (Prosthesis): Inlay/Onlay bridge or Inlay/Crown bridge (* Inlay/Onlay crown bridge is the bridge that consists of both inlays and crowns together)
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Inlay/Onlay or Coping lines is mandatory
 
@@ -4637,7 +4637,7 @@ The conditions for selecting
 
 Part (Prosthesis): Inlay/Onlay
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Inlay/Onlay lines is mandatory
 
@@ -4705,7 +4705,7 @@ The conditions for selecting
 
 Part (Prosthesis): Over Structure
 
-Materials: Zirconia Disc/Block
+Materials: Zirconia Disk/Block
 
 Setting the Abutment base lines is mandatory.
 

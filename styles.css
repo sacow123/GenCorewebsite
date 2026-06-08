@@ -573,3 +573,12 @@ body {
 .feature-card { width: calc(25% - 15px); min-width: 240px; box-sizing: border-box; }
 .feature-grid-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 
+/* Feature and Tutorial Menu Layout Overrides (Vertical) */
+#mai-tutorial-grid, #mf-tutorial-grid, #mai-feature-grid, #mf-feature-grid {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#mai-tutorial-grid .feature-card, #mf-tutorial-grid .feature-card, #mai-feature-grid .feature-card, #mf-feature-grid .feature-card {
+  width: 100%;
+  max-width: none;
+}

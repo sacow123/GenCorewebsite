@@ -8,7 +8,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 어버트먼트 크라운 브릿지
-소재: Hybrid Ceramic Disc / Block
+소재: Hybrid Ceramic Disk / Block
 하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
 해당 템플릿으로 가공하기 위해 준비해야할 것들
 마진 라인
@@ -63,7 +63,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 어버트먼트 크라운
-소재: Hybrid Ceramic Disc / Block
+소재: Hybrid Ceramic Disk / Block
 하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
 해당 템플릿으로 가공하기 위해 준비해야할 것들
 마진 라인
@@ -240,7 +240,7 @@ M1.6T
 "Hybrid Ceramic_Crown_SCRP_5X_D0.6": `
 템플릿을 사용하기 위한 조건
 보철물 유형: 크라운
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 코핑 라인 설정은 필수입니다.
 조정 가능한 항목들
 일반 설정
@@ -301,7 +301,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 크라운
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 코핑 라인 설정은 필수입니다.
 0.6mm 공구는 선택 사항입니다.
 일반 설정
@@ -363,7 +363,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 조정 가능한 항목들
 일반 설정
@@ -416,7 +416,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이것은 “Hybrid Ceramic_인레이/온레이_D0.6” 보다 느리게 가공하기 위한 템플릿입니다.
 조정 가능한 항목들
@@ -470,7 +470,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이 템플릿은 매몰 가공 방식으로 캐비티 내면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
 이 캐비티 내면을 먼저 가공해 주십시오.
@@ -518,7 +518,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이것은 원래 디자인보다 0.05mm 크게 가공하기 위한 것입니다. 전략적으로 활용할 수 있습니다.
 조정 가능한 항목들
@@ -563,7 +563,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이 템플릿은 매몰 가공 방식으로 캐비티 내면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
 이 캐비티 내면을 먼저 가공해 주십시오.
@@ -609,7 +609,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이 템플릿은 매몰 가공 방식으로 교합면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
 캐비티 내면을 가공한 후 이 교합면을 가공해 주십시오.
@@ -652,7 +652,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이것은 원래 디자인보다 0.08mm 크게 가공하기 위한 것입니다. 전략적으로 활용할 수 있습니다.
 조정 가능한 항목들
@@ -693,7 +693,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이 템플릿은 매몰 가공 방식으로 캐비티 내면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
 이 캐비티 내면을 먼저 가공해 주십시오.
@@ -736,7 +736,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이 템플릿은 매몰 가공 방식으로 교합면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
 캐비티 내면을 가공한 후 이 교합면을 가공해 주십시오.
@@ -779,7 +779,7 @@ Hybrid Ceramic
 댓글
 템플릿을 사용하기 위한 조건
 보철물 유형: 인레이/온레이
-소재: Hybrid Ceramic Disc/Block
+소재: Hybrid Ceramic Disk/Block
 인레이/온레이 라인 설정은 필수입니다.
 이 템플릿은 매몰 가공 방식으로 교합면만 가공하기 위한 것입니다. 커넥터를 설정하지 않아도 됩니다.
 캐비티 내면을 가공한 후 이 교합면을 가공해 주십시오.
@@ -817,7 +817,7 @@ G0.6B
 
 보철물 유형: 어버트먼트 크라운
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
@@ -928,7 +928,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운 브릿지
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
@@ -1054,7 +1054,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 템플릿을 사용하기 위한 조건
 
 보철물 유형: 어버트먼트 크라운 브릿지
-소재: PMMA Disc / Block
+소재: PMMA Disk / Block
 하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
 
 어버트먼트 베이스 라인 설정은 필수입니다.
@@ -1185,7 +1185,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 템플릿을 사용하기 위한 조건
 
 보철물 유형: 어버트먼트 크라운
-소재: PMMA Disc / Block
+소재: PMMA Disk / Block
 하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
 
 어버트먼트 베이스 라인 설정은 필수입니다.
@@ -1296,7 +1296,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 크라운 브릿지/Coping bridge
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -1397,7 +1397,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 크라운/코핑
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 코핑 라인 설정은 필수입니다
 “PMMA_Coping_Crown_SCRP” 보다 빠른 버전입니다. 
@@ -1450,7 +1450,7 @@ Finishing inside copings [M1.0F_L06]
 
 보철물 유형: 크라운 브릿지/Coping bridge
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 코핑 라인 설정은 필수입니다
 “PMMA_Coping/Crown Bridge_SCRP” 보다 빠른 버전입니다. 
@@ -1504,7 +1504,7 @@ Finishing inside copings [M1.0F_L06]
 
 보철물 유형: 크라운/코핑
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -1605,7 +1605,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 크라운 브릿지
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -1703,7 +1703,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 크라운
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -1801,7 +1801,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: denture Teeth
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 별도의 필수 마진 설정은 없습니다. 
 
@@ -1850,7 +1850,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: Flexble denture
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 별도의 필수 마진 설정은 없습니다. 
 
@@ -1899,7 +1899,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: Full denture
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 코핑 라인을 설정해야만 합니다. 
 풀 덴쳐 베이스를 가공하기 위한 템플릿입니다.
@@ -1979,7 +1979,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: Over Structure
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 코핑 라인 설정은 필수입니다
 IBar와 같은 임플란트 바의 상부 구조물을 가공하기 위한 템플릿입니다.
@@ -2059,7 +2059,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: Partial Frame
 
-소재: PMMA Disc/Block
+소재: PMMA Disk/Block
 
 별도의 필수 마진 설정은 없습니다. 
 
@@ -2108,7 +2108,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: 어버트먼트 크라운
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
@@ -2219,7 +2219,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운 브릿지
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
@@ -2354,7 +2354,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 크라운 브릿지/Coping bridge
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -2455,7 +2455,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 크라운/코핑
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -2556,7 +2556,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: denture Teeth
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 별도의 필수 마진 설정은 없습니다. 
 
@@ -2605,7 +2605,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: Flexble denture
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 별도의 필수 마진 설정은 없습니다. 
 
@@ -2654,7 +2654,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: Full denture
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 코핑 라인 설정은 필수입니다 →
 풀 덴쳐 베이스를 가공하기 위한 템플릿입니다.
@@ -2734,7 +2734,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: Over Structure
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 코핑 라인 설정은 필수입니다
 IBar와 같은 임플란트 바의 상부 구조물을 가공하기 위한 템플릿입니다.
@@ -2810,7 +2810,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: Partial Frame
 
-소재: PEEK Disc/Block
+소재: PEEK Disk/Block
 
 별도의 필수 마진 설정은 없습니다. 
 
@@ -2859,7 +2859,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: Coping
 
-소재: Wax Disc
+소재: Wax Disk
 
 코핑 라인 설정은 필수입니다
 
@@ -2939,7 +2939,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: 크라운
 
-소재: Wax Disc
+소재: Wax Disk
 
 코핑 라인 설정은 필수입니다
 
@@ -3012,7 +3012,7 @@ Fissure machining D0.6
 
 보철물 유형: Coping bridge
 
-소재: Wax Disc
+소재: Wax Disk
 
 코핑 라인 설정은 필수입니다
 
@@ -3088,7 +3088,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: 크라운 브릿지 / Inaly/크라운 브릿지
 
-소재: Wax Disc
+소재: Wax Disk
 
 코핑 라인 설정은 필수입니다
 
@@ -3161,7 +3161,7 @@ Fissure machining [Z0.6BX05]
 
 보철물 유형: 인레이/온레이
 
-소재: Wax Disc
+소재: Wax Disk
 
 코핑 라인 설정은 필수입니다
 
@@ -3223,7 +3223,7 @@ Overall restmachining cavity side D0.6 -180
 
 보철물 유형: 어버트먼트 크라운 브릿지
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
@@ -3380,7 +3380,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운 브릿지 that needs to 0.6mm diameter ball end mill tool machining for the interface.
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
@@ -3495,7 +3495,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운 브릿지 
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 하이니스 시스템의 인터페이스로 디자인 되어있어야합니다. 
 
@@ -3612,7 +3612,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운 브릿지
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 메가링크 시스템의 인터페이스로 디자인 되어있어야 합니다.
 
@@ -3741,7 +3741,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
@@ -3850,7 +3850,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운 that needs to 0.6mm diameter ball end mill tool machining for the interface.
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
@@ -3959,7 +3959,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 하이니스 시스템의 인터페이스로 디자인 되어있어야 합니다. 
 
@@ -4070,7 +4070,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 어버트먼트 크라운
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 메가링크 시스템의 인터페이스로 디자인 되어있어야 합니다. 
 
@@ -4193,7 +4193,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: Coping
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -4291,7 +4291,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: Coping bridge
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -4403,7 +4403,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 크라운 브릿지
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -4514,7 +4514,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 크라운
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 코핑 라인 설정은 필수입니다
 
@@ -4611,7 +4611,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 인레이/온레이 bridge or Inlay/크라운 브릿지 (* 인레이/온레이 crown bridge is the bridge that consists of both inlays and crowns together)
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 Setting the 인레이/온레이 or Coping lines is mandatory
 
@@ -4672,7 +4672,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: 인레이/온레이
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 Setting the 인레이/온레이 lines is mandatory
 
@@ -4745,7 +4745,7 @@ Fissure machining_[Z0.3BX03] (PMMA)
 
 보철물 유형: Over Structure
 
-소재: Zirconia Disc/Block
+소재: Zirconia Disk/Block
 
 어버트먼트 베이스 라인 설정은 필수입니다.
 
