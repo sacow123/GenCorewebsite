@@ -1,0 +1,743 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>🛠️ 유지 관리 및 점검 사항</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1cfcfb3e-9058-811c-a07e-d9443160931f" class="page sans"><header><h1 class="page-title" dir="auto">🛠️ 유지 관리 및 점검 사항</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Tags</th><td><span class="selected-value select-value-color-blue">5_유지관리</span></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="352cfb3e-9058-80d3-bda1-f621a1fe2921"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><div style="display:contents" dir="auto"><p id="352cfb3e-9058-804f-bbe6-e7d32523b326" class="">장비의 안정적인 동작과 가공 품질 유지를 위해, 가공 전후로 아래 항목을 반드시 확인하십시오.</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80bb-8461-db6daf3c7b05" class=""> </p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8076-85ab-c6eecba1e721" class=""> </p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80e9-9589-f9ffd2dbd285" class=""> </p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-803f-9294-e523e7117c37" class=""> </p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-808f-bc8e-e6c09f770bdf" class=""> </p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80c3-b613-f337e173ad94"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-8037-bdde-f87c7197ceb9" class="">✅ 1. 가공 전 필수 점검</h2></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-808b-91ee-fab4ee3e0a16" class="">🧾 M09 종료 코드 확인</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8097-90b7-d7442169bbfc" class="">불러온 NC 파일이 반드시 <strong>“M09” 코드로 종료되는지 확인한 후 가공을 시작하십시오.</strong></p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80b7-b33b-d6c32014d425" class="">M09가 누락된 경우, 가공이 정상적으로 완료되지 않을 수 있습니다.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-8067-9145-ff7cac31921d"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80e6-9068-fd3dd057d72b" class="">🔧 공구 번호 일치 확인</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-800d-ad0d-d8921670d640" class="">컨트롤 프로그램 상의 공구 번호와 실제 장착된 공구 번호가 <strong>일치하는지 확인하십시오.</strong></p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80ec-a395-c748760eb4db" class="">공구 번호가 서로 다를 경우, 충돌이 발생하거나 장비 손상을 야기할 수 있습니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8046-b960-ee6343a42c43" class="">공구 번호가 일치하지 않는 경우, 콜렛에서 공구를 제거한 후 해당 공구 번호의 툴 포켓 위치에 수동으로 장착하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80c3-8a41-d93b0a1de202"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-8091-8bdd-f6adc6898fd4" class="">🌬️ 공기압 확인</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8079-bab2-fc5f0efd307e" class="">장비에 공급되는 에어 압력은 항상 <strong>0.6~0.65 MPa</strong> 범위로 유지하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-803a-82ad-ce2288330227" class="">디지털 공기압 게이지를 통해 공급 압력을 확인한 후 가공을 시작하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-8007-ab42-dba6357f1b82"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-8029-b8d2-ea9407351e2b" class="">🔄 워밍업(Warm-up)</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8056-a44e-ccc88003fa64" class="">장비가 2시간 이상 정지되어 있었거나, 주변 온도에 <strong>10℃ 이상 변화</strong>가 발생한 경우에는 1회 이상 워밍업(Warm-up)을 실시한 후 가공을 진행하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80e6-a296-f126add86487"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-809b-9712-df8ceddd35ed" class="">🧹 2. 가공 후 관리</h2></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80a7-999b-ea21c2eb9ae0" class="">🏭 가공룸 관리</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80da-870b-fe5d2a51d573" class="">지르코니아, PMMA 등 가공 시 발생하는 분진이 원활하게 흡입될 수 있도록 집진기 상태를 확인하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8077-ae6a-e58d5a260df6" class="">가공이 완료되면 가공룸 내부를 청소하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80a5-a4fa-cbdb04553bbc" class="">분진 또는 절삭유가 장비 내부로 유입될 경우 결과물 오염, 센서 오작동, 장비 수명 저하의 원인이 될 수 있습니다.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-803d-84a0-c40f676d394f"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-8082-b5f8-d56244efc3bc" class="">🌪️ 집진기 필터 관리</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-809d-9d57-d63a500138bb" class="">집진기 필터의 막힘 여부를 주기적으로 확인하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80cd-8a0d-e1244784007a" class="">집진 성능이 저하되면 가공룸 내부에 분진이 축적되어 장비 내부 오염 및 결과물 오염의 원인이 될 수 있습니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-809c-ac0f-eaa8cde8f470" class="">필터가 막혔거나 흡입력이 저하된 경우, 집진기 제조사의 안내에 따라 필터를 청소하거나 교체하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80b3-b697-f28c35ebfae4"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-8046-aa45-d443ba7d578a" class="">💧 컴프레서 에어 탱크 관리</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8027-8a97-eaf819ed56ab" class="">컴프레서 에어 탱크 내부에 수분이 발생한 경우 반드시 제거하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80c4-878f-edfb380a98f9" class="">수분이 에어 호스를 통해 스핀들까지 유입될 경우 심각한 장비 고장을 유발할 수 있습니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8032-bec7-eabf6594b56d" class="">컴프레서 에어 탱크와 장비 사이에 <strong>에어 드라이어</strong>를 설치하는 것을 권장합니다.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-808e-a07f-c25dd12544c2"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-8077-8552-c935ce3b22d8" class="">💨 에어 필터 / 레귤레이터 관리</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80e9-9abb-c5802457f653" class="">에어 레귤레이터 및 필터에 수분이나 오일이 축적되지 않았는지 확인하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-809b-b0e4-c86ec6c67a24" class="">오염된 에어가 장비 내부 또는 스핀들로 유입될 경우 장비 고장의 원인이 될 수 있습니다.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-800c-8d58-df103c292eba"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-808c-8b67-fa07a92109e0" class="">🔩 3. 공구 및 콜렛 관리</h2></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-800b-9048-c45470bfee83" class="">🔩 콜렛 관리</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80e6-8c63-e184a6cc6798" class="">콜렛 내부에 분진이나 이물질이 쌓이지 않도록 주기적으로 청소하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80f8-91ec-d347846498d1" class="">콜렛 오염 또는 체결 불량은 공구 흔들림, 가공 정밀도 저하, 공구 파손의 원인이 될 수 있습니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8029-bf13-c52e06f0ce58" class="">콜렛 청소 시에는 장비 전원을 끈 상태에서 작업하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-8066-be3f-e9e29ad4446d"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-8006-87d1-e16c96174434" class="">🧰 공구 마모 및 파손 확인</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8085-aafa-e3671b428bad" class="">가공 전 공구의 마모, 파손, 치핑 여부를 확인하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8003-8776-f9ccc2b6fa12" class="">마모되거나 손상된 공구를 계속 사용할 경우 가공 품질 저하, 소재 파손, 스핀들 부하 증가가 발생할 수 있습니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8017-80a8-ff1e0d04dbe3" class="">공구 수명이 초과되었거나 가공 품질이 저하되는 경우 즉시 교체하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80e5-9f07-e3d0df6325f7"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80af-b70a-fbe4ac7025bd" class="">🏷️ 공구 포켓 관리</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80f2-9ea5-df7693110772" class="">툴 포켓에 분진이나 이물질이 쌓이지 않도록 주기적으로 청소하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8087-8085-e5ba71bdd32d" class="">툴 포켓 오염은 공구 장착 불량, 공구 인식 오류, 자동 공구 교환 오류의 원인이 될 수 있습니다.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80a8-bc84-faf3733a1776"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-80d9-8765-f8bb5b98e27c" class="">📏 4. 캘리브레이션 및 정밀도 관리</h2></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80d7-9eb6-eeafb0dc6508" class="">📏 캘리브레이션 권장 시점</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8025-8156-d32962cf3569" class="">다음과 같은 경우 캘리브레이션을 수행하십시오.</p></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-8004-b78c-c9bbc06fd710" class="bulleted-list"><li style="list-style-type:disc">장비 이동 또는 재설치 후</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-809e-bc5d-fe77df6a0310" class="bulleted-list"><li style="list-style-type:disc">장비에 충격이 가해진 경우</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-800b-81c8-e3456e7ec88c" class="bulleted-list"><li style="list-style-type:disc">스핀들 또는 주요 부품 교체 후</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-801a-afee-e1920670cedb" class="bulleted-list"><li style="list-style-type:disc">가공 결과물의 오차가 증가한 경우</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80fc-ae10-d9afb87b61f1" class="bulleted-list"><li style="list-style-type:disc">공구 교환 위치가 맞지 않는 경우</li></ul></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-8007-8ce7-c0675db6ecdb"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80bf-ad56-e4c4f55f5028" class="">📐 장비 수평 상태 확인</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8042-8289-c0406c0f8414" class="">장비는 평평하고 안정적인 장소에 설치되어야 합니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8058-8141-fc6765f454cb" class="">장비가 기울어진 상태로 사용될 경우 가공 정밀도 저하 및 축 이동 이상이 발생할 수 있습니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-809d-a085-e3f763a3d9f7" class="">장비 이동 후에는 반드시 수평 상태를 확인하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-8085-9c42-cb7c30d3cd2e"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-8032-b16d-ceceebec1743" class="">🚨 5. 이상 증상 발생 시 조치</h2></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80e8-9093-d89c49b3bc26" class="">🚨 이상 소음 / 진동 / 냄새 발생</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8021-be9e-c0b6d1932354" class="">가공 중 이상 소음, 진동, 타는 냄새, 에러 메시지 또는 축 이동 이상이 발생할 경우 즉시 가공을 중지하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80bb-b23b-d5e0c8033a93" class="">원인을 확인하기 전까지 장비를 재가동하지 마십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-805d-b74e-cfc1f565ee13"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80ba-b796-c6f2db1b2cc7" class="">🛑 강제 조작 금지</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-803e-8389-c26b803536ba" class="">이상 상황 발생 시 임의로 장비를 분해하거나 강제로 축을 이동시키지 마십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-808f-bdf4-c4ac4378fb80" class="">필요한 경우 제조사 또는 기술 지원 담당자에게 문의하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-8079-b0d9-f0ae7211d926"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-8087-9d22-e854ac383300" class="">🕒 6. 유지 관리 권장 주기</h2></div><div style="display:contents" dir="ltr"><table id="352cfb3e-9058-80c4-afe6-d05879390718" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="352cfb3e-9058-80ae-8b1f-e67d801d5afb"><th id="]rwv" class="simple-table-header-color simple-table-header">주기</th><th id="oM{{" class="simple-table-header-color simple-table-header" style="width:655px">점검 항목</th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="352cfb3e-9058-804b-83c8-f035d1e9fe00"><td id="]rwv" class="">매일</td><td id="oM{{" class="" style="width:655px">가공룸 청소, 공기압 확인, 집진기 및 펌프 작동 확인, 컴프레서 에어 탱크 수분 제거</td></tr></div><div style="display:contents" dir="ltr"><tr id="352cfb3e-9058-802a-b952-f8af5d20650c"><td id="]rwv" class="">매주</td><td id="oM{{" class="" style="width:655px">콜렛 청소, 공구 마모 확인, 툴 포켓 청소, 집진기 필터 확인, 에어 호스 누기 확인</td></tr></div><div style="display:contents" dir="ltr"><tr id="352cfb3e-9058-80ca-9c04-de86b2a292d5"><td id="]rwv" class="">매월</td><td id="oM{{" class="" style="width:655px">에어 레귤레이터/필터 상태 확인, 장비 수평 상태 확인, 각 축 이상 소음 확인</td></tr></div><div style="display:contents" dir="ltr"><tr id="352cfb3e-9058-8051-a6bf-cf817a0b9fbf"><td id="]rwv" class="">필요 시</td><td id="oM{{" class="" style="width:655px">캘리브레이션, 스핀들 점검, 공구 교체, 집진기 필터 교체</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-8074-ae71-fcee4b51f4bd"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-80a1-a7d2-fc17e6ca3016" class="">⚠️ 유지 관리 시 주의 사항</h2></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80e0-a0d0-cdc96223cccb" class="bulleted-list"><li style="list-style-type:disc">유지 관리 작업은 반드시 장비가 정지한 상태에서 진행하십시오.</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80bc-aca6-f9c5b7a3cb17" class="bulleted-list"><li style="list-style-type:disc">물이나 액체 세정제를 장비 내부의 상단에 직접 분사하지 마십시오.</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80a3-9308-f67e55c10c3c" class="bulleted-list"><li style="list-style-type:disc">강한 압축 공기를 장비 내부에 직접 분사하지 마십시오. 분진이 내부 부품으로 유입될 수 있습니다.</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80ca-aa08-d88e3b51a5ca" class="bulleted-list"><li style="list-style-type:disc">장비 내부에 남아 있는 공구, 소재, 부품 등을 제거한 후 작업하십시오.</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-8016-b6c9-efdb17b25007" class="bulleted-list"><li style="list-style-type:disc">유지 관리 후에는 가공룸 내부와 툴 포켓에 이물질이 남아 있지 않은지 확인하십시오.</li></ul></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-809e-8dd2-fd937b73d836"/></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

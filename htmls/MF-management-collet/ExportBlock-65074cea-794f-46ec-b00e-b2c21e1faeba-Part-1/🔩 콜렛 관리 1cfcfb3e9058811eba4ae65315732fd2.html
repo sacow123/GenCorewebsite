@@ -1,0 +1,744 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>🔩 콜렛 관리</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1cfcfb3e-9058-811e-ba4a-e65315732fd2" class="page sans"><header><h1 class="page-title" dir="auto">🔩 콜렛 관리</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Tags</th><td><span class="selected-value select-value-color-blue">5_유지관리</span></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><div id="1cfcfb3e-9058-8119-b9cb-c6d0f65e96a9" class="column-list"><div style="display:contents" dir="auto"><div id="1cfcfb3e-9058-81ee-851f-de294717a165" style="width:81.25%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="352cfb3e-9058-80e4-a86d-c87ce6d35e1f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80c4-8e97-d1830aecc020" class="">콜렛은 공구를 고정하는 핵심 부품으로, 가공 정밀도와 결과물 품질에 직접적인 영향을 줍니다. 장비의 안정적인 사용을 위해 콜렛을 주기적으로 점검하고 청소하십시오.</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1cfcfb3e-9058-81dd-a7d1-ed4ca248ee57" class=""> </p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-806d-a9d5-c9c101eb2e89" class=""> </p></div></div></div><div style="display:contents" dir="auto"><div id="1cfcfb3e-9058-81d4-ba1c-ee80074cc545" style="width:18.750000000000004%" class="column"><div style="display:contents" dir="ltr"><figure id="1cfcfb3e-9058-8131-b251-c51e6f9e425c" class="image"><a href="qr.code_maintanence.collet.png"><img style="width:96px" src="qr.code_maintanence.collet.png"/></a><figcaption>video: cleaning collet</figcaption></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="1cfcfb3e-9058-8101-8ffd-d07e6e6d18c2"/></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-804b-8250-fc56063a7037"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-8040-b49a-c9fdd470e377" class="">👨🏼‍💼 수시 관리 사항</h2></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-800a-bc0b-d225d5a44eed" class="bulleted-list"><li style="list-style-type:disc">콜렛은 가공 정밀도에 중요한 영향을 주는 핵심 구성품입니다. 주기적으로 점검하고 청소하십시오.</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-8099-8c89-db35cc3fb93a" class="bulleted-list"><li style="list-style-type:disc">장비 내부를 청소할 때 콜렛 내부에 지르코니아 분진, PMMA 분진, 기타 이물질이 남아 있지 않도록 주의하십시오.</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-8058-96fc-cda18a18d104" class="bulleted-list"><li style="list-style-type:disc">콜렛은 소모성 부품입니다. 주기적인 교체를 권장합니다.  (콜렛 기대 수명: 약 <strong>100,000분)</strong><div style="display:contents" dir="auto"><blockquote id="352cfb3e-9058-8091-a1cc-fda2e0d5a47f" class="">🔔 <strong>참고<br/></strong>사용자의 가공 재료, 가공 방식, 사용 환경에 따라 콜렛의 기대 수명은 달라질 수 있습니다.</blockquote></div></li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80cd-9ad3-e97852ace9ec" class="bulleted-list"><li style="list-style-type:disc">장비 전원을 24시간 이상 꺼두는 경우, 콜렛 내부에 공구 또는 콜렛 핀을 삽입한 상태로 보관하십시오.</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80a3-a642-cf6976cce472" class="bulleted-list"><li style="list-style-type:disc">반드시 정품 공구를 사용하십시오.</li></ul></div><div style="display:contents" dir="auto"><blockquote id="352cfb3e-9058-80a3-922e-d6bc881d669b" class="">⚠️ <strong>주의</strong><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80b8-bf1f-cf2688d5340f" class="">콜렛을 청소하거나 관리할 때 콜렛 내·외부에 스크래치가 발생하지 않도록 주의하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80fd-a7d3-f0860b883bc6" class="">또한 콜렛의 형태가 변형되지 않도록 과도한 힘을 가하지 마십시오.</p></div></blockquote></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-804a-81ce-fd228101e7b5"/></div><div style="display:contents" dir="auto"><h2 id="352cfb3e-9058-809e-8d24-e342b2496d33" class="">👩🏼‍💼 콜렛 청소</h2></div><div style="display:contents" dir="auto"><blockquote id="352cfb3e-9058-80ea-9ec8-ec00516ecb79" class="">🔔 <strong>권장 청소 주기</strong><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8092-9ece-fdbf07796dc5" class="">콜렛은 주기적으로 청소하십시오. 최소 <strong>주 1회 이상</strong> 청소하는 것을 권장합니다.</p></div></blockquote></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80fd-a69e-c7b19244e520"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-8033-82d0-da1f6b244fb5" class="">1. 스핀들 위치 이동</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80e4-b4fa-e45285bebd6d" class="">작업하기 편한 위치로 스핀들을 이동시키십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80b7-b6e4-c61d858ee093" class="">필요한 경우 <strong>조그 모드(Jog Mode)</strong>를 활용하십시오.</p></div><div style="display:contents" dir="auto"><blockquote id="352cfb3e-9058-808a-9b10-fa0118d72fbc" class="">🔔 <strong>작업 공간 확보</strong><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80f7-a8f2-dce73bdd8a2d" class="">스핀들 아래쪽에 콜렛을 분리하고 청소할 수 있는 충분한 작업 공간을 확보하십시오.</p></div></blockquote></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80f3-860d-f1699e8fb57f"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80db-a8f3-dab06acd076e" class="">2. 콜렛 열기</h3></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-809a-b7a4-da36ac059893" class="column-list"><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8085-9b47-e8cbea1acb71" style="width:31.25%" class="column"><div style="display:contents" dir="auto"><p id="352cfb3e-9058-804f-8207-c8e70b52fe41" class="">컨트롤 프로그램에서 콜렛을 여십시오. </p></div></div></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8037-b4fa-f0612380a9e6" style="width:68.75%" class="column"><div style="display:contents" dir="ltr"><figure id="352cfb3e-9058-80d9-9cbd-d2bc7710bbb9" class="image"><a href="image.png"><img style="width:240px" src="image.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80d1-b5e6-e9524464d4c0"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80db-8617-d80d090aafaa" class="">3. 콜렛 분리</h3></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-805e-af36-cd2d48ef7c90" class="column-list"><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8006-975b-d2fa818e5c73" style="width:58.33333333333333%" class="column"><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80f9-b4e4-d789231f70ce" class="">콜렛 핀을 콜렛에 삽입하고, 콜렛 어댑터를 콜렛에 끼웁니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8084-964f-c1b66d3cb7b0" class="">콜렛 핀이 없는 경우, 파손된 공구를 대체품으로 사용할 수 있습니다.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8033-81d6-c88a51e87542" class="">콜렛 핀 또는 파손된 공구가 삽입된 상태에서, 토크 드라이버를 사용하여 콜렛을 <strong>시계 방향</strong>으로 돌려 스핀들에서 분리하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8022-9d74-c446d8e77cef" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8084-af47-e07e48964004" style="width:20.83333333333334%" class="column"><div style="display:contents" dir="ltr"><figure id="1cfcfb3e-9058-81b3-bed1-c866c4b5a629" class="image" style="text-align:left"><a href="image%201.png"><img style="width:240px" src="image%201.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-80e1-bc14-c9dbc3aec056" style="width:20.83333333333336%" class="column"><div style="display:contents" dir="ltr"><figure id="352cfb3e-9058-80bb-a69c-d2a6d187fcd8" class="image"><a href="image%202.png"><img style="width:144px" src="image%202.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80a0-8d95-c46657f82206"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-807a-988f-d8022c10ec58" class="">5. 콜렛 청소</h3></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8095-bbf7-e18999ee9057" class="column-list"><div style="display:contents" dir="auto"><div id="352cfb3e-9058-808e-9ffe-c0b0753b795d" style="width:62.5%" class="column"><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8079-ba00-f190407541c6" class="">스팀 클리너가 있는 경우, 콜렛의 안쪽과 바깥쪽에 분사하여 이물질을 제거하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8059-9f52-fe7a47c687c7" class="">이후 스타터 키트에 포함된 <strong>콜렛 청소 브러시</strong>를 사용하여 콜렛을 청소하십시오.</p></div><div style="display:contents" dir="auto"><blockquote id="352cfb3e-9058-8070-bd2a-f52a05665d52" class="">🔔 <strong>청소 확인</strong><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80d1-8d30-c5c4dab7294c" class="">콜렛 틈새에 분진이나 이물질이 남아 있지 않은지 꼼꼼하게 확인하십시오.</p></div></blockquote></div></div></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-801b-8bc7-f406ec095194" style="width:37.5%" class="column"><div style="display:contents" dir="ltr"><figure id="1cfcfb3e-9058-8184-9a72-ec9cb26d2ae4" class="image" style="text-align:center"><a href="image%203.png"><img style="width:462.65625px" src="image%203.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-809e-a4ae-fb45205421ac"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-8066-b081-ee0e6e41fdda" class="">6. 그리스 도포</h3></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-80f8-b1fa-d87840c02f81" class="column-list"><div style="display:contents" dir="auto"><div id="352cfb3e-9058-80b1-a34a-e82870364436" style="width:62.5%" class="column"><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80a6-b58a-fc57ea6ffd10" class="">청소가 완료되면 콜렛 표면에 그리스를 얇게 도포하십시오.</p></div><div style="display:contents" dir="auto"><blockquote id="352cfb3e-9058-8024-b433-ffd60103bdcc" class="">⚠️ <strong>주의</strong><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8021-86b7-cdab085daf77" class="">그리스를 과도하게 도포하지 마십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8039-84e9-c841c212c6de" class="">과도한 그리스는 분진을 흡착하여 콜렛 오염의 원인이 될 수 있습니다.</p></div></blockquote></div></div></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8068-a899-d38d990d7632" style="width:37.5%" class="column"><div style="display:contents" dir="ltr"><figure id="1cfcfb3e-9058-81df-948a-d49d0ca3ecb0" class="image"><a href="image%204.png"><img style="width:384px" src="image%204.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-80a4-af73-e1e3dab65b6d"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80da-a98d-fd632d3c088b" class="">7. 콜렛 장착 준비</h3></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-80cb-b78a-ee767361c2cc" class="column-list"><div style="display:contents" dir="auto"><div id="352cfb3e-9058-80b2-9675-f51db0431e7d" style="width:58.33333333333333%" class="column"><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80c2-8e9b-e9dc8b7eee17" class="">콜렛 핀 또는 파손된 공구를 콜렛에 삽입한 상태에서, 콜렛 어댑터와 토크 드라이버를 함께 장착하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80da-b3c5-f08bfcd0b163" class="">토크 드라이버는 <strong>0.2~0.6 N·m (20~60 cN·m)</strong> 범위로 설정하십시오.</p></div><div style="display:contents" dir="auto"><blockquote id="352cfb3e-9058-803b-87b6-ea8adb0e2390" class="">❗ <strong>주의</strong><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8007-84ea-cd308d5c49bc" class="">토크 드라이버가 없는 경우, <strong>0.6 N·m 토크 어댑터</strong>를 사용하십시오.</p></div></blockquote></div></div></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8051-8d4e-c23ed68003b7" style="width:20.833333333333332%" class="column"><div style="display:contents" dir="ltr"><figure id="1f4cfb3e-9058-80cb-8f0d-cb6d729add6c" class="image"><a href="image%205.png"><img style="width:384px" src="image%205.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-80ec-99c4-f663d5a390f0" style="width:20.833333333333346%" class="column"><div style="display:contents" dir="ltr"><figure id="352cfb3e-9058-805f-a1f5-d1f1a48765ed" class="image"><a href="image%202.png"><img style="width:144px" src="image%202.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-801e-8589-c0d34c8f7ec6"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-804f-99ec-dae0bcd29185" class="">8. 콜렛 장착</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80d7-a8bc-e173df449134" class="">콜렛을 스핀들에 삽입한 후 <strong>반시계 방향</strong>으로 돌려 고정하십시오.</p></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-80c8-84ae-c556a12ee1f0" class="">콜렛이 완전히 체결되었는지 확인하십시오.</p></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-800c-875b-e637dd2c3c9f"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80c1-a699-d921b08f273d" class="">9. 콜렛 닫기</h3></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-807c-8503-d35f781e3c6f" class="column-list"><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8014-8996-d0f553a47c53" style="width:31.25%" class="column"><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8074-ba37-f1bb10dd492d" class="">컨트롤 프로그램에서 콜렛을 닫으십시오.</p></div></div></div><div style="display:contents" dir="auto"><div id="352cfb3e-9058-8066-94e8-f7247541cb7e" style="width:68.75%" class="column"><div style="display:contents" dir="ltr"><figure id="352cfb3e-9058-8002-905c-e5099c8b96db" class="image"><a href="image%206.png"><img style="width:240px" src="image%206.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-8013-b4e9-ebcd2b8b7ff5"/></div><div style="display:contents" dir="auto"><h3 id="352cfb3e-9058-80fb-8d3e-fa82929c1973" class="">10. 최종 확인</h3></div><div style="display:contents" dir="auto"><p id="352cfb3e-9058-8064-9ee2-c8c05b03ffe5" class="">콜렛 청소 및 장착이 완료된 후 다음 항목을 확인하십시오.</p></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80d2-93ad-f393a3b0d4f2" class="bulleted-list"><li style="list-style-type:disc">콜렛이 스핀들에 정확히 체결되었는지 확인</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-8013-8aa2-ffb75e3e0e74" class="bulleted-list"><li style="list-style-type:disc">콜렛 내부에 이물질이 남아 있지 않은지 확인</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-8091-8470-cad96187b4f6" class="bulleted-list"><li style="list-style-type:disc">콜렛 표면에 과도한 그리스가 남아 있지 않은지 확인</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-80e6-b4c8-f16c725dffd0" class="bulleted-list"><li style="list-style-type:disc">공구가 정상적으로 삽입 및 고정되는지 확인</li></ul></div><div style="display:contents" dir="auto"><ul id="352cfb3e-9058-8063-9353-e0214994c19c" class="bulleted-list"><li style="list-style-type:disc">콜렛 Open / Close 동작이 정상적으로 작동하는지 확인</li></ul></div><div style="display:contents" dir="auto"><hr id="352cfb3e-9058-800c-bedc-dd3f77718a0f"/></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
