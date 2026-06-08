@@ -1,0 +1,750 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Connector settings (커넥터 설정)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2efcfb3e-9058-8004-8b67-ea327c4ff4f9" class="page sans"><header><h1 class="page-title" dir="auto"><strong>Connector settings (커넥터 설정)</strong></h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/clock_gray.svg" style="width:14px;height:14px;display:block"/></span>Issued</th><td><time>2026년 1월 21일 오후 4:06</time></td></tr><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Tags</th><td></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><p id="2efcfb3e-9058-80e7-8ec6-da1181b8b613" class=""> </p></div><div style="display:contents" dir="auto"><p id="2efcfb3e-9058-804f-b8a8-efa41d676097" class=""> </p></div><div style="display:contents" dir="auto"><p id="2efcfb3e-9058-80fc-b8ad-cb2c07440c22" class=""> </p></div><div style="display:contents" dir="auto"><p id="2efcfb3e-9058-80dd-841e-ee17e2a1df51" class=""> </p></div><div style="display:contents" dir="auto"><p id="2efcfb3e-9058-80d4-b0ed-cfa308bc27b8" class=""> </p></div><div style="display:contents" dir="auto"><p id="2f0cfb3e-9058-8064-a52a-c981f9c507fc" class=""> </p></div><div style="display:contents" dir="auto"><hr id="2efcfb3e-9058-80d7-a00d-c51c3caa520f"/></div><div style="display:contents" dir="auto"><h3 id="2efcfb3e-9058-80d7-af42-c8ae910ab28c" class="">1. <strong>Explanation of connector factors</strong> /커넥터 요소들에 관해</h3></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-809e-a20c-c6a818f24157" class="image"><a href="image.png"><img style="width:709.9810180664062px" src="image.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2efcfb3e-9058-8012-9411-dae301a88342" class="bulleted-list"><li style="list-style-type:disc"><strong>You can adjust factors of connector in setting menu.<br/>설정 메뉴에서 커넥터와 관련된 요소들을 조절할 수 있음</strong></li></ul></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-808f-a4a5-d6eaf0a05b03" class="image"><a href="image%201.png"><img style="width:709.9810180664062px" src="image%201.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2efcfb3e-9058-806e-9610-f834774d9ccc" class="bulleted-list"><li style="list-style-type:disc"><strong>Click the edit (pencil icon) menu<br/>수정 메뉴(연필 모양 아이콘) 을 누르세요.</strong></li></ul></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-80b2-a61f-c447b9a98e88" class="image"><a href="image%202.png"><img style="width:709.9715576171875px" src="image%202.png"/></a></figure></div><div style="display:contents" dir="auto"><ol type="1" id="2efcfb3e-9058-8033-83b7-d8b4684b6edc" class="numbered-list" start="1"><li><strong>Name: You can set name on your will<br/>이름: 이름을 원하는 대로 설정하실 수 있습니다. </strong></li></ol></div><div style="display:contents" dir="auto"><hr id="2efcfb3e-9058-8013-af42-e7b98b320bd0"/></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-80a3-a511-f4ac6e6d1b06" class="image"><a href="image%203.png"><img style="width:403.75px" src="image%203.png"/></a></figure></div><div style="display:contents" dir="auto"><ol type="1" id="2efcfb3e-9058-806f-bb3f-eff950ffc558" class="numbered-list" start="2"><li><strong>General: You can determine outfit of connector<br/>일반: 커넥터의 외형을 설정할 수 있습니다. </strong><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-8016-8e06-f3ffa41e6d78" class="image"><a href="image%204.png"><img style="width:709.9715576171875px" src="image%204.png"/></a><figcaption><strong>Circle (원형)                                                  Ellips(타원형)                                                 Oval(난원형)</strong></figcaption></figure></div><div style="display:contents" dir="auto"><hr id="2efcfb3e-9058-8066-abe3-f5c983729ad5"/></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-8020-9105-f3292f902b24" class="image" style="text-align:center"><a href="image%205.png"><img style="width:480px" src="image%205.png"/></a><figcaption><strong>Diameter 2mm                                                   Diameter 4mm<br/>직경 2mm                                                            직경 4mm</strong></figcaption></figure></div><div style="display:contents" dir="auto"><hr id="2efcfb3e-9058-80a6-a6f3-e845005d9362"/></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-8079-ba38-ed72469ba74d" class="image"><a href="image%206.png"><img style="width:377.9270935058594px" src="image%206.png"/></a></figure></div></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2efcfb3e-9058-802a-835a-fe0c2bedbe29" class="numbered-list" start="3"><li><strong>Group size: This is the number of connectors when set to automatic mode.<br/>Group size: 자동 모드로 커넥터 설정 시 생길 커넥터의 개수 입니다. </strong><br/></li></ol></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-802c-b048-d959dc051e25" class="image"><a href="image%207.png"><img style="width:697.763916015625px" src="image%207.png"/></a><figcaption><strong>Group size:2                                                                                        Group size:3</strong></figcaption></figure></div><div style="display:contents" dir="auto"><hr id="2efcfb3e-9058-80a5-8213-d2b6b3cee8f7"/></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-80ea-8d4c-cc49649448bd" class="image"><a href="image%208.png"><img style="width:403.71527099609375px" src="image%208.png"/></a></figure></div><div style="display:contents" dir="auto"><ol type="1" id="2efcfb3e-9058-8015-9259-f6f26cbfa4c7" class="numbered-list" start="4"><li><strong>Milling cut : Factors for how much to trim when cutting the connector.<br/>밀링 컷 : 커넥터 절단 시 얼마나 깎을지에 대한 메뉴</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-8084-80ca-faadb212acbb" class="image" style="text-align:center"><a href="image%209.png"><img style="width:528px" src="image%209.png"/></a><figcaption><strong>Milling cut - 40%                                               After connector reduce                                   밀링컷 40%의 경우                                              커넥터 절단 후  <br/>                                                                                 </strong></figcaption></figure></div><div style="display:contents" dir="auto"><hr id="2efcfb3e-9058-804c-b463-d703b425be9e"/></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-8061-be45-c65531e67760" class="image"><a href="image%2010.png"><img style="width:403.7430725097656px" src="image%2010.png"/></a></figure></div><div style="display:contents" dir="auto"><ol type="1" id="2efcfb3e-9058-8024-a1dc-d032bbc5e5de" class="numbered-list" start="5"><li><strong>Material: <br/>You can select the materials to be applied and set them as the default for specific materials.  <br/>설정이 적용될 재료를 고를 수 있습니다. 또한 특정 재료에서 기본값으로 적용되게 할 수 있습니다. </strong></li></ol></div><div style="display:contents" dir="auto"><p id="2f0cfb3e-9058-8061-830f-c130d19efacb" class="">
+</p></div><div style="display:contents" dir="auto"><hr id="2f0cfb3e-9058-80fd-a60c-d71704b07235"/></div><div style="display:contents" dir="auto"><h3 id="2efcfb3e-9058-8022-88ab-dae2dac8a6ef" class="">2. Saving Customized Connector Settings / 커스터마이징한 커넥터 설정 저장</h3></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-806d-8ce4-e9644e482250" class="image"><a href="image%2011.png"><img style="width:697.7708129882812px" src="image%2011.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2efcfb3e-9058-8083-bddf-d7da2bca75e5" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2efcfb3e-9058-80f7-b4cc-e146c9d8ccd8" class="image"><a href="image%2012.png"><img style="width:697.7708129882812px" src="image%2012.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2efcfb3e-9058-8084-887d-c422ae95f2b2" class="bulleted-list"><li style="list-style-type:disc"><strong>After saving, You can check it connector menu. As you can see, customized setting applied.<br/>저장 후에, 커넥터 메뉴에서 확인 가능합니다.  변경한 세팅이 적용됐습니다. </strong></li></ul></div><div style="display:contents" dir="auto"><hr id="2efcfb3e-9058-80c0-93da-c5eb5f79eedb"/></div><div style="display:contents" dir="auto"><h3 id="2f0cfb3e-9058-80a5-8e8b-d5ef72dda8d8" class="">3. Auto connector setting / 자동 커넥터 설정</h3></div><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-8033-a2b0-fae3abb01be9" class="image"><a href="image%2013.png"><img style="width:658.419677734375px" src="image%2013.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-80cc-857f-fcab4b811c26" class="bulleted-list"><li style="list-style-type:disc"><strong>Press F5 on your keyboard, you can enter ‘Machine settings’ menu. <br/><br/>Click the ‘Fixture→ Additonal properties’. Select Fixture type. <br/><br/>Set ‘Allow overlapping~’ to </strong><mark class="highlight-red"><strong>‘No’</strong></mark><strong> and ‘Connectors adding to part’ to </strong><mark class="highlight-blue"><strong>‘Yes’</strong></mark><strong>.<br/><br/>Connectors are attached automatically when you nest STL file on the blank<br/></strong></li></ul></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-803a-b4e3-fdf29b854a61" class="bulleted-list"><li style="list-style-type:disc"><strong>F5 키를 누르면 “Machine settings” 메뉴가 뜹니다. <br/><br/>해당 메뉴에서 ‘Fixture → Additonal properties’ 로 들어간 다S음, 픽스쳐 유형을 선택하세요.<br/><br/>표시된 ‘Allow overlapping~’을 </strong><mark class="highlight-red"><strong>‘No’</strong></mark><strong>로 ‘Connectors adding to part’를 </strong><mark class="highlight-blue"><strong>‘Yes’</strong></mark><strong>로 설정하면<br/><br/>이제 STL을 디스크에 배치 시 자동으로 커넥터가 달려서 배치됩니다. </strong></li></ul></div><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-8007-b6ae-f8eecc75f98d" class="image"><a href="image%2014.png"><img style="width:658.419677734375px" src="image%2014.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-805b-9d3a-ce55d89b8038" class="bulleted-list"><li style="list-style-type:disc"><strong>Set ‘Allow overlapping~’ to</strong><mark class="highlight-blue"><strong> ‘Yes’ </strong></mark><strong>and ‘Connector adding to part’ to </strong><mark class="highlight-red"><strong>‘No’</strong></mark><strong><br/>connector do not attached automatically. </strong></li></ul></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-80b8-9e09-f567b35a46d2" class="bulleted-list"><li style="list-style-type:disc"><strong>‘Allow overlapping~’ 을 </strong><mark class="highlight-blue"><strong>‘Yes’</strong></mark><strong>로 ‘Connector adding to part’를 </strong><mark class="highlight-red"><strong>‘No’</strong></mark><strong>로 설정하면<br/>커넥터가 자동으로 설정되지 않습니다.</strong><br/></li></ul></div><div style="display:contents" dir="auto"><hr id="2f0cfb3e-9058-802d-a759-cc8ba4d68cbb"/></div><div style="display:contents" dir="auto"><h3 id="2f0cfb3e-9058-8062-bf9f-c9b801e355ef" class="">4. Traverse / 트레버스(가로지르기)</h3></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-8084-bada-e15d386e291d" class="bulleted-list"><li style="list-style-type:disc"><strong>What is the “Traverse” ?<br/>트레버스는 무엇일까요?</strong></li></ul></div><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-80af-b30e-cfe5d16a3c83" class="image"><a href="image%2015.png"><img style="width:658.4107666015625px" src="image%2015.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-801b-8e4a-c43813a9fd28" class="bulleted-list"><li style="list-style-type:disc"><strong>This feature allows a connector to bridge the gap between prostheses where the milling areas overlap.<br/>커넥터가 밀링 영역이 겹치는 보철물 사이를 가로지르는 기능입니다. </strong></li></ul></div><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-805f-a5b0-cd77b4980e1b" class="image"><a href="image%2016.png"><img style="width:709.9715576171875px" src="image%2016.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-804e-9624-e8d9c0d1cce1" class="bulleted-list"><li style="list-style-type:disc"><strong>Press F5 key on your keyboard, and set ‘create Traverse ‘ option to </strong><mark class="highlight-blue"><strong>‘Yes’</strong></mark><strong><br/>F5키를 누르시고 ‘create Traverse’ 옵션을 </strong><mark class="highlight-blue"><strong>‘Yes’</strong></mark><strong>로 설정하세요.</strong></li></ul></div><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-8072-bc85-f771beb5ff5a" class="image"><a href="image%2017.png"><img style="width:709.9573364257812px" src="image%2017.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-805d-8fe7-d4c36f6aa533" class="bulleted-list"><li style="list-style-type:disc"><strong>After that, clicking the prosthesis in automatic mode will attach the connector in a traversed state.<br/>그 후에, 자동 커넥터 모드에서 보철물을 클릭하면 커넥터가 다른 커넥터들을 가로지르면서 부착됩니다. </strong></li></ul></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-803c-ad92-f90c866de40f" class="bulleted-list"><li style="list-style-type:disc"><strong>In manual mode, you can use the traverse function by clicking the corresponding button.<br/>수동 모드에서는 이 버튼을 클릭해 트레버스 기능을 사용할 수 있습니다. </strong><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-80e9-a2d4-c46a6e8ed045" class="image"><a href="image%2018.png"><img style="width:682.0028076171875px" src="image%2018.png"/></a></figure></div></li></ul></div><div style="display:contents" dir="auto"><h3 id="2efcfb3e-9058-8095-ae02-d788953be386" class="">5. Recommended connector / 상황 별 권장 커넥터 </h3></div><div style="display:contents" dir="auto"><ol type="1" id="2efcfb3e-9058-8049-9a00-c6ceb21d34f6" class="numbered-list" start="1"><li><strong>Circle shape <br/>원형 커넥터</strong></li></ol></div><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-806b-8011-f0f137aa00d5" class="column-list"><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-80b6-8ab5-cc8965534a16" style="width:25%" class="column"><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-80ad-b3fa-fadef452d95c" class="image" style="text-align:left"><a href="image%2019.png"><img style="width:144px" src="image%2019.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-80b5-8905-e60afc29b8d2" style="width:75%" class="column"><div style="display:contents" dir="auto"><p id="2f0cfb3e-9058-8029-940e-ed5dcf770b8b" class="">
+</p></div><div style="display:contents" dir="auto"><ul id="2efcfb3e-9058-808d-b349-d1b9afa493d7" class="bulleted-list"><li style="list-style-type:disc"><strong>Used in most situations.<br/>대부분의 상황에서 쓰입니다. </strong></li></ul></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-80d3-ab7b-c771074d8b52" class="bulleted-list"><li style="list-style-type:disc"><strong>When milling Zirconia, please set milling cut to low or 0%. <br/>지르코니아 가공시 밀링컷을 낮게 혹은 0%로 설정하세요</strong></li></ul></div><div style="display:contents" dir="auto"><p id="2f0cfb3e-9058-8008-bb50-fe58f6f2c5e6" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><ol type="1" id="2f0cfb3e-9058-80ee-a5c6-eacb1eff68bd" class="numbered-list" start="2"><li><strong>Ellips shape<br/>타원형 커넥터</strong></li></ol></div><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-80f7-a529-d423c2ba8b10" class="column-list"><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-808d-90e2-e6981286db86" style="width:25%" class="column"><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-8010-bd49-ea83b2aa0045" class="image" style="text-align:left"><a href="image%2020.png"><img style="width:132px" src="image%2020.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-80cf-9773-c3f6f53f60a6" style="width:75%" class="column"><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-8091-9094-fe3cc39f99d6" class="bulleted-list"><li style="list-style-type:disc"><strong>Used when the area for attaching the connector is narrow.<br/>커넥터 달 곳이 좁을 때 쓰입니다. </strong></li></ul></div><div style="display:contents" dir="auto"><p id="2f0cfb3e-9058-80b5-b78a-ef5f08b1fe0e" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2f0cfb3e-9058-802e-bc7b-e55ff91bf7ac" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="2f0cfb3e-9058-80a1-9893-db412324ff1d" class="numbered-list" start="3"><li><strong>Oval shape<br/>난원형 커넥터</strong></li></ol></div><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-80b0-bbe6-c5d261731bbf" class="column-list"><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-80be-b247-ee959ddc7c4b" style="width:25%" class="column"><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-809f-b09a-e4464358e24b" class="image" style="text-align:left"><a href="image%2021.png"><img style="width:132px" src="image%2021.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2f0cfb3e-9058-8039-ad5b-d81426b63274" style="width:75%" class="column"><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-80b7-a872-f0e7adb9733d" class="bulleted-list"><li style="list-style-type:disc"><strong>Used when the area for attaching the connector is narrow.<br/>커넥터 달 곳이 좁을 때 쓰입니다. </strong></li></ul></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="2f0cfb3e-9058-8094-b9ec-ddde76891f68"/></div><div style="display:contents" dir="auto"><h3 id="2f0cfb3e-9058-8043-934c-f3c710d1f39e" class="">6. Tip for setting connector / 커넥터 설정 팁</h3></div><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-80e4-9318-c536434f137a" class="image"><a href="hyperDENT_connector.efficiently_1.symptom_25.04.22.gif"><img style="width:709.984375px" src="hyperDENT_connector.efficiently_1.symptom_25.04.22.gif"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-8073-b98b-d3d110ece757" class="bulleted-list"><li style="list-style-type:disc"><strong>If it is difficult to set up connectors to avoid the area of the margin lines or the area where it will come into contact with the supra-structures, <br/>커텍터를 달고 싶은 위치가 마진이거나, 상부 보철물이 접촉할 부분이어서 피하고 싶은데, 피해서 달기 어렵다면, </strong></li></ul></div><div style="display:contents" dir="ltr"><figure id="2f0cfb3e-9058-809f-9c9d-edcf88a794df" class="image"><a href="hyperDENT_connector.efficiently_2.adjusting_25.04.22.gif"><img style="width:709.984375px" src="hyperDENT_connector.efficiently_2.adjusting_25.04.22.gif"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2f0cfb3e-9058-8058-ab56-c9afd9e8507d" class="bulleted-list"><li style="list-style-type:disc"><strong>Pressing the Ctrl button creates a virtual wall, which allows the connector to move up and down along the wall to set the connector with avoiding the sensitive areas.<br/>Ctrl 버튼을 누르면 가상의 벽이 생성되어, 커넥터를 이 벽을 따라 상, 하로 이동 시켜 민감한 영역을 피해 커넥터를 장착할 수 있습니다.</strong></li></ul></div><div style="display:contents" dir="auto"><p id="2f0cfb3e-9058-8051-8c87-d25a3e9716ca" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
