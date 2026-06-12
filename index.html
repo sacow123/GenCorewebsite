@@ -4435,14 +4435,14 @@
           <div style="display:flex; flex-direction:column; gap:16px; margin-top:20px; width:100%;">
             <div class="feature-card" data-feature-key="mf-hd-install-video" style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px; width:100%;">
               <div style="flex-shrink:0;">
-                <img src="file:///C:/Program%20Files/FOLLOW%20ME/hyperDENT_10.1.2/docs/hyperDENTCP/English/header_logo_handbuch_v10.png" alt="icon" style="width:40px; height:auto; object-fit:contain;">
+                <img src="assets/images/header_logo_handbuch_v10.png" alt="icon" style="width:40px; height:auto; object-fit:contain;">
               </div>
               <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;">MillFix 하이퍼덴트 설치방법</p>
             </div>
             
             <div class="feature-card" data-feature-key="mf-hd-settings-video" style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px; width:100%;">
               <div style="flex-shrink:0;">
-                <img src="file:///C:/Program%20Files/FOLLOW%20ME/hyperDENT_10.1.2/docs/hyperDENTCP/English/header_logo_handbuch_v10.png" alt="icon" style="width:40px; height:auto; object-fit:contain;">
+                <img src="assets/images/header_logo_handbuch_v10.png" alt="icon" style="width:40px; height:auto; object-fit:contain;">
               </div>
               <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;">MillFix 하이퍼덴트 설정방법</p>
             </div>
@@ -4576,7 +4576,6 @@
           <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 16px; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
             <div>
               <h3 style="margin: 0; font-size: 20px; color: var(--text-color, #1f2937);">DB_MillFix_V10.1.X_260110_R1</h3>
-              <p style="margin: 4px 0 0 0; font-size: 21px; color: var(--text-muted, #6b7280);">업데이트 날짜: 2026/05/21</p>
             </div>
             <a href="https://works.do/xp0JOBc" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 12px; background-color: #a855f7; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 21px; transition: all 0.2s; box-shadow: 0 4px 6px rgba(168, 85, 247, 0.25);">
               📥 데이터베이스 다운로드
@@ -5364,6 +5363,7 @@
           }
           
           modal.style.display = 'flex';
+          modalBody.scrollTop = 0;
           history.replaceState(null, null, '#template-' + encodeURIComponent(title));
       }
 
@@ -6393,6 +6393,7 @@
       mTitle.textContent = data.title;
       mBody.innerHTML = buildFeatureHTML(data);
       modal.style.display = 'flex';
+      mBody.scrollTop = 0;
       history.replaceState(null, null, `#feature-${key}`);
     }
     window.openFeatureModal = openFeatureModal;

@@ -749,6 +749,7 @@
           }
           
           modal.style.display = 'flex';
+          modalBody.scrollTop = 0;
           history.replaceState(null, null, '#template-' + encodeURIComponent(title));
       }
 
@@ -1778,6 +1779,7 @@
       mTitle.textContent = data.title;
       mBody.innerHTML = buildFeatureHTML(data);
       modal.style.display = 'flex';
+      mBody.scrollTop = 0;
       history.replaceState(null, null, `#feature-${key}`);
     }
     window.openFeatureModal = openFeatureModal;
