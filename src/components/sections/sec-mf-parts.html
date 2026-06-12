@@ -1,0 +1,315 @@
+<section id="sec-mf-parts" class="content-section">
+        <h2 data-i18n="nav-mf-parts">🏷️ 부분 명칭</h2>
+        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
+          Anchor: <a href="#sec-mf-parts" style="color:#a855f7; text-decoration:none;">#sec-mf-parts</a></div>
+        <p class="subtitle">MillFix 소개</p>
+        <style>
+          .interactive-img-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+          }
+
+          .pulse-point {
+            position: absolute;
+            z-index: 10;
+          }
+
+          .pulse-dot {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background-color: rgba(220, 100, 60, 0.5);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            animation: pulse-anim 1.5s infinite;
+          }
+
+          @keyframes pulse-anim {
+            0% {
+              box-shadow: 0 0 0 0 rgba(220, 100, 60, 0.7);
+            }
+
+            70% {
+              box-shadow: 0 0 0 12px rgba(220, 100, 60, 0);
+            }
+
+            100% {
+              box-shadow: 0 0 0 0 rgba(220, 100, 60, 0);
+            }
+          }
+
+          .pulse-point:hover .pulse-dot {
+            animation: none;
+            background-color: rgba(220, 100, 60, 1);
+          }
+
+          .pulse-tooltip {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 20;
+          }
+
+          .pulse-point:hover .pulse-tooltip {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          .tt-line {
+            position: absolute;
+            border-color: #d26a6a;
+            border-style: solid;
+            border-width: 0;
+            width: var(--line-w);
+            height: var(--line-h);
+          }
+
+          .tt-box {
+            position: absolute;
+            background-color: #d26a6a;
+            color: white;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 21px;
+            white-space: nowrap;
+            border-radius: 4px;
+            line-height: 1.4;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+          }
+
+          .dir-up-left .tt-line {
+            bottom: 0;
+            right: 0;
+            border-top-width: 2px;
+            border-right-width: 2px;
+            border-top-right-radius: 4px;
+          }
+
+          .dir-up-left .tt-box {
+            right: var(--line-w);
+            bottom: calc(var(--line-h) - 15px);
+          }
+
+          .dir-up-right .tt-line {
+            bottom: 0;
+            left: 0;
+            border-top-width: 2px;
+            border-left-width: 2px;
+            border-top-left-radius: 4px;
+          }
+
+          .dir-up-right .tt-box {
+            left: var(--line-w);
+            bottom: calc(var(--line-h) - 15px);
+          }
+
+          .dir-down-left .tt-line {
+            top: 0;
+            right: 0;
+            border-bottom-width: 2px;
+            border-right-width: 2px;
+            border-bottom-right-radius: 4px;
+          }
+
+          .dir-down-left .tt-box {
+            right: var(--line-w);
+            top: calc(var(--line-h) - 15px);
+          }
+
+          .dir-down-right .tt-line {
+            top: 0;
+            left: 0;
+            border-bottom-width: 2px;
+            border-left-width: 2px;
+            border-bottom-left-radius: 4px;
+          }
+
+          .dir-down-right .tt-box {
+            left: var(--line-w);
+            top: calc(var(--line-h) - 15px);
+          }
+        </style>
+        <div class="content-card" style="margin-left: 80px; width: calc(100% - 80px);">
+          <div style="display:flex;flex-direction:column;gap:40px;align-items:center;width:100%;padding:20px 0;">
+            <div style="display:flex;gap:4%;justify-content:center;width:100%;align-items:flex-end;text-align:center;">
+              <div style="width:48%;">
+                <div class="interactive-img-container">
+                  <img loading="lazy" src="./assets/images/sec-mf-parts/millfix-1.webp" alt="MillFix 전면부 1"
+                    style="width:100%;border-radius:8px;object-fit:contain;display:block;">
+
+                  <!-- Status LED -->
+                  <div class="pulse-point" style="top: 38%; left: 44.5%; --line-w: 75px; --line-h: 30px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-up-left">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Status LED</div>
+                    </div>
+                  </div>
+                  <!-- Touch screen -->
+                  <div class="pulse-point" style="top: 38%; left: 65%; --line-w: 180px; --line-h: 65px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-up-left">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Touch screen</div>
+                    </div>
+                  </div>
+                  <!-- Power button -->
+                  <div class="pulse-point" style="top: 42.5%; left: 87%; --line-w: 20px; --line-h: 40px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-up-right">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Power button</div>
+                    </div>
+                  </div>
+                  <!-- Power switch -->
+                  <div class="pulse-point" style="top: 71%; left: 9.5%; --line-w: 30px; --line-h: 60px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-down-left">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Power switch<br>Power code</div>
+                    </div>
+                  </div>
+                  <!-- LAN / USB port -->
+                  <div class="pulse-point" style="top: 74.5%; left: 14.5%; --line-w: 20px; --line-h: 40px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-down-left">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">LAN / USB port</div>
+                    </div>
+                  </div>
+                  <!-- Milling table -->
+                  <div class="pulse-point" style="top: 65%; left: 61%; --line-w: 50px; --line-h: 70px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-down-right">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Milling table<br>(C-clamp jig)</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="color:black;font-weight:bold;font-size:18px;margin-top:16px;">전면부</div>
+              </div>
+              <div style="width:48%;">
+                <div class="interactive-img-container">
+                  <img loading="lazy" src="./assets/images/sec-mf-parts/millfix-2.webp" alt="MillFix 전면부 2"
+                    style="width:100%;border-radius:8px;object-fit:contain;display:block;">
+
+                  <!-- USB port -->
+                  <div class="pulse-point" style="top: 30%; left: 56%; --line-w: 200px; --line-h: 20px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-up-left">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">USB port</div>
+                    </div>
+                  </div>
+
+                  <!-- Status LED -->
+                  <div class="pulse-point" style="top: 40%; left: 63%; --line-w: 60px; --line-h: 40px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-up-right">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Status LED</div>
+                    </div>
+                  </div>
+
+                  <!-- Spindle -->
+                  <div class="pulse-point" style="top: 55%; left: 51%; --line-w: 220px; --line-h: 70px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-up-left">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Spindle</div>
+                    </div>
+                  </div>
+
+                  <!-- Tool pocket -->
+                  <div class="pulse-point" style="top: 61%; left: 45%; --line-w: 190px; --line-h: 40px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-up-left">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Tool pocket</div>
+                    </div>
+                  </div>
+
+                  <!-- Door -->
+                  <div class="pulse-point" style="top: 73%; left: 32%; --line-w: 100px; --line-h: 50px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-down-right">
+                      <div class="tt-line"></div>
+                      <div class="tt-box">Door</div>
+                    </div>
+                  </div>
+
+                  <!-- Air pressure digital gauge -->
+                  <div class="pulse-point" style="top: 72%; left: 73%; --line-w: 40px; --line-h: 50px;">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-tooltip dir-down-right">
+                      <div class="tt-line"></div>
+                      <div class="tt-box" style="text-align:center;">Air pressure<br>digital gauge</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div style="color:black;font-weight:bold;font-size:18px;margin-top:16px;">전면부</div>
+              </div>
+            </div>
+            <div style="width:48%; text-align:center;">
+              <div class="interactive-img-container">
+                <img loading="lazy" src="./assets/images/sec-mf-parts/millfix.webp" alt="MillFix 후면부"
+                  style="width:100%;border-radius:8px;object-fit:contain;display:block;">
+
+                <!-- Fan -->
+                <div class="pulse-point" style="top: 18%; left: 28%; --line-w: 200px; --line-h: 50px;">
+                  <div class="pulse-dot"></div>
+                  <div class="pulse-tooltip dir-up-right">
+                    <div class="tt-line"></div>
+                    <div class="tt-box">Fan</div>
+                  </div>
+                </div>
+
+                <!-- Vacuum signal cable port -->
+                <div class="pulse-point" style="top: 45%; left: 25%; --line-w: 90px; --line-h: 120px;">
+                  <div class="pulse-dot"></div>
+                  <div class="pulse-tooltip dir-up-left">
+                    <div class="tt-line"></div>
+                    <div class="tt-box" style="text-align:center;">Vacuum signal<br>cable port</div>
+                  </div>
+                </div>
+
+                <!-- Air regulator -->
+                <div class="pulse-point" style="top: 59%; left: 20%; --line-w: 60px; --line-h: 40px;">
+                  <div class="pulse-dot"></div>
+                  <div class="pulse-tooltip dir-up-left">
+                    <div class="tt-line"></div>
+                    <div class="tt-box">Air regulator</div>
+                  </div>
+                </div>
+
+                <!-- Air input -->
+                <div class="pulse-point" style="top: 77%; left: 15%; --line-w: 40px; --line-h: 30px;">
+                  <div class="pulse-dot"></div>
+                  <div class="pulse-tooltip dir-down-left">
+                    <div class="tt-line"></div>
+                    <div class="tt-box">Air input</div>
+                  </div>
+                </div>
+
+                <!-- Dust collector port -->
+                <div class="pulse-point" style="top: 84%; left: 25%; --line-w: 60px; --line-h: 60px;">
+                  <div class="pulse-dot"></div>
+                  <div class="pulse-tooltip dir-down-right">
+                    <div class="tt-line"></div>
+                    <div class="tt-box">Dust collector port</div>
+                  </div>
+                </div>
+
+              </div>
+              <div style="color:black;font-weight:bold;font-size:18px;margin-top:16px;">후면부</div>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenCore Technical Support Center</title>
+  <meta name="description" content="GenCore 제품 매뉴얼 및 기술 지원 센터">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="logo-area">
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+      <button id="homeBtn" style="display:flex;align-items:center;background:none;border:none;cursor:pointer;">
+        <h1 data-i18n="site-title">GenCore Technical Support Center</h1>
+      </button>
+    </div>
+    <div class="header-right" style="display:flex; align-items:center; gap:12px;">
+      <div class="search-container" style="position:relative; display:flex; align-items:center;">
+        <span class="search-icon" style="position:absolute; left:10px; font-size:14px; color:#888;">🔍</span>
+        <input type="text" id="searchInput" placeholder="검색..." aria-label="Search" autocomplete="off" style="padding: 7px 10px 7px 30px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; width: 180px; outline: none; transition: var(--transition);">
+      </div>
+      <div class="lang-selector">
+        <button id="langBtn" class="lang-btn" aria-label="Language">
+        <span class="globe">🌐</span>
+        <span id="langBtnLabel">🇰🇷 한국어</span>
+        <span style="font-size:10px;">▼</span>
+      </button>
+      <div id="langDropdown" class="lang-dropdown">
+        <button data-lang="ko" class="active">🇰🇷 한국어</button>
+        <button data-lang="en">🇺🇸 English</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="es">🇪🇸 Español</button>
+      </div>
+    </div>
+    </div>
+  </header>
+
+
+  <div class="app-layout">
+    <!-- ===== SIDEBAR ===== -->
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-title" data-i18n="nav-menu-label">MENU</div>
+      <div class="nav-item" data-section="section-safety" id="menu-section-safety">
+        <span class="icon">⚠️</span>
+        <span data-i18n="nav-safety">취급시 주의사항(공통)</span>
+      </div>
+      <div class="nav-parent" id="nav-user-manual">
+        <div class="nav-item">
+          <span class="icon">📖</span>
+          <span data-i18n="nav-user-manual">사용자 매뉴얼</span>
+          <span class="nav-arrow"></span>
+        </div>
+        <div class="sub-menu">
+          <!-- M AIº -->
+          <div class="nav-parent" id="nav-mai">
+            <div class="nav-item">
+              <span data-i18n="nav-mai">M AIº</span>
+              <span class="nav-arrow"></span>
+            </div>
+            <div class="sub-menu">
+              <!-- M AIº 소개 -->
+              <div class="nav-parent" id="nav-mai-intro">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-intro">M AIº 소개</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-spec" id="menu-sec-mai-spec"><span
+                      data-i18n="nav-mai-spec">📊 사양</span></div>
+                  <div class="nav-item" data-section="sec-mai-parts" id="menu-sec-mai-parts"><span
+                      data-i18n="nav-mai-parts">🏷️ 부분 명칭</span></div>
+                  <div class="nav-item" data-section="sec-mai-components" id="menu-sec-mai-components"><span
+                      data-i18n="nav-mai-components">📦 구성품</span></div>
+                </div>
+              </div>
+              <!-- M AIº 설치/ 기본 조작 -->
+              <div class="nav-parent" id="nav-mai-setup">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-setup">설치/ 기본 조작</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-precheck" id="menu-sec-mai-precheck"><span
+                      data-i18n="nav-mai-precheck">⚙️ 설치 및 준비 조건</span></div>
+                  <div class="nav-item" data-section="sec-mai-transport" id="menu-sec-mai-transport"><span
+                      data-i18n="nav-mai-transport">🚚 설치 및 운반 주의 사항</span></div>
+                  <div class="nav-item" data-section="sec-mai-cable" id="menu-sec-mai-cable"><span
+                      data-i18n="nav-mai-cable">🔌 케이블 연결</span></div>
+                  <div class="nav-item" data-section="sec-mai-power" id="menu-sec-mai-power"><span
+                      data-i18n="nav-mai-power">⚡ 전원 켜기/ 끄기, 워밍업</span></div>
+                  <div class="nav-item" data-section="sec-mai-tool-setup" id="menu-sec-mai-tool-setup"><span
+                      data-i18n="nav-mai-tool-setup">🛠️ 공구 세팅</span></div>
+                                    <div class="nav-parent" id="nav-mai-calibration-parent">
+                    <div class="nav-item" id="menu-sec-mai-calibration">
+                      <span data-i18n="nav-mai-calibration">캘리브레이션</span>
+                      <span class="nav-arrow"></span>
+                    </div>
+                    <div class="sub-menu">
+                      <div class="nav-parent" id="nav-mai-cal-disk-parent">
+                        <div class="nav-item" id="menu-sec-mai-cal-disk">
+                          <span data-i18n="nav-mai-cal-disk">디스크 캘리브레이션</span>
+                          <span class="nav-arrow"></span>
+                        </div>
+                        <div class="sub-menu">
+                          <div class="nav-item" data-section="sec-mai-cal-disk-ai" id="menu-sec-mai-cal-disk-ai"><span data-i18n="nav-mai-cal-disk-ai"><span class="icon-disk"></span> AI 디스크 캘리브레이션</span></div>
+                          <div class="nav-item" data-section="sec-mai-cal-disk-manual" id="menu-sec-mai-cal-disk-manual"><span data-i18n="nav-mai-cal-disk-manual">🖐️ 매뉴얼 디스크 캘리브레이션</span></div>
+                        </div>
+                      </div>
+                      <div class="nav-parent" id="nav-mai-cal-premill-parent">
+                        <div class="nav-item" id="menu-sec-mai-cal-premill">
+                          <span data-i18n="nav-mai-cal-premill">프리밀 캘리브레이션</span>
+                          <span class="nav-arrow"></span>
+                        </div>
+                        <div class="sub-menu">
+                          <div class="nav-item" data-section="sec-mai-cal-premill-v1" id="menu-sec-mai-cal-premill-v1"><span data-i18n="nav-mai-cal-premill-v1"><span class="icon-premill"></span> AI 프리밀 캘리브레이션 V1.2</span></div>
+                          <div class="nav-item" data-section="sec-mai-cal-premill-v2" id="menu-sec-mai-cal-premill-v2"><span data-i18n="nav-mai-cal-premill-v2"><span class="icon-premill"></span> AI 프리밀 캘리브레이션 V2.0</span></div>
+                        </div>
+                      </div>
+                      <div class="nav-parent" id="nav-mai-cal-tool-parent">
+                        <div class="nav-item" id="menu-sec-mai-cal-tool">
+                          <span data-i18n="nav-mai-cal-tool">툴포켓 캘리브레이션</span>
+                          <span class="nav-arrow"></span>
+                        </div>
+                        <div class="sub-menu">
+                          <div class="nav-item" data-section="sec-mai-cal-tool-auto" id="menu-sec-mai-cal-tool-auto"><span data-i18n="nav-mai-cal-tool-auto">🤖 툴포켓 캘리브레이션(오토)</span></div>
+                          <div class="nav-item" data-section="sec-mai-cal-tool-manual" id="menu-sec-mai-cal-tool-manual"><span data-i18n="nav-mai-cal-tool-manual">🖐️ 툴포켓 캘리브레이션(매뉴얼)</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- M AIº 컨트롤 프로그램 -->
+              <div class="nav-parent" id="nav-mai-ctrl">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-ctrl">컨트롤 프로그램</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-main-page" id="menu-sec-mai-main-page"><span
+                      data-i18n="nav-mai-main-page">🏠 메인 페이지</span></div>
+                  <div class="nav-item" data-section="sec-mai-tool-list" id="menu-sec-mai-tool-list"><span
+                      data-i18n="nav-mai-tool-list">📋 공구 리스트 페이지</span></div>
+                  <div class="nav-item" data-section="sec-mai-settings" id="menu-sec-mai-settings"><span
+                      data-i18n="nav-mai-settings">⚙️ 설정 페이지</span></div>
+                </div>
+              </div>
+              <!-- M AIº hyperDENT -->
+              <div class="nav-parent" id="nav-mai-hd">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-hd">hyperDENT</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-hd-install" id="menu-sec-mai-hd-install"><span
+                      data-i18n="nav-mai-hd-install">💻 설치/ 기본 설정</span></div>
+                  <div class="nav-item" data-section="sec-mai-hd-blank" id="menu-sec-mai-hd-blank"><span
+                      data-i18n="nav-mai-hd-blank"><span class="icon-puck"></span> 소재(blank)</span></div>
+                  <div class="nav-item" data-section="sec-mai-hd-settings" id="menu-sec-mai-hd-settings"><span
+                      data-i18n="nav-mai-hd-settings">📝 세팅 파일(settings)</span></div>
+                  <div class="nav-item" data-section="sec-mai-hd-features" id="menu-sec-mai-hd-features"><span
+                      data-i18n="nav-mai-hd-features">💡 사용 방법(features)</span></div>
+                  <div class="nav-item" data-section="sec-mai-hd-tutorials" id="menu-sec-mai-hd-tutorials"><span
+                      data-i18n="nav-mai-hd-tutorials">🎓 튜토리얼(Tutorials)</span></div>
+                </div>
+              </div>
+              <!-- M AIº 유지 보수 -->
+              <div class="nav-parent" id="nav-mai-maint">
+                <div class="nav-item">
+                  <span data-i18n="nav-mai-maint">유지 보수</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mai-routine" id="menu-sec-mai-routine"><span
+                      data-i18n="nav-mai-routine">🧹 수시 관리 사항</span></div>
+                  <div class="nav-item" data-section="sec-mai-tool-care" id="menu-sec-mai-tool-care"><span
+                      data-i18n="nav-mai-tool-care">공구 관리</span></div>
+                  <div class="nav-item" data-section="sec-mai-collet" id="menu-sec-mai-collet"><span
+                      data-i18n="nav-mai-collet">🗜️ 콜렛 관리</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MillFix -->
+          <div class="nav-parent" id="nav-millfix">
+            <div class="nav-item">
+              <span data-i18n="nav-millfix">MillFix</span>
+              <span class="nav-arrow"></span>
+            </div>
+            <div class="sub-menu">
+              <!-- MillFix 소개 -->
+              <div class="nav-parent" id="nav-mf-intro">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-intro">MillFix 소개</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-spec" id="menu-sec-mf-spec"><span
+                      data-i18n="nav-mf-spec">📊 사양</span></div>
+                  <div class="nav-item" data-section="sec-mf-parts" id="menu-sec-mf-parts"><span
+                      data-i18n="nav-mf-parts">🏷️ 부분 명칭</span></div>
+                  <div class="nav-item" data-section="sec-mf-components" id="menu-sec-mf-components"><span
+                      data-i18n="nav-mf-components">📦 구성품</span></div>
+                  <div class="nav-item" data-section="sec-mf-tools" id="menu-sec-mf-tools"><span
+                      data-i18n="nav-mf-tools">🪛 공구</span></div>
+                </div>
+              </div>
+              <!-- MillFix 설치/ 기본 조작 -->
+              <div class="nav-parent" id="nav-mf-setup">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-setup">설치/ 기본 조작</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-precheck" id="menu-sec-mf-precheck"><span
+                      data-i18n="nav-mf-precheck">⚙️ 설치 및 준비 조건</span></div>
+                  <div class="nav-item" data-section="sec-mf-transport" id="menu-sec-mf-transport"><span
+                      data-i18n="nav-mf-transport">🚚 설치 및 운반 주의 사항</span></div>
+                  <div class="nav-item" data-section="sec-mf-cable" id="menu-sec-mf-cable"><span
+                      data-i18n="nav-mf-cable">🔌 케이블 연결</span></div>
+                  <div class="nav-item" data-section="sec-mf-power" id="menu-sec-mf-power"><span
+                      data-i18n="nav-mf-power">⚡ 전원 켜기/ 끄기, 워밍업</span></div>
+                  <div class="nav-item" data-section="sec-mf-tool-setup" id="menu-sec-mf-tool-setup"><span
+                      data-i18n="nav-mf-tool-setup">🛠️ 공구 세팅</span></div>
+                                    <div class="nav-parent" id="nav-mf-calibration-parent">
+                    <div class="nav-item" id="menu-sec-mf-calibration">
+                      <span data-i18n="nav-mf-calibration">캘리브레이션</span>
+                      <span class="nav-arrow"></span>
+                    </div>
+                    <div class="sub-menu">
+                      <div class="nav-parent" id="nav-mf-cal-machine-parent">
+                        <div class="nav-item" id="menu-sec-mf-cal-machine">
+                          <span data-i18n="nav-mf-cal-machine">머신 캘리브레이션</span>
+                          <span class="nav-arrow"></span>
+                        </div>
+                        <div class="sub-menu">
+                          <div class="nav-item" data-section="sec-mf-calibration-auto" id="menu-sec-mf-calibration-auto">
+                            <span data-i18n="nav-mf-calibration-auto">🤖 오토 캘리브레이션</span>
+                          </div>
+                          <div class="nav-item" data-section="sec-mf-calibration-manual" id="menu-sec-mf-calibration-manual">
+                            <span data-i18n="nav-mf-calibration-manual">🖐️ 매뉴얼 캘리브레이션</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-parent" id="nav-mf-cal-tool-pos-parent">
+                        <div class="nav-item" id="menu-sec-mf-cal-tool-pos">
+                          <span data-i18n="nav-mf-cal-tool-pos">툴 포지션 캘리브레이션</span>
+                          <span class="nav-arrow"></span>
+                        </div>
+                        <div class="sub-menu">
+                          <div class="nav-item" data-section="sec-mf-cal-tool-pos-auto" id="menu-sec-mf-cal-tool-pos-auto">
+                            <span data-i18n="nav-mf-cal-tool-pos-auto">🤖 툴 포지션 캘리브레이션(오토)</span>
+                          </div>
+                          <div class="nav-item" data-section="sec-mf-cal-tool-pos-manual" id="menu-sec-mf-cal-tool-pos-manual">
+                            <span data-i18n="nav-mf-cal-tool-pos-manual">🖐️ 툴 포지션 캘리브레이션(매뉴얼)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-item" data-section="sec-mf-jog" id="menu-sec-mf-jog"><span
+                      data-i18n="nav-mf-jog">🕹️ 조그모드</span></div>
+                  <div class="nav-item" data-section="sec-mf-clean" id="menu-sec-mf-clean"><span
+                      data-i18n="nav-mf-clean">🧹 가공룸 청소</span></div>
+                  <div class="nav-item" data-section="sec-mf-env-settings" id="menu-sec-mf-env-settings"><span
+                      data-i18n="nav-mf-env-settings">⚙️ 환경설정</span></div>
+                </div>
+              </div>
+              <!-- MillFix 컨트롤 프로그램 -->
+              <div class="nav-parent" id="nav-mf-ctrl">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-ctrl">컨트롤 프로그램</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-main-page" id="menu-sec-mf-main-page"><span
+                      data-i18n="nav-mf-main-page">🏠 메인 페이지</span></div>
+                  <div class="nav-item" data-section="sec-mf-code-view" id="menu-sec-mf-code-view"><span
+                      data-i18n="nav-mf-code-view">📄 코드 뷰 페이지</span></div>
+                  <div class="nav-parent" id="nav-mf-tool-list-parent">
+                    <div class="nav-item" data-section="sec-mf-tool-list" id="menu-sec-mf-tool-list">
+                      <span data-i18n="nav-mf-tool-list">공구 리스트 페이지</span>
+                      <span class="nav-arrow"></span>
+                    </div>
+                    <div class="sub-menu">
+                      <div class="nav-item" data-section="sec-mf-tool-usage" id="menu-sec-mf-tool-usage"><span
+                          data-i18n="nav-mf-tool-usage">⏱️ 공구 사용시간 설정</span></div>
+                    </div>
+                  </div>
+                  <div class="nav-item" data-section="sec-mf-settings" id="menu-sec-mf-settings"><span
+                      data-i18n="nav-mf-settings">⚙️ 설정 페이지</span></div>
+                </div>
+              </div>
+              <!-- MillFix hyperDENT -->
+              <div class="nav-parent" id="nav-mf-hd">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-hd">hyperDENT</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-hd-install" id="menu-sec-mf-hd-install"><span
+                      data-i18n="nav-mf-hd-install">💻 설치/ 기본 설정</span></div>
+                  <div class="nav-item" data-section="sec-mf-hd-blanks" id="menu-sec-mf-hd-blanks"><span
+                      data-i18n="nav-mf-hd-blanks"><span class="icon-puck"></span> 소재(blanks)</span></div>
+                  <div class="nav-parent" id="nav-mf-hd-settings-parent">
+                    <div class="nav-item">
+                      <span data-i18n="nav-mf-hd-settings">📝 세팅 파일(settings)</span>
+                      <span class="nav-arrow"></span>
+                    </div>
+                    <div class="sub-menu">
+                      <div class="nav-item" data-section="sec-mf-hd-dbconfig" id="menu-sec-mf-hd-dbconfig"><span data-i18n="nav-mf-hd-dbconfig">데이터베이스(Dbconfig)</span></div>
+                      <div class="nav-item" data-section="sec-mf-hd-fixture" id="menu-sec-mf-hd-fixture"><span data-i18n="nav-mf-hd-fixture">픽스처(Fixture)</span></div>
+
+                    </div>
+                  </div>
+                  <div class="nav-item" data-section="sec-mf-hd-features" id="menu-sec-mf-hd-features"><span
+                      data-i18n="nav-mf-hd-features">💡 사용 방법(features)</span></div>
+                  <div class="nav-item" data-section="sec-mai-hd-tutorials" id="menu-sec-mf-hd-tutorials"><span
+                      data-i18n="nav-mf-hd-tutorials">🎓 튜토리얼(Tutorials)</span></div>
+                </div>
+              </div>
+              <!-- MillFix 유지 보수 -->
+              <div class="nav-parent" id="nav-mf-maint">
+                <div class="nav-item">
+                  <span data-i18n="nav-mf-maint">유지 보수</span>
+                  <span class="nav-arrow"></span>
+                </div>
+                <div class="sub-menu">
+                  <div class="nav-item" data-section="sec-mf-routine" id="menu-sec-mf-routine"><span
+                      data-i18n="nav-mf-routine">🧹 수시 관리 사항</span></div>
+                  <div class="nav-item" data-section="sec-mf-tool-care" id="menu-sec-mf-tool-care"><span
+                      data-i18n="nav-mf-tool-care">공구 관리</span></div>
+                  <div class="nav-item" data-section="sec-mf-collet" id="menu-sec-mf-collet"><span
+                      data-i18n="nav-mf-collet">🗜️ 콜렛 관리</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-parent" id="nav-repair-manual">
+        <div class="nav-item">
+          <span class="icon">🔧</span>
+          <span data-i18n="nav-repair-manual">수리 매뉴얼</span>
+          <span class="nav-arrow"></span>
+        </div>
+        <div class="sub-menu">
+          <!-- 수리 - M AIº -->
+          <div class="nav-parent" id="nav-repair-mai">
+            <div class="nav-item">
+              <span data-i18n="nav-mai">M AIº</span>
+              <span class="nav-arrow"></span>
+            </div>
+            <div class="sub-menu">
+              <div class="nav-item" data-section="sec-rep-mai-troubleshoot" id="menu-sec-rep-mai-troubleshoot"><span
+                  data-i18n="nav-rep-troubleshoot">🩺 문제 해결</span></div>
+              <div class="nav-item" data-section="sec-rep-mai-errorcode" id="menu-sec-rep-mai-errorcode"><span
+                  data-i18n="nav-rep-errorcode">🚨 오류 코드 리스트</span></div>
+              <div class="nav-item" data-section="sec-rep-mai-parts-guide" id="menu-sec-rep-mai-parts-guide"><span
+                  data-i18n="nav-rep-parts-guide">🔧 소모품/ 부품 교체 가이드</span></div>
+            </div>
+          </div>
+          <!-- 수리 - MillFix -->
+          <div class="nav-parent" id="nav-repair-mf">
+            <div class="nav-item">
+              <span data-i18n="nav-millfix">MillFix</span>
+              <span class="nav-arrow"></span>
+            </div>
+            <div class="sub-menu">
+              <div class="nav-item" data-section="sec-rep-mf-troubleshoot" id="menu-sec-rep-mf-troubleshoot"><span
+                  data-i18n="nav-rep-troubleshoot">🩺 문제 해결</span></div>
+              <div class="nav-item" data-section="sec-rep-mf-parts-guide" id="menu-sec-rep-mf-parts-guide"><span
+                  data-i18n="nav-rep-parts-guide">🔧 소모품/ 부품 교체 가이드</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item" data-section="section-faq" id="menu-section-faq">
+        <span class="icon">❓</span>
+        <span data-i18n="nav-faq">자주 묻는 질문</span>
+      </div>
+    </nav>
+
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <!-- SEARCH RESULTS -->
+      <!-- INCLUDE: src/components/sections/section-search.html -->
+
+      <!-- HOME -->
+      <!-- INCLUDE: src/components/sections/section-home.html -->
+
+      <!-- SAFETY PRECAUTIONS -->
+      <!-- INCLUDE: src/components/sections/section-safety.html -->
+
+      <!-- M AIº 소개 - 사양 -->
+      <!-- INCLUDE: src/components/sections/sec-mai-spec.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-parts.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-components.html -->
+      <!-- M AIº 설치/ 기본 조작 -->
+      <!-- INCLUDE: src/components/sections/sec-mai-precheck.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-transport.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-cable.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-power.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-tool-setup.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-calibration.html -->
+      <!-- M AIº 컨트롤 프로그램 -->
+      <!-- INCLUDE: src/components/sections/sec-mai-main-page.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-tool-list.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-settings.html -->
+      <!-- M AIº hyperDENT -->
+      <!-- INCLUDE: src/components/sections/sec-mai-hd-install.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-hd-blank.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-hd-settings.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-hd-features.html -->
+
+      <!-- M AIº 튜토리얼 -->
+      <!-- INCLUDE: src/components/sections/sec-mai-hd-tutorials.html -->
+
+      <!-- M AIº 유지 보수 -->
+      <!-- INCLUDE: src/components/sections/sec-mai-routine.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-tool-care.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-collet.html -->
+
+      <!-- MillFix 소개 -->
+      <!-- INCLUDE: src/components/sections/sec-mf-spec.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-parts.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-components.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-tools.html -->
+      <!-- MillFix 설치/ 기본 조작 -->
+      <!-- INCLUDE: src/components/sections/sec-mf-precheck.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-transport.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-cable.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-power.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-tool-setup.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-calibration-auto.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-calibration-manual.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-cal-tool-pos-auto.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-cal-tool-pos-manual.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-jog.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-clean.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-env-settings.html -->
+      <!-- MillFix 컨트롤 프로그램 -->
+      <!-- INCLUDE: src/components/sections/sec-mf-main-page.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-code-view.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-tool-list.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-tool-usage.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-settings.html -->
+      <!-- MillFix hyperDENT -->
+      <!-- INCLUDE: src/components/sections/sec-mf-hd-install.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-hd-blanks.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-hd-dbconfig.html -->
+
+      <!-- INCLUDE: src/components/sections/sec-mf-hd-fixture.html -->
+
+
+      <!-- INCLUDE: src/components/sections/sec-mf-hd-features.html -->
+
+
+      <!-- MillFix 유지 보수 -->
+      <!-- INCLUDE: src/components/sections/sec-mf-routine.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-tool-care.html -->
+      <!-- INCLUDE: src/components/sections/sec-mf-collet.html -->
+
+      <!-- REPAIR MANUAL -->
+      <!-- 수리 메뉴얼- M AIº -->
+      <!-- INCLUDE: src/components/sections/sec-rep-mai-troubleshoot.html -->
+      <!-- INCLUDE: src/components/sections/sec-rep-mai-errorcode.html -->
+      <!-- INCLUDE: src/components/sections/sec-rep-mai-parts-guide.html -->
+
+      <!-- 수리 메뉴얼- MillFix -->
+      <!-- INCLUDE: src/components/sections/sec-rep-mf-troubleshoot.html -->
+      <!-- INCLUDE: src/components/sections/sec-rep-mf-parts-guide.html -->
+
+      <!-- FAQ -->
+      <!-- INCLUDE: src/components/sections/section-faq.html -->
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <span data-i18n="footer-text">© 2026 GenCore. All rights reserved.</span>
+  </footer>
+
+  <script src="src/scripts/i18n.js"></script>
+  <script src="src/data/images.js"></script>
+  <script src="src/scripts/app.js"></script>
+  <!-- Template Modal -->
+  <div id="template-modal" class="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; padding: 20px;">
+    <div style="background: var(--bg-color, #ffffff); border-radius: 12px; width: 100%; max-width: 1400px; max-height: 90vh; display: flex; flex-direction: column; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+      <div style="padding: 20px; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between; align-items: center;">
+        <h3 id="template-modal-title" style="margin: 0; color: #a855f7; font-size: 30px;">Template Title</h3>
+        <button id="template-modal-close" style="background: none; border: none; font-size: 24px; cursor: pointer; color: var(--text-muted, #6b7280);">&times;</button>
+      </div>
+      <div id="template-modal-body" style="padding: 36px; overflow-y: auto; flex: 1; font-size: 21px; line-height: 1.6; color: var(--text-color, #374151); font-family: inherit;">
+        <!-- Content will be injected here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="src/data/dbconfig-data-en.js"></script>
+  <script src="src/data/dbconfig-data-ko.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('template-modal');
+      const closeBtn = document.getElementById('template-modal-close');
+      const modalTitle = document.getElementById('template-modal-title');
+      const modalBody = document.getElementById('template-modal-body');
+
+      function closeTemplateModal() {
+        modal.style.display = 'none';
+        window.location.replace('#sec-mf-hd-dbconfig');
+      }
+
+      closeBtn.addEventListener('click', closeTemplateModal);
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeTemplateModal();
+        }
+      });
+
+      const listItems = document.querySelectorAll('#sec-mf-hd-dbconfig .card-list li');
+      listItems.forEach(li => {
+        // Style them as clickable links
+        li.style.cursor = 'pointer';
+        li.style.textDecoration = 'underline';
+        li.style.textDecorationColor = 'rgba(168, 85, 247, 0.4)';
+        li.style.textUnderlineOffset = '4px';
+          li.style.fontWeight = 'bold';
+        li.addEventListener('mouseenter', () => li.style.color = '#a855f7');
+        li.addEventListener('mouseleave', () => li.style.color = 'var(--text-color, #4b5563)');
+
+        li.addEventListener('click', () => {
+          openTemplateModalByTitle(li.textContent.trim());
+        });
+      });
+
+      function openTemplateModalByTitle(title) {
+        modalTitle.textContent = title;
+        
+        let db = null;
+            if (typeof currentLang !== 'undefined') {
+              if (currentLang === 'ko' && typeof dbConfigDataKO !== 'undefined') db = dbConfigDataKO;
+              else if (currentLang === 'ja' && typeof dbConfigDataJA !== 'undefined') db = dbConfigDataJA;
+              else if (currentLang === 'zh' && typeof dbConfigDataZH !== 'undefined') db = dbConfigDataZH;
+              else if (currentLang === 'es' && typeof dbConfigDataES !== 'undefined') db = dbConfigDataES;
+            }
+            if (!db && typeof dbConfigDataEN !== 'undefined') db = dbConfigDataEN; // Fallback to English
+            
+            if (db && db[title]) {
+              let text = db[title];
+              let lines = text.split('\n').map(l => l.trim()).filter(l => l);
+              
+              // Remove frontmatter robustly
+              let startIdx = 0;
+              for (let i = 0; i < lines.length; i++) {
+                if (lines[i].includes('템플릿을 사용하기 위한 조건') || lines[i].includes('The conditions for selecting') || lines[i].includes('조정 가능한 항목들') || lines[i].includes('Overwritable processes')) {
+                  startIdx = i;
+                  break;
+                }
+              }
+              
+              if (startIdx > 0 && startIdx < lines.length) {
+                // Slice everything before the condition block
+                lines = lines.slice(startIdx);
+              }
+
+            let htmlContent = '';
+            
+            const headers = [
+              "The conditions for selecting", "템플릿을 사용하기 위한 조건", "선택 조건", "You can select this template,",
+              "What it needs to Prepare", "준비해야 할 사항", "준비 사항", "해당 템플릿으로 가공하기 위해 준비해야할 것들",
+              "Overwritable processes", "덮어쓸 수 있는 공정", "세부 설정", "조정 가능한 항목들",
+              "User-defined area", "사용자 정의 영역", "사용자 정의 영역을 사용하실 수 있습니다.",
+              "Tools list used", "사용된 공구 목록",
+              "Tools used in this strategy", "해당 템플릿에 사용되는 공구 목록", "사용되는 공구", "해당 템플릿에서 사용되는 공구 목록"
+            ];
+            
+            let inTable = false;
+            let tableRow = [];
+            let categoryItems = [];
+
+            function flushCategories() {
+              if (categoryItems.length > 0) {
+                htmlContent += '<div style="column-count: 2; column-gap: 20px; margin-bottom: 12px;">';
+                for (let j = 0; j < categoryItems.length; j++) {
+                  let parts = categoryItems[j].split(':');
+                  htmlContent += '<div style="font-weight: 700; display: flex; gap: 8px; margin-bottom: 12px; break-inside: avoid;"><span style="width: 9px; height: 9px; background: #a855f7; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></span><span>' + parts[0] + ': <span style="color: #d946ef; font-style: italic;">' + parts.slice(1).join(':') + '</span></span></div>';
+                }
+                htmlContent += '</div>';
+                categoryItems = [];
+              }
+            }
+            
+            for (let i = 0; i < lines.length; i++) {
+              const line = lines[i];
+              if (line === '댓글'  || line === '??') continue;
+              
+              let textContentWithoutDash = line.replace(/^(-+)/, '').trim();
+              let isCategory = textContentWithoutDash.startsWith('Category') || textContentWithoutDash.startsWith('유형');
+              
+              if (!isCategory) {
+                flushCategories();
+              }
+              
+              if (isCategory) {
+                categoryItems.push(textContentWithoutDash);
+                continue;
+              }
+              
+              let isHeader = false;
+              for (const h of headers) {
+                if (line.toLowerCase().includes(h.toLowerCase())) {
+                  isHeader = true;
+                  break;
+                }
+              }
+              if (line.includes('선택 사항') || line.toLowerCase().includes('optional')) {
+                isHeader = false;
+              }
+              
+              if (isHeader) {
+                if (inTable) {
+                  if (tableRow.length > 0) {
+                    while (tableRow.length < 3) tableRow.push('');
+                    htmlContent += '<tr style="border-bottom: 1px solid #e5e7eb;"><td style="padding: 15px; font-weight: 700;">' + tableRow[0] + '</td><td style="padding: 15px;">' + tableRow[1] + '</td><td style="padding: 15px; color: #6b7280;">' + tableRow[2] + '</td></tr>';
+                  }
+                  htmlContent += '</tbody></table></div>'; 
+                  inTable = false; 
+                  tableRow = []; 
+                }
+                if (htmlContent !== '') {
+                  htmlContent += '<hr style="margin: 32px 0 24px; border: 0; border-top: 1px solid #e5e7eb; clear: both;">';
+                }
+                htmlContent += '<h4 style="color: #1f2937; font-size: 24px; margin-bottom: 24px; font-weight: 700;">' + line + '</h4>';
+                
+                if (line.toLowerCase().includes("tool") || line.includes("공구")) {
+                  inTable = true;
+                  htmlContent += '<div style="overflow-x: auto;"><table style="width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 20px; text-align: left;">';
+                  htmlContent += '<thead><tr style="background: #f9fafb; border-bottom: 2px solid #e5e7eb;"><th style="padding: 15px;">Tool#</th><th style="padding: 15px;">Name</th><th style="padding: 15px;">Comment</th></tr></thead><tbody>';
+                  while (i + 1 < lines.length && (lines[i+1].includes('Tool pocket #') || lines[i+1] === 'Tools' || lines[i+1] === 'Comment')) {
+                    i++;
+                  }
+                }
+                continue;
+              }
+              
+              if (inTable) {
+                if (line === 'T35' || line.startsWith('T3') || line.startsWith('T4') || line.match(/^T\d+/)) {
+                  if (tableRow.length > 0) {
+                    while (tableRow.length < 3) tableRow.push('');
+                    htmlContent += '<tr style="border-bottom: 1px solid #e5e7eb;"><td style="padding: 15px; font-weight: 600;">' + tableRow[0] + '</td><td style="padding: 15px;">' + tableRow[1] + '</td><td style="padding: 15px; color: #6b7280;">' + tableRow[2] + '</td></tr>';
+                  }
+                  tableRow = [line];
+                } else {
+                  tableRow.push(line);
+                }
+                continue;
+              }
+              
+              if (line.length > 0) {
+                let dashMatch = line.match(/^(-+)/);
+                let dashCount = dashMatch ? dashMatch[1].length : 0;
+                let textContent = line.replace(/^(-+)/, '').trim();
+
+                if (dashCount === 0) {
+                    if (textContent.includes(':') && (
+                        textContent.startsWith('Calculate') || textContent.startsWith('Allowance') || 
+                        textContent.startsWith('Add. Allowance') || textContent.startsWith('Boundary') || 
+                        textContent.startsWith('계산') || textContent.startsWith('여유량') || textContent.startsWith('추가') || textContent.startsWith('증분식')
+                    )) {
+                        dashCount = 2;
+                    } else if (textContent === 'General settings' || textContent === '일반 설정' || textContent === '조정 가능한 항목들' || textContent === '사용자 정의 영역을 사용하실 수 있습니다.' || textContent.includes('User-defined area')) {
+                        dashCount = 0;
+                    } else if (textContent === '증분식 경계 옵셋' || textContent === '증분식 경계 각도' || textContent === 'Incremental Boundary offset' || textContent === 'Incremental Boundary angle') {
+                        dashCount = 1;
+                    } else if (textContent.startsWith('만약') || textContent.startsWith('Increase these')) {
+                        dashCount = 2;
+                    } else if (textContent.startsWith('유형') || textContent.startsWith('Category')) {
+                        dashCount = 1;
+                    } else {
+                        let isDesc = false;
+                        if (textContent.endsWith('tool') || textContent.endsWith('.') || textContent.includes('가공합니다') || textContent.includes('시도해보세요') || textContent.includes('늘려보세요') || textContent.includes('권장합니다') || textContent.includes('됩니다') || textContent.includes('바랍니다') || textContent.startsWith('Finishing process') || textContent.startsWith('Occlusal groove') || textContent.startsWith('Roughing process') || textContent.startsWith('Rest machining') || textContent.includes('이용해 정삭합니다') || textContent.includes('위해 사용됩니다')) {
+                            isDesc = true;
+                        }
+                        
+                        if (isDesc) {
+                            dashCount = 1;
+                        } else {
+                            dashCount = 0;
+                        }
+                    }
+                }
+
+                let marginLeft = dashCount * 30; // 30px per dash
+                  
+                  if (textContent === 'General settings' || textContent === '일반 설정') {
+                    htmlContent += '<img src="./assets/images/sec-mf-Dbconfig/Boundaryoffsetangle_ko.webp" style="float: right; width: 40%; max-width: 320px; border-radius: 8px; margin: 0 0 16px 24px; object-fit: contain; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">';
+                  }
+
+                if (textContent.includes(':')) {
+                  const parts = textContent.split(':');
+                  htmlContent += '<div style="margin-bottom: 12px; font-weight: 700; display: flex; gap: 8px; margin-left: ' + marginLeft + 'px;"><span style="width: 9px; height: 9px; background: #a855f7; border-radius: 50%; margin-top: 8px; flex-shrink: 0;"></span><span>' + parts[0] + ': <span style="color: #d946ef; font-style: italic;">' + parts.slice(1).join(':') + '</span></span></div>';
+                } else if (dashCount === 0) {
+                  // Bold subheader (level 1 or any text without bullet-inducing characters)
+                  htmlContent += '<div style="margin: 24px 0 12px ' + marginLeft + 'px; font-size: 21px; font-weight: 700; color: #4b5563;">' + textContent + '</div>';
+                } else {
+                  // Bullet point
+                  // Use • for all items that have a dashCount > 0, or those that fail the bold subheader check.
+                  htmlContent += '<div style="margin-bottom: 12px; font-weight: 700; color: #4b5563; margin-left: ' + marginLeft + 'px; display: flex; align-items: flex-start;"><span style="margin-right: 12px; flex-shrink: 0;">•</span><span>' + textContent + '</span></div>';
+                }
+              }
+            }
+            
+            flushCategories();
+            
+            if (inTable) {
+              if (tableRow.length > 0) {
+                while (tableRow.length < 3) tableRow.push('');
+                htmlContent += '<tr style="border-bottom: 1px solid #e5e7eb;"><td style="padding: 15px; font-weight: 600;">' + tableRow[0] + '</td><td style="padding: 15px;">' + tableRow[1] + '</td><td style="padding: 15px; color: #6b7280;">' + tableRow[2] + '</td></tr>';
+              }
+              htmlContent += '</tbody></table></div>';
+            }
+            
+            modalBody.innerHTML = htmlContent;
+          } else {
+            modalBody.innerHTML = "<p>데이터를 불러올 수 없습니다.</p>";
+          }
+          
+          modal.style.display = 'flex';
+          history.replaceState(null, null, '#template-' + encodeURIComponent(title));
+      }
+
+      function checkHashForTemplate() {
+        const hash = window.location.hash;
+        if (hash.startsWith('#template-')) {
+          const title = decodeURIComponent(hash.replace('#template-', ''));
+          openTemplateModalByTitle(title);
+        }
+      }
+
+      window.addEventListener('hashchange', checkHashForTemplate);
+      checkHashForTemplate();
+    });
+  </script>
+
+  
+  <!-- ===== Generic Video Modal ===== -->
+  <div id="video-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.55); z-index:1100; justify-content:center; align-items:center; padding:20px;">
+    <div style="background:var(--bg-color,#ffffff); border-radius:14px; width:100%; max-width:850px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 16px 40px rgba(0,0,0,0.25);">
+      <div style="padding:20px 24px; border-bottom:1px solid #e5e7eb; display:flex; justify-content:space-between; align-items:center; flex-shrink:0;">
+        <h3 id="video-modal-title" style="margin:0; color:#a855f7; font-size:22px; font-weight:700;"></h3>
+        <button id="video-modal-close" style="background:none; border:none; font-size:26px; cursor:pointer; color:var(--text-muted,#6b7280); line-height:1;">&times;</button>
+      </div>
+      <div style="padding:28px 32px; overflow-y:auto; flex:1; font-size:16px; line-height:1.7; color:var(--text-color,#374151);">
+        <div style="position:relative; width:100%; aspect-ratio:16/9; border-radius:12px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.15);">
+          <iframe id="video-modal-iframe" src="" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const vModal = document.getElementById('video-modal');
+    const vTitle = document.getElementById('video-modal-title');
+    const vIframe = document.getElementById('video-modal-iframe');
+    const vClose = document.getElementById('video-modal-close');
+
+    function openVideoModal(title, url) {
+      vTitle.textContent = title;
+      vIframe.src = url;
+      vModal.style.display = 'flex';
+    }
+
+    function closeVideoModal() {
+      vModal.style.display = 'none';
+      vIframe.src = '';
+    }
+
+    vClose.addEventListener('click', closeVideoModal);
+    vModal.addEventListener('click', e => { if (e.target === vModal) closeVideoModal(); });
+  </script>
+
+  <!-- ===== Feature Modal ===== -->
+  <div id="feature-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.55); z-index:1100; justify-content:center; align-items:center; padding:20px;">
+    <div style="background:var(--bg-color,#ffffff); border-radius:14px; width:100%; max-width:1200px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 16px 40px rgba(0,0,0,0.25);">
+      <div style="padding:20px 24px; border-bottom:1px solid #e5e7eb; display:flex; justify-content:space-between; align-items:center; flex-shrink:0;">
+        <h3 id="feature-modal-title" style="margin:0; color:#a855f7; font-size:22px; font-weight:700;"></h3>
+        <button id="feature-modal-close" style="background:none; border:none; font-size:26px; cursor:pointer; color:var(--text-muted,#6b7280); line-height:1;">&times;</button>
+      </div>
+      <div id="feature-modal-body" style="padding:28px 32px; overflow-y:auto; flex:1; font-size:16px; line-height:1.7; color:var(--text-color,#374151);">
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    // ── Feature content data ──────────────────────────────────────────
+    const FEATURE_DATA = {
+      'mf-hd-install-video': {
+        title: 'MillFix 하이퍼덴트 설치방법',
+        steps: [
+          {
+            heading: '설치 방법 영상',
+            description: "더 자세한 설명을 원하시면 스크롤을 내려 아래 '설치 과정 상세' 를 참고하세요",
+            youtubes: ['https://www.youtube.com/watch?v=HVHeWTJvsRc']
+          },
+          {
+            heading: '설치 과정 상세',
+            items: [
+              { img: 'assets/images/sec-mf-install/install_01.webp', label: '1. 포장을 풀면 하이퍼덴트 설치 키트가 있습니다.' },
+              { img: 'assets/images/sec-mf-install/install_02.webp', label: '2. 설치, 초기화 USB(위): 하이퍼덴트 설치 및 기계 공장 초기화에 쓰이는 USB입니다. 하이퍼덴트 설치 후에도 잘 보관해주세요. 기계 초기화 시 필요합니다.<br>하이퍼덴트 동글(아래): 꽂혀있어야 하이퍼덴트가 실행됩니다.' },
+              { img: 'assets/images/sec-mf-install/install_03.webp', label: '3. 사진과 같이 설치 USB와 동글을 삽입해주세요' },
+              { img: 'assets/images/sec-mf-install/install_04.webp', label: '4. USB를 삽입하고, 화면에 표시된 것처럼 응용 프로그램을 실행해주세요. 자동 설치 프로그램입니다.' },
+              { img: 'assets/images/sec-mf-install/install_05.webp', label: '5. 이제 화면을 따라 설치를 진행하세요.' },
+              { img: 'assets/images/sec-mf-install/install_06.webp', label: '6. 자동 설치 프로그램은 하이퍼덴트를 먼저 설치합니다.' },
+              { img: 'assets/images/sec-mf-install/install_07.webp', label: '7. 언어를 선택할 수 있습니다. 설치 후에 언제든지 변경 가능합니다. (권장사항: 영어&한국어)' },
+              { img: 'assets/images/sec-mf-install/install_08.webp', label: '' },
+              { img: 'assets/images/sec-mf-install/install_09.webp', label: '' },
+              { img: 'assets/images/sec-mf-install/install_10.webp', label: '10. 동의 체크 후 Next 눌러주세요' },
+              { img: 'assets/images/sec-mf-install/install_11.webp', label: '' },
+              { img: 'assets/images/sec-mf-install/install_12.webp', label: '12. 하이퍼덴트 설치 경로를 바꿀 수 있습니다. 하지만 대부분의 경우 바꾸지 않는 걸 권장합니다.' },
+              { img: 'assets/images/sec-mf-install/install_13.webp', label: '' },
+              { img: 'assets/images/sec-mf-install/install_14.webp', label: '' },
+              { img: 'assets/images/sec-mf-install/install_15.webp', label: '' },
+              { img: 'assets/images/sec-mf-install/install_16.webp', label: '16. 하이퍼덴트 설치가 끝났습니다. 이제 Finish를 눌러 마무리하세요.' },
+              { img: 'assets/images/sec-mf-install/install_17.webp', label: '17. 하이퍼덴트 설치가 끝나면 자동 설치프로그램이 스스로 하이퍼덴트 설정을 진행합니다.' },
+              { img: 'assets/images/sec-mf-install/install_18.webp', label: '18. 하이퍼덴트 설치 및 설정이 마무리 되었습니다!' },
+              { imgs: ['assets/images/sec-mf-install/install_19_1.webp', 'assets/images/sec-mf-install/install_19_2.webp'], label: '19. 하이퍼덴트 실행 후에 해당 메시지들이 뜨지 않는다면 정상적으로 설치된 것입니다.' },
+              { imgsRow: ['assets/images/sec-mf-install/install_20_1.webp', 'assets/images/sec-mf-install/install_20_2.webp'], label: '20. 하이퍼덴트 실행 후 F4를 누른 뒤 표시된 부분의 경로를 확인하세요.<br>C:\\\\Users\\\\Public,,,,(좌)로 시작한다면 설정 실패 / C:\\\\hyperDENT_Setting,,,(우)로 시작한다면 제대로 설정된 것입니다.' }
+            ]
+          }
+        ]
+      },
+      'mf-hd-settings-video': {
+        title: 'MillFix 하이퍼덴트 설정방법',
+        steps: [
+          {
+            heading: '기본 설정 영상',
+            youtubes: ['https://youtu.be/UOewSKpZU4U']
+          }
+        ]
+      },
+      'custom-abutment-interface': {
+        title: '디스크에서 인터페이스를 이용해 커스텀 어버트먼트 계산하기/ 하이퍼덴트',
+        steps: [
+          {
+            heading: '디스크에서 인터페이스를 이용해 <span style="color:#a855f7; font-size:18px;">커스텀 어버트먼트</span> 계산하기/ <span style="color:#f97316;">하이퍼덴트</span>',
+            youtubes: ["https://youtu.be/HUDvKuoz32k"],
+            items: []
+          }
+        ]
+      },
+      'inlay-onlay': {
+        title: '인레이, 온레이 계산하기/ 하이퍼덴트',
+        steps: [
+          {
+            heading: '<span style="color:#a855f7; font-size:18px;">인레이, 온레이</span> 계산하기/ <span style="color:#f97316;">하이퍼덴트</span>',
+            youtubes: ["https://www.youtube.com/watch?v=l5DUbtoPz8s"],
+            items: []
+          }
+        ]
+      },
+      'overstructure': {
+        title: '오버스트럭처 계산하기/ 하이퍼덴트',
+        steps: [
+          {
+            heading: '<span style="color:#a855f7; font-size:18px;">오버스트럭처</span> 계산하기/ <span style="color:#f97316;">하이퍼덴트</span>',
+            youtubes: ["https://youtu.be/bgPJ2SxF7oA"],
+            items: []
+          }
+        ]
+      },
+      'veneer': {
+        title: '비니어 계산하기/ 하이퍼덴트',
+        steps: [
+          {
+            heading: '<span style="color:#a855f7; font-size:18px;">비니어</span> 계산하기/ <span style="color:#f97316;">하이퍼덴트</span>',
+            youtubes: ["https://youtu.be/0_hUvd-n2iU"],
+            items: []
+          }
+        ]
+      },
+      'denture-base-teeth': {
+        title: '덴처 베이스, 치아 계산하기 / 하이퍼덴트',
+        steps: [
+          {
+            heading: '<span style="color:#a855f7; font-size:18px;">덴처 베이스, 치아</span> 계산하기 / <span style="color:#f97316;">하이퍼덴트</span>',
+            youtubes: ["https://youtu.be/__mpzyBbPZc?si=DZUfi7GXR65ked6M","https://www.youtube.com/watch?v=V-InJGegsdk"],
+            items: []
+          }
+        ]
+      },
+      'ibar': {
+        title: 'IBar 계산하기/ 하이퍼덴트',
+        steps: [
+          {
+            heading: '<span style="color:#a855f7; font-size:18px;">IBar</span> 계산하기/ <span style="color:#f97316;">하이퍼덴트</span>',
+            youtubes: ["https://www.youtube.com/watch?v=VieM-AjP-ug"],
+            items: []
+          }
+        ]
+      },
+          'monolithic-denture': {
+        title: '모놀리식 덴처 계산하기/ 하이퍼덴트',
+        steps: [
+          {
+            heading: '<span style="color:#a855f7; font-size:18px;">모놀리식 덴처</span> 계산하기/ <span style="color:#f97316;">하이퍼덴트</span>',
+            youtubes: ["https://www.youtube.com/watch?v=UEnwN5nqsm4"],
+            items: []
+          }
+        ]
+      },
+
+      'block-type-materials': {
+        title: '블록 소재 추가 방법',
+        youtube: 'https://youtu.be/z7Yq7df7on8',
+        steps: [
+          {
+            heading: '1. 형상(Geometry) 만들기',
+            items: [
+              {
+                label: 'a. 추가하려는 블록의 크기를 확인합니다.',
+                desc: '예시: 가로(Width) 12mm, 세로(Height) 14mm, 깊이(Depth) 18mm인 블록을 추가하는 경우입니다.',
+                img: 'assets/images/sec-mf-Features/How to create the block type materials/image 44.webp'
+              },
+              { label: 'b. [Blank type settings]를 엽니다. (단축키: F6)' },
+              {
+                label: 'c. [Geometries] 탭에서 추가할 블록의 형상을 새로 만듭니다.',
+                desc: '기존에 등록된 다른 형상을 참고하면 이해하는 데 도움이 됩니다.'
+              },
+              { label: 'd. [New] 버튼을 클릭합니다.' },
+              {
+                label: 'e. 필요한 값을 모두 입력합니다.',
+                bullets: [
+                  '[Name]을 입력합니다. (<em>영문과 숫자만 사용해 주세요!</em>)',
+                  '[Group]을 [Block]으로 선택합니다.',
+                  '[Height], [Width], [Depth]를 해당 크기에 맞게 입력합니다.',
+                  '[+/-] 값을 입력합니다.<br>(블록 크기 오차 보정 값으로, 권장값은 0.8입니다.)',
+                  '[Is single element geometry]에 체크합니다. (블록 소재는 1회 사용을 의미합니다.)',
+                  '[Apply] 버튼을 클릭합니다.'
+                ]
+              }
+            ]
+          },
+          {
+            heading: '2. 블랭크(Blank) 만들기',
+            items: [
+              {
+                label: 'a. [Blank types] 탭으로 이동해 블록 블랭크를 만듭니다. (기존 블록 중 하나를 복사해 활용할 수 있습니다.)',
+                bullets: [
+                  '[Edit] 버튼을 클릭합니다.',
+                  '[Name]을 입력합니다. (영문과 숫자만 사용해 주세요.)',
+                  '[Geometry]를 방금 만든 형상으로 설정합니다.',
+                  '[Data] 항목의 나머지 내용을 적절하게 설정합니다. (기존 블록을 복사한 경우, 기존 값을 그대로 사용할 수 있습니다.)',
+                  '[Apply] 버튼을 클릭합니다.'
+                ]
+              },
+              { label: 'b. [Blank type settings]를 닫습니다.' }
+            ]
+          },
+          {
+            heading: '3. 만든 블랭크를 픽스처에 연결하기',
+            items: [
+              { label: 'a. [Machining settings]를 엽니다. (단축키: F5)' },
+              { label: 'b. [Fixtures] 탭에서 적절한 지그를 선택합니다.<br>블록 소재의 경우, 블록 지그([MillFix-block])를 선택해야 합니다.' },
+              {
+                label: 'c. 오른쪽의 [Filtering] 탭에서,',
+                bullets: [
+                  '[Edit] 버튼을 클릭합니다.',
+                  '[Blank geometry] 항목에서 방금 만든 형상에 체크가 되어 있는지 확인합니다.<br>체크가 안 되어 있다면 체크해 주세요.',
+                  '[Apply] 버튼을 클릭합니다.'
+                ]
+              },
+              { label: 'd. 모든 창을 닫고, 방금 만든 블록이 정상적으로 표시되는지 확인합니다.' }
+            ]
+          }
+        ]
+      },
+
+      'edit-nc-file': {
+        title: 'NC 파일 편집하는 법',
+        steps: [
+          {
+            heading: '1. 특정 공정부터 시작하도록 NC 파일을 편집하는 방법',
+            items: [
+              {
+                label: '파일을 선택한 뒤 우클릭을 눌러 메뉴를 띄워주세요. 그 후 [Show toolpaths] 버튼을 눌러주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/1.webp'
+              },
+              {
+                label: '하이퍼 뷰가 실행되고, 해당 툴 패스가 나옵니다',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/2.webp'
+              },
+              {
+                label: '삭제를 원하는 공정들을 선택하신 뒤, 우클릭을 눌러 메뉴를 띄우세요. 그런다음 [delete] 버튼을 눌러 삭제합니다. 만약 12번 공구(M1.0B)부터의 가공을 원한다면, 9번 공구부터 11번 공구까지의(M3.0B~M1.5B) 모든 공정을 선택하세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/3.webp'
+              },
+              {
+                label: '선택한 공정들이 모두 삭제된 모습입니다.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/4.webp'
+              },
+              {
+                label: '표시된 부분을 더블클릭해주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/5.webp'
+              },
+              {
+                label: '해당 창이 뜨는데, 여기서 NC 파일의 이름 및 저장 경로를 설정하실 수 있습니다. 그런 다음에 [OK] 버튼을 눌러주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림6.webp'
+              },
+              {
+                label: '방금 전에 변경한 [Test 123] 을 선택후 우클릭으로 메뉴를 띄워주세요. 그런다음 [Generate NC file] 버튼을 눌러 편집한 NC 파일을 생성하세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/7.webp'
+              },
+              {
+                label: '[OK] 버튼을 눌러주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림8.webp'
+              },
+              {
+                label: '한 번 더 [OK] 버튼을 눌러주세요. 해당 메시지는 특정 공정만 남았을 시 뜨는 메시지로, 걱정하실 필요 없습니다.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림9.webp'
+              },
+              {
+                label: '[Test 123] NC 파일이 성공적으로 출력됐습니다.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림10.webp'
+              },
+              {
+                label: '참고 화면',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/image 21.webp'
+              }
+            ]
+          },
+          {
+            heading: '2. NC 파일을 나누는 방법',
+            items: [
+              {
+                label: '[Edit] 메뉴를 클릭하시고 [New NC Job] 버튼을 눌러주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림11.webp'
+              },
+              {
+                label: '[New NC Job] 이 생성됐습니다.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림12.webp'
+              },
+              {
+                label: '분리하고 싶은 공정을 선택하세요. 이번에 저는 보철물 가공 공정과 커넥터 절단 공정을 분리하려고 합니다.<br/>따라서 저는 모든 커넥터 절단 공정을 선택했습니다.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림13.webp'
+              },
+              {
+                label: '선택했던 공정들을 [New NC Job] 의 Tool Paths 로 드래그 해주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림14.webp'
+              },
+              {
+                label: '커넥터 절단 공정이 분리되었습니다.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림16.webp'
+              },
+              {
+                label: '표시된 항목(New NC Job)을 더블클릭해주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림17.webp'
+              },
+              {
+                label: '해당 창이 뜨는데, 여기서 NC 파일의 이름 및 저장 경로를 설정하실 수 있습니다. 그런 다음에 [OK] 버튼을 눌러주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림18.webp'
+              },
+              {
+                label: '다 됐으면 [OK] 를 눌러주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림19.webp'
+              },
+              {
+                label: '화면에 표시된 버튼을 누른 뒤 우클릭을 하세요. 그런다음 [Generate NC file] 버튼을 눌러 NC 파일을 생성하세요<br/>아까와 같은 방법으로 [connector cut Test 1] NC 파일도 생성해주세요.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/image 22.webp'
+              },
+              {
+                label: '전체 공정을 담고있던 NC 파일이 보철물만 가공하는 NC과 커넥터만 절단하는 NC 파일로 분할되었습니다.',
+                img: 'assets/images/sec-mf-Features/How to edit the NC file/그림20.webp'
+              }
+            ]
+          }
+        ]
+      },
+
+      'expand-screw-channel': {
+        title: '가공 후 스크류 채널 넓히는 방법',
+        steps: [
+          {
+            heading: '가공 후 스크류 채널 확장 안내',
+            items: [
+              {
+                label: '원본보다 넓은 스크류 채널의 어버트먼트를 원한다면 hyperDENT에서 설정할 수 있습니다. 커넥터가 안정적으로 지지해주고 있다면 가공 후에도 이 작업이 가능합니다. 조금 마모된 공구를 불가피하게 사용해야 할 때 적용해 볼 수 있습니다. 어버트먼트 케이스를 통해 어떻게 하는지 알아보겠습니다.'
+              },
+              {
+                label: '1. 평소처럼 hyperDENT에서 어버트먼트를 설정합니다. 여기서 스크류 채널의 직경을 변경할 수 있습니다.',
+                desc: '이 이미지는 스크류 채널의 초기 상태를 확인하기 위해 캡처되었습니다.',
+                img: 'assets/images/sec-mf-Features/how to expand the screw channel after milling/image 39.webp'
+              },
+              {
+                label: '2. 평소처럼 어버트먼트를 연산합니다.',
+                img: 'assets/images/sec-mf-Features/how to expand the screw channel after milling/image 40.webp'
+              },
+              {
+                label: '3. hyperVIEW에서 편집하여 [커넥터 절단(Cutting connector)] 공정을 분리합니다.',
+                img: 'assets/images/sec-mf-Features/how to expand the screw channel after milling/edit.nc.in.hyperVIEW_25.07.23.r1.gif'
+              },
+              {
+                label: '4. [커넥터 절단(Cutting connector)]을 제외한 전체 밀링 공정을 평소처럼 진행합니다.'
+              },
+              {
+                label: '5. 디스크를 분리하지 않은 상태에서 스크류가 스크류 채널에 들어가는지 확인합니다.',
+                desc: '💡 교합면과 내면을 따로 확인하는 것이 편리할 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/how to expand the screw channel after milling/screw.channel.checking_1.gif'
+              },
+              {
+                label: '참고 화면 (교합면/내면 확인)',
+                img: 'assets/images/sec-mf-Features/how to expand the screw channel after milling/screw.channel.checking_2.gif'
+              },
+              {
+                label: '6. 스크류가 정상적으로 삽입된다면 분리해둔 [커넥터 절단(Cutting connector)] 공정을 실행합니다. 그러나 스크류 채널의 직경이 작아 안 들어간다면 아래의 방법을 따라주세요.'
+              },
+              {
+                label: '7. hyperDENT로 돌아가서 [Remove part lock]을 선택합니다.',
+                img: 'assets/images/sec-mf-Features/how to expand the screw channel after milling/image 41.webp'
+              },
+              {
+                label: '8. 아래와 같이 스크류 채널 확장 공정(expanding the screw channel process)을 적용하여 다시 연산합니다.',
+                img: 'assets/images/sec-mf-Features/how to expand the screw channel after milling/expanding.sc_25.07.23.r1.gif'
+              },
+              {
+                label: '9. 스크류 채널 확장 공정을 통해 얻은 NC 파일을 실행합니다.'
+              },
+              {
+                label: '10. 스크류 채널이 충분한 직경으로 확보되었다면, [커넥터 절단(Cutting connector)] 공정을 실행하여 밀링 작업을 마무리합니다.',
+                img: 'assets/images/sec-mf-Features/how to expand the screw channel after milling/image 42.webp'
+              }
+            ]
+          }
+        ]
+      },
+
+      'set-connectors': {
+        title: '커넥터 효율적으로 설정하는 방법',
+        steps: [
+          {
+            heading: '가상의 벽(Virtual Wall)을 활용한 커넥터 장착',
+            items: [
+              {
+                label: '커넥터를 달고 싶은 위치가 마진이거나 상부 보철물이 접촉할 부분이어서 피하고 싶은데, 마땅히 달기 어렵다면:',
+                img: 'assets/images/sec-mf-Features/How to set connectors efficiently/hyperDENT_connector.efficiently_1.symptom_25.04.22.gif'
+              },
+              {
+                label: '키보드의 [Ctrl] 버튼을 누른 채로 움직여보세요. 가상의 벽이 생성되어, 커넥터를 이 벽을 따라 상/하로만 이동시킬 수 있습니다. 이를 통해 민감한 영역을 피해서 안전하게 커넥터를 장착할 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/How to set connectors efficiently/hyperDENT_connector.efficiently_2.adjusting_25.04.22.gif'
+              },
+              {
+                label: '🔔 주의: 커넥터는 가공할 대상에서 지나치게 떨어뜨려서 위치시키지 마십시오. 언더컷 구간이 미삭(가공되지 않음) 구간이 될 수 있으며, 가공에 필요한 지지력이 약해질 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/How to set connectors efficiently/hyperDENT_connector.efficiently_3.check_25.04.22.gif'
+              }
+            ]
+          },
+          {
+            heading: '커넥터 장착 시 피해야 할 위치 (주의사항)',
+            items: [
+              {
+                label: '주의: 임플란트 인터페이스 근처나 마진 라인 주변에는 커넥터를 장착하지 마십시오.',
+                img: 'assets/images/sec-mf-Features/How to set connectors efficiently/image 23.webp'
+              },
+              {
+                label: '보철물에서 너무 떨어지게 커넥터를 부착하지 마십시오. (가공 시 빈 공간이 발생할 수 있습니다)',
+                img: 'assets/images/sec-mf-Features/How to set connectors efficiently/image 24.webp'
+              },
+              {
+                label: '두 개의 커넥터를 일직선으로 마주보게(대칭으로) 배치하지 마십시오.',
+                img: 'assets/images/sec-mf-Features/How to set connectors efficiently/6b291657-fdf5-47a4-9462-65974f7e80b2.webp'
+              }
+            ]
+          }
+        ]
+      },
+
+      'overwritable-parameters': {
+        title: '템플릿에서 조정 가능한 항목들 (Overwritable parameters)',
+        steps: [
+          {
+            heading: '교합면 5축 동시 가공 (Finishing occlusal side with simultaneous 5-axis)',
+            items: [
+              {
+                label: '어버트먼트의 마진 라인 위쪽, 즉 상부 구조를 5축 동시 가공으로 마무리하는 [M1.0B] 공정입니다. 해당 공정이 필요하지 않다고 판단되거나, 이 단계에서 오류가 발생한 경우 체크박스를 해제하여 비활성화할 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 3.webp'
+              },
+              {
+                label: '일부 케이스에서 기본 교합면 가공 공정(An)에서 연산 오류가 발생할 경우, 기존 공정을 비활성화하고 이 대체 공정을 활성화하여 해결할 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 4.webp'
+              }
+            ]
+          },
+          {
+            heading: '마진 라인 숄더 영역 정밀 가공 (Finishing the Emergence curve)',
+            items: [
+              {
+                label: '숄더(마진 라인 근처) 영역의 정밀한 형태 가공이 필요한 경우 [M0.6B] 공정을 활성화할 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 5.webp'
+              }
+            ]
+          },
+          {
+            heading: '유지 홈(Retention groove) 가공 (Top & Bottom)',
+            items: [
+              {
+                label: '어버트먼트 벽면에 유지 홈을 가공하는 공정입니다. 이 작업을 수행하려면 상단(Top, 0도 방향)과 하단(Bottom, 180도 방향) 두 공정을 모두 활성화해야 합니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 6.webp'
+              },
+              {
+                label: '상단(Top) 및 하단(Bottom) 유지 홈 가공 공정 상세 (1/2)',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 8.webp'
+              },
+              {
+                label: '상단(Top) 및 하단(Bottom) 유지 홈 가공 공정 상세 (2/2)',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 9.webp'
+              }
+            ]
+          },
+          {
+            heading: '내면 가공 여유량 조절 (Finishing inside abutment bases & copings)',
+            items: [
+              {
+                label: '[M1.5R] 어버트먼트 베이스 내면 마무리 가공: 가공 여유량(Allowance) 수치를 줄이면 결합이 헐거워지고, 수치를 늘리면 결합이 빡빡해집니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 10.webp'
+              },
+              {
+                label: '[Z/M1.0B] 코핑 내면 마무리 가공(3+2축/5축): 위와 동일하게 가공 여유량(Allowance) 조절을 통해 결합의 타이트함을 설정합니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 11.webp'
+              },
+              {
+                label: '[Z/M0.6B] 코핑 내면 마무리 가공 공정의 수행 여부(On/Off)를 선택할 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 12.webp'
+              }
+            ]
+          },
+          {
+            heading: '교합면 구(Groove) 가공 공정',
+            items: [
+              {
+                label: '[Z/M1.0B] 구 가공을 수행할지 결정합니다. 크라운(Crown)의 기본값은 활성화, 코핑(Coping)은 비활성화 상태입니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 13.webp'
+              },
+              {
+                label: '[Z/M0.6B] 툴을 사용한 구 가공 공정을 추가로 수행하고 싶다면 체크박스를 활성화하세요.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 14.webp'
+              },
+              {
+                label: '[Z0.3B] 툴을 사용한 미세 구 가공 공정을 추가로 수행하고 싶다면 체크박스를 활성화하세요.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 15.webp'
+              }
+            ]
+          },
+          {
+            heading: '가공 영역(Boundary) 오프셋 추가',
+            items: [
+              {
+                label: '바운더리(가공 영역) 오프셋을 추가로 넓힐 수 있습니다. 충돌(collision) 오류가 발생할 때 바운더리를 넓혀 오류를 회피할 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/Overwritable parameters/image 16.webp'
+              }
+            ]
+          }
+        ]
+      },
+
+      'denture-types': {
+        title: '파샬 프레임, 풀 덴쳐, 플렉시블 덴쳐 계산하기/ 하이퍼덴트',
+        steps: [
+          {
+            heading: 'Partial framework',
+            youtube: 'https://youtu.be/0UlCFFjBv6U',
+            items: [
+              {
+                label: '1. 파트 타입(Part type)을 Partial framework로 설정합니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 25.webp'
+              },
+              {
+                label: '2. 메인 방향(Main direction) 설정: 캐비티(Cavity) 쪽에서 볼 때 언더컷이 가장 적은 방향으로 설정하는 것을 권장합니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 26.webp'
+              },
+              {
+                label: '3. 교합 방향(Occlusal direction) 설정: 교합면(Occlusal) 쪽에서 볼 때 언더컷이 가장 적은 방향으로 설정하는 것을 권장합니다. (보통 메인 방향과 동일하게 설정합니다)',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 27.webp'
+              },
+              {
+                label: '4. 마진 라인(Margin line)은 설정할 필요가 없습니다. 언더컷 영역이 있다면 User-defined areas 기능을 켜서 직접 영역을 지정하세요.',
+                desc: '💡 주의사항: 모든 삽입 경로는 30도 미만으로 설정해야 합니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 28.webp'
+              },
+              {
+                label: '5. 필요하다면 홀(Hole) 설정을 추가할 수 있습니다.'
+              }
+            ]
+          },
+          {
+            heading: 'Full denture base',
+            youtube: 'https://youtu.be/__mpzyBbPZc',
+            items: [
+              {
+                label: '1. 파트 타입(Part type)을 Denture base로 설정합니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 29.webp'
+              },
+              {
+                label: '2. 메인 방향(Main direction) 설정: 캐비티 쪽에서 볼 때 언더컷이 가장 적은 방향으로 설정합니다.',
+                desc: '💡 참고: 내면의 삽입 경로는 나중에 별도로 설정할 수 있으므로, 초기 설정 시 내면의 언더컷은 어느 정도 무시해도 괜찮습니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 30.webp'
+              },
+              {
+                label: '3. 교합 방향(Occlusal direction) 설정: 교합면 쪽에서 볼 때 언더컷이 가장 적은 방향으로 설정합니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 31.webp'
+              },
+              {
+                label: '4. 가장자리를 따라 마진 라인(Coping)을 반드시 설정해야 합니다.',
+                desc: '💡 마진 라인 설정 팁: 마법사의 [Margin line] 단계에서 가장자리를 따라 User-defined area(사용자 정의 영역) 선을 그린 후, 해당 선의 타입을 Coping으로 변경하세요.',
+                video: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/full.denture_set.margin_25.10.16.r1.mp4',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 32.webp'
+              },
+              {
+                label: '5. 치아 포켓(Tooth pockets) 또한 설정이 필요합니다.',
+                desc: '💡 주의사항: 전체 치아 포켓이 동일한 삽입 경로를 가질 수 없는 경우, 삽입 방향을 고려하여 각각 별도로 설정할 수 있습니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 33.webp'
+              },
+              {
+                label: '6. 필요하다면 홀(Hole) 설정을 추가할 수 있습니다.'
+              }
+            ]
+          },
+          {
+            heading: 'Flexible denture',
+            items: [
+              {
+                label: '1. 파트 타입(Part type)을 Flexible denture로 설정합니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 34.webp'
+              },
+              {
+                label: '2. 메인 방향(Main direction) 설정: 캐비티 쪽에서 볼 때 언더컷이 가장 적은 방향으로 설정합니다.',
+                desc: '💡 참고: 내면의 삽입 경로는 별도로 설정할 수 있으므로 내면 언더컷은 무시해도 괜찮습니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 35.webp'
+              },
+              {
+                label: '3. 교합 방향(Occlusal direction) 설정: 교합면 쪽에서 볼 때 언더컷이 가장 적은 방향으로 설정합니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 36.webp'
+              },
+              {
+                label: '4. 마진 라인은 설정할 필요가 없습니다. 언더컷 영역과 치아 포켓(Tooth pocket) 모두 User-defined areas로 지정해야 합니다.',
+                desc: '💡 주의사항: 모든 삽입 경로는 30도 미만으로 설정해야 합니다.',
+                img: 'assets/images/sec-mf-Features/Partial framework Full Denture base Flexible denture/image 37.webp'
+              },
+              {
+                label: '5. 필요하다면 홀(Hole) 설정을 추가할 수 있습니다.'
+              }
+            ]
+          }
+        ]
+      },
+
+      'screw-channel-category': {
+        title: '스크류 채널 카테고리 (Screw channel\'s Category)',
+        steps: [
+          {
+            heading: '스크류 채널 카테고리 (Screw channel\'s Category)',
+            items: [
+              {
+                label: '밀링할 스크류의 결합부 형태에 따라 <strong>알맞은 카테고리(Object feature)를 선택</strong>해야 합니다.',
+                img: 'assets/images/sec-mf-Features/Screw channels Category/image.webp'
+              },
+              {
+                label: 'Category 1 (Object feature 1)',
+                desc: '<strong>하단 결합부가 평평한(Flatted) 형태의 스크류를 사용할 때 선택합니다.</strong>',
+                img: 'assets/images/sec-mf-Features/Screw channels Category/image 1.webp'
+              },
+              {
+                label: 'Category 2 (Object feature 2)',
+                desc: '<strong>하단 결합부가 테이퍼진(Tapered) 형태의 스크류를 사용할 때 선택합니다.</strong>',
+                img: 'assets/images/sec-mf-Features/Screw channels Category/image 2.webp'
+              }
+            ]
+          }
+        ]
+      },
+
+      'connector-settings': {
+        title: '커넥터 설정 (Connector settings)',
+        steps: [
+          {
+            heading: '1. 커넥터 요소들에 관해 (Explanation of connector factors)',
+            items: [
+              {
+                label: '설정 메뉴에서 커넥터와 관련된 요소들을 조절할 수 있습니다.<br><em>You can adjust factors of connector in setting menu.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image.png'
+              },
+              {
+                label: '수정 메뉴(연필 모양 아이콘)를 누르세요.<br><em>Click the edit (pencil icon) menu.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 1.png'
+              },
+              {
+                label: '커넥터 편집 창이 열립니다.',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 2.png'
+              },
+              {
+                label: '<strong>① 이름(Name)</strong>: 이름을 원하는 대로 설정하실 수 있습니다.<br><em>You can set name on your will.</em>'
+              },
+              {
+                label: '<strong>② 일반(General)</strong>: 커넥터의 외형을 설정할 수 있습니다.<br><em>You can determine outfit of connector.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 3.png'
+              },
+              {
+                label: '커넥터 형태 옵션: Circle (원형), Ellips (타원형), Oval (난원형)',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 4.png'
+              },
+              {
+                label: '직경 비교: Diameter 2mm vs Diameter 4mm / 직경 2mm vs 직경 4mm',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 5.png'
+              },
+              {
+                label: '커넥터 세부 설정 화면',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 6.png'
+              },
+              {
+                label: '<strong>③ Group size</strong>: 자동 모드로 커넥터 설정 시 생길 커넥터의 개수입니다.<br><em>This is the number of connectors when set to automatic mode.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 7.png'
+              },
+              {
+                label: 'Group size 비교: Group size 2 vs Group size 3',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 8.png'
+              },
+              {
+                label: '<strong>④ 밀링 컷(Milling cut)</strong>: 커넥터 절단 시 얼마나 깎을지에 대한 메뉴입니다.<br><em>Factors for how much to trim when cutting the connector.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 9.png'
+              },
+              {
+                label: '밀링컷 40% 예시 및 커넥터 절단 후 모습',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 10.png'
+              },
+              {
+                label: '<strong>⑤ 재료(Material)</strong>: 설정이 적용될 재료를 고를 수 있습니다. 또한 특정 재료에서 기본값으로 적용되게 할 수 있습니다.<br><em>You can select the materials to be applied and set them as the default for specific materials.</em>'
+              }
+            ]
+          },
+          {
+            heading: '2. 커스터마이징한 커넥터 설정 저장 (Saving Customized Connector Settings)',
+            items: [
+              {
+                label: '커스터마이징한 설정을 저장하는 방법입니다.',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 11.png'
+              },
+              {
+                label: '저장 후, 커넥터 메뉴에서 확인할 수 있습니다. 변경한 세팅이 적용됩니다.<br><em>After saving, you can check it in the connector menu. The customized setting is applied.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 12.png'
+              }
+            ]
+          },
+          {
+            heading: '3. 자동 커넥터 설정 (Auto connector setting)',
+            items: [
+              {
+                label: 'F5 키를 누르면 "Machine settings" 메뉴가 뜹니다.<br>해당 메뉴에서 <strong>Fixture → Additional properties</strong>로 들어간 다음, 픽스처 유형을 선택하세요.<br><br><em>Press F5 on your keyboard to enter \'Machine settings\' menu. Click \'Fixture → Additional properties\'. Select Fixture type.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 13.png'
+              },
+              {
+                label: '표시된 <strong style="color:#ef4444">Allow overlapping~</strong>을 <strong style="color:#ef4444">No</strong>로, <strong style="color:#3b82f6">Connectors adding to part</strong>를 <strong style="color:#3b82f6">Yes</strong>로 설정하면 STL을 디스크에 배치 시 자동으로 커넥터가 달려서 배치됩니다.<br><br><em>Set \'Allow overlapping~\' to <strong style="color:#ef4444">No</strong> and \'Connectors adding to part\' to <strong style="color:#3b82f6">Yes</strong>. Connectors are attached automatically when you nest the STL file on the blank.</em>'
+              },
+              {
+                label: '반대로 <strong style="color:#3b82f6">Allow overlapping~</strong>을 <strong style="color:#3b82f6">Yes</strong>로, <strong style="color:#ef4444">Connector adding to part</strong>를 <strong style="color:#ef4444">No</strong>로 설정하면 커넥터가 자동으로 설정되지 않습니다.<br><br><em>Set \'Allow overlapping~\' to <strong style="color:#3b82f6">Yes</strong> and \'Connector adding to part\' to <strong style="color:#ef4444">No</strong> — connector will not be attached automatically.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 14.png'
+              }
+            ]
+          },
+          {
+            heading: '4. 트레버스(Traverse) / 가로지르기',
+            items: [
+              {
+                label: '<strong>트레버스(Traverse)란?</strong> 커넥터가 밀링 영역이 겹치는 보철물 사이를 가로지르는 기능입니다.<br><em>This feature allows a connector to bridge the gap between prostheses where the milling areas overlap.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 15.png'
+              },
+              {
+                label: 'F5키를 누르시고 <strong style="color:#3b82f6">Create Traverse</strong> 옵션을 <strong style="color:#3b82f6">Yes</strong>로 설정하세요.<br><em>Press F5 key and set \'Create Traverse\' option to <strong style="color:#3b82f6">Yes</strong>.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 16.png'
+              },
+              {
+                label: '그 후에, 자동 커넥터 모드에서 보철물을 클릭하면 커넥터가 다른 커넥터들을 가로지르면서 부착됩니다.<br><em>After that, clicking the prosthesis in automatic mode will attach the connector in a traversed state.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 17.png'
+              },
+              {
+                label: '수동 모드에서는 이 버튼을 클릭해 트레버스 기능을 사용할 수 있습니다.<br><em>In manual mode, you can use the traverse function by clicking the corresponding button.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 18.png'
+              }
+            ]
+          },
+          {
+            heading: '5. 상황 별 권장 커넥터 (Recommended connector)',
+            items: [
+              {
+                label: '<strong>① 원형(Circle) 커넥터</strong>: 대부분의 상황에서 쓰입니다. 지르코니아 가공 시 밀링컷을 낮게 혹은 0%로 설정하세요.<br><em>Used in most situations. When milling Zirconia, please set milling cut to low or 0%.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 19.png'
+              },
+              {
+                label: '<strong>② 타원형(Ellips) 커넥터</strong>: 커넥터 달 곳이 좁을 때 쓰입니다.<br><em>Used when the area for attaching the connector is narrow.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 20.png'
+              },
+              {
+                label: '<strong>③ 난원형(Oval) 커넥터</strong>: 커넥터 달 곳이 좁을 때 쓰입니다.<br><em>Used when the area for attaching the connector is narrow.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/image 21.png'
+              }
+            ]
+          },
+          {
+            heading: '6. 커넥터 설정 팁 (Tip for setting connector)',
+            items: [
+              {
+                label: '커넥터를 달고 싶은 위치가 마진이거나, 상부 보철물이 접촉할 부분이어서 피하고 싶은데, 피해서 달기 어렵다면:<br><em>If it is difficult to set up connectors to avoid the area of the margin lines or the area where it will come into contact with the supra-structures,</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/hyperDENT_connector.efficiently_1.symptom_25.04.22.gif'
+              },
+              {
+                label: 'Ctrl 버튼을 누르면 가상의 벽이 생성되어, 커넥터를 이 벽을 따라 상/하로 이동시켜 민감한 영역을 피해 커넥터를 장착할 수 있습니다.<br><em>Pressing the Ctrl button creates a virtual wall, which allows the connector to move up and down along the wall to set the connector while avoiding the sensitive areas.</em>',
+                img: 'assets/images/sec-mf-Features/Connector settings/hyperDENT_connector.efficiently_2.adjusting_25.04.22.gif'
+              }
+            ]
+          }
+        ]
+      },
+
+      'long-screw-channel': {
+        title: '15mm 이상의 긴 스크류 채널 가공하는 법 (How to mill long screw channel over 15mm)',
+        steps: [
+          {
+            heading: '1. 준비물 (Requirements)',
+            items: [
+              {
+                label: '<strong>① hyperDENT 버전 10.1.1 이상</strong><br><em>hyperDENT Version 10.1.1 or higher</em><br><br>하이퍼덴트 버전은 키보드 <strong>F12</strong>를 누르면 확인하실 수 있습니다.<br><em>You can check your hyperDENT version by pressing F12 on your keyboard.</em>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 43.png'
+              },
+              {
+                label: '<strong>② MAI DB(database) 251115 이상</strong><br><em>MAI DB(database) 251115 or later</em><br><br>키보드 <strong>F4</strong>를 누르면 데이터베이스 버전을 확인하실 수 있습니다.<br><em>You can check your database version by pressing F4 on your keyboard.</em>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 44.png'
+              },
+              {
+                label: '<strong>③ T01, T23 공구</strong><br><em>T01, T23 tools</em>'
+              }
+            ]
+          },
+          {
+            heading: '2. 계산법 (How to Calculate)',
+            items: [
+              {
+                label: '평소처럼 설정을 마친 뒤 계산 버튼을 눌러주세요.<br><em>Once all setup is complete, please start calculating as usual.</em>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 45.png'
+              },
+              {
+                label: '계산 완료 후 NC 파일 편집을 위해 공구 경로보기(Show toolpaths) 메뉴로 가주세요.<br><em>After calculation is done, please enter the \'Show toolpaths\' menu to edit NC file.</em>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 46.png'
+              },
+              {
+                label: '커넥터 관련 공정을 모두 분리합니다. (Separate process)<br>바 가공 NC(NC1)와 커넥터 전용 NC(NC3) 총 2개가 생성됩니다.',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 47.png'
+              },
+              {
+                label: 'NC1 생성 (바 가공 전용 / Bar milling only)',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 48.png'
+              },
+              {
+                label: 'NC3 생성 (커넥터 전용 / Connector cutting only)<br><br>커넥터 관련 공정은 모두 따로 빼내 새 NC를 만듭니다. 바 가공 NC(NC1)와 커넥터 가공 NC(NC2) 총 2개가 생성됩니다.<br><em>Separate all connector-related processes to create a new NC file. Two files will be generated: one for bar milling only (NC1) and another for connector milling only (NC2).</em>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 49.png'
+              },
+              {
+                label: '방금 계산한 STL을 잠금해제 해주세요. (단축키: <strong>Ctrl + L</strong>)<br><em>Then, please unlock the STL file that was calculated just before. (Shortcut: Ctrl + L)</em>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 50.png'
+              },
+              {
+                label: '템플릿 중 <strong style="color:#ef4444">"####_Screw Head(T cut)"</strong>를 선택한 다음 다시 계산하세요 (NC2).<br><em>Select the template titled <strong style="color:#ef4444">"####_Screw Head(T cut)"</strong> and calculate again (NC2).</em>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 51.png'
+              },
+              {
+                label: 'NC2 계산 결과 확인',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 52.png'
+              },
+              {
+                label: '이제 <strong style="color:#ef4444">NC1(바 가공) → NC2(홀 추가가공) → 적합 확인 → NC3(커넥터 가공)</strong> 순서대로 돌려주세요. NC3 돌리기 전에 반드시 적합을 확인해주세요.<br><em>Please process the milling sequentially: NC1 (bar milling) → NC2 (additional hole milling) → check fit → NC3 (connector cutting). Before running NC3, please check the fit.</em>'
+              }
+            ]
+          },
+          {
+            heading: '3. 가공 원리 (Working principle)',
+            items: [
+              {
+                label: '과거 방식: 롱 홀 가공 (15mm 이상은 가공 불가)<br><em>Past long-hole milling — Drilling over 15mm was not possible.</em>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 53.png'
+              },
+              {
+                label: '<ul style="margin:8px 0 0 20px; padding:0; list-style:disk;"><li style="margin-bottom:6px; color:#4b5563; font-size:15px;">지르코니아 전용 공구(T01)를 이용해 20mm까지 가공합니다. <em>(NC1)</em><br><em>Milling up to 20mm using the Zir 2.0B tool (T01) — NC1</em></li><li style="margin-bottom:6px; color:#4b5563; font-size:15px;">하지만 여전히 가공 안 되는 부분이 남아있습니다 (초록 원 표시).<br><em>However, un-milled areas still remain (marked with green circles).</em></li><li style="margin-bottom:6px; color:#4b5563; font-size:15px;">해당 부분을 T 커터로 추가 가공합니다. <em>(NC2)</em><br><em>Mill that area using a T-cutter — NC2</em></li></ul>',
+                img: 'assets/images/sec-mf-Features/Long screw channel/image 54.png'
+              }
+            ]
+          },
+          {
+            heading: '4. ⚠️ 주의사항 (Precaution)',
+            items: [
+              {
+                label: '<strong style="color:#ef4444">⚠️ 지르코니아 공구로 티타늄 혹은 PMMA를 가공하기 때문에 공구 손상 위험이 매우 높습니다. 가공 후에 반드시 공구 상태를 확인하세요.</strong><br><em>The risk of tool damage is extremely high since Titanium or PMMA is machined with Zirconia tools. Please check the tool\'s condition after milling.</em>'
+              },
+              {
+                label: '<strong style="color:#ef4444">⚠️ T 커터도 완전한 직각은 아니기 때문에, 스크류 채널이 직각이라면 완벽한 가공은 어렵습니다.</strong><br><em>Since T-cutters are not perfectly square, perfect machining is impossible if the screw channel has a right angle.</em>'
+              }
+            ]
+          }
+        ]
+      },
+
+      'abutment-milling': {
+        title: '환봉과 리버스 지그를 이용해 커스텀 어버트먼트 계산하기/ 하이퍼덴트',
+        steps: [
+          {
+            heading: '환봉과 리버스 지그를 이용해 <span style="color:#a855f7; font-size:18px;">커스텀 어버트먼트</span> 계산하기/ <span style="color:#f97316;">하이퍼덴트</span>',
+            youtube: 'https://youtu.be/XNfopoBXGXI',
+            items: [
+              {
+                label: 'This tutorial video is recorded based on AI Premill calibration V1.2 and hyperDENT V9.4.4.',
+                img: 'assets/images/sec-mf-Tutorials/abutment_icon.webp'
+              }
+            ]
+          }
+        ]
+      }
+
+    };
+
+    // ── Build modal HTML ──────────────────────────────────────────────
+    function buildFeatureHTML(data) {
+      let html = '';
+
+      // 스크롤 스탬프 (바로가기 버튼)
+      if (data.steps && data.steps.length > 1) {
+        html += `<div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px dashed #e5e7eb;">`;
+        for (let i = 0; i < data.steps.length; i++) {
+          let shortHeading = data.steps[i].heading.split('(')[0].trim();
+          html += `<button onclick="document.getElementById('modal-step-${i}').scrollIntoView({behavior:'smooth', block:'start'})" 
+            style="background:#f3e8ff; border:1px solid #d8b4fe; color:#6b21a8; padding:6px 12px; border-radius:16px; font-size:13px; font-weight:600; cursor:pointer; transition:all 0.2s;"
+            onmouseover="this.style.background='#e9d5ff'" onmouseout="this.style.background='#f3e8ff'">
+            ${shortHeading}
+          </button>`;
+        }
+        html += `</div>`;
+      }
+
+      // 상단 비디오 튜토리얼 임베드
+      if (data.youtube) {
+        let embedUrl = data.youtube;
+        if (embedUrl.includes('youtu.be/')) {
+            embedUrl = 'https://www.youtube.com/embed/' + embedUrl.split('youtu.be/')[1].split('?')[0];
+          } else if (embedUrl.includes('watch?v=')) {
+            embedUrl = 'https://www.youtube.com/embed/' + embedUrl.split('watch?v=')[1].split('&')[0];
+          }
+        
+        html += `<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:24px;">
+          <iframe src="${embedUrl}" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>`;
+      }
+
+      for (let i = 0; i < data.steps.length; i++) {
+        const step = data.steps[i];
+        html += `<div style="display:flex; align-items:center; gap:12px; margin:24px 0 16px;">`;
+        html += `<h4 id="modal-step-${i}" style="margin:0;font-size:18px;font-weight:700;color:#1f2937;border-left:4px solid #a855f7;padding-left:12px;scroll-margin-top:20px;">${step.heading}</h4>`;
+        html += `</div>`;
+        
+        if (step.description) {
+          html += `<p style="margin:-8px 0 16px 0; color:#4b5563; font-size:15px; word-break:keep-all;">${step.description}</p>`;
+        }
+        
+        if (step.youtubes && step.youtubes.length > 0) {
+          html += `<div style="display:grid; grid-template-columns: repeat(${step.youtubes.length > 1 ? 2 : 1}, 1fr); gap:16px; margin-bottom:24px;">`;
+          for (let url of step.youtubes) {
+            let embedUrl = url;
+            if (embedUrl.includes('youtu.be/')) {
+            embedUrl = 'https://www.youtube.com/embed/' + embedUrl.split('youtu.be/')[1].split('?')[0];
+          } else if (embedUrl.includes('watch?v=')) {
+            embedUrl = 'https://www.youtube.com/embed/' + embedUrl.split('watch?v=')[1].split('&')[0];
+          }
+            html += `<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+              <iframe src="${embedUrl}" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>`;
+          }
+          html += `</div>`;
+        } else if (step.youtube) {
+          let embedUrl = step.youtube;
+          if (embedUrl.includes('youtu.be/')) {
+            embedUrl = 'https://www.youtube.com/embed/' + embedUrl.split('youtu.be/')[1].split('?')[0];
+          } else if (embedUrl.includes('watch?v=')) {
+            embedUrl = 'https://www.youtube.com/embed/' + embedUrl.split('watch?v=')[1].split('&')[0];
+          }
+          
+          html += `<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:24px;">
+            <iframe src="${embedUrl}" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>`;
+        }
+        if (step.items) {
+          for (const item of step.items) {
+            html += `<div style="margin-bottom:24px; border:1px solid #e5e7eb; border-radius:12px; padding:20px; background:#f9fafb; box-shadow:0 2px 8px rgba(0,0,0,0.03);">`;
+            
+            if (item.video) {
+              html += `<div style="margin-bottom:16px; text-align:center;"><video src="${item.video}" controls style="max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></video></div>`;
+            }
+            
+            if (item.img) {
+              html += `<div style="margin-bottom:16px; text-align:center;"><img src="${item.img}" loading="lazy" style="max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>`;
+            }
+            
+            if (item.imgs) {
+              for (const imgSrc of item.imgs) {
+                html += `<div style="margin-bottom:16px; text-align:center;"><img src="${imgSrc}" loading="lazy" style="max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>`;
+              }
+            }
+            
+            if (item.imgsRow) {
+              html += `<div style="display:flex; gap:16px; margin-bottom:16px; justify-content:center;">`;
+              for (const imgSrc of item.imgsRow) {
+                html += `<div style="flex:1; text-align:center;"><img src="${imgSrc}" loading="lazy" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>`;
+              }
+              html += `</div>`;
+            }
+            
+            html += `<div style="font-weight:600; color:#374151; font-size:16px;">${item.label}</div>`;
+            
+            if (item.desc) {
+              html += `<p style="margin:8px 0 0 0; color:#6b7280; font-size:15px; line-height:1.6;">${item.desc}</p>`;
+            }
+            
+            if (item.bullets) {
+              html += '<ul style="margin:12px 0 0 20px; padding:0; list-style:disk;">';
+              for (const b of item.bullets) {
+                html += `<li style="margin-bottom:6px; color:#4b5563; font-size:15px;">${b}</li>`;
+              }
+              html += '</ul>';
+            }
+            
+            html += `</div>`; // wrapper close
+          }
+        }
+        // 마지막 단계 제외하고 구분선 추가
+        if (i < data.steps.length - 1) {
+          html += '<hr style="margin:24px 0;border:0;border-top:1px solid #e5e7eb;">';
+        }
+      }
+      return html;
+    }
+
+    // ── Modal open/close ──────────────────────────────────────────────
+    const modal   = document.getElementById('feature-modal');
+    const mTitle  = document.getElementById('feature-modal-title');
+    const mBody   = document.getElementById('feature-modal-body');
+    const mClose  = document.getElementById('feature-modal-close');
+
+    let lastSectionId = 'sec-mf-hd-features'; // 기본값
+
+    function openFeatureModal(key, originSectionId) {
+      const data = FEATURE_DATA[key];
+      if (!data) return;
+      if (originSectionId) lastSectionId = originSectionId;
+      mTitle.textContent = data.title;
+      mBody.innerHTML = buildFeatureHTML(data);
+      modal.style.display = 'flex';
+      history.replaceState(null, null, `#feature-${key}`);
+    }
+    window.openFeatureModal = openFeatureModal;
+
+    function closeFeatureModal() {
+      modal.style.display = 'none';
+      // 창을 닫으면 원래 있던 섹션(또는 기본 섹션)으로 이동
+      window.location.replace('#' + lastSectionId);
+    }
+
+    mClose.addEventListener('click', closeFeatureModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeFeatureModal(); });
+
+    // ── Card click + hover ────────────────────────────────────────────
+    function initFeatureCards() {
+      document.querySelectorAll('.feature-card').forEach(card => {
+        // 중복 이벤트 방지
+        if (card.dataset.initDone) return;
+        card.addEventListener('click', (e) => {
+          const section = e.target.closest('section');
+          const sectionId = section ? section.id : 'sec-mf-hd-features';
+          openFeatureModal(card.dataset.featureKey, sectionId);
+        });
+        card.addEventListener('mouseenter', () => {
+          card.style.boxShadow = '0 8px 24px rgba(168,85,247,0.2)';
+          card.style.transform = 'translateY(-3px)';
+          card.style.borderColor = '#a855f7';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.boxShadow = '0 2px 6px rgba(0,0,0,0.05)';
+          card.style.transform = '';
+          card.style.borderColor = '#e5e7eb';
+        });
+        card.dataset.initDone = 'true';
+      });
+    }
+
+    function checkHashForFeature() {
+      const hash = window.location.hash;
+      if (hash.startsWith('#feature-')) {
+        const key = hash.replace('#feature-', '');
+        if (FEATURE_DATA[key]) {
+          openFeatureModal(key);
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', checkHashForFeature);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initFeatureCards();
+      checkHashForFeature();
+    });
+    // 섹션 전환 후에도 적용되도록 MutationObserver
+    new MutationObserver(initFeatureCards).observe(document.body, { childList: true, subtree: true });
+  })();
+  </script>
+</body>
+
+</html>

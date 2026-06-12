@@ -1,0 +1,129 @@
+<section id="sec-mf-tool-setup" class="content-section">
+        <h2 data-i18n="nav-mf-tool-setup">🛠️ 공구 세팅</h2>
+        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
+          Anchor: <a href="#sec-mf-tool-setup" style="color:#a855f7; text-decoration:none;">#sec-mf-tool-setup</a></div>
+        <p class="subtitle">MillFix</p>
+
+        <div style="display:flex; gap:12px; margin-bottom:24px; flex-wrap:wrap;">
+          <a href="#anchor-pocket"
+            onclick="event.preventDefault(); document.getElementById('anchor-pocket').scrollIntoView({behavior:'smooth', block:'start'});"
+            style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#f8fafc; border:2px solid #e2e8f0; border-radius:10px; color:#374151; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; transition:all 0.2s;"
+            onmouseover="this.style.background='#eef2ff'; this.style.borderColor='#6366f1';"
+            onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0';">💰 공구 포켓 위치</a>
+          <a href="#anchor-setting"
+            onclick="event.preventDefault(); document.getElementById('anchor-setting').scrollIntoView({behavior:'smooth', block:'start'});"
+            style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#f8fafc; border:2px solid #e2e8f0; border-radius:10px; color:#374151; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; transition:all 0.2s;"
+            onmouseover="this.style.background='#eef2ff'; this.style.borderColor='#6366f1';"
+            onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0';">🔘 공구 세팅</a>
+          <a href="#anchor-detach"
+            onclick="event.preventDefault(); document.getElementById('anchor-detach').scrollIntoView({behavior:'smooth', block:'start'});"
+            style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#f8fafc; border:2px solid #e2e8f0; border-radius:10px; color:#374151; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; transition:all 0.2s;"
+            onmouseover="this.style.background='#eef2ff'; this.style.borderColor='#6366f1';"
+            onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0';">📤 공구 탈착</a>
+        </div>
+
+        <div class="content-card">
+          <h3 id="anchor-pocket" style="margin-top:0; margin-bottom:20px; color:#374151; font-size:20px;">💰 공구 포켓 위치
+          </h3>
+          <div style="display:flex; gap:32px; align-items:flex-start; flex-wrap:wrap;">
+            <!-- 왼쪽: 이미지 -->
+            <div style="flex:1; min-width:300px; max-width:520px;">
+              <img loading="lazy" src="./assets/images/sec-mf-tools/image-1.webp" alt="공구 포켓 위치"
+                style="width:100%; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
+            </div>
+            <!-- 오른쪽: 설명 -->
+            <div style="flex:1; min-width:280px;">
+              <div
+                style="background:#fffbeb; border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px; margin-bottom:20px;">
+                <h4 style="margin:0 0 8px 0; color:#92400e; font-size:16px;">🔔 공구 장착 전 확인</h4>
+                <p style="margin:0; color:#78350f; font-size:14px; line-height:1.7;">공구의 샹크 측면 또는 공구 케이스에서 공구 번호를 정확히
+                  확인한 후, 해당 포켓에 올바르게 장착합니다.</p>
+              </div>
+
+              <h4 style="margin:0 0 14px 0; color:#374151; font-size:16px;">📌 적용 공구 리스트</h4>
+
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <div style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:8px; padding:12px 16px;">
+                  <div style="font-weight:700; color:#0369a1; font-size:13px; margin-bottom:6px;">For Zirconia</div>
+                  <div style="color:#374151; font-size:13px; line-height:1.6; font-weight:700;">T31_Z2.0B / T32_Z1.0B /
+                    T33_Z0.6B / T34_Z0.3B</div>
+                </div>
+                <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:12px 16px;">
+                  <div style="font-weight:700; color:#15803d; font-size:13px; margin-bottom:6px;">For Hybrid ceramic
+                  </div>
+                  <div style="color:#374151; font-size:13px; line-height:1.6; font-weight:700;">T35_G2.0B / T36_G1.0B /
+                    T37_G0.6B</div>
+                </div>
+                <div style="background:#fdf4ff; border:1px solid #f0abfc; border-radius:8px; padding:12px 16px;">
+                  <div style="font-weight:700; color:#86198f; font-size:13px; margin-bottom:6px;">For PMMA</div>
+                  <div style="color:#374151; font-size:13px; line-height:1.6; font-weight:700;">T38_M2.0B / T39_M1.0B
+                  </div>
+                </div>
+                <div style="background:#fefce8; border:1px solid #fde68a; border-radius:8px; padding:12px 16px;">
+                  <div style="font-weight:700; color:#a16207; font-size:13px; margin-bottom:6px;">Special purpose</div>
+                  <div style="color:#374151; font-size:13px; line-height:1.6; font-weight:700;">T42_M1.5FL / T43_M1.0F /
+                    T44_M1.5R / T45_M1.6T</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider-heavy">
+
+          <h3 id="anchor-setting" style="margin-top:0; margin-bottom:20px; color:#374151; font-size:21px;">🔘 공구 세팅</h3>
+          <div class="info-callout">
+            <h4 style="margin:0 0 8px 0; color:#374151; font-size:17px;">⚙️ 초기 위치 확인</h4>
+            <ul class="step-list">
+              <li>대기 상태 (홈잉(Homing) 완료 직후) 에서는 A축이 약 +35° 기울어진 상태로 위치합니다.</li>
+            </ul>
+          </div>
+          <img loading="lazy" src="./assets/images/sec-mf-tool-setup/initial-position-check.webp" alt="초기 위치 확인"
+            style="margin:16px auto 0; width:100%; max-width:600px; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
+
+          <div
+            style="background:#f8fafc; border-left:4px solid #6366f1; padding:14px 18px; border-radius:8px; margin-top:24px;">
+            <h4 style="margin:0 0 8px 0; color:#374151; font-size:17px;">🔍 공구 번호 확인</h4>
+            <ul class="step-list">
+              <li>각 공구의 번호를 확인한 후, 해당 포켓에 장착하십시오.</li>
+            </ul>
+          </div>
+
+          <div
+            style="background:#f8fafc; border-left:4px solid #6366f1; padding:14px 18px; border-radius:8px; margin-top:16px;">
+            <h4 style="margin:0 0 8px 0; color:#374151; font-size:17px;">📥 공구 장착</h4>
+            <ul class="step-list">
+              <li>공구를 포켓에 <strong style="font-size:15px;">끝까지 수직으로 밀어 넣으십시오.</strong></li>
+            </ul>
+            <div
+              style="background:#fffbeb; border-left:4px solid #f59e0b; padding:12px 16px; border-radius:8px; margin-top:12px; margin-left:20px;">
+              <span style="font-size:15px;">🔔</span>
+              <span style="color:#78350f; font-size:14px; line-height:1.7; margin-left:6px; font-weight:700;">공구가 비스듬히
+                장착되지 않도록 주의 하십시오.</span>
+            </div>
+          </div>
+
+          <div
+            style="display:flex; flex-direction:row; gap:16px; margin-top:24px; align-items:flex-start; flex-wrap:wrap;">
+            <img loading="lazy" src="./assets/images/sec-mf-tool-setup/tool-mount-1.webp" alt="공구 장착 1"
+              style="flex:1; min-width:200px; max-width:48%; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
+            <img loading="lazy" src="./assets/images/sec-mf-tool-setup/tool-mount-2.webp" alt="공구 장착 2"
+              style="flex:1; min-width:200px; max-width:48%; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
+          </div>
+
+          <div
+            style="background:#f8fafc; border-left:4px solid #6366f1; padding:14px 18px; border-radius:8px; margin-top:24px;">
+            <h4 id="anchor-detach" style="margin:0 0 8px 0; color:#374151; font-size:17px;">📤 공구 탈착</h4>
+            <ul class="step-list">
+              <li>공구를 단단히 잡고, 장착 방향의 <strong style="font-size:15px;">수직 방향으로 곧게 당겨 분리하십시오.</strong></li>
+            </ul>
+            <div
+              style="background:#fffbeb; border-left:4px solid #f59e0b; padding:12px 16px; border-radius:8px; margin-top:12px; margin-left:20px;">
+              <span style="font-size:15px;">🔔</span>
+              <span style="color:#78350f; font-size:14px; line-height:1.7; margin-left:6px; font-weight:700;">공구가 미끄러질
+                경우, <strong style="font-size:15px;">마른 천 또는 휴지</strong>를 사용하여 안전하게 분리하십시오.</span>
+            </div>
+          </div>
+          <img loading="lazy" src="./assets/images/sec-mf-tool-setup/image-2.webp" alt="공구 탈착"
+            style="margin:16px auto 0; width:100%; max-width:600px; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
+        </div>
+      </section>

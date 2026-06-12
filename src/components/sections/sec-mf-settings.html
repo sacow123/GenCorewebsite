@@ -1,0 +1,205 @@
+<section id="sec-mf-settings" class="content-section">
+        <h2 data-i18n="nav-mf-settings">⚙️ 설정 페이지</h2>
+        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
+          Anchor: <a href="#sec-mf-settings" style="color:#a855f7; text-decoration:none;">#sec-mf-settings</a></div>
+        <p class="subtitle">MillFix 컨트롤 프로그램</p>
+
+        <style>
+          @keyframes pulse-border {
+            0% {
+              box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7);
+            }
+
+            70% {
+              box-shadow: 0 0 0 15px rgba(255, 204, 0, 0);
+            }
+
+            100% {
+              box-shadow: 0 0 0 0 rgba(255, 204, 0, 0);
+            }
+          }
+
+          #sec-mf-settings .stage-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1586 / 930;
+            background: #000;
+            overflow: visible;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            /* 안내 문구 공간 확보 */
+          }
+
+          #sec-mf-settings .base {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            user-select: none;
+            -webkit-user-drag: none;
+          }
+
+          #sec-mf-settings .hotspot {
+            position: absolute;
+            border: 2px solid rgba(255, 204, 0, 0.5);
+            background: transparent;
+            cursor: pointer;
+            z-index: 5;
+            transition: .15s ease;
+            outline: none;
+            animation: pulse-border 2s infinite;
+            padding: 0;
+          }
+
+          /* When ANY hotspot is hovered: hide all OTHER hotspots */
+          #sec-mf-settings .stage-container:has(>.hotspot:hover) .hotspot {
+            opacity: 0;
+            animation: none;
+            pointer-events: none;
+          }
+
+          /* The hovered one stays visible and highlighted */
+          #sec-mf-settings .stage-container:has(>.hotspot:hover) .hotspot:hover {
+            opacity: 1;
+            pointer-events: auto;
+            border-color: rgba(255, 204, 0, 0.95);
+            background: rgba(255, 204, 0, 0.10);
+            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
+          }
+
+          #sec-mf-settings .round {
+            border-radius: 50%;
+          }
+
+          #sec-mf-settings .pill {
+            border-radius: 999px;
+          }
+
+          #sec-mf-settings .callout {
+            position: absolute;
+            min-width: 170px;
+            max-width: 400px;
+            padding: 12px 16px;
+            background: rgba(144, 106, 0, 0.88);
+            color: #fff8dc;
+            border: 3px solid #ffcc00;
+            border-radius: 8px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.32);
+            opacity: 0;
+            transform: translateY(6px);
+            transition: .15s ease;
+            pointer-events: none;
+            z-index: 10;
+            text-align: center;
+          }
+
+          #sec-mf-settings .hotspot:hover+.callout {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          #sec-mf-settings .callout .title {
+            display: block;
+            font-size: 22px;
+            line-height: 1.15;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 4px;
+          }
+
+          #sec-mf-settings .callout .desc {
+            display: block;
+            font-size: 21px;
+            line-height: 1.35;
+            color: #fff4cf;
+          }
+        </style>
+
+        <div class="content-card" style="padding: 0; background: none; border: none;">
+          <div class="stage-container">
+                        <img loading="lazy" class="base" src="./assets/images/sec-mf-settings/millfix-settings-screen.webp" alt="MillFix 설정 화면">
+
+            <button class="hotspot round" style="left:1.4%;top:1.8%;width:4.0%;height:7.0%;"></button>
+            <div class="callout" style="left:1.0%;top:9.2%;">
+              <span class="title">메인 페이지</span>
+              <span class="desc">메인 페이지로 되돌아 갑니다</span>
+            </div>
+
+            <button class="hotspot round" style="left:88.6%;top:1.8%;width:4.0%;height:7.0%;"></button>
+            <div class="callout" style="left:75.5%;top:9.2%;">
+              <span class="title">프로그램 종료</span>
+              <span class="desc">컨트롤 프로그램을 종료합니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:4.3%;top:54.6%;width:19.6%;height:8.8%;"></button>
+            <div class="callout" style="left:5.0%;top:41.5%;">
+              <span class="title">오토 캘리브레이션</span>
+              <span class="desc">오토 캘리브레이션을 시작합니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:4.3%;top:65.2%;width:19.6%;height:8.8%;"></button>
+            <div class="callout" style="left:5.0%;top:74.4%;">
+              <span class="title">매뉴얼 캘리브레이션</span>
+              <span class="desc">매뉴얼 캘리브레이션을 시작합니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:28.7%;top:54.6%;width:16.0%;height:8.8%;"></button>
+            <div class="callout" style="left:23.5%;top:41.5%;">
+              <span class="title">오토 툴 포켓 캘리브레이션</span>
+              <span class="desc">오토 툴 포켓 캘리브레이션을 시작합니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:28.7%;top:65.2%;width:16.0%;height:8.8%;"></button>
+            <div class="callout" style="left:23.5%;top:74.4%;">
+              <span class="title">매뉴얼 툴 포켓 캘리브레이션</span>
+              <span class="desc">매뉴얼 툴 포켓 캘리브레이션을 시작합니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:47.0%;top:15.8%;width:27.2%;height:12.8%;"></button>
+            <div class="callout" style="left:47.0%;top:29.0%;">
+              <span class="title">조그 모드</span>
+              <span class="desc">조그 모드를 시작합니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:47.0%;top:31.8%;width:27.2%;height:12.8%;"></button>
+            <div class="callout" style="left:47.0%;top:45.0%;">
+              <span class="title">청소 모드</span>
+              <span class="desc">청소모드를 시작합니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:47.0%;top:47.3%;width:27.2%;height:12.8%;"></button>
+            <div class="callout" style="left:47.0%;top:60.5%;">
+              <span class="title">환경 설정</span>
+              <span class="desc">환경 설정 페이지를 엽니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:47.0%;top:62.8%;width:27.2%;height:12.8%;"></button>
+            <div class="callout" style="left:47.0%;top:76.0%;">
+              <span class="title">원격 제어 실행</span>
+              <span class="desc">Teamviewer를 실행합니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:79.7%;top:27.8%;width:16.5%;height:6.4%;"></button>
+            <div class="callout" style="left:60.0%;top:27.8%;">
+              <span class="title">콜렛 Close / Open</span>
+            </div>
+
+            <button class="hotspot pill" style="left:79.7%;top:53.8%;width:16.5%;height:6.4%;"></button>
+            <div class="callout" style="left:60.0%;top:53.6%;">
+              <span class="title">스피들 회전 테스트</span>
+              <span class="desc">설정된 RPM으로 회전시킵니다</span>
+            </div>
+
+            <button class="hotspot pill" style="left:92.0%;top:68.6%;width:4.4%;height:4.2%;"></button>
+            <div class="callout" style="left:75.0%;top:68.0%;">
+              <span class="title">집진기 On / Off</span>
+            </div>
+
+            <div
+              style="position: absolute; bottom: -40px; width: 100%; text-align: center; color: #000; font-size: 16px; font-weight: bold;">
+              💡 버튼 위에 마우스를 올리시면 명칭과 설명을 확인하실 수 있습니다.
+            </div>
+          </div>
+        </div>
+      </section>
