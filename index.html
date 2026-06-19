@@ -693,6 +693,12 @@
             </div>
 
 
+          
+            
+
+          
+            
+
           </div>
         </div>
       </section>
@@ -1143,7 +1149,14 @@
             left: var(--line-w);
             top: calc(var(--line-h) - 15px);
           }
-        </style>
+        
+              .mf-hotspot:hover + .mf-callout-custom,
+              .mf-hotspot:hover + .mf-callout-custom.right-arrow,
+              .mf-hotspot:hover + .mf-callout-custom.bottom-arrow,
+              .mf-hotspot:hover + .mf-callout-custom.right-arrow.bottom-arrow {
+                opacity: 1;
+              }
+</style>
         <div class="content-card" style="margin-left: 80px; width: calc(100% - 80px);">
           <div style="display:flex;flex-direction:column;gap:40px;align-items:center;width:100%;padding:20px 0;">
             <div style="display:flex;gap:4%;justify-content:center;width:100%;align-items:flex-end;text-align:center;">
@@ -3778,7 +3791,7 @@
             style="position:relative; width:100%; aspect-ratio:1586/930; background:#000; overflow:visible; border-radius: inherit;">
             <img loading="lazy"
               style="position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;user-select:none;-webkit-user-drag:none;border-radius:inherit;"
-              src="./assets/images/sec-mf-main-page/millfix-main-screen.webp" alt="MillFix 메인 화면" />
+              src="./assets/images/sec-mf-main-page/그림1.webp" alt="MillFix 메인 화면" />
             <div
               style="position: absolute; bottom: -40px; width: 100%; text-align: center; color: #000000; font-size: 18px; font-weight: bold;">
               💡 버튼 위에 마우스를 올리시면 명칭과 설명을 확인하실 수 있습니다.
@@ -3787,7 +3800,7 @@
             <style>
               .mf-hotspot {
                 position: absolute;
-                border: 2px solid rgba(255, 204, 0, 0.5);
+                border: 5px solid #ffcc00;
                 background: transparent;
                 cursor: pointer;
                 z-index: 5;
@@ -3855,16 +3868,19 @@
                 opacity: 1;
               }
 
-              .mf-callout {
+                            /* ===== Glassmorphism Callout ===== */
+              .mf-callout-custom {
                 position: absolute;
                 min-width: 170px;
-                max-width: 360px;
+                max-width: 400px;
                 padding: 12px 16px;
-                background: rgba(144, 106, 0, .88);
-                color: #fff8dc;
-                border: 3px solid #ffcc00;
+                background: rgba(20, 15, 35, 0.45);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                color: #fff;
+                border: 5px solid #ffcc00;
                 border-radius: 8px;
-                box-shadow: 0 10px 28px rgba(0, 0, 0, .32);
+                box-shadow: 0 10px 28px rgba(0, 0, 0, 0.32);
                 opacity: 0;
                 transform: translateY(6px);
                 transition: .15s ease;
@@ -3872,137 +3888,327 @@
                 z-index: 10;
               }
 
-              .mf-callout .title {
+              .mf-callout-custom .title {
                 display: block;
                 font-size: 22px;
                 line-height: 1.15;
                 font-weight: 800;
-                color: #fff;
-                margin-bottom: 2px;
+                color: #ffcc00;
+                margin-bottom: 4px;
               }
 
-              .mf-callout .desc {
+              .mf-callout-custom .desc {
                 display: block;
                 font-size: 21px;
                 line-height: 1.35;
-                color: #fff4cf;
+                color: #fff;
               }
 
-              .mf-callout.small .title {
-                font-size: 18px;
-              }
-
-              .mf-callout.small .desc {
-                font-size: 13px;
-              }
-
-              .mf-callout.center {
+              .mf-callout-custom.center {
                 text-align: center;
               }
 
-              .mf-hotspot:hover+.mf-callout,
-              .mf-hotspot:focus-visible+.mf-callout {
+              .mf-hotspot:hover + .mf-callout-custom,
+              .mf-hotspot:focus-visible + .mf-callout-custom {
                 opacity: 1;
                 transform: translateY(0);
               }
+
+              /* Arrow: default points UP (callout is below the hotspot) */
+              .mf-callout-custom::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 20px;
+                border: 10px solid transparent;
+                border-top: none;
+                border-bottom-color: #ffcc00;
+              }
+              .mf-callout-custom::after {
+                content: '';
+                position: absolute;
+                top: -6px;
+                left: 23px;
+                border: 7px solid transparent;
+                border-top: none;
+                border-bottom-color: rgba(20, 15, 35, 0.45);
+              }
+
+              /* right-arrow: callout flips to the left of hotspot */
+              .mf-callout-custom.right-arrow {
+                transform: translateX(-100%) translateY(6px);
+              }
+              .mf-callout-custom.right-arrow::before {
+                left: auto;
+                right: 20px;
+              }
+              .mf-callout-custom.right-arrow::after {
+                left: auto;
+                right: 23px;
+              }
+              .mf-hotspot:hover + .mf-callout-custom.right-arrow,
+              .mf-hotspot:focus-visible + .mf-callout-custom.right-arrow {
+                opacity: 1;
+                transform: translateX(-100%) translateY(0);
+              }
+
+              /* bottom-arrow: callout is ABOVE the hotspot, arrow points DOWN */
+              .mf-callout-custom.bottom-arrow {
+                transform: translateY(calc(-100% - 14px));
+              }
+              .mf-callout-custom.bottom-arrow::before {
+                top: auto;
+                bottom: -10px;
+                left: 20px;
+                transform: none;
+                border: 10px solid transparent;
+                border-top-color: #ffcc00;
+                border-bottom: none;
+              }
+              .mf-callout-custom.bottom-arrow::after {
+                top: auto;
+                bottom: -6px;
+                left: 23px;
+                transform: none;
+                border: 7px solid transparent;
+                border-top-color: rgba(20, 15, 35, 0.45);
+                border-bottom: none;
+              }
+              .mf-hotspot:hover + .mf-callout-custom.bottom-arrow,
+              .mf-hotspot:focus-visible + .mf-callout-custom.bottom-arrow {
+                opacity: 1;
+                transform: translateY(calc(-100% - 14px));
+              }
+
+              /* top-arrow: callout is BELOW the hotspot, arrow points UP */
+              .mf-callout-custom.top-arrow {
+                transform: translateY(14px);
+              }
+              .mf-callout-custom.top-arrow::before {
+                top: -20px;
+                bottom: auto;
+                left: 20px;
+                transform: none;
+                border: 10px solid transparent;
+                border-bottom-color: #ffcc00;
+                border-top: none;
+              }
+              .mf-callout-custom.top-arrow::after {
+                top: -14px;
+                bottom: auto;
+                left: 23px;
+                transform: none;
+                border: 7px solid transparent;
+                border-bottom-color: rgba(20, 15, 35, 0.45);
+                border-top: none;
+              }
+              .mf-hotspot:hover + .mf-callout-custom.top-arrow,
+              .mf-hotspot:focus-visible + .mf-callout-custom.top-arrow {
+                opacity: 1;
+                transform: translateY(14px);
+              }
+
+              /* right-arrow + top-arrow combined */
+              .mf-callout-custom.right-arrow.top-arrow {
+                transform: translateX(-100%) translateY(14px);
+              }
+              .mf-callout-custom.right-arrow.top-arrow::before {
+                left: auto;
+                right: 20px;
+              }
+              .mf-callout-custom.right-arrow.top-arrow::after {
+                left: auto;
+                right: 23px;
+              }
+              .mf-hotspot:hover + .mf-callout-custom.right-arrow.top-arrow,
+              .mf-hotspot:focus-visible + .mf-callout-custom.right-arrow.top-arrow {
+                opacity: 1;
+                transform: translateX(-100%) translateY(14px);
+              }
+
+              /* right-arrow + bottom-arrow combined */
+              .mf-callout-custom.right-arrow.bottom-arrow {
+                transform: translateX(-100%) translateY(calc(-100% - 14px));
+              }
+              .mf-callout-custom.right-arrow.bottom-arrow::before {
+                left: auto;
+                right: 20px;
+              }
+              .mf-callout-custom.right-arrow.bottom-arrow::after {
+                left: auto;
+                right: 23px;
+              }
+              .mf-hotspot:hover + .mf-callout-custom.right-arrow.bottom-arrow,
+              .mf-hotspot:focus-visible + .mf-callout-custom.right-arrow.bottom-arrow {
+                opacity: 1;
+                transform: translateX(-100%) translateY(calc(-100% - 14px));
+              }
+
+              /* mf-rounded-rect for non-button hotspot overlays */
+              .mf-rounded-rect {
+                position: absolute;
+                border: 5px solid #ffcc00;
+                border-radius: 12px;
+                background: transparent;
+                cursor: pointer;
+                z-index: 5;
+                animation: pulse-border 2s infinite;
+              }
+              .mf-rounded-rect:hover + .mf-callout-custom,
+              .mf-rounded-rect:hover + .mf-callout-custom.right-arrow,
+              .mf-rounded-rect:hover + .mf-callout-custom.bottom-arrow,
+              .mf-rounded-rect:hover + .mf-callout-custom.right-arrow.bottom-arrow {
+                opacity: 1;
+              }
+              .mf-callout-custom .desc {
+                white-space: nowrap;
+              }
+
+              .mf-hotspot:hover + .mf-callout-custom,
+              .mf-hotspot:hover + .mf-callout-custom.right-arrow,
+              .mf-hotspot:hover + .mf-callout-custom.bottom-arrow,
+              .mf-hotspot:hover + .mf-callout-custom.right-arrow.bottom-arrow,
+              .mf-hotspot:focus-visible + .mf-callout-custom,
+              .mf-hotspot:focus-visible + .mf-callout-custom.right-arrow,
+              .mf-hotspot:focus-visible + .mf-callout-custom.bottom-arrow,
+              .mf-hotspot:focus-visible + .mf-callout-custom.right-arrow.bottom-arrow {
+                opacity: 1;
+                pointer-events: auto;
+              }
             </style>
 
+                        
+            
+            
+                        
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
             <!-- 상단 -->
-            <button class="mf-hotspot pill"
-              style="left:26.2%;top:4.9%;width:13.2%;height:5.0%;border-radius:999px;"></button>
-            <div class="mf-callout small center" style="left:25.3%;top:10%;min-width:315px;"><span class="title">코드뷰
-                페이지</span><span class="desc">: 코드뷰 페이지로 이동합니다</span></div>
+            <button class="mf-hotspot pill" style="left: 26.4%; top: 5.4%; width: 13.2%; height: 5%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center" style="left: 26.5%; top: 8.9%; min-width: 315px;"><span class="title">코드뷰 페이지</span><span class="desc">: 코드뷰 페이지로 이동합니다</span></div>
 
-            <button class="mf-hotspot pill"
-              style="left:60.2%;top:4.9%;width:13.3%;height:5.0%;border-radius:999px;"></button>
-            <div class="mf-callout small center" style="left:60.5%;top:10.0%;min-width:295px;"><span class="title">툴 리스트
-                페이지</span><span class="desc">: 툴리스트 페이지를 엽니다</span></div>
+            <button class="mf-hotspot pill" style="left: 60.3%; top: 5.4%; width: 13.3%; height: 5%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 67.9%; top: 8.7%; min-width: 295px;"><span class="title">툴 리스트 페이지</span><span class="desc">: 툴리스트 페이지를 엽니다</span></div>
 
-            <button class="mf-hotspot" style="left:83.4%;top:1.8%;width:4.3%;height:6.8%;border-radius:50%;"></button>
-            <div class="mf-callout small center" style="right:12.0%;top:9.0%;min-width:190px;"><span
-                class="title">워밍업</span><span class="desc">: 워밍업 NC파일을 불러옵니다</span></div>
+            <button class="mf-hotspot" style="left: 83.4%; top: 2%; width: 4.3%; height: 6.8%; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center right-arrow" style="top: 8.5%; min-width: 190px; left: 88.6%;"><span class="title">워밍업</span><span class="desc">: 워밍업 NC파일을 불러옵니다</span></div>
 
-            <button class="mf-hotspot" style="left:88.5%;top:1.65%;width:4.3%;height:6.8%;border-radius:50%;"></button>
-            <div class="mf-callout small center" style="right:7.3%;top:9.0%;min-width:200px;"><span class="title">셋업
-                페이지</span><span class="desc">: 셋업 페이지로 이동합니다</span></div>
+            <button class="mf-hotspot" style="left: 88.5%; top: 2%; width: 4.3%; height: 6.8%; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center right-arrow" style="top: 8.5%; min-width: 200px; left: 93.7%;"><span class="title">셋업 페이지</span><span class="desc">: 셋업 페이지로 이동합니다</span></div>
 
-            <button class="mf-hotspot" style="left:93.7%;top:1.6%;width:4.2%;height:6.8%;border-radius:50%;"></button>
-            <div class="mf-callout small center" style="right:2.5%;top:9.0%;min-width:150px;"><span
-                class="title">종료</span><span class="desc">: 전원을 끕니다</span></div>
+            <button class="mf-hotspot" style="left: 93.6%; top: 1.9%; width: 4.2%; height: 6.8%; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center right-arrow" style="top: 8.5%; min-width: 150px; left: 99%;"><span class="title">종료</span><span class="desc">: 전원을 끕니다</span></div>
 
-            <!-- 파일 관련 -->
-            <button class="mf-hotspot" style="left:2.7%;top:16.8%;width:4.1%;height:6.3%;border-radius:50%;"></button>
-            <div class="mf-callout center" style="left:2.2%;top:5.2%;min-width:320px;"><span class="title">파일
-                불러오기</span><span class="desc">: 가공할 NC 파일을 불러옵니다</span></div>
+          
+            
 
-            <button class="mf-hotspot" style="left:12.5%;top:16.8%;width:62.2%;height:6.0%;"></button>
-            <div class="mf-callout center" style="left:12.5%;top:8.4%;min-width:270px;"><span class="title">파일명 표시
-                창</span></div>
+          
+            
+            
+            
+            
 
-            <button class="mf-hotspot" style="left:76.5%;top:16.7%;width:4.0%;height:6.1%;border-radius:50%;"></button>
-            <div class="mf-callout center" style="left:59.0%;top:8.4%;min-width:240px;"><span class="title">불러온 파일
-                삭제</span></div>
 
-            <!-- 좌측/중앙 -->
-            <button class="mf-hotspot"
-              style="left:2.8%;top:60.0%;width:16.8%;height:16.0%;border-radius:999px;"></button>
-            <div class="mf-callout center" style="left:3.6%;top:45.0%;min-width:340px;"><span class="title">B축
-                이동</span><span class="desc">: B축이 해당 각도로 회전합니다</span><span class="desc">(A축은 35도로 회전합니다)</span></div>
+          
+            
+            <!-- 배치 2: 15.6% 원형 테두리 (재생 버튼) -->
+            <button class="mf-hotspot" style="left: 29.3%; top: 39.2%; width: 15.6%; aspect-ratio: 1 / 1; height: auto; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center bottom-arrow" style="left: 33.8%; top: 49.2%; min-width: 250px;"><span class="title">가공 시작</span><span class="desc">: 기계 가공을 시작합니다</span></div>
 
-            <button class="mf-hotspot"
-              style="left:28.7%;top:40.2%;width:16.4%;height:24.8%;border-radius:50%;"></button>
-            <div class="mf-callout center" style="left:30.8%;top:28.0%;min-width:380px;"><span class="title">가공
-                시작</span><span class="desc">: 불러온 NC 파일을 가공 시작합니다</span></div>
+            
+            
+            <!-- 배치 2: 8% 원형 테두리 -->
+            <button class="mf-hotspot" style="left: 50.8%; top: 45.8%; width: 8%; aspect-ratio: 1 / 1; height: auto; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 58.2%; top: 55.5%; min-width: 250px;"><span class="title">가공 중지</span><span class="desc">: 기계 가공을 중지합니다</span></div>
 
-            <button class="mf-hotspot" style="left:50.5%;top:46.5%;width:8.3%;height:12.8%;border-radius:50%;"></button>
-            <div class="mf-callout center" style="left:42.5%;top:60.5%;min-width:320px;"><span class="title">가공
-                중지</span><span class="desc">: 진행중인 가공을 중지합니다</span></div>
+            
+            
+            
+            <!-- 배치 2: 14.8x10.7 캡슐형 테두리 3개 (위치 고정됨) -->
+            <!-- 배치 2: 14.8x10.7 캡슐형 테두리 3개 (위치 고정됨) -->
+            <button class="mf-hotspot pill" style="left: 66.2%; top: 33.9%; width: 14.8%; height: 10.7%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 80%; top: 42.8%; min-width: 250px;"><span class="title">Tool return</span><span class="desc">: 툴을 반환합니다</span></div>
 
-            <!-- 우측 기능 버튼 -->
-            <button class="mf-hotspot"
-              style="left:65.8%;top:33.7%;width:15.4%;height:11.2%;border-radius:999px;"></button>
-            <div class="mf-callout center" style="left:38.0%;top:32.5%;min-width:270px;"><span class="title">공구
-                반환</span><span class="desc">: 장착되어 있는 공구를 툴 포켓으로 되돌립니다</span></div>
+            <button class="mf-hotspot pill" style="left: 66.1%; top: 47.1%; width: 14.8%; height: 10.7%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 80.1%; top: 56.0%; min-width: 250px;"><span class="title">Auto off</span><span class="desc">: 작업을 자동 종료합니다</span></div>
 
-            <button class="mf-hotspot"
-              style="left:65.8%;top:47.0%;width:15.4%;height:11.2%;border-radius:999px;"></button>
-            <div class="mf-callout center" style="left:42.7%;top:47.0%;min-width:250px;"><span class="title">자동
-                종료</span><span class="desc">: 가공이 완료되면 장비 전원을 끕니다</span></div>
+            <button class="mf-hotspot pill" style="left: 66.2%; top: 60.5%; width: 14.8%; height: 10.7%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 80.1%; top: 69.4%; min-width: 250px;"><span class="title">Vacuum</span><span class="desc">: 집진기를 작동시킵니다</span></div>
 
-            <button class="mf-hotspot"
-              style="left:65.8%;top:60.5%;width:15.4%;height:11.2%;border-radius:999px;"></button>
-            <div class="mf-callout center" style="left:46.0%;top:61.6%;min-width:220px;"><span class="title">집진기
-                On/Off</span></div>
+            
+            
+            
 
-            <!-- 우측 패널 -->
-            <button class="mf-hotspot"
-              style="left:85.0%;top:15.8%;width:13.2%;height:10.0%;border-radius:999px;"></button>
-            <div class="mf-callout center" style="right:1.8%;top:6.8%;min-width:230px;"><span
-                class="title">홈잉(Homing)</span></div>
 
-            <button class="mf-hotspot" style="left:84.3%;top:31.0%;width:15.6%;height:18.6%;"></button>
-            <div class="mf-callout center" style="right:0.1%;top:19.0%;min-width:245px;"><span class="title">현재 좌표 표시
-                창</span><span class="desc">: 각각의 축 좌표값을 표시합니다</span></div>
 
-            <button class="mf-hotspot" style="left:84.3%;top:51.0%;width:15.6%;height:21.0%;"></button>
-            <div class="mf-callout center" style="right:15.5%;top:51.0%;min-width:245px;"><span class="title">상태 표시
-                창</span><span class="desc">: 장착 공구 번호, 가공 시간,</span><span class="desc">스핀들 회전수, 축 이동 속도 등을</span><span
-                class="desc">표시합니다</span></div>
 
-            <button class="mf-hotspot" style="left:84.3%;top:71.5%;width:15.6%;height:15.8%;"></button>
-            <div class="mf-callout center" style="right:15.1%;top:71.5%;min-width:245px;"><span class="title">축 속도 조절
-                창</span><span class="desc">: 가공 중 축 이동 속도(Feedrate)를</span><span class="desc">10%씩 감속시키고,
-                원래대로</span><span class="desc">복귀시킬 수 있습니다.</span></div>
 
-            <!-- 하단 -->
-            <button class="mf-hotspot" style="left:1.1%;top:82.8%;width:60.0%;height:6.0%;"></button>
-            <div class="mf-callout center" style="left:1.0%;top:74.6%;min-width:260px;"><span class="title">메세지 표시
-                창</span></div>
 
-            <button class="mf-hotspot" style="left:0.9%;top:90.5%;width:97.2%;height:9.0%;"></button>
-            <div class="mf-callout center" style="left:0.9%;top:82.0%;min-width:220px;"><span class="title">알림 표시
-                창</span></div>
-          </div>
+          
+            
+
+            <!-- 배치 2: 신규 추가된 테두리 6개 및 그에 해당하는 팝업창 -->
+            <!-- 1. 길이 14.5% 높이 6% 캡슐형 테두리 2개 -->
+            <button class="mf-hotspot pill" data-idx="1" style="left: 3.9%; top: 60.4%; width: 14.5%; height: 6.0%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center bottom-arrow" style="left: 11.9%; top: 62.5%; min-width: 250px;"><span class="title">B축 회전</span><span class="desc">: B축이 30º회전합니다</span></div>
+
+            <button class="mf-hotspot pill" data-idx="2" style="left: 3.8%; top: 68.2%; width: 14.5%; height: 6.0%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center" style="left: 11.9%; top: 73.3%; min-width: 250px;"><span class="title">B축 회전</span><span class="desc">: B축이 180º회전합니다</span></div>
+
+            <!-- 2. 지름 3% 원형 테두리 2개 -->
+            <button class="mf-hotspot round" data-idx="3" style="left: 77.1%; top: 17.4%; width: 3.0%; aspect-ratio: 1 / 1; height: auto; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 81.9%; top: 21%; min-width: 460px; max-width: none;"><span class="title">불러온 NC취소</span><span class="desc">: 해당 버튼을 누르면 불러온 NC파일을 취소합니다</span></div>
+
+            <button class="mf-hotspot round" data-idx="4" style="left: 3.2%; top: 17.5%; width: 3.0%; aspect-ratio: 1 / 1; height: auto; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center" style="left: 1.8%; top: 21.2%; min-width: 250px;"><span class="title">파일 불러오기</span><span class="desc">: 가공할 NC파일을 불러옵니다</span></div>
+
+            <!-- 3. 길이 13% 높이 4.5% 모서리 살짝 둥근 사각형 테두리 1개 -->
+            <button class="mf-hotspot" data-idx="5" style="left: 13.0%; top: 17.7%; width: 13.0%; height: 4.5%; border-radius: 8px;"></button>
+            <div class="mf-callout-custom center" style="left: 13.8%; top: 21%; min-width: 250px;"><span class="title">파일명 표시 창</span><span class="desc">: 불러온 NC파일의 이름이 표시됩니다</span></div>
+
+            <!-- 4. 길이 13% 높이 10% 캡슐형 테두리 1개 -->
+            <button class="mf-hotspot pill" data-idx="6" style="left: 85.1%; top: 15.9%; width: 13.0%; height: 10.0%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 96.2%; top: 25%; min-width: 250px;"><span class="title">홈잉(Homing)</span><span class="desc">: 스핀들을 원점으로 이동시킵니다</span></div>
+
+            <!-- ===== 2차 추가 신규 테두리 7개 ===== -->
+            <!-- 5. 높이 6% 길이 13% 모서리 살짝 둥근 사각형 테두리 1개 -->
+            <button class="mf-hotspot" data-idx="7" style="left: 1%; top: 81.4%; width: 13.0%; height: 6.0%; border-radius: 8px;"></button>
+            <div class="mf-callout-custom center bottom-arrow" style="left: 0.8%; top: 83.8%; min-width: 250px;"><span class="title">메시지 표시 창</span><span class="desc">: 기계 작동에 관한 메시지가 표시됩니다.</span></div>
+
+            <!-- 6. 높이 18% 길이 15% 모서리 살짝 둥근 사각형 테두리 1개 -->
+            <button class="mf-hotspot" data-idx="8" style="left: 84.2%; top: 31.5%; width: 15.0%; height: 18.0%; border-radius: 8px;"></button>
+            <div class="mf-callout-custom center right-arrow bottom-arrow" style="left: 88.2%; top: 34.5%; min-width: 250px;"><span class="title">좌표창</span><span class="desc">: 현재 각 축의 좌표를 표시합니다.</span></div>
+
+            <!-- 7. 높이 19% 길이 15% 모서리 살짝 둥근 사각형 테두리 1개 -->
+            <button class="mf-hotspot" data-idx="9" style="left: 84.2%; top: 51.2%; width: 15.0%; height: 19.0%; border-radius: 8px;"></button>
+            <div class="mf-callout-custom center right-arrow bottom-arrow" style="left: 88.2%; top: 54.2%; min-width: 250px;"><span class="title">상태 표시 창</span><span class="desc">Tool: 현재 스핀들에 장착된 공구의 번호<br>00:00 가공 경과 시간<br>RPM: 분당 스핀들 회전 수<br>Feedrate: 스핀들 축 이동속도</span></div>
+
+            <!-- 8. 지름 5.5% 원형 테두리 2개 -->
+            <button class="mf-hotspot round" data-idx="10" style="left: 85.5%; top: 77%; width: 5.5%; aspect-ratio: 1 / 1; height: auto; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center right-arrow bottom-arrow" style="left: 89.5%; top: 80%; min-width: 380px; max-width: 580px;"><span class="title">속도 리셋</span><span class="desc">: 낮췄던 스핀들 축 이동속도를 원래대로 돌립니다.</span></div>
+
+            <button class="mf-hotspot round" data-idx="11" style="left: 92.2%; top: 77%; width: 5.5%; aspect-ratio: 1 / 1; height: auto; border-radius: 50%;"></button>
+            <div class="mf-callout-custom center right-arrow bottom-arrow" style="left: 96.2%; top: 80%; min-width: 250px;"><span class="title">속도 감소</span><span class="desc">: 스핀들 축 이동속도를 10%씩 낮춥니다.</span></div>
+
+            <!-- 9. 높이 10% 길이 7% 모서리 살짝 둥근 사각형 테두리 2개 -->
+            <button class="mf-hotspot" data-idx="12" style="left: 91.9%; top: 89%; width: 7.0%; height: 10.0%; border-radius: 8px;"></button>
+            <div class="mf-callout-custom center right-arrow bottom-arrow" style="left: 97%; top: 92%; min-width: 250px; max-width: 580px;"><span class="title">레디(Ready)</span><span class="desc">: 장비 컨트롤 가능 여부를 보여줍니다.<br>만약 빨간 아이콘이랑 번갈아가며 점멸한다면<br>조작 불가능이란 의미입니다.</span></div>
+
+            <button class="mf-hotspot" data-idx="13" style="left: 84.5%; top: 89.2%; width: 7.0%; height: 10.0%; border-radius: 8px;"></button>
+            <div class="mf-callout-custom center right-arrow bottom-arrow" style="left: 90%; top: 92%; min-width: 250px; max-width: 580px;"><span class="title">Mcode</span><span class="desc">: M코드를 통해 장비가 동작중일 때 표시됩니다.<br>M코드 동작 중일 때에는 장비 조작이 불가능합니다.</span></div>
+</div>
         </div>
       </section>
       <section id="sec-mf-code-view" class="content-section">
@@ -4022,41 +4228,20 @@
               💡 버튼 위에 마우스를 올리시면 명칭과 설명을 확인하실 수 있습니다.
             </div>
 
-            <button class="mf-hotspot" data-label="메인 페이지"
-              style="left:44.1%;top:7.0%;width:12.8%;height:5.4%;border-radius:999px;"></button>
-            <div class="mf-callout small center" style="left:41.0%;top:12.0%;min-width:290px;">
-              <span class="title">메인 페이지</span>
-              <span class="desc">: 메인 페이지로 이동합니다</span>
-            </div>
+            
+            
 
-            <button class="mf-hotspot" data-label="G코드 라인"
-              style="left:52.0%;top:24.5%;width:31.1%;height:8.9%;border-radius:22px;"></button>
-            <div class="mf-callout center" style="left:52.4%;top:13.0%;min-width:480px;">
-              <span class="title">G코드 라인</span>
-              <span class="desc">: 진행 중인 G코드 라인의 위치를 표시합니다</span>
-            </div>
+            
+            
 
-            <button class="mf-hotspot" data-label="G코드 표시 창"
-              style="left:52.0%;top:33.0%;width:31.2%;height:50.0%;"></button>
-            <div class="mf-callout center" style="left:33.0%;top:33.2%;min-width:210px;">
-              <span class="title">G코드 표시 창</span>
-            </div>
+            
+            
 
-            <button class="mf-hotspot" data-label="M코드 동작중"
-              style="left:85.6%;top:87.8%;width:5.6%;height:8.6%;border-radius:50%;"></button>
-            <div class="mf-callout center" style="left:63.3%;top:82.5%;min-width:250px;">
-              <span class="title">M-code Run</span>
-              <span class="desc">: M코드 동작 중일 때</span>
-              <span class="desc">표시됩니다</span>
-            </div>
+            
+            
 
-            <button class="mf-hotspot" data-label="레디(Ready)"
-              style="left:92.1%;top:87.8%;width:5.6%;height:8.6%;border-radius:50%;"></button>
-            <div class="mf-callout center" style="left:81.8%;top:73.7%;min-width:170px;">
-              <span class="title">레디(Ready)</span>
-              <span class="desc">: 장비가 통제 가능한</span>
-              <span class="desc">상태인 경우에 표시됩니다</span>
-            </div>
+            
+            
           </div>
         </div>
       </section>
@@ -4089,7 +4274,7 @@
 
           .mf-hotspot {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5);
+            border: 5px solid #ffcc00;
             background: transparent;
             cursor: pointer;
             z-index: 5;
@@ -4460,6 +4645,7 @@
           <img loading=lazy src="assets/images/sec-mf-Fixture/disk.webp" alt="1.webp">
 
 
+
            
 
           <hr style="margin: 20px 0; border: 0; border-top: 1px solid #e5e7eb;">
@@ -4783,6 +4969,9 @@
               <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;">15mm 이상의 긴 스크류 채널 가공하는 법</p>
             </div>
 
+
+          
+            
 
           </div>
         </div>
@@ -6450,6 +6639,27 @@
     // 섹션 전환 후에도 적용되도록 MutationObserver
     new MutationObserver(initFeatureCards).observe(document.body, { childList: true, subtree: true });
   })();
+  </script>
+  <!-- Coordinate Tracker Script -->
+  <div id="coord-tracker" style="position:fixed; background:rgba(0,0,0,0.8); color:#0f0; padding:4px 8px; border-radius:4px; pointer-events:none; z-index:9999; display:none; font-family:monospace; font-size:14px; font-weight:bold; white-space:nowrap; box-shadow:0 4px 6px rgba(0,0,0,0.3);"></div>
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const tracker = document.getElementById('coord-tracker');
+      // 가장 가까운 핫스팟 이미지 컨테이너 찾기
+      const container = e.target.closest('div[style*="aspect-ratio"]');
+      if (container && !container.closest('.feature-card')) {
+        const rect = container.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width * 100).toFixed(1);
+        const y = ((e.clientY - rect.top) / rect.height * 100).toFixed(1);
+        
+        tracker.style.display = 'block';
+        tracker.style.left = (e.clientX + 15) + 'px';
+        tracker.style.top = (e.clientY + 15) + 'px';
+        tracker.innerHTML = `Left: ${x}%, Top: ${y}%`;
+      } else {
+        tracker.style.display = 'none';
+      }
+    });
   </script>
 </body>
 

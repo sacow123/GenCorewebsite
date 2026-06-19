@@ -1,0 +1,83 @@
+const fs = require('fs');
+
+let c = fs.readFileSync('index.html', 'utf8');
+
+const rulerJS = `
+                // --- RULER TOOL (Point 1 to Point 2) ---
+                let measureStart = null;
+                const rulerLine = document.createElement('div');
+                rulerLine.style.position = 'absolute';
+                rulerLine.style.border = '1px dashed #0f0';
+                rulerLine.style.pointerEvents = 'none';
+                rulerLine.style.zIndex = '9999';
+                rulerLine.style.display = 'none';
+                container.appendChild(rulerLine);
+
+                container.addEventListener('mousedown', (e) => {
+                  if (e.altKey) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const rect = container.getBoundingClientRect();
+                    measureStart = {
+                      x: e.clientX - rect.left,
+                      y: e.clientY - rect.top,
+                      cx: e.clientX,
+                      cy: e.clientY
+                    };
+                    rulerLine.style.left = measureStart.x + 'px';
+                    rulerLine.style.top = measureStart.y + 'px';
+                    rulerLine.style.width = '0px';
+                    rulerLine.style.height = '0px';
+                    rulerLine.style.display = 'block';
+                  }
+                });
+
+                container.addEventListener('mousemove', (e) => {
+                  if (measureStart && e.altKey) {
+                    const rect = container.getBoundingClientRect();
+                    const curX = e.clientX - rect.left;
+                    const curY = e.clientY - rect.top;
+                    
+                    const width = Math.abs(curX - measureStart.x);
+                    const height = Math.abs(curY - measureStart.y);
+                    const left = Math.min(curX, measureStart.x);
+                    const top = Math.min(curY, measureStart.y);
+                    
+                    rulerLine.style.left = left + 'px';
+                    rulerLine.style.top = top + 'px';
+                    rulerLine.style.width = width + 'px';
+                    rulerLine.style.height = height + 'px';
+                    
+                    const wPct = (width / rect.width * 100).toFixed(1);
+                    const hPct = (height / rect.height * 100).toFixed(1);
+                    
+                    coordDisplay.textContent = \`너비: \${wPct}%, 높이: \${hPct}%\`;
+                  }
+                });
+
+                container.addEventListener('mouseup', (e) => {
+                  if (measureStart) {
+                    const rect = container.getBoundingClientRect();
+                    const curX = e.clientX - rect.left;
+                    const curY = e.clientY - rect.top;
+                    const width = Math.abs(curX - measureStart.x);
+                    const height = Math.abs(curY - measureStart.y);
+                    
+                    if(width > 5 || height > 5) {
+                      const wPct = (width / rect.width * 100).toFixed(1);
+                      const hPct = (height / rect.height * 100).toFixed(1);
+                      alert(\`측정 완료! 이 수치를 알려주세요:\\n너비: \${wPct}%\\n높이: \${hPct}%\`);
+                    }
+                    
+                    measureStart = null;
+                    rulerLine.style.display = 'none';
+                  }
+                });
+`;
+
+const hook = "const draggables = container.querySelectorAll('.mf-callout-custom.temp-drag');";
+if (c.includes(hook) && !c.includes('RULER TOOL')) {
+    c = c.replace(hook, hook + '\n' + rulerJS);
+    fs.writeFileSync('index.html', c);
+    console.log('Restored ruler tool with percentage focus.');
+}

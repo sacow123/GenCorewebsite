@@ -1,0 +1,135 @@
+3814               #sec-mf-main-page .mf-callout {
+3833               #sec-mf-main-page .mf-callout .title {
+3842               #sec-mf-main-page .mf-callout .desc {
+3849               #sec-mf-main-page .mf-callout.small .title { font-size: 18px; }
+3850               #sec-mf-main-page .mf-callout.small .desc { font-size: 13px; }
+3852               #sec-mf-main-page .mf-hotspot:hover+.mf-callout,
+3853               #sec-mf-main-page .mf-hotspot:focus-visible+.mf-callout,
+3854               #sec-mf-main-page .mf-rounded-rect:hover+.mf-callout,
+3855               #sec-mf-main-page .mf-rounded-rect:focus-visible+.mf-callout {
+3860               #sec-mf-main-page .mf-callout-custom {
+3877               #sec-mf-main-page .mf-callout-custom::before {
+3886               #sec-mf-main-page .mf-callout-custom::after {
+3897               #sec-mf-main-page .mf-callout-custom.right-arrow {
+3900               #sec-mf-main-page .mf-callout-custom.right-arrow::before {
+3904               #sec-mf-main-page .mf-callout-custom.right-arrow::after {
+3910               #sec-mf-main-page .mf-callout-custom.bottom-arrow {
+3913               #sec-mf-main-page .mf-callout-custom.bottom-arrow::before {
+3919               #sec-mf-main-page .mf-callout-custom.bottom-arrow::after {
+3927               #sec-mf-main-page .mf-callout-custom.bottom-arrow.right-arrow {
+3931               #sec-mf-main-page .mf-callout-custom .title,
+3932               #sec-mf-main-page .mf-callout-custom .desc {
+3940               #sec-mf-main-page .mf-callout-custom .title {
+3945               #sec-mf-main-page .hotspot:hover+.mf-callout-custom,
+3946               #sec-mf-main-page .mf-hotspot:hover+.mf-callout-custom,
+3947               #sec-mf-main-page .mf-rounded-rect:hover+.mf-callout-custom,
+3948               #sec-mf-main-page .mf-circle-yellow:hover+.mf-callout-custom,
+3949               #sec-mf-main-page .mf-rect:hover+.mf-callout-custom {
+3958               #sec-mf-main-page .mf-rounded-rect {
+3969               #sec-mf-main-page .mf-rounded-rect:hover {
+3990               #sec-mf-main-page .mf-rect {
+4000               #sec-mf-main-page .mf-rect:hover {
+4158:             <div class="mf-callout small center" style="left:41.0%;top:12.0%;min-width:290px;">
+4165:             <div class="mf-callout center" style="left:52.4%;top:13.0%;min-width:480px;">
+4172:             <div class="mf-callout center" style="left:33.0%;top:33.2%;min-width:210px;">
+4178:             <div class="mf-callout center" style="left:63.3%;top:82.5%;min-width:250px;">
+4186:             <div class="mf-callout center" style="left:81.8%;top:73.7%;min-width:170px;">
+4245:           .mf-callout {
+4263:           .mf-callout .title {
+4272:           .mf-callout .desc {
+4280:           .mf-hotspot:hover+.mf-callout {
+-            <div class="mf-callout small center" style="left:41.0%;top:12.0%;min-width:290px;">
+-            <div class="mf-callout center" style="left:52.4%;top:13.0%;min-width:480px;">
+-            <div class="mf-callout center" style="left:33.0%;top:33.2%;min-width:210px;">
+-            <div class="mf-callout center" style="left:63.3%;top:82.5%;min-width:250px;">
+-            <div class="mf-callout center" style="left:81.8%;top:73.7%;min-width:170px;">
+4021             <div class="mf-rect" style="left:19.7%; top:19.9%; width:13.6%; height:4.4%;"></div>
+6554   .hotspot, .mf-hotspot, .mf-rounded-rect, .mf-circle-yellow, .mf-rect {
+4011:             <div class="mf-rounded-rect" style="left:67.0%; top:7.6%; width:13.5%; height:5.5%;"></div>
+4012:             <div class="mf-callout-custom right-arrow" style="left:67.3%; top:7.7%;">
+4017:             <div class="mf-callout-custom" style="left:4.6%; top:19.9%;">
+4021:             <div class="mf-rect" style="left:19.7%; top:19.9%; width:13.6%; height:4.4%;"></div>
+4022:             <div class="mf-callout-custom" style="left:17.5%; top:19.9%;">
+4027:             <div class="mf-callout-custom right-arrow" style="left:78.5%; top:19.9%;">
+3850:               #sec-mf-main-page .mf-callout.small .desc { font-size: 13px; }
+3852:               #sec-mf-main-page .mf-hotspot:hover+.mf-callout,
+3853:               #sec-mf-main-page .mf-hotspot:focus-visible+.mf-callout,
+3854:               #sec-mf-main-page .mf-rounded-rect:hover+.mf-callout,
+3855:               #sec-mf-main-page .mf-rounded-rect:focus-visible+.mf-callout {
+3860:               #sec-mf-main-page .mf-callout-custom {
+3877:               #sec-mf-main-page .mf-callout-custom::before {
+3886:               #sec-mf-main-page .mf-callout-custom::after {
+3897:               #sec-mf-main-page .mf-callout-custom.right-arrow {
+3900:               #sec-mf-main-page .mf-callout-custom.right-arrow::before {
+3904:               #sec-mf-main-page .mf-callout-custom.right-arrow::after {
+3910:               #sec-mf-main-page .mf-callout-custom.bottom-arrow {
+3913:               #sec-mf-main-page .mf-callout-custom.bottom-arrow::before {
+3919:               #sec-mf-main-page .mf-callout-custom.bottom-arrow::after {
+3927:               #sec-mf-main-page .mf-callout-custom.bottom-arrow.right-arrow {
+3931:               #sec-mf-main-page .mf-callout-custom .title,
+3932:               #sec-mf-main-page .mf-callout-custom .desc {
+3940:               #sec-mf-main-page .mf-callout-custom .title {
+3945:               #sec-mf-main-page .hotspot:hover+.mf-callout-custom,
+3946:               #sec-mf-main-page .mf-hotspot:hover+.mf-callout-custom,
+3947:               #sec-mf-main-page .mf-rounded-rect:hover+.mf-callout-custom,
+3948:               #sec-mf-main-page .mf-circle-yellow:hover+.mf-callout-custom,
+3949:               #sec-mf-main-page .mf-rect:hover+.mf-callout-custom {
+3958:               #sec-mf-main-page .mf-rounded-rect {
+3969:               #sec-mf-main-page .mf-rounded-rect:hover {
+3990:               #sec-mf-main-page .mf-rect {
+4000:               #sec-mf-main-page .mf-rect:hover {
+4006:             <div class="mf-rounded-rect" style="left:34.0%; top:7.6%; width:13.5%; height:5.5%;"></div>
+4007:             <div class="mf-callout-custom" style="left:34.1%; top:7.7%;">
++            <div class="mf-rect" style="left:50.3%; top:9.3%; width:13.5%; height:5.5%;"></div>
++            <div class="mf-callout-custom right-arrow" style="left:50.3%; top:9.3%;">
+요청하신 위치(`left: 50.3%`, `top: 9.3%`)를 중심으로 하고, 메인 페이지의 '툴 리스트(Tool List)' 테두리와 동일한 사이즈(`width: 13.5%`, `height: 5.5%`)를 가지는 모서리가 각진 사각형(`mf-rect`) 테두리를 추가했습니다.
+-            <div class="mf-rect" style="left:50.3%; top:9.3%; width:13.5%; height:5.5%;"></div>
++            <div class="mf-rounded-rect" style="left:50.3%; top:9.3%; width:13.5%; height:5.5%;"></div>
+<div class="mf-callout-custom right-arrow" style="left:50.3%; top:9.3%;">
+4110:             <div class="mf-rounded-rect" style="left:88.2%; top:94.575%; width:6.5%; height:9.35%;"></div>
+4111:             <div class="mf-callout-custom right-arrow bottom-arrow" style="left:88.2%; top:93.7%;">
+4118:             <div class="mf-rounded-rect" style="left:95.0%; top:94.375%; width:5.5%; height:8.35%;"></div>
+4119:             <div class="mf-callout-custom right-arrow bottom-arrow" style="left:95.0%; top:94.0%;">
+4161:               #sec-mf-code-view .mf-callout {
+4180:               #sec-mf-code-view .mf-callout .title {
+4189:               #sec-mf-code-view .mf-callout .desc {
+4114:           .mf-callout {
+3858:               .mf-callout {
+3875:               .mf-callout .title {
+3884:               .mf-callout .desc {
+3891:               .mf-callout.small .title {
+3895:               .mf-callout.small .desc {
+3899:               .mf-callout.center {
+3903:               .mf-hotspot:hover+.mf-callout,
+3904:               .mf-hotspot:focus-visible+.mf-callout {
+3913:             <div class="mf-callout small center" style="left:25.3%;top:10%;min-width:315px;"><span class="title">코드뷰
+3918:             <div class="mf-callout small center" style="left:60.5%;top:10.0%;min-width:295px;"><span class="title">툴 리스트
+3922:             <div class="mf-callout small center" style="right:12.0%;top:9.0%;min-width:190px;"><span
+3926:             <div class="mf-callout small center" style="right:7.3%;top:9.0%;min-width:200px;"><span class="title">셋업
+3930:             <div class="mf-callout small center" style="right:2.5%;top:9.0%;min-width:150px;"><span
+3935:             <div class="mf-callout center" style="left:2.2%;top:5.2%;min-width:320px;"><span class="title">파일
+3939:             <div class="mf-callout center" style="left:12.5%;top:8.4%;min-width:270px;"><span class="title">파일명 표시
+3943:             <div class="mf-callout center" style="left:59.0%;top:8.4%;min-width:240px;"><span class="title">불러온 파일
+3949:             <div class="mf-callout center" style="left:3.6%;top:45.0%;min-width:340px;"><span class="title">B축
+3954:             <div class="mf-callout center" style="left:30.8%;top:28.0%;min-width:380px;"><span class="title">가공
+3958:             <div class="mf-callout center" style="left:42.5%;top:60.5%;min-width:320px;"><span class="title">가공
+3964:             <div class="mf-callout center" style="left:38.0%;top:32.5%;min-width:270px;"><span class="title">공구
+3969:             <div class="mf-callout center" style="left:42.7%;top:47.0%;min-width:250px;"><span class="title">자동
+3974:             <div class="mf-callout center" style="left:46.0%;top:61.6%;min-width:220px;"><span class="title">집진기
+3980:             <div class="mf-callout center" style="right:1.8%;top:6.8%;min-width:230px;"><span
+3984:             <div class="mf-callout center" style="right:0.1%;top:19.0%;min-width:245px;"><span class="title">현재 좌표 표시
+3988:             <div class="mf-callout center" style="right:15.5%;top:51.0%;min-width:245px;"><span class="title">상태 표시
+3993:             <div class="mf-callout center" style="right:15.1%;top:71.5%;min-width:245px;"><span class="title">축 속도 조절
+3999:             <div class="mf-callout center" style="left:1.0%;top:74.6%;min-width:260px;"><span class="title">메세지 표시
+4003:             <div class="mf-callout center" style="left:0.9%;top:82.0%;min-width:220px;"><span class="title">알림 표시
+4027:             <div class="mf-callout small center" style="left:41.0%;top:12.0%;min-width:290px;">
+4034:             <div class="mf-callout center" style="left:52.4%;top:13.0%;min-width:480px;">
+4041:             <div class="mf-callout center" style="left:33.0%;top:33.2%;min-width:210px;">
+4047:             <div class="mf-callout center" style="left:63.3%;top:82.5%;min-width:250px;">
+4055:             <div class="mf-callout center" style="left:81.8%;top:73.7%;min-width:170px;">
+4132:           .mf-callout .title {
+4141:           .mf-callout .desc {
+4149:           .mf-hotspot:hover+.mf-callout {
+4175:             <div class="mf-callout" style="left: 22%; top: 50%; min-width: 400px;">
+4182:             <div class="mf-callout" style="left: 22%; top: 50%; min-width: 400px;">
+4189:             <div class="mf-callout" style="left: 51%; top: 20%; min-width: 250px;">

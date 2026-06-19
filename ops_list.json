@@ -1,0 +1,103 @@
+[
+  {
+    "type": "view",
+    "ts": "2026-06-19T02:32:50Z",
+    "startLine": 3770,
+    "endLine": 3790,
+    "output": ""
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:32:56Z",
+    "targetContent": "              src=\"./assets/images/sec-mf-main-page/millfix-main-screen-new.png\" alt=\"MillFix 메인 화면\" />",
+    "replacementContent": "              src=\"./assets/images/sec-mf-main-page/그림1.png\" alt=\"MillFix 메인 화면\" />",
+    "startLine": 3781,
+    "endLine": 3781
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:33:59Z",
+    "targetContent": "              src=\"./assets/images/sec-mf-main-page/그림1.png\" alt=\"MillFix 메인 화면\" />",
+    "replacementContent": "              src=\"./assets/images/sec-mf-main-page/그림1.webp\" alt=\"MillFix 메인 화면\" />",
+    "startLine": 3781,
+    "endLine": 3781
+  },
+  {
+    "type": "view",
+    "ts": "2026-06-19T02:34:55Z",
+    "startLine": 4110,
+    "endLine": 4140,
+    "output": ""
+  },
+  {
+    "type": "view",
+    "ts": "2026-06-19T02:35:01Z",
+    "startLine": 3955,
+    "endLine": 3970,
+    "output": ""
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:36:31Z",
+    "targetContent": "            <div class=\"mf-rounded-rect\" style=\"left:95.0%; top:94.375%; width:5.5%; height:8.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:95.0%; top:94.0%;\">\n              <span class=\"title\" data-i18n=\"popup-ready-title\">레디(Ready) 버튼:</span>\n              <span class=\"desc\" data-i18n=\"popup-popup-ready-desc\" style=\"text-align: left;\">\n                장비 조작의 on/off 버튼.<br>\n                만약 장비가 현재 조작 불가능한 형태라면 빨간색 아이콘이 점멸합니다.\n              </span>\n            </div>",
+    "replacementContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.0%; top:94.375%; width:5.5%; height:8.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.0%; top:94.0%;\">\n              <span class=\"title\" data-i18n=\"popup-m-code-title\">M code:</span>\n              <span class=\"desc\" data-i18n=\"popup-m-code-desc\" style=\"text-align: left;\">\n                M code 기능입니다.\n              </span>\n            </div>\n            <div class=\"mf-rounded-rect\" style=\"left:95.0%; top:94.375%; width:5.5%; height:8.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:95.0%; top:94.0%;\">\n              <span class=\"title\" data-i18n=\"popup-ready-title\">레디(Ready) 버튼:</span>\n              <span class=\"desc\" data-i18n=\"popup-popup-ready-desc\" style=\"text-align: left;\">\n                장비 조작의 on/off 버튼.<br>\n                만약 장비가 현재 조작 불가능한 형태라면 빨간색 아이콘이 점멸합니다.\n              </span>\n            </div>",
+    "startLine": 4120,
+    "endLine": 4127
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:37:36Z",
+    "targetContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.0%; top:94.375%; width:5.5%; height:8.35%;\"></div>",
+    "replacementContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.0%; top:94.875%; width:8.5%; height:9.35%;\"></div>",
+    "startLine": 4120,
+    "endLine": 4120
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:38:19Z",
+    "targetContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.0%; top:94.875%; width:8.5%; height:9.35%;\"></div>",
+    "replacementContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.0%; top:94.875%; width:6.5%; height:9.35%;\"></div>",
+    "startLine": 4120,
+    "endLine": 4120
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:38:45Z",
+    "targetContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.0%; top:94.875%; width:6.5%; height:9.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.0%; top:94.0%;\">",
+    "replacementContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.5%; top:94.875%; width:6.5%; height:9.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.5%; top:94.0%;\">",
+    "startLine": 4120,
+    "endLine": 4121
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:39:07Z",
+    "targetContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.5%; top:94.875%; width:6.5%; height:9.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.5%; top:94.0%;\">",
+    "replacementContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.2%; top:94.875%; width:6.5%; height:9.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.2%; top:94.0%;\">",
+    "startLine": 4120,
+    "endLine": 4121
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:39:29Z",
+    "targetContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.2%; top:94.875%; width:6.5%; height:9.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.2%; top:94.0%;\">",
+    "replacementContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.2%; top:94.675%; width:6.5%; height:9.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.2%; top:93.8%;\">",
+    "startLine": 4120,
+    "endLine": 4121
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:39:50Z",
+    "targetContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.2%; top:94.675%; width:6.5%; height:9.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.2%; top:93.8%;\">",
+    "replacementContent": "            <div class=\"mf-rounded-rect\" style=\"left:88.2%; top:94.575%; width:6.5%; height:9.35%;\"></div>\n            <div class=\"mf-callout-custom right-arrow bottom-arrow\" style=\"left:88.2%; top:93.7%;\">",
+    "startLine": 4120,
+    "endLine": 4121
+  },
+  {
+    "type": "replace",
+    "ts": "2026-06-19T02:41:38Z",
+    "targetContent": "              <span class=\"desc\" data-i18n=\"popup-m-code-desc\" style=\"text-align: left;\">\n                M code 기능입니다.\n              </span>",
+    "replacementContent": "              <span class=\"desc\" data-i18n=\"popup-m-code-desc\" style=\"text-align: left;\">\n                M 코드 동작 중일 때 표시됩니다.<br>\n                해당 아이콘이 활성화 된 상태에서는 기계를 조작할 수 없습니다.\n              </span>",
+    "startLine": 4122,
+    "endLine": 4124
+  }
+]
