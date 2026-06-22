@@ -60,7 +60,7 @@
     currentTarget = callout;
     
     // 가장 가까운 상대 위치 컨테이너 찾기
-    container = callout.closest('div[style*="position:relative"]') || callout.parentElement;
+    container = callout.closest('.mf-stage') || callout.closest('div[style*="position:relative"]') || callout.closest('div[style*="position: relative"]') || callout.parentElement;
 
     // 현재 마우스 시작 위치
     startX = e.clientX;
@@ -110,7 +110,7 @@
     console.log("=============================");
 
     navigator.clipboard.writeText(result).then(() => {
-      showToast(`복사됨: ${result}`);
+      showToast(`말풍선 복사됨: ${result}`);
     }).catch(err => {
       console.error('클립보드 복사 실패:', err);
     });

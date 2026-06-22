@@ -53,12 +53,14 @@
     // 가장 가까운 content-card의 내부 상대 컨테이너 찾기
     const contentCard = e.target.closest('.content-card');
     if (contentCard) {
-      container = contentCard.querySelector('div[style*="position:relative"]') || contentCard.querySelector('div[style*="position: relative"]');
+      container = contentCard.querySelector('.mf-stage') || 
+                  contentCard.querySelector('div[style*="position:relative"]') || 
+                  contentCard.querySelector('div[style*="position: relative"]');
     }
     
     if (!container) {
-       // fallback: 이미지를 감싸는 가장 가까운 relative 요소
-       container = e.target.closest('div[style*="relative"]');
+       // fallback: 이미지를 감싸는 가장 가까운 relative 요소나 .mf-stage
+       container = e.target.closest('.mf-stage') || e.target.closest('div[style*="relative"]');
     }
 
     if (!container) return; // 컨테이너를 찾지 못하면 취소

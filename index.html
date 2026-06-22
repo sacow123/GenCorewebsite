@@ -4256,6 +4256,28 @@
             }
           }
 
+          /* 그룹화된 핫스팟 동시 활성화 로직 */
+          .mf-stage:has(> .group-tool-time:hover) .group-tool-time {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+            border-color: rgba(255, 204, 0, 0.95) !important;
+            background: rgba(255, 204, 0, 0.10) !important;
+            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18) !important;
+            animation: none !important;
+          }
+          
+          .mf-stage:has(> .group-tool-time:hover) .group-tool-time-callout {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            pointer-events: auto !important;
+          }
+
+          /* 화살표 숨기기 전용 클래스 */
+          .mf-callout-custom.no-arrow::before,
+          .mf-callout-custom.no-arrow::after {
+            display: none !important;
+          }
+
           /* 2. 핫스팟 컨테이너 및 기본 스타일 */
           .mf-stage {
             position: relative;
@@ -4349,40 +4371,22 @@
               💡 버튼 위에 마우스를 올리시면 명칭과 설명을 확인하실 수 있습니다.
             </div>
 
-            <button class="mf-hotspot"
-              style="left: 3.2%; top: 17.8%; width: 10.1%; height: 61.2%; border-radius: 22px;"></button>
-            <div class="mf-callout" style="left: 22%; top: 50%; min-width: 400px;">
-              <span class="title">공구 사용 시간</span>
-              <span class="desc">각 공구의 사용 시간이 표시되며, 활성 공구는 녹색등이 켜집니다.</span>
-            </div>
+            <!-- 1. 공구 리스트 영역 (2개) -->
+            <button class="mf-hotspot group-tool-time" style="left: 2.8%; top: 17.7%; width: 10.6%; height: 61.6%; border-radius: 12px;"></button>
+            <button class="mf-hotspot group-tool-time" style="left: 62.6%; top: 17.7%; width: 10.6%; height: 61.6%; border-radius: 12px;"></button>
+            <div class="mf-callout-custom center group-tool-time-callout no-arrow" style="left: 20.6%; top: 72.6%; min-width: 340px; max-width: none;"><span class="title">공구 사용 시간</span><span class="desc">: 각 공구의 사용시간이 표시되며,<br>활성화된 공구는 녹색 라이트가 표시됩니다.</span></div>
 
-            <button class="mf-hotspot"
-              style="left: 62.8%; top: 17.8%; width: 10.2%; height: 61.2%; border-radius: 22px;"></button>
-            <div class="mf-callout" style="left: 22%; top: 50%; min-width: 400px;">
-              <span class="title">공구 사용 시간</span>
-              <span class="desc">각 공구의 사용 시간이 표시되며, 활성 공구는 녹색등이 켜집니다.</span>
-            </div>
+            <!-- 2. 우측 상단 -->
+            <button class="mf-hotspot" style="left: 76.6%; top: 17.4%; width: 19.6%; height: 23.9%; border-radius: 28px;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 60.2%; top: 39.5%; min-width: 260px;"><span class="title">스핀들 사용 시간</span><span class="desc">스핀들이 회전한<br>누적 시간을 표시합니다.</span></div>
 
-            <button class="mf-hotspot"
-              style="left: 75.8%; top: 16.6%; width: 21%; height: 24.5%; border-radius: 28px;"></button>
-            <div class="mf-callout" style="left: 51%; top: 20%; min-width: 250px;">
-              <span class="title">스핀들 사용 시간</span>
-              <span class="desc">스핀들이 회전한 누적 시간을 표시합니다.</span>
-            </div>
+            <!-- 3. 우측 중단 -->
+            <button class="mf-hotspot" style="left: 76.7%; top: 44.1%; width: 19.9%; height: 14.0%; border-radius: 28px;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 81.9%; top: 56.1%; min-width: 260px;"><span class="title">공구 수명 설정</span><span class="desc">공구 수명 설정<br>페이지를 엽니다.</span></div>
 
-            <button class="mf-hotspot"
-              style="left: 76.2%; top: 43.0%; width: 20.0%; height: 15.8%; border-radius: 28px;"></button>
-            <div class="mf-callout" style="left: auto; right: 25%; top: 44%; min-width: 200px;">
-              <span class="title">소재 별 권장 공구 수명 자동 입력</span>
-              <span class="desc">소재 별로 권장하는 공구 수명이 입력됩니다.</span>
-            </div>
-
-            <button class="mf-hotspot"
-              style="left: 76.2%; top: 70.6%; width: 20.0%; height: 11.6%; border-radius: 28px;"></button>
-            <div class="mf-callout" style="left: auto; right: 25%; top: 59%; min-width: 300px;">
-              <span class="title">공구 수명 도달 알림 전체 리셋</span>
-              <span class="desc">빨간색으로 깜박이는 알림을 전부 리셋합니다.</span>
-            </div>
+            <!-- 4. 우측 하단 -->
+            <button class="mf-hotspot pill" style="left: 76.6%; top: 72.0%; width: 19.9%; height: 9.5%; border-radius: 999px;"></button>
+            <div class="mf-callout-custom center right-arrow" style="left: 62.5%; top: 79.9%; min-width: 260px;"><span class="title">공구 사용시간 전체 초기화</span><span class="desc">모든 공구의 사용시간을<br>초기화합니다.</span></div>
           </div>
         </div>
       </section>
