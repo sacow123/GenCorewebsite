@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -5174,14 +5174,1300 @@
         </div>
       </section>
       <section id="sec-rep-mai-errorcode" class="content-section">
+        <style>
+          #sec-rep-mai-errorcode .rep-container { display: flex; flex-direction: column; gap: 20px; }
+          #sec-rep-mai-errorcode .rep-notice { padding: 14px 18px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; color: #166534; font-size: 14px; line-height: 1.5; display: flex; align-items: center; gap: 10px; }
+          #sec-rep-mai-errorcode .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; }
+          #sec-rep-mai-errorcode .filter-btn { padding: 8px 16px; border-radius: 20px; border: 1px solid #d1d5db; background: #ffffff; color: #374151; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+          #sec-rep-mai-errorcode .filter-btn:hover { border-color: #a855f7; color: #7e22ce; background: #faf5ff; }
+          #sec-rep-mai-errorcode .filter-btn.active { background: #a855f7; border-color: #a855f7; color: #ffffff; box-shadow: 0 4px 12px rgba(168,85,247,0.25); }
+          #sec-rep-mai-errorcode .search-box { position: relative; width: 100%; }
+          #sec-rep-mai-errorcode .search-input { width: 100%; padding: 14px 20px 14px 44px; border-radius: 12px; border: 2px solid #e5e7eb; background: #ffffff; color: #1f2937; font-size: 15px; outline: none; transition: all 0.2s; box-sizing: border-box; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+          #sec-rep-mai-errorcode .search-input:focus { border-color: #a855f7; box-shadow: 0 0 0 4px rgba(168,85,247,0.1); }
+          #sec-rep-mai-errorcode .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); font-size: 18px; opacity: 0.5; pointer-events: none; }
+          #sec-rep-mai-errorcode .code-table { width: 100%; border-collapse: collapse; background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px rgba(0,0,0,0.03); }
+          #sec-rep-mai-errorcode .code-table th { background: #f9fafb; padding: 14px 18px; text-align: left; font-size: 13px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #e5e7eb; }
+          #sec-rep-mai-errorcode .code-table td { padding: 16px 18px; border-bottom: 1px solid #f3f4f6; color: #374151; font-size: 14px; line-height: 1.6; vertical-align: top; }
+          #sec-rep-mai-errorcode .code-row { transition: background 0.15s; }
+          #sec-rep-mai-errorcode .code-row:hover { background: #faf5ff; }
+          #sec-rep-mai-errorcode .code-badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-weight: 800; font-family: monospace; font-size: 14px; min-width: 58px; text-align: center; }
+          #sec-rep-mai-errorcode .badge-a { background: #fee2e2; color: #dc2626; border: 1px solid #fca5a5; }
+          #sec-rep-mai-errorcode .badge-c { background: #dbeafe; color: #2563eb; border: 1px solid #93c5fd; }
+          #sec-rep-mai-errorcode .badge-hm { background: #d1fae5; color: #059669; border: 1px solid #6ee7b7; }
+          #sec-rep-mai-errorcode .badge-dwn { background: #f3e8ff; color: #9333ea; border: 1px solid #d8b4fe; }
+          #sec-rep-mai-errorcode .badge-macro { background: #fce7f3; color: #db2777; border: 1px solid #fbcfe8; }
+          #sec-rep-mai-errorcode .code-desc strong { color: #111827; font-size: 15px; display: block; margin-bottom: 4px; }
+          #sec-rep-mai-errorcode .code-note { font-size: 13px; color: #6b7280; background: #f9fafb; padding: 4px 8px; border-radius: 4px; display: inline-block; }
+          #sec-rep-mai-errorcode .no-result { padding: 40px; text-align: center; color: #6b7280; font-size: 16px; display: none; }
+        </style>
+
         <h2 data-i18n="nav-rep-errorcode"><span data-i18n="mf-auto-667">🚨 오류 코드 리스트</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-rep-mai-errorcode"
-            style="color:#a855f7; text-decoration:none;">#sec-rep-mai-errorcode</a></div>
-        <p class="subtitle"><span data-i18n="mf-auto-808">수리 메뉴얼- M AI°</span></p>
-        <div class="content-card">
-          <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
+          Anchor: <a href="#sec-rep-mai-errorcode" style="color:#a855f7; text-decoration:none;">#sec-rep-mai-errorcode</a>
         </div>
+        <p class="subtitle"><span data-i18n="mf-auto-808">수리 매뉴얼 - M AI°</span></p>
+
+        <div class="rep-container">
+          <!-- 안내 문구 -->
+          <div class="rep-notice">
+            <span>ℹ️</span>
+            <div>
+              <strong>UI 2.0 업데이트 기준 안내:</strong> 본 문서의 메시지 번호를 사용하시려면 
+              <code>GenCore M AI _ (USER) _ machine_Update_25.0.2.0.1 (UI 2.0 update)</code> 버전 이상이 필요합니다.
+            </div>
+          </div>
+
+          <!-- 검색 바 -->
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" id="maiErrSearch" placeholder="오류 코드나 키워드(예: A101, 공구, 에어, 캘리브레이션, 스핀들, USB...)를 입력하세요" onkeyup="filterMaiErrorCodes()">
+          </div>
+
+          <!-- 카테고리 필터 버튼 -->
+          <div class="filter-bar" id="maiErrFilterBar">
+            <button class="filter-btn active" onclick="filterMaiErrCategory('all', this)">⚡ 전체 보기 (138)</button>
+            <button class="filter-btn" onclick="filterMaiErrCategory('a', this)">🔴 A (에어/ ATC/ 툴)</button>
+            <button class="filter-btn" onclick="filterMaiErrCategory('c', this)">🔵 C (캘리브레이션)</button>
+            <button class="filter-btn" onclick="filterMaiErrCategory('hm', this)">🟢 M & H (동작/ 원점)</button>
+            <button class="filter-btn" onclick="filterMaiErrCategory('dwn', this)">🟣 DW & N (환경/ 네트워크)</button>
+            <button class="filter-btn" onclick="filterMaiErrCategory('macro', this)">🌸 매크로 M코드 리스트</button>
+          </div>
+
+          <!-- 테이블 -->
+          <table class="code-table" id="maiErrTable">
+            <thead>
+              <tr>
+                <th style="width:15%; text-align:center;">코드 번호</th>
+                <th style="width:65%;">오류 메시지 및 상세 설명 (Messages & Descriptions)</th>
+                <th style="width:20%;">비고 (Note)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ===== Category A: Air / ATC / Tool ===== -->
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A101</span></td>
+                <td class="code-desc">
+                  <strong>Insufficient air pressure for processing. (가공 시작을 위한 공압 부족)</strong><br>
+                  가공 시작에 필요한 공압이 부족하여 가공을 시작할 수 없습니다.<br>
+                  • 에어 컴프레서 및 장비에 공급되는 에어 라인을 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A102</span></td>
+                <td class="code-desc">
+                  <strong>Insufficient air pressure to open the chuck (척 개방을 위한 공압 부족)</strong><br>
+                  • 수동으로 척 열기 버튼을 클릭했으나 공압 부족으로 척이 열리지 않았습니다.<br>
+                  • 에어 컴프레서 및 장비에 공급되는 에어 라인을 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A103</span></td>
+                <td class="code-desc">
+                  <strong>Insufficient air pressure for spindle testing. (스핀들 테스트 가동용 공압 부족)</strong><br>
+                  • 스핀들 테스트 회전 버튼을 터치했을 때 에어 공급이 부족한 상태입니다.<br>
+                  • 에어 컴프레서 및 장비에 공급되는 에어 라인을 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A104</span></td>
+                <td class="code-desc">
+                  <strong>Processing stopped due to air pressure drop. (가공 중 공압 저하로 인한 정지)</strong><br>
+                  • 가공 중 공압 공급에 문제가 발생하여 가공이 중단되었습니다. 공구 교체(ATC) 동작 중 압축 공기가 소진되면 장비가 정지합니다.<br>
+                  • 에어 컴프레서 및 장비에 공급되는 에어 라인을 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A105</span></td>
+                <td class="code-desc">
+                  <strong>Collet chuck is open. Close chuck and try again. (콜릿 척 개방됨)</strong><br>
+                  • 스핀들 테스트 가동 시 콜릿 척이 닫혀 있어야 작동합니다.<br>
+                  • 열기/닫기(Open/Close) 버튼을 눌러 콜릿 척을 닫고 다시 시도하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A106</span></td>
+                <td class="code-desc">
+                  <strong>Collet chuck cannot be opened while spindle is rotating. (회전 중 척 개방 불가)</strong><br>
+                  • 스핀들이 회전하는 동안에는 콜릿 척을 열 수 없습니다. 스핀들 회전 여부를 확인하십시오.<br>
+                  • 회전 중이라면 스핀들이 완전히 정지한 후 콜릿 척 개방 기능을 사용하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A107</span></td>
+                <td class="code-desc">
+                  <strong>Open collet chuck and set tool number to 0. (콜릿 척 개방 및 공구 번호 초기화)</strong><br>
+                  • 상황에 따라 장비가 자동으로 공구 번호를 0으로 설정합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A108</span></td>
+                <td class="code-desc">
+                  <strong>Insufficient air pressure (공압 부족 경고)</strong><br>
+                  • <strong>확인(OK)</strong>: 가공 계속 / <strong>취소(NO)</strong>: 가공 정지<br>
+                  • <em>참고:</em> 공압이 부족하면 가공을 계속할 수 없습니다.<br>
+                  • 공압 부족 감지 후 복구를 위해 2분간 대기했으나 정상 범위 내 공압이 공급되지 않았습니다.<br>
+                  • 컴프레서 및 에어 라인 점검 후 계속하려면 확인을, 공구 교체를 중단하려면 취소를 터치하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A201</span></td>
+                <td class="code-desc">
+                  <strong>Tool change stopped due to insufficient air pressure (공압 부족으로 공구 교체 정지)</strong><br>
+                  • ATC 동작에 필요한 공압이 부족하여 공구 교체 동작이 중단되었습니다.<br>
+                  • 정상 공압 복구를 위해 2분간 대기했으나 정상화되지 않아 동작을 멈췄습니다.<br>
+                  • 컴프레서 및 에어 라인 확인 후 다시 시도하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A202</span></td>
+                <td class="code-desc">
+                  <strong>Wait 2 minutes for required air pressure. (공압 복구 대기 중)</strong><br>
+                  • 공압이 정상 범위에 도달할 때까지 최대 2분간 대기합니다. (대기 시간 표시)
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A203</span></td>
+                <td class="code-desc">
+                  <strong>Tool number not available. (사용할 수 없는 공구 번호 입력)</strong><br>
+                  • 입력된 공구 번호가 장비의 지원 범위를 벗어났습니다.<br>
+                  • 사용 가능한 공구 번호를 확인한 후 다시 입력하십시오.<br>
+                  • 지원 공구 번호 범위: T1 ~ T28
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A204</span></td>
+                <td class="code-desc">
+                  <strong>Tool number is 0, but tool is mounted on spindle. (스핀들 장착 공구 제거 필요)</strong><br>
+                  • 제어 프로그램은 공구가 없다고(T0) 인식하지만 실제 스핀들에는 공구가 끼워져 있습니다.<br>
+                  • 스핀들에 장착된 공구를 직접 확인하고 수동으로 제거하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A205</span></td>
+                <td class="code-desc">
+                  <strong>Tool number is set, but no tool mounted on spindle. (스핀들 공구 미감지)</strong><br>
+                  • 제어 프로그램에는 공구 번호가 입력되어 있으나 실제 스핀들에는 공구가 없습니다. 장비 공구 번호가 자동으로 0 초기화됩니다.<br>
+                  • 공구가 부러졌거나 생크(Shank)가 콜릿 내부에 제대로 삽입되었는지 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A206</span></td>
+                <td class="code-desc">
+                  <strong>Problem detected with the tool in use. (사용 중인 공구 이상 감지)</strong><br>
+                  • <strong>확인(OK)</strong>: 무시하고 공구 교체 후 가공 계속 / <strong>취소(NO)</strong>: 가공 정지 및 수동 공구 제거<br>
+                  • 공구 파손 또는 마모 가능성이 있으므로 상태 점검이 필요합니다.<br>
+                  • 확인 터치 시 공구 교체 후 밀링을 계속합니다.<br>
+                  • 취소 터치 시 가공을 멈추고 공구를 수동으로 제거해야 합니다. (수동 제거 시 설정 페이지에서 공구 번호를 0으로 리셋)<br>
+                  • 가공 전후 측정된 공구 길이 차이가 기준값(0.15mm) 이상일 때 이상으로 판별됩니다. (UI 설정에서 판별 기준값 변경 가능)
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A207</span></td>
+                <td class="code-desc">
+                  <strong>Ignore warning and proceed with tool exchange. (경고 무시 및 강제 가공 계속)</strong><br>
+                  • 공구 이상이 감지되었으나 사용자가 확인(OK)을 눌러 가공을 계속 진행하는 상태입니다.<br>
+                  • 장비가 공구 이상을 감지했으므로 가공 품질과 장비 상태를 주의 깊게 확인하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A208</span></td>
+                <td class="code-desc">
+                  <strong>Stop machining. Manually remove tool. (가공 정지 및 수동 제거 안내)</strong><br>
+                  • 공구 이상 감지 후 사용자가 취소(NO)를 눌러 공구 교체 동작을 멈췄습니다.<br>
+                  • 스핀들에 장착된 공구를 손으로 직접 빼내십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A209</span></td>
+                <td class="code-desc">
+                  <strong>Failed to return tool to pocket (툴 포켓 공구 반납 실패)</strong><br>
+                  • ATC 동작 중 공구를 포켓에 정상적으로 안착시키지 못할 때 발생합니다.<br>
+                  • 포켓 반납을 3회 시도했으나 실패했습니다.<br>
+                  • 잦은 발생 시 툴 포켓 청소, 포켓 좌표 캘리브레이션, 콜릿 척 내부 청소가 필요합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A210</span></td>
+                <td class="code-desc">
+                  <strong>Attempt to return tool to pocket again. (포켓 반납 재시도 중)</strong><br>
+                  • 공구 반납 실패 후 포켓 삽입 동작을 다시 시도합니다. (시도 횟수 표시)<br>
+                  • 최대 3회 반복하며, 3회 시도 후에도 실패하면 동작이 자동 정지됩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A211</span></td>
+                <td class="code-desc">
+                  <strong>Failed to grab tool from pocket. (지정 포켓 공구 그립 실패)</strong><br>
+                  • 지정된 번호의 포켓에서 공구를 파지하는 데 실패했습니다.<br>
+                  • 해당 번호의 툴 포켓에 실제 공구가 올바르게 들어있는지 확인하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A212</span></td>
+                <td class="code-desc">
+                  <strong>Tool touch sensor abnormality detected. (공구 터치 센서 이상 감지)</strong><br>
+                  • ATC 시작 전 터치 센서 비정상 신호 감지 (터치 전에는 신호가 없어야 정상).<br>
+                  • ATC 동작 중 공구가 센서에 닿기 전 비정상 신호 감지.<br>
+                  • 터치 센서가 눌려 있거나 내부 접점에 문제가 있습니다.<br>
+                  • 센서 주변의 이물질과 분진을 깨끗이 청소하십시오.<br>
+                  • 손으로 센서를 눌렀을 때 부드럽게 정상 복귀하는지 확인하십시오.<br>
+                  • 복귀가 느리거나 신호가 불규칙하면 센서를 교체해야 합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A213</span></td>
+                <td class="code-desc">
+                  <strong>Abnormality detected in tool held by spindle. (스핀들 장착 공구 이상 감지)</strong><br>
+                  • 공구 상태 육안 점검 후 메시지에 따라 '예' 또는 '아니오'를 선택하십시오.<br>
+                  • <strong>예(Yes)</strong>: 공구 교체를 계속 진행합니다.<br>
+                  • <strong>아니오(No)</strong>: 교체를 중단하며 수동으로 공구를 제거해 상태를 확인해야 합니다. ('아니오' 선택 시 공구 번호 자동 0 초기화)<br>
+                  • 규격에 맞지 않는 공구를 장착하려 할 때 발생합니다 (생크 길이가 너무 길거나 짧은 경우). 제조사 권장 규격의 공구를 사용하십시오.<br>
+                  • 직경 1mm 이하의 미세 공구는 파손 여부를 육안으로 확인하기 어려우므로 자세히 검사하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A214</span></td>
+                <td class="code-desc">
+                  <strong>ATC is not open. (ATC 개방 안 됨)</strong><br>
+                  • <strong>확인(OK)</strong>: 계속 / <strong>취소(NO)</strong>: 가공 정지 (공압 부족 시 계속 진행 불가)<br>
+                  • 실제 ATC 도어가 열려 있지 않은지 센서 표시를 확인하십시오.<br>
+                  • 공압을 차단하고 손으로 포켓 슬라이드를 움직여 보십시오. 부드러워야 합니다.<br>
+                  • 기구부 상태가 정상임에도 경고 반복 시 센서 점검 (센서 간격 및 내부 점등 LED 확인).
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A215</span></td>
+                <td class="code-desc">
+                  <strong>ATC is not closed. (ATC 밀폐 안 됨)</strong><br>
+                  • <strong>확인(OK)</strong>: 계속 / <strong>취소(NO)</strong>: 가공 정지 (공압 부족 시 계속 진행 불가)<br>
+                  • 실제 ATC가 닫혀 있지 않은지 확인하십시오.<br>
+                  • 닫혀 있음에도 메시지 발생 시 ATC를 끝까지 밀어보며 센서 표시를 확인하십시오.<br>
+                  • 공압 차단 후 슬라이드 기구부의 부드러움을 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A216</span></td>
+                <td class="code-desc">
+                  <strong>Wait 30s for ATC to open. (ATC 개방 대기 중)</strong><br>
+                  • 센서를 통해 ATC가 완전히 열릴 때까지 감지 대기 중입니다. (최대 30초)
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A217</span></td>
+                <td class="code-desc">
+                  <strong>Wait 30s for ATC to close. (ATC 밀폐 대기 중)</strong><br>
+                  • 센서를 통해 ATC가 완전히 닫힐 때까지 감지 대기 중입니다. (최대 30초)
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A218</span></td>
+                <td class="code-desc">
+                  <strong>Currently equipped tool number. (현재 장착된 공구 일치)</strong><br>
+                  • G코드에서 지시한 공구 번호와 동일한 공구를 이미 장착하고 있는 상태입니다.<br>
+                  • 공구 길이 오프셋 측정 후 밀링이 시작됩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A219</span></td>
+                <td class="code-desc">
+                  <strong>Start tool change. (공구 교체 동작 시작)</strong><br>
+                  • M6 명령 수신 시 지시된 번호로 공구 교체 동작을 시작합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A220</span></td>
+                <td class="code-desc">
+                  <strong>Tool exchange completed. (공구 교체 완료)</strong><br>
+                  • 공구 교체 동작이 정상적으로 완료되었습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A221</span></td>
+                <td class="code-desc">
+                  <strong>Tool touch sensor not detected. (공구 터치 센서 미감지)</strong><br>
+                  • ATC 시작 전 또는 동작 중 터치 센서 신호가 감지되지 않았습니다.<br>
+                  • 센서 주위 분진 청소 및 수동 복귀 테스트를 진행하십시오.<br>
+                  • 복귀 지연이나 신호 불규칙 발생 시 센서 교체가 필요합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A222</span></td>
+                <td class="code-desc">
+                  <strong>Difference in tool length before/after use (가공 전후 공구 길이 차이 측정)</strong><br>
+                  • 밀링 전후 공구 길이를 비교 측정하여 변화값(mm)을 표시합니다.<br>
+                  • 길이 변화가 기준값(0.15mm)을 초과하면 경고 메시지를 출력합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A223</span></td>
+                <td class="code-desc">
+                  <strong>ATC stopped because it was not opened (ATC 개방 실패 정지)</strong><br>
+                  • 개방 동작을 30초간 대기했으나 완료되지 않아 정지했습니다.<br>
+                  • ATC 기구부 및 슬라이드 레일에 뻑뻑함이나 이물질이 없는지 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A224</span></td>
+                <td class="code-desc">
+                  <strong>ATC stopped because it was not closed (ATC 밀폐 실패 정지)</strong><br>
+                  • 밀폐 동작을 30초간 대기했으나 완료되지 않아 정지했습니다.<br>
+                  • ATC 기구부 및 슬라이드 레일에 뻑뻑함이나 이물질이 없는지 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A225</span></td>
+                <td class="code-desc">
+                  <strong>Tool usage time (공구 누적 사용 시간)</strong><br>
+                  • 선택한 공구의 누적 가공 시간을 표시합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A226</span></td>
+                <td class="code-desc">
+                  <strong>Reset tool usage time? (선택 공구 사용 시간 초기화)</strong><br>
+                  • 선택한 공구의 누적 사용 시간을 초기화(0)하시겠습니까?
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A227</span></td>
+                <td class="code-desc">
+                  <strong>Yes: Reset usage time (전체 공구 사용 시간 초기화)</strong><br>
+                  • 공구 목록 내 등록된 전체 공구의 사용 시간을 리셋합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A228</span></td>
+                <td class="code-desc">
+                  <strong>No: Close message window (메시지 창 닫기)</strong>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="a">
+                <td style="text-align:center;"><span class="code-badge badge-a">A229</span></td>
+                <td class="code-desc">
+                  <strong>Tool usage time reset done (공구 사용 시간 초기화 완료)</strong><br>
+                  • 공구의 누적 사용 시간이 성공적으로 초기화되었습니다.
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- ===== Category C: Calibration ===== -->
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C001</span></td>
+                <td class="code-desc">
+                  <strong>[ Jig 1 for HyperDent ] Ready to calibrate. (hyperDENT용 1번 지그 캘리브레이션 시작)</strong><br>
+                  • 프리밀(Premilled) V1.0 캘리브레이션을 위한 1번 지그 작업을 시작합니다. 준비되면 확인(OK)을 터치하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C002</span></td>
+                <td class="code-desc">
+                  <strong>[ For HyperDent Jig 2 ] Ready to calibrate. (hyperDENT용 2번 지그 캘리브레이션 시작)</strong><br>
+                  • 프리밀 V1.0 캘리브레이션을 위한 2번 지그 작업을 시작합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C003</span></td>
+                <td class="code-desc">
+                  <strong>[ For HyperDent Jig 3 ] Ready to calibrate. (hyperDENT용 3번 지그 캘리브레이션 시작)</strong><br>
+                  • 프리밀 V1.0 캘리브레이션을 위한 3번 지그 작업을 시작합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C004</span></td>
+                <td class="code-desc">
+                  <strong>[ For HyperDent Jig 4 ] Ready to calibrate. (hyperDENT용 4번 지그 캘리브레이션 시작)</strong><br>
+                  • 프리밀 V1.0 캘리브레이션을 위한 4번 지그 작업을 시작합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C005</span></td>
+                <td class="code-desc">
+                  <strong>[ For HyperDent Jig 5 ] Ready to calibrate. (hyperDENT용 5번 지그 캘리브레이션 시작)</strong><br>
+                  • 프리밀 V1.0 캘리브레이션을 위한 5번 지그 작업을 시작합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C006</span></td>
+                <td class="code-desc">
+                  <strong>Disk AI Calibration incomplete (디스크 AI 캘리브레이션 미완료 경고)</strong><br>
+                  • <strong>종료(Exit)</strong>: 확인 / <strong>현재 페이지 유지</strong>: 취소<br>
+                  • 캘리브레이션을 끝까지 완료하지 않고 마법사를 종료하려 할 때 표시되는 경고입니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C007</span></td>
+                <td class="code-desc">
+                  <strong>Premill AI Calibration incomplete (프리밀 AI 캘리브레이션 미완료 경고)</strong><br>
+                  • <strong>종료(Exit)</strong>: 확인 / <strong>현재 페이지 유지</strong>: 취소<br>
+                  • 캘리브레이션을 완료하지 않고 마법사를 닫을 때 표시됩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C008</span></td>
+                <td class="code-desc">
+                  <strong>ATC Auto Calibration incomplete (ATC 오토 캘리브레이션 미완료 경고)</strong><br>
+                  • <strong>종료(Exit)</strong>: 확인 / <strong>현재 페이지 유지</strong>: 취소<br>
+                  • ATC 캘리브레이션을 완료하지 않고 마법사를 닫을 때 표시됩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C009</span></td>
+                <td class="code-desc">
+                  <strong>Calibration Pin Removal incomplete (캘리브레이션 핀 제거 미완료 경고)</strong><br>
+                  • <strong>종료(Exit)</strong>: 확인 / <strong>현재 페이지 유지</strong>: 취소<br>
+                  • 캘리브레이션 핀 제거 단계 완료 전에 마법사를 종료할 때 표시됩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C010</span></td>
+                <td class="code-desc">
+                  <strong>Manual Calibration incomplete (매뉴얼 캘리브레이션 미완료 경고)</strong><br>
+                  • <strong>종료(Exit)</strong>: 확인 / <strong>현재 페이지 유지</strong>: 취소<br>
+                  • 수동 캘리브레이션 진행 중 창을 닫을 때 표시됩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C011</span></td>
+                <td class="code-desc">
+                  <strong>Ready for Disk AI Calibration. (디스크 AI 캘리브레이션 시작 확인)</strong><br>
+                  • 프로브 핀과 지그 간의 전기적 도통 상태를 점검한 후 이상이 없으면 측정을 시작합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C012</span></td>
+                <td class="code-desc">
+                  <strong>Ready for Premill AI Calibration. (프리밀 AI 캘리브레이션 시작 확인)</strong><br>
+                  • 프로브 핀과 지그 간의 전기적 도통 상태를 점검한 후 측정을 시작합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C013</span></td>
+                <td class="code-desc">
+                  <strong>No premill position selected (측정할 프리밀 위치 미선택)</strong><br>
+                  • 프리밀 V2.0 캘리브레이션 시 측정할 포지션을 UI에서 선택하지 않은 상태입니다.<br>
+                  • 캘리브레이션을 수행할 프리밀 번호를 먼저 선택하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C015</span></td>
+                <td class="code-desc">
+                  <strong>Calibration time (캘리브레이션 소요 시간)</strong><br>
+                  • AI 캘리브레이션 측정에 소요된 전체 시간을 표시합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C016</span></td>
+                <td class="code-desc">
+                  <strong>HyperDent jig fmdf file created (hyperDENT 지그 정보 fmdf 파일 생성 완료)</strong><br>
+                  • 파일 저장 위치: <code>D:\W00 - M AI_HyperDent_fmdf</code><br>
+                  • USB 자동 복사 위치: <code>E:\W00 - M AI_HyperDent_fmdf</code> (USB 메모리가 연결되어 있으면 자동 복사됩니다)
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C017</span></td>
+                <td class="code-desc">
+                  <strong>HyperDent jig fmdf file created. (hyperDENT 지그 정보 파일 생성됨)</strong><br>
+                  • 파일 저장 위치: <code>D:\W00 - M AI_HyperDent_fmdf</code><br>
+                  • 프리밀 캘리브레이션이 완료되면 정보 파일(.fmdf)이 자동으로 생성됩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C018</span></td>
+                <td class="code-desc">
+                  <strong>Network folder specified for fmdf transfer (공유 네트워크 폴더 지정됨)</strong><br>
+                  • 지정된 공유 폴더 경로: [폴더 경로]<br>
+                  • hyperDENT가 설치된 CAM PC가 동일 네트워크에 연결되어 있으면 파일 생성 시 지정 폴더로 자동 전송됩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C019</span></td>
+                <td class="code-desc">
+                  <strong>Network folder does not exist. (네트워크 공유 폴더 없음 오류)</strong><br>
+                  • 입력된 경로: [폴더 경로]<br>
+                  • 지정한 공유 폴더가 없거나 네트워크 통신이 원활하지 않습니다. 폴더 공유 상태 및 경로명을 점검하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C020</span></td>
+                <td class="code-desc">
+                  <strong>Valid network path found. (유효한 네트워크 공유 경로 확인됨)</strong>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C021</span></td>
+                <td class="code-desc">
+                  <strong>Network path file does not exist (네트워크 설정 파일 미생성)</strong><br>
+                  • 공유 경로 설정이 구성되지 않았거나 폴더 정보 파일이 없습니다. 통신 연결 및 설정을 확인하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C022</span></td>
+                <td class="code-desc">
+                  <strong>No memory stick in USB port. (USB 메모리 스틱 미연결)</strong><br>
+                  • fmdf 정보 파일 복사 아이콘을 눌렀으나 USB 포트에 연결된 메모리가 없습니다. USB 스틱을 장착하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C023</span></td>
+                <td class="code-desc">
+                  <strong>Calibration file copied to USB. (USB로 캘리브레이션 파일 복사 완료)</strong><br>
+                  • 장비에 연결된 USB 메모리 스틱으로 파일 복사가 완료되었습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C301</span></td>
+                <td class="code-desc">
+                  <strong>Make sure you have done item 1. (1번 항목 단계 확인)</strong><br>
+                  • 캘리브레이션 UI의 순서별 버튼을 건너뛰고 진행할 때 나타나는 안내 메시지입니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C302</span></td>
+                <td class="code-desc">
+                  <strong>Make sure you have done item 2 (2번 항목 단계 확인)</strong><br>
+                  • 순서를 건너뛰고 진행할 때 나타나는 안내 메시지입니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C303</span></td>
+                <td class="code-desc">
+                  <strong>Make sure you have done item 3 (3번 항목 단계 확인)</strong><br>
+                  • 순서를 건너뛰고 진행할 때 나타나는 안내 메시지입니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C304</span></td>
+                <td class="code-desc">
+                  <strong>Make sure you have done item 4 (4번 항목 단계 확인)</strong><br>
+                  • 순서를 건너뛰고 진행할 때 나타나는 안내 메시지입니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C305</span></td>
+                <td class="code-desc">
+                  <strong>Make sure cleaning is completed (청소 완료 여부 확인)</strong><br>
+                  • 다음 단계 진행 전 내부 청소가 완벽히 수행되었는지 확인하는 팝업입니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C306</span></td>
+                <td class="code-desc">
+                  <strong>Check entered reverse jig length (입력한 리버스 지그 길이 확인)</strong><br>
+                  • 프리밀 캘리브레이션 시 실제 장착한 리버스 지그의 길이를 정확하게 입력했는지 확인하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C307</span></td>
+                <td class="code-desc">
+                  <strong>Check entered round bar length (입력한 환봉 길이 확인)</strong><br>
+                  • 프리밀 V2.0 캘리브레이션에 사용되는 환봉(라운드 바)의 총 길이를 입력합니다.<br>
+                  • 프리밀 인터페이스부를 제외한 길이(홀더 결합부 포함)를 입력하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C401</span></td>
+                <td class="code-desc">
+                  <strong>Input calibration pin size out of range (캘리브레이션 핀 규격 입력 오류)</strong><br>
+                  • 측정용 프로브 핀 직경이 허용 입력 범위(3.97 ~ 4.03mm)를 벗어났습니다.<br>
+                  • 반드시 실제 사용 중인 프로브 핀을 정밀 마이크로미터로 측정하여 정확히 입력하십시오.<br>
+                  • 핀 직경 오차는 가공 보정값 및 최종 보철물 정밀도에 직접적인 영향을 미칩니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C402</span></td>
+                <td class="code-desc">
+                  <strong>No touch signal from calibration pin. (캘리브레이션 핀 터치 신호 미감지)</strong><br>
+                  • 캘리브레이션 동작 중 지그와 핀 간의 전기적 접촉 신호가 감지되지 않는 상태입니다.<br>
+                  • 접촉 부위에 절삭유나 찌꺼기 등 이물질이 있어 절연되었을 때 발생합니다.<br>
+                  • 핀과 지그의 연결 배선 및 신호 라인을 점검하고 접촉면을 깨끗이 닦아내십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C403</span></td>
+                <td class="code-desc">
+                  <strong>Abnormality detected in tool touch sensor (공구 터치 센서 이상 감지)</strong><br>
+                  • 공구 터치 센서가 상시 눌려 있거나 도통 신호가 계속 감지되고 있습니다.<br>
+                  • 센서 주위 이물질을 청소하고 손으로 눌렀을 때 탄력 있게 복귀하는지 점검하십시오.<br>
+                  • 조치 후에도 신호가 꺼지지 않으면 센서를 교체해야 합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C404</span></td>
+                <td class="code-desc">
+                  <strong>Abnormality detected in machine electrical status (장비 전기 절연 상태 이상 감지)</strong><br>
+                  • 스핀들 축과 장비 본체 간에 비정상적인 도통(전류 흐름)이 감지되었습니다.<br>
+                  • 측정 대기 상태에서는 스핀들이 비도통(절연) 상태여야 정상입니다.<br>
+                  • 스핀들 축을 돌려보며 대기 상태에서 멀티테스터기로 스핀들과 본체 간 절연을 점검하십시오.<br>
+                  • 절연이 유지되지 않으면 스핀들 내부 카본 분진 청소 및 터치 센서(C403) 연동 점검이 필요합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C406</span></td>
+                <td class="code-desc">
+                  <strong>Probe function disabled due to low air pressure (공압 부족으로 프로브 작동 불가)</strong><br>
+                  • 장비 공압이 낮을 때는 스핀들 프로브 기능을 사용할 수 없습니다. 공압을 정상 범위(0.5 psi 이상)로 유지하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C411</span></td>
+                <td class="code-desc">
+                  <strong>B-axis 0 degree horizontal operation failed (B축 0도 수평 정렬 실패)</strong><br>
+                  • 캘리브레이션 중 해당 동작을 재시도해도 실패 메시지가 반복되면 하드웨어 기구부 점검이 필요합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C412</span></td>
+                <td class="code-desc">
+                  <strong>A-axis 0 degree horizontal operation failed (A축 0도 수평 정렬 실패)</strong><br>
+                  • 재시도 후에도 반복 발생 시 A축 구동부 하드웨어 점검이 필요합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C413</span></td>
+                <td class="code-desc">
+                  <strong>Diameter mismatch between pos 3 & pos 8 round bars (3번과 8번 환봉 직경 불일치)</strong><br>
+                  • 지그에 장착된 3번 위치와 8번 위치 환봉의 직경이 서로 다릅니다. 버니어 캘리퍼스로 측정 후 동일 규격 바를 장착하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C414</span></td>
+                <td class="code-desc">
+                  <strong>Length mismatch between pos 3 & pos 8 round bars (3번과 8번 환봉 길이 불일치)</strong><br>
+                  • 지그에 장착된 3번 위치와 8번 위치 환봉의 길이가 서로 다릅니다. 동일 길이의 바를 장착하고 다시 시도하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C419</span></td>
+                <td class="code-desc">
+                  <strong>Premill AI calibration complete (프리밀 AI 캘리브레이션 완료)</strong><br>
+                  • 파일 저장 위치: <code>D:\W00 - M AI_HyperDent_fmdf</code><br>
+                  • !!! AI 캘리브레이션이 성공적으로 완료되었습니다 !!! 보정값이 정상 반영되었습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C420</span></td>
+                <td class="code-desc">
+                  <strong>Disk AI calibration complete (디스크 AI 캘리브레이션 완료)</strong><br>
+                  • 파일 저장 위치: <code>D:\W00 - M AI_HyperDent_fmdf</code><br>
+                  • !!! AI 캘리브레이션이 성공적으로 완료되었습니다 !!! 보정값이 정상 반영되었습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C421</span></td>
+                <td class="code-desc">
+                  <strong>HyperDent jig fmdf file created (hyperDENT 지그 정보 파일 생성됨)</strong>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C422</span></td>
+                <td class="code-desc">
+                  <strong>HyperDent jig fmdf file created (hyperDENT 지그 정보 파일 생성됨)</strong>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="c">
+                <td style="text-align:center;"><span class="code-badge badge-c">C423</span></td>
+                <td class="code-desc">
+                  <strong>ATC auto calibration complete (ATC 오토 캘리브레이션 완료)</strong><br>
+                  • 공구가 보관되는 툴 포켓 위치 측정이 완료되었습니다. 보정값이 프로그램에 정상 반영되었습니다.
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- ===== Category M & H: Machine / Homing / Door ===== -->
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">M00</span></td>
+                <td class="code-desc">
+                  <strong>The machine is running (장비가 동작 중입니다)</strong><br>
+                  • 장비가 가동 중일 때 다른 UI 기능 버튼을 터치하면 나타나는 경고입니다.<br>
+                  • 장비 동작이 완전히 정지한 후 원하는 버튼을 조작하십시오.<br>
+                  • 아무 조작을 하지 않았음에도 표시되면 화면 상단에 'M code in progress'가 깜박이는지 확인하십시오.<br>
+                  • 화면의 실시간 좌표 수치가 변하고 있다면 장비가 가동 중인 상태입니다.<br>
+                  • 매크로 구동 중 정지 버튼을 누르면 매크로가 완료되기 전 불안정 상태로 정지하며 하단 녹색 'M code'가 계속 깜박입니다.<br>
+                  • 이때 하단 녹색 'M code' 버튼을 터치하여 해제한 뒤 원점(Homing) 버튼을 눌러 초기화하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">M02</span></td>
+                <td class="code-desc">
+                  <strong>The door is open (안전 도어 열림 감지)</strong><br>
+                  • 도어가 열려 있으면 사용자 안전을 위해 장비 구동이 제한됩니다. 안전 도어를 닫으십시오.<br>
+                  • 설정 페이지(Parameter & I/O List)의 '도어 상태 감지 활성화' 옵션에서 제한 여부를 설정할 수 있습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">M03</span></td>
+                <td class="code-desc">
+                  <strong>The door is open. Close door for safety. (안전 도어를 닫고 가공 시작)</strong><br>
+                  • 도어가 열려 있습니다. 사용자 안전을 위해 도어를 닫은 후 가공을 시작하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">M04</span></td>
+                <td class="code-desc">
+                  <strong>M code is working (매크로 M코드 동작 중)</strong><br>
+                  • 장비 내부 매크로가 실행 중입니다. 안전을 위해 매크로 실행 중에는 UI 기능 버튼을 조작할 수 없습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H001</span></td>
+                <td class="code-desc">
+                  <strong>X-axis origin not set. Touch Homing button. (X축 원점 미설정)</strong><br>
+                  • 전원 켜기 후 각 축의 초기 원점을 찾아야 합니다.<br>
+                  • 화면의 준비(Ready) 버튼을 터치하여 활성화한 뒤 원점(Homing) 버튼을 터치하여 원점 복귀를 진행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H002</span></td>
+                <td class="code-desc">
+                  <strong>Y-axis origin not set. Touch Homing button. (Y축 원점 미설정)</strong><br>
+                  • 화면의 준비(Ready) 버튼을 터치하여 활성화한 뒤 원점(Homing) 버튼을 터치하여 원점 복귀를 진행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H003</span></td>
+                <td class="code-desc">
+                  <strong>Z-axis origin not set. Touch Homing button. (Z축 원점 미설정)</strong><br>
+                  • 화면의 준비(Ready) 버튼을 터치하여 활성화한 뒤 원점(Homing) 버튼을 터치하여 원점 복귀를 진행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H004</span></td>
+                <td class="code-desc">
+                  <strong>A-axis origin not set. Touch Homing button. (A축 원점 미설정)</strong><br>
+                  • 화면의 준비(Ready) 버튼을 터치하여 활성화한 뒤 원점(Homing) 버튼을 터치하여 원점 복귀를 진행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H005</span></td>
+                <td class="code-desc">
+                  <strong>B-axis origin not set. Touch Homing button. (B축 원점 미설정)</strong><br>
+                  • 화면의 준비(Ready) 버튼을 터치하여 활성화한 뒤 원점(Homing) 버튼을 터치하여 원점 복귀를 진행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H006</span></td>
+                <td class="code-desc">
+                  <strong>Failed to complete homing (원점 복귀 완료 실패)</strong><br>
+                  • X, Y, Z, A, B축 중 일부 축의 원점 복귀가 정상 완료되지 않았습니다.<br>
+                  • 화면 하단의 녹색 'M code' 버튼을 터치해 해제하고 Ready 터치 후 원점 버튼을 다시 눌러 재시도하십시오.<br>
+                  • 수차례 재시도해도 실패할 경우 장비 전원을 완전히 차단했다가 켠 후 다시 시도하십시오.<br>
+                  • 지속 실패 시 리미트 센서 및 모터 구동부 점검이 필요합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H007</span></td>
+                <td class="code-desc">
+                  <strong>Homing is complete (원점 복귀 완료)</strong><br>
+                  • 모든 축이 성공적으로 기계 원점을 찾았습니다. 이제 가공을 시작할 수 있습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H008</span></td>
+                <td class="code-desc">
+                  <strong>WARNING : Something went wrong with work coordinates!!! (가공 좌표계 이상 경고)</strong><br>
+                  • 제어 프로그램 내 디스크 가공 좌표계 보정값에 오류가 감지되었습니다.<br>
+                  • 이 메시지가 표시되면 반드시 디스크 캘리브레이션을 처음부터 다시 수행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H501</span></td>
+                <td class="code-desc">
+                  <strong>No calibration value for HyperDent Jig 1 (hyperDENT 1번 지그 보정값 없음)</strong><br>
+                  • 프리밀 가공 시 캘리브레이션 데이터 없이 실행하려 할 때 발생합니다. 1번 지그 캘리브레이션을 먼저 수행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H502</span></td>
+                <td class="code-desc">
+                  <strong>No calibration value for HyperDent Jig 2 (hyperDENT 2번 지그 보정값 없음)</strong><br>
+                  • 2번 지그 캘리브레이션을 먼저 수행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H503</span></td>
+                <td class="code-desc">
+                  <strong>No calibration value for HyperDent Jig 3 (hyperDENT 3번 지그 보정값 없음)</strong><br>
+                  • 3번 지그 캘리브레이션을 먼저 수행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H504</span></td>
+                <td class="code-desc">
+                  <strong>No calibration value for HyperDent Jig 4 (hyperDENT 4번 지그 보정값 없음)</strong><br>
+                  • 4번 지그 캘리브레이션을 먼저 수행하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="hm">
+                <td style="text-align:center;"><span class="code-badge badge-hm">H505</span></td>
+                <td class="code-desc">
+                  <strong>No calibration value for HyperDent Jig 5 (hyperDENT 5번 지그 보정값 없음)</strong><br>
+                  • 5번 지그 캘리브레이션을 먼저 수행하십시오.
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- ===== Category DW & N: Environment / Network ===== -->
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">DW601</span></td>
+                <td class="code-desc">
+                  <strong>Cannot switch between dry or wet processing (건식/습식 가공 모드 전환 불가)</strong><br>
+                  • 건식/습식 모드 전환 제한 옵션이 켜져 있어 기능 사용이 제한되었습니다.<br>
+                  • 제한 해제를 원하시면 제조사 기술지원 팀에 문의하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">DW602</span></td>
+                <td class="code-desc">
+                  <strong>Switch to wet processing? (습식 가공으로 전환하시겠습니까?)</strong><br>
+                  • 습식 가공 전환 전에 가공실 내부를 완벽하게 청소해야 합니다.<br>
+                  1. 가공실 내부의 지르코니아 분진을 완벽하게 제거하십시오.<br>
+                  2. 가공실 우측 건식 배관 입구를 드레인 플러그로 밀폐하십시오.<br>
+                  3. 절삭유 밸브를 열고 지르코니아 습식 밸브를 닫으십시오.<br>
+                  • <strong>경고:</strong> 지르코니아 분진이 남아있는 상태에서 습식 가공 시 슬러지 굳음으로 인한 장비 성능 저하 및 고장이 발생할 수 있습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">DW603</span></td>
+                <td class="code-desc">
+                  <strong>Switch to dry processing? (건식 가공으로 전환하시겠습니까?)</strong><br>
+                  • 건식 가공 전환 전에 가공실 내부를 완벽하게 청소해야 합니다.<br>
+                  1. 절삭유 등 액체가 남아있지 않도록 내부를 건조하게 닦아내십시오.<br>
+                  2. 가공실 좌측 습식 배관 입구를 드레인 플러그로 밀폐하십시오.<br>
+                  • <strong>경고:</strong> 절삭유가 잔존한 상태에서 건식 가공 시 분진이 떡져 장비 기구부 고장을 일으킬 수 있습니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">DW604</span></td>
+                <td class="code-desc">
+                  <strong>Switched to wet processing (습식 가공 모드 전환 완료)</strong><br>
+                  • UI 버튼 또는 G코드 명령을 통해 습식 모드로 전환되었습니다.<br>
+                  • 자동 전환 G코드: M3001 (습식 모드), M3002 (건식 모드)
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">DW605</span></td>
+                <td class="code-desc">
+                  <strong>Switched to dry processing (건식 가공 모드 전환 완료)</strong><br>
+                  • UI 버튼 또는 G코드 명령을 통해 건식 모드로 전환되었습니다.<br>
+                  • 자동 전환 G코드: M3001 (습식 모드), M3002 (건식 모드)
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">DW606</span></td>
+                <td class="code-desc">
+                  <strong>Unlock dry/wet switching (건식/습식 전환 잠금 해제됨)</strong><br>
+                  • 관리자 전용 기능입니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">DW607</span></td>
+                <td class="code-desc">
+                  <strong>Lock dry/wet switching (건식/습식 전환 잠금 설정됨)</strong><br>
+                  • 관리자 전용 기능입니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">N001</span></td>
+                <td class="code-desc">
+                  <strong>Set preferred main page first (시작 메인 페이지 설정 필요)</strong><br>
+                  • 장비 부팅 시 첫 화면으로 사용할 페이지를 터치하여 선택하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">N002</span></td>
+                <td class="code-desc">
+                  <strong>Error - Network folder does not exist (네트워크 공유 폴더 없음 오류)</strong><br>
+                  • 입력한 공유 폴더가 존재하지 않거나 네트워크 연결이 원활하지 않습니다. 폴더 경로와 네트워크 상태를 점검하십시오.<br>
+                  • 잘못 입력된 경로: [경로명]
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">N003</span></td>
+                <td class="code-desc">
+                  <strong>Valid network path found (유효한 네트워크 공유 경로 확인됨)</strong>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">N004</span></td>
+                <td class="code-desc">
+                  <strong>Network path txt file does not exist (네트워크 경로 설정 파일 없음)</strong><br>
+                  • 네트워크 설정 파일(.txt)이 존재하지 않습니다. 전송 설정 구성을 확인하십시오. 경로명: [경로명]
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">N005</span></td>
+                <td class="code-desc">
+                  <strong>Enter network path name (공유 네트워크 경로 입력 안내)</strong><br>
+                  • 예시: <code>\\CAM_PC\M AI_HyperDent_fmdf</code><br>
+                  • fmdf 정보 파일이 자동 전송될 CAM PC의 네트워크 폴더 경로를 입력하십시오.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">N006</span></td>
+                <td class="code-desc">
+                  <strong>No path entered (네트워크 경로 미입력 경고)</strong><br>
+                  • 경로명 입력 없이 확인을 터치했을 때 발생합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">N007</span></td>
+                <td class="code-desc">
+                  <strong>Path must start with '\\' (경로 입력 규칙 안내)</strong><br>
+                  • 표준 윈도우 공유 네트워크 폴더 경로 규칙(' \\PC명\폴더 ')에 따라 '\\'로 시작해야 합니다.
+                </td>
+                <td></td>
+              </tr>
+              <tr class="code-row" data-cat="dwn">
+                <td style="text-align:center;"><span class="code-badge badge-dwn">N008</span></td>
+                <td class="code-desc">
+                  <strong>Path saved successfully (네트워크 경로 저장 완료)</strong><br>
+                  • 전송 네트워크 경로가 정상적으로 저장되었습니다.
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- ===== Category Macro: M Code List ===== -->
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M3</span></td>
+                <td class="code-desc">
+                  <strong>Spindle rotation start (스핀들 정방향 회전 시작)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5</span></td>
+                <td class="code-desc">
+                  <strong>Spindle rotation stop (스핀들 회전 정지)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M6Start</span></td>
+                <td class="code-desc">
+                  <strong>Tool change / Command: M6T00 (공구 교체 시작 / 명령 지시: M6T00)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M500</span></td>
+                <td class="code-desc">
+                  <strong>X,Y,Z,A,B axis Homing (전체 축 원점 복귀 Homing)</strong>
+                </td>
+                <td><span class="code-note">UI 버튼 연동</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M2000</span></td>
+                <td class="code-desc">
+                  <strong>Auto Machine Shutdown (장비 자동 종료 / UI 자동 종료 옵션 활성화 시 작동)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M2001</span></td>
+                <td class="code-desc">
+                  <strong>Front LED sign after processing (가공 완료 후 전면 알림 LED 점등)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M3001</span></td>
+                <td class="code-desc">
+                  <strong>Transition machine to wet environment (장비 습식 Wet 가공 환경 전환)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M3002</span></td>
+                <td class="code-desc">
+                  <strong>Transition machine to dry environment (장비 건식 Dry 가공 환경 전환)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M3003</span></td>
+                <td class="code-desc">
+                  <strong>Premill tool check before 90 deg milling (프리밀 90도 가공 전 공구 상태 점검)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M4000</span></td>
+                <td class="code-desc">
+                  <strong>Disk AI Calibration (디스크 AI 캘리브레이션 매크로 실행)</strong>
+                </td>
+                <td><span class="code-note">전용 UI 연동</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M4010</span></td>
+                <td class="code-desc">
+                  <strong>Tool Pocket Auto Calibration (툴 포켓 좌표 오토 캘리브레이션 실행)</strong>
+                </td>
+                <td><span class="code-note">전용 UI 연동</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5000</span></td>
+                <td class="code-desc">
+                  <strong>Premilled AI v1.2 Calibration (프리밀 AI V1.2 캘리브레이션 실행)</strong>
+                </td>
+                <td><span class="code-note">전용 UI 연동</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5100</span></td>
+                <td class="code-desc">
+                  <strong>Premilled AI v2.0 Calibration (프리밀 AI V2.0 캘리브레이션 실행)</strong>
+                </td>
+                <td><span class="code-note">전용 UI 연동</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5301</span></td>
+                <td class="code-desc">
+                  <strong>Premill holder V1.0 pos 1 coord conversion (홀더 V1.0 1번 위치 좌표 변환 G59P31 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5302</span></td>
+                <td class="code-desc">
+                  <strong>Premill holder V1.0 pos 2 coord conversion (홀더 V1.0 2번 위치 좌표 변환 G59P32 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5303</span></td>
+                <td class="code-desc">
+                  <strong>Premill holder V1.0 pos 3 coord conversion (홀더 V1.0 3번 위치 좌표 변환 G59P33 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5304</span></td>
+                <td class="code-desc">
+                  <strong>Premill holder V1.0 pos 4 coord conversion (홀더 V1.0 4번 위치 좌표 변환 G59P34 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5305</span></td>
+                <td class="code-desc">
+                  <strong>Premill holder V1.0 pos 5 coord conversion (홀더 V1.0 5번 위치 좌표 변환 G59P35 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5401</span></td>
+                <td class="code-desc">
+                  <strong>Premill reverse holder V2.0 pos 1 coord conversion (리버스 홀더 V2.0 1번 위치 좌표 변환 G59P41 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5402</span></td>
+                <td class="code-desc">
+                  <strong>Premill reverse holder V2.0 pos 2 coord conversion (리버스 홀더 V2.0 2번 위치 좌표 변환 G59P42 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5403</span></td>
+                <td class="code-desc">
+                  <strong>Premill reverse holder V2.0 pos 3 coord conversion (리버스 홀더 V2.0 3번 위치 좌표 변환 G59P43 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5404</span></td>
+                <td class="code-desc">
+                  <strong>Premill reverse holder V2.0 pos 4 coord conversion (리버스 홀더 V2.0 4번 위치 좌표 변환 G59P44 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M5405</span></td>
+                <td class="code-desc">
+                  <strong>Premill reverse holder V2.0 pos 5 coord conversion (리버스 홀더 V2.0 5번 위치 좌표 변환 G59P45 -> G56)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M9001</span></td>
+                <td class="code-desc">
+                  <strong>Disk manual calib A cube milling (디스크 매뉴얼 캘리브레이션 A 큐브 가공)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M9002</span></td>
+                <td class="code-desc">
+                  <strong>Disk manual calib B cube milling (디스크 매뉴얼 캘리브레이션 B 큐브 가공)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+              <tr class="code-row" data-cat="macro">
+                <td style="text-align:center;"><span class="code-badge badge-macro">M9003</span></td>
+                <td class="code-desc">
+                  <strong>Limit pump operation during warm-up (장비 예열 Warm-up 중 절삭유 펌프 구동 제한)</strong>
+                </td>
+                <td><span class="code-note">G코드 전용</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- 검색 결과 없음 메시지 -->
+          <div class="no-result" id="maiErrNoResult">
+            <p>🔍 검색된 오류 코드나 일치하는 키워드가 없습니다.</p>
+          </div>
+        </div>
+
+        <script>
+          let currentMaiCat = 'all';
+
+          function filterMaiErrCategory(cat, btn) {
+            currentMaiCat = cat;
+            const buttons = document.querySelectorAll('#maiErrFilterBar .filter-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterMaiErrorCodes();
+          }
+
+          function filterMaiErrorCodes() {
+            const query = document.getElementById('maiErrSearch').value.toLowerCase().trim();
+            const rows = document.querySelectorAll('#maiErrTable tbody tr.code-row');
+            let visibleCount = 0;
+
+            rows.forEach(row => {
+              const rowCat = row.getAttribute('data-cat');
+              const textContent = row.textContent.toLowerCase();
+
+              const matchCat = (currentMaiCat === 'all') || (rowCat === currentMaiCat);
+              const matchQuery = !query || textContent.includes(query);
+
+              if (matchCat && matchQuery) {
+                row.style.display = '';
+                visibleCount++;
+              } else {
+                row.style.display = 'none';
+              }
+            });
+
+            const tableEl = document.getElementById('maiErrTable');
+            const noResEl = document.getElementById('maiErrNoResult');
+
+            if (visibleCount === 0) {
+              tableEl.style.display = 'none';
+              noResEl.style.display = 'block';
+            } else {
+              tableEl.style.display = '';
+              noResEl.style.display = 'none';
+            }
+          }
+        </script>
       </section>
       <section id="sec-rep-mai-parts-guide" class="content-section">
         <h2 data-i18n="nav-rep-parts-guide"><span data-i18n="mf-auto-668">🔧 소모품/ 부품 교체 가이드</span></h2>
