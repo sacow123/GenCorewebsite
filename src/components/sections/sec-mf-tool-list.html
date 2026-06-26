@@ -1,5 +1,5 @@
 <section id="sec-mf-tool-list" class="content-section">
-        <style>
+        <style><span data-i18n="mf-auto-581">
           /* 1. 펄스 애니메이션 정의 */
           @keyframes pulse-border {
             0% {
@@ -27,7 +27,7 @@
 
           .mf-hotspot {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5);
+            border: 2px solid rgba(255, 204, 0, 0.5) !important;
             background: transparent;
             cursor: pointer;
             z-index: 5;
@@ -52,7 +52,8 @@
           .mf-callout {
             position: absolute;
             min-width: 170px;
-            max-width: 400px;
+            width: max-content !important;
+            max-width: none !important;
             padding: 12px 16px;
             background: rgba(144, 106, 0, 0.88);
             color: #fff8dc;
@@ -88,13 +89,13 @@
             opacity: 1;
             transform: translateY(0);
           }
-        </style>
+        </span></style>
 
-        <h2 data-i18n="nav-mf-tool-list">공구 리스트</h2>
+        <h2 data-i18n="nav-mf-tool-list"><span data-i18n="mf-auto-582">공구 리스트</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">
           🔗 Anchor: <a href="#sec-mf-tool-list" style="color:#a855f7; text-decoration:none;">#sec-mf-tool-list</a>
         </div>
-        <p class="subtitle">MillFix 공구 관리 및 수명 확인</p>
+        <p class="subtitle"><span data-i18n="mf-auto-583">MillFix 공구 관리 및 수명 확인</span></p>
 
         <div class="content-card"
           style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
@@ -104,43 +105,43 @@
               src="./assets/images/sec-mf-tool-list/millfix-tool-list-screen.webp" alt="MillFix 툴 리스트 화면" />
 
             <div
-              style="position: absolute; bottom: -40px; width: 100%; text-align: center; color: #000; font-size: 16px; font-weight: bold;">
+              style="position: absolute; bottom: -40px; width: 100%; text-align: center; color: #000; font-size: 16px; font-weight: bold;"><span data-i18n="mf-auto-189">
               💡 버튼 위에 마우스를 올리시면 명칭과 설명을 확인하실 수 있습니다.
-            </div>
+            </span></div>
 
             <button class="mf-hotspot"
               style="left: 3.2%; top: 17.8%; width: 10.1%; height: 61.2%; border-radius: 22px;"></button>
             <div class="mf-callout" style="left: 22%; top: 50%; min-width: 400px;">
-              <span class="title">공구 사용 시간</span>
-              <span class="desc">각 공구의 사용 시간이 표시되며, 활성 공구는 녹색등이 켜집니다.</span>
+              <span class="title"><span data-i18n="mf-auto-584">공구 사용 시간</span></span>
+              <span class="desc"><span data-i18n="mf-auto-585">각 공구의 사용 시간이 표시되며, 활성 공구는 녹색등이 켜집니다.</span></span>
             </div>
 
             <button class="mf-hotspot"
               style="left: 62.8%; top: 17.8%; width: 10.2%; height: 61.2%; border-radius: 22px;"></button>
             <div class="mf-callout" style="left: 22%; top: 50%; min-width: 400px;">
-              <span class="title">공구 사용 시간</span>
-              <span class="desc">각 공구의 사용 시간이 표시되며, 활성 공구는 녹색등이 켜집니다.</span>
+              <span class="title"><span data-i18n="mf-auto-584">공구 사용 시간</span></span>
+              <span class="desc"><span data-i18n="mf-auto-585">각 공구의 사용 시간이 표시되며, 활성 공구는 녹색등이 켜집니다.</span></span>
             </div>
 
             <button class="mf-hotspot"
               style="left: 75.8%; top: 16.6%; width: 21%; height: 24.5%; border-radius: 28px;"></button>
             <div class="mf-callout" style="left: 51%; top: 20%; min-width: 250px;">
-              <span class="title">스핀들 사용 시간</span>
-              <span class="desc">스핀들이 회전한 누적 시간을 표시합니다.</span>
+              <span class="title"><span data-i18n="mf-auto-586">스핀들 사용 시간</span></span>
+              <span class="desc"><span data-i18n="mf-auto-587">스핀들이 회전한 누적 시간을 표시합니다.</span></span>
             </div>
 
             <button class="mf-hotspot"
               style="left: 76.2%; top: 43.0%; width: 20.0%; height: 15.8%; border-radius: 28px;"></button>
             <div class="mf-callout" style="left: auto; right: 25%; top: 44%; min-width: 200px;">
-              <span class="title">소재 별 권장 공구 수명 자동 입력</span>
-              <span class="desc">소재 별로 권장하는 공구 수명이 입력됩니다.</span>
+              <span class="title"><span data-i18n="mf-auto-588">소재 별 권장 공구 수명 자동 입력</span></span>
+              <span class="desc"><span data-i18n="mf-auto-589">소재 별로 권장하는 공구 수명이 입력됩니다.</span></span>
             </div>
 
             <button class="mf-hotspot"
               style="left: 76.2%; top: 70.6%; width: 20.0%; height: 11.6%; border-radius: 28px;"></button>
             <div class="mf-callout" style="left: auto; right: 25%; top: 59%; min-width: 300px;">
-              <span class="title">공구 수명 도달 알림 전체 리셋</span>
-              <span class="desc">빨간색으로 깜박이는 알림을 전부 리셋합니다.</span>
+              <span class="title"><span data-i18n="mf-auto-590">공구 수명 도달 알림 전체 리셋</span></span>
+              <span class="desc"><span data-i18n="mf-auto-591">빨간색으로 깜박이는 알림을 전부 리셋합니다.</span></span>
             </div>
           </div>
         </div>

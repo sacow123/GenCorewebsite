@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "build": "echo \"No build required for static site\"",
-    "vercel-build": "echo \"No build required for static site\""
+    "vercel-build": "echo \"No build required for static site\"",
+    "check:i18n": "node tools/check-i18n.js",
+    "check:i18n:ko-en": "node tools/check-i18n.js --lang ko,en",
+    "check:i18n:strict": "node tools/check-i18n.js --strict-raw"
   },
   "dependencies": {
     "isomorphic-git": "^1.38.5",

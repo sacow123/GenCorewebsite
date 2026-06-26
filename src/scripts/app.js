@@ -55,8 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) {
       const dict = TRANSLATIONS[currentLang];
       target.querySelectorAll("[data-i18n]").forEach(el => {
+        if (!el.hasAttribute("data-i18n-default")) {
+          el.setAttribute("data-i18n-default", el.innerHTML);
+        }
         const key = el.getAttribute("data-i18n");
-        if (dict[key]) el.innerHTML = dict[key];
+        const fallbackText = el.getAttribute("data-i18n-default");
+        const text = typeof getI18nText === "function" ? getI18nText(currentLang, key, fallbackText) : dict[key];
+        if (text !== undefined) el.innerHTML = text;
       });
     }
 
@@ -68,6 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
           img.src = IMAGES[key];
         }
       });
+    }
+
+    if (currentLang === "en" && typeof sanitizeEnglishDom === "function") {
+      sanitizeEnglishDom(target);
     }
   }
 
@@ -210,10 +219,14 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>`
         ).join('');
 
+        const recommendedTimeLabel = typeof getI18nText === 'function'
+          ? getI18nText(currentLang, 'tooltip-recommended-time', '권장 사용시간')
+          : ((typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang] && TRANSLATIONS[currentLang]['tooltip-recommended-time']) || '권장 사용시간');
+
         toolTooltip.innerHTML = `
           <div class="tooltip-header">
             <span class="tooltip-icon">⏱️</span>
-            <span class="tooltip-title">${data.name} 권장 사용시간</span>
+            <span class="tooltip-title">${data.name} ${recommendedTimeLabel}</span>
           </div>
           <div class="tooltip-body">${rowsHtml}</div>
         `;
