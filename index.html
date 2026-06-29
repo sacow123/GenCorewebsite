@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>GenCore Technical Support Center</title>
   <meta name="description" content="GenCore 제품 매뉴얼 및 기술 지원 센터">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -5164,15 +5165,106 @@
       <!-- REPAIR MANUAL -->
       <!-- 수리 메뉴얼- M AI° -->
       <section id="sec-rep-mai-troubleshoot" class="content-section">
-        <h2 data-i18n="nav-rep-troubleshoot"><span data-i18n="mf-auto-666">🩺 문제 해결</span></h2>
-        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-rep-mai-troubleshoot"
-            style="color:#a855f7; text-decoration:none;">#sec-rep-mai-troubleshoot</a></div>
-        <p class="subtitle"><span data-i18n="mf-auto-808">수리 메뉴얼- M AI°</span></p>
-        <div class="content-card">
-          <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
-        </div>
-      </section>
+              <h2 data-i18n="nav-rep-troubleshoot">🩺 문제 해결</h2>
+              <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
+                Anchor: <a href="#sec-rep-mai-troubleshoot"
+                  style="color:#a855f7; text-decoration:none;">#sec-rep-mai-troubleshoot</a></div>
+              <p class="subtitle">수리 메뉴얼- M AI°</p>
+              <div class="content-card" style="background:transparent; border:none; padding:0; box-shadow:none;">
+                <div style="display:flex; flex-direction:column; gap:24px;">
+
+                  <!-- Item 1: Spindle Alarm -->
+                  <div style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:20px; transition:all 0.2s;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 10px 28px rgba(168,85,247,0.12)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04);'">
+                    <div style="display:flex; align-items:flex-start; gap:14px;">
+                      <div style="width:46px; height:46px; border-radius:12px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:24px; flex-shrink:0;">
+                        🚨
+                      </div>
+                      <div style="display:flex; flex-direction:column; gap:4px;">
+                        <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">[M AI] 동작 중 스핀들 알람 발생 및 회전 정지 해결 방법</h3>
+                        <span style="font-size:13px; color:#a855f7; font-weight:600;">Spindle stops rotating with the spindle alarm</span>
+                      </div>
+                    </div>
+
+                    <!-- Symptom / Image -->
+                    <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px;">
+                      <div style="font-size:14px; font-weight:600; color:#334155;">📌 에러 메시지 및 발생 증상</div>
+                      <p style="margin:0; font-size:14px; color:#4b5563; line-height:1.6;">
+                        장비가 가공 등의 동작 중에 외부 저항 등에 의해 스핀들 알람이 발생하며 동작이 멈추는 현상이 발생한 경우 튜토리얼 영상을 참고하여 해제하세요.
+                      </p>
+                      <div style="margin-top:4px; max-width:480px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff;">
+                        <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">스핀들 알람 발생한 화면</div>
+                        <img src="assets/images/sec-mai-troubleshoot/spindle-alarm.webp" alt="스핀들 알람 발생한 화면" style="width:100%; height:auto; display:block;">
+                      </div>
+                    </div>
+
+                    <!-- Video Button -->
+                    <div>
+                      <button onclick="openVideoModal('[M AI] 웜업 중 스핀들 알람 해결 방법', 'https://www.youtube-nocookie.com/embed/sVgThkrRDQw')" style="display:inline-flex; align-items:center; gap:8px; padding:12px 20px; background:#a855f7; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(168,85,247,0.25);" onmouseover="this.style.background='#9333ea'" onmouseout="this.style.background='#a855f7'">
+                        <span style="font-size:16px;">▶</span> 영상 튜토리얼 보기
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Item 2: ePID Fault -->
+                  <div style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:20px; transition:all 0.2s;" onmouseover="this.style.borderColor='#f59e0b'; this.style.boxShadow='0 10px 28px rgba(245,158,11,0.12)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04);'">
+                    <div style="display:flex; align-items:flex-start; gap:14px;">
+                      <div style="width:46px; height:46px; border-radius:12px; background:#fef3c7; display:flex; align-items:center; justify-content:center; color:#d97706; font-size:24px; flex-shrink:0;">
+                        ⚡
+                      </div>
+                      <div style="display:flex; flex-direction:column; gap:4px;">
+                        <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">[M AI] "ePID fault..." 알람 발생 시 해결 방법</h3>
+                        <span style="font-size:13px; color:#d97706; font-weight:600;">Error: ePID fault… Press RESET on MACH screen</span>
+                      </div>
+                    </div>
+
+                    <!-- Symptom / Image -->
+                    <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px;">
+                      <div style="font-size:14px; font-weight:600; color:#334155;">📌 에러 메시지 및 발생 시점</div>
+                      <p style="margin:0; font-size:14px; color:#4b5563; line-height:1.6;">
+                        장비가 동작 중에 아래와 같은 <strong>"error! ePID fault… Press RESET on MACH screen"</strong> 알람이 발생하며 정지한 경우,
+                      </p>
+                      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-top:4px;">
+                        <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
+                          <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">원점 복귀(Homing) 중 발생 시</div>
+                          <img src="assets/images/sec-mai-troubleshoot/epid-fault-homing.webp" alt="원점 복귀 중 ePID 에러" style="width:100%; height:auto; display:block;">
+                        </div>
+                        <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
+                          <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">M-code 동작 중 발생 시</div>
+                          <img src="assets/images/sec-mai-troubleshoot/epid-fault-mcode.webp" alt="M-code 동작 중 ePID 에러" style="width:100%; height:auto; display:block;">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Resolution Steps -->
+                    <div style="display:flex; flex-direction:column; gap:10px;">
+                      <div style="font-size:14px; font-weight:600; color:#1f2937;">🛠️ 단계별 해결 절차 (3-Step 조치법)</div>
+                      <div style="padding:16px; background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; display:flex; flex-direction:column; gap:12px;">
+                        <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
+                          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#eff6ff; color:#2563eb; font-size:13px; font-weight:700;">1</span>
+                          화면 하단의 <strong style="color:#2563eb;">'M-code'</strong> 아이콘을 클릭하여 활성화된 매크로를 해제합니다.
+                        </div>
+                        <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
+                          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#fef2f2; color:#dc2626; font-size:13px; font-weight:700;">2</span>
+                          비상 정지 <strong style="color:#dc2626;">'E-stop'</strong> 버튼을 클릭합니다.
+                        </div>
+                        <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
+                          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#f0fdf4; color:#16a34a; font-size:13px; font-weight:700;">3</span>
+                          원점 복귀 <strong style="color:#16a34a;">'Homing'</strong> 버튼을 다시 클릭하여 장비를 재초기화합니다.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Video Button -->
+                    <div>
+                      <button onclick="openVideoModal('[M AI] ePID fault 해결 방법', 'https://www.youtube-nocookie.com/embed/K5i7AdEix2k')" style="display:inline-flex; align-items:center; gap:8px; padding:12px 20px; background:#d97706; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(217,119,6,0.25);" onmouseover="this.style.background='#b45309'" onmouseout="this.style.background='#d97706'">
+                        <span style="font-size:16px;">▶</span> 영상 튜토리얼 보기
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
       <section id="sec-rep-mai-errorcode" class="content-section">
         <style>
           #sec-rep-mai-errorcode .rep-container { display: flex; flex-direction: column; gap: 20px; }
@@ -6839,7 +6931,7 @@
       </div>
       <div style="padding:28px 32px; overflow-y:auto; flex:1; font-size:16px; line-height:1.7; color:var(--text-color,#374151);">
         <div style="position:relative; width:100%; aspect-ratio:16/9; border-radius:12px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.15);">
-          <iframe id="video-modal-iframe" src="" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe id="video-modal-iframe" src="" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -6852,13 +6944,35 @@
 
     function openVideoModal(title, url) {
       vTitle.textContent = title;
-      vIframe.src = url;
+      let cleanUrl = url || '';
+      if (cleanUrl.includes('youtube.com/embed/')) {
+        cleanUrl = cleanUrl.replace('youtube.com/embed/', 'youtube-nocookie.com/embed/');
+      } else if (cleanUrl.includes('youtu.be/')) {
+        const vid = cleanUrl.split('youtu.be/')[1].split('?')[0];
+        cleanUrl = 'https://www.youtube-nocookie.com/embed/' + vid;
+      } else if (cleanUrl.includes('youtube.com/watch?v=')) {
+        const vid = cleanUrl.split('watch?v=')[1].split('&')[0];
+        cleanUrl = 'https://www.youtube-nocookie.com/embed/' + vid;
+      }
+      
+      const sep = cleanUrl.includes('?') ? '&' : '?';
+      if (!cleanUrl.includes('rel=')) {
+        cleanUrl += sep + 'rel=0&autoplay=1';
+      }
+
+      const container = document.getElementById('video-modal-iframe')?.parentElement || vModal.querySelector('div > div:nth-child(2) > div');
+      if (container) {
+        container.innerHTML = '<iframe id="video-modal-iframe" src="' + cleanUrl + '" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+      }
       vModal.style.display = 'flex';
     }
 
     function closeVideoModal() {
       vModal.style.display = 'none';
-      vIframe.src = '';
+      const container = document.getElementById('video-modal-iframe')?.parentElement || vModal.querySelector('div > div:nth-child(2) > div');
+      if (container) {
+        container.innerHTML = '<iframe id="video-modal-iframe" src="" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+      }
     }
 
     vClose.addEventListener('click', closeVideoModal);
