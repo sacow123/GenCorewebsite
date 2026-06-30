@@ -5173,98 +5173,68 @@
               <div class="content-card" style="background:transparent; border:none; padding:0; box-shadow:none;">
                 <div style="display:flex; flex-direction:column; gap:24px;">
 
-                  <!-- Item 1: Spindle Alarm -->
-                  <div style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:20px; transition:all 0.2s;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 10px 28px rgba(168,85,247,0.12)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04);'">
-                    <div style="display:flex; align-items:flex-start; gap:14px;">
-                      <div style="width:46px; height:46px; border-radius:12px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:24px; flex-shrink:0;">
-                        🚨
-                      </div>
-                      <div style="display:flex; flex-direction:column; gap:4px;">
-                        <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">[M AI] 동작 중 스핀들 알람 발생 및 회전 정지 해결 방법</h3>
-                        <span style="font-size:13px; color:#a855f7; font-weight:600;">Spindle stops rotating with the spindle alarm</span>
-                      </div>
+                              <!-- Item 1: Spindle Alarm -->
+              <div onclick="openSpindleTroubleshootModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 12px 32px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
+                <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
+                  <div style="display:flex; align-items:flex-start; gap:14px;">
+                    <div style="width:46px; height:46px; border-radius:12px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:24px; flex-shrink:0;">
+                      🚨
                     </div>
-
-                    <!-- Symptom / Image -->
-                    <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px;">
-                      <div style="font-size:14px; font-weight:600; color:#334155;">📌 에러 메시지 및 발생 증상</div>
-                      <p style="margin:0; font-size:14px; color:#4b5563; line-height:1.6;">
-                        장비가 가공 등의 동작 중에 외부 저항 등에 의해 스핀들 알람이 발생하며 동작이 멈추는 현상이 발생한 경우 튜토리얼 영상을 참고하여 해제하세요.
-                      </p>
-                      <div style="margin-top:4px; max-width:480px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff;">
-                        <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">스핀들 알람 발생한 화면</div>
-                        <img src="assets/images/sec-mai-troubleshoot/spindle-alarm.webp" alt="스핀들 알람 발생한 화면" style="width:100%; height:auto; display:block;">
-                      </div>
-                    </div>
-
-                    <!-- Video Button -->
-                    <div>
-                      <button onclick="openVideoModal('[M AI] 웜업 중 스핀들 알람 해결 방법', 'https://www.youtube-nocookie.com/embed/sVgThkrRDQw')" style="display:inline-flex; align-items:center; gap:8px; padding:12px 20px; background:#a855f7; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(168,85,247,0.25);" onmouseover="this.style.background='#9333ea'" onmouseout="this.style.background='#a855f7'">
-                        <span style="font-size:16px;">▶</span> 영상 튜토리얼 보기
-                      </button>
+                    <div style="display:flex; flex-direction:column; gap:4px;">
+                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">[M AI] 동작 중 스핀들 알람 발생 및 회전 정지 해결 방법</h3>
+                      <span style="font-size:13px; color:#a855f7; font-weight:600;">Spindle stops rotating with the spindle alarm</span>
                     </div>
                   </div>
-
-                  <!-- Item 2: ePID Fault -->
-                  <div style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:20px; transition:all 0.2s;" onmouseover="this.style.borderColor='#f59e0b'; this.style.boxShadow='0 10px 28px rgba(245,158,11,0.12)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04);'">
-                    <div style="display:flex; align-items:flex-start; gap:14px;">
-                      <div style="width:46px; height:46px; border-radius:12px; background:#fef3c7; display:flex; align-items:center; justify-content:center; color:#d97706; font-size:24px; flex-shrink:0;">
-                        ⚡
-                      </div>
-                      <div style="display:flex; flex-direction:column; gap:4px;">
-                        <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">[M AI] "ePID fault..." 알람 발생 시 해결 방법</h3>
-                        <span style="font-size:13px; color:#d97706; font-weight:600;">Error: ePID fault… Press RESET on MACH screen</span>
-                      </div>
-                    </div>
-
-                    <!-- Symptom / Image -->
-                    <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px;">
-                      <div style="font-size:14px; font-weight:600; color:#334155;">📌 에러 메시지 및 발생 시점</div>
-                      <p style="margin:0; font-size:14px; color:#4b5563; line-height:1.6;">
-                        장비가 동작 중에 아래와 같은 <strong>"error! ePID fault… Press RESET on MACH screen"</strong> 알람이 발생하며 정지한 경우,
-                      </p>
-                      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-top:4px;">
-                        <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
-                          <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">원점 복귀(Homing) 중 발생 시</div>
-                          <img src="assets/images/sec-mai-troubleshoot/epid-fault-homing.webp" alt="원점 복귀 중 ePID 에러" style="width:100%; height:auto; display:block;">
-                        </div>
-                        <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
-                          <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">M-code 동작 중 발생 시</div>
-                          <img src="assets/images/sec-mai-troubleshoot/epid-fault-mcode.webp" alt="M-code 동작 중 ePID 에러" style="width:100%; height:auto; display:block;">
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Resolution Steps -->
-                    <div style="display:flex; flex-direction:column; gap:10px;">
-                      <div style="font-size:14px; font-weight:600; color:#1f2937;">🛠️ 단계별 해결 절차 (3-Step 조치법)</div>
-                      <div style="padding:16px; background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; display:flex; flex-direction:column; gap:12px;">
-                        <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
-                          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#eff6ff; color:#2563eb; font-size:13px; font-weight:700;">1</span>
-                          화면 하단의 <strong style="color:#2563eb;">'M-code'</strong> 아이콘을 클릭하여 활성화된 매크로를 해제합니다.
-                        </div>
-                        <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
-                          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#fef2f2; color:#dc2626; font-size:13px; font-weight:700;">2</span>
-                          비상 정지 <strong style="color:#dc2626;">'E-stop'</strong> 버튼을 클릭합니다.
-                        </div>
-                        <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
-                          <span style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#f0fdf4; color:#16a34a; font-size:13px; font-weight:700;">3</span>
-                          원점 복귀 <strong style="color:#16a34a;">'Homing'</strong> 버튼을 다시 클릭하여 장비를 재초기화합니다.
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Video Button -->
-                    <div>
-                      <button onclick="openVideoModal('[M AI] ePID fault 해결 방법', 'https://www.youtube-nocookie.com/embed/K5i7AdEix2k')" style="display:inline-flex; align-items:center; gap:8px; padding:12px 20px; background:#d97706; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(217,119,6,0.25);" onmouseover="this.style.background='#b45309'" onmouseout="this.style.background='#d97706'">
-                        <span style="font-size:16px;">▶</span> 영상 튜토리얼 보기
-                      </button>
-                    </div>
+                  <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#f3e8ff; color:#a855f7; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #e9d5ff;">
+                    <span>🔍 해결 방법 자세히 보기</span>
                   </div>
+                </div>
 
+                <!-- Symptom Image Only (*.gif -> webp) -->
+                <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+                  <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 </div>
+                  <div style="max-width:520px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff;">
+                    <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">스핀들 알람 발생 증상 화면</div>
+                    <img src="assets/images/sec-mai-troubleshoot/spindle-alarm-symptom.webp" alt="스핀들 알람 발생 증상 화면" style="width:100%; height:auto; display:block;">
+                  </div>
                 </div>
               </div>
-            </section>
+
+                              <!-- Item 2: ePID Fault -->
+              <div onclick="openEpidTroubleshootModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#f59e0b'; this.style.boxShadow='0 12px 32px rgba(245,158,11,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
+                <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
+                  <div style="display:flex; align-items:flex-start; gap:14px;">
+                    <div style="width:46px; height:46px; border-radius:12px; background:#fef3c7; display:flex; align-items:center; justify-content:center; color:#d97706; font-size:24px; flex-shrink:0;">
+                      ⚡
+                    </div>
+                    <div style="display:flex; flex-direction:column; gap:4px;">
+                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">[M AI] "ePID fault..." 알람 발생 시 해결 방법</h3>
+                      <span style="font-size:13px; color:#d97706; font-weight:600;">Error: ePID fault… Press RESET on MACH screen</span>
+                    </div>
+                  </div>
+                  <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#fef3c7; color:#d97706; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #fde68a;">
+                    <span>🔍 해결 방법 자세히 보기</span>
+                  </div>
+                </div>
+
+                <!-- Symptom Image Only -->
+                <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+                  <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 </div>
+                  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; max-width:680px;">
+                    <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
+                      <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">에러 메세지</div>
+                      <img src="assets/images/sec-mai-troubleshoot/epid-fault-homing.webp" alt="원점 복귀 중 ePID 에러" style="width:100%; height:auto; display:block;">
+                    </div>
+                    <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
+                      <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">에러 메세지에서 OK 버튼 누른 후 스크린 상태</div>
+                      <img src="assets/images/sec-mai-troubleshoot/epid-fault-mcode.webp" alt="M-code 동작 중 ePID 에러" style="width:100%; height:auto; display:block;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </section>
       <section id="sec-rep-mai-errorcode" class="content-section">
         <style>
           #sec-rep-mai-errorcode .rep-container { display: flex; flex-direction: column; gap: 20px; }
@@ -6964,7 +6934,7 @@
       if (container) {
         container.innerHTML = '<iframe id="video-modal-iframe" src="' + cleanUrl + '" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
       }
-      vModal.style.display = 'flex';
+      vModal.style.zIndex = '1200'; vModal.style.display = 'flex';
     }
 
     function closeVideoModal() {
@@ -6977,6 +6947,197 @@
 
     vClose.addEventListener('click', closeVideoModal);
     vModal.addEventListener('click', e => { if (e.target === vModal) closeVideoModal(); });
+  </script>
+
+  <!-- ===== Spindle Troubleshoot Detail Modal ===== -->
+  <div id="spindle-troubleshoot-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px;">
+    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:880px; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
+      <!-- Modal Header -->
+      <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div style="width:46px; height:46px; border-radius:12px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0;">
+            🚨
+          </div>
+          <div style="display:flex; flex-direction:column; gap:2px;">
+            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">[M AI] 동작 중 스핀들 알람 발생 및 회전 정지 해결 방법</h3>
+            <span style="font-size:13px; color:#a855f7; font-weight:600;">Spindle stops rotating with the spindle alarm</span>
+          </div>
+        </div>
+        <button onclick="closeSpindleTroubleshootModal()" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; line-height:1; padding:4px;">&times;</button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div style="padding:26px; overflow-y:auto; display:flex; flex-direction:column; gap:24px;">
+        <!-- Symptom Explanation Section -->
+        <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px;">
+          <div style="font-size:15px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px;">
+            <span>📌 에러 메시지 및 증상 설명</span>
+          </div>
+          <p style="margin:0; font-size:14px; color:#475569; line-height:1.7;">
+            M AI 장비 사용 중 가공 또는 웜업 과정에서 아래 화면과 같이 스핀들 알람이 발생하며 동작이 멈출 수 있습니다.<br>
+            발생한 시점(가공 중 또는 웜업 중)에 맞추어 아래 참고 영상을 참고하여 해제하세요.
+          </p>
+          <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:4px;">
+            <div style="max-width:440px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#fff;">
+              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;">스핀들 알람 발생 증상 화면</div>
+              <img src="assets/images/sec-mai-troubleshoot/spindle-alarm-symptom.webp" alt="스핀들 알람 증상 화면" style="width:100%; height:auto; display:block;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Solutions Header -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div style="font-size:16px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px; border-left:4px solid #a855f7; padding-left:10px;">
+            <span>🔧 해결 방법 </span>
+          </div>
+
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap:16px;">
+            <!-- Solution Case 1 -->
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="padding:4px 10px; background:#fef3c7; color:#d97706; border-radius:6px; font-size:13px; font-weight:700;">상황 1</span>
+                <span style="font-size:15px; font-weight:700; color:#1e293b;">가공 중(소재를 깎는 도중) 발생한 경우</span>
+              </div>
+              <p style="margin:0; font-size:13px; color:#64748b; line-height:1.5;">
+                소재 가공 중 부하 또는 저항으로 인해 스핀들 알람이 발생한 경우의 해제 및 복구 방법입니다.
+              </p>
+              <button onclick="openVideoModal('[M AI] 가공 중 스핀들 알람 해결 방법', 'https://www.youtube-nocookie.com/embed/4m2qy6tKOoM')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#a855f7; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(168,85,247,0.2);" onmouseover="this.style.background='#9333ea'" onmouseout="this.style.background='#a855f7'">
+                <span style="font-size:16px;">▶</span> 참고 영상 보기
+              </button>
+            </div>
+
+            <!-- Solution Case 2 -->
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="padding:4px 10px; background:#eff6ff; color:#2563eb; border-radius:6px; font-size:13px; font-weight:700;">상황 2</span>
+                <span style="font-size:15px; font-weight:700; color:#1e293b;">웜업 중 또는 가공 시작 전 발생한 경우</span>
+              </div>
+              <p style="margin:0; font-size:13px; color:#64748b; line-height:1.5;">
+                장비 예열(Warm-up) 단계 또는 가공을 시작하기 전에 스핀들 알람이 발생한 경우의 해제 방법입니다.
+              </p>
+              <button onclick="openVideoModal('[M AI] 웜업 중 스핀들 알람 해결 방법', 'https://www.youtube-nocookie.com/embed/sVgThkrRDQw')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#2563eb; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(37,99,235,0.2);" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
+                <span style="font-size:16px;">▶</span> 참고 영상 보기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
+        <button onclick="closeSpindleTroubleshootModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;">닫기</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpindleTroubleshootModal() {
+      const m = document.getElementById('spindle-troubleshoot-modal');
+      if (m) m.style.display = 'flex';
+    }
+    function closeSpindleTroubleshootModal() {
+      const m = document.getElementById('spindle-troubleshoot-modal');
+      if (m) m.style.display = 'none';
+    }
+    document.getElementById('spindle-troubleshoot-modal')?.addEventListener('click', e => {
+      if (e.target.id === 'spindle-troubleshoot-modal') closeSpindleTroubleshootModal();
+    });
+  </script>
+
+  <!-- ===== ePID Troubleshoot Detail Modal ===== -->
+  <div id="epid-troubleshoot-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px;">
+    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:880px; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
+      <!-- Modal Header -->
+      <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div style="width:46px; height:46px; border-radius:12px; background:#fef3c7; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0;">
+            ⚡
+          </div>
+          <div style="display:flex; flex-direction:column; gap:2px;">
+            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">[M AI] "ePID fault..." 알람 발생 시 해결 방법</h3>
+            <span style="font-size:13px; color:#d97706; font-weight:600;">Error: ePID fault… Press RESET on MACH screen</span>
+          </div>
+        </div>
+        <button onclick="closeEpidTroubleshootModal()" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; line-height:1; padding:4px;">&times;</button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div style="padding:26px; overflow-y:auto; display:flex; flex-direction:column; gap:24px;">
+        <!-- Symptom Explanation Section -->
+        <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px;">
+          <div style="font-size:15px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px;">
+            <span>📌 에러 메시지 및 증상 설명</span>
+          </div>
+          <p style="margin:0; font-size:14px; color:#475569; line-height:1.7;">
+            장비가 동작 중에 아래 화면과 같이 <strong>"error! ePID fault… Press RESET on MACH screen"</strong> 알람이 발생하며 정지될 수 있습니다.<br>
+            아래의 단계별 해제 방법 및 참고 영상을 참고하여 장비를 정상 상태로 복구하세요.
+          </p>
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin-top:4px;">
+            <div style="border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#fff;">
+              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;">에러 메세지</div>
+              <img src="assets/images/sec-mai-troubleshoot/epid-fault-homing.webp" alt="원점 복귀 중 ePID 에러" style="width:100%; height:auto; display:block;">
+            </div>
+            <div style="border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#fff;">
+              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;">에러 메세지에서 OK 버튼 누른 후 스크린 상태</div>
+              <img src="assets/images/sec-mai-troubleshoot/epid-fault-mcode.webp" alt="M-code 동작 중 ePID 에러" style="width:100%; height:auto; display:block;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Resolution Steps Section -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div style="font-size:16px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px; border-left:4px solid #d97706; padding-left:10px;">
+            <span>🛠️ 에러 해제 단계별 방법</span>
+          </div>
+          <div style="padding:18px; background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; display:flex; flex-direction:column; gap:14px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+            <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#eff6ff; color:#2563eb; font-size:14px; font-weight:700; flex-shrink:0;">1</span>
+              <span>화면 하단의 <strong style="color:#2563eb;">'M-code'</strong> 아이콘을 클릭하여 활성화된 매크로를 해제합니다.</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#fef2f2; color:#dc2626; font-size:14px; font-weight:700; flex-shrink:0;">2</span>
+              <span>Ready 상태로 복귀 <strong style="color:#dc2626;">'E-stop'</strong> 버튼을 클릭하여 Ready 상태로 복귀합니다.</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f0fdf4; color:#16a34a; font-size:14px; font-weight:700; flex-shrink:0;">3</span>
+              <span>원점 복귀 <strong style="color:#16a34a;">'Homing'</strong> 버튼을 다시 클릭하여 장비를 다시 초기화합니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutorial Video Section -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div style="font-size:16px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px; border-left:4px solid #d97706; padding-left:10px;">
+            <span>🔧 참고 영상</span>
+          </div>
+          <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+            <p style="margin:0; font-size:14px; color:#64748b; line-height:1.5;">
+              해제 방법을 영상을 통해 자세히 확인하십시오.
+            </p>
+            <button onclick="openVideoModal('[M AI] ePID fault 해결 방법', 'https://www.youtube-nocookie.com/embed/K5i7AdEix2k')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#d97706; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(217,119,6,0.2);" onmouseover="this.style.background='#b45309'" onmouseout="this.style.background='#d97706'">
+              <span style="font-size:16px;">▶</span> 참고 영상 보기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
+        <button onclick="closeEpidTroubleshootModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;">닫기</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openEpidTroubleshootModal() {
+      const m = document.getElementById('epid-troubleshoot-modal');
+      if (m) m.style.display = 'flex';
+    }
+    function closeEpidTroubleshootModal() {
+      const m = document.getElementById('epid-troubleshoot-modal');
+      if (m) m.style.display = 'none';
+    }
+    document.getElementById('epid-troubleshoot-modal')?.addEventListener('click', e => {
+      if (e.target.id === 'epid-troubleshoot-modal') closeEpidTroubleshootModal();
+    });
   </script>
 
   <!-- ===== Feature Modal ===== -->
@@ -7831,7 +7992,7 @@
         html += `</span><div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px dashed #e5e7eb;">`;
         for (let i = 0; i < data.steps.length; i++) {
           let shortHeading = data.steps[i].heading.split('(')[0].trim();
-          html += `<button onclick="document.getElementById('modal-step-${i}').scrollIntoView({behavior:'smooth', block:'start'})" 
+          html += `<button onclick="document.getElementById('modal-step-${i}').scrollIntoView({behavior:'smooth', block:'start'})"
             style="background:#f3e8ff; border:1px solid #d8b4fe; color:#6b21a8; padding:6px 12px; border-radius:16px; font-size:13px; font-weight:600; cursor:pointer; transition:all 0.2s;"
             onmouseover="this.style.background='#e9d5ff'" onmouseout="this.style.background='#f3e8ff'">
             ${shortHeading}
@@ -7848,7 +8009,7 @@
           } else if (embedUrl.includes('watch?v=')) {
             embedUrl = 'https://www.youtube.com/embed/' + embedUrl.split('watch?v=')[1].split('&')[0];
           }
-        
+
         html += `</span><div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:24px;">
           <iframe src="${embedUrl}" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>`;
@@ -7859,11 +8020,11 @@
         html += `<div style="display:flex; align-items:center; gap:12px; margin:24px 0 16px;">`;
         html += `<h4 id="modal-step-${i}" style="margin:0;font-size:18px;font-weight:700;color:#1f2937;border-left:4px solid #a855f7;padding-left:12px;scroll-margin-top:20px;">${step.heading}</h4>`;
         html += `</div>`;
-        
+
         if (step.description) {
           html += `<p style="margin:-8px 0 16px 0; color:#4b5563; font-size:15px; word-break:keep-all;">${step.description}</p>`;
         }
-        
+
         if (step.youtubes && step.youtubes.length > 0) {
           html += `<div style="display:grid; grid-template-columns: repeat(${step.youtubes.length > 1 ? 2 : 1}, 1fr); gap:16px; margin-bottom:24px;">`;
           for (let url of step.youtubes) {
@@ -7885,7 +8046,7 @@
           } else if (embedUrl.includes('watch?v=')) {
             embedUrl = 'https://www.youtube.com/embed/' + embedUrl.split('watch?v=')[1].split('&')[0];
           }
-          
+
           html += `<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:24px;">
             <iframe src="${embedUrl}" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>`;
@@ -7893,21 +8054,21 @@
         if (step.items) {
           for (const item of step.items) {
             html += `<div style="margin-bottom:24px; border:1px solid #e5e7eb; border-radius:12px; padding:20px; background:#f9fafb; box-shadow:0 2px 8px rgba(0,0,0,0.03);">`;
-            
+
             if (item.video) {
               html += `<div style="margin-bottom:16px; text-align:center;"><video src="${item.video}" controls style="max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></video></div>`;
             }
-            
+
             if (item.img) {
               html += `<div style="margin-bottom:16px; text-align:center;"><img src="${item.img}" loading="lazy" style="max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>`;
             }
-            
+
             if (item.imgs) {
               for (const imgSrc of item.imgs) {
                 html += `<div style="margin-bottom:16px; text-align:center;"><img src="${imgSrc}" loading="lazy" style="max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>`;
               }
             }
-            
+
             if (item.imgsRow) {
               html += `<div style="display:flex; gap:16px; margin-bottom:16px; justify-content:center;">`;
               for (const imgSrc of item.imgsRow) {
@@ -7915,13 +8076,13 @@
               }
               html += `</div>`;
             }
-            
+
             html += `<div style="font-weight:600; color:#374151; font-size:16px;">${item.label}</div>`;
-            
+
             if (item.desc) {
               html += `<p style="margin:8px 0 0 0; color:#6b7280; font-size:15px; line-height:1.6;">${item.desc}</p>`;
             }
-            
+
             if (item.bullets) {
               html += '<ul style="margin:12px 0 0 20px; padding:0; list-style:disk;">';
               for (const b of item.bullets) {
@@ -7929,7 +8090,7 @@
               }
               html += '</ul>';
             }
-            
+
             html += `</div>`; // wrapper close
           }
         }
@@ -8029,7 +8190,7 @@
     // 섹션 전환 후에도 적용되도록 MutationObserver
     new MutationObserver(initFeatureCards).observe(document.body, { childList: true, subtree: true });
   })();
-  
+
 </script>
 
   <script src="htmls/measurement_tool.js"></script>
