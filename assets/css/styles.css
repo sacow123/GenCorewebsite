@@ -24,6 +24,7 @@ body {
   --radius: 10px;
   --transition: 0.25s ease;
   --sidebar-w: 340px;
+  --footer-h: 24px;
 }
 
 /* ===== HEADER ===== */
@@ -67,7 +68,7 @@ body {
 .lang-dropdown button.active { background: var(--primary-dark); color: #fff; }
 
 /* ===== LAYOUT ===== */
-.app-layout { display: flex; height: calc(100vh - 60px); overflow: hidden; }
+.app-layout { display: flex; height: calc(100vh - 60px - var(--footer-h)); overflow: hidden; }
 
 /* ===== SIDEBAR ===== */
 .sidebar {
@@ -167,8 +168,9 @@ body {
 
 /* ===== FOOTER ===== */
 .site-footer {
-  text-align: center; padding: 16px;
-  font-size: 12px; color: var(--text-muted);
+  display: flex; align-items: center; justify-content: center;
+  height: var(--footer-h); padding: 0 16px;
+  font-size: 12px; line-height: 1; color: var(--text-muted);
   border-top: 1px solid var(--border);
 }
 
