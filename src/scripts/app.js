@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    if (currentLang === "en" && typeof sanitizeEnglishDom === "function") {
-      sanitizeEnglishDom(target);
+    if (currentLang !== "ko" && typeof sanitizeMissingTranslationDom === "function") {
+      sanitizeMissingTranslationDom(currentLang, target);
     }
   }
 

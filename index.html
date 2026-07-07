@@ -8132,8 +8132,8 @@
           if (text !== undefined) el.innerHTML = text;
         });
       }
-      if (currentLang === 'en' && typeof sanitizeEnglishDom === 'function') {
-        sanitizeEnglishDom(modal);
+      if (currentLang !== 'ko' && typeof sanitizeMissingTranslationDom === 'function') {
+        sanitizeMissingTranslationDom(currentLang, modal);
       }
     }
     window.openFeatureModal = openFeatureModal;

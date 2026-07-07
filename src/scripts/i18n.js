@@ -3058,8 +3058,17 @@ function getI18nText(lang, key, fallbackText) {
   return value;
 }
 
-function sanitizeEnglishDom(root = document.body) {
+const MISSING_TRANSLATION_LABELS = {
+  en: "English translation pending.",
+  ja: "Japanese translation pending.",
+  es: "Spanish translation pending."
+};
+
+function sanitizeMissingTranslationDom(lang, root = document.body) {
   if (!root) return;
+  const replacementText = MISSING_TRANSLATION_LABELS[lang];
+  if (!replacementText) return;
+
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
       const parent = node.parentElement;
@@ -3072,8 +3081,27 @@ function sanitizeEnglishDom(root = document.body) {
   const nodes = [];
   while (walker.nextNode()) nodes.push(walker.currentNode);
   nodes.forEach(node => {
-    if (node.nodeValue.trim()) node.nodeValue = "English translation pending.";
+    if (node.nodeValue.trim()) node.nodeValue = replacementText;
   });
+}
+
+function sanitizeEnglishDom(root = document.body) {
+  sanitizeMissingTranslationDom("en", root);
+}
+
+const ORIGINAL_CONTENT_SECTION_HTML = new Map();
+
+function captureOriginalContentSections() {
+  document.querySelectorAll(".content-section[id]").forEach(section => {
+    if (!ORIGINAL_CONTENT_SECTION_HTML.has(section.id)) {
+      ORIGINAL_CONTENT_SECTION_HTML.set(section.id, section.innerHTML);
+    }
+  });
+}
+
+function restoreContentSection(section) {
+  if (!section || !section.id || !ORIGINAL_CONTENT_SECTION_HTML.has(section.id)) return;
+  section.innerHTML = ORIGINAL_CONTENT_SECTION_HTML.get(section.id);
 }
 
 const LANG_LABELS = {
@@ -3098,6 +3126,10 @@ try {
 }
 
 function applyLanguage(lang) {
+  captureOriginalContentSections();
+  const activeSection = document.querySelector(".content-section.active");
+  restoreContentSection(activeSection);
+
   currentLang = lang;
   try {
     localStorage.setItem("gencore-lang", lang);
@@ -3127,10 +3159,9 @@ function applyLanguage(lang) {
   document.documentElement.dataset.lang = lang;
 
   // Re-render the active section to update its dynamic content
-  const activeSection = document.querySelector(".content-section.active");
   if (activeSection && typeof renderSection === "function") {
     renderSection(activeSection.id);
-  } else if (lang === "en" && activeSection) {
-    sanitizeEnglishDom(activeSection);
+  } else if (lang !== "ko" && activeSection) {
+    sanitizeMissingTranslationDom(lang, activeSection);
   }
 }
