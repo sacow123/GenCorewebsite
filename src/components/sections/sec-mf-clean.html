@@ -25,170 +25,47 @@
         </div>
 
         <style>
-          .clean-stage {
+          #sec-mf-clean .mf-clean-stage {
             position: relative;
             width: 100%;
             aspect-ratio: 1586 / 930;
             background: #000;
             overflow: visible;
             border-radius: var(--radius);
+            isolation: isolate;
           }
 
-          .clean-hotspot {
+          #sec-mf-clean .mf-clean-stage img {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5);
-            background: transparent;
-            cursor: pointer;
-            z-index: 5;
-            transition: opacity .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
-            outline: none;
-            animation: pulse-border 2s infinite;
-            padding: 0;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+            border-radius: inherit;
+            user-select: none;
+            -webkit-user-drag: none;
           }
 
-          /* Hide all hotspots when ANY is hovered */
-          .clean-stage:has(.clean-hotspot:hover) .clean-hotspot {
-            opacity: 0;
-            animation: none;
-            pointer-events: none;
-          }
-
-          /* Highlight the hovered one */
-          .clean-stage:has(.clean-hotspot:hover) .clean-hotspot:hover {
-            opacity: 1;
-            pointer-events: auto;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
-          }
-
-          /* Highlight group-3 together (used for multiple HTML boxes, if any) */
-          .clean-stage:has(.clean-hotspot.group-3:hover) .clean-hotspot.group-3 {
-            opacity: 1;
-            pointer-events: auto;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
-          }
-
-          /* SVG Hotspot specific styles */
-          svg.clean-hotspot {
-            border: none !important;
-            background: transparent !important;
-            box-shadow: none !important;
-            animation: none !important;
-            overflow: visible;
-          }
-          svg.clean-hotspot path {
-            fill: transparent;
-            stroke: rgba(255, 204, 0, 0.5);
-            stroke-width: 2.5px;
-            stroke-linejoin: round;
-            transition: fill .15s ease, stroke .15s ease, filter .15s ease;
-            animation: pulse-svg-stroke 2s infinite;
-            pointer-events: auto;
-          }
-          /* Stop SVG path animation on global hover */
-          .clean-stage:has(.clean-hotspot:hover) svg.clean-hotspot path {
-            animation: none;
-          }
-
-          @keyframes pulse-svg-stroke {
-            0% { filter: drop-shadow(0 0 0 rgba(255, 204, 0, 0.7)); }
-            70% { filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0)); }
-            100% { filter: drop-shadow(0 0 0 rgba(255, 204, 0, 0)); }
-          }
-          
-          /* Highlight SVG */
-          .clean-stage:has(.clean-hotspot:hover) svg.clean-hotspot:hover {
-            opacity: 1;
-            pointer-events: auto;
-          }
-          .clean-stage:has(.clean-hotspot:hover) svg.clean-hotspot:hover path,
-          .clean-stage:has(.clean-hotspot.group-3:hover) svg.clean-hotspot.group-3 path {
-            stroke: rgba(255, 204, 0, 0.95);
-            fill: rgba(255, 204, 0, 0.10);
-            filter: drop-shadow(0 0 2px rgba(255, 204, 0, 0.18));
-            animation: none;
-          }
-
-          .clean-callout {
-            position: absolute;
-            min-width: 170px;
-            max-width: 420px;
-            padding: 10px 18px;
-            background: rgba(144, 106, 0, 0.92);
-            color: #fff;
-            border: 2px solid #ffcc00;
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-            opacity: 0;
-            transform: translateY(6px);
-            transition: opacity .15s ease, transform .15s ease;
-            pointer-events: none;
-            z-index: 10;
-            text-align: center;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: -0.3px;
-          }
-
-          .clean-stage:has(.clean-hotspot:hover) .clean-hotspot:hover + .clean-callout {
-            opacity: 1;
-            transform: translateY(0);
-          }
-          
-          /* Show group 3 callout */
-          .clean-stage:has(.clean-hotspot.group-3:hover) .clean-callout.group-3-callout,
-          .clean-stage:has(svg.clean-hotspot:hover) .clean-callout.group-3-callout {
-            opacity: 1;
-            transform: translateY(0);
+          /* Clean-page-only overlay namespace. Keep all future overlays under mf-clean-*. */
+          #sec-mf-clean .mf-clean-border,
+          #sec-mf-clean .mf-clean-popup {
+            box-sizing: border-box;
           }
         </style>
 
-        <!-- Step 3: Interactive Stage 1 -->
         <p style="text-align: center; color: #a855f7; font-size: 16px; font-weight: bold; margin-bottom: 12px;"><span data-i18n="mf-auto-180">
           💡 사진 위에 마우스를 올리시면 설명을 확인하실 수 있습니다.
         </span></p>
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
-          <div class="clean-stage">
-            <img loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; border-radius:inherit;" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 1" />
-            
-            <!-- Single SVG L-Shape Hotspot covering the 5 images -->
-            <svg class="clean-hotspot" viewBox="0 0 100 100" preserveAspectRatio="none" style="left: 3.5%; top: 15.2%; width: 65.5%; height: 68.5%;">
-              <path d="M 0 0 L 100 0 L 100 46 L 68 46 L 68 100 L 0 100 Z" vector-effect="non-scaling-stroke" />
-            </svg>
-            
-            <div class="clean-callout group-3-callout" style="left: 17.5%; top: 8%; min-width: 320px;"><span data-i18n="mf-auto-181">
-              스핀들 및 c클램프가 해당 이미지대로 위치합니다.
-            </span></div>
+          <div class="mf-clean-stage" id="mf-clean-stage-1" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 1" />
           </div>
         </div>
 
-        <!-- Step 4: Interactive Stage 2 -->
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
-          <div class="clean-stage">
-            <img loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; border-radius:inherit;" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 2" />
-
-            <!-- Homing -->
-            <button class="clean-hotspot pill" style="left: 78.5%; top: 19.5%; width: 15.5%; height: 9.0%; border-radius: 999px;"></button>
-            <div class="clean-callout" style="left: 73.5%; top: 11.5%; min-width: 250px;"><span data-i18n="mf-auto-182">홈잉(Homing) 동작을 실시합니다</span></div>
-
-            <!-- G54 Coordinates -->
-            <button class="clean-hotspot" style="left: 76.5%; top: 30.5%; width: 19.5%; height: 27.5%; border-radius: 12px;"></button>
-            <div class="clean-callout" style="left: 77.0%; top: 59.5%; min-width: 180px;"><span data-i18n="mf-auto-183">각 축의 현재 위치 좌표</span></div>
-
-            <!-- Spindle Move -->
-            <button class="clean-hotspot" style="left: 48.8%; top: 51.5%; width: 20.2%; height: 16.5%; border-radius: 16px;"></button>
-            <div class="clean-callout" style="left: 48.5%; top: 44%; min-width: 240px;"><span data-i18n="mf-auto-184">스핀들이 도어 앞으로 이동합니다</span></div>
-
-            <!-- Vacuum -->
-            <button class="clean-hotspot" style="left: 76.5%; top: 60.5%; width: 19.5%; height: 12.5%; border-radius: 12px;"></button>
-            <div class="clean-callout" style="left: 75.0%; top: 74.0%; min-width: 220px;"><span data-i18n="mf-auto-185">연결된 집진기를 켜고 끕니다</span></div>
-
-            <!-- Collet Chuck -->
-            <button class="clean-hotspot" style="left: 49.0%; top: 70.0%; width: 19.8%; height: 12.5%; border-radius: 12px;"></button>
-            <div class="clean-callout" style="left: 49.0%; top: 83%; min-width: 200px;"><span data-i18n="mf-auto-186">콜렛 척을 열고 닫습니다</span></div>
+          <div class="mf-clean-stage" id="mf-clean-stage-2" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 2" />
           </div>
         </div>
       </section>

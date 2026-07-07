@@ -3290,157 +3290,214 @@
           </div>
         </div>
 
-        <!-- Step 3: Axis Jog 메인 화면 (인터랙티브) -->
+        <!-- Step 3: Axis Jog 메인 화면 -->
         <style>
-          /* ===== JOG MODE HOTSPOT SYSTEM ===== */
-          @keyframes jog-pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
-          }
-
-          .jog-stage {
+          #sec-mf-jog .mf-jog-stage {
             position: relative;
             width: 100%;
             aspect-ratio: 1586 / 930;
             background: #000;
             overflow: visible;
             border-radius: var(--radius);
+            isolation: isolate;
           }
 
-          .jog-hotspot {
+          #sec-mf-jog .mf-jog-stage img {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5) !important;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+            user-select: none;
+            -webkit-user-drag: none;
+            border-radius: inherit;
+          }
+
+          /* Jog-only overlay namespace. Keep all future overlays under mf-jog-*. */
+          #sec-mf-jog .mf-jog-border,
+          #sec-mf-jog .mf-jog-popup {
+            box-sizing: border-box;
+          }
+
+          #sec-mf-jog .mf-jog-border {
+            position: absolute;
+            border: 5px solid #ffcc00;
+            border-radius: 14px;
             background: transparent;
             cursor: pointer;
+            pointer-events: auto;
             z-index: 5;
-            transition: opacity .2s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
             outline: none;
-            animation: jog-pulse 2s infinite;
-            padding: 0;
+            animation: mf-jog-pulse 2s infinite;
+            transition: opacity .15s ease, background .15s ease, box-shadow .15s ease;
           }
 
-          /* When ANY hotspot is hovered: hide all OTHER hotspots */
-          .jog-stage.jog-has-hover .jog-hotspot {
+          @keyframes mf-jog-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
+          }
+
+          #sec-mf-jog .mf-jog-stage:has(.mf-jog-border:hover) .mf-jog-border {
             opacity: 0;
             animation: none;
-            pointer-events: none;
-          }
-          /* The hovered one stays visible and highlighted */
-          .jog-stage.jog-has-hover .jog-hotspot.jog-active {
-            opacity: 1;
-            pointer-events: auto;
-            animation: none;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.25);
           }
 
-          /* Callout tooltip */
-          .jog-callout {
+          #sec-mf-jog .mf-jog-stage:has(.mf-jog-border:hover) .mf-jog-border:hover {
+            opacity: 1;
+            background: rgba(255, 204, 0, 0.10);
+            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
+          }
+
+          #sec-mf-jog .mf-callout-custom {
             position: absolute;
-            min-width: 200px;
+            min-width: 250px;
             max-width: 420px;
-            padding: 14px 18px;
-            background: rgba(144, 106, 0, 0.92);
+            padding: 12px 16px;
+            background: rgba(20, 15, 35, 0.45);
             color: #fff8dc;
-            border: 3px solid #ffcc00;
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.32);
             opacity: 0;
             transform: translateY(6px);
-            transition: opacity .18s ease, transform .18s ease;
+            transition: opacity .15s ease, transform .15s ease;
             pointer-events: none;
             z-index: 10;
             text-align: center;
-            border-radius: 10px;
           }
-          .jog-callout .title {
+
+          #sec-mf-jog .mf-callout-custom .title {
             display: block;
             font-size: 22px;
             line-height: 1.15;
             font-weight: 800;
             color: #fff;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
           }
-          .jog-callout .desc {
+
+          #sec-mf-jog .mf-callout-custom .desc {
             display: block;
-            font-size: 21px;
-            line-height: 1.45;
+            font-size: 18px;
+            line-height: 1.35;
+            font-weight: 500;
             color: #fff4cf;
           }
 
-          /* Show callout only when its hotspot is active */
-          .jog-stage.jog-has-hover .jog-hotspot.jog-active + .jog-callout {
+          #sec-mf-jog .mf-callout-custom.center {
+            transform: translate(-50%, 6px);
+          }
+
+          #sec-mf-jog .mf-callout-custom.center.bottom-arrow {
+            transform: translate(-50%, -100%);
+          }
+
+          #sec-mf-jog .mf-callout-custom.center.top-arrow {
+            transform: translate(-50%, 0);
+          }
+
+          #sec-mf-jog .mf-callout-custom.bottom-arrow::before,
+          #sec-mf-jog .mf-callout-custom.bottom-arrow::after,
+          #sec-mf-jog .mf-callout-custom.top-arrow::before,
+          #sec-mf-jog .mf-callout-custom.top-arrow::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            pointer-events: none;
+          }
+
+          #sec-mf-jog .mf-callout-custom.bottom-arrow::before {
+            bottom: -16px;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-top: 16px solid #ffcc00;
+          }
+
+          #sec-mf-jog .mf-callout-custom.bottom-arrow::after {
+            bottom: -13px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 14px solid rgba(20, 15, 35, 0.75);
+          }
+
+          #sec-mf-jog .mf-callout-custom.top-arrow::before {
+            top: -16px;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-bottom: 16px solid #ffcc00;
+          }
+
+          #sec-mf-jog .mf-callout-custom.top-arrow::after {
+            top: -13px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 14px solid rgba(20, 15, 35, 0.75);
+          }
+
+          #sec-mf-jog .mf-jog-border:hover + .mf-callout-custom {
             opacity: 1;
             transform: translateY(0);
+          }
+
+          #sec-mf-jog .mf-jog-border:hover + .mf-callout-custom.center {
+            transform: translate(-50%, 0);
+          }
+
+          #sec-mf-jog .mf-jog-border:hover + .mf-callout-custom.center.bottom-arrow {
+            transform: translate(-50%, -100%);
+          }
+
+          #sec-mf-jog .mf-jog-border:hover + .mf-callout-custom.center.top-arrow {
+            transform: translate(-50%, 0);
           }
         </style>
 
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
-          <div class="jog-stage" id="jog-stage">
-            <img loading="lazy"
-              style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; user-select:none; -webkit-user-drag:none; border-radius:inherit;"
-              src="./assets/images/sec-mf-jog/millfix-axis-jog-screen.webp" alt="MillFix Axis Jog 화면" />
+          <div class="mf-jog-stage" id="mf-jog-stage" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-jog/millfix-axis-jog-screen.webp" alt="MillFix Axis Jog 화면" />
+
+            <div class="mf-jog-border" style="left:3.7%; top:14.2%; width:19.8%; height:29.7%;"></div>
+            <div class="mf-callout-custom center top-arrow" style="left:15.2%; top:43.5%; min-width:250px;">
+              <span class="title"><span data-i18n="mf-auto-920" data-i18n-default="Current Position">Current Position</span></span>
+              <span class="desc"><span data-i18n="mf-auto-921" data-i18n-default="현재 스핀들의 좌표를 나타냅니다.">현재 스핀들의 좌표를 나타냅니다.</span></span>
+            </div>
+
+            <div class="mf-jog-border" style="left:3.7%; top:46.3%; width:19.8%; height:30.8%;"></div>
+            <div class="mf-callout-custom center top-arrow" style="left:15.2%; top:76.6%; min-width:250px;">
+              <span class="title"><span data-i18n="mf-auto-922" data-i18n-default="Jog Speed">Jog Speed</span></span>
+              <span class="desc"><span data-i18n="mf-auto-923" data-i18n-default="스핀들의 이동 속도를 조절합니다.">스핀들의 이동 속도를 조절합니다.</span></span>
+            </div>
+
+            <div class="mf-jog-border" style="left:33.2%; top:12.4%; width:43.8%; height:66.3%;"></div>
+            <div class="mf-callout-custom center top-arrow" style="left:53.8%; top:78.3%; min-width:320px;">
+              <span class="title"><span data-i18n="mf-auto-924" data-i18n-default="Spindle Operation">Spindle Operation</span></span>
+              <span class="desc"><span data-i18n="mf-auto-925" data-i18n-default="스핀들을 화면속 화살표 터치로 조작할 수 있습니다.">스핀들을 화면속 화살표 터치로 조작할 수 있습니다.</span></span>
+            </div>
+
+            <div class="mf-jog-border" style="left:78.8%; top:13.2%; width:19.1%; height:66.0%;"></div>
+            <div class="mf-callout-custom center top-arrow" style="left:82.2%; top:78.9%; min-width:320px;">
+              <span class="title"><span data-i18n="mf-auto-926" data-i18n-default="Spindle Operation">Spindle Operation</span></span>
+              <span class="desc"><span data-i18n="mf-auto-927" data-i18n-default="스핀들을 키보드를 통해 조작할 수 있습니다.">스핀들을 키보드를 통해 조작할 수 있습니다.</span></span>
+            </div>
 
             <div
               style="position: absolute; bottom: -40px; width: 100%; text-align: center; color: #000; font-size: 16px; font-weight: bold;"><span data-i18n="mf-auto-189">
               💡 버튼 위에 마우스를 올리시면 명칭과 설명을 확인하실 수 있습니다.
             </span></div>
-
-            <!-- Hotspot 1: Current Position (좌측 상단) -->
-            <button class="jog-hotspot"
-              style="left:3.2%;top:11.0%;width:24.2%;height:33.5%;border-radius:12px;"></button>
-            <div class="jog-callout" style="left:28.0%;top:13.0%;min-width:280px;">
-              <span class="title">Current Position</span>
-              <span class="desc"><span data-i18n="mf-auto-322">현재 스핀들의 좌표를 나타냅니다.</span>
-            </div>
-
-            <!-- Hotspot 2: Jog Speed (좌측 하단) -->
-            <button class="jog-hotspot"
-              style="left:2.2%;top:44.8%;width:24.2%;height:33.5%;border-radius:12px;"></button>
-            <div class="jog-callout" style="left:28.0%;top:52.0%;min-width:280px;">
-              <span class="title">Jog Speed</span>
-              <span class="desc"><span data-i18n="mf-auto-323">스핀들의 이동속도를 조절합니다.</span>
-            </div>
-
-            <!-- Hotspot 3: Spindle Operation - Touch (중앙 영역) -->
-            <button class="jog-hotspot"
-              style="left:29.0%;top:8.2%;width:48.5%;height:76.0%;border-radius:14px;"></button>
-            <div class="jog-callout" style="left:29.5%;top:85.5%;min-width:380px;">
-              <span class="title">Spindle Operation</span>
-              <span class="desc"><span data-i18n="mf-auto-324">화살표를 터치해 스핀들을 조작할 수 있습니다.</span>
-            </div>
-
-            <!-- Hotspot 4: Spindle Operation - Keyboard (우측 영역) -->
-            <button class="jog-hotspot"
-              style="left:79.0%;top:8.2%;width:19.5%;height:76.0%;border-radius:14px;"></button>
-            <div class="jog-callout" style="left:55.0%;top:85.5%;min-width:350px;">
-              <span class="title">Spindle Operation</span>
-              <span class="desc"><span data-i18n="mf-auto-325">키보드를 통해 스핀들을 조작할 수 있습니다.</span>
-            </div>
           </div>
         </div>
-
-        <script>
-          // Jog mode hotspot hover logic: hover one → hide others + show callout
-          document.addEventListener('DOMContentLoaded', function() {
-            const jogStage = document.getElementById('jog-stage');
-            if (!jogStage) return;
-            const jogHotspots = jogStage.querySelectorAll('.jog-hotspot');
-
-            jogHotspots.forEach(function(btn) {
-              btn.addEventListener('mouseenter', function() {
-                jogStage.classList.add('jog-has-hover');
-                btn.classList.add('jog-active');
-              });
-              btn.addEventListener('mouseleave', function() {
-                jogStage.classList.remove('jog-has-hover');
-                btn.classList.remove('jog-active');
-              });
-            });
-          });
-        </script>
       </section>
+
+
+
+
+
+
 
       <section id="sec-mf-clean" class="content-section">
         <h2 data-i18n="nav-mf-clean"><span data-i18n="mf-auto-175">🧹 가공룸 청소</span></h2>
@@ -3469,173 +3526,52 @@
         </div>
 
         <style>
-          .clean-stage {
+          #sec-mf-clean .mf-clean-stage {
             position: relative;
             width: 100%;
             aspect-ratio: 1586 / 930;
             background: #000;
             overflow: visible;
             border-radius: var(--radius);
+            isolation: isolate;
           }
 
-          .clean-hotspot {
+          #sec-mf-clean .mf-clean-stage img {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5) !important;
-            background: transparent;
-            cursor: pointer;
-            z-index: 5;
-            transition: opacity .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
-            outline: none;
-            animation: pulse-border 2s infinite;
-            padding: 0;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+            border-radius: inherit;
+            user-select: none;
+            -webkit-user-drag: none;
           }
 
-          /* Hide all hotspots when ANY is hovered */
-          .clean-stage:has(.clean-hotspot:hover) .clean-hotspot {
-            opacity: 0;
-            animation: none;
-            pointer-events: none;
-          }
-
-          /* Highlight the hovered one */
-          .clean-stage:has(.clean-hotspot:hover) .clean-hotspot:hover {
-            opacity: 1;
-            pointer-events: auto;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
-          }
-
-          /* Highlight group-3 together (used for multiple HTML boxes, if any) */
-          .clean-stage:has(.clean-hotspot.group-3:hover) .clean-hotspot.group-3 {
-            opacity: 1;
-            pointer-events: auto;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
-          }
-
-          /* SVG Hotspot specific styles */
-          svg.clean-hotspot {
-            border: none !important;
-            background: transparent !important;
-            box-shadow: none !important;
-            animation: none !important;
-            overflow: visible;
-          }
-          svg.clean-hotspot path {
-            fill: transparent;
-            stroke: rgba(255, 204, 0, 0.5);
-            stroke-width: 2.5px;
-            stroke-linejoin: round;
-            transition: fill .15s ease, stroke .15s ease, filter .15s ease;
-            animation: pulse-svg-stroke 2s infinite;
-            pointer-events: auto;
-          }
-          /* Stop SVG path animation on global hover */
-          .clean-stage:has(.clean-hotspot:hover) svg.clean-hotspot path {
-            animation: none;
-          }
-
-          @keyframes pulse-svg-stroke {
-            0% { filter: drop-shadow(0 0 0 rgba(255, 204, 0, 0.7)); }
-            70% { filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0)); }
-            100% { filter: drop-shadow(0 0 0 rgba(255, 204, 0, 0)); }
-          }
-          
-          /* Highlight SVG */
-          .clean-stage:has(.clean-hotspot:hover) svg.clean-hotspot:hover {
-            opacity: 1;
-            pointer-events: auto;
-          }
-          .clean-stage:has(.clean-hotspot:hover) svg.clean-hotspot:hover path,
-          .clean-stage:has(.clean-hotspot.group-3:hover) svg.clean-hotspot.group-3 path {
-            stroke: rgba(255, 204, 0, 0.95);
-            fill: rgba(255, 204, 0, 0.10);
-            filter: drop-shadow(0 0 2px rgba(255, 204, 0, 0.18));
-            animation: none;
-          }
-
-          .clean-callout {
-            position: absolute;
-            min-width: 170px;
-            max-width: 420px;
-            padding: 10px 18px;
-            background: rgba(144, 106, 0, 0.92);
-            color: #fff;
-            border: 2px solid #ffcc00;
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-            opacity: 0;
-            transform: translateY(6px);
-            transition: opacity .15s ease, transform .15s ease;
-            pointer-events: none;
-            z-index: 10;
-            text-align: center;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: -0.3px;
-          }
-
-          .clean-stage:has(.clean-hotspot:hover) .clean-hotspot:hover + .clean-callout {
-            opacity: 1;
-            transform: translateY(0);
-          }
-          
-          /* Show group 3 callout */
-          .clean-stage:has(.clean-hotspot.group-3:hover) .clean-callout.group-3-callout,
-          .clean-stage:has(svg.clean-hotspot:hover) .clean-callout.group-3-callout {
-            opacity: 1;
-            transform: translateY(0);
+          /* Clean-page-only overlay namespace. Keep all future overlays under mf-clean-*. */
+          #sec-mf-clean .mf-clean-border,
+          #sec-mf-clean .mf-clean-popup {
+            box-sizing: border-box;
           }
         </style>
 
-        <!-- Step 3: Interactive Stage 1 -->
         <p style="text-align: center; color: #a855f7; font-size: 16px; font-weight: bold; margin-bottom: 12px;"><span data-i18n="mf-auto-180">
           💡 사진 위에 마우스를 올리시면 설명을 확인하실 수 있습니다.
         </span></p>
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
-          <div class="clean-stage">
-            <img loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; border-radius:inherit;" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 1" />
-            
-            <!-- Single SVG L-Shape Hotspot covering the 5 images -->
-            <svg class="clean-hotspot" viewBox="0 0 100 100" preserveAspectRatio="none" style="left: 3.5%; top: 15.2%; width: 65.5%; height: 68.5%;">
-              <path d="M 0 0 L 100 0 L 100 46 L 68 46 L 68 100 L 0 100 Z" vector-effect="non-scaling-stroke" />
-            </svg>
-            
-            <div class="clean-callout group-3-callout" style="left: 17.5%; top: 8%; min-width: 320px;"><span data-i18n="mf-auto-181">
-              스핀들 및 c클램프가 해당 이미지대로 위치합니다.
-            </span></div>
+          <div class="mf-clean-stage" id="mf-clean-stage-1" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 1" />
           </div>
         </div>
 
-        <!-- Step 4: Interactive Stage 2 -->
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
-          <div class="clean-stage">
-            <img loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; border-radius:inherit;" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 2" />
-
-            <!-- Homing -->
-            <button class="clean-hotspot pill" style="left: 78.5%; top: 19.5%; width: 15.5%; height: 9.0%; border-radius: 999px;"></button>
-            <div class="clean-callout" style="left: 73.5%; top: 11.5%; min-width: 250px;"><span data-i18n="mf-auto-182">홈잉(Homing) 동작을 실시합니다</span></div>
-
-            <!-- G54 Coordinates -->
-            <button class="clean-hotspot" style="left: 76.5%; top: 30.5%; width: 19.5%; height: 27.5%; border-radius: 12px;"></button>
-            <div class="clean-callout" style="left: 77.0%; top: 59.5%; min-width: 180px;"><span data-i18n="mf-auto-183">각 축의 현재 위치 좌표</span></div>
-
-            <!-- Spindle Move -->
-            <button class="clean-hotspot" style="left: 48.8%; top: 51.5%; width: 20.2%; height: 16.5%; border-radius: 16px;"></button>
-            <div class="clean-callout" style="left: 48.5%; top: 44%; min-width: 240px;"><span data-i18n="mf-auto-184">스핀들이 도어 앞으로 이동합니다</span></div>
-
-            <!-- Vacuum -->
-            <button class="clean-hotspot" style="left: 76.5%; top: 60.5%; width: 19.5%; height: 12.5%; border-radius: 12px;"></button>
-            <div class="clean-callout" style="left: 75.0%; top: 74.0%; min-width: 220px;"><span data-i18n="mf-auto-185">연결된 집진기를 켜고 끕니다</span></div>
-
-            <!-- Collet Chuck -->
-            <button class="clean-hotspot" style="left: 49.0%; top: 70.0%; width: 19.8%; height: 12.5%; border-radius: 12px;"></button>
-            <div class="clean-callout" style="left: 49.0%; top: 83%; min-width: 200px;"><span data-i18n="mf-auto-186">콜렛 척을 열고 닫습니다</span></div>
+          <div class="mf-clean-stage" id="mf-clean-stage-2" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 2" />
           </div>
         </div>
       </section>
+
+
 
       <section id="sec-mf-env-settings" class="content-section">
         <h2 data-i18n="nav-mf-env-settings"><span data-i18n="mf-auto-271">⚙️ 환경설정</span></h2>
@@ -3644,75 +3580,32 @@
         <p class="subtitle"><span data-i18n="mf-auto-2">MillFix 설치 및 기본 조작</span></p>
 
         <style>
-          .env-stage {
+          #sec-mf-env-settings .mf-env-stage {
             position: relative;
             width: 100%;
             aspect-ratio: 1586 / 930;
             background: #000;
             overflow: visible;
             border-radius: var(--radius);
+            isolation: isolate;
           }
 
-          .env-hotspot {
+          #sec-mf-env-settings .mf-env-stage img {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5) !important;
-            background: transparent;
-            cursor: pointer;
-            z-index: 5;
-            transition: .15s ease;
-            outline: none;
-            animation: pulse-border 2s infinite;
-            border-radius: 12px;
-          }
-
-          .env-stage:has(>.env-hotspot:hover) .env-hotspot {
-            opacity: 0;
-            animation: none;
-            pointer-events: none;
-          }
-
-          .env-stage:has(>.env-hotspot:hover) .env-hotspot:hover {
-            opacity: 1;
-            pointer-events: auto;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
-          }
-
-          .env-callout {
-            position: absolute;
-            min-width: 170px;
-            max-width: 360px;
-            padding: 12px 16px;
-            background: rgba(220, 160, 0, 0.95);
-            color: #fff;
-            border: none;
-            box-shadow: 0 10px 28px rgba(0, 0, 0, .32);
-            opacity: 0;
-            transition: .15s ease;
-            pointer-events: none;
-            z-index: 10;
-            text-align: center;
-          }
-
-          .env-callout .title {
+            inset: 0;
+            width: 100%;
+            height: 100%;
             display: block;
-            font-size: 20px;
-            line-height: 1.2;
-            font-weight: 800;
-            color: #fff;
-            margin-bottom: 4px;
+            object-fit: contain;
+            border-radius: inherit;
+            user-select: none;
+            -webkit-user-drag: none;
           }
 
-          .env-callout .desc {
-            display: block;
-            font-size: 15px;
-            line-height: 1.4;
-            color: #fff;
-          }
-
-          .env-hotspot:hover+.env-callout {
-            opacity: 1;
+          /* Environment-page-only overlay namespace. Keep all future overlays under mf-env-*. */
+          #sec-mf-env-settings .mf-env-border,
+          #sec-mf-env-settings .mf-env-popup {
+            box-sizing: border-box;
           }
         </style>
 
@@ -3722,71 +3615,27 @@
 
         <!-- Image 1 -->
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
-          <div class="env-stage">
-            <img loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; border-radius:inherit;" src="./assets/images/sec-mf-env-settings/env-settings-1.webp" alt="환경설정 1" />
+          <div class="mf-env-stage" id="mf-env-stage-1" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-1.webp" alt="환경설정 1" />
           </div>
         </div>
 
         <!-- Image 2 -->
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
-          <div class="env-stage">
-            <img loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; border-radius:inherit;" src="./assets/images/sec-mf-env-settings/env-settings-2.webp" alt="환경설정 2" />
-            
-            <!-- Work Offset Setting -->
-            <button class="env-hotspot" style="left:2.5%; top:15.5%; width:20.5%; height:44.5%; border-radius:24px;"></button>
-            <div class="env-callout" style="left:23.0%; top:28.0%; min-width:260px; max-width:320px; background:rgba(212, 175, 55, 0.95);">
-              <span class="title"><span data-i18n="mf-auto-272">워크 좌표값</span>
-              <span class="desc"><span data-i18n="mf-auto-273">캘리브레이션의 결과 좌표값입니다.</span><br><span data-i18n="mf-auto-274">캘리브레이션 후, 보정된 좌표가</span><br><span data-i18n="mf-auto-275">제대로 저장되었는지</span><br><span data-i18n="mf-auto-276">확인할 수 있습니다.</span>
-            </div>
-
-            <!-- Current Status List -->
-            <button class="env-hotspot" style="left:49.5%; top:15.5%; width:31.0%; height:58.5%; border-radius:16px;"></button>
-            <div class="env-callout" style="left:80.5%; top:40.0%; min-width:200px; max-width:240px; background:rgba(212, 175, 55, 0.95);">
-              <span class="title"><span data-i18n="mf-auto-277">현재 상태 표시</span>
-              <span class="desc"><span data-i18n="mf-auto-278">각 기구 혹은 부품의</span><br><span data-i18n="mf-auto-279">에러, 알람,</span><br><span data-i18n="mf-auto-280">동작 상태 등이 표시됩니다.</span>
-            </div>
-
-            <!-- LED Milling Done -->
-            <button class="env-hotspot" style="left:49.5%; top:75.5%; width:31.0%; height:10.5%; border-radius:12px;"></button>
-            <div class="env-callout" style="left:18.0%; top:77.5%; min-width:310px; max-width:350px; background:rgba(212, 175, 55, 0.95);">
-              <span class="desc"><span data-i18n="mf-auto-281">밀링이 완료되었을 때,</span><br><span data-i18n="mf-auto-282">장비 전면의 LED 점멸기능을 켜고 끕니다.</span>
-            </div>
-
-            <!-- LED Brightness -->
-            <button class="env-hotspot" style="left:82.0%; top:72.5%; width:16.0%; height:14.5%; border-radius:40px;"></button>
-            <div class="env-callout" style="left:68.5%; top:87.5%; min-width:280px; max-width:300px; background:rgba(212, 175, 55, 0.95);">
-              <span class="desc"><span data-i18n="mf-auto-283">장비 전면의 LED의 세기를 조절합니다.</span>
-            </div>
+          <div class="mf-env-stage" id="mf-env-stage-2" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-2.webp" alt="환경설정 2" />
           </div>
         </div>
 
         <!-- Image 3 -->
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
-          <div class="env-stage">
-            <img loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; border-radius:inherit;" src="./assets/images/sec-mf-env-settings/env-settings-3.webp" alt="환경설정 3" />
-
-            <!-- Tool Position -->
-            <button class="env-hotspot" style="left:24.5%; top:14.5%; width:23.5%; height:29.5%; border-radius:16px;"></button>
-            <div class="env-callout" style="left:4.5%; top:22.0%; min-width:200px; max-width:240px; background:rgba(212, 175, 55, 0.95);">
-              <span class="title"><span data-i18n="mf-auto-284">툴 포켓 위치 좌표값</span>
-              <span class="desc"><span data-i18n="mf-auto-285">툴 포켓 캘리브레이션의 결과</span><br><span data-i18n="mf-auto-286">좌표값입니다.</span>
-            </div>
-
-            <!-- Check the Tool Breakage -->
-            <button class="env-hotspot" style="left:24.5%; top:52.5%; width:23.5%; height:19.5%; border-radius:24px;"></button>
-            <div class="env-callout" style="left:26.0%; top:72.5%; min-width:200px; max-width:240px; background:rgba(212, 175, 55, 0.95);">
-              <span class="desc"><span data-i18n="mf-auto-287">툴의 손상 여부를 판단하는</span><br><span data-i18n="mf-auto-288">툴의 길이 차이 기준점</span>
-            </div>
-
-            <!-- Language -->
-            <button class="env-hotspot" style="left:82.0%; top:13.5%; width:16.0%; height:57.0%; border-radius:16px;"></button>
-            <div class="env-callout" style="left:56.5%; top:36.5%; min-width:250px; max-width:280px; background:rgba(212, 175, 55, 0.95);">
-              <span class="title"><span data-i18n="mf-auto-289">알람 메시지 언어</span>
-              <span class="desc"><span data-i18n="mf-auto-290">알람 메시지의 언어를 선택합니다. 버튼</span><br><span data-i18n="mf-auto-291">등의 항목 명칭은 변경되지 않습니다.</span>
-            </div>
+          <div class="mf-env-stage" id="mf-env-stage-3" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-3.webp" alt="환경설정 3" />
           </div>
         </div>
       </section>
+
+
       <!-- MillFix 컨트롤 프로그램 -->
       <section id="sec-mf-main-page" class="content-section">
         <h2 data-i18n="nav-mf-main-page"><span data-i18n="mf-auto-326">🏠 메인 페이지</span></h2>

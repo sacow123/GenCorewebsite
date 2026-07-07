@@ -28,154 +28,205 @@
           </div>
         </div>
 
-        <!-- Step 3: Axis Jog 메인 화면 (인터랙티브) -->
+        <!-- Step 3: Axis Jog 메인 화면 -->
         <style>
-          /* ===== JOG MODE HOTSPOT SYSTEM ===== */
-          @keyframes jog-pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
-          }
-
-          .jog-stage {
+          #sec-mf-jog .mf-jog-stage {
             position: relative;
             width: 100%;
             aspect-ratio: 1586 / 930;
             background: #000;
             overflow: visible;
             border-radius: var(--radius);
+            isolation: isolate;
           }
 
-          .jog-hotspot {
+          #sec-mf-jog .mf-jog-stage img {
             position: absolute;
-            border: 2px solid rgba(255, 204, 0, 0.5);
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+            user-select: none;
+            -webkit-user-drag: none;
+            border-radius: inherit;
+          }
+
+          /* Jog-only overlay namespace. Keep all future overlays under mf-jog-*. */
+          #sec-mf-jog .mf-jog-border,
+          #sec-mf-jog .mf-jog-popup {
+            box-sizing: border-box;
+          }
+
+          #sec-mf-jog .mf-jog-border {
+            position: absolute;
+            border: 5px solid #ffcc00;
+            border-radius: 14px;
             background: transparent;
             cursor: pointer;
+            pointer-events: auto;
             z-index: 5;
-            transition: opacity .2s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
             outline: none;
-            animation: jog-pulse 2s infinite;
-            padding: 0;
+            animation: mf-jog-pulse 2s infinite;
+            transition: opacity .15s ease, background .15s ease, box-shadow .15s ease;
           }
 
-          /* When ANY hotspot is hovered: hide all OTHER hotspots */
-          .jog-stage.jog-has-hover .jog-hotspot {
+          @keyframes mf-jog-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
+          }
+
+          #sec-mf-jog .mf-jog-stage:has(.mf-jog-border:hover) .mf-jog-border {
             opacity: 0;
             animation: none;
-            pointer-events: none;
-          }
-          /* The hovered one stays visible and highlighted */
-          .jog-stage.jog-has-hover .jog-hotspot.jog-active {
-            opacity: 1;
-            pointer-events: auto;
-            animation: none;
-            border-color: rgba(255, 204, 0, 0.95);
-            background: rgba(255, 204, 0, 0.10);
-            box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.25);
           }
 
-          /* Callout tooltip */
-          .jog-callout {
+          #sec-mf-jog .mf-jog-stage:has(.mf-jog-border:hover) .mf-jog-border:hover {
+            opacity: 1;
+            background: rgba(255, 204, 0, 0.10);
+            box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18);
+          }
+
+          #sec-mf-jog .mf-callout-custom {
             position: absolute;
-            min-width: 200px;
+            min-width: 250px;
             max-width: 420px;
-            padding: 14px 18px;
-            background: rgba(144, 106, 0, 0.92);
+            padding: 12px 16px;
+            background: rgba(20, 15, 35, 0.45);
             color: #fff8dc;
-            border: 3px solid #ffcc00;
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.32);
             opacity: 0;
             transform: translateY(6px);
-            transition: opacity .18s ease, transform .18s ease;
+            transition: opacity .15s ease, transform .15s ease;
             pointer-events: none;
             z-index: 10;
             text-align: center;
-            border-radius: 10px;
           }
-          .jog-callout .title {
+
+          #sec-mf-jog .mf-callout-custom .title {
             display: block;
             font-size: 22px;
             line-height: 1.15;
             font-weight: 800;
             color: #fff;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
           }
-          .jog-callout .desc {
+
+          #sec-mf-jog .mf-callout-custom .desc {
             display: block;
-            font-size: 21px;
-            line-height: 1.45;
+            font-size: 18px;
+            line-height: 1.35;
+            font-weight: 500;
             color: #fff4cf;
           }
 
-          /* Show callout only when its hotspot is active */
-          .jog-stage.jog-has-hover .jog-hotspot.jog-active + .jog-callout {
+          #sec-mf-jog .mf-callout-custom.center {
+            transform: translate(-50%, 6px);
+          }
+
+          #sec-mf-jog .mf-callout-custom.center.bottom-arrow {
+            transform: translate(-50%, -100%);
+          }
+
+          #sec-mf-jog .mf-callout-custom.center.top-arrow {
+            transform: translate(-50%, 0);
+          }
+
+          #sec-mf-jog .mf-callout-custom.bottom-arrow::before,
+          #sec-mf-jog .mf-callout-custom.bottom-arrow::after,
+          #sec-mf-jog .mf-callout-custom.top-arrow::before,
+          #sec-mf-jog .mf-callout-custom.top-arrow::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            pointer-events: none;
+          }
+
+          #sec-mf-jog .mf-callout-custom.bottom-arrow::before {
+            bottom: -16px;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-top: 16px solid #ffcc00;
+          }
+
+          #sec-mf-jog .mf-callout-custom.bottom-arrow::after {
+            bottom: -13px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 14px solid rgba(20, 15, 35, 0.75);
+          }
+
+          #sec-mf-jog .mf-callout-custom.top-arrow::before {
+            top: -16px;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-bottom: 16px solid #ffcc00;
+          }
+
+          #sec-mf-jog .mf-callout-custom.top-arrow::after {
+            top: -13px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 14px solid rgba(20, 15, 35, 0.75);
+          }
+
+          #sec-mf-jog .mf-jog-border:hover + .mf-callout-custom {
             opacity: 1;
             transform: translateY(0);
+          }
+
+          #sec-mf-jog .mf-jog-border:hover + .mf-callout-custom.center {
+            transform: translate(-50%, 0);
+          }
+
+          #sec-mf-jog .mf-jog-border:hover + .mf-callout-custom.center.bottom-arrow {
+            transform: translate(-50%, -100%);
+          }
+
+          #sec-mf-jog .mf-jog-border:hover + .mf-callout-custom.center.top-arrow {
+            transform: translate(-50%, 0);
           }
         </style>
 
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
-          <div class="jog-stage" id="jog-stage">
-            <img loading="lazy"
-              style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain; user-select:none; -webkit-user-drag:none; border-radius:inherit;"
-              src="./assets/images/sec-mf-jog/millfix-axis-jog-screen.webp" alt="MillFix Axis Jog 화면" />
+          <div class="mf-jog-stage" id="mf-jog-stage" data-measure-stage>
+            <img loading="lazy" src="./assets/images/sec-mf-jog/millfix-axis-jog-screen.webp" alt="MillFix Axis Jog 화면" />
+
+            <div class="mf-jog-border" style="left:3.7%; top:14.2%; width:19.8%; height:29.7%;"></div>
+            <div class="mf-callout-custom center top-arrow" style="left:11.2%; top:43.5%; min-width:250px;">
+              <span class="title"><span data-i18n="mf-auto-920" data-i18n-default="Current Position">Current Position</span></span>
+              <span class="desc"><span data-i18n="mf-auto-921" data-i18n-default="현재 스핀들의 좌표를 나타냅니다.">현재 스핀들의 좌표를 나타냅니다.</span></span>
+            </div>
+
+            <div class="mf-jog-border" style="left:3.7%; top:46.3%; width:19.8%; height:30.8%;"></div>
+            <div class="mf-callout-custom center top-arrow" style="left:11.2%; top:76.6%; min-width:250px;">
+              <span class="title"><span data-i18n="mf-auto-922" data-i18n-default="Jog Speed">Jog Speed</span></span>
+              <span class="desc"><span data-i18n="mf-auto-923" data-i18n-default="스핀들의 이동 속도를 조절합니다.">스핀들의 이동 속도를 조절합니다.</span></span>
+            </div>
+
+            <div class="mf-jog-border" style="left:33.2%; top:12.4%; width:43.8%; height:66.3%;"></div>
+            <div class="mf-callout-custom center top-arrow" style="left:53.8%; top:78.3%; min-width:320px;">
+              <span class="title"><span data-i18n="mf-auto-924" data-i18n-default="Spindle Operation">Spindle Operation</span></span>
+              <span class="desc"><span data-i18n="mf-auto-925" data-i18n-default="스핀들을 화면속 화살표 터치로 조작할 수 있습니다.">스핀들을 화면속 화살표 터치로 조작할 수 있습니다.</span></span>
+            </div>
+
+            <div class="mf-jog-border" style="left:78.8%; top:13.2%; width:19.1%; height:66.0%;"></div>
+            <div class="mf-callout-custom center top-arrow" style="left:89.2%; top:78.9%; min-width:320px;">
+              <span class="title"><span data-i18n="mf-auto-926" data-i18n-default="Spindle Operation">Spindle Operation</span></span>
+              <span class="desc"><span data-i18n="mf-auto-927" data-i18n-default="스핀들을 키보드를 통해 조작할 수 있습니다.">스핀들을 키보드를 통해 조작할 수 있습니다.</span></span>
+            </div>
 
             <div
               style="position: absolute; bottom: -40px; width: 100%; text-align: center; color: #000; font-size: 16px; font-weight: bold;"><span data-i18n="mf-auto-189">
               💡 버튼 위에 마우스를 올리시면 명칭과 설명을 확인하실 수 있습니다.
             </span></div>
-
-            <!-- Hotspot 1: Current Position (좌측 상단) -->
-            <button class="jog-hotspot"
-              style="left:3.2%;top:11.0%;width:24.2%;height:33.5%;border-radius:12px;"></button>
-            <div class="jog-callout" style="left:28.0%;top:13.0%;min-width:280px;">
-              <span class="title">Current Position</span>
-              <span class="desc"><span data-i18n="mf-auto-322">현재 스핀들의 좌표를 나타냅니다.</span></span>
-            </div>
-
-            <!-- Hotspot 2: Jog Speed (좌측 하단) -->
-            <button class="jog-hotspot"
-              style="left:2.2%;top:44.8%;width:24.2%;height:33.5%;border-radius:12px;"></button>
-            <div class="jog-callout" style="left:28.0%;top:52.0%;min-width:280px;">
-              <span class="title">Jog Speed</span>
-              <span class="desc"><span data-i18n="mf-auto-323">스핀들의 이동속도를 조절합니다.</span></span>
-            </div>
-
-            <!-- Hotspot 3: Spindle Operation - Touch (중앙 영역) -->
-            <button class="jog-hotspot"
-              style="left:29.0%;top:8.2%;width:48.5%;height:76.0%;border-radius:14px;"></button>
-            <div class="jog-callout" style="left:29.5%;top:85.5%;min-width:380px;">
-              <span class="title">Spindle Operation</span>
-              <span class="desc"><span data-i18n="mf-auto-324">화살표를 터치해 스핀들을 조작할 수 있습니다.</span></span>
-            </div>
-
-            <!-- Hotspot 4: Spindle Operation - Keyboard (우측 영역) -->
-            <button class="jog-hotspot"
-              style="left:79.0%;top:8.2%;width:19.5%;height:76.0%;border-radius:14px;"></button>
-            <div class="jog-callout" style="left:55.0%;top:85.5%;min-width:350px;">
-              <span class="title">Spindle Operation</span>
-              <span class="desc"><span data-i18n="mf-auto-325">키보드를 통해 스핀들을 조작할 수 있습니다.</span></span>
-            </div>
           </div>
         </div>
-
-        <script>
-          // Jog mode hotspot hover logic: hover one → hide others + show callout
-          document.addEventListener('DOMContentLoaded', function() {
-            const jogStage = document.getElementById('jog-stage');
-            if (!jogStage) return;
-            const jogHotspots = jogStage.querySelectorAll('.jog-hotspot');
-
-            jogHotspots.forEach(function(btn) {
-              btn.addEventListener('mouseenter', function() {
-                jogStage.classList.add('jog-has-hover');
-                btn.classList.add('jog-active');
-              });
-              btn.addEventListener('mouseleave', function() {
-                jogStage.classList.remove('jog-has-hover');
-                btn.classList.remove('jog-active');
-              });
-            });
-          });
-        </script>
       </section>
