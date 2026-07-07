@@ -401,6 +401,37 @@ body {
   font-weight: 600; line-height: 1.6;
 }
 
+#sec-mf-jog .jog-hotspot,
+#sec-mf-clean .clean-hotspot,
+#sec-mf-env-settings .env-hotspot {
+  border: 5px solid #ffcc00 !important;
+  background: transparent !important;
+}
+
+#sec-mf-jog .jog-stage.jog-has-hover .jog-hotspot.jog-active,
+#sec-mf-clean .clean-stage:has(.clean-hotspot:hover) .clean-hotspot:hover,
+#sec-mf-clean .clean-stage:has(.clean-hotspot.group-3:hover) .clean-hotspot.group-3,
+#sec-mf-env-settings .env-stage:has(>.env-hotspot:hover) .env-hotspot:hover {
+  border-color: #ffcc00 !important;
+  background: rgba(255, 204, 0, 0.10) !important;
+  box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.18) !important;
+}
+
+#sec-mf-clean svg.clean-hotspot {
+  border: none !important;
+}
+
+#sec-mf-clean svg.clean-hotspot path {
+  stroke: #ffcc00 !important;
+  stroke-width: 5px !important;
+}
+
+#sec-mf-clean .clean-stage:has(.clean-hotspot:hover) svg.clean-hotspot:hover path,
+#sec-mf-clean .clean-stage:has(.clean-hotspot.group-3:hover) svg.clean-hotspot.group-3 path {
+  stroke: #ffcc00 !important;
+  fill: rgba(255, 204, 0, 0.10) !important;
+}
+
 /* ===== CONTENT UTILITY CLASSES ===== */
 .step-list {
   margin: 0; padding-left: 20px;
