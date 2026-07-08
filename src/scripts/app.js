@@ -19,6 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Section Switching ---
   const sections = document.querySelectorAll(".content-section");
+  const mainContent = document.querySelector(".main-content");
+
+  function resetMainScroll() {
+    if (mainContent) {
+      mainContent.scrollTop = 0;
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }
 
   function showSection(id, pushHistory = true) {
     sections.forEach(s => s.classList.remove("active"));
@@ -29,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (target) {
       target.classList.add("active");
       renderSection(id);
+      resetMainScroll();
       
       // Update URL hash without jumping/reloading
       if (pushHistory) {
