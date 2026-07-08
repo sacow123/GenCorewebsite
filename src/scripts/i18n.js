@@ -3917,6 +3917,63 @@ function restoreContentSection(section) {
   section.innerHTML = ORIGINAL_CONTENT_SECTION_HTML.get(section.id);
 }
 
+Object.assign(TRANSLATIONS.ko, {
+  "mf-auto-920": "Current Position",
+  "mf-auto-921": "현재 스핀들의 좌표를 나타냅니다.",
+  "mf-auto-922": "Jog Speed",
+  "mf-auto-923": "스핀들의 이동 속도를 조절합니다.",
+  "mf-auto-924": "Spindle Operation",
+  "mf-auto-925": "스핀들을 화면속 화살표 터치로 조작할 수 있습니다.",
+  "mf-auto-926": "Spindle Operation",
+  "mf-auto-927": "스핀들을 키보드를 통해 조작할 수 있습니다.",
+  "mf-auto-928": "Move Forward",
+  "mf-auto-929": "스핀들을 앞으로 불러옵니다.",
+  "mf-auto-930": "Collet Chuck Open/Close",
+  "mf-auto-931": "콜렛 척을 열고/닫습니다.",
+  "mf-auto-932": "Vacuum",
+  "mf-auto-933": "집진기를 작동합니다.",
+  "mf-auto-934": "축 변경",
+  "mf-auto-935": "그림과 같이 축을 이동 및 회전합니다."
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "mf-auto-920": "Current Position",
+  "mf-auto-921": "Displays the current spindle coordinates.",
+  "mf-auto-922": "Jog Speed",
+  "mf-auto-923": "Adjusts the spindle movement speed.",
+  "mf-auto-924": "Spindle Operation",
+  "mf-auto-925": "Use the on-screen arrows to move the spindle.",
+  "mf-auto-926": "Spindle Operation",
+  "mf-auto-927": "Use the keyboard to move the spindle.",
+  "mf-auto-928": "Move Forward",
+  "mf-auto-929": "Moves the spindle forward.",
+  "mf-auto-930": "Collet Chuck Open/Close",
+  "mf-auto-931": "Opens/closes the collet chuck.",
+  "mf-auto-932": "Vacuum",
+  "mf-auto-933": "Activates the dust collector.",
+  "mf-auto-934": "Axis Change",
+  "mf-auto-935": "Move and rotate the axes as shown."
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "mf-auto-920": "現在位置",
+  "mf-auto-921": "現在のスピンドル座標を表示します。",
+  "mf-auto-922": "ジョグ速度",
+  "mf-auto-923": "スピンドルの移動速度を調整します。",
+  "mf-auto-924": "スピンドル操作",
+  "mf-auto-925": "画面上の矢印をタッチしてスピンドルを操作できます。",
+  "mf-auto-926": "スピンドル操作",
+  "mf-auto-927": "キーボードでスピンドルを操作できます。",
+  "mf-auto-928": "前方へ移動",
+  "mf-auto-929": "スピンドルを前方へ移動します。",
+  "mf-auto-930": "コレットチャック開閉",
+  "mf-auto-931": "コレットチャックを開閉します。",
+  "mf-auto-932": "集塵機",
+  "mf-auto-933": "集塵機を作動させます。",
+  "mf-auto-934": "軸の変更",
+  "mf-auto-935": "図のように軸を移動および回転します。"
+});
+
 const LANG_LABELS = {
   ko: "🇰🇷 한국어",
   en: "🇺🇸 English",

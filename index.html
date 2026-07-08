@@ -3353,7 +3353,8 @@
           #sec-mf-jog .mf-callout-custom {
             position: absolute;
             min-width: 250px;
-            max-width: 420px;
+            max-width: none;
+            width: max-content;
             padding: 12px 16px;
             background: rgba(20, 15, 35, 0.45);
             color: #fff8dc;
@@ -3374,8 +3375,9 @@
             font-size: 22px;
             line-height: 1.15;
             font-weight: 800;
-            color: #fff;
+            color: #ffcc00;
             margin-bottom: 4px;
+            white-space: nowrap;
           }
 
           #sec-mf-jog .mf-callout-custom .desc {
@@ -3383,7 +3385,8 @@
             font-size: 18px;
             line-height: 1.35;
             font-weight: 500;
-            color: #fff4cf;
+            color: #ffffff;
+            white-space: nowrap;
           }
 
           #sec-mf-jog .mf-callout-custom.center {
@@ -3458,7 +3461,7 @@
         </style>
 
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
-          <div class="mf-jog-stage" id="mf-jog-stage" data-measure-stage>
+          <div class="mf-jog-stage" id="mf-jog-stage">
             <img loading="lazy" src="./assets/images/sec-mf-jog/millfix-axis-jog-screen.webp" alt="MillFix Axis Jog 화면" />
 
             <div class="mf-jog-border" style="left:3.7%; top:14.2%; width:19.8%; height:29.7%;"></div>
@@ -3548,36 +3551,230 @@
             -webkit-user-drag: none;
           }
 
-          /* Clean-page-only overlay namespace. Keep all future overlays under mf-clean-*. */
-          #sec-mf-clean .mf-clean-border,
-          #sec-mf-clean .mf-clean-popup {
-            box-sizing: border-box;
-          }
-
           #sec-mf-clean .mf-clean-border {
             position: absolute;
-            border: 7px solid #ffcc00;
+            box-sizing: border-box;
+            border: 0;
+            box-shadow: 0 0 0 7px #ffcc00;
             border-radius: 13%;
             background: transparent;
-            pointer-events: none;
+            pointer-events: auto;
             z-index: 5;
+            animation: mf-clean-border-pulse 1.5s infinite;
+            transition: opacity .18s ease, filter .18s ease, transform .18s ease;
           }
+
+          #sec-mf-clean .mf-clean-border-solid {
+            border: 7px solid #ffcc00;
+            box-shadow: none;
+          }
+
+          #sec-mf-clean .mf-clean-check {
+            position: absolute;
+            width: 48px;
+            height: 38px;
+            pointer-events: auto;
+            z-index: 6;
+            transition: opacity .18s ease, filter .18s ease;
+          }
+
+          #sec-mf-clean .mf-clean-check svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+          }
+
+          #sec-mf-clean .mf-clean-check .mf-clean-check-pulse-line {
+            animation: mf-clean-check-pulse 1.5s infinite;
+          }
+
+          #sec-mf-clean .mf-clean-border:hover,
+          #sec-mf-clean .mf-clean-check:hover {
+            animation: none;
+            filter: brightness(1.18);
+          }
+
+          #sec-mf-clean .mf-clean-border:hover {
+            transform: scale(1.02);
+          }
+
+          #sec-mf-clean .mf-clean-check:hover .mf-clean-check-pulse-line {
+            animation: none;
+            opacity: 0;
+          }
+
+          #sec-mf-clean .mf-clean-stage:has(.mf-clean-border:hover) .mf-clean-border:not(:hover),
+          #sec-mf-clean .mf-clean-stage:has(.mf-clean-border:hover) .mf-clean-check,
+          #sec-mf-clean .mf-clean-stage:has(.mf-clean-check:hover) .mf-clean-border,
+          #sec-mf-clean .mf-clean-stage:has(.mf-clean-check:hover) .mf-clean-check:not(:hover) {
+            opacity: 0;
+            animation: none;
+          }
+
+          #sec-mf-clean .mf-clean-popup {
+            position: absolute;
+            box-sizing: border-box;
+            min-width: 240px;
+            max-width: none;
+            width: max-content;
+            padding: 10px 14px;
+            background: rgba(20, 15, 35, 0.9);
+            color: #ffffff;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            z-index: 12;
+            transition: opacity .18s ease, visibility .18s ease;
+          }
+
+          #sec-mf-clean .mf-clean-popup-title {
+            display: block;
+            margin-bottom: 4px;
+            color: #ffcc00;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.25;
+            white-space: nowrap;
+          }
+
+          #sec-mf-clean .mf-clean-popup-desc {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.45;
+            white-space: nowrap;
+          }
+
+          #sec-mf-clean .mf-clean-popup::before,
+          #sec-mf-clean .mf-clean-popup::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            pointer-events: none;
+          }
+
+          #sec-mf-clean .mf-clean-popup.below {
+            transform: translate(-50%, 14px);
+          }
+
+          #sec-mf-clean .mf-clean-popup.below::before {
+            top: -16px;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-bottom: 16px solid #ffcc00;
+          }
+
+          #sec-mf-clean .mf-clean-popup.below::after {
+            top: -13px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 14px solid rgba(20, 15, 35, 0.75);
+          }
+
+          #sec-mf-clean .mf-clean-popup.above {
+            transform: translate(-50%, calc(-100% - 14px));
+          }
+
+          #sec-mf-clean .mf-clean-popup.above::before {
+            bottom: -16px;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-top: 16px solid #ffcc00;
+          }
+
+          #sec-mf-clean .mf-clean-popup.above::after {
+            bottom: -13px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 14px solid rgba(20, 15, 35, 0.75);
+          }
+
+          #sec-mf-clean .mf-clean-axis-popup {
+            min-width: max-content;
+            max-width: none;
+            width: max-content;
+            height: auto;
+            white-space: nowrap;
+            transform: translate(-50%, 0);
+          }
+
+          #sec-mf-clean .mf-clean-border:hover + .mf-clean-popup,
+          #sec-mf-clean .mf-clean-stage:has(.mf-clean-check:hover) .mf-clean-axis-popup {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          @keyframes mf-clean-border-pulse {
+            0% {
+              box-shadow: 0 0 0 7px #ffcc00, 0 0 0 7px rgba(250, 204, 21, 0.7);
+            }
+
+            70% {
+              box-shadow: 0 0 0 7px #ffcc00, 0 0 0 19px rgba(250, 204, 21, 0);
+            }
+
+            100% {
+              box-shadow: 0 0 0 7px #ffcc00, 0 0 0 7px rgba(250, 204, 21, 0);
+            }
+          }
+
+          @keyframes mf-clean-check-pulse {
+            0% {
+              stroke-width: 7;
+              opacity: 0.7;
+            }
+
+            70% {
+              stroke-width: 19;
+              opacity: 0;
+            }
+
+            100% {
+              stroke-width: 7;
+              opacity: 0;
+            }
+          }
+
         </style>
 
         <p style="text-align: center; color: #a855f7; font-size: 16px; font-weight: bold; margin-bottom: 12px;"><span data-i18n="mf-auto-180">
           💡 사진 위에 마우스를 올리시면 설명을 확인하실 수 있습니다.
         </span></p>
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
-          <div class="mf-clean-stage" id="mf-clean-stage-1" data-measure-stage>
+          <div class="mf-clean-stage" id="mf-clean-stage-1">
             <img loading="lazy" src="./assets/images/sec-mf-clean/milling-room-cleaning-1.webp" alt="Milling Room Cleaning 1" />
-            <div class="mf-clean-border" style="left:3.7%; top:15.1%; width:20.1%; height:32.8%;"></div>
-            <div class="mf-clean-border" style="left:26.2%; top:15.1%; width:20.1%; height:32.8%;"></div>
-            <div class="mf-clean-border" style="left:48.7%; top:15.1%; width:20.1%; height:32.8%;"></div>
-            <div class="mf-clean-border" style="left:3.6%; top:51.3%; width:20.3%; height:31.8%;"></div>
-            <div class="mf-clean-border" style="left:26.2%; top:51.3%; width:20.4%; height:31.8%;"></div>
-            <div class="mf-clean-border" style="left:49.3%; top:52.0%; width:19.6%; height:15.9%; border-radius:15%;"></div>
-            <div class="mf-clean-border" style="left:48.9%; top:70.0%; width:20.2%; height:13.4%;"></div>
-            <div class="mf-clean-border" style="left:76.5%; top:59.8%; width:19.9%; height:13.4%;"></div>
+            <div class="mf-clean-border" style="left:49.7%; top:52.3%; width:18.5%; height:15%; border-radius:15%;"></div>
+            <div class="mf-clean-popup above" style="left:59%; top:54%;">
+              <span class="mf-clean-popup-title"><span data-i18n="mf-auto-928" data-i18n-default="Move Forward">Move Forward</span></span>
+              <span class="mf-clean-popup-desc"><span data-i18n="mf-auto-929" data-i18n-default="스핀들을 앞으로 불러옵니다.">스핀들을 앞으로 불러옵니다.</span></span>
+            </div>
+            <div class="mf-clean-border" style="left:49.1%; top:70.3%; width:19.9%; height:12.7%;"></div>
+            <div class="mf-clean-popup below" style="left:59.0%; top:81.5%;">
+              <span class="mf-clean-popup-title"><span data-i18n="mf-auto-930" data-i18n-default="Collet Chuck Open/Close">Collet Chuck Open/Close</span></span>
+              <span class="mf-clean-popup-desc"><span data-i18n="mf-auto-931" data-i18n-default="콜렛 척을 열고/닫습니다.">콜렛 척을 열고/닫습니다.</span></span>
+            </div>
+            <div class="mf-clean-border" style="left:76.4%; top:60.4%; width:19.9%; height:13.0%;"></div>
+            <div class="mf-clean-popup below" style="left:86.3%; top:72%;">
+              <span class="mf-clean-popup-title"><span data-i18n="mf-auto-932" data-i18n-default="Vacuum">Vacuum</span></span>
+              <span class="mf-clean-popup-desc"><span data-i18n="mf-auto-933" data-i18n-default="집진기를 작동합니다.">집진기를 작동합니다.</span></span>
+            </div>
+            <div class="mf-clean-check" style="left:12.8%; top:17.5%; transform:translate(-50%, -100%);"><svg viewBox="0 0 48 38" aria-hidden="true"><polyline class="mf-clean-check-pulse-line" points="6,14 22,32 44,8" fill="none" stroke="rgba(250, 204, 21, 0.7)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /><polyline points="6,14 22,32 44,8" fill="none" stroke="#ffcc00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+            <div class="mf-clean-check" style="left:36%; top:17.5%; transform:translate(-50%, -100%);"><svg viewBox="0 0 48 38" aria-hidden="true"><polyline class="mf-clean-check-pulse-line" points="6,14 22,32 44,8" fill="none" stroke="rgba(250, 204, 21, 0.7)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /><polyline points="6,14 22,32 44,8" fill="none" stroke="#ffcc00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+            <div class="mf-clean-check" style="left:58.8%; top:17.5%; transform:translate(-50%, -100%);"><svg viewBox="0 0 48 38" aria-hidden="true"><polyline class="mf-clean-check-pulse-line" points="6,14 22,32 44,8" fill="none" stroke="rgba(250, 204, 21, 0.7)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /><polyline points="6,14 22,32 44,8" fill="none" stroke="#ffcc00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+            <div class="mf-clean-check" style="left:12.8%; top:54.0%; transform:translate(-50%, -100%);"><svg viewBox="0 0 48 38" aria-hidden="true"><polyline class="mf-clean-check-pulse-line" points="6,14 22,32 44,8" fill="none" stroke="rgba(250, 204, 21, 0.7)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /><polyline points="6,14 22,32 44,8" fill="none" stroke="#ffcc00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+            <div class="mf-clean-check" style="left:36.0%; top:54.0%; transform:translate(-50%, -100%);"><svg viewBox="0 0 48 38" aria-hidden="true"><polyline class="mf-clean-check-pulse-line" points="6,14 22,32 44,8" fill="none" stroke="rgba(250, 204, 21, 0.7)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /><polyline points="6,14 22,32 44,8" fill="none" stroke="#ffcc00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+            <div class="mf-clean-popup mf-clean-axis-popup" style="left:50%; top:1%;">
+              <span class="mf-clean-popup-title"><span data-i18n="mf-auto-934" data-i18n-default="축 변경">축 변경</span></span>
+              <span class="mf-clean-popup-desc"><span data-i18n="mf-auto-935" data-i18n-default="그림과 같이 축을 이동 및 회전합니다.">그림과 같이 축을 이동 및 회전합니다.</span></span>
+            </div>
           </div>
         </div>
       </section>
@@ -3639,24 +3836,18 @@
 
         <!-- Image 1 -->
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
-          <div class="mf-env-stage" id="mf-env-stage-1" data-measure-stage>
+          <div class="mf-env-stage" id="mf-env-stage-1">
             <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-1.webp" alt="환경설정 1" />
           </div>
         </div>
 
         <!-- Image 2 -->
         <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
-          <div class="mf-env-stage" id="mf-env-stage-2" data-measure-stage>
+          <div class="mf-env-stage" id="mf-env-stage-2">
             <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-2.webp" alt="환경설정 2" />
           </div>
         </div>
 
-        <!-- Image 3 -->
-        <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
-          <div class="mf-env-stage" id="mf-env-stage-3" data-measure-stage>
-            <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-3.webp" alt="환경설정 3" />
-          </div>
-        </div>
       </section>
 
 
@@ -8066,6 +8257,5 @@
 
 </script>
 
-  <script src="htmls/measurement_tool.js"></script>
 </body>
 </html>
