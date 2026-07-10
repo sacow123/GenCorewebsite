@@ -1,37 +1,66 @@
-<section id="sec-rep-mf-parts-guide" class="content-section">
-        <h2 data-i18n="nav-rep-parts-guide">🔧 소모품/ 부품 교체 가이드</h2>
+﻿<section id="sec-rep-mf-parts-guide" class="content-section">
+        <h2 data-i18n="nav-rep-parts-guide"><span data-i18n="mf-auto-668">🔧 수리 가이드</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#sec-rep-mf-parts-guide"
             style="color:#a855f7; text-decoration:none;">#sec-rep-mf-parts-guide</a></div>
-        <p class="subtitle">수리 메뉴얼- MillFix</p>
-        <div class="content-card">
-          <div style="display:flex; flex-direction:column; gap:16px;">
-            <div style="padding:20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.05); transition:all 0.2s;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openVideoModal('X축 베어링 교체방법', 'https://www.youtube.com/embed/DoqDVRFI2R8')">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px;">
-                  ▶
+        <p class="subtitle">기술 지원 매뉴얼- MillFix</p>
+        <div class="content-card" style="padding:24px;">
+          <!-- Search Bar -->
+          <div style="margin-bottom:24px;">
+            <div style="position:relative; width:100%;">
+              <span style="position:absolute; left:16px; top:50%; transform:translateY(-50%); font-size:18px; color:#94a3b8; pointer-events:none;">🔍</span>
+              <input type="text" id="mf-parts-search" oninput="filterMfPartsGuide(this.value)" placeholder="부품명 또는 교체 방법 검색 (예: 베어링, 센서, 스크린, X축, Z축...)" style="width:100%; padding:14px 16px 14px 46px; font-size:15px; border:1px solid #cbd5e1; border-radius:12px; background:#ffffff; color:#1e293b; outline:none; transition:all 0.2s; box-shadow:0 2px 4px rgba(0,0,0,0.02);" onfocus="this.style.borderColor='#a855f7'; this.style.boxShadow='0 0 0 3px rgba(168,85,247,0.15)'" onblur="this.style.borderColor='#cbd5e1'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)'">
+            </div>
+          </div>
+
+          <div id="mf-parts-list" style="display:flex; flex-direction:column; gap:24px;">
+            <!-- Category 1: PC -->
+            <div class="mf-category-group" data-category="pc" style="display:flex; flex-direction:column; gap:12px;">
+              <div class="mf-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
+                <span>🖥️ PC 관련 (PC Parts)</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <div class="mf-card-item" data-title="터치 보드 스크린 교체 방법 touch board screen replacement" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('터치 보드 스크린 교체 방법', 'https://www.youtube.com/embed/7ASH_vvtSc0')">
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px; flex-shrink:0;">▶</div>
+                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span data-i18n="mf-auto-814">터치 보드 스크린 교체 방법</span></h3>
+                  </div>
                 </div>
-                <h3 style="margin:0; font-size:18px; color:#1f2937; font-weight:700;">X축 베어링 교체방법</h3>
               </div>
             </div>
 
-            <div style="padding:20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.05); transition:all 0.2s;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openVideoModal('Z축 센서 케이블 교체 방법', 'https://www.youtube.com/embed/sXIljc8bs2Q')">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px;">
-                  ▶
+            <!-- Category 2: Drive -->
+            <div class="mf-category-group" data-category="drive" style="display:flex; flex-direction:column; gap:12px;">
+              <div class="mf-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
+                <span>🔧 구동부 관련 (Drive Parts)</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <div class="mf-card-item" data-title="x축 베어링 교체방법 replace x-axis bearing" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('X축 베어링 교체방법', 'https://www.youtube.com/embed/DoqDVRFI2R8')">
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px; flex-shrink:0;">▶</div>
+                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span data-i18n="mf-auto-812">X축 베어링 교체방법</span></h3>
+                  </div>
                 </div>
-                <h3 style="margin:0; font-size:18px; color:#1f2937; font-weight:700;">Z축 센서 케이블 교체 방법</h3>
               </div>
             </div>
 
-            <div style="padding:20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.05); transition:all 0.2s;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openVideoModal('터치 보드 스크린 교체 방법', 'https://www.youtube.com/embed/7ASH_vvtSc0')">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px;">
-                  ▶
+            <!-- Category 3: Sensor -->
+            <div class="mf-category-group" data-category="sensor" style="display:flex; flex-direction:column; gap:12px;">
+              <div class="mf-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
+                <span>🛠️ 센서 관련 (Sensor Parts)</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <div class="mf-card-item" data-title="z축 센서 케이블 교체 방법 replace z-axis sensor cable" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('Z축 센서 케이블 교체 방법', 'https://www.youtube.com/embed/sXIljc8bs2Q')">
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px; flex-shrink:0;">▶</div>
+                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span data-i18n="mf-auto-813">Z축 센서 케이블 교체 방법</span></h3>
+                  </div>
                 </div>
-                <h3 style="margin:0; font-size:18px; color:#1f2937; font-weight:700;">터치 보드 스크린 교체 방법</h3>
               </div>
             </div>
           </div>
+
+          <div id="mf-parts-no-results" style="display:none; padding:32px; text-align:center; color:#64748b; background:#f8fafc; border-radius:12px; border:1px dashed #cbd5e1; font-size:15px;">
+            검색된 부품/교체 가이드가 없습니다. 다른 검색어를 입력해보세요.
           </div>
-      </section>
+        </div>`r`n      </section>

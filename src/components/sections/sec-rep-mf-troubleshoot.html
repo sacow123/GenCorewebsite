@@ -1,27 +1,66 @@
-<section id="sec-rep-mf-troubleshoot" class="content-section">
-        <h2 data-i18n="nav-rep-troubleshoot">🩺 문제 해결</h2>
-        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-rep-mf-troubleshoot"
-            style="color:#a855f7; text-decoration:none;">#sec-rep-mf-troubleshoot</a></div>
-        <p class="subtitle">수리 메뉴얼- MillFix</p>
-        <div class="content-card">
-          <div style="display:flex; flex-direction:column; gap:16px;">
-            <div style="padding:20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.05); transition:all 0.2s;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openVideoModal('축 에러 발생 시 대응법', 'https://www.youtube.com/embed/9tccJCk4f1s')">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px;">
-                  ▶
-                </div>
-                <h3 style="margin:0; font-size:18px; color:#1f2937; font-weight:700;">축 에러 발생 시 대응법</h3>
-              </div>
+﻿<section id="sec-rep-mf-troubleshoot" class="content-section">
+  <h2 data-i18n="nav-rep-troubleshoot"><span data-i18n="mf-auto-666">🩺 트러블 슈팅</span></h2>
+  <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
+    Anchor: <a href="#sec-rep-mf-troubleshoot"
+      style="color:#a855f7; text-decoration:none;">#sec-rep-mf-troubleshoot</a></div>
+  <p class="subtitle"><span data-i18n="mf-auto-809">기술 지원 매뉴얼- MillFix</span></p>
+  <div class="content-card" style="background:transparent; border:none; padding:0; box-shadow:none;">
+    <div style="display:flex; flex-direction:column; gap:24px;">
+
+      <!-- Item 1: MillFix Axis Error -->
+      <div onclick="openMfAxisTroubleshootModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 12px 32px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
+          <div style="display:flex; align-items:flex-start; gap:14px;">
+            <div style="width:46px; height:46px; border-radius:12px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:24px; flex-shrink:0;">
+              🚨
             </div>
-            <div style="padding:20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.05); transition:all 0.2s;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openVideoModal('밀픽스 노즐 압력을 조정하는 법', 'https://www.youtube.com/embed/heR7U5w97Gs')">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px;">
-                  ▶
-                </div>
-                <h3 style="margin:0; font-size:18px; color:#1f2937; font-weight:700;">밀픽스 노즐 압력을 조정하는 법</h3>
-              </div>
+            <div style="display:flex; flex-direction:column; gap:4px;">
+              <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">[MillFix] 축 에러 발생 시 대응 및 해결 방법</h3>
+              <span style="font-size:13px; color:#a855f7; font-weight:600;">Axis error troubleshooting and recovery guide</span>
             </div>
           </div>
+          <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#f3e8ff; color:#a855f7; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #e9d5ff;">
+            <span>🔍 해결 방법 자세히 보기</span>
           </div>
-      </section>
+        </div>
+
+        <!-- Symptom Image Only -->
+        <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+          <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상</div>
+          <div style="max-width:520px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff;">
+            <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">축 에러 경고 및 조그 안내 화면</div>
+            <img src="assets/images/sec-mf-jog/axis-jog-caution-screen.webp" alt="축 에러 및 조그 화면" style="width:100%; height:auto; display:block;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: MillFix Nozzle Pressure -->
+      <div onclick="openMfNozzleTroubleshootModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#f59e0b'; this.style.boxShadow='0 12px 32px rgba(245,158,11,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
+          <div style="display:flex; align-items:flex-start; gap:14px;">
+            <div style="width:46px; height:46px; border-radius:12px; background:#fef3c7; display:flex; align-items:center; justify-content:center; color:#d97706; font-size:24px; flex-shrink:0;">
+              🛠️
+            </div>
+            <div style="display:flex; flex-direction:column; gap:4px;">
+              <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">[MillFix] 노즐 에어 압력을 조정하는 방법</h3>
+              <span style="font-size:13px; color:#d97706; font-weight:600;">MillFix air nozzle pressure adjustment and optimization</span>
+            </div>
+          </div>
+          <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#fef3c7; color:#d97706; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #fde68a;">
+            <span>🔍 해결 방법 자세히 보기</span>
+          </div>
+        </div>
+
+        <!-- Symptom Image Only -->
+        <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+          <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 및 필요성</div>
+          <div style="max-width:520px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff;">
+            <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">밀픽스 설정 및 에어 압력 점검 화면</div>
+            <img src="assets/images/sec-mf-settings/millfix-settings-screen.webp" alt="밀픽스 설정 및 에어 압력 점검 화면" style="width:100%; height:auto; display:block;">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
