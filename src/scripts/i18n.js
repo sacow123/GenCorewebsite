@@ -1,13 +1,13 @@
-/* ===== i18n 다국어 전환 시스템 ===== */
+﻿/* ===== i18n 다국어 전환 시스템 ===== */
 const TRANSLATIONS = {
   "ko": {
     "site-title": "GenCore Technical Support Center",
     "nav-safety": "취급시 주의사항(공통)",
     "nav-user-manual": "사용자 매뉴얼",
-    "nav-repair-manual": "수리 매뉴얼",
-    "nav-rep-troubleshoot": "🩺 문제 해결",
+    "nav-repair-manual": "기술 지원 매뉴얼",
+    "nav-rep-troubleshoot": "🩺 트러블 슈팅",
     "nav-rep-errorcode": "🚨 오류 코드 리스트",
-    "nav-rep-parts-guide": "🔧 소모품/ 부품 교체 가이드",
+    "nav-rep-parts-guide": "🔧 수리 가이드",
     "nav-tutorial": "튜토리얼",
     "nav-faq": "자주 묻는 질문",
     "section-home-title": "GenCore Technical Support Center",
@@ -16,7 +16,7 @@ const TRANSLATIONS = {
     "section-safety-desc": "모든 장비에 공통으로 적용되는 안전 수칙입니다.",
     "section-user-manual-title": "사용자 매뉴얼",
     "section-user-manual-desc": "장비별 사용자 매뉴얼을 확인하세요.",
-    "section-repair-manual-title": "수리 매뉴얼",
+    "section-repair-manual-title": "기술 지원 매뉴얼",
     "section-repair-manual-desc": "장비 수리 및 유지보수 가이드입니다.",
     "section-tutorial-title": "튜토리얼",
     "section-tutorial-desc": "단계별 사용 가이드 및 영상 튜토리얼입니다.",
@@ -429,10 +429,10 @@ const TRANSLATIONS = {
     "mf-auto-292": " 소재(blanks)",
     "mf-auto-302": "데이터베이스(Dbconfig)",
     "mf-auto-314": "픽스처(Fixture)",
-    "mf-auto-665": "수리 매뉴얼",
-    "mf-auto-666": "🩺 문제 해결",
+    "mf-auto-665": "기술 지원 매뉴얼",
+    "mf-auto-666": "🩺 트러블 슈팅",
     "mf-auto-667": "🚨 오류 코드 리스트",
-    "mf-auto-668": "🔧 소모품/ 부품 교체 가이드",
+    "mf-auto-668": "🔧 수리 가이드",
     "mf-auto-669": "자주 묻는 질문",
     "mf-auto-670": "🔍 검색 결과",
     "mf-auto-671": "제품 매뉴얼 및 기술 지원 센터에 오신 것을 환영합니다. 좌측 메뉴에서 원하는 항목을 선택해 주세요.",
@@ -1126,8 +1126,8 @@ const TRANSLATIONS = {
     "mf-auto-264": "콜렛 표면에 과도한 그리스가 남아 있지 않은지 확인",
     "mf-auto-265": "공구가 정상적으로 삽입 및 고정되는지 확인",
     "mf-auto-266": "콜렛 Open / Close 동작이 정상적으로 작동하는지 확인",
-    "mf-auto-808": "수리 메뉴얼- M AI°",
-    "mf-auto-809": "수리 메뉴얼- MillFix",
+    "mf-auto-808": "기술 지원 매뉴얼 - M AI°",
+    "mf-auto-809": "기술 지원 매뉴얼 - MillFix",
     "mf-auto-810": "축 에러 발생 시 대응법",
     "mf-auto-811": "밀픽스 노즐 압력을 조정하는 법",
     "mf-auto-812": "X축 베어링 교체방법",
@@ -1356,10 +1356,10 @@ const TRANSLATIONS = {
     "site-title": "GenCore Technical Support Center",
     "nav-safety": "Safety Precautions (General)",
     "nav-user-manual": "User Manual",
-    "nav-repair-manual": "Repair Manual",
+    "nav-repair-manual": "Technical Support Manual",
     "nav-rep-troubleshoot": "🩺 Troubleshooting",
     "nav-rep-errorcode": "🚨 Error Code List",
-    "nav-rep-parts-guide": "🔧 Consumables / Parts Replacement Guide",
+    "nav-rep-parts-guide": "🔧 Repair Guide",
     "nav-tutorial": "Tutorial",
     "nav-faq": "FAQ",
     "section-home-title": "GenCore Technical Support Center",
@@ -1579,10 +1579,10 @@ const TRANSLATIONS = {
     "site-title": "GenCore テクニカルサポートセンター",
     "nav-safety": "取り扱い注意事項（共通）",
     "nav-user-manual": "ユーザーマニュアル",
-    "nav-repair-manual": "修理マニュアル",
+    "nav-repair-manual": "技術サポートマニュアル",
     "nav-rep-troubleshoot": "🩺 トラブルシューティング",
     "nav-rep-errorcode": "🚨 エラーコードリスト",
-    "nav-rep-parts-guide": "🔧 消耗品 / 部品交換ガイド",
+    "nav-rep-parts-guide": "🔧 修理ガイド",
     "nav-tutorial": "チュートリアル",
     "nav-faq": "よくある質問",
     "section-home-title": "GenCore テクニカルサポートセンター",
@@ -1754,10 +1754,10 @@ const TRANSLATIONS = {
     "site-title": "Centro de Soporte Técnico GenCore",
     "nav-safety": "Precauciones de Manejo (General)",
     "nav-user-manual": "Manual de Usuario",
-    "nav-repair-manual": "Manual de Reparación",
+    "nav-repair-manual": "Manual de Soporte Técnico",
     "nav-rep-troubleshoot": "🩺 Solución de Problemas",
     "nav-rep-errorcode": "🚨 Lista de Códigos de Error",
-    "nav-rep-parts-guide": "🔧 Guía de Reemplazo de Consumibles / Repuestos",
+    "nav-rep-parts-guide": "🔧 Guía de Reparación",
     "nav-tutorial": "Tutorial",
     "nav-faq": "Preguntas Frecuentes",
     "section-home-title": "Centro de Soporte Técnico GenCore",
@@ -1959,7 +1959,7 @@ const EN_OVERRIDES = {
   "mf-auto-292": "Material (blanks)",
   "mf-auto-666": "Troubleshooting",
   "mf-auto-667": "Error Code List",
-  "mf-auto-668": "Consumables / Parts Replacement Guide",
+  "mf-auto-668": "Repair Guide",
   "mf-auto-670": "Search Results",
   "mf-auto-671": "Welcome to the product manual and technical support center. Select a topic from the menu on the left.",
   "mf-auto-672": "Welcome",
@@ -2646,8 +2646,8 @@ const EN_COMPLETION_OVERRIDES = {
   "mf-auto-735": "M AI Tool Care",
   "mf-auto-736": "Content will be added later.",
   "mf-auto-777": "",
-  "mf-auto-808": "Repair Manual - M AI",
-  "mf-auto-809": "Repair Manual - MillFix",
+  "mf-auto-808": "기술 지원 매뉴얼 - M AI°",
+  "mf-auto-809": "기술 지원 매뉴얼 - MillFix",
   "mf-auto-810": "How to respond to axis errors",
   "mf-auto-811": "How to adjust MillFix nozzle pressure",
   "mf-auto-812": "How to replace the X-axis bearing",
@@ -2723,9 +2723,9 @@ const KO_NAV_OVERRIDES = {
   "mf-auto-658": " 소재",
   "mf-auto-659": "📝 세팅 파일",
   "mf-auto-660": "🎓 튜토리얼",
-  "mf-auto-666": "🩺 문제 해결",
+  "mf-auto-666": "🩺 트러블 슈팅",
   "mf-auto-667": "🚨 오류 코드 리스트",
-  "mf-auto-668": "🔩 소모품 / 부품 교체 가이드"
+  "mf-auto-668": "🔧 수리 가이드"
 };
 
 Object.assign(TRANSLATIONS.ko, KO_NAV_OVERRIDES);
@@ -2948,7 +2948,7 @@ const JA_NAV_OVERRIDES = {
   "mf-auto-660": "🎓 チュートリアル",
   "mf-auto-666": "🩺 トラブルシューティング",
   "mf-auto-667": "🚨 エラーコードリスト",
-  "mf-auto-668": "🔩 消耗品 / 部品交換ガイド"
+  "mf-auto-668": "🔧 修理ガイド"
 };
 
 Object.assign(TRANSLATIONS.ja, JA_NAV_OVERRIDES);
@@ -3414,7 +3414,7 @@ const ES_NAV_OVERRIDES = {
   "mf-auto-660": "🎓 Tutoriales",
   "mf-auto-666": "🩺 Solución de problemas",
   "mf-auto-667": "🚨 Lista de códigos de error",
-  "mf-auto-668": "🔩 Guía de consumibles / reemplazo de piezas"
+  "mf-auto-668": "🔧 Guía de Reparación"
 };
 
 Object.assign(TRANSLATIONS.es, ES_NAV_OVERRIDES);
@@ -3975,7 +3975,7 @@ Object.assign(TRANSLATIONS.ja, {
 });
 
 Object.assign(TRANSLATIONS.ko, {
-  "mf-auto-3090": "수리 메뉴얼- M AI°",
+  "mf-auto-3090": "기술 지원 매뉴얼- M AI°",
   "mf-auto-3091": "[M AI] 동작 중 스핀들 알람 발생 및 회전 정지 해결 방법",
   "mf-auto-3092": "🔍 해결 방법 자세히 보기",
   "mf-auto-3093": "📌 증상",
@@ -4014,7 +4014,7 @@ Object.assign(TRANSLATIONS.ko, {
 });
 
 Object.assign(TRANSLATIONS.en, {
-  "mf-auto-3090": "Repair Manual - M AI°",
+  "mf-auto-3090": "Technical Support Manual - M AI°",
   "mf-auto-3091": "[M AI] How to resolve a spindle alarm and spindle stop during operation",
   "mf-auto-3092": "🔍 View detailed solution",
   "mf-auto-3093": "📌 Symptom",
@@ -4053,7 +4053,7 @@ Object.assign(TRANSLATIONS.en, {
 });
 
 Object.assign(TRANSLATIONS.ja, {
-  "mf-auto-3090": "修理マニュアル - M AI°",
+  "mf-auto-3090": "テクニカルサポートマニュアル - M AI°",
   "mf-auto-3091": "[M AI] 動作中にスピンドルアラームが発生し、回転が停止した場合の対処方法",
   "mf-auto-3092": "🔍 対処方法を詳しく見る",
   "mf-auto-3093": "📌 症状",
