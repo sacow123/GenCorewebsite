@@ -431,6 +431,24 @@ document.addEventListener("DOMContentLoaded", () => {
       ? results.length + '개의 결과가 발견되었습니다.'
       : '검색 결과가 없습니다.';
 
+    var searchTitleTemplate = typeof getI18nText === 'function'
+      ? getI18nText(currentLang, 'search-results-title', '🔍 Search results: "{query}"')
+      : '🔍 Search results: "{query}"';
+    var searchFoundTemplate = typeof getI18nText === 'function'
+      ? getI18nText(currentLang, 'search-results-found', '{count} results found.')
+      : '{count} results found.';
+    var searchEmptyText = typeof getI18nText === 'function'
+      ? getI18nText(currentLang, 'search-results-empty', 'No results found.')
+      : 'No results found.';
+    var searchTryAgainText = typeof getI18nText === 'function'
+      ? getI18nText(currentLang, 'search-results-try-again', 'Try another keyword.')
+      : 'Try another keyword.';
+
+    searchResultsTitle.textContent = searchTitleTemplate.replace('{query}', query);
+    searchResultsSubtitle.textContent = results.length > 0
+      ? searchFoundTemplate.replace('{count}', results.length)
+      : searchEmptyText;
+
     if (results.length > 0) {
       searchResultsGrid.innerHTML = results.map(function(res) {
         var breadcrumbHtml = res.breadcrumb
@@ -495,6 +513,12 @@ document.addEventListener("DOMContentLoaded", () => {
         '<div style="font-size:48px; margin-bottom:16px;">🔍</div>' +
         '<div style="font-size:16px; font-weight:600; color:#444; margin-bottom:8px;">검색 결과가 없습니다</div>' +
         '<div style="font-size:13px;">다른 키워드로 다시 시도해 보세요.</div>' +
+        '</div>';
+      searchResultsGrid.innerHTML =
+        '<div style="grid-column:1/-1; text-align:center; padding:60px 20px; color:var(--text-muted);">' +
+        '<div style="font-size:48px; margin-bottom:16px;">🔍</div>' +
+        '<div style="font-size:16px; font-weight:600; color:#444; margin-bottom:8px;">' + searchEmptyText + '</div>' +
+        '<div style="font-size:13px;">' + searchTryAgainText + '</div>' +
         '</div>';
     }
   }

@@ -2646,8 +2646,8 @@ const EN_COMPLETION_OVERRIDES = {
   "mf-auto-735": "M AI Tool Care",
   "mf-auto-736": "Content will be added later.",
   "mf-auto-777": "",
-  "mf-auto-808": "기술 지원 매뉴얼 - M AI°",
-  "mf-auto-809": "기술 지원 매뉴얼 - MillFix",
+  "mf-auto-808": "Technical Support Manual - M AI°",
+  "mf-auto-809": "Technical Support Manual - MillFix",
   "mf-auto-810": "How to respond to axis errors",
   "mf-auto-811": "How to adjust MillFix nozzle pressure",
   "mf-auto-812": "How to replace the X-axis bearing",
@@ -3584,6 +3584,120 @@ function getI18nText(lang, key, fallbackText) {
   return value;
 }
 
+Object.assign(TRANSLATIONS.ko, {
+  "rep-overview-title": "기술 지원 매뉴얼 (Technical Support Manual)",
+  "rep-overview-desc": "GenCore M AI° 및 MillFix 장비의 트러블 슈팅, 오류 코드 대응 및 수리 가이드 통합 매뉴얼입니다.",
+  "rep-overview-mai-title": "📌 M AI° 기술 지원 페이지",
+  "rep-overview-mai-trouble-title": "🩺 M AI° 트러블 슈팅",
+  "rep-overview-mai-trouble-desc": "주요 증상별 원인 파악 및 해결 가이드",
+  "rep-overview-mai-error-title": "🚨 M AI° 오류 코드 리스트",
+  "rep-overview-mai-error-desc": "오류 코드 검색, 원인 진단 및 해결 방법",
+  "rep-overview-mai-repair-title": "🔧 M AI° 수리 가이드",
+  "rep-overview-mai-repair-desc": "카테고리별 부품 교체 매뉴얼",
+  "rep-overview-update-title": "💻 컨트롤 프로그램 업데이트",
+  "rep-overview-update-desc": "업데이트 및 재설치 가이드 영상",
+  "rep-overview-mf-title": "📌 MillFix 기술 지원 페이지",
+  "rep-overview-mf-trouble-title": "🩺 MillFix 트러블 슈팅",
+  "rep-overview-mf-trouble-desc": "주요 트러블 해결 가이드",
+  "rep-overview-mf-repair-title": "🔧 MillFix 수리 가이드",
+  "rep-overview-mf-repair-desc": "카테고리별 부품 교체 매뉴얼"
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "rep-overview-title": "Technical Support Manual",
+  "rep-overview-desc": "An integrated manual for troubleshooting, error-code response, and repair guidance for GenCore M AI° and MillFix equipment.",
+  "rep-overview-mai-title": "📌 M AI° Technical Support",
+  "rep-overview-mai-trouble-title": "🩺 M AI° Troubleshooting",
+  "rep-overview-mai-trouble-desc": "Guide to identifying causes and resolving common symptoms",
+  "rep-overview-mai-error-title": "🚨 M AI° Error Code List",
+  "rep-overview-mai-error-desc": "Search error codes, diagnose causes, and find solutions",
+  "rep-overview-mai-repair-title": "🔧 M AI° Repair Guide",
+  "rep-overview-mai-repair-desc": "Category-based parts replacement manual",
+  "rep-overview-update-title": "💻 Control Program Update",
+  "rep-overview-update-desc": "Videos for update and reinstallation guidance",
+  "rep-overview-mf-title": "📌 MillFix Technical Support",
+  "rep-overview-mf-trouble-title": "🩺 MillFix Troubleshooting",
+  "rep-overview-mf-trouble-desc": "Guide to resolving common issues",
+  "rep-overview-mf-repair-title": "🔧 MillFix Repair Guide",
+  "rep-overview-mf-repair-desc": "Category-based parts replacement manual"
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "rep-overview-title": "技術サポートマニュアル",
+  "rep-overview-desc": "GenCore M AI°およびMillFix装置のトラブルシューティング、エラーコード対応、修理ガイドを統合したマニュアルです。",
+  "rep-overview-mai-title": "📌 M AI° 技術サポートページ",
+  "rep-overview-mai-trouble-title": "🩺 M AI° トラブルシューティング",
+  "rep-overview-mai-trouble-desc": "主な症状別の原因確認と解決ガイド",
+  "rep-overview-mai-error-title": "🚨 M AI° エラーコードリスト",
+  "rep-overview-mai-error-desc": "エラーコードの検索、原因診断、解決方法",
+  "rep-overview-mai-repair-title": "🔧 M AI° 修理ガイド",
+  "rep-overview-mai-repair-desc": "カテゴリ別の部品交換マニュアル",
+  "rep-overview-update-title": "💻 制御プログラムのアップデート",
+  "rep-overview-update-desc": "アップデートおよび再インストールガイド動画",
+  "rep-overview-mf-title": "📌 MillFix 技術サポートページ",
+  "rep-overview-mf-trouble-title": "🩺 MillFix トラブルシューティング",
+  "rep-overview-mf-trouble-desc": "主なトラブルの解決ガイド",
+  "rep-overview-mf-repair-title": "🔧 MillFix 修理ガイド",
+  "rep-overview-mf-repair-desc": "カテゴリ別の部品交換マニュアル"
+});
+
+Object.assign(TRANSLATIONS.ko, {
+  "rep-mai-parts-search-placeholder": "부품명 또는 교체 방법 검색 (예: 스핀들, 메인보드, 센서, PC, 초기화...)",
+  "rep-mai-parts-spindle-category": "⚙️ 스핀들 관련 (Spindle Parts)",
+  "rep-mai-parts-spindle-position": "스핀들 위치 조정 방법 (Adjust the spindle position)",
+  "rep-mai-parts-spindle-replacement": "스핀들 교체 방법 (Spindle replacement)",
+  "rep-mai-parts-spindle-drive": "스핀들 드라이브 교체 방법 (Spindle drive replacement)",
+  "rep-mai-parts-tp-cleaning": "TP 파트 청소 방법 (How to clean the TP part)",
+  "rep-mai-parts-pc-category": "🖥️ PC 관련 (PC Parts)",
+  "rep-mai-parts-mainboard": "메인보드 교체 방법 (Replace Mainboard / PC)",
+  "rep-mai-parts-pc-reset": "PC 초기화 방법 (PC Factory Reset - 한국어/English)",
+  "rep-mai-parts-drive-category": "🔧 구동부 관련 (Drive Parts)",
+  "rep-mai-parts-x-bracket": "X축 브라켓 교체 방법 (Replace the X-axis bracket)",
+  "rep-mai-parts-x-coupling": "X축 커플링 교체 방법 (Replace the X-axis coupling)",
+  "rep-mai-parts-bellows": "자바라 교체 방법 (Replace Sliding Bellows)",
+  "rep-mai-parts-sensor-category": "🛠️ 센서 관련 (Sensor Parts)",
+  "rep-mai-parts-tool-touch-sensor": "툴터치센서 교체 방법 (Replace Tool touch sensor)",
+  "rep-mai-parts-no-results": "검색된 부품/교체 가이드가 없습니다. 다른 검색어를 입력해보세요."
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "rep-mai-parts-search-placeholder": "Search by part name or replacement procedure (e.g., spindle, mainboard, sensor, PC, reset...)",
+  "rep-mai-parts-spindle-category": "⚙️ Spindle Parts",
+  "rep-mai-parts-spindle-position": "Adjust Spindle Position",
+  "rep-mai-parts-spindle-replacement": "Replace Spindle",
+  "rep-mai-parts-spindle-drive": "Replace Spindle Drive",
+  "rep-mai-parts-tp-cleaning": "Clean the TP Part",
+  "rep-mai-parts-pc-category": "🖥️ PC Parts",
+  "rep-mai-parts-mainboard": "Replace Mainboard / PC",
+  "rep-mai-parts-pc-reset": "PC Factory Reset",
+  "rep-mai-parts-drive-category": "🔧 Drive Parts",
+  "rep-mai-parts-x-bracket": "Replace the X-axis Bracket",
+  "rep-mai-parts-x-coupling": "Replace the X-axis Coupling",
+  "rep-mai-parts-bellows": "Replace Sliding Bellows",
+  "rep-mai-parts-sensor-category": "🛠️ Sensor Parts",
+  "rep-mai-parts-tool-touch-sensor": "Replace Tool Touch Sensor",
+  "rep-mai-parts-no-results": "No matching parts or replacement guides were found. Try another search term."
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "rep-mai-parts-search-placeholder": "部品名または交換方法を検索（例：スピンドル、メインボード、センサー、PC、初期化…）",
+  "rep-mai-parts-spindle-category": "⚙️ スピンドル関連（Spindle Parts）",
+  "rep-mai-parts-spindle-position": "スピンドル位置の調整方法",
+  "rep-mai-parts-spindle-replacement": "スピンドルの交換方法",
+  "rep-mai-parts-spindle-drive": "スピンドルドライブの交換方法",
+  "rep-mai-parts-tp-cleaning": "TPパーツの清掃方法",
+  "rep-mai-parts-pc-category": "🖥️ PC関連（PC Parts）",
+  "rep-mai-parts-mainboard": "メインボードの交換方法",
+  "rep-mai-parts-pc-reset": "PCの初期化方法",
+  "rep-mai-parts-drive-category": "🔧 駆動部関連（Drive Parts）",
+  "rep-mai-parts-x-bracket": "X軸ブラケットの交換方法",
+  "rep-mai-parts-x-coupling": "X軸カップリングの交換方法",
+  "rep-mai-parts-bellows": "蛇腹の交換方法",
+  "rep-mai-parts-sensor-category": "🛠️ センサー関連（Sensor Parts）",
+  "rep-mai-parts-tool-touch-sensor": "工具タッチセンサーの交換方法",
+  "rep-mai-parts-no-results": "該当する部品・交換ガイドが見つかりません。別の検索語を入力してください。"
+});
+
 const MISSING_TRANSLATION_LABELS = {
   en: "English translation pending.",
   ja: "日本語翻訳準備中です。",
@@ -3591,6 +3705,59 @@ const MISSING_TRANSLATION_LABELS = {
 };
 
 const STATIC_CONTENT_TRANSLATIONS = {
+  en: {
+    "수리 매뉴얼 - M AI°": "Repair Manual - M AI°",
+    "UI 2.0 업데이트 기준 안내:": "UI 2.0 Update Requirements:",
+    "본 문서의 메시지 번호를 사용하시려면": "To use the message numbers in this document,",
+    "버전 이상이 필요합니다.": "or later is required.",
+    "오류 코드나 키워드(예: A101, 공구, 에어, 캘리브레이션, 스핀들, USB...)를 입력하세요": "Enter an error code or keyword (e.g., A101, tool, air, calibration, spindle, USB...)",
+    "⚡ 전체 보기 (138)": "⚡ View All (138)",
+    "🔴 A (에어/ ATC/ 툴)": "🔴 A (Air / ATC / Tool)",
+    "🔵 C (캘리브레이션)": "🔵 C (Calibration)",
+    "🟢 M & H (동작/ 원점)": "🟢 M & H (Operation / Homing)",
+    "🟣 DW & N (환경/ 네트워크)": "🟣 DW & N (Environment / Network)",
+    "🌸 매크로 M코드 리스트": "🌸 Macro M-code List",
+    "코드 번호": "Code Number",
+    "오류 메시지 및 상세 설명 (Messages & Descriptions)": "Error Messages & Descriptions",
+    "비고 (Note)": "Notes",
+    "🔍 검색된 오류 코드나 일치하는 키워드가 없습니다.": "🔍 No matching error codes or keywords found.",
+    "가공 시작에 필요한 공압이 부족하여 가공을 시작할 수 없습니다.": "There is insufficient air pressure to start machining.",
+    "• 에어 컴프레서 및 장비에 공급되는 에어 라인을 점검하십시오.": "• Check the air compressor and the air line supplying the equipment.",
+    "• 콜렛 열기 버튼을 클릭했으나 공압 부족으로 콜렛이 열리지 않았습니다.": "• The collet did not open because of insufficient air pressure after pressing the Open Collet button.",
+    "• 스핀들 테스트 회전 버튼을 터치했을 때 에어 공급이 부족한 상태입니다.": "• The air supply is insufficient when the spindle test rotation button is pressed.",
+    "• 가공 중 공압 공급에 문제가 발생하여 가공이 중단되었습니다. 공구 교체(ATC) 동작 중 압축 공기가 소진되면 장비가 정지합니다.": "• Machining stopped because of an air-supply issue. The equipment stops if compressed air runs out during tool change (ATC).",
+    "• 스핀들 테스트 가동 시 콜릿 척이 닫혀 있어야 작동합니다.": "• The collet chuck must be closed for the spindle test to operate.",
+    "• 열기/닫기(Open/Close) 버튼을 눌러 콜릿 척을 닫고 다시 시도하십시오.": "• Close the collet chuck with the Open/Close button, then try again.",
+    "• 스핀들이 회전하는 동안에는 콜릿 척을 열 수 없습니다. 스핀들 회전 여부를 확인하십시오.": "• The collet chuck cannot be opened while the spindle is rotating. Check the spindle rotation status.",
+    "• 회전 중이라면 스핀들이 완전히 정지한 후 콜릿 척 개방 기능을 사용하십시오.": "• If the spindle is rotating, wait until it stops completely before opening the collet chuck.",
+    "• 상황에 따라 장비가 자동으로 공구 번호를 0으로 설정합니다.": "• Depending on the situation, the equipment automatically sets the tool number to 0.",
+    "공압이 부족하면 가공을 계속할 수 없습니다.": "Machining cannot continue when air pressure is insufficient.",
+    "• 공압 부족 감지 후 복구를 위해 2분간 대기했으나 정상 범위 내 공압이 공급되지 않았습니다.": "• The system waited two minutes for recovery after detecting low air pressure, but normal air pressure was not restored.",
+    "• 컴프레서 및 에어 라인 점검 후 계속하려면 확인을, 공구 교체를 중단하려면 취소를 터치하십시오.": "• After checking the compressor and air line, select OK to continue or Cancel to stop the tool change.",
+    "• ATC 동작에 필요한 공압이 부족하여 공구 교체 동작이 중단되었습니다.": "• Tool change stopped because air pressure required for ATC operation is insufficient.",
+    "• 정상 공압 복구를 위해 2분간 대기했으나 정상화되지 않아 동작을 멈췄습니다.": "• The system waited two minutes for normal air pressure to return, but it was not restored and the operation stopped.",
+    "• 컴프레서 및 에어 라인 확인 후 다시 시도하십시오.": "• Check the compressor and air line, then try again.",
+    "• 공압이 정상 범위에 도달할 때까지 최대 2분간 대기합니다. (대기 시간 표시)": "• Wait up to two minutes for air pressure to reach the normal range. (Wait time is displayed)",
+    "• 입력된 공구 번호가 장비의 지원 범위를 벗어났습니다.": "• The entered tool number is outside the supported range.",
+    "• 사용 가능한 공구 번호를 확인한 후 다시 입력하십시오.": "• Check the available tool numbers, then enter one again.",
+    "• 지원 공구 번호 범위: T1 ~ T28": "• Supported tool number range: T1–T28"
+    ,"• 제어 프로그램은 공구가 없다고(T0) 인식하지만 실제 스핀들에는 공구가 끼워져 있습니다.": "• The control program recognizes no tool (T0), but a tool is actually mounted in the spindle."
+    ,"• 스핀들에 장착된 공구를 직접 확인하고 수동으로 제거하십시오.": "• Check the tool mounted in the spindle and remove it manually."
+    ,"• 제어 프로그램에는 공구 번호가 입력되어 있으나 실제 스핀들에는 공구가 없습니다. 장비 공구 번호가 자동으로 0 초기화됩니다.": "• A tool number is entered in the control program, but no tool is mounted in the spindle. The equipment tool number is automatically reset to 0."
+    ,"• 공구가 부러졌거나 생크(Shank)가 콜릿 내부에 제대로 삽입되었는지 점검하십시오.": "• Check whether the tool is broken or the shank is correctly inserted into the collet."
+    ,"• 공구 파손 또는 마모 가능성이 있으므로 상태 점검이 필요합니다.": "• Inspect the tool condition because it may be broken or worn."
+    ,"• 확인 터치 시 공구 교체 후 밀링을 계속합니다.": "• Selecting OK continues milling after the tool is changed."
+    ,"• 취소 터치 시 가공을 멈추고 공구를 수동으로 제거해야 합니다. (수동 제거 시 설정 페이지에서 공구 번호를 0으로 리셋)": "• Selecting Cancel stops machining and requires manual tool removal. (Reset the tool number to 0 on the Settings page after manual removal.)"
+    ,"• 가공 전후 측정된 공구 길이 차이가 기준값(0.15mm) 이상일 때 이상으로 판별됩니다. (UI 설정에서 판별 기준값 변경 가능)": "• A tool is judged abnormal when the measured tool-length difference before and after machining is 0.15 mm or more. (The threshold can be changed in UI settings.)"
+    ,"• 공구 이상이 감지되었으나 사용자가 확인(OK)을 눌러 가공을 계속 진행하는 상태입니다.": "• A tool abnormality was detected, but machining continues because the user selected OK."
+    ,"• 장비가 공구 이상을 감지했으므로 가공 품질과 장비 상태를 주의 깊게 확인하십시오.": "• The equipment detected a tool abnormality. Carefully check machining quality and equipment condition."
+    ,"• 공구 이상 감지 후 사용자가 취소(NO)를 눌러 공구 교체 동작을 멈췄습니다.": "• After a tool abnormality was detected, the user selected Cancel (NO) and stopped the tool-change operation."
+    ,"• 스핀들에 장착된 공구를 손으로 직접 빼내십시오.": "• Remove the tool mounted in the spindle by hand."
+    ,"• 지정된 번호의 포켓에서 공구를 파지하는 데 실패했습니다.": "• Failed to grip the tool from the specified pocket."
+    ,"• 해당 번호의 툴 포켓에 실제 공구가 올바르게 들어있는지 확인하십시오.": "• Check that the correct tool is properly placed in the tool pocket with that number."
+    ,"• 포켓 반납을 3회 시도했으나 실패했습니다.": "• Returning the tool to the pocket failed after three attempts."
+    ,"• 최대 3회 반복하며, 3회 시도 후에도 실패하면 동작이 자동 정지됩니다.": "• The operation repeats up to three times and stops automatically if all three attempts fail."
+  },
   ja: {
     "수리 매뉴얼 - M AI°": "修理マニュアル - M AI°",
     "UI 2.0 업데이트 기준 안내:": "UI 2.0アップデート基準の案内:",
@@ -3974,13 +4141,245 @@ const STATIC_CONTENT_TRANSLATIONS = {
   }
 };
 
-function applyStaticContentTranslations(lang, root = document.body) {
-  const translations = STATIC_CONTENT_TRANSLATIONS[lang];
-  if (!root || !translations) return;
+Object.assign(STATIC_CONTENT_TRANSLATIONS.en, {
+  "검색...": "Search...",
+  "Menu": "Menu",
+  "오류 코드 리스트 및 대응 방안 확인하기": "View the Error Code List and Response Guide",
+  "A101, C101 등 M AI 장비에서 발생하는 전체 오류 코드와 세부 해결책을 검색할 수 있습니다.": "Search all error codes occurring on M AI equipment, including A101 and C101, and view detailed solutions.",
+  "오류 코드 리스트 열람 ➔": "View Error Code List ➔",
+  "동작 중 스핀들 알람 발생 및 회전 정지 해결 방법": "Resolve Spindle Alarm and Rotation Stop During Operation",
+  "\"ePID fault...\" 알람 발생 시 해결 방법": "Resolve the \"ePID fault...\" Alarm",
+  "에러 메세지": "Error Message",
+  "에러 메세지에서 OK 버튼 누른 후 스크린 상태": "Screen Status After Pressing OK on the Error Message",
+  "컨트롤 프로그램 업데이트 방법": "Control Program Update Guide",
+  "사용 상의 이유로 컨트롤 프로그램의 업데이트 및 재설치가 필요한 경우": "When the control program needs to be updated or reinstalled during use",
+  "컨트롤 프로그램 화면": "Control Program Screen",
+  "[MillFix] 축 에러 발생 시 대응 및 해결 방법": "[MillFix] Axis Error Response and Recovery",
+  "축 에러 경고 및 조그 안내 화면": "Axis Error Warning and Jog Guidance Screen",
+  "[MillFix] 노즐 에어 압력을 조정하는 방법": "[MillFix] How to Adjust Nozzle Air Pressure",
+  "📌 증상 및 필요성": "📌 Symptoms and Purpose",
+  "밀픽스 설정 및 에어 압력 점검 화면": "MillFix Settings and Air-Pressure Check Screen",
+  "장비가 동작 중에 아래 화면과 같이": "During operation, the equipment may display the following screen and",
+  "알람이 발생하며 정지될 수 있습니다.": "stop with an alarm.",
+  "화면 하단의": "At the bottom of the screen,",
+  "아이콘을 클릭하여 활성화된 매크로를 해제합니다.": "click the icon to release the active macro.",
+  "Ready 상태로 복귀": "Return to Ready status",
+  "버튼을 클릭하여 Ready 상태로 복귀합니다.": "Click the button to return to Ready status.",
+  "원점 복귀": "Homing",
+  "버튼을 다시 클릭하여 장비를 다시 초기화합니다.": "Click the button again to initialize the equipment.",
+  "MillFix 장비 구동 또는 가공 중에 구동축에 과부하가 발생하거나 리밋 센서(Limit Switch)가 감지되는 경우 축 에러 알람이 발생하며 장비가 정지됩니다.": "An axis-error alarm occurs and the MillFix stops if a drive axis is overloaded or a limit switch is detected during operation or machining.",
+  "에러 발생 후 강제로 축을 무리하게 움직이지 마시고, 아래의 단계별 대응 방법 및 참고 영상을 숙지하여 안전하게 복구하십시오.": "Do not force an axis to move after an error. Follow the recovery steps and reference video below.",
+  "알람 메시지 확인: 컨트롤러 화면에서 발생한 정확한 축 에러 알람 내용을 확인합니다.": "Check the alarm message: confirm the exact axis-error alarm shown on the controller.",
+  "비상정지(E-Stop) 및 Ready 복귀: 알람 상태를 해제하고 장비를 Ready 상태로 복귀시킵니다.": "E-Stop and return to Ready: clear the alarm and return the equipment to Ready status.",
+  "조그(Jog) 이동으로 간섭 해제: 공구가 소재나 치구에 간섭된 경우, 조그 모드로 안전하게 이동시킵니다.": "Clear interference with Jog movement: if the tool interferes with material or a fixture, move it safely in Jog mode.",
+  "원점 복귀(Homing) 재진행: 간섭이 해제된 후, 원점 복귀 버튼을 눌러 각 축의 기계 원점을 초기화합니다.": "Run Homing again: after clearing interference, press Homing to initialize each axis's machine home position.",
+  "대응 및 해결 방법을 영상을 통해 자세히 확인하십시오.": "See the video for detailed response and recovery instructions.",
+  "📌 노즐 압력 조정 필요 증상 및 설명": "📌 Symptoms and Explanation for Nozzle Pressure Adjustment",
+  "가공 중 에어 분사가 약해 칩(Chip) 배출이 원활하지 않거나 압력이 너무 강해 소음 및 비산이 발생할 수 있습니다.": "During machining, weak air flow can prevent smooth chip removal, while excessive pressure can cause noise and scattering.",
+  "아래의 단계별 조정 안내 및 참고 영상을 숙지하여 장비의 에어 노즐 분사 압력을 최적의 상태로 설정하십시오.": "Follow the step-by-step guidance and reference video below to set the air-nozzle pressure to an optimal level.",
+  "🛠️ 압력 조정 단계별 안내": "🛠️ Step-by-Step Pressure Adjustment",
+  "에어 공급 상태 확인: 외부 에어 콤프레샤에서 정상적인 압력이 장비로 공급되는지 확인합니다.": "Check the air supply: confirm that the external compressor supplies normal pressure to the equipment.",
+  "레귤레이터 잠금 해제: 에어 압력 조절 레귤레이터의 노브(Knob)를 위로 가볍게 당겨 잠금을 해제합니다.": "Unlock the regulator: gently pull up the air-pressure regulator knob to release the lock.",
+  "미세 압력 조절: 게이지를 확인하면서 노브를 돌려 적정 에어 분사 압력으로 맞춥니다.": "Fine adjustment: turn the knob while checking the gauge to set the appropriate air-nozzle pressure.",
+  "노브 잠금 및 테스트: 노브를 아래로 눌러 고정한 후 에어 분사가 안정적인지 확인합니다.": "Lock and test: push the knob down to lock it, then confirm that the air flow is stable.",
+  "조정 방법을 영상을 통해 자세히 확인하십시오.": "See the video for detailed adjustment instructions.",
+  "우측 커버 제거 (Open the right cover)": "Remove the Right Cover",
+  "케이블 분리 (Disconnect cables)": "Disconnect Cables",
+  "고정 나사 해제 및 드라이브 분리 (Remove the spindle drive)": "Remove the Mounting Screws and Spindle Drive",
+  "새 드라이브 장착 및 재조립 (Assemble with new spindle drive)": "Install the New Drive and Reassemble",
+  "⚠️ 주의사항:": "⚠️ Caution:",
+  "▶ 영상으로 보는 매뉴얼 (Video Manual)": "▶ Video Manual",
+  "📖 글과 사진으로 읽는 매뉴얼 (Reading Manual - Step by Step)": "📖 Step-by-Step Manual with Text and Images",
+  "도어 오픈 및 고정 나사 분리 (Loosen 2 screws)": "Open the Door and Loosen the Two Mounting Screws",
+  "작업 편의를 위한 PC 파트 거치 (Place on a box)": "Place the PC Part on a Box for Easier Work",
+  "케이블 제거 및 사진 촬영 (Take all cables off)": "Remove All Cables and Take a Reference Photo",
+  "메인보드 탈거 및 새 메인보드 장착 (Replace mainboard)": "Remove and Replace the Mainboard",
+  "케이블 연결 (Connect the cables one by one)": "Connect the Cables One by One",
+  "PC 파트 거치 (Hook the PC part on the machine)": "Mount the PC Part on the Equipment",
+  "도어 오픈 및 고정 나사 체결 (Fasten 2 screws)": "Open the Door and Fasten the Two Mounting Screws",
+  "캘리브레이션 수행 (Carry out calibration)": "Perform Calibration",
+  "AI 툴포켓 캘리브레이션": "AI Tool-Pocket Calibration",
+  "AI 디스크 캘리브레이션": "AI Disk Calibration",
+  "AI 프리밀 캘리브레이션 V1.2": "AI Premill Calibration V1.2",
+  "매뉴얼 디스크 캘리브레이션": "Manual Disk Calibration",
+  "PC 초기화 방법 (PC Factory Reset)": "PC Factory Reset",
+  "PC 초기화 안내 및 설명 영상 (Korean & English Versions)": "PC Factory Reset Guide Video",
+  "💡 다음 증상이 발생할 경우 PC 초기화를 진행해 주십시오:": "💡 Reset the PC if any of the following symptoms occur:",
+  "M AI° 전원을 켰을 때 부팅 시간이 불필요하게 오래 걸리는 경우": "The boot time is unnecessarily long after turning on M AI°.",
+  "장비 동작 중 오류 메시지가 빈번하게 표시되는 경우": "Error messages appear frequently during equipment operation.",
+  "화면이 정상적으로 출력되지 않거나 빈번하게 사용 불가능한 상태가 되는 경우": "The screen does not display correctly or frequently becomes unusable.",
+  "PC 응답 및 처리 속도가 느리고, 재부팅을 해도 증상이 개선되지 않는 경우": "PC response and processing are slow and do not improve after restarting.",
+  "🇰🇷 한국어 버전 (Korean Version)": "🇰🇷 Korean Version",
+  "🇺🇸 영어 버전 (English Version)": "🇺🇸 English Version"
+});
 
-  root.querySelectorAll("input[placeholder], textarea[placeholder]").forEach(el => {
-    const translated = translations[el.getAttribute("placeholder")];
-    if (translated) el.setAttribute("placeholder", translated);
+Object.assign(STATIC_CONTENT_TRANSLATIONS.ja, {
+  "검색...": "検索...",
+  "Menu": "メニュー",
+  "오류 코드 리스트 및 대응 방안 확인하기": "エラーコード一覧と対応方法を確認する",
+  "A101, C101 등 M AI 장비에서 발생하는 전체 오류 코드와 세부 해결책을 검색할 수 있습니다.": "A101、C101など、M AI装置で発生するすべてのエラーコードと詳細な解決方法を検索できます。",
+  "오류 코드 리스트 열람 ➔": "エラーコード一覧を見る ➔",
+  "동작 중 스핀들 알람 발생 및 회전 정지 해결 방법": "動作中のスピンドルアラームと回転停止の解決方法",
+  "\"ePID fault...\" 알람 발생 시 해결 방법": "「ePID fault...」アラーム発生時の解決方法",
+  "에러 메세지": "エラーメッセージ",
+  "에러 메세지에서 OK 버튼 누른 후 스크린 상태": "エラーメッセージでOKを押した後の画面状態",
+  "컨트롤 프로그램 업데이트 방법": "制御プログラムのアップデート方法",
+  "사용 상의 이유로 컨트롤 프로그램의 업데이트 및 재설치가 필요한 경우": "使用上の理由で制御プログラムのアップデートまたは再インストールが必要な場合",
+  "컨트롤 프로그램 화면": "制御プログラム画面",
+  "[MillFix] 축 에러 발생 시 대응 및 해결 방법": "[MillFix] 軸エラー発生時の対応と解決方法",
+  "축 에러 경고 및 조그 안내 화면": "軸エラー警告とジョグ案内画面",
+  "[MillFix] 노즐 에어 압력을 조정하는 방법": "[MillFix] ノズルエア圧の調整方法",
+  "📌 증상 및 필요성": "📌 症状と必要性",
+  "밀픽스 설정 및 에어 압력 점검 화면": "MillFix設定とエア圧チェック画面",
+  "장비가 동작 중에 아래 화면과 같이": "装置の動作中、次の画面のように",
+  "알람이 발생하며 정지될 수 있습니다.": "アラームが発生して停止することがあります。",
+  "화면 하단의": "画面下部の",
+  "아이콘을 클릭하여 활성화된 매크로를 해제합니다.": "アイコンをクリックして有効なマクロを解除します。",
+  "Ready 상태로 복귀": "Ready状態に戻る",
+  "버튼을 클릭하여 Ready 상태로 복귀합니다.": "ボタンをクリックしてReady状態に戻ります。",
+  "원점 복귀": "原点復帰",
+  "버튼을 다시 클릭하여 장비를 다시 초기화합니다.": "ボタンをもう一度クリックして装置を再初期化します。",
+  "MillFix 장비 구동 또는 가공 중에 구동축에 과부하가 발생하거나 리밋 센서(Limit Switch)가 감지되는 경우 축 에러 알람이 발생하며 장비가 정지됩니다.": "MillFixの駆動または加工中に駆動軸の過負荷やリミットセンサーの検知が発生すると、軸エラーアラームが発生して装置が停止します。",
+  "에러 발생 후 강제로 축을 무리하게 움직이지 마시고, 아래의 단계별 대응 방법 및 참고 영상을 숙지하여 안전하게 복구하십시오.": "エラー発生後は軸を無理に動かさず、以下の対応手順と参考動画を確認して安全に復旧してください。",
+  "알람 메시지 확인: 컨트롤러 화면에서 발생한 정확한 축 에러 알람 내용을 확인합니다.": "アラームメッセージの確認：コントローラー画面で発生した正確な軸エラー内容を確認します。",
+  "비상정지(E-Stop) 및 Ready 복귀: 알람 상태를 해제하고 장비를 Ready 상태로 복귀시킵니다.": "非常停止（E-Stop）とReady復帰：アラーム状態を解除し、装置をReady状態に戻します。",
+  "조그(Jog) 이동으로 간섭 해제: 공구가 소재나 치구에 간섭된 경우, 조그 모드로 안전하게 이동시킵니다.": "ジョグ移動で干渉を解除：工具が材料や治具と干渉している場合は、ジョグモードで安全に移動させます。",
+  "원점 복귀(Homing) 재진행: 간섭이 해제된 후, 원점 복귀 버튼을 눌러 각 축의 기계 원점을 초기화합니다.": "原点復帰（Homing）を再実行：干渉を解除した後、原点復帰ボタンを押して各軸の機械原点を初期化します。",
+  "대응 및 해결 방법을 영상을 통해 자세히 확인하십시오.": "対応と解決方法は動画で詳しく確認してください。",
+  "📌 노즐 압력 조정 필요 증상 및 설명": "📌 ノズル圧調整が必要な症状と説明",
+  "가공 중 에어 분사가 약해 칩(Chip) 배출이 원활하지 않거나 압력이 너무 강해 소음 및 비산이 발생할 수 있습니다.": "加工中にエア噴射が弱いとチップ排出が不十分になり、圧力が強すぎると騒音や飛散が発生することがあります。",
+  "아래의 단계별 조정 안내 및 참고 영상을 숙지하여 장비의 에어 노즐 분사 압력을 최적의 상태로 설정하십시오.": "以下の段階別調整案内と参考動画を確認し、装置のエアノズル噴射圧を最適な状態に設定してください。",
+  "🛠️ 압력 조정 단계별 안내": "🛠️ 圧力調整の手順",
+  "에어 공급 상태 확인: 외부 에어 콤프레샤에서 정상적인 압력이 장비로 공급되는지 확인합니다.": "エア供給状態の確認：外部エアコンプレッサーから正常な圧力が装置に供給されているか確認します。",
+  "레귤레이터 잠금 해제: 에어 압력 조절 레귤레이터의 노브(Knob)를 위로 가볍게 당겨 잠금을 해제합니다.": "レギュレーターのロック解除：エア圧調整レギュレーターのノブを軽く上に引き、ロックを解除します。",
+  "미세 압력 조절: 게이지를 확인하면서 노브를 돌려 적정 에어 분사 압력으로 맞춥니다.": "微調整：ゲージを確認しながらノブを回し、適切なエアノズル圧に合わせます。",
+  "노브 잠금 및 테스트: 노브를 아래로 눌러 고정한 후 에어 분사가 안정적인지 확인합니다.": "ノブのロックとテスト：ノブを下に押して固定し、エア噴射が安定しているか確認します。",
+  "조정 방법을 영상을 통해 자세히 확인하십시오.": "調整方法は動画で詳しく確認してください。"
+});
+
+Object.assign(STATIC_CONTENT_TRANSLATIONS.ja, {
+  "우측면 케이스를 고정하고 있는 나사들을 제거하고 커버를 분리합니다. (Loosen all bolts fixed the right cover, and take it off.)": "右側面ケースを固定しているネジを外し、カバーを外します。",
+  "스핀들 드라이브는 우측면 하단에 위치해 있습니다. 스핀들 드라이브에 연결되어 있는 3개 케이블을 분리합니다. (The spindle drive is located above of right surface. Disconnect 3 cables that are connected to it.)": "スピンドルドライブは右側面の下部にあります。接続されている3本のケーブルを外します。",
+  "고정 나사 해제 및 드라이브 분리 (Remove the spindle drive)": "固定ネジを外してドライブを取り外す",
+  "스핀들 드라이브를 고정하고 있는 4개의 고정 나사를 풀어서 분리합니다. (Remove the spindle drive by loosening 4 fixed bolts.)": "スピンドルドライブを固定している4本のネジを緩めて取り外します。",
+  "새 드라이브 장착 및 재조립 (Assemble with new spindle drive)": "新しいドライブの取り付けと再組み立て",
+  "스핀들 드라이브를 교체하고 역순으로 조립합니다. (Replace to the new spindle drive and assemble it with reverse order.)": "スピンドルドライブを交換し、逆の手順で組み立てます。",
+  "⚠️ 주의사항:": "⚠️ 注意事項：",
+  "교체된 스핀들 드라이브는 반드시 GenCore에 회수되도록 조치하여 주십시오. (The replaced spindle drive should be returned to GenCore.)": "交換したスピンドルドライブは必ずGenCoreへ返却してください。",
+  "▶ 영상으로 보는 매뉴얼 (Video Manual)": "▶ 動画マニュアル",
+  "📖 글과 사진으로 읽는 매뉴얼 (Reading Manual - Step by Step)": "📖 文章と写真で読む手順マニュアル",
+  "도어 오픈 및 고정 나사 분리 (Loosen 2 screws)": "ドアを開き、固定ネジ2本を外す",
+  "도어를 열고 M2.5 육각 렌치로 고정 나사 2개를 푸십시오.": "ドアを開き、M2.5六角レンチで固定ネジ2本を緩めます。",
+  "작업 편의를 위한 PC 파트 거치 (Place on a box)": "作業しやすいようPCパーツを箱の上に置く",
+  "사진처럼 박스 위에 PC 파트를 올려 놓으면 작업하기 용이할 수 있습니다.": "写真のように箱の上にPCパーツを置くと、作業しやすくなります。"
+});
+
+const autoVisibleTranslations = typeof window !== "undefined" ? window.VISIBLE_I18N_AUTO : undefined;
+if (autoVisibleTranslations) {
+  ["en", "ja"].forEach(lang => {
+    Object.entries(autoVisibleTranslations[lang] || {}).forEach(([source, translated]) => {
+      if (!STATIC_CONTENT_TRANSLATIONS[lang][source]) {
+        STATIC_CONTENT_TRANSLATIONS[lang][source] = translated;
+      }
+    });
+  });
+}
+
+const STATIC_TRANSLATION_CACHE = new Map();
+const ORIGINAL_STATIC_TEXT = new WeakMap();
+const STATIC_ATTRIBUTE_NAMES = ["placeholder", "title", "alt", "aria-label", "data-title"];
+
+function getStaticTranslation(lang, text) {
+  const staticTranslation = STATIC_CONTENT_TRANSLATIONS[lang]?.[text];
+  if (staticTranslation) return staticTranslation;
+
+  if (lang === "en") {
+    const englishOnly = String(text)
+      .replace(/\s*\([^)]*[가-힣][^)]*\)/g, "")
+      .trim();
+    if (englishOnly && !hasHangulText(englishOnly) && /[A-Za-z]/.test(englishOnly)) {
+      return englishOnly;
+    }
+    const englishInParentheses = String(text).match(/\(([^)]*[A-Za-z][^)]*)\)\s*$/);
+    if (englishInParentheses && !hasHangulText(englishInParentheses[1])) {
+      return englishInParentheses[1].trim();
+    }
+  }
+
+  const technicalTerms = {
+    en: {
+      "공구 포켓": "Tool Pocket", "설치 공간 확보": "Installation Space", "집진기": "Dust Collector",
+      "신호 케이블": "Signal Cable", "내부 구조": "Internal Structure", "가공룸": "Machining Room",
+      "에어 레귤레이터": "Air Regulator", "전원 케이블": "Power Cable", "접지선": "Ground Wire",
+      "스타터 키트": "Starter Kit", "캘리브레이션": "Calibration", "사용시간": "Usage Time",
+      "사용 시간": "Usage Time", "공구 리스트": "Tool List", "초기 위치": "Initial Position",
+      "공구 장착": "Tool Mounting", "공구 탈착": "Tool Removal", "공구": "Tool", "툴": "Tool",
+      "설치": "Installation", "공간": "Space", "확보": "Preparation", "위치": "Position", "케이블": "Cable",
+      "다이어그램": "Diagram", "보호": "Protection", "지지": "Support", "청소": "Cleaning",
+      "페이지": "Page", "진입": "Entry", "모드": "Mode", "실행": "Run", "에어": "Air",
+      "레귤레이터": "Regulator", "고정": "Mounting", "볼트": "Bolt", "호스": "Hose",
+      "컴프레서": "Compressor", "전원": "Power", "연결": "Connection", "규격": "Specification",
+      "포트": "Port", "라벨": "Label", "확인": "Check", "체결": "Fastening", "분리": "Removal",
+      "방법": "Method", "접지": "Grounding", "플러그": "Plug", "사용": "Use", "권장": "Recommended",
+      "키트": "Kit", "켜기": "Power On", "끄기": "Power Off", "워밍업": "Warm-up",
+      "오토": "Auto", "매뉴얼": "Manual", "설정": "Settings", "화면": "Screen",
+      "메인": "Main", "리스트": "List", "포지션": "Position", "정면": "Front", "측면": "Side", "전면부": "Front",
+      "후면부": "Rear", "기본": "Standard", "구성품": "Components", "추가": "Additional"
+    },
+    ja: {
+      "공구 포켓": "工具ポケット", "설치 공간 확보": "設置スペースの確保", "집진기": "集塵機",
+      "신호 케이블": "信号ケーブル", "내부 구조": "内部構造", "가공룸": "加工室",
+      "에어 레귤레이터": "エアレギュレーター", "전원 케이블": "電源ケーブル", "접지선": "アース線",
+      "스타터 키트": "スターターキット", "캘리브레이션": "キャリブレーション", "사용시간": "使用時間",
+      "사용 시간": "使用時間", "공구 리스트": "工具リスト", "초기 위치": "初期位置",
+      "공구 장착": "工具の装着", "공구 탈착": "工具の取り外し", "공구": "工具", "툴": "工具",
+      "설치": "設置", "공간": "スペース", "확보": "確保", "위치": "位置", "케이블": "ケーブル",
+      "다이어그램": "図", "보호": "保護", "지지": "支持", "청소": "清掃",
+      "페이지": "ページ", "진입": "進入", "모드": "モード", "실행": "実行", "에어": "エア",
+      "레귤레이터": "レギュレーター", "고정": "固定", "볼트": "ボルト", "호스": "ホース",
+      "컴프레서": "コンプレッサー", "전원": "電源", "연결": "接続", "규격": "規格",
+      "포트": "ポート", "라벨": "ラベル", "확인": "確認", "체결": "締結", "분리": "取り外し",
+      "방법": "方法", "접지": "アース", "플러그": "プラグ", "사용": "使用", "권장": "推奨",
+      "키트": "キット", "켜기": "電源オン", "끄기": "電源オフ", "워밍업": "ウォームアップ",
+      "오토": "自動", "매뉴얼": "手動", "설정": "設定", "화면": "画面",
+      "메인": "メイン", "리스트": "リスト", "포지션": "ポジション", "정면": "正面", "측면": "側面", "전면부": "前面",
+      "후면부": "背面", "기본": "基本", "구성품": "構成品", "추가": "追加"
+    }
+  };
+  const terms = technicalTerms[lang];
+  if (terms && hasHangulText(text)) {
+    let translated = String(text);
+    Object.keys(terms).sort((a, b) => b.length - a.length).forEach(term => {
+      translated = translated.split(term).join(terms[term]);
+    });
+    if (!hasHangulText(translated)) return translated;
+  }
+
+  const cacheKey = `${lang}:${text}`;
+  if (STATIC_TRANSLATION_CACHE.has(cacheKey)) return STATIC_TRANSLATION_CACHE.get(cacheKey);
+
+  const koreanTranslations = TRANSLATIONS.ko || {};
+  const targetTranslations = TRANSLATIONS[lang] || {};
+  const matchingKey = Object.keys(koreanTranslations).find(key => koreanTranslations[key] === text);
+  const translated = matchingKey ? targetTranslations[matchingKey] : undefined;
+  STATIC_TRANSLATION_CACHE.set(cacheKey, translated || null);
+  return translated;
+}
+
+function applyStaticContentTranslations(lang, root = document.body) {
+  if (!root) return;
+
+  root.querySelectorAll("*").forEach(el => {
+    STATIC_ATTRIBUTE_NAMES.forEach(name => {
+      if (!el.hasAttribute(name)) return;
+      const originalName = `data-i18n-static-original-${name}`;
+      if (!el.hasAttribute(originalName)) {
+        el.setAttribute(originalName, el.getAttribute(name));
+      }
+      const original = el.getAttribute(originalName);
+      const translated = lang === "ko" ? original : getStaticTranslation(lang, original);
+      if (translated) el.setAttribute(name, translated);
+    });
   });
 
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
@@ -3989,7 +4388,12 @@ function applyStaticContentTranslations(lang, root = document.body) {
       if (!parent || ["SCRIPT", "STYLE", "NOSCRIPT"].includes(parent.tagName)) {
         return NodeFilter.FILTER_REJECT;
       }
-      return hasHangulText(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      // A node may already be translated into Japanese (which has no Hangul).
+      // Keep revisiting nodes whose Korean source we captured so changing from
+      // Japanese to English restores the source and applies the new language.
+      return ORIGINAL_STATIC_TEXT.has(node) || hasHangulText(node.nodeValue)
+        ? NodeFilter.FILTER_ACCEPT
+        : NodeFilter.FILTER_SKIP;
     }
   });
 
@@ -3997,36 +4401,24 @@ function applyStaticContentTranslations(lang, root = document.body) {
   while (walker.nextNode()) nodes.push(walker.currentNode);
 
   nodes.forEach(node => {
-    const original = node.nodeValue;
+    if (!ORIGINAL_STATIC_TEXT.has(node)) ORIGINAL_STATIC_TEXT.set(node, node.nodeValue);
+    const original = ORIGINAL_STATIC_TEXT.get(node);
     const trimmed = original.trim();
-    const translated = translations[trimmed];
+    const translated = lang === "ko" ? trimmed : getStaticTranslation(lang, trimmed);
     if (!translated) return;
 
     node.nodeValue = original.replace(trimmed, translated);
   });
 }
 
+function applyModalTranslations(modal) {
+  if (!modal) return;
+  applyStaticContentTranslations(currentLang, modal);
+}
+
 function sanitizeMissingTranslationDom(lang, root = document.body) {
   if (!root) return;
-  const replacementText = MISSING_TRANSLATION_LABELS[lang];
-  if (!replacementText) return;
-
   applyStaticContentTranslations(lang, root);
-
-  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-    acceptNode(node) {
-      const parent = node.parentElement;
-      if (!parent || ["SCRIPT", "STYLE", "NOSCRIPT"].includes(parent.tagName)) {
-        return NodeFilter.FILTER_REJECT;
-      }
-      return hasHangulText(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
-    }
-  });
-  const nodes = [];
-  while (walker.nextNode()) nodes.push(walker.currentNode);
-  nodes.forEach(node => {
-    if (node.nodeValue.trim()) node.nodeValue = replacementText;
-  });
 }
 
 function sanitizeEnglishDom(root = document.body) {
@@ -4706,6 +5098,27 @@ const LANG_LABELS = {
   es: "🇪🇸 Español"
 };
 
+Object.assign(TRANSLATIONS.ko, {
+  "search-results-title": "🔍 검색 결과: \"{query}\"",
+  "search-results-found": "{count}개의 결과가 발견되었습니다.",
+  "search-results-empty": "검색 결과가 없습니다.",
+  "search-results-try-again": "다른 검색어로 다시 시도해 보세요."
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "search-results-title": "🔍 Search results: \"{query}\"",
+  "search-results-found": "{count} results found.",
+  "search-results-empty": "No results found.",
+  "search-results-try-again": "Try another keyword."
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "search-results-title": "🔍 検索結果: \"{query}\"",
+  "search-results-found": "{count}件の結果が見つかりました。",
+  "search-results-empty": "検索結果はありません。",
+  "search-results-try-again": "別のキーワードで再度お試しください。"
+});
+
 const LANG_OPTION_LABELS = {
   ko: { ko: "🇰🇷 한국어", en: "🇺🇸 English", ja: "🇯🇵 日本語", es: "🇪🇸 Español" },
   en: { ko: "Korean", en: "English", ja: "Japanese", es: "Spanish" },
@@ -4741,6 +5154,15 @@ function applyLanguage(lang) {
     const text = typeof getI18nText === "function" ? getI18nText(lang, key, fallbackText) : dict[key];
     if (text !== undefined) el.innerHTML = text;
   });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    if (!el.hasAttribute("data-i18n-placeholder-default")) {
+      el.setAttribute("data-i18n-placeholder-default", el.getAttribute("placeholder") || "");
+    }
+    const key = el.getAttribute("data-i18n-placeholder");
+    const fallbackText = el.getAttribute("data-i18n-placeholder-default");
+    const text = typeof getI18nText === "function" ? getI18nText(lang, key, fallbackText) : dict[key];
+    if (text !== undefined) el.setAttribute("placeholder", text);
+  });
   // Update lang button label
   const btn = document.getElementById("langBtnLabel");
   if (btn) btn.textContent = LANG_LABELS[lang];
@@ -4759,4 +5181,5 @@ function applyLanguage(lang) {
   } else if (lang !== "ko" && activeSection) {
     sanitizeMissingTranslationDom(lang, activeSection);
   }
+  applyStaticContentTranslations(lang, document.body);
 }

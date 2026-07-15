@@ -5,6 +5,7 @@ const vm = require("vm");
 const rootDir = path.resolve(__dirname, "..");
 const htmlPath = path.join(rootDir, "index.html");
 const i18nPath = path.join(rootDir, "src", "scripts", "i18n.js");
+const autoVisibleI18nPath = path.join(rootDir, "src", "data", "visible-i18n-auto.js");
 
 function parseArgs(argv) {
   const options = {
@@ -12,6 +13,7 @@ function parseArgs(argv) {
     section: null,
     listSections: false,
     strictRaw: false,
+    strictVisible: false,
     verbose: false,
     strictKoEnglish: false
   };
@@ -28,6 +30,8 @@ function parseArgs(argv) {
       options.listSections = true;
     } else if (arg === "--strict-raw") {
       options.strictRaw = true;
+    } else if (arg === "--strict-visible") {
+      options.strictVisible = true;
     } else if (arg === "--verbose") {
       options.verbose = true;
     } else if (arg === "--strict-ko-english") {
@@ -47,19 +51,23 @@ function printHelp() {
   node tools/check-i18n.js --lang ko,en
   node tools/check-i18n.js --section sec-mf-hd-features
   node tools/check-i18n.js --lang ja --strict-raw
-  node tools/check-i18n.js --lang ja --strict-raw --verbose
+  node tools/check-i18n.js --lang ja --strict-raw --strict-visible --verbose
   node tools/check-i18n.js --list-sections
 
-Checks every data-i18n key used by index.html against TRANSLATIONS.`);
+Checks data-i18n keys and visible Korean text that must resolve for the selected language.`);
 }
 
 function loadI18n() {
-  const code = fs.readFileSync(i18nPath, "utf8") + `
+  const autoVisibleCode = fs.existsSync(autoVisibleI18nPath)
+    ? fs.readFileSync(autoVisibleI18nPath, "utf8")
+    : "";
+  const code = autoVisibleCode + "\n" + fs.readFileSync(i18nPath, "utf8") + `
 this.TRANSLATIONS = TRANSLATIONS;
 this.getI18nText = getI18nText;
 this.hasHangulText = hasHangulText;
+this.getStaticTranslation = getStaticTranslation;
 `;
-  const sandbox = {};
+  const sandbox = { window: {} };
   vm.createContext(sandbox);
   vm.runInContext(code, sandbox, { filename: i18nPath });
   return sandbox;
@@ -110,6 +118,42 @@ function findFallbackForKey(markup, key) {
   return match ? match[2] : undefined;
 }
 
+function findVisibleKorean(markup) {
+  const withoutCode = markup.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, "");
+  const findings = [];
+  const stack = [];
+  const voidTags = new Set(["img", "input", "br", "meta", "link", "hr", "source", "area", "base", "col", "embed", "param", "track", "wbr"]);
+  const tokenRegex = /<[^>]*>|[^<]+/g;
+  const hangul = /[\uac00-\ud7a3]/;
+
+  for (const match of withoutCode.matchAll(tokenRegex)) {
+    const token = match[0];
+    if (token.startsWith("<!--")) continue;
+    if (token.startsWith("</")) {
+      stack.pop();
+      continue;
+    }
+    if (token.startsWith("<")) {
+      if (/^<!/.test(token)) continue;
+      const tag = token.match(/^<([\w-]+)/)?.[1];
+      const attributeRegex = /\b(?:placeholder|alt|title|aria-label|data-title)=("([^"]*)"|'([^']*)')/g;
+      for (const attribute of token.matchAll(attributeRegex)) {
+        const value = attribute[2] || attribute[3] || "";
+        if (hangul.test(value)) findings.push({ type: "attribute", text: value });
+      }
+      if (tag && !voidTags.has(tag.toLowerCase()) && !/\/>$/.test(token)) {
+        stack.push({ translated: /\bdata-i18n=/.test(token) });
+      }
+      continue;
+    }
+    const text = token.trim();
+    if (text && hangul.test(text) && !stack.some(item => item.translated)) {
+      findings.push({ type: "text", text });
+    }
+  }
+  return findings;
+}
+
 function main() {
   const options = parseArgs(process.argv.slice(2));
   const html = fs.readFileSync(htmlPath, "utf8");
@@ -134,6 +178,7 @@ function main() {
   }
 
   const scopedKeys = getKeys(scopeHtml);
+  const visibleKorean = findVisibleKorean(scopeHtml);
   const fallbackByKey = new Map();
   scopedKeys.forEach(key => {
     const fallback = findFallbackForKey(scopeHtml, key);
@@ -154,6 +199,7 @@ function main() {
     const pendingRuntime = [];
     const hangulRuntime = [];
     const englishInKo = [];
+    const unresolvedVisible = lang === "ko" ? [] : visibleKorean.filter(item => !i18n.getStaticTranslation(lang, item.text));
 
     for (const key of scopedKeys) {
       const rawValue = dict[key];
@@ -177,7 +223,7 @@ function main() {
       }
     }
 
-    if ((options.strictRaw && missingRaw.length) || pendingRuntime.length || hangulRuntime.length || englishInKo.length) {
+    if ((options.strictRaw && missingRaw.length) || (options.strictVisible && unresolvedVisible.length) || pendingRuntime.length || hangulRuntime.length || englishInKo.length) {
       hasFailure = true;
     }
 
@@ -186,7 +232,8 @@ function main() {
       missingRaw,
       pendingRuntime,
       hangulRuntime,
-      englishInKo
+      englishInKo,
+      unresolvedVisible
     };
   }
 
@@ -202,10 +249,12 @@ function main() {
         pendingRuntime: item.pendingRuntime.length,
         hangulRuntime: item.hangulRuntime.length,
         englishInKo: item.englishInKo.length,
+        unresolvedVisible: item.unresolvedVisible.length,
         missingRawSample: item.missingRaw.slice(0, 20),
         pendingRuntimeSample: item.pendingRuntime.slice(0, 20),
         hangulRuntimeSample: item.hangulRuntime.slice(0, 20),
         englishInKoSample: item.englishInKo.slice(0, 20)
+        ,unresolvedVisibleSample: item.unresolvedVisible.slice(0, 20)
       };
     }
     console.log(JSON.stringify({ scope: scopeLabel, languages, strictRaw: options.strictRaw, summary }, null, 2));

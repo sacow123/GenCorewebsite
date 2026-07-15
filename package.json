@@ -7,7 +7,9 @@
     "serve": "node tools/local-server.js",
     "check:i18n": "node tools/check-i18n.js",
     "check:i18n:ko-en": "node tools/check-i18n.js --lang ko,en",
-    "check:i18n:strict": "node tools/check-i18n.js --strict-raw"
+    "check:i18n:strict": "node tools/check-i18n.js --strict-raw",
+    "sync:i18n:visible": "node tools/sync-visible-i18n.js",
+    "check:i18n:visible": "node tools/check-i18n.js --lang en,ja --strict-raw --strict-visible"
   },
   "dependencies": {
     "isomorphic-git": "^1.38.5",
