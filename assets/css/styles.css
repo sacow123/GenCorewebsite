@@ -232,7 +232,56 @@ body {
 .menu-toggle { display: none; background: none; border: none; color: #333; font-size: 22px; cursor: pointer; }
 
 @media (max-width: 768px) {
-  .menu-toggle { display: block; }
+  .site-header {
+    padding: 0 12px;
+    gap: 8px;
+  }
+  .logo-area {
+    flex: 0 1 132px;
+    min-width: 0;
+    gap: 6px;
+  }
+  .menu-toggle {
+    display: block;
+    flex: 0 0 auto;
+    padding: 4px;
+    font-size: 28px;
+    line-height: 1;
+  }
+  #homeBtn {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .logo-area h1 {
+    margin: 0;
+    overflow: hidden;
+    font-size: clamp(15px, 4.4vw, 18px);
+    line-height: 1.15;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .header-right {
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 8px !important;
+  }
+  .search-container {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  #searchInput {
+    width: 100% !important;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 14px !important;
+  }
+  .lang-btn {
+    flex: 0 0 auto;
+    padding: 7px 9px;
+  }
+  #langBtnLabel {
+    display: none;
+  }
   .sidebar {
     position: fixed; left: -100%; top: 60px; bottom: 0;
     z-index: 90; width: 260px;
