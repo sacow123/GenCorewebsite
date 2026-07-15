@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "strip": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-realistic\\decoded\\look-cardinals.png",
+  "directions": [
+    "000",
+    "090",
+    "180",
+    "270"
+  ],
+  "errors": [],
+  "anchors": [
+    {
+      "direction": "000",
+      "source_box": [
+        0,
+        0,
+        500,
+        786
+      ],
+      "used_pixels": 73073,
+      "edge_pixels": 0,
+      "output": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-realistic\\decoded\\look-anchors\\000.png"
+    },
+    {
+      "direction": "090",
+      "source_box": [
+        500,
+        0,
+        1000,
+        786
+      ],
+      "used_pixels": 72868,
+      "edge_pixels": 0,
+      "output": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-realistic\\decoded\\look-anchors\\090.png"
+    },
+    {
+      "direction": "180",
+      "source_box": [
+        1000,
+        0,
+        1501,
+        786
+      ],
+      "used_pixels": 73037,
+      "edge_pixels": 0,
+      "output": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-realistic\\decoded\\look-anchors\\180.png"
+    },
+    {
+      "direction": "270",
+      "source_box": [
+        1501,
+        0,
+        2001,
+        786
+      ],
+      "used_pixels": 72577,
+      "edge_pixels": 0,
+      "output": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-realistic\\decoded\\look-anchors\\270.png"
+    }
+  ]
+}

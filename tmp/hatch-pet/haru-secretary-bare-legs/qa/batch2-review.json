@@ -1,0 +1,361 @@
+{
+  "ok": true,
+  "frames_root": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2",
+  "states": [
+    "running-right",
+    "jumping",
+    "failed"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\running-right\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7925,
+          "bbox": [
+            42,
+            5,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 206
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\running-right\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6967,
+          "bbox": [
+            55,
+            5,
+            136,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 175
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\running-right\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7116,
+          "bbox": [
+            54,
+            5,
+            137,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 176
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\running-right\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6856,
+          "bbox": [
+            54,
+            5,
+            137,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 177
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\running-right\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7134,
+          "bbox": [
+            52,
+            5,
+            140,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 180
+        },
+        {
+          "index": 5,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\running-right\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6627,
+          "bbox": [
+            59,
+            5,
+            133,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 165
+        },
+        {
+          "index": 6,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\running-right\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7595,
+          "bbox": [
+            52,
+            5,
+            139,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 219
+        },
+        {
+          "index": 7,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\running-right\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7232,
+          "bbox": [
+            58,
+            5,
+            133,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 183
+        }
+      ]
+    },
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\jumping\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9382,
+          "bbox": [
+            56,
+            5,
+            136,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 169
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\jumping\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7542,
+          "bbox": [
+            60,
+            5,
+            132,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 133
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\jumping\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11065,
+          "bbox": [
+            47,
+            5,
+            144,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 222
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\jumping\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7450,
+          "bbox": [
+            65,
+            5,
+            126,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 131
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\jumping\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 7188,
+          "bbox": [
+            66,
+            5,
+            125,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 119
+        }
+      ]
+    },
+    {
+      "state": "failed",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\failed\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6246,
+          "bbox": [
+            69,
+            5,
+            122,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 125
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\failed\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6133,
+          "bbox": [
+            72,
+            5,
+            119,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 107
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\failed\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6128,
+          "bbox": [
+            74,
+            5,
+            118,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 83
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\failed\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6259,
+          "bbox": [
+            74,
+            5,
+            118,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 98
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\failed\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6207,
+          "bbox": [
+            73,
+            5,
+            118,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 94
+        },
+        {
+          "index": 5,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\failed\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6233,
+          "bbox": [
+            74,
+            5,
+            118,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 95
+        },
+        {
+          "index": 6,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\failed\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6078,
+          "bbox": [
+            72,
+            5,
+            120,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 100
+        },
+        {
+          "index": 7,
+          "file": "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\batch2\\failed\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 6174,
+          "bbox": [
+            70,
+            5,
+            122,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 96
+        }
+      ]
+    }
+  ]
+}

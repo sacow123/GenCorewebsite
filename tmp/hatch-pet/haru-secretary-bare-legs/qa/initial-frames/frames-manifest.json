@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "frames": [
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\idle\\00.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\idle\\01.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\idle\\02.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\idle\\03.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\idle\\04.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\idle\\05.png"
+      ],
+      "method": "components"
+    },
+    {
+      "state": "running-right",
+      "frames": [
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\running-right\\00.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\running-right\\01.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\running-right\\02.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\running-right\\03.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\running-right\\04.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\running-right\\05.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\running-right\\06.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\running-right\\07.png"
+      ],
+      "method": "components"
+    },
+    {
+      "state": "waving",
+      "frames": [
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\waving\\00.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\waving\\01.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\waving\\02.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\initial-frames\\waving\\03.png"
+      ],
+      "method": "components"
+    }
+  ]
+}

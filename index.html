@@ -350,7 +350,7 @@
         </div>
       </div>
       <div class="nav-parent" id="nav-repair-manual">
-        <div class="nav-item">
+        <div class="nav-item" data-section="sec-rep-overview">
           <span class="icon">🔧</span>
           <span data-i18n="nav-repair-manual">기술 지원 매뉴얼</span>
           <span class="nav-arrow"></span>
@@ -4275,7 +4275,7 @@
             <div class="mf-callout-custom center right-arrow" style="left: 53.6%; top: 10.9%; min-width: 250px;"><span class="title"><span data-i18n="mf-auto-190">메인 페이지</span><span class="desc"><span data-i18n="mf-auto-191">: 메인 페이지로 이동합니다</span></div>
       </section>
       <section id="sec-mf-tool-list" class="content-section">
-        <style><span data-i18n="mf-auto-777">
+        <style>
           /* 1. 펄스 애니메이션 정의 */
           @keyframes pulse-border {
             0% {
@@ -5185,13 +5185,40 @@
         </section>
 
       <!-- REPAIR MANUAL -->
+      <!-- Technical Support Manual overview (merged from technical_support_manual (2).html) -->
+      <section id="sec-rep-overview" class="content-section" style="max-width:1100px; margin:0 auto; padding:10px;">
+        <div style="display:flex; align-items:center; gap:14px; margin-bottom:8px;">
+          <span style="font-size:36px;">🔧</span>
+          <div>
+            <h2 style="margin:0; font-size:26px; color:#1f2937; font-weight:700;">기술 지원 매뉴얼 (Technical Support Manual)</h2>
+            <p style="margin:4px 0 0; font-size:14px; color:#64748b;">GenCore M AI° 및 MillFix 장비의 트러블 슈팅, 오류 코드 대응 및 수리 가이드 통합 매뉴얼입니다.</p>
+          </div>
+        </div>
+        <hr style="border:none; border-top:1px solid #e2e8f0; margin:20px 0 28px;">
+        <div style="margin-bottom:36px;">
+          <h3 style="font-size:19px; color:#a855f7; margin:0 0 16px;">📌 M AI° 기술 지원 페이지</h3>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px;">
+            <button type="button" data-section="sec-rep-mai-troubleshoot" style="cursor:pointer; text-align:left; background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:22px;"><strong>🩺 M AI° 트러블 슈팅</strong><br><span style="font-size:13px; color:#475569;">주요 증상별 원인 파악 및 해결 가이드</span></button>
+            <button type="button" data-section="sec-rep-mai-errorcode" style="cursor:pointer; text-align:left; background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:22px;"><strong>🚨 M AI° 오류 코드 리스트</strong><br><span style="font-size:13px; color:#475569;">오류 코드 검색, 원인 진단 및 해결 방법</span></button>
+            <button type="button" data-section="sec-rep-mai-parts-guide" style="cursor:pointer; text-align:left; background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:22px;"><strong>🔧 M AI° 수리 가이드</strong><br><span style="font-size:13px; color:#475569;">카테고리별 부품 교체 매뉴얼</span></button>
+            <button type="button" onclick="openCtrlProgUpdateModal()" style="cursor:pointer; text-align:left; background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:22px;"><strong>💻 컨트롤 프로그램 업데이트</strong><br><span style="font-size:13px; color:#475569;">업데이트 및 재설치 가이드 영상</span></button>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:19px; color:#d97706; margin:0 0 16px;">📌 MillFix 기술 지원 페이지</h3>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px;">
+            <button type="button" data-section="sec-rep-mf-troubleshoot" style="cursor:pointer; text-align:left; background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:22px;"><strong>🩺 MillFix 트러블 슈팅</strong><br><span style="font-size:13px; color:#475569;">주요 트러블 해결 가이드</span></button>
+            <button type="button" data-section="sec-rep-mf-parts-guide" style="cursor:pointer; text-align:left; background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:22px;"><strong>🔧 MillFix 수리 가이드</strong><br><span style="font-size:13px; color:#475569;">카테고리별 부품 교체 매뉴얼</span></button>
+          </div>
+        </div>
+      </section>
       <!-- 기술 지원 매뉴얼- M AI° -->
       <section id="sec-rep-mai-troubleshoot" class="content-section">
               <h2 data-i18n="nav-rep-troubleshoot"><span data-i18n="mf-auto-666">🩺 트러블 슈팅</span></h2>
               <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
                 Anchor: <a href="#sec-rep-mai-troubleshoot"
                   style="color:#a855f7; text-decoration:none;">#sec-rep-mai-troubleshoot</a></div>
-              <p class="subtitle"><span data-i18n="mf-auto-3090">기술 지원 매뉴얼- M AI°</span></p>
+              <p class="subtitle">기술 지원 매뉴얼- M AI°</p>
               <div class="content-card" style="background:transparent; border:none; padding:0; box-shadow:none;">
                 <div style="display:flex; flex-direction:column; gap:24px;">
               <!-- Error Codes Banner Card -->
@@ -5201,7 +5228,7 @@
                     🚨
                   </div>
                   <div>
-                    <h3 style="margin:0 0 4px 0; font-size:18px; color:#581c87; font-weight:700;">[M AI] 오류 코드 리스트 및 대응 방안 확인하기</h3>
+                    <h3 style="margin:0 0 4px 0; font-size:18px; color:#581c87; font-weight:700;">오류 코드 리스트 및 대응 방안 확인하기</h3>
                     <div style="font-size:14px; color:#7e22ce; font-weight:500;">A101, C101 등 M AI 장비에서 발생하는 전체 오류 코드와 세부 해결책을 검색할 수 있습니다.</div>
                   </div>
                 </div>
@@ -5210,7 +5237,7 @@
                 </div>
               </div>
 
-                              <!-- Item 1: Spindle Alarm -->
+              <!-- Item 1: Spindle Alarm -->
               <div onclick="openSpindleTroubleshootModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 12px 32px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
                 <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
                   <div style="display:flex; align-items:flex-start; gap:14px;">
@@ -5218,17 +5245,26 @@
                       🚨
                     </div>
                     <div style="display:flex; flex-direction:column; gap:4px;">
-                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;"><span data-i18n="mf-auto-3091">[M AI] 동작 중 스핀들 알람 발생 및 회전 정지 해결 방법</span></h3>
-                      <span data-i18n="mf-auto-3121" style="font-size:13px; color:#a855f7; font-weight:600;">스핀들 알람이 발생하면서 스핀들이 멈출 때</span>
+                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">동작 중 스핀들 알람 발생 및 회전 정지 해결 방법</h3>
+                      <span style="font-size:13px; color:#a855f7; font-weight:600;">Spindle stops rotating with the spindle alarm</span>
                     </div>
                   </div>
                   <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#f3e8ff; color:#a855f7; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #e9d5ff;">
-                    <span data-i18n="mf-auto-3092">🔍 해결 방법 자세히 보기</span>
+                    <span>🔍 해결 방법 자세히 보기</span>
+                  </div>
+                </div>
+
+                <!-- Symptom Image Only (*.gif -> webp) -->
+                <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+                  <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 </div>
+                  <div style="max-width:520px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff;">
+                    <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">스핀들 알람 발생 증상 화면</div>
+                    <img src="assets/images/sec-mai-troubleshoot/spindle-alarm-symptom.webp" alt="스핀들 알람 발생 증상 화면" style="width:100%; height:auto; display:block;">
                   </div>
                 </div>
               </div>
 
-                              <!-- Item 2: ePID Fault -->
+              <!-- Item 2: ePID Fault -->
               <div onclick="openEpidTroubleshootModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#f59e0b'; this.style.boxShadow='0 12px 32px rgba(245,158,11,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
                 <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
                   <div style="display:flex; align-items:flex-start; gap:14px;">
@@ -5236,63 +5272,62 @@
                       ⚡
                     </div>
                     <div style="display:flex; flex-direction:column; gap:4px;">
-                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;"><span data-i18n="mf-auto-3095">[M AI] "ePID fault..." 알람 발생 시 해결 방법</span></h3>
+                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">"ePID fault..." 알람 발생 시 해결 방법</h3>
                       <span style="font-size:13px; color:#d97706; font-weight:600;">Error: ePID fault… Press RESET on MACH screen</span>
                     </div>
                   </div>
                   <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#fef3c7; color:#d97706; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #fde68a;">
-                    <span data-i18n="mf-auto-3092">🔍 해결 방법 자세히 보기</span>
+                    <span>🔍 해결 방법 자세히 보기</span>
+                  </div>
+                </div>
+
+                <!-- Symptom Image Only -->
+                <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+                  <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 </div>
+                  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; max-width:680px;">
+                    <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
+                      <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">에러 메세지</div>
+                      <img src="assets/images/sec-mai-troubleshoot/epid-fault-homing.webp" alt="원점 복귀 중 ePID 에러" style="width:100%; height:auto; display:block;">
+                    </div>
+                    <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
+                      <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">에러 메세지에서 OK 버튼 누른 후 스크린 상태</div>
+                      <img src="assets/images/sec-mai-troubleshoot/epid-fault-mcode.webp" alt="M-code 동작 중 ePID 에러" style="width:100%; height:auto; display:block;">
+                    </div>
                   </div>
                 </div>
               </div>
 
-                              <!-- Item 3: Z-axis Belt Tension -->
-              <div onclick="openMaiPlaceholderModal('mai-z-belt-modal')" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 12px 32px rgba(59,130,246,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
+              <!-- Item 3: Control Program Update -->
+              <div onclick="openCtrlProgUpdateModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 12px 32px rgba(59,130,246,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
                 <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
                   <div style="display:flex; align-items:flex-start; gap:14px;">
-                    <div style="width:46px; height:46px; border-radius:12px; background:#dbeafe; display:flex; align-items:center; justify-content:center; color:#2563eb; font-size:24px; flex-shrink:0;">↕️</div>
+                    <div style="width:46px; height:46px; border-radius:12px; background:#eff6ff; display:flex; align-items:center; justify-content:center; color:#3b82f6; font-size:24px; flex-shrink:0;">
+                      💻
+                    </div>
                     <div style="display:flex; flex-direction:column; gap:4px;">
-                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;"><span data-i18n="mf-auto-3122">[M AI] Z축 벨트 텐션 조절 방법</span></h3>
-                      <span data-i18n="mf-auto-3123" style="font-size:13px; color:#2563eb; font-weight:600;">Z축 이동 시 소음이 발생할 때</span>
+                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;">컨트롤 프로그램 업데이트 방법</h3>
+                      <span style="font-size:13px; color:#3b82f6; font-weight:600;">Control Program Update Guide</span>
                     </div>
                   </div>
-                  <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#dbeafe; color:#2563eb; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #bfdbfe;">
-                    <span data-i18n="mf-auto-3092">🔍 해결 방법 자세히 보기</span>
+                  <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#eff6ff; color:#3b82f6; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #bfdbfe;">
+                    <span>🔍 해결 방법 자세히 보기</span>
                   </div>
                 </div>
-              </div>
 
-                              <!-- Item 4: Mainboard Replacement -->
-              <div onclick="openMaiPlaceholderModal('mai-mainboard-modal')" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#10b981'; this.style.boxShadow='0 12px 32px rgba(16,185,129,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
-                <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
-                  <div style="display:flex; align-items:flex-start; gap:14px;">
-                    <div style="width:46px; height:46px; border-radius:12px; background:#d1fae5; display:flex; align-items:center; justify-content:center; color:#059669; font-size:24px; flex-shrink:0;">🧩</div>
-                    <div style="display:flex; flex-direction:column; gap:4px;">
-                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;"><span data-i18n="mf-auto-3124">[M AI] 메인보드 교체 방법</span></h3>
-                    </div>
-                  </div>
-                  <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#d1fae5; color:#059669; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #a7f3d0;">
-                    <span data-i18n="mf-auto-3092">🔍 해결 방법 자세히 보기</span>
+                <!-- Symptom Image Only -->
+                <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+                  <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 </div>
+                  <div style="font-size:13px; color:#475569; line-height:1.5; font-weight:600;">사용 상의 이유로 컨트롤 프로그램의 업데이트 및 재설치가 필요한 경우</div>
+                  <div style="max-width:520px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff; margin-top:4px;">
+                    <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">컨트롤 프로그램 화면</div>
+                    <img src="assets/images/ctrl_prog_update_symptom.webp" alt="컨트롤 프로그램 업데이트 필요 증상" style="width:100%; height:auto; display:block;">
                   </div>
                 </div>
               </div>
-
-                              <!-- Item 5: Spindle Adjustment -->
-              <div onclick="openMaiPlaceholderModal('mai-spindle-adjust-modal')" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#f43f5e'; this.style.boxShadow='0 12px 32px rgba(244,63,94,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
-                <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
-                  <div style="display:flex; align-items:flex-start; gap:14px;">
-                    <div style="width:46px; height:46px; border-radius:12px; background:#ffe4e6; display:flex; align-items:center; justify-content:center; color:#e11d48; font-size:24px; flex-shrink:0;">🎯</div>
-                    <div style="display:flex; flex-direction:column; gap:4px;">
-                      <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;"><span data-i18n="mf-auto-3125">[M AI] 스핀들 조정 방법</span></h3>
-                    </div>
-                  </div>
-                  <div style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#ffe4e6; color:#e11d48; border-radius:20px; font-size:13px; font-weight:700; border:1px solid #fecdd3;">
-                    <span data-i18n="mf-auto-3092">🔍 해결 방법 자세히 보기</span>
-                  </div>
-                </div>
-              </div>
-      </section>
-      <section id="sec-rep-mai-errorcode" class="content-section">
+            </div>
+          </div>
+        </section>
+<section id="sec-rep-mai-errorcode" class="content-section">
         <style>
           #sec-rep-mai-errorcode .rep-container { display: flex; flex-direction: column; gap: 20px; }
           #sec-rep-mai-errorcode .rep-notice { padding: 14px 18px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; color: #166534; font-size: 14px; line-height: 1.5; display: flex; align-items: center; gap: 10px; }
@@ -5331,7 +5366,7 @@
           <div class="rep-notice">
             <span>ℹ️</span>
             <div>
-              <strong>UI 2.0 업데이트 기준 안내:</strong> 본 문서의 메시지 번호를 사용하시려면 
+              <strong>UI 2.0 업데이트 기준 안내:</strong> 본 문서의 메시지 번호를 사용하시려면
               <code>GenCore M AI _ (USER) _ machine_Update_25.0.2.0.1 (UI 2.0 update)</code> 버전 이상이 필요합니다.
             </div>
           </div>
@@ -5367,7 +5402,7 @@
                 <td style="text-align:center;"><span class="code-badge badge-a">A101</span></td>
                 <td class="code-desc">
                   <strong>Insufficient air pressure for processing. (가공 시작을 위한 공압 부족)</strong><br>
-                  가공 시작에 필요한 공압이 부족하여 가공을 시작할 수 없습니다.<br>
+                  • 가공 시작에 필요한 공압이 부족하여 가공을 시작할 수 없습니다.<br>
                   • 에어 컴프레서 및 장비에 공급되는 에어 라인을 점검하십시오.
                 </td>
                 <td></td>
@@ -5375,8 +5410,8 @@
               <tr class="code-row" data-cat="a">
                 <td style="text-align:center;"><span class="code-badge badge-a">A102</span></td>
                 <td class="code-desc">
-                  <strong>Insufficient air pressure to open the chuck (척 개방을 위한 공압 부족)</strong><br>
-                  • 수동으로 척 열기 버튼을 클릭했으나 공압 부족으로 척이 열리지 않았습니다.<br>
+                  <strong>Insufficient air pressure to open the chuck (콜렛 개방을 위한 공압 부족)</strong><br>
+                  • 콜렛 열기 버튼을 클릭했으나 공압 부족으로 콜렛이 열리지 않았습니다.<br>
                   • 에어 컴프레서 및 장비에 공급되는 에어 라인을 점검하십시오.
                 </td>
                 <td></td>
@@ -5429,7 +5464,7 @@
                 <td style="text-align:center;"><span class="code-badge badge-a">A108</span></td>
                 <td class="code-desc">
                   <strong>Insufficient air pressure (공압 부족 경고)</strong><br>
-                  • <strong>확인(OK)</strong>: 가공 계속 / <strong>취소(NO)</strong>: 가공 정지<br>
+                  <strong>• 확인(OK)</strong>: 가공 계속 / <strong>• 취소(NO)</strong>: 가공 정지<br>
                   • <em>참고:</em> 공압이 부족하면 가공을 계속할 수 없습니다.<br>
                   • 공압 부족 감지 후 복구를 위해 2분간 대기했으나 정상 범위 내 공압이 공급되지 않았습니다.<br>
                   • 컴프레서 및 에어 라인 점검 후 계속하려면 확인을, 공구 교체를 중단하려면 취소를 터치하십시오.
@@ -5486,7 +5521,7 @@
                 <td style="text-align:center;"><span class="code-badge badge-a">A206</span></td>
                 <td class="code-desc">
                   <strong>Problem detected with the tool in use. (사용 중인 공구 이상 감지)</strong><br>
-                  • <strong>확인(OK)</strong>: 무시하고 공구 교체 후 가공 계속 / <strong>취소(NO)</strong>: 가공 정지 및 수동 공구 제거<br>
+                  <strong>• 확인(OK)</strong>: 무시하고 공구 교체 후 가공 계속 / <strong>• 취소(NO)</strong>: 가공 정지 및 수동 공구 제거<br>
                   • 공구 파손 또는 마모 가능성이 있으므로 상태 점검이 필요합니다.<br>
                   • 확인 터치 시 공구 교체 후 밀링을 계속합니다.<br>
                   • 취소 터치 시 가공을 멈추고 공구를 수동으로 제거해야 합니다. (수동 제거 시 설정 페이지에서 공구 번호를 0으로 리셋)<br>
@@ -5515,10 +5550,10 @@
               <tr class="code-row" data-cat="a">
                 <td style="text-align:center;"><span class="code-badge badge-a">A209</span></td>
                 <td class="code-desc">
-                  <strong>Failed to return tool to pocket (툴 포켓 공구 반납 실패)</strong><br>
+                  <strong>Failed to return tool to pocket (툴 포켓에 공구 반납 실패)</strong><br>
                   • ATC 동작 중 공구를 포켓에 정상적으로 안착시키지 못할 때 발생합니다.<br>
-                  • 포켓 반납을 3회 시도했으나 실패했습니다.<br>
-                  • 잦은 발생 시 툴 포켓 청소, 포켓 좌표 캘리브레이션, 콜릿 척 내부 청소가 필요합니다.
+                  • 포켓에 공구 반납을 3회 시도했으나 실패했습니다.<br>
+                  • 잦은 발생 시 툴 포켓 청소, 공구 위치 캘리브레이션, 콜렛 청소가 필요합니다.
                 </td>
                 <td></td>
               </tr>
@@ -6588,7 +6623,7 @@
           }
         </script>
       </section>
-      `<section id="sec-rep-mai-parts-guide" class="content-section">
+<section id="sec-rep-mai-parts-guide" class="content-section">
         <h2 data-i18n="nav-rep-parts-guide"><span data-i18n="mf-auto-668">🔧 수리 가이드</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#sec-rep-mai-parts-guide"
@@ -6646,17 +6681,10 @@
                 <span>🖥️ PC 관련 (PC Parts)</span>
               </div>
               <div style="display:flex; flex-direction:column; gap:12px;">
-                <div class="mai-card-item" data-title="메인보드 교체 방법 replace mainboard" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('메인보드 교체 방법 (Replace Mainboard)', 'https://www.youtube.com/embed/oABM-hGbaP0')">
+                                <div class="mai-card-item" data-title="메인보드 교체 방법 pc 메인보드 replace mainboard" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openPcMainboardModal()">
                   <div style="display:flex; align-items:center; gap:12px;">
                     <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px; flex-shrink:0;">▶</div>
-                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span>메인보드 교체 방법 (Replace Mainboard)</span></h3>
-                  </div>
-                </div>
-
-                <div class="mai-card-item" data-title="pc 메인보드 교체 방법 how to replace the mainboard of pc" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openPcMainboardModal()">
-                  <div style="display:flex; align-items:center; gap:12px;">
-                    <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px; flex-shrink:0;">▶</div>
-                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span>PC 메인보드 교체 방법 (How to replace the Mainboard of PC)</span></h3>
+                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span>메인보드 교체 방법 (Replace Mainboard / PC)</span></h3>
                   </div>
                 </div>
 
@@ -6718,9 +6746,7 @@
             검색된 부품/교체 가이드가 없습니다. 다른 검색어를 입력해보세요.
           </div>
       </section>
-
-      <!-- 기술 지원 매뉴얼- MillFix -->
-      <section id="sec-rep-mf-troubleshoot" class="content-section">
+<section id="sec-rep-mf-troubleshoot" class="content-section">
   <h2 data-i18n="nav-rep-troubleshoot"><span data-i18n="mf-auto-666">🩺 트러블 슈팅</span></h2>
   <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
     Anchor: <a href="#sec-rep-mf-troubleshoot"
@@ -7026,7 +7052,7 @@
                 if (htmlContent !== '') {
                   htmlContent += '<hr style="margin: 32px 0 24px; border: 0; border-top: 1px solid #e5e7eb; clear: both;">';
                 }
-                htmlContent += '<h4 style="color: #1f2937; font-size: 24px; margin-bottom: 24px; font-weight: 700;">' + line + '</h4><span data-i18n="mf-auto-817">';
+                htmlContent += '<h4 style="color: #1f2937; font-size: 24px; margin-bottom: 24px; font-weight: 700;">' + line + '</h4>';
                 
                 if (line.toLowerCase().includes("tool") || line.includes("공구")) {
                   inTable = true;
@@ -7043,7 +7069,7 @@
                 if (line === 'T35' || line.startsWith('T3') || line.startsWith('T4') || line.match(/^T\d+/)) {
                   if (tableRow.length > 0) {
                     while (tableRow.length < 3) tableRow.push('');
-                    htmlContent += '<tr style="border-bottom: 1px solid #e5e7eb;"><td style="padding: 15px; font-weight: 600;">' + tableRow[0] + '</td><td style="padding: 15px;">' + tableRow[1] + '</td><td style="padding: 15px; color: #6b7280;">' + tableRow[2] + '</td></tr><span data-i18n="mf-auto-818">';
+                    htmlContent += '<tr style="border-bottom: 1px solid #e5e7eb;"><td style="padding: 15px; font-weight: 600;">' + tableRow[0] + '</td><td style="padding: 15px;">' + tableRow[1] + '</td><td style="padding: 15px; color: #6b7280;">' + tableRow[2] + '</td></tr>';
                   }
                   tableRow = [line];
                 } else {
@@ -7199,7 +7225,7 @@
 
   <!-- ===== Spindle Troubleshoot Detail Modal ===== -->
   <div id="spindle-troubleshoot-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px;">
-    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:1200px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
+    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:880px; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
       <!-- Modal Header -->
       <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
         <div style="display:flex; align-items:center; gap:14px;">
@@ -7207,8 +7233,8 @@
             🚨
           </div>
           <div style="display:flex; flex-direction:column; gap:2px;">
-            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;"><span data-i18n="mf-auto-3091">[M AI] 동작 중 스핀들 알람 발생 및 회전 정지 해결 방법</span></h3>
-            <span data-i18n="mf-auto-3121" style="font-size:13px; color:#a855f7; font-weight:600;">스핀들 알람이 발생하면서 스핀들이 멈출 때</span>
+            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">동작 중 스핀들 알람 발생 및 회전 정지 해결 방법</h3>
+            <span style="font-size:13px; color:#a855f7; font-weight:600;">Spindle stops rotating with the spindle alarm</span>
           </div>
         </div>
         <button onclick="closeSpindleTroubleshootModal()" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; line-height:1; padding:4px;">&times;</button>
@@ -7219,15 +7245,15 @@
         <!-- Symptom Explanation Section -->
         <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px;">
           <div style="font-size:15px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px;">
-            <span data-i18n="mf-auto-3098">📌 에러 메시지 및 증상 설명</span>
+            <span>📌 에러 메시지 및 증상 설명</span>
           </div>
           <p style="margin:0; font-size:14px; color:#475569; line-height:1.7;">
-            <span data-i18n="mf-auto-3099">M AI 장비 사용 중 가공 또는 웜업 과정에서 아래 화면과 같이 스핀들 알람이 발생하며 동작이 멈출 수 있습니다.</span><br>
-            <span data-i18n="mf-auto-3100">발생한 시점(가공 중 또는 웜업 중)에 맞추어 아래 참고 영상을 참고하여 해제하세요.</span>
+            M AI 장비 사용 중 가공 또는 웜업 과정에서 아래 화면과 같이 스핀들 알람이 발생하며 동작이 멈출 수 있습니다.<br>
+            발생한 시점(가공 중 또는 웜업 중)에 맞추어 아래 참고 영상을 참고하여 해제하세요.
           </p>
           <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:4px;">
             <div style="max-width:440px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#fff;">
-              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;"><span data-i18n="mf-auto-3094">스핀들 알람 발생 증상 화면</span></div>
+              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;">스핀들 알람 발생 증상 화면</div>
               <img src="assets/images/sec-mai-troubleshoot/spindle-alarm-symptom.webp" alt="스핀들 알람 증상 화면" style="width:100%; height:auto; display:block;">
             </div>
           </div>
@@ -7236,35 +7262,35 @@
         <!-- Solutions Header -->
         <div style="display:flex; flex-direction:column; gap:16px;">
           <div style="font-size:16px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px; border-left:4px solid #a855f7; padding-left:10px;">
-            <span data-i18n="mf-auto-3101">🔧 해결 방법</span>
+            <span>🔧 해결 방법 </span>
           </div>
 
           <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap:16px;">
             <!-- Solution Case 1 -->
             <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
               <div style="display:flex; align-items:center; gap:10px;">
-                <span style="padding:4px 10px; background:#fef3c7; color:#d97706; border-radius:6px; font-size:13px; font-weight:700;" data-i18n="mf-auto-3102">상황 1</span>
-                <span style="font-size:15px; font-weight:700; color:#1e293b;" data-i18n="mf-auto-3103">가공 중(소재를 깎는 도중) 발생한 경우</span>
+                <span style="padding:4px 10px; background:#fef3c7; color:#d97706; border-radius:6px; font-size:13px; font-weight:700;">상황 1</span>
+                <span style="font-size:15px; font-weight:700; color:#1e293b;">가공 중(소재를 깎는 도중) 발생한 경우</span>
               </div>
               <p style="margin:0; font-size:13px; color:#64748b; line-height:1.5;">
-                <span data-i18n="mf-auto-3104">소재 가공 중 부하 또는 저항으로 인해 스핀들 알람이 발생한 경우의 해제 및 복구 방법입니다.</span>
+                소재 가공 중 부하 또는 저항으로 인해 스핀들 알람이 발생한 경우의 해제 및 복구 방법입니다.
               </p>
-              <button onclick="openVideoModal(getI18nText(currentLang, 'mf-auto-3118', '[M AI] 가공 중 스핀들 알람 해결 방법'), 'https://www.youtube-nocookie.com/embed/4m2qy6tKOoM')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#a855f7; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(168,85,247,0.2);" onmouseover="this.style.background='#9333ea'" onmouseout="this.style.background='#a855f7'">
-                <span style="font-size:16px;">▶</span> <span data-i18n="mf-auto-3105">참고 영상 보기</span>
+              <button onclick="openVideoModal('가공 중 스핀들 알람 해결 방법', 'https://www.youtube-nocookie.com/embed/4m2qy6tKOoM')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#a855f7; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(168,85,247,0.2);" onmouseover="this.style.background='#9333ea'" onmouseout="this.style.background='#a855f7'">
+                <span style="font-size:16px;">▶</span> 참고 영상 보기
               </button>
             </div>
 
             <!-- Solution Case 2 -->
             <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
               <div style="display:flex; align-items:center; gap:10px;">
-                <span style="padding:4px 10px; background:#eff6ff; color:#2563eb; border-radius:6px; font-size:13px; font-weight:700;" data-i18n="mf-auto-3106">상황 2</span>
-                <span style="font-size:15px; font-weight:700; color:#1e293b;" data-i18n="mf-auto-3107">웜업 중 또는 가공 시작 전 발생한 경우</span>
+                <span style="padding:4px 10px; background:#eff6ff; color:#2563eb; border-radius:6px; font-size:13px; font-weight:700;">상황 2</span>
+                <span style="font-size:15px; font-weight:700; color:#1e293b;">웜업 중 또는 가공 시작 전 발생한 경우</span>
               </div>
               <p style="margin:0; font-size:13px; color:#64748b; line-height:1.5;">
-                <span data-i18n="mf-auto-3108">장비 예열(Warm-up) 단계 또는 가공을 시작하기 전에 스핀들 알람이 발생한 경우의 해제 방법입니다.</span>
+                장비 예열(Warm-up) 단계 또는 가공을 시작하기 전에 스핀들 알람이 발생한 경우의 해제 방법입니다.
               </p>
-              <button onclick="openVideoModal(getI18nText(currentLang, 'mf-auto-3119', '[M AI] 웜업 중 스핀들 알람 해결 방법'), 'https://www.youtube-nocookie.com/embed/sVgThkrRDQw')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#2563eb; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(37,99,235,0.2);" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
-                <span style="font-size:16px;">▶</span> <span data-i18n="mf-auto-3105">참고 영상 보기</span>
+              <button onclick="openVideoModal('웜업 중 스핀들 알람 해결 방법', 'https://www.youtube-nocookie.com/embed/sVgThkrRDQw')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#2563eb; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(37,99,235,0.2);" onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
+                <span style="font-size:16px;">▶</span> 참고 영상 보기
               </button>
             </div>
           </div>
@@ -7273,7 +7299,7 @@
 
       <!-- Modal Footer -->
       <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
-        <button onclick="closeSpindleTroubleshootModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;"><span data-i18n="mf-auto-3109">닫기</span></button>
+        <button onclick="closeSpindleTroubleshootModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;">닫기</button>
       </div>
     </div>
   </div>
@@ -7293,7 +7319,7 @@
 
   <!-- ===== ePID Troubleshoot Detail Modal ===== -->
   <div id="epid-troubleshoot-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px;">
-    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:1200px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
+    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:880px; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
       <!-- Modal Header -->
       <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
         <div style="display:flex; align-items:center; gap:14px;">
@@ -7301,7 +7327,7 @@
             ⚡
           </div>
           <div style="display:flex; flex-direction:column; gap:2px;">
-            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;"><span data-i18n="mf-auto-3095">[M AI] "ePID fault..." 알람 발생 시 해결 방법</span></h3>
+            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">"ePID fault..." 알람 발생 시 해결 방법</h3>
             <span style="font-size:13px; color:#d97706; font-weight:600;">Error: ePID fault… Press RESET on MACH screen</span>
           </div>
         </div>
@@ -7313,19 +7339,19 @@
         <!-- Symptom Explanation Section -->
         <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px;">
           <div style="font-size:15px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px;">
-            <span data-i18n="mf-auto-3098">📌 에러 메시지 및 증상 설명</span>
+            <span>📌 에러 메시지 및 증상 설명</span>
           </div>
           <p style="margin:0; font-size:14px; color:#475569; line-height:1.7;">
-            <span data-i18n="mf-auto-3110">장비가 동작 중에 아래 화면과 같이 <strong>"error! ePID fault… Press RESET on MACH screen"</strong> 알람이 발생하며 정지될 수 있습니다.</span><br>
-            <span data-i18n="mf-auto-3111">아래의 단계별 해제 방법 및 참고 영상을 참고하여 장비를 정상 상태로 복구하세요.</span>
+            장비가 동작 중에 아래 화면과 같이 <strong>"error! ePID fault… Press RESET on MACH screen"</strong> 알람이 발생하며 정지될 수 있습니다.<br>
+            아래의 단계별 해제 방법 및 참고 영상을 참고하여 장비를 정상 상태로 복구하세요.
           </p>
           <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin-top:4px;">
             <div style="border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#fff;">
-              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;"><span data-i18n="mf-auto-3096">에러 메시지</span></div>
+              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;">에러 메세지</div>
               <img src="assets/images/sec-mai-troubleshoot/epid-fault-homing.webp" alt="원점 복귀 중 ePID 에러" style="width:100%; height:auto; display:block;">
             </div>
             <div style="border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#fff;">
-              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;"><span data-i18n="mf-auto-3097">에러 메시지에서 OK 버튼 누른 후 스크린 상태</span></div>
+              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;">에러 메세지에서 OK 버튼 누른 후 스크린 상태</div>
               <img src="assets/images/sec-mai-troubleshoot/epid-fault-mcode.webp" alt="M-code 동작 중 ePID 에러" style="width:100%; height:auto; display:block;">
             </div>
           </div>
@@ -7334,20 +7360,20 @@
         <!-- Resolution Steps Section -->
         <div style="display:flex; flex-direction:column; gap:16px;">
           <div style="font-size:16px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px; border-left:4px solid #d97706; padding-left:10px;">
-            <span data-i18n="mf-auto-3112">🛠️ 에러 해제 단계별 방법</span>
+            <span>🛠️ 에러 해제 단계별 방법</span>
           </div>
           <div style="padding:18px; background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; display:flex; flex-direction:column; gap:14px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
             <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
               <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#eff6ff; color:#2563eb; font-size:14px; font-weight:700; flex-shrink:0;">1</span>
-              <span data-i18n="mf-auto-3113">화면 하단의 <strong style="color:#2563eb;">'M-code'</strong> 아이콘을 클릭하여 활성화된 매크로를 해제합니다.</span>
+              <span>화면 하단의 <strong style="color:#2563eb;">'M-code'</strong> 아이콘을 클릭하여 활성화된 매크로를 해제합니다.</span>
             </div>
             <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
               <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#fef2f2; color:#dc2626; font-size:14px; font-weight:700; flex-shrink:0;">2</span>
-              <span data-i18n="mf-auto-3114">Ready 상태로 복귀 <strong style="color:#dc2626;">'E-stop'</strong> 버튼을 클릭하여 Ready 상태로 복귀합니다.</span>
+              <span>Ready 상태로 복귀 <strong style="color:#dc2626;">'E-stop'</strong> 버튼을 클릭하여 Ready 상태로 복귀합니다.</span>
             </div>
             <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:#334155; font-weight:600;">
               <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f0fdf4; color:#16a34a; font-size:14px; font-weight:700; flex-shrink:0;">3</span>
-              <span data-i18n="mf-auto-3115">원점 복귀 <strong style="color:#16a34a;">'Homing'</strong> 버튼을 다시 클릭하여 장비를 다시 초기화합니다.</span>
+              <span>원점 복귀 <strong style="color:#16a34a;">'Homing'</strong> 버튼을 다시 클릭하여 장비를 다시 초기화합니다.</span>
             </div>
           </div>
         </div>
@@ -7355,14 +7381,14 @@
         <!-- Tutorial Video Section -->
         <div style="display:flex; flex-direction:column; gap:16px;">
           <div style="font-size:16px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px; border-left:4px solid #d97706; padding-left:10px;">
-            <span data-i18n="mf-auto-3116">🔧 참고 영상</span>
+            <span>🔧 참고 영상</span>
           </div>
           <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
             <p style="margin:0; font-size:14px; color:#64748b; line-height:1.5;">
-              <span data-i18n="mf-auto-3117">해제 방법을 영상을 통해 자세히 확인하십시오.</span>
+              해제 방법을 영상을 통해 자세히 확인하십시오.
             </p>
-            <button onclick="openVideoModal(getI18nText(currentLang, 'mf-auto-3120', '[M AI] ePID fault 해결 방법'), 'https://www.youtube-nocookie.com/embed/K5i7AdEix2k')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#d97706; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(217,119,6,0.2);" onmouseover="this.style.background='#b45309'" onmouseout="this.style.background='#d97706'">
-              <span style="font-size:16px;">▶</span> <span data-i18n="mf-auto-3105">참고 영상 보기</span>
+            <button onclick="openVideoModal('ePID fault 해결 방법', 'https://www.youtube-nocookie.com/embed/K5i7AdEix2k')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#d97706; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(217,119,6,0.2);" onmouseover="this.style.background='#b45309'" onmouseout="this.style.background='#d97706'">
+              <span style="font-size:16px;">▶</span> 참고 영상 보기
             </button>
           </div>
         </div>
@@ -7370,7 +7396,7 @@
 
       <!-- Modal Footer -->
       <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
-        <button onclick="closeEpidTroubleshootModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;"><span data-i18n="mf-auto-3109">닫기</span></button>
+        <button onclick="closeEpidTroubleshootModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;">닫기</button>
       </div>
     </div>
   </div>
@@ -7389,31 +7415,7 @@
   </script>
 
   <!-- ===== M AI Additional Troubleshoot Placeholder Modals ===== -->
-  <div id="mai-z-belt-modal" class="mai-placeholder-modal" style="display:none; position:fixed; inset:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px; box-sizing:border-box;">
-    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:1200px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
-      <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
-        <div style="display:flex; align-items:center; gap:14px; min-width:0;">
-          <div style="width:46px; height:46px; border-radius:12px; background:#dbeafe; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0;">↕️</div>
-          <div style="min-width:0;">
-            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;"><span data-i18n="mf-auto-3122">[M AI] Z축 벨트 텐션 조절 방법</span></h3>
-            <span data-i18n="mf-auto-3123" style="font-size:13px; color:#2563eb; font-weight:600;">Z축 이동 시 소음이 발생할 때</span>
-          </div>
-        </div>
-        <button type="button" onclick="closeMaiPlaceholderModal('mai-z-belt-modal')" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; line-height:1; padding:4px; flex-shrink:0;">&times;</button>
-      </div>
-      <div style="padding:26px; overflow-y:auto;">
-        <div style="font-size:16px; font-weight:700; color:#1e293b; margin-bottom:14px; border-left:4px solid #2563eb; padding-left:10px;">
-          <span data-i18n="mf-auto-3116">🔧 참고 영상</span>
-        </div>
-        <div style="position:relative; width:100%; aspect-ratio:16 / 9; overflow:hidden; border-radius:12px; background:#000; box-shadow:0 8px 24px rgba(15,23,42,0.14);">
-          <iframe src="https://www.youtube-nocookie.com/embed/hVKlSsQDuCc" title="Z축 벨트 텐션 조절 방법" style="position:absolute; inset:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
-        <button type="button" onclick="closeMaiPlaceholderModal('mai-z-belt-modal')" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;"><span data-i18n="mf-auto-3109">닫기</span></button>
-      </div>
-    </div>
-  </div>
+  
 
   <!-- ===== MillFix Axis Troubleshoot Detail Modal ===== -->
   <div id="mf-axis-troubleshoot-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px;">
@@ -7499,28 +7501,7 @@
     </div>
   </div>
 
-  <div id="mai-mainboard-modal" class="mai-placeholder-modal" style="display:none; position:fixed; inset:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px; box-sizing:border-box;">
-    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:1200px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
-      <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
-        <div style="display:flex; align-items:center; gap:14px; min-width:0;">
-          <div style="width:46px; height:46px; border-radius:12px; background:#d1fae5; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0;">🧩</div>
-          <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;"><span data-i18n="mf-auto-3124">[M AI] 메인보드 교체 방법</span></h3>
-        </div>
-        <button type="button" onclick="closeMaiPlaceholderModal('mai-mainboard-modal')" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; line-height:1; padding:4px; flex-shrink:0;">&times;</button>
-      </div>
-      <div style="padding:26px; overflow-y:auto;">
-        <div style="font-size:16px; font-weight:700; color:#1e293b; margin-bottom:14px; border-left:4px solid #059669; padding-left:10px;">
-          <span data-i18n="mf-auto-3116">🔧 참고 영상</span>
-        </div>
-        <div style="position:relative; width:100%; aspect-ratio:16 / 9; overflow:hidden; border-radius:12px; background:#000; box-shadow:0 8px 24px rgba(15,23,42,0.14);">
-          <iframe src="https://www.youtube-nocookie.com/embed/oABM-hGbaP0" title="M AI 메인보드 교체 방법" style="position:absolute; inset:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
-        <button type="button" onclick="closeMaiPlaceholderModal('mai-mainboard-modal')" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;"><span data-i18n="mf-auto-3109">닫기</span></button>
-      </div>
-    </div>
-  </div>
+  
 
   <!-- ===== MillFix Nozzle Troubleshoot Detail Modal ===== -->
   <div id="mf-nozzle-troubleshoot-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px;">
@@ -7606,28 +7587,7 @@
     </div>
   </div>
 
-  <div id="mai-spindle-adjust-modal" class="mai-placeholder-modal" style="display:none; position:fixed; inset:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px; box-sizing:border-box;">
-    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:1200px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
-      <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
-        <div style="display:flex; align-items:center; gap:14px; min-width:0;">
-          <div style="width:46px; height:46px; border-radius:12px; background:#ffe4e6; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0;">🎯</div>
-          <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700; line-height:1.4;"><span data-i18n="mf-auto-3125">[M AI] 스핀들 조정 방법</span></h3>
-        </div>
-        <button type="button" onclick="closeMaiPlaceholderModal('mai-spindle-adjust-modal')" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; line-height:1; padding:4px; flex-shrink:0;">&times;</button>
-      </div>
-      <div style="padding:26px; overflow-y:auto;">
-        <div style="font-size:16px; font-weight:700; color:#1e293b; margin-bottom:14px; border-left:4px solid #e11d48; padding-left:10px;">
-          <span data-i18n="mf-auto-3116">🔧 참고 영상</span>
-        </div>
-        <div style="position:relative; width:100%; aspect-ratio:16 / 9; overflow:hidden; border-radius:12px; background:#000; box-shadow:0 8px 24px rgba(15,23,42,0.14);">
-          <iframe src="https://www.youtube-nocookie.com/embed/LXlTPxAAxFo" title="M AI 스핀들 조정 방법" style="position:absolute; inset:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
-        <button type="button" onclick="closeMaiPlaceholderModal('mai-spindle-adjust-modal')" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;"><span data-i18n="mf-auto-3109">닫기</span></button>
-      </div>
-    </div>
-  </div>
+  
 
   <script>
     function openMfAxisTroubleshootModal() {
@@ -7745,53 +7705,165 @@
 
   <!-- ===== PC Mainboard Replacement Modal ===== -->
   <div id="pc-mainboard-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px;">
-    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:880px; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
+    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:920px; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
       <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
         <div style="display:flex; align-items:center; gap:14px;">
           <div style="width:46px; height:46px; border-radius:12px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0;">
             🖥️
           </div>
           <div style="display:flex; flex-direction:column; gap:2px;">
-            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">PC 메인보드 교체 방법 (How to replace the Mainboard of PC)</h3>
-            <span style="font-size:13px; color:#a855f7; font-weight:600;">PC Mainboard replacement guide</span>
+            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">메인보드 교체 방법 (Replace Mainboard / PC)</h3>
+            <span style="font-size:13px; color:#a855f7; font-weight:600;">PC Mainboard Replacement Guide (Video & Photo Manual)</span>
           </div>
         </div>
         <button onclick="closePcMainboardModal()" style="background:none; border:none; font-size:26px; cursor:pointer; color:#64748b; padding:4px; line-height:1;">&times;</button>
       </div>
-      <div style="padding:26px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:20px;">
+      <div style="padding:26px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:28px;">
+        
+        <!-- Video Manual Section -->
         <div style="display:flex; flex-direction:column; gap:14px;">
-          <div style="display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border-radius:12px; border:1px solid #e2e8f0;">
-            <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">1</span>
-            <div>
-              <strong style="color:#1e293b; display:block; margin-bottom:4px;">도어 오픈 및 고정 나사 분리</strong>
-              <span style="color:#475569; font-size:14px; line-height:1.5;">도어를 열고 M2.5 육각 렌치로 고정 나사 2개를 푸십시오. 사진처럼 박스 위에 PC 파트를 올려 놓으면 작업하기 용이할 수 있습니다. (Open the door and loosen 2 screws by M2.5 hex wrench. It is convenient to work putting on the PC part on a box.)</span>
+          <div style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; border-left:4px solid #a855f7; padding-left:10px;">
+            <span>▶ 영상으로 보는 매뉴얼 (Video Manual)</span>
+          </div>
+          <div style="position:relative; width:100%; padding-bottom:56.25%; background:#000; border-radius:14px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.15);">
+            <iframe id="pc-mainboard-video-iframe" src="https://www.youtube-nocookie.com/embed/oABM-hGbaP0?rel=0" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <hr style="border:0; border-top:1px solid #e2e8f0; margin:0;">
+
+        <!-- Reading Manual Section -->
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <div style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; border-left:4px solid #a855f7; padding-left:10px;">
+            <span>📖 글과 사진으로 읽는 매뉴얼 (Reading Manual - Step by Step)</span>
+          </div>
+          
+          <!-- Step 1 -->
+          <div style="display:flex; flex-direction:column; gap:12px; padding:18px; background:#f8fafc; border-radius:14px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">1</span>
+              <div>
+                <strong style="color:#1e293b; display:block; margin-bottom:4px; font-size:15px;">도어 오픈 및 고정 나사 분리 (Loosen 2 screws)</strong>
+                <span style="color:#475569; font-size:14px; line-height:1.6;">도어를 열고 M2.5 육각 렌치로 고정 나사 2개를 푸십시오.<br><span style="color:#64748b; font-size:13px;">Open the door and loosen 2 screws by M2.5 hex wrench.</span></span>
+              </div>
+            </div>
+            <div style="margin-top:6px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff; max-width:600px;">
+              <img src="assets/images/sec-mai-parts/mainboard/mb_step_1.webp" alt="Step 1" style="width:100%; height:auto; display:block;">
             </div>
           </div>
-          <div style="display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border-radius:12px; border:1px solid #e2e8f0;">
-            <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">2</span>
-            <div>
-              <strong style="color:#1e293b; display:block; margin-bottom:4px;">케이블 제거 및 사진 촬영</strong>
-              <span style="color:#475569; font-size:14px; line-height:1.5;">메인보드에 연결된 모든 케이블을 제거합니다. 케이블을 제거하기 전에 사진을 찍어두는 것이 좋습니다. (Take all cables off that are connected to the mainboard. It would better take a picture before.)</span>
+
+          <!-- Step 2 -->
+          <div style="display:flex; flex-direction:column; gap:12px; padding:18px; background:#f8fafc; border-radius:14px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">2</span>
+              <div>
+                <strong style="color:#1e293b; display:block; margin-bottom:4px; font-size:15px;">작업 편의를 위한 PC 파트 거치 (Place on a box)</strong>
+                <span style="color:#475569; font-size:14px; line-height:1.6;">사진처럼 박스 위에 PC 파트를 올려 놓으면 작업하기 용이할 수 있습니다.<br><span style="color:#64748b; font-size:13px;">It is convenient to work putting on the PC part on a box.</span></span>
+              </div>
+            </div>
+            <div style="margin-top:6px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff; max-width:600px;">
+              <img src="assets/images/sec-mai-parts/mainboard/mb_step_2.webp" alt="Step 2" style="width:100%; height:auto; display:block;">
             </div>
           </div>
-          <div style="display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border-radius:12px; border:1px solid #e2e8f0;">
-            <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">3</span>
-            <div>
-              <strong style="color:#1e293b; display:block; margin-bottom:4px;">메인보드 교체 및 조립</strong>
-              <span style="color:#475569; font-size:14px; line-height:1.5;">M2.5 육각 렌치로 고정 나사 4개를 풀면 메인보드(PC)를 떼어 낼 수 있습니다. 보내드린 메인 보드(PC)로 교체한 후 나사들을 조여 고정하고 케이블을 하나씩 다시 연결합니다.</span>
+
+          <!-- Step 3 -->
+          <div style="display:flex; flex-direction:column; gap:12px; padding:18px; background:#f8fafc; border-radius:14px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">3</span>
+              <div>
+                <strong style="color:#1e293b; display:block; margin-bottom:4px; font-size:15px;">케이블 제거 및 사진 촬영 (Take all cables off)</strong>
+                <span style="color:#475569; font-size:14px; line-height:1.6;">메인보드에 연결된 모든 케이블을 제거합니다. 케이블을 제거하기 전에 미리 사진을 찍어두는 것을 권장합니다.<br><span style="color:#64748b; font-size:13px;">Take all cables off that are connected to the mainboard. It would better take a picture before.</span></span>
+              </div>
+            </div>
+            <div style="margin-top:6px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff; max-width:600px;">
+              <img src="assets/images/sec-mai-parts/mainboard/mb_step_3.webp" alt="Step 3" style="width:100%; height:auto; display:block;">
             </div>
           </div>
-          <div style="display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border-radius:12px; border:1px solid #e2e8f0;">
-            <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">4</span>
-            <div>
-              <strong style="color:#1e293b; display:block; margin-bottom:4px;">장착 및 캘리브레이션 수행</strong>
-              <span style="color:#475569; font-size:14px; line-height:1.5;">PC 파트를 위쪽에 걸어서 위치시킨 후 도어를 열고 고정 나사를 조입니다. 조립 후 반드시 아래 순서로 캘리브레이션을 수행하십시오:<br>
-              1. AI 툴포켓 캘리브레이션 (AI Tool pocket calibration)<br>
-              2. AI 디스크 캘리브레이션 (AI Disc calibration)<br>
-              3. AI 프리밀 캘리브레이션 V1.2 (AI Premill calibration)<br>
-              4. 매뉴얼 디스크 캘리브레이션 (Manual Disc calibration)</span>
+
+          <!-- Step 4 -->
+          <div style="display:flex; flex-direction:column; gap:12px; padding:18px; background:#f8fafc; border-radius:14px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">4</span>
+              <div>
+                <strong style="color:#1e293b; display:block; margin-bottom:4px; font-size:15px;">메인보드 탈거 및 새 메인보드 장착 (Replace mainboard)</strong>
+                <span style="color:#475569; font-size:14px; line-height:1.6;">M2.5 육각 렌치로 고정 나사 4개를 풀면 메인보드(PC)를 떼어 낼 수 있습니다. 보내드린 새 메인 보드(PC)로 교체한 후, M2.5 육각 렌치로 나사들을 조여 고정합니다.<br><span style="color:#64748b; font-size:13px;">Loosen 4 screws to take the mainboard (PC) off by the M2.5 hex wrench. Replace with the new mainboard and fasten it with M2.5 hex wrench screwing.</span></span>
+              </div>
+            </div>
+            <div style="margin-top:6px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff; max-width:600px;">
+              <img src="assets/images/sec-mai-parts/mainboard/mb_step_4.webp" alt="Step 4" style="width:100%; height:auto; display:block;">
             </div>
           </div>
+
+          <!-- Step 5 -->
+          <div style="display:flex; flex-direction:column; gap:12px; padding:18px; background:#f8fafc; border-radius:14px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">5</span>
+              <div>
+                <strong style="color:#1e293b; display:block; margin-bottom:4px; font-size:15px;">케이블 연결 (Connect the cables one by one)</strong>
+                <span style="color:#475569; font-size:14px; line-height:1.6;">메인보드에 케이블을 하나씩 원래 위치대로 정확히 연결합니다.<br><span style="color:#64748b; font-size:13px;">Connect the cables one by one accurately.</span></span>
+              </div>
+            </div>
+            <div style="margin-top:6px; display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
+              <div style="border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff;">
+                <img src="assets/images/sec-mai-parts/mainboard/mb_step_5.webp" alt="Step 5-1" style="width:100%; height:auto; display:block;">
+              </div>
+              <div style="border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff;">
+                <img src="assets/images/sec-mai-parts/mainboard/mb_step_6.webp" alt="Step 5-2" style="width:100%; height:auto; display:block;">
+              </div>
+              <div style="border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff;">
+                <img src="assets/images/sec-mai-parts/mainboard/mb_step_7.webp" alt="Step 5-3" style="width:100%; height:auto; display:block;">
+              </div>
+              <div style="border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff;">
+                <img src="assets/images/sec-mai-parts/mainboard/mb_step_8.webp" alt="Step 5-4" style="width:100%; height:auto; display:block;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div style="display:flex; flex-direction:column; gap:12px; padding:18px; background:#f8fafc; border-radius:14px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">6</span>
+              <div>
+                <strong style="color:#1e293b; display:block; margin-bottom:4px; font-size:15px;">PC 파트 거치 (Hook the PC part on the machine)</strong>
+                <span style="color:#475569; font-size:14px; line-height:1.6;">PC 파트를 위쪽에 걸어서 정확한 위치에 위치시키십시오.<br><span style="color:#64748b; font-size:13px;">Hook the PC part on the machine.</span></span>
+              </div>
+            </div>
+            <div style="margin-top:6px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff; max-width:600px;">
+              <img src="assets/images/sec-mai-parts/mainboard/mb_step_10.webp" alt="Step 6" style="width:100%; height:auto; display:block;">
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div style="display:flex; flex-direction:column; gap:12px; padding:18px; background:#f8fafc; border-radius:14px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">7</span>
+              <div>
+                <strong style="color:#1e293b; display:block; margin-bottom:4px; font-size:15px;">도어 오픈 및 고정 나사 체결 (Fasten 2 screws)</strong>
+                <span style="color:#475569; font-size:14px; line-height:1.6;">도어를 열고 M2.5 육각 렌치로 고정 나사 2개를 단단히 조여 고정하십시오.<br><span style="color:#64748b; font-size:13px;">Open the door and fasten the 2 screws by M2.5 hex driver.</span></span>
+              </div>
+            </div>
+            <div style="margin-top:6px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#ffffff; max-width:600px;">
+              <img src="assets/images/sec-mai-parts/mainboard/mb_step_11.webp" alt="Step 7" style="width:100%; height:auto; display:block;">
+            </div>
+          </div>
+
+          <!-- Step 8 -->
+          <div style="display:flex; flex-direction:column; gap:12px; padding:18px; background:#f8fafc; border-radius:14px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">8</span>
+              <div>
+                <strong style="color:#1e293b; display:block; margin-bottom:4px; font-size:15px;">캘리브레이션 수행 (Carry out calibration)</strong>
+                <span style="color:#475569; font-size:14px; line-height:1.6;">조립 후 반드시 아래 순서에 따라 캘리브레이션을 순차적으로 수행하십시오.<br><span style="color:#64748b; font-size:13px;">Carry out the calibration in the order below after assembly:</span></span>
+              </div>
+            </div>
+            <div style="margin-top:6px; padding:14px 18px; background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; display:flex; flex-direction:column; gap:8px; font-size:14px; color:#1e293b;">
+              <div style="display:flex; align-items:center; gap:8px;"><span style="color:#a855f7; font-weight:700;">1.</span> <strong>AI 툴포켓 캘리브레이션</strong> <span style="color:#64748b; font-size:13px;">(AI Tool pocket calibration)</span></div>
+              <div style="display:flex; align-items:center; gap:8px;"><span style="color:#a855f7; font-weight:700;">2.</span> <strong>AI 디스크 캘리브레이션</strong> <span style="color:#64748b; font-size:13px;">(AI Disc calibration)</span></div>
+              <div style="display:flex; align-items:center; gap:8px;"><span style="color:#a855f7; font-weight:700;">3.</span> <strong>AI 프리밀 캘리브레이션 V1.2</strong> <span style="color:#64748b; font-size:13px;">(AI Premill calibration - Jig #01)</span></div>
+              <div style="display:flex; align-items:center; gap:8px;"><span style="color:#a855f7; font-weight:700;">4.</span> <strong>매뉴얼 디스크 캘리브레이션</strong> <span style="color:#64748b; font-size:13px;">(Manual Disc calibration)</span></div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
@@ -7806,7 +7878,15 @@
     }
     function closePcMainboardModal() {
       const m = document.getElementById('pc-mainboard-modal');
-      if (m) m.style.display = 'none';
+      if (m) {
+        m.style.display = 'none';
+        const iframe = m.querySelector('#pc-mainboard-video-iframe');
+        if (iframe) {
+          const src = iframe.src;
+          iframe.src = '';
+          iframe.src = src;
+        }
+      }
     }
     document.getElementById('pc-mainboard-modal')?.addEventListener('click', e => {
       if (e.target.id === 'pc-mainboard-modal') closePcMainboardModal();
@@ -9028,6 +9108,80 @@
       scrollPageTo('bottom');
     });
   })();
+</script>
+
+<!-- Control Program Update modal (merged from technical_support_manual (2).html) -->
+<div id="ctrl-prog-update-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1080; justify-content:center; align-items:center; padding:20px;">
+    <div style="background:#ffffff; border-radius:18px; width:100%; max-width:880px; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden;">
+      <!-- Modal Header -->
+      <div style="padding:20px 26px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div style="width:46px; height:46px; border-radius:12px; background:#eff6ff; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0;">
+            💻
+          </div>
+          <div style="display:flex; flex-direction:column; gap:2px;">
+            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">컨트롤 프로그램 업데이트 방법</h3>
+            <span style="font-size:13px; color:#3b82f6; font-weight:600;">Control Program Update Guide</span>
+          </div>
+        </div>
+        <button onclick="closeCtrlProgUpdateModal()" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; line-height:1; padding:4px;">&times;</button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div style="padding:26px; overflow-y:auto; display:flex; flex-direction:column; gap:24px;">
+        <!-- Symptom Explanation Section -->
+        <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px;">
+          <div style="font-size:15px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px;">
+            <span>📌 증상 및 필요성</span>
+          </div>
+          <p style="margin:0; font-size:14px; color:#475569; line-height:1.7;">
+            사용 상의 이유로 컨트롤 프로그램의 업데이트 및 재설치가 필요한 경우입니다.<br>
+            아래 가이드 영상 및 절차에 따라 컨트롤 프로그램을 최신 버전으로 업데이트하세요.
+          </p>
+          <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:4px;">
+            <div style="max-width:520px; border-radius:10px; overflow:hidden; border:1px solid #cbd5e1; background:#fff;">
+              <div style="padding:6px 12px; background:#f1f5f9; font-size:12px; color:#334155; font-weight:600; border-bottom:1px solid #cbd5e1;">컨트롤 프로그램 화면</div>
+              <img src="assets/images/ctrl_prog_update_symptom.webp" alt="컨트롤 프로그램 업데이트 화면" style="width:100%; height:auto; display:block;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Solutions Header -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div style="font-size:16px; font-weight:700; color:#1e293b; display:flex; align-items:center; gap:8px; border-left:4px solid #3b82f6; padding-left:10px;">
+            <span>🔧 해결 방법</span>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr; gap:16px;">
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:12px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="padding:4px 10px; background:#eff6ff; color:#2563eb; border-radius:6px; font-size:13px; font-weight:700;">영상 가이드</span>
+                <span style="font-size:15px; font-weight:700; color:#1e293b;">컨트롤 프로그램 업데이트 및 재설치 가이드 동영상</span>
+              </div>
+              <p style="margin:0; font-size:13px; color:#64748b; line-height:1.5;">
+                아래 영상을 클릭하시면 컨트롤 프로그램을 안전하게 업데이트하고 재설치하는 방법을 확인할 수 있습니다.
+              </p>
+              <button onclick="openVideoModal('컨트롤 프로그램 업데이트 방법', 'https://www.youtube-nocookie.com/embed/9cBEIhTVwcc')" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:#3b82f6; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:600; cursor:pointer; transition:background 0.2s; box-shadow:0 4px 10px rgba(59,130,246,0.2);" onmouseover="this.style.background='#2563eb'" onmouseout="this.style.background='#3b82f6'">
+                <span style="font-size:16px;">▶</span> 참고 영상 보기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div style="padding:14px 26px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
+        <button onclick="closeCtrlProgUpdateModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;">닫기</button>
+      </div>
+    </div>
+  </div>
+<script>
+  function openCtrlProgUpdateModal() { document.getElementById('ctrl-prog-update-modal').style.display = 'flex'; }
+  function closeCtrlProgUpdateModal() { document.getElementById('ctrl-prog-update-modal').style.display = 'none'; }
+  document.getElementById('ctrl-prog-update-modal')?.addEventListener('click', function (event) { if (event.target === this) closeCtrlProgUpdateModal(); });
+  document.querySelectorAll('#sec-rep-overview [data-section]').forEach(function (card) {
+    card.addEventListener('click', function () { document.getElementById('menu-' + this.dataset.section)?.click(); });
+  });
 </script>
 
 </body>

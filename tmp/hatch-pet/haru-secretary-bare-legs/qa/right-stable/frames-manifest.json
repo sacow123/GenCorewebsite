@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "running-right",
+      "frames": [
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\right-stable\\running-right\\00.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\right-stable\\running-right\\01.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\right-stable\\running-right\\02.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\right-stable\\running-right\\03.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\right-stable\\running-right\\04.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\right-stable\\running-right\\05.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\right-stable\\running-right\\06.png",
+        "C:\\Users\\USER\\Documents\\GitHub\\GenCorewebsite\\tmp\\hatch-pet\\haru-secretary-bare-legs\\qa\\right-stable\\running-right\\07.png"
+      ],
+      "method": "stable-slots"
+    }
+  ]
+}
