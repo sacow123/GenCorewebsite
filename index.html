@@ -5214,11 +5214,23 @@
       </section>
       <!-- 기술 지원 매뉴얼- M AI° -->
       <section id="sec-rep-mai-troubleshoot" class="content-section">
+              <style>
+                #sec-rep-mai-troubleshoot .troubleshoot-stamps { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 20px; }
+                #sec-rep-mai-troubleshoot .troubleshoot-stamp { display:inline-flex; align-items:center; gap:7px; padding:9px 14px; border:1px solid #e9d5ff; border-radius:999px; background:#faf5ff; color:#7e22ce; font-size:13px; font-weight:700; cursor:pointer; transition:transform .2s ease, box-shadow .2s ease, background .2s ease; }
+                #sec-rep-mai-troubleshoot .troubleshoot-stamp:hover { background:#f3e8ff; box-shadow:0 5px 12px rgba(168,85,247,.16); transform:translateY(-1px); }
+                #sec-rep-mai-troubleshoot .troubleshoot-stamp:focus-visible { outline:3px solid rgba(168,85,247,.28); outline-offset:2px; }
+              </style>
               <h2 data-i18n="nav-rep-troubleshoot"><span data-i18n="mf-auto-666">🩺 트러블 슈팅</span></h2>
               <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
                 Anchor: <a href="#sec-rep-mai-troubleshoot"
                   style="color:#a855f7; text-decoration:none;">#sec-rep-mai-troubleshoot</a></div>
               <p class="subtitle">기술 지원 매뉴얼- M AI°</p>
+              <nav class="troubleshoot-stamps" aria-label="트러블 슈팅 카드 바로가기">
+                <button type="button" class="troubleshoot-stamp" onclick="document.getElementById('menu-sec-rep-mai-errorcode')?.click() || showSection('sec-rep-mai-errorcode');" data-i18n="mai-trouble-stamp-errorcode">🚨 오류 코드 리스트</button>
+                <button type="button" class="troubleshoot-stamp" onclick="document.getElementById('mai-trouble-spindle')?.scrollIntoView({ behavior: 'smooth', block: 'start' });" data-i18n="mai-trouble-stamp-spindle">🚨 스핀들 알람</button>
+                <button type="button" class="troubleshoot-stamp" onclick="document.getElementById('mai-trouble-epid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });" data-i18n="mai-trouble-stamp-epid">⚡ ePID fault</button>
+                <button type="button" class="troubleshoot-stamp" onclick="document.getElementById('mai-trouble-control-update')?.scrollIntoView({ behavior: 'smooth', block: 'start' });" data-i18n="mai-trouble-stamp-control-update">💻 프로그램 업데이트</button>
+              </nav>
               <div class="content-card" style="background:transparent; border:none; padding:0; box-shadow:none;">
                 <div style="display:flex; flex-direction:column; gap:24px;">
               <!-- Error Codes Banner Card -->
@@ -5238,7 +5250,7 @@
               </div>
 
               <!-- Item 1: Spindle Alarm -->
-              <div onclick="openSpindleTroubleshootModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 12px 32px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
+              <div id="mai-trouble-spindle" onclick="openSpindleTroubleshootModal()" style="scroll-margin-top:24px; padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 12px 32px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
                 <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
                   <div style="display:flex; align-items:flex-start; gap:14px;">
                     <div style="width:46px; height:46px; border-radius:12px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:24px; flex-shrink:0;">
@@ -5254,18 +5266,14 @@
                   </div>
                 </div>
 
-                <!-- Symptom Image Only (*.gif -> webp) -->
                 <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
                   <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 </div>
-                  <div style="max-width:520px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff;">
-                    <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">스핀들 알람 발생 증상 화면</div>
-                    <img src="assets/images/sec-mai-troubleshoot/spindle-alarm-symptom.webp" alt="스핀들 알람 발생 증상 화면" style="width:100%; height:auto; display:block;">
-                  </div>
+                  <div style="font-size:13px; color:#475569; line-height:1.5;" data-i18n="mai-trouble-symptom-spindle">가공 또는 웜업 중 스핀들 알람이 발생하면서 회전이 멈추는 경우</div>
                 </div>
               </div>
 
               <!-- Item 2: ePID Fault -->
-              <div onclick="openEpidTroubleshootModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#f59e0b'; this.style.boxShadow='0 12px 32px rgba(245,158,11,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
+              <div id="mai-trouble-epid" onclick="openEpidTroubleshootModal()" style="scroll-margin-top:24px; padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#f59e0b'; this.style.boxShadow='0 12px 32px rgba(245,158,11,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
                 <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
                   <div style="display:flex; align-items:flex-start; gap:14px;">
                     <div style="width:46px; height:46px; border-radius:12px; background:#fef3c7; display:flex; align-items:center; justify-content:center; color:#d97706; font-size:24px; flex-shrink:0;">
@@ -5281,24 +5289,14 @@
                   </div>
                 </div>
 
-                <!-- Symptom Image Only -->
                 <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
                   <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 </div>
-                  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; max-width:680px;">
-                    <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
-                      <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">에러 메세지</div>
-                      <img src="assets/images/sec-mai-troubleshoot/epid-fault-homing.webp" alt="원점 복귀 중 ePID 에러" style="width:100%; height:auto; display:block;">
-                    </div>
-                    <div style="border-radius:8px; overflow:hidden; border:1px solid #e2e8f0; background:#fff;">
-                      <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">에러 메세지에서 OK 버튼 누른 후 스크린 상태</div>
-                      <img src="assets/images/sec-mai-troubleshoot/epid-fault-mcode.webp" alt="M-code 동작 중 ePID 에러" style="width:100%; height:auto; display:block;">
-                    </div>
-                  </div>
+                  <div style="font-size:13px; color:#475569; line-height:1.5;" data-i18n="mai-trouble-symptom-epid">원점 복귀 또는 M-code 동작 중 ePID fault 메시지가 표시되며 장비가 정지하는 경우</div>
                 </div>
               </div>
 
               <!-- Item 3: Control Program Update -->
-              <div onclick="openCtrlProgUpdateModal()" style="padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 12px 32px rgba(59,130,246,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
+              <div id="mai-trouble-control-update" onclick="openCtrlProgUpdateModal()" style="scroll-margin-top:24px; padding:24px; background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#3b82f6'; this.style.boxShadow='0 12px 32px rgba(59,130,246,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.04)'; this.style.transform='translateY(0)';">
                 <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;">
                   <div style="display:flex; align-items:flex-start; gap:14px;">
                     <div style="width:46px; height:46px; border-radius:12px; background:#eff6ff; display:flex; align-items:center; justify-content:center; color:#3b82f6; font-size:24px; flex-shrink:0;">
@@ -5314,14 +5312,9 @@
                   </div>
                 </div>
 
-                <!-- Symptom Image Only -->
                 <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
                   <div style="font-size:14px; font-weight:600; color:#334155;">📌 증상 </div>
-                  <div style="font-size:13px; color:#475569; line-height:1.5; font-weight:600;">사용 상의 이유로 컨트롤 프로그램의 업데이트 및 재설치가 필요한 경우</div>
-                  <div style="max-width:520px; overflow:hidden; border-radius:8px; border:1px solid #e2e8f0; background:#fff; margin-top:4px;">
-                    <div style="padding:6px 10px; background:#f1f5f9; font-size:12px; color:#475569; font-weight:600; border-bottom:1px solid #e2e8f0;">컨트롤 프로그램 화면</div>
-                    <img src="assets/images/ctrl_prog_update_symptom.webp" alt="컨트롤 프로그램 업데이트 필요 증상" style="width:100%; height:auto; display:block;">
-                  </div>
+                  <div style="font-size:13px; color:#475569; line-height:1.5; font-weight:600;" data-i18n="mai-trouble-symptom-control-update">사용 상의 이유로 컨트롤 프로그램의 업데이트 및 재설치가 필요한 경우</div>
                 </div>
               </div>
             </div>
@@ -6882,13 +6875,29 @@
 
       <!-- FAQ -->
       <section id="section-faq" class="content-section">
+        <style>
+          #section-faq .faq-list { display:flex; flex-direction:column; gap:12px; }
+          #section-faq .faq-item { width:100%; display:flex; align-items:center; gap:14px; padding:18px 20px; border:1px solid #e2e8f0; border-radius:14px; background:#ffffff; color:#1f2937; text-align:left; cursor:pointer; box-shadow:0 2px 8px rgba(15,23,42,.04); transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+          #section-faq .faq-item:hover { border-color:#a855f7; box-shadow:0 8px 20px rgba(168,85,247,.12); transform:translateY(-1px); }
+          #section-faq .faq-item:focus-visible { outline:3px solid rgba(168,85,247,.28); outline-offset:3px; }
+          #section-faq .faq-mai-logo { width:68px; height:34px; flex-shrink:0; object-fit:contain; object-position:center; }
+          #section-faq .faq-item-title { font-size:16px; font-weight:700; line-height:1.5; }
+          #section-faq .faq-item-arrow { margin-left:auto; color:#a855f7; font-size:20px; }
+          :root { --standard-modal-max-width:1200px; --standard-modal-max-height:95vh; }
+          .standard-modal-dialog { width:100%; max-width:var(--standard-modal-max-width); max-height:var(--standard-modal-max-height); overflow:hidden; border-radius:18px; background:#ffffff; box-shadow:0 24px 60px rgba(15,23,42,.32); display:flex; flex-direction:column; }
+        </style>
         <h2 data-i18n="section-faq-title"><span data-i18n="mf-auto-669">자주 묻는 질문</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#section-faq" style="color:#a855f7; text-decoration:none;">#section-faq</a></div>
         <p class="subtitle" data-i18n="section-faq-desc"><span data-i18n="mf-auto-815">고객분들이 자주 문의하시는 질문과 답변입니다.</span></p>
         <div class="content-card">
-          <div class="img-placeholder"><span data-i18n="mf-auto-816">이미지 준비 중</span></div>
-          <p data-i18n="section-faq-desc"><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
+          <div class="faq-list">
+            <button type="button" class="faq-item" onclick="openGlassCeramicFaqModal()" aria-haspopup="dialog">
+              <img class="faq-mai-logo" src="assets/images/brand/mai-logo-black.webp" alt="M AI 로고">
+              <span class="faq-item-title">Glass Ceramic 가공 시 Normal - Fast 버전의 차이</span>
+              <span class="faq-item-arrow" aria-hidden="true">›</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -9181,7 +9190,23 @@
       </div>
     </div>
   </div>
+  <!-- FAQ: Glass Ceramic Normal / Fast -->
+  <div id="glass-ceramic-faq-modal" role="dialog" aria-modal="true" aria-labelledby="glass-ceramic-faq-title" style="display:none; position:fixed; inset:0; z-index:1090; align-items:center; justify-content:center; padding:20px; background:rgba(15,23,42,.62);">
+    <div class="standard-modal-dialog">
+      <div style="display:flex; align-items:center; gap:14px; padding:20px 24px; border-bottom:1px solid #e2e8f0; background:#f8fafc;">
+        <img src="assets/images/brand/mai-logo-black.webp" alt="M AI 로고" style="width:82px; height:42px; flex-shrink:0; object-fit:contain; object-position:center;">
+        <h3 id="glass-ceramic-faq-title" style="margin:0; flex:1; color:#1f2937; font-size:19px; font-weight:700; line-height:1.45;">Glass Ceramic 가공 시 Normal - Fast 버전의 차이</h3>
+        <button type="button" onclick="closeGlassCeramicFaqModal()" aria-label="닫기" style="border:0; background:transparent; color:#64748b; font-size:29px; line-height:1; cursor:pointer; padding:4px 7px;">&times;</button>
+      </div>
+      <div style="overflow:hidden; flex:1;">
+        <iframe src="assets/documents/glass-ceramic-template-comparison.html" title="Glass Ceramic 가공 시 Normal - Fast 버전의 차이" style="display:block; width:100%; height:calc(95vh - 87px); border:0;"></iframe>
+      </div>
+    </div>
+  </div>
 <script>
+  function openGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'flex'; }
+  function closeGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'none'; }
+  document.getElementById('glass-ceramic-faq-modal')?.addEventListener('click', function (event) { if (event.target === this) closeGlassCeramicFaqModal(); });
   function openCtrlProgUpdateModal() { const modal = document.getElementById('ctrl-prog-update-modal'); applyModalTranslations(modal); modal.style.display = 'flex'; }
   function closeCtrlProgUpdateModal() { document.getElementById('ctrl-prog-update-modal').style.display = 'none'; }
   document.getElementById('ctrl-prog-update-modal')?.addEventListener('click', function (event) { if (event.target === this) closeCtrlProgUpdateModal(); });

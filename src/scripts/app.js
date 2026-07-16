@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function showSection(id, pushHistory = true) {
+  function showSection(id, pushHistory = true, activeNavItem = null) {
     sections.forEach(s => s.classList.remove("active"));
     // Remove active from all leaf nav-items
     document.querySelectorAll(".nav-item").forEach(n => n.classList.remove("active"));
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     // Highlight the clicked leaf nav-item
-    const navTarget = document.querySelector(`.nav-item[data-section="${id}"]`);
+    const navTarget = activeNavItem || document.querySelector(`.nav-item[data-section="${id}"]`);
     if (navTarget) navTarget.classList.add("active");
     // Close mobile sidebar
     document.getElementById("sidebar").classList.remove("open");
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".nav-item[data-section]").forEach(item => {
     item.addEventListener("click", (e) => {
       e.stopPropagation();
-      showSection(item.dataset.section);
+      showSection(item.dataset.section, true, item);
     });
   });
 

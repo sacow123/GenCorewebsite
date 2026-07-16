@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="M.AI Glass_Ceramic_Crown/Veneer 가공용 hyperDENT 템플릿 3종 비교 안내">
+  <title>M.AI Glass Ceramic Template Comparison</title>
+  <style>
+    :root {
+      --orange: #f58220;
+      --orange-dark: #c95d00;
+      --orange-soft: #fff3e8;
+      --ink: #25364a;
+      --muted: #65758b;
+      --line: #dce3eb;
+      --panel: #f5f7fa;
+      --white: #ffffff;
+      --green: #237a3b;
+      --green-soft: #eaf6ed;
+      --red: #b42318;
+      --red-soft: #fff0ef;
+      --shadow: 0 14px 38px rgba(34, 54, 74, .10);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #eef2f6;
+      font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.68;
+      word-break: keep-all;
+    }
+    a { color: inherit; }
+    .layout { max-width: 1480px; margin: 0 auto; display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 28px; padding: 28px; }
+    .sidebar { position: sticky; top: 24px; height: calc(100vh - 48px); overflow: auto; background: #1f3043; color: #fff; border-radius: var(--radius); padding: 26px 20px; box-shadow: var(--shadow); }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .02em; margin: 0 6px 24px; }
+    .brand-mark { width: 12px; height: 30px; border-radius: 4px; background: var(--orange); }
+    .brand small { display: block; color: #aebdcb; font-weight: 500; letter-spacing: 0; }
+    .nav-title { margin: 20px 8px 8px; color: #91a5b7; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+    .nav { list-style: none; padding: 0; margin: 0; }
+    .nav a { display: block; padding: 9px 12px; margin: 3px 0; border-radius: 9px; text-decoration: none; color: #dbe5ee; font-size: 14px; }
+    .nav a:hover, .nav a:focus-visible { background: rgba(255,255,255,.1); color: #fff; outline: none; }
+    main { min-width: 0; }
+    .hero, .section { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .hero { padding: 58px 58px 50px; position: relative; overflow: hidden; border-top: 7px solid var(--orange); }
+    .hero::after { content: ""; position: absolute; width: 330px; height: 330px; right: -150px; top: -170px; border-radius: 50%; background: var(--orange-soft); }
+    .eyebrow { margin: 0 0 8px; color: var(--orange-dark); font-size: 14px; font-weight: 800; letter-spacing: .05em; }
+    h1 { position: relative; z-index: 1; margin: 0; max-width: 780px; font-size: clamp(30px, 4vw, 52px); line-height: 1.18; letter-spacing: -.035em; }
+    .subtitle { max-width: 810px; margin: 20px 0 0; color: var(--muted); font-size: 18px; }
+    .quick-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 34px; }
+    .summary-card { padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    .summary-card strong { display: block; color: var(--orange-dark); font-size: 14px; margin-bottom: 4px; }
+    .summary-card span { font-size: 14px; color: var(--ink); }
+    .section { padding: 44px 50px; margin-top: 28px; scroll-margin-top: 24px; }
+    .section-number { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 34px; padding: 0 10px; border-radius: 10px; background: var(--orange); color: #fff; font-weight: 800; margin-right: 10px; }
+    h2 { display: flex; align-items: center; margin: 0 0 24px; padding-bottom: 15px; border-bottom: 2px solid var(--orange); font-size: 28px; line-height: 1.25; letter-spacing: -.02em; }
+    h3 { margin: 32px 0 12px; color: var(--orange-dark); font-size: 20px; }
+    p { margin: 0 0 16px; }
+    .lead { font-size: 17px; color: #43546a; }
+    .callout { margin: 24px 0; padding: 20px 22px; border-left: 5px solid var(--orange); border-radius: 0 12px 12px 0; background: var(--orange-soft); }
+    .callout strong { color: var(--orange-dark); }
+    .callout.warning { background: var(--red-soft); border-color: var(--red); }
+    .callout.warning strong { color: var(--red); }
+    .callout.success { background: var(--green-soft); border-color: var(--green); }
+    .callout.success strong { color: var(--green); }
+    .table-wrap { overflow-x: auto; margin: 22px 0; border: 1px solid var(--line); border-radius: 14px; }
+    table { width: 100%; border-collapse: collapse; min-width: 720px; font-size: 14px; }
+    th { padding: 14px 16px; text-align: left; background: var(--ink); color: #fff; font-weight: 700; }
+    td { padding: 15px 16px; border-top: 1px solid var(--line); vertical-align: middle; }
+    tbody tr:nth-child(even) { background: var(--panel); }
+    td:first-child { font-weight: 700; }
+    .template-name { font-family: Consolas, "Courier New", monospace; font-size: 13px; word-break: break-word; }
+    .badge { display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+    .badge.normal { color: #34516e; background: #eaf0f6; }
+    .badge.fast { color: #9b4b00; background: #ffead5; }
+    .figure { margin: 24px 0 8px; }
+    .image-button { display: block; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; cursor: zoom-in; box-shadow: 0 8px 24px rgba(33, 53, 72, .08); }
+    .image-button:focus-visible { outline: 4px solid rgba(245,130,32,.3); outline-offset: 3px; }
+    .figure img { display: block; width: 100%; height: auto; }
+    figcaption { padding: 10px 4px 0; text-align: center; color: var(--muted); font-size: 13px; }
+    .figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
+    .figure-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .figure-grid .figure { margin-top: 10px; }
+    .figure-grid.three .figure img { aspect-ratio: 16 / 10; object-fit: cover; object-position: left top; }
+    .check-list { list-style: none; padding: 0; margin: 20px 0; display: grid; gap: 10px; }
+    .check-list li { position: relative; padding: 13px 16px 13px 44px; background: var(--panel); border-radius: 11px; }
+    .check-list li::before { content: "✓"; position: absolute; left: 16px; top: 11px; color: var(--orange-dark); font-weight: 900; }
+    .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 24px 0; }
+    .metric { border: 1px solid var(--line); border-radius: 14px; padding: 18px; text-align: center; }
+    .metric span { display: block; color: var(--muted); font-size: 13px; }
+    .metric strong { display: block; margin-top: 6px; color: var(--green); font-size: 25px; }
+    .footnote { color: var(--muted); font-size: 13px; }
+    .selection-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 22px; }
+    .selection-card { border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+    .selection-card .num { display: inline-grid; place-items: center; width: 30px; height: 30px; margin-bottom: 12px; border-radius: 9px; background: var(--orange-soft); color: var(--orange-dark); font-weight: 900; }
+    .selection-card strong { display: block; margin-bottom: 8px; font-size: 15px; }
+    .selection-card p { color: var(--muted); font-size: 14px; margin: 0; }
+    .modal { position: fixed; inset: 0; z-index: 100; display: none; align-items: center; justify-content: center; padding: 28px; background: rgba(9, 17, 27, .9); }
+    .modal.open { display: flex; }
+    .modal img { max-width: 96vw; max-height: 90vh; object-fit: contain; border-radius: 9px; box-shadow: 0 20px 80px #000; }
+    .modal-close { position: fixed; top: 18px; right: 22px; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,.4); border-radius: 50%; background: rgba(0,0,0,.3); color: #fff; font-size: 28px; cursor: pointer; }
+    .top-link { position: fixed; right: 24px; bottom: 24px; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--orange); color: #fff; text-decoration: none; font-weight: 900; box-shadow: var(--shadow); }
+    @media (max-width: 1050px) {
+      .layout { grid-template-columns: 1fr; padding: 18px; }
+      .sidebar { position: static; height: auto; }
+      .nav { display: flex; flex-wrap: wrap; gap: 5px; }
+      .nav-title { display: none; }
+      .quick-summary, .selection-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 720px) {
+      .hero, .section { padding: 30px 22px; }
+      .figure-grid, .figure-grid.three, .metric-grid { grid-template-columns: 1fr; }
+      h2 { font-size: 23px; align-items: flex-start; }
+      .subtitle, .lead { font-size: 16px; }
+      body { word-break: normal; }
+    }
+    @media print {
+      @page { size: A4; margin: 14mm; }
+      body { background: #fff; font-size: 10pt; }
+      .layout { display: block; max-width: none; padding: 0; }
+      .sidebar, .top-link, .modal { display: none !important; }
+      .hero, .section { box-shadow: none; border: 0; padding: 0; margin: 0 0 14mm; }
+      .hero { border-top: 5px solid var(--orange); padding-top: 9mm; }
+      .section { break-before: page; }
+      .image-button { box-shadow: none; cursor: default; }
+      .figure, table, .callout, .selection-card { break-inside: avoid; }
+      .figure img { max-height: 175mm; object-fit: contain; }
+      .figure-grid.three .figure img { max-height: 70mm; }
+      a { text-decoration: none; }
+    }
+  
+    :root {
+      --orange: #a855f7;
+      --orange-dark: #7e22ce;
+      --orange-soft: #faf5ff;
+    }
+    .layout { display:block; max-width:1260px; padding:28px; }
+    main { max-width:1200px; margin:0 auto; }
+    .scroll-stamps { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 24px; }
+    .scroll-stamps a { display:inline-flex; align-items:center; padding:8px 13px; border:1px solid #e9d5ff; border-radius:999px; background:#faf5ff; color:#7e22ce; font-size:13px; font-weight:800; text-decoration:none; transition:background .2s ease, box-shadow .2s ease, transform .2s ease; }
+    .scroll-stamps a:hover, .scroll-stamps a:focus-visible { background:#f3e8ff; box-shadow:0 5px 12px rgba(168,85,247,.16); transform:translateY(-1px); outline:none; }
+    @media (max-width:720px) { .layout { padding:16px; } .scroll-stamps { gap:8px; } .scroll-stamps a { font-size:12px; padding:7px 10px; } }
+  </style>
+</head>
+<body id="top">
+  <div class="layout">
+    <main>
+
+      <nav class="scroll-stamps" aria-label="문서 빠른 이동">
+        <a href="#overview">1. 템플릿 개요</a>
+        <a href="#comparison">2. 전체 비교</a>
+        <a href="#normal">3. 일반 템플릿</a>
+        <a href="#fast">4. Fast 템플릿</a>
+        <a href="#placement">5. 배치 주의사항</a>
+        <a href="#actual">6. 실제 가공 범위</a>
+        <a href="#time">7. 시간 비교</a>
+        <a href="#selection">8. 선택 기준</a>
+      </nav>
+<section class="section" id="overview">
+        <h2><span class="section-number">1</span>선택 가능한 템플릿</h2>
+        <p class="lead">M.AI에서 Glass Ceramic Crown 또는 Veneer를 가공할 때 hyperDENT에서 다음 3개 템플릿을 선택할 수 있습니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>구분</th><th>템플릿</th><th>주요 특징</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td class="template-name">Glass_Ceramic_Crown/Veneer</td><td>기본 템플릿 · 3+2축 내면 마무리</td></tr>
+              <tr><td>2</td><td class="template-name">Glass_Ceramic_Crown/Veneer_D0.6</td><td>D0.6 마무리 · 5축 내면 가공</td></tr>
+              <tr><td>3</td><td class="template-name">Glass_Ceramic_Crown/Veneer_D0.6_Fast-II</td><td>가공 시간 단축용 Fast 템플릿</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: View template overwritable parameters 버튼 위치">
+        <img src="../images/faq/glass-ceramic-template-comparison/template-selection.webp" alt="View template overwritable parameters 버튼 위치" loading="lazy">
+      </button>
+      <figcaption>그림 1. 템플릿 설정 화면을 여는 View template overwritable parameters 버튼</figcaption>
+    </figure>
+      </section>
+
+      <section class="section" id="comparison">
+        <h2><span class="section-number">2</span>전체 비교</h2>
+        <p class="lead">1번과 2번은 전체 가공 흐름이 거의 같습니다. Fast 템플릿은 D0.6 및 5축 내면 가공 설정을 사용하지만, 가공 경계와 커넥터 처리 방식이 일반 템플릿과 다릅니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>템플릿</th><th>내면 Cavity</th><th>교합면 마무리</th><th>Milling Boundary</th><th>커넥터</th></tr></thead>
+            <tbody>
+              <tr><td>Glass_Ceramic_Crown/Veneer</td><td>3+2축</td><td>T7-G1.0B</td><td>있음</td><td>2개 이상 가능</td></tr>
+              <tr><td>Glass_Ceramic_Crown/Veneer_D0.6</td><td>5축</td><td>T8-G0.6B</td><td>있음</td><td>2개 이상 가능</td></tr>
+              <tr><td>Glass_Ceramic_Crown/Veneer_D0.6_Fast-II </td><td>5축</td><td>T8-G0.6B</td><td>없음</td><td>1개만 가능</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>공정 비교</h3>
+        <div class="figure-grid three">
+          <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Glass_Ceramic_Crown/Veneer 템플릿의 3+2축 Job 설정">
+        <img src="../images/faq/glass-ceramic-template-comparison/normal-template-jobs.webp" alt="Glass_Ceramic_Crown/Veneer 템플릿의 3+2축 Job 설정" loading="lazy">
+      </button>
+      <figcaption>1번 · 내면 3+2축 / 교합면 T7-G1.0B 마무리</figcaption>
+    </figure>
+          <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Glass_Ceramic_Crown/Veneer_D0.6 템플릿의 5축 및 G0.6 Job 설정">
+        <img src="../images/faq/glass-ceramic-template-comparison/d06-template-jobs.webp" alt="Glass_Ceramic_Crown/Veneer_D0.6 템플릿의 5축 및 G0.6 Job 설정" loading="lazy">
+      </button>
+      <figcaption>2번 · 내면 5축 / 교합면 T8-G0.6B 마무리</figcaption>
+    </figure>
+          <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿의 5축 및 G0.6 Job 설정">
+        <img src="../images/faq/glass-ceramic-template-comparison/fast-template-jobs.webp" alt="Fast 템플릿의 5축 및 G0.6 Job 설정" loading="lazy">
+      </button>
+      <figcaption>3번 · 내면 5축 / 교합면 T8-G0.6B 마무리</figcaption>
+    </figure>
+        </div>
+        <div class="callout"><strong>공정 추가</strong><br>기본 선택된 공정 외에도 체크박스 활성화/ 해제를 통해 원하는 공정을 추가/제외할 수 있습니다.</div>
+      </section>
+
+      <section class="section" id="normal">
+        <h2><span class="section-number">3</span>일반 템플릿의 가공 방식</h2>
+        <p class="lead"><span class="template-name">Glass_Ceramic_Crown/Veneer</span>와 <span class="template-name">Glass_Ceramic_Crown/Veneer_D0.6</span>에는 보철물 외곽을 따라 별도의 Milling Boundary가 생성됩니다.</p>
+        <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: 일반 템플릿의 Milling Boundary 표시">
+        <img src="../images/faq/glass-ceramic-template-comparison/normal-milling-boundary.webp" alt="일반 템플릿의 Milling Boundary 표시" loading="lazy">
+      </button>
+      <figcaption>그림 3. 일반 템플릿에서 보철물 외곽에 표시되는 Milling Boundary</figcaption>
+    </figure>
+        <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: 일반 템플릿의 Boundary 기반 툴패스">
+        <img src="../images/faq/glass-ceramic-template-comparison/normal-boundary-toolpath.webp" alt="일반 템플릿의 Boundary 기반 툴패스" loading="lazy">
+      </button>
+      <figcaption>그림 4. 일반 템플릿은 Milling Boundary를 기준으로 보철물 주변을 가공합니다.</figcaption>
+    </figure>
+        <div class="callout"> 화면의 Boundary 선과 실제 공구 경로가 완전히 일치하는 것은 아닙니다. <br>표시된 Boundary에는 보철물로부터 확보해야 하는 안전거리가 포함되어 있습니다.</div>
+        <h3>커넥터 구성</h3>
+        <p>일반 템플릿은 필요에 따라 커넥터를 2개 이상 부착할 수 있습니다. 보철물의 형태와 유지 안정성을 고려하여 커넥터 위치와 개수를 조정할 수 있습니다.</p>
+        <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: 일반 템플릿에서 커넥터를 2개 부착한 화면">
+        <img src="../images/faq/glass-ceramic-template-comparison/normal-multiple-connectors.webp" alt="일반 템플릿에서 커넥터를 2개 부착한 화면" loading="lazy">
+      </button>
+      <figcaption>그림 5. 일반 템플릿에서는 커넥터를 2개 이상 설정할 수 있습니다.</figcaption>
+    </figure>
+      </section>
+
+      <section class="section" id="fast">
+        <h2><span class="section-number">4</span>Fast 템플릿의 주요 특징</h2>
+        <ul class="check-list">
+          <li>별도의 Milling Boundary가 생성되지 않습니다.</li>
+          <li>커넥터는 1개만 부착할 수 있으며, 2개 이상은 부착할 수 없습니다.</li>
+          <li>hyperDENT 화면에서는 커넥터가 블록 끝까지 연결된 형태로 표시됩니다.</li>
+          <li>실제 가공에서는 화면 표시와 달리 커넥터 전체를 블록 끝까지 가공하지 않습니다.</li>
+        </ul>
+        <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿에서 커넥터가 블록 끝까지 연결되어 보이는 화면">
+        <img src="../images/faq/glass-ceramic-template-comparison/fast-connector-display.webp" alt="Fast 템플릿에서 커넥터가 블록 끝까지 연결되어 보이는 화면" loading="lazy">
+      </button>
+      <figcaption>그림 6. Fast 템플릿은 별도의 Milling Boundary가 없고 커넥터가 블록 끝까지 이어진 것처럼 표시됩니다.</figcaption>
+    </figure>
+        <div class="callout"><strong>중요</strong><br>화면에 표시되는 커넥터 형상과 실제 가공 범위는 서로 다릅니다. <br> 실제 가공은 커넥터에서 일정 거리 떨어진 지점까지만 가공됩니다. hyperDENT 화면상 처럼 끝까지 커넥터를 가공하지 않습니다. .</div>
+      </section>
+
+      <section class="section" id="placement">
+        <h2><span class="section-number">5</span>Fast 템플릿 배치 시 주의사항</h2>
+        <p class="lead">Fast 템플릿에서 보철물을 더블클릭하여 배치 위치를 변경하면 블록 고정부 부근에 별도의 기준선이 표시됩니다.</p>
+        <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿 배치 변경 시 표시되는 기준선">
+        <img src="../images/faq/glass-ceramic-template-comparison/fast-placement-reference-line.webp" alt="Fast 템플릿 배치 변경 시 표시되는 기준선" loading="lazy">
+      </button>
+      <figcaption>그림 7. Fast 템플릿에서 보철물 위치를 변경할 때 표시되는 배치 기준선</figcaption>
+    </figure>
+        <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿의 보철물 배치 가능 영역">
+        <img src="../images/faq/glass-ceramic-template-comparison/fast-placement-rule.webp" alt="Fast 템플릿의 보철물 배치 가능 영역" loading="lazy">
+      </button>
+      <figcaption>그림 8. STL 배치 시 기준선을 침범하지 않도록 배치해야 합니다.</figcaption>
+    </figure>
+        <div class="callout warning"><strong>배치 주의</strong><br>STL 배치 시 표시된 기준선을 넘지 않도록 배치하십시오.<br> 기준선을 침범하면 안전한 가공을 보장하기 어렵습니다.</div>
+      </section>
+
+      <section class="section" id="actual">
+        <h2><span class="section-number">6</span>Fast 템플릿의 실제 가공 범위</h2>
+        <p class="lead">Fast 템플릿은 별도의 Milling Boundary를 사용하지 않습니다. 블록 외곽에서 시작하여 보철물로부터 설정된 안전거리까지 주변 재료를 가공하는 방식으로 툴패스가 생성됩니다.</p>
+        <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿의 실제 가공 범위">
+        <img src="../images/faq/glass-ceramic-template-comparison/fast-toolpath-range.webp" alt="Fast 템플릿의 실제 가공 범위" loading="lazy">
+      </button>
+      <figcaption>그림 9. Fast 템플릿은 블록 외곽부터 보철물 주변의 안전거리까지 가공합니다.</figcaption>
+    </figure>
+        <div class="figure-grid">
+          <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿의 실제 커넥터 가공 결과 측면 1">
+        <img src="../images/faq/glass-ceramic-template-comparison/fast-actual-connector-1.webp" alt="Fast 템플릿의 실제 커넥터 가공 결과 측면 1" loading="lazy">
+      </button>
+      <figcaption>그림 10-1. 실제 커넥터 가공 결과 — 측면 1</figcaption>
+    </figure>
+          <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿의 실제 커넥터 가공 결과 측면 2">
+        <img src="../images/faq/glass-ceramic-template-comparison/fast-actual-connector-2.webp" alt="Fast 템플릿의 실제 커넥터 가공 결과 측면 2" loading="lazy">
+      </button>
+      <figcaption>그림 10-2. 실제 커넥터 가공 결과 — 측면 2</figcaption>
+    </figure>
+        </div>
+        <div class="callout"><strong>화면 표시와 실제 가공</strong><br>hyperDENT에서는 커넥터가 블록 끝까지 연결된 것처럼 보이지만, 실제 가공 결과에서 커넥터 자체가 블록 끝까지 길게 가공되는 것은 아닙니다. 커넥터 주변은 안전거리를 고려한 범위까지만 가공됩니다.</div>
+      </section>
+
+      <section class="section" id="time">
+        <h2><span class="section-number">7</span>계산 시간 및 예상 가공 시간</h2>
+        <p class="lead">동일한 테스트 케이스에서 일반 템플릿과 Fast 템플릿으로 툴패스를 계산한 결과입니다. 보철물 형상, 배치, 재료 및 PC 성능 등에 따라 실제 시간은 달라질 수 있습니다.</p>
+        <div class="metric-grid">
+          <div class="metric"><span>계산 시간 단축</span><strong>약 46.8%</strong></div>
+          <div class="metric"><span>예상 가공 시간 단축</span><strong>약 33.0%</strong></div>
+          <div class="metric"><span>계산+가공 합계 단축</span><strong>약 35.5%</strong></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>항목</th><th>일반 템플릿</th><th>Fast 템플릿</th><th>단축 효과</th></tr></thead>
+            <tbody>
+              <tr><td>계산 시간</td><td>8분 54초</td><td>4분 44초</td><td>4분 10초 · 약 46.8%</td></tr>
+              <tr><td>예상 가공 시간</td><td>41분 21초</td><td>27분 42초</td><td>13분 39초 · 약 33.0%</td></tr>
+              <tr><td>합계</td><td>50분 15초</td><td>32분 26초</td><td>17분 49초 · 약 35.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote">합계는 계산 시간과 예상 가공 시간을 단순 합산한 참고값입니다.</p>
+        <div class="figure-grid">
+          <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: 일반 템플릿 계산 시간 8분 54초 및 예상 가공 시간 41분 21초">
+        <img src="../images/faq/glass-ceramic-template-comparison/normal-calculation-time.webp" alt="일반 템플릿 계산 시간 8분 54초 및 예상 가공 시간 41분 21초" loading="lazy">
+      </button>
+      <figcaption>그림 11-1. 일반 템플릿 — 계산 8분 54초 / 예상 가공 41분 21초</figcaption>
+    </figure>
+          <figure class="figure ">
+      <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿 계산 시간 4분 44초 및 예상 가공 시간 27분 42초">
+        <img src="../images/faq/glass-ceramic-template-comparison/fast-calculation-time.webp" alt="Fast 템플릿 계산 시간 4분 44초 및 예상 가공 시간 27분 42초" loading="lazy">
+      </button>
+      <figcaption>그림 11-2. Fast 템플릿 — 계산 4분 44초 / 예상 가공 27분 42초</figcaption>
+    </figure>
+        </div>
+        <div class="callout success"><strong>비교 결과</strong><br>이 테스트 케이스에서는 Fast 템플릿이 일반 템플릿보다 계산 시간을 약 46.8%, 예상 가공 시간을 약 33.0% 단축했습니다.</div>
+      </section>
+       <div class="callout warning"><strong>계산 전 최종 확인</strong><br>어떤 템플릿이 선택되었는지 먼저 확인바랍니다.<br>Fast 템플릿을 사용할 때는 커넥터를 1개만 설정했는지, 보철물이 배치 기준선을 침범하지 않는지 반드시 확인하십시오.</div>
+      </section>
+    </main>
+  </div>
+
+  <a class="top-link" href="#top" aria-label="페이지 맨 위로 이동">↑</a>
+  <div class="modal" role="dialog" aria-modal="true" aria-label="확대 이미지">
+    <button class="modal-close" type="button" aria-label="확대 이미지 닫기">×</button>
+    <img src="" alt="확대 이미지">
+  </div>
+  <script>
+    const modal = document.querySelector('.modal');
+    const modalImage = modal.querySelector('img');
+    const closeModal = () => { modal.classList.remove('open'); modalImage.src = ''; document.body.style.overflow = ''; };
+    document.querySelectorAll('.image-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const source = button.querySelector('img');
+        modalImage.src = source.src;
+        modalImage.alt = source.alt;
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        modal.querySelector('.modal-close').focus();
+      });
+    });
+    modal.querySelector('.modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeModal(); });
+  </script>
+</body>
+</html>
