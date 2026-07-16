@@ -6894,7 +6894,7 @@
           <div class="faq-list">
             <button type="button" class="faq-item" onclick="openGlassCeramicFaqModal()" aria-haspopup="dialog">
               <img class="faq-mai-logo" src="assets/images/brand/mai-logo-black.webp" alt="M AI 로고">
-              <span class="faq-item-title">Glass Ceramic 가공 시 Normal - Fast 버전의 차이</span>
+              <span class="faq-item-title" data-i18n="faq-glass-ceramic-title">Glass Ceramic 가공 시 Normal - Fast 버전의 차이</span>
               <span class="faq-item-arrow" aria-hidden="true">›</span>
             </button>
           </div>
@@ -9195,11 +9195,11 @@
     <div class="standard-modal-dialog">
       <div style="display:flex; align-items:center; gap:14px; padding:20px 24px; border-bottom:1px solid #e2e8f0; background:#f8fafc;">
         <img src="assets/images/brand/mai-logo-black.webp" alt="M AI 로고" style="width:82px; height:42px; flex-shrink:0; object-fit:contain; object-position:center;">
-        <h3 id="glass-ceramic-faq-title" style="margin:0; flex:1; color:#1f2937; font-size:19px; font-weight:700; line-height:1.45;">Glass Ceramic 가공 시 Normal - Fast 버전의 차이</h3>
+        <h3 id="glass-ceramic-faq-title" data-i18n="faq-glass-ceramic-title" style="margin:0; flex:1; color:#1f2937; font-size:19px; font-weight:700; line-height:1.45;">Glass Ceramic 가공 시 Normal - Fast 버전의 차이</h3>
         <button type="button" onclick="closeGlassCeramicFaqModal()" aria-label="닫기" style="border:0; background:transparent; color:#64748b; font-size:29px; line-height:1; cursor:pointer; padding:4px 7px;">&times;</button>
       </div>
       <div style="overflow:hidden; flex:1;">
-        <iframe src="assets/documents/glass-ceramic-template-comparison.html" title="Glass Ceramic 가공 시 Normal - Fast 버전의 차이" style="display:block; width:100%; height:calc(95vh - 87px); border:0;"></iframe>
+        <iframe id="glass-ceramic-faq-document" data-language-sync src="assets/documents/glass-ceramic-template-comparison.html" title="Glass Ceramic 가공 시 Normal - Fast 버전의 차이" style="display:block; width:100%; height:calc(95vh - 87px); border:0;"></iframe>
       </div>
     </div>
   </div>
@@ -9207,6 +9207,9 @@
   function openGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'flex'; }
   function closeGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'none'; }
   document.getElementById('glass-ceramic-faq-modal')?.addEventListener('click', function (event) { if (event.target === this) closeGlassCeramicFaqModal(); });
+  document.getElementById('glass-ceramic-faq-document')?.addEventListener('load', function () {
+    this.contentWindow?.postMessage({ type: 'gencore-language-change', lang: currentLang }, '*');
+  });
   function openCtrlProgUpdateModal() { const modal = document.getElementById('ctrl-prog-update-modal'); applyModalTranslations(modal); modal.style.display = 'flex'; }
   function closeCtrlProgUpdateModal() { document.getElementById('ctrl-prog-update-modal').style.display = 'none'; }
   document.getElementById('ctrl-prog-update-modal')?.addEventListener('click', function (event) { if (event.target === this) closeCtrlProgUpdateModal(); });

@@ -15,6 +15,7 @@ const TRANSLATIONS = {
     "mai-trouble-symptom-spindle": "가공 또는 웜업 중 스핀들 알람이 발생하면서 회전이 멈추는 경우",
     "mai-trouble-symptom-epid": "원점 복귀 또는 M-code 동작 중 ePID fault 메시지가 표시되며 장비가 정지하는 경우",
     "mai-trouble-symptom-control-update": "사용 상의 이유로 컨트롤 프로그램의 업데이트 및 재설치가 필요한 경우",
+    "faq-glass-ceramic-title": "Glass Ceramic 가공 시 Normal - Fast 버전의 차이",
     "nav-tutorial": "튜토리얼",
     "nav-faq": "자주 묻는 질문",
     "section-home-title": "GenCore Technical Support Center",
@@ -1374,6 +1375,7 @@ const TRANSLATIONS = {
     "mai-trouble-symptom-spindle": "The spindle alarm occurs and rotation stops during machining or warm-up.",
     "mai-trouble-symptom-epid": "An ePID fault message appears and the machine stops during homing or M-code operation.",
     "mai-trouble-symptom-control-update": "When the control program needs to be updated or reinstalled for operational reasons.",
+    "faq-glass-ceramic-title": "Difference Between Normal and Fast Versions for Glass Ceramic Milling",
     "nav-tutorial": "Tutorial",
     "nav-faq": "FAQ",
     "section-home-title": "GenCore Technical Support Center",
@@ -1604,6 +1606,7 @@ const TRANSLATIONS = {
     "mai-trouble-symptom-spindle": "加工中またはウォームアップ中にスピンドルアラームが発生し、回転が停止する場合。",
     "mai-trouble-symptom-epid": "原点復帰またはMコード動作中にePID faultメッセージが表示され、装置が停止する場合。",
     "mai-trouble-symptom-control-update": "使用上の理由により、コントロールプログラムの更新または再インストールが必要な場合。",
+    "faq-glass-ceramic-title": "Glass Ceramic加工時のNormal・Fastバージョンの違い",
     "nav-tutorial": "チュートリアル",
     "nav-faq": "よくある質問",
     "section-home-title": "GenCore テクニカルサポートセンター",
@@ -5203,4 +5206,7 @@ function applyLanguage(lang) {
     sanitizeMissingTranslationDom(lang, activeSection);
   }
   applyStaticContentTranslations(lang, document.body);
+  document.querySelectorAll('iframe[data-language-sync]').forEach((frame) => {
+    frame.contentWindow?.postMessage({ type: 'gencore-language-change', lang }, '*');
+  });
 }

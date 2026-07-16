@@ -138,9 +138,12 @@
     }
     .layout { display:block; max-width:1260px; padding:28px; }
     main { max-width:1200px; margin:0 auto; }
+    main, main * { font-weight:700; }
     .scroll-stamps { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 24px; }
     .scroll-stamps a { display:inline-flex; align-items:center; padding:8px 13px; border:1px solid #e9d5ff; border-radius:999px; background:#faf5ff; color:#7e22ce; font-size:13px; font-weight:800; text-decoration:none; transition:background .2s ease, box-shadow .2s ease, transform .2s ease; }
     .scroll-stamps a:hover, .scroll-stamps a:focus-visible { background:#f3e8ff; box-shadow:0 5px 12px rgba(168,85,247,.16); transform:translateY(-1px); outline:none; }
+    #selection .selection-grid { grid-template-columns:minmax(0, 1fr); }
+    #selection .callout { width:100%; margin:0; }
     @media (max-width:720px) { .layout { padding:16px; } .scroll-stamps { gap:8px; } .scroll-stamps a { font-size:12px; padding:7px 10px; } }
   </style>
 </head>
@@ -149,17 +152,17 @@
     <main>
 
       <nav class="scroll-stamps" aria-label="문서 빠른 이동">
-        <a href="#overview">1. 템플릿 개요</a>
-        <a href="#comparison">2. 전체 비교</a>
-        <a href="#normal">3. 일반 템플릿</a>
-        <a href="#fast">4. Fast 템플릿</a>
-        <a href="#placement">5. 배치 주의사항</a>
-        <a href="#actual">6. 실제 가공 범위</a>
-        <a href="#time">7. 시간 비교</a>
-        <a href="#selection">8. 선택 기준</a>
+        <a href="#overview" data-i18n="gc-nav-overview">1. 템플릿 개요</a>
+        <a href="#comparison" data-i18n="gc-nav-comparison">2. 전체 비교</a>
+        <a href="#normal" data-i18n="gc-nav-normal">3. 일반 템플릿</a>
+        <a href="#fast" data-i18n="gc-nav-fast">4. Fast 템플릿</a>
+        <a href="#placement" data-i18n="gc-nav-placement">5. 배치 주의사항</a>
+        <a href="#actual" data-i18n="gc-nav-actual">6. 실제 가공 범위</a>
+        <a href="#time" data-i18n="gc-nav-time">7. 시간 비교</a>
+        <a href="#selection" data-i18n="gc-nav-selection">8. 계산 전 주의사항</a>
       </nav>
 <section class="section" id="overview">
-        <h2><span class="section-number">1</span>선택 가능한 템플릿</h2>
+        <h2><span class="section-number">1</span><span data-i18n="gc-heading-overview">선택 가능한 템플릿</span></h2>
         <p class="lead">M.AI에서 Glass Ceramic Crown 또는 Veneer를 가공할 때 hyperDENT에서 다음 3개 템플릿을 선택할 수 있습니다.</p>
         <div class="table-wrap">
           <table>
@@ -180,7 +183,7 @@
       </section>
 
       <section class="section" id="comparison">
-        <h2><span class="section-number">2</span>전체 비교</h2>
+        <h2><span class="section-number">2</span><span data-i18n="gc-heading-comparison">전체 비교</span></h2>
         <p class="lead">1번과 2번은 전체 가공 흐름이 거의 같습니다. Fast 템플릿은 D0.6 및 5축 내면 가공 설정을 사용하지만, 가공 경계와 커넥터 처리 방식이 일반 템플릿과 다릅니다.</p>
         <div class="table-wrap">
           <table>
@@ -217,7 +220,7 @@
       </section>
 
       <section class="section" id="normal">
-        <h2><span class="section-number">3</span>일반 템플릿의 가공 방식</h2>
+        <h2><span class="section-number">3</span><span data-i18n="gc-heading-normal">일반 템플릿의 가공 방식</span></h2>
         <p class="lead"><span class="template-name">Glass_Ceramic_Crown/Veneer</span>와 <span class="template-name">Glass_Ceramic_Crown/Veneer_D0.6</span>에는 보철물 외곽을 따라 별도의 Milling Boundary가 생성됩니다.</p>
         <figure class="figure ">
       <button class="image-button" type="button" aria-label="이미지 크게 보기: 일반 템플릿의 Milling Boundary 표시">
@@ -243,7 +246,7 @@
       </section>
 
       <section class="section" id="fast">
-        <h2><span class="section-number">4</span>Fast 템플릿의 주요 특징</h2>
+        <h2><span class="section-number">4</span><span data-i18n="gc-heading-fast">Fast 템플릿의 주요 특징</span></h2>
         <ul class="check-list">
           <li>별도의 Milling Boundary가 생성되지 않습니다.</li>
           <li>커넥터는 1개만 부착할 수 있으며, 2개 이상은 부착할 수 없습니다.</li>
@@ -260,7 +263,7 @@
       </section>
 
       <section class="section" id="placement">
-        <h2><span class="section-number">5</span>Fast 템플릿 배치 시 주의사항</h2>
+        <h2><span class="section-number">5</span><span data-i18n="gc-heading-placement">Fast 템플릿 배치 시 주의사항</span></h2>
         <p class="lead">Fast 템플릿에서 보철물을 더블클릭하여 배치 위치를 변경하면 블록 고정부 부근에 별도의 기준선이 표시됩니다.</p>
         <figure class="figure ">
       <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿 배치 변경 시 표시되는 기준선">
@@ -278,7 +281,7 @@
       </section>
 
       <section class="section" id="actual">
-        <h2><span class="section-number">6</span>Fast 템플릿의 실제 가공 범위</h2>
+        <h2><span class="section-number">6</span><span data-i18n="gc-heading-actual">Fast 템플릿의 실제 가공 범위</span></h2>
         <p class="lead">Fast 템플릿은 별도의 Milling Boundary를 사용하지 않습니다. 블록 외곽에서 시작하여 보철물로부터 설정된 안전거리까지 주변 재료를 가공하는 방식으로 툴패스가 생성됩니다.</p>
         <figure class="figure ">
       <button class="image-button" type="button" aria-label="이미지 크게 보기: Fast 템플릿의 실제 가공 범위">
@@ -304,7 +307,7 @@
       </section>
 
       <section class="section" id="time">
-        <h2><span class="section-number">7</span>계산 시간 및 예상 가공 시간</h2>
+        <h2><span class="section-number">7</span><span data-i18n="gc-heading-time">계산 시간 및 예상 가공 시간</span></h2>
         <p class="lead">동일한 테스트 케이스에서 일반 템플릿과 Fast 템플릿으로 툴패스를 계산한 결과입니다. 보철물 형상, 배치, 재료 및 PC 성능 등에 따라 실제 시간은 달라질 수 있습니다.</p>
         <div class="metric-grid">
           <div class="metric"><span>계산 시간 단축</span><strong>약 46.8%</strong></div>
@@ -338,7 +341,11 @@
         </div>
         <div class="callout success"><strong>비교 결과</strong><br>이 테스트 케이스에서는 Fast 템플릿이 일반 템플릿보다 계산 시간을 약 46.8%, 예상 가공 시간을 약 33.0% 단축했습니다.</div>
       </section>
-       <div class="callout warning"><strong>계산 전 최종 확인</strong><br>어떤 템플릿이 선택되었는지 먼저 확인바랍니다.<br>Fast 템플릿을 사용할 때는 커넥터를 1개만 설정했는지, 보철물이 배치 기준선을 침범하지 않는지 반드시 확인하십시오.</div>
+      <section class="section" id="selection">
+        <h2><span class="section-number">8</span><span data-i18n="gc-heading-selection">계산 전 주의사항</span></h2>
+        <div class="selection-grid">
+          <div class="callout warning"><strong>계산 전 최종 확인</strong><br>어떤 템플릿을 선택했는지 확인하세요.<br>Fast 템플릿을 사용할 때는 커넥터가 1개인지, 보철물이 배치 기준선을 침범하지 않는지 반드시 확인하십시오.</div>
+        </div>
       </section>
     </main>
   </div>
@@ -348,6 +355,92 @@
     <button class="modal-close" type="button" aria-label="확대 이미지 닫기">×</button>
     <img src="" alt="확대 이미지">
   </div>
+  <script>
+    const DOCUMENT_TRANSLATIONS = {
+      ko: {
+        'gc-nav-overview': '1. 템플릿 개요', 'gc-nav-comparison': '2. 전체 비교', 'gc-nav-normal': '3. 일반 템플릿', 'gc-nav-fast': '4. Fast 템플릿', 'gc-nav-placement': '5. 배치 주의사항', 'gc-nav-actual': '6. 실제 가공 범위', 'gc-nav-time': '7. 시간 비교', 'gc-nav-selection': '8. 계산 전 주의사항',
+        'gc-heading-overview': '선택 가능한 템플릿', 'gc-heading-comparison': '전체 비교', 'gc-heading-normal': '일반 템플릿의 가공 방식', 'gc-heading-fast': 'Fast 템플릿의 주요 특징', 'gc-heading-placement': 'Fast 템플릿 배치 시 주의사항', 'gc-heading-actual': 'Fast 템플릿의 실제 가공 범위', 'gc-heading-time': '계산 시간 및 예상 가공 시간', 'gc-heading-selection': '계산 전 주의사항'
+      },
+      en: {
+        'gc-nav-overview': '1. Template Overview', 'gc-nav-comparison': '2. Comparison', 'gc-nav-normal': '3. Standard Template', 'gc-nav-fast': '4. Fast Template', 'gc-nav-placement': '5. Placement Notes', 'gc-nav-actual': '6. Actual Milling Range', 'gc-nav-time': '7. Time Comparison', 'gc-nav-selection': '8. Pre-Calculation Precautions',
+        'gc-heading-overview': 'Available Templates', 'gc-heading-comparison': 'Overall Comparison', 'gc-heading-normal': 'How Standard Templates Mill', 'gc-heading-fast': 'Key Features of the Fast Template', 'gc-heading-placement': 'Fast Template Placement Notes', 'gc-heading-actual': 'Actual Milling Range of the Fast Template', 'gc-heading-time': 'Calculation and Estimated Milling Time', 'gc-heading-selection': 'Pre-Calculation Precautions'
+      },
+      ja: {
+        'gc-nav-overview': '1. テンプレート概要', 'gc-nav-comparison': '2. 全体比較', 'gc-nav-normal': '3. 標準テンプレート', 'gc-nav-fast': '4. Fastテンプレート', 'gc-nav-placement': '5. 配置時の注意事項', 'gc-nav-actual': '6. 実際の加工範囲', 'gc-nav-time': '7. 時間比較', 'gc-nav-selection': '8. 計算前の注意事項',
+        'gc-heading-overview': '選択可能なテンプレート', 'gc-heading-comparison': '全体比較', 'gc-heading-normal': '標準テンプレートの加工方式', 'gc-heading-fast': 'Fastテンプレートの主な特徴', 'gc-heading-placement': 'Fastテンプレート配置時の注意事項', 'gc-heading-actual': 'Fastテンプレートの実際の加工範囲', 'gc-heading-time': '計算時間と予想加工時間', 'gc-heading-selection': '計算前の注意事項'
+      }
+    };
+    const BODY_TRANSLATIONS = {
+      'M.AI에서 Glass Ceramic Crown 또는 Veneer를 가공할 때 hyperDENT에서 다음 3개 템플릿을 선택할 수 있습니다.': ['In hyperDENT, you can choose from the following three templates when milling a Glass Ceramic Crown or Veneer with M.AI.', 'M.AIでGlass Ceramic CrownまたはVeneerを加工する際、hyperDENTでは次の3つのテンプレートを選択できます。'],
+      '기본 템플릿 · 3+2축 내면 마무리': ['Base template · 3+2-axis internal finishing', '基本テンプレート・3+2軸内面仕上げ'],
+      'D0.6 마무리 · 5축 내면 가공': ['D0.6 finishing · 5-axis internal milling', 'D0.6仕上げ・5軸内面加工'],
+      '가공 시간 단축용 Fast 템플릿': ['Fast template for reduced milling time', '加工時間短縮用Fastテンプレート'],
+      '1번과 2번은 전체 가공 흐름이 거의 같습니다. Fast 템플릿은 D0.6 및 5축 내면 가공 설정을 사용하지만, 가공 경계와 커넥터 처리 방식이 일반 템플릿과 다릅니다.': ['Templates 1 and 2 have nearly the same overall milling flow. The Fast template uses D0.6 and 5-axis internal milling, but differs from standard templates in its milling boundary and connector handling.', 'テンプレート1と2は全体の加工フローがほぼ同じです。FastテンプレートはD0.6および5軸内面加工設定を使用しますが、加工境界とコネクター処理が標準テンプレートと異なります。'],
+      '기본 선택된 공정 외에도 체크박스 활성화/ 해제를 통해 원하는 공정을 추가/제외할 수 있습니다.': ['In addition to the default processes, use the checkboxes to add or remove the processes you need.', '初期選択された工程に加え、チェックボックスで必要な工程を追加または除外できます。'],
+      '일반 템플릿은 필요에 따라 커넥터를 2개 이상 부착할 수 있습니다. 보철물의 형태와 유지 안정성을 고려하여 커넥터 위치와 개수를 조정할 수 있습니다.': ['Standard templates can use two or more connectors as needed. Adjust their positions and quantity according to the restoration shape and retention stability.', '標準テンプレートでは必要に応じてコネクターを2個以上取り付けられます。補綴物の形状と保持安定性に応じて位置と数を調整できます。'],
+      'Fast 템플릿은 별도의 Milling Boundary를 사용하지 않습니다. 블록 외곽에서 시작하여 보철물로부터 설정된 안전거리까지 주변 재료를 가공하는 방식으로 툴패스가 생성됩니다.': ['The Fast template does not use a separate Milling Boundary. Toolpaths mill surrounding material from the block edge to the configured safety distance from the restoration.', 'Fastテンプレートは個別のMilling Boundaryを使用しません。ブロック外周から補綴物の設定済み安全距離まで周辺材料を加工するツールパスが生成されます。'],
+      '커넥터는 1개만 부착할 수 있으며, 2개 이상은 부착할 수 없습니다.': ['Only one connector can be attached; two or more are not supported.', 'コネクターは1個のみ取り付け可能で、2個以上は設定できません。'],
+      'Fast 템플릿에서 보철물을 더블클릭하여 배치 위치를 변경하면 블록 고정부 부근에 별도의 기준선이 표시됩니다.': ['When you double-click a restoration in the Fast template to change its placement, a reference line appears near the block fixing area.', 'Fastテンプレートで補綴物をダブルクリックして配置位置を変更すると、ブロック固定部付近に基準線が表示されます。'],
+      'STL 배치 시 표시된 기준선을 넘지 않도록 배치하십시오.': ['Place the STL without crossing the displayed reference line.', 'STLは表示された基準線を越えないように配置してください。'],
+      '기준선을 침범하면 안전한 가공을 보장하기 어렵습니다.': ['Crossing the reference line makes safe milling difficult to guarantee.', '基準線を越えると、安全な加工を保証することが難しくなります。'],
+      'hyperDENT 화면에서는 커넥터가 블록 끝까지 연결된 형태로 표시됩니다.': ['In hyperDENT, the connector is shown as extending to the end of the block.', 'hyperDENT画面では、コネクターがブロック端までつながっているように表示されます。'],
+      '화면에 표시되는 커넥터 형상과 실제 가공 범위는 서로 다릅니다.': ['The connector shape shown on screen differs from the actual milling range.', '画面に表示されるコネクター形状と実際の加工範囲は異なります。'],
+      '실제 가공에서는 화면 표시와 달리 커넥터 전체를 블록 끝까지 가공하지 않습니다.': ['Unlike the screen display, actual milling does not machine the entire connector to the end of the block.', '実際の加工では、画面表示とは異なりコネクター全体をブロック端まで加工しません。'],
+      '동일한 테스트 케이스에서 일반 템플릿과 Fast 템플릿으로 툴패스를 계산한 결과입니다. 보철물 형상, 배치, 재료 및 PC 성능 등에 따라 실제 시간은 달라질 수 있습니다.': ['These are toolpath calculation results for the same test case using standard and Fast templates. Actual time can vary by restoration shape, placement, material, and PC performance.', '同一テストケースで標準テンプレートとFastテンプレートによりツールパスを計算した結果です。実際の時間は補綴物形状、配置、材料、PC性能などで変わる場合があります。'],
+      '이 테스트 케이스에서는 Fast 템플릿이 일반 템플릿보다 계산 시간을 약 46.8%, 예상 가공 시간을 약 33.0% 단축했습니다.': ['In this test case, the Fast template reduced calculation time by about 46.8% and estimated milling time by about 33.0% compared with the standard template.', 'このテストケースでは、Fastテンプレートは標準テンプレートと比べて計算時間を約46.8%、予想加工時間を約33.0%短縮しました。'],
+      '어떤 템플릿을 선택했는지 확인하세요.': ['Check which template is selected.', '選択しているテンプレートを確認してください。'],
+      'Fast 템플릿을 사용할 때는 커넥터가 1개인지, 보철물이 배치 기준선을 침범하지 않는지 반드시 확인하십시오.': ['When using the Fast template, verify that there is one connector and that the restoration does not cross the placement reference line.', 'Fastテンプレート使用時は、コネクターが1個であることと、補綴物が配置基準線を越えていないことを必ず確認してください。'],
+      '내면 Cavity': ['Internal Cavity', '内面Cavity'], '교합면 마무리': ['Occlusal Finishing', '咬合面仕上げ'], '커넥터': ['Connector', 'コネクター'], '있음': ['Yes', 'あり'], '없음': ['No', 'なし'], '2개 이상 가능': ['2 or more allowed', '2個以上可能'], '1개만 가능': ['Only 1 allowed', '1個のみ可能'], '3+2축': ['3+2 axis', '3+2軸'], '5축': ['5 axis', '5軸'],
+      '공정 추가': ['Add Processes', '工程追加'],
+      '그림 1. 템플릿 설정 화면을 여는 View template overwritable parameters 버튼': ['Figure 1. The View template overwritable parameters button that opens the template settings screen', '図1. テンプレート設定画面を開くView template overwritable parametersボタン'],
+      '그림 3. 일반 템플릿에서 보철물 외곽에 표시되는 Milling Boundary': ['Figure 3. Milling Boundary shown around the restoration in a standard template', '図3. 標準テンプレートで補綴物の外周に表示されるMilling Boundary'],
+      '그림 4. 일반 템플릿은 Milling Boundary를 기준으로 보철물 주변을 가공합니다.': ['Figure 4. Standard templates mill around the restoration based on the Milling Boundary.', '図4. 標準テンプレートはMilling Boundaryを基準に補綴物周辺を加工します。'],
+      '그림 5. 일반 템플릿에서는 커넥터를 2개 이상 설정할 수 있습니다.': ['Figure 5. Standard templates can use two or more connectors.', '図5. 標準テンプレートではコネクターを2個以上設定できます。'],
+      '그림 6. Fast 템플릿은 별도의 Milling Boundary가 없고 커넥터가 블록 끝까지 이어진 것처럼 표시됩니다.': ['Figure 6. The Fast template has no separate Milling Boundary and shows the connector as extending to the block edge.', '図6. Fastテンプレートは個別のMilling Boundaryがなく、コネクターがブロック端まで続くように表示されます。'],
+      '그림 7. Fast 템플릿에서 보철물 위치를 변경할 때 표시되는 배치 기준선': ['Figure 7. Placement reference line shown when changing a restoration position in the Fast template', '図7. Fastテンプレートで補綴物の位置を変更すると表示される配置基準線'],
+      '그림 8. STL 배치 시 기준선을 침범하지 않도록 배치해야 합니다.': ['Figure 8. Place the STL without crossing the reference line.', '図8. STLは基準線を越えないように配置する必要があります。'],
+      '그림 9. Fast 템플릿은 블록 외곽부터 보철물 주변의 안전거리까지 가공합니다.': ['Figure 9. The Fast template mills from the block edge to the safety distance around the restoration.', '図9. Fastテンプレートはブロック外周から補綴物周辺の安全距離まで加工します。'],
+      '그림 10-1. 실제 커넥터 가공 결과 — 측면 1': ['Figure 10-1. Actual connector milling result — side 1', '図10-1. 実際のコネクター加工結果 — 側面1'], '그림 10-2. 실제 커넥터 가공 결과 — 측면 2': ['Figure 10-2. Actual connector milling result — side 2', '図10-2. 実際のコネクター加工結果 — 側面2'],
+      '그림 11-1. 일반 템플릿 — 계산 8분 54초 / 예상 가공 41분 21초': ['Figure 11-1. Standard template — calculation 8 min 54 sec / estimated milling 41 min 21 sec', '図11-1. 標準テンプレート — 計算8分54秒 / 予想加工41分21秒'], '그림 11-2. Fast 템플릿 — 계산 4분 44초 / 예상 가공 27분 42초': ['Figure 11-2. Fast template — calculation 4 min 44 sec / estimated milling 27 min 42 sec', '図11-2. Fastテンプレート — 計算4分44秒 / 予想加工27分42秒'],
+      '1번 · 내면 3+2축 / 교합면 T7-G1.0B 마무리': ['No. 1 · 3+2-axis internal / T7-G1.0B occlusal finishing', '1番・内面3+2軸 / 咬合面T7-G1.0B仕上げ'], '2번 · 내면 5축 / 교합면 T8-G0.6B 마무리': ['No. 2 · 5-axis internal / T8-G0.6B occlusal finishing', '2番・内面5軸 / 咬合面T8-G0.6B仕上げ'], '3번 · 내면 5축 / 교합면 T8-G0.6B 마무리': ['No. 3 · 5-axis internal / T8-G0.6B occlusal finishing', '3番・内面5軸 / 咬合面T8-G0.6B仕上げ']
+      ,'와': [' and ', 'と'], '에는 보철물 외곽을 따라 별도의 Milling Boundary가 생성됩니다.': [' create a separate Milling Boundary around the restoration.', 'では補綴物外周に個別のMilling Boundaryが生成されます。'], '커넥터 구성': ['Connector Setup', 'コネクター設定'], '화면의 Boundary 선과 실제 공구 경로가 완전히 일치하는 것은 아닙니다.': ['The Boundary line on screen does not exactly match the actual toolpath.', '画面上のBoundary線と実際の工具経路は完全には一致しません。'], '표시된 Boundary에는 보철물로부터 확보해야 하는 안전거리가 포함되어 있습니다.': ['The displayed Boundary includes the safety distance required from the restoration.', '表示されるBoundaryには補綴物から確保すべき安全距離が含まれます。'],
+      '구분': ['No.', '区分'], '템플릿': ['Template', 'テンプレート'], '주요 특징': ['Key Features', '主な特徴'], '공정 비교': ['Process Comparison', '工程比較'],
+      '별도의 Milling Boundary가 생성되지 않습니다.': ['No separate Milling Boundary is created.', '個別のMilling Boundaryは生成されません。'], '중요': ['Important', '重要'],
+      '실제 가공은 커넥터에서 일정 거리 떨어진 지점까지만 가공됩니다. hyperDENT 화면상 처럼 끝까지 커넥터를 가공하지 않습니다. .': ['Actual milling extends only to a point a set distance away from the connector. Unlike the hyperDENT display, the connector is not milled all the way to the block edge.', '実際の加工はコネクターから一定距離離れた位置までです。hyperDENTの画面表示とは異なり、コネクターをブロック端まで加工しません。'],
+      '배치 주의': ['Placement Caution', '配置時の注意'], '화면 표시와 실제 가공': ['On-Screen Display vs. Actual Milling', '画面表示と実際の加工'],
+      'hyperDENT에서는 커넥터가 블록 끝까지 연결된 것처럼 보이지만, 실제 가공 결과에서 커넥터 자체가 블록 끝까지 길게 가공되는 것은 아닙니다. 커넥터 주변은 안전거리를 고려한 범위까지만 가공됩니다.': ['In hyperDENT, the connector appears to extend to the block edge, but the actual result does not mill the connector itself that far. Material around the connector is milled only within the safety-distance range.', 'hyperDENTではコネクターがブロック端までつながっているように見えますが、実際の加工結果ではコネクター自体が端まで長く加工されるわけではありません。コネクター周辺は安全距離を考慮した範囲まで加工されます。'],
+      '계산 시간 단축': ['Calculation Time Reduction', '計算時間の短縮'], '약 46.8%': ['Approx. 46.8%', '約46.8%'], '예상 가공 시간 단축': ['Estimated Milling Time Reduction', '予想加工時間の短縮'], '약 33.0%': ['Approx. 33.0%', '約33.0%'], '계산+가공 합계 단축': ['Combined Calculation + Milling Reduction', '計算・加工合計の短縮'], '약 35.5%': ['Approx. 35.5%', '約35.5%'],
+      '항목': ['Item', '項目'], '일반 템플릿': ['Standard Template', '標準テンプレート'], 'Fast 템플릿': ['Fast Template', 'Fastテンプレート'], '단축 효과': ['Time Saved', '短縮効果'],
+      '계산 시간': ['Calculation Time', '計算時間'], '8분 54초': ['8 min 54 sec', '8分54秒'], '4분 44초': ['4 min 44 sec', '4分44秒'], '4분 10초 · 약 46.8%': ['4 min 10 sec · approx. 46.8%', '4分10秒・約46.8%'],
+      '예상 가공 시간': ['Estimated Milling Time', '予想加工時間'], '41분 21초': ['41 min 21 sec', '41分21秒'], '27분 42초': ['27 min 42 sec', '27分42秒'], '13분 39초 · 약 33.0%': ['13 min 39 sec · approx. 33.0%', '13分39秒・約33.0%'],
+      '합계': ['Total', '合計'], '50분 15초': ['50 min 15 sec', '50分15秒'], '32분 26초': ['32 min 26 sec', '32分26秒'], '17분 49초 · 약 35.5%': ['17 min 49 sec · approx. 35.5%', '17分49秒・約35.5%'],
+      '합계는 계산 시간과 예상 가공 시간을 단순 합산한 참고값입니다.': ['The total is a reference value obtained by simply adding the calculation and estimated milling times.', '合計は計算時間と予想加工時間を単純に合算した参考値です。'], '비교 결과': ['Comparison Result', '比較結果'], '계산 전 최종 확인': ['Final Check Before Calculation', '計算前の最終確認']
+    };
+    const ORIGINAL_TEXT_NODES = new WeakMap();
+
+    function applyDocumentLanguage(lang) {
+      const dict = DOCUMENT_TRANSLATIONS[lang] || DOCUMENT_TRANSLATIONS.ko;
+      document.documentElement.lang = lang in DOCUMENT_TRANSLATIONS ? lang : 'ko';
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const text = dict[element.dataset.i18n];
+        if (text) element.textContent = text;
+      });
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) {
+        if (node.parentElement?.closest('script, style')) continue;
+        if (!ORIGINAL_TEXT_NODES.has(node)) ORIGINAL_TEXT_NODES.set(node, node.nodeValue);
+        const original = ORIGINAL_TEXT_NODES.get(node);
+        const trimmed = original.trim();
+        const translation = lang === 'ko' ? null : BODY_TRANSLATIONS[trimmed]?.[lang === 'ja' ? 1 : 0];
+        if (translation) node.nodeValue = original.replace(trimmed, translation);
+      }
+    }
+
+    window.addEventListener('message', (event) => {
+      if (event.data?.type === 'gencore-language-change') applyDocumentLanguage(event.data.lang);
+    });
+  </script>
   <script>
     const modal = document.querySelector('.modal');
     const modalImage = modal.querySelector('img');
