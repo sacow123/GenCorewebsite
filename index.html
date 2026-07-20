@@ -4777,9 +4777,6 @@
             <div>
               <h3 style="margin: 0; font-size: 20px; color: var(--text-color, #1f2937);">DB_MillFix_V10.1.X_260110_R1</h3>
             </div>
-            <a href="https://works.do/xp0JOBc" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 12px; background-color: #a855f7; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 21px; transition: all 0.2s; box-shadow: 0 4px 6px rgba(168, 85, 247, 0.25);"><span data-i18n="mf-auto-303">
-              📥 데이터베이스 다운로드
-            </span></a>
           </div>
 
           <p style="margin-bottom: 20px; color: var(--text-color, #374151); font-weight: 500;"><span data-i18n="mf-auto-304">포함된 소재별 템플릿 목록입니다.</span></p>
@@ -6938,6 +6935,7 @@
 
   <script src="src/data/dbconfig-data-en.js"></script>
   <script src="src/data/dbconfig-data-ko.js"></script>
+  <script src="src/data/dbconfig-data-ja.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const modal = document.getElementById('template-modal');
@@ -6978,13 +6976,20 @@
             if (!db && typeof dbConfigDataEN !== 'undefined') db = dbConfigDataEN; // Fallback to English
             
             if (db && db[title]) {
-              let text = db[title];
+              const japaneseText = currentLang === 'ja' ? db[title] : null;
+              // Keep the English source as the rendering blueprint so that headings,
+              // bullets, tables, and embedded images retain exactly the same layout.
+              // Only the rendered text is replaced with its Japanese counterpart.
+              let text = japaneseText && typeof dbConfigDataEN !== 'undefined' && dbConfigDataEN[title]
+                ? dbConfigDataEN[title]
+                : db[title];
               let lines = text.split('\n').map(l => l.trim()).filter(l => l);
+              let japaneseLines = japaneseText ? japaneseText.split('\n').map(l => l.trim()).filter(l => l) : null;
               
               // Remove frontmatter robustly
               let startIdx = 0;
               for (let i = 0; i < lines.length; i++) {
-                if (lines[i].includes('템플릿을 사용하기 위한 조건') || lines[i].includes('The conditions for selecting') || lines[i].includes('조정 가능한 항목들') || lines[i].includes('Overwritable processes')) {
+                if (lines[i].includes('템플릿을 사용하기 위한 조건') || lines[i].includes('The conditions for selecting') || lines[i].includes('この戦略（テンプレート）を選択するための条件') || lines[i].includes('조정 가능한 항목들') || lines[i].includes('Overwritable processes') || lines[i].includes('上書き可能なプロセス')) {
                   startIdx = i;
                   break;
                 }
@@ -6993,17 +6998,22 @@
               if (startIdx > 0 && startIdx < lines.length) {
                 // Slice everything before the condition block
                 lines = lines.slice(startIdx);
+                if (japaneseLines) japaneseLines = japaneseLines.slice(startIdx);
               }
 
             let htmlContent = '';
             
             const headers = [
               "The conditions for selecting", "템플릿을 사용하기 위한 조건", "선택 조건", "You can select this template,",
+              "この戦略（テンプレート）を選択するための条件",
               "What it needs to Prepare", "준비해야 할 사항", "준비 사항", "해당 템플릿으로 가공하기 위해 준비해야할 것들",
+              "この戦略（テンプレート）のために準備する必要があるもの",
               "Overwritable processes", "덮어쓸 수 있는 공정", "세부 설정", "조정 가능한 항목들",
+              "上書き可能なプロセス",
               "User-defined area", "사용자 정의 영역", "사용자 정의 영역을 사용하실 수 있습니다.",
+              "使用可能なユーザー定義領域（UDA）カテゴリ",
               "Tools list used", "사용된 공구 목록",
-              "Tools used in this strategy", "해당 템플릿에 사용되는 공구 목록", "사용되는 공구", "해당 템플릿에서 사용되는 공구 목록"
+              "Tools used in this strategy", "해당 템플릿에 사용되는 공구 목록", "사용되는 공구", "해당 템플릿에서 사용되는 공구 목록", "この戦略（テンプレート）で使用されるツール"
             ];
             
             let inTable = false;
@@ -7027,7 +7037,7 @@
               if (line === '댓글'  || line === '??') continue;
               
               let textContentWithoutDash = line.replace(/^(-+)/, '').trim();
-              let isCategory = textContentWithoutDash.startsWith('Category') || textContentWithoutDash.startsWith('유형');
+              let isCategory = textContentWithoutDash.startsWith('Category') || textContentWithoutDash.startsWith('유형') || textContentWithoutDash.startsWith('カテゴリ');
               
               if (!isCategory) {
                 flushCategories();
@@ -7064,11 +7074,11 @@
                 }
                 htmlContent += '<h4 style="color: #1f2937; font-size: 24px; margin-bottom: 24px; font-weight: 700;">' + line + '</h4>';
                 
-                if (line.toLowerCase().includes("tool") || line.includes("공구")) {
+                if (line.toLowerCase().includes("tool") || line.includes("공구") || line.includes("ツール")) {
                   inTable = true;
                   htmlContent += '</span><div style="overflow-x: auto;"><table style="width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 20px; text-align: left;">';
                   htmlContent += '<thead><tr style="background: #f9fafb; border-bottom: 2px solid #e5e7eb;"><th style="padding: 15px;">Tool#</th><th style="padding: 15px;">Name</th><th style="padding: 15px;">Comment</th></tr></thead><tbody>';
-                  while (i + 1 < lines.length && (lines[i+1].includes('Tool pocket #') || lines[i+1] === 'Tools' || lines[i+1] === 'Comment')) {
+                  while (i + 1 < lines.length && (lines[i+1].includes('Tool pocket #') || lines[i+1] === 'Tools' || lines[i+1] === 'Comment' || lines[i+1].includes('ツールポケット') || lines[i+1] === 'ツール' || lines[i+1] === 'コメント')) {
                     i++;
                   }
                 }
@@ -7152,6 +7162,20 @@
               htmlContent += '</tbody></table></div>';
             }
             
+            if (japaneseLines) {
+              lines.forEach((sourceLine, index) => {
+                const translatedLine = japaneseLines[index];
+                if (translatedLine && translatedLine !== sourceLine) {
+                  htmlContent = htmlContent.split(sourceLine).join(translatedLine);
+                  const sourceParts = sourceLine.split(':');
+                  const translatedParts = translatedLine.split(':');
+                  if (sourceParts.length > 1 && translatedParts.length > 1) {
+                    htmlContent = htmlContent.split(sourceParts[0]).join(translatedParts[0]);
+                    htmlContent = htmlContent.split(sourceParts.slice(1).join(':')).join(translatedParts.slice(1).join(':'));
+                  }
+                }
+              });
+            }
             modalBody.innerHTML = htmlContent;
           } else {
             modalBody.innerHTML = '<p><span data-i18n="mf-auto-819">데이터를 불러올 수 없습니다.</span></p>';

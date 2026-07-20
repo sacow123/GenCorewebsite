@@ -419,12 +419,12 @@
     const ORIGINAL_TEXT_NODES = new WeakMap();
 
     function applyDocumentLanguage(lang) {
-      const dict = DOCUMENT_TRANSLATIONS[lang] || DOCUMENT_TRANSLATIONS.ko;
-      document.documentElement.lang = lang in DOCUMENT_TRANSLATIONS ? lang : 'ko';
-      document.querySelectorAll('[data-i18n]').forEach((element) => {
-        const text = dict[element.dataset.i18n];
-        if (text) element.textContent = text;
-      });
+      // This document is currently localized in Korean, English, and Japanese.
+      // For other site languages, consistently use English instead of leaving a
+      // previous language visible in the already-open iframe.
+      const documentLang = Object.prototype.hasOwnProperty.call(DOCUMENT_TRANSLATIONS, lang) ? lang : 'en';
+      const dict = DOCUMENT_TRANSLATIONS[documentLang];
+      document.documentElement.lang = documentLang;
       const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
       let node;
       while ((node = walker.nextNode())) {
@@ -432,9 +432,14 @@
         if (!ORIGINAL_TEXT_NODES.has(node)) ORIGINAL_TEXT_NODES.set(node, node.nodeValue);
         const original = ORIGINAL_TEXT_NODES.get(node);
         const trimmed = original.trim();
-        const translation = lang === 'ko' ? null : BODY_TRANSLATIONS[trimmed]?.[lang === 'ja' ? 1 : 0];
+        const translation = documentLang === 'ko' ? null : BODY_TRANSLATIONS[trimmed]?.[documentLang === 'ja' ? 1 : 0];
+        node.nodeValue = original;
         if (translation) node.nodeValue = original.replace(trimmed, translation);
       }
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const text = dict[element.dataset.i18n];
+        if (text) element.textContent = text;
+      });
     }
 
     window.addEventListener('message', (event) => {
