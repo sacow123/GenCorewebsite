@@ -5304,19 +5304,35 @@ Object.assign(TRANSLATIONS.es, {
 });
 
 Object.assign(TRANSLATIONS.ko, {
-  "machine-settings-title": "머신 세팅"
+  "machine-settings-title": "머신 세팅",
+  "db-filter-material": "소재",
+  "db-filter-prosthesis": "보철물 종류",
+  "db-filter-all": "전체",
+  "db-filter-empty": "조건에 맞는 템플릿이 없습니다."
 });
 
 Object.assign(TRANSLATIONS.en, {
-  "machine-settings-title": "Machine Settings"
+  "machine-settings-title": "Machine Settings",
+  "db-filter-material": "Material",
+  "db-filter-prosthesis": "Prosthesis type",
+  "db-filter-all": "All",
+  "db-filter-empty": "No matching templates were found."
 });
 
 Object.assign(TRANSLATIONS.ja, {
-  "machine-settings-title": "マシン設定"
+  "machine-settings-title": "マシン設定",
+  "db-filter-material": "素材",
+  "db-filter-prosthesis": "補綴物の種類",
+  "db-filter-all": "すべて",
+  "db-filter-empty": "該当するテンプレートがありません。"
 });
 
 Object.assign(TRANSLATIONS.es, {
-  "machine-settings-title": "Configuración de la máquina"
+  "machine-settings-title": "Configuración de la máquina",
+  "db-filter-material": "Material",
+  "db-filter-prosthesis": "Tipo de prótesis",
+  "db-filter-all": "Todos",
+  "db-filter-empty": "No se encontraron plantillas que coincidan."
 });
 
 if (typeof document !== 'undefined' && typeof window !== 'undefined') {

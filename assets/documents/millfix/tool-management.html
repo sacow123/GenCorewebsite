@@ -274,10 +274,18 @@
     const times = TOOL_USAGE_DATA[card.dataset.toolId];
     if (!times) return;
     const rect = card.getBoundingClientRect();
+    const gridRect = toolGrid.getBoundingClientRect();
+    const tooltipWidth = 240;
+    const gap = 12;
+    const isRightSideTool = rect.left + (rect.width / 2) > gridRect.left + (gridRect.width / 2);
     const recommendedTimeLabel = translateTooltipText('tooltip-recommended-time', '권장 사용시간');
     toolTooltip.innerHTML = `<div class="tooltip-header"><span class="tooltip-icon">⏱️</span><span class="tooltip-title">${card.dataset.toolId} ${recommendedTimeLabel}</span></div><div class="tooltip-body">${times.map(([material, time]) => `<div class="usage-row"><span class="usage-material">${translateTooltipText(TOOL_MATERIAL_KEYS[material], material)}</span><span class="usage-time">${time}</span></div>`).join('')}</div>`;
-    toolTooltip.style.cssText = `position:fixed; width:240px; left:${Math.min(rect.right + 12, window.innerWidth - 252)}px; top:${Math.max(12, rect.top)}px;`;
-    toolTooltip.classList.add('tooltip-right', 'visible');
+    const left = isRightSideTool
+      ? Math.max(12, rect.left - tooltipWidth - gap)
+      : Math.min(rect.right + gap, window.innerWidth - tooltipWidth - 12);
+    toolTooltip.style.cssText = `position:fixed; width:${tooltipWidth}px; left:${left}px; top:${Math.max(12, rect.top)}px;`;
+    toolTooltip.classList.remove('tooltip-left', 'tooltip-right');
+    toolTooltip.classList.add(isRightSideTool ? 'tooltip-left' : 'tooltip-right', 'visible');
   }
 
   toolGrid?.querySelectorAll('.parts-card[data-tool-id]').forEach((card) => {
@@ -292,7 +300,7 @@
       activeToolCard = null;
       toolGrid.classList.remove('tool-grid-hover');
       card.classList.remove('tool-active');
-      toolTooltip.classList.remove('visible', 'tooltip-right');
+      toolTooltip.classList.remove('visible', 'tooltip-left', 'tooltip-right');
     });
   });
   window.addEventListener('load', sendDocumentHeight);
