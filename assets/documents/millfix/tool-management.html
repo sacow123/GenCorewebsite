@@ -229,7 +229,15 @@
             </div>
       </section>
 <script>
+  let documentTranslations = {};
+  let activeToolCard = null;
+
+  function translateTooltipText(key, fallback) {
+    return Object.prototype.hasOwnProperty.call(documentTranslations, key) ? documentTranslations[key] : fallback;
+  }
+
   function applyDocumentLanguage(lang, translations = {}) {
+    documentTranslations = translations;
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-i18n]').forEach((element) => {
       if (!element.hasAttribute('data-i18n-default')) element.setAttribute('data-i18n-default', element.innerHTML);
@@ -237,12 +245,56 @@
       const translated = Object.prototype.hasOwnProperty.call(translations, element.dataset.i18n) ? translations[element.dataset.i18n] : fallback;
       if (translated !== undefined) element.innerHTML = translated;
     });
+    if (activeToolCard) renderToolTooltip(activeToolCard);
   }
   window.addEventListener('message', (event) => {
     if (event.data?.type === 'gencore-language-change') applyDocumentLanguage(event.data.lang, event.data.translations || {});
     if (event.data?.type === 'gencore-request-document-height') sendDocumentHeight();
   });
   const sendDocumentHeight = () => window.parent?.postMessage({ type: 'gencore-document-height', documentId: document.documentElement.dataset.documentId, height: Math.max(document.body?.scrollHeight || 0, document.documentElement.scrollHeight) }, '*');
+  const TOOL_USAGE_DATA = {
+    T31: [['Zirconia', '3,000 min']], T32: [['Zirconia', '2,000 min']],
+    T33: [['Zirconia', '1,000 min'], ['PMMA / PEEK', '300 min']], T34: [['Zirconia', '600 min'], ['PMMA / PEEK', '200 min']],
+    T35: [['Hybrid Ceramic', '400 min']], T36: [['Hybrid Ceramic', '400 min']], T37: [['Hybrid Ceramic', '300 min']],
+    T38: [['PMMA / PEEK', '2,000 min']], T39: [['PMMA / PEEK', '1,500 min']],
+    T42: [['Zirconia', '200 min'], ['PMMA / PEEK', '150 min']], T43: [['Zirconia', '150 min'], ['PMMA / PEEK', '150 min']],
+    T44: [['Zirconia', '150 min'], ['PMMA / PEEK', '150 min']], T45: [['Zirconia', '150 min'], ['PMMA / PEEK', '100 min']]
+  };
+  const TOOL_MATERIAL_KEYS = {
+    'Zirconia': 'tooltip-material-zirconia',
+    'Hybrid Ceramic': 'tooltip-material-hybrid-ceramic',
+    'PMMA / PEEK': 'tooltip-material-pmma-peek'
+  };
+  const toolGrid = document.querySelector('#sec-mf-tools [style*="display:grid"]');
+  const toolTooltip = document.createElement('div');
+  toolTooltip.className = 'tool-usage-tooltip';
+  document.body.appendChild(toolTooltip);
+
+  function renderToolTooltip(card) {
+    const times = TOOL_USAGE_DATA[card.dataset.toolId];
+    if (!times) return;
+    const rect = card.getBoundingClientRect();
+    const recommendedTimeLabel = translateTooltipText('tooltip-recommended-time', '권장 사용시간');
+    toolTooltip.innerHTML = `<div class="tooltip-header"><span class="tooltip-icon">⏱️</span><span class="tooltip-title">${card.dataset.toolId} ${recommendedTimeLabel}</span></div><div class="tooltip-body">${times.map(([material, time]) => `<div class="usage-row"><span class="usage-material">${translateTooltipText(TOOL_MATERIAL_KEYS[material], material)}</span><span class="usage-time">${time}</span></div>`).join('')}</div>`;
+    toolTooltip.style.cssText = `position:fixed; width:240px; left:${Math.min(rect.right + 12, window.innerWidth - 252)}px; top:${Math.max(12, rect.top)}px;`;
+    toolTooltip.classList.add('tooltip-right', 'visible');
+  }
+
+  toolGrid?.querySelectorAll('.parts-card[data-tool-id]').forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      if (!TOOL_USAGE_DATA[card.dataset.toolId]) return;
+      activeToolCard = card;
+      toolGrid.classList.add('tool-grid-hover');
+      card.classList.add('tool-active');
+      renderToolTooltip(card);
+    });
+    card.addEventListener('mouseleave', () => {
+      activeToolCard = null;
+      toolGrid.classList.remove('tool-grid-hover');
+      card.classList.remove('tool-active');
+      toolTooltip.classList.remove('visible', 'tooltip-right');
+    });
+  });
   window.addEventListener('load', sendDocumentHeight);
   new ResizeObserver(sendDocumentHeight).observe(document.body);
 </script>

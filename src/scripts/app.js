@@ -52,7 +52,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // Remove active from all leaf nav-items
     document.querySelectorAll(".nav-item").forEach(n => n.classList.remove("active"));
     
-    const target = document.getElementById(id);
+    // M AI calibration sub-items are grouped in one calibration page.  Keep their
+    // dedicated menu links functional while that shared page is used.
+    const calibrationSubSections = [
+      'sec-mai-cal-disk-ai',
+      'sec-mai-cal-disk-manual',
+      'sec-mai-cal-premill-v1',
+      'sec-mai-cal-premill-v2',
+      'sec-mai-cal-tool-auto',
+      'sec-mai-cal-tool-manual'
+    ];
+    let target = document.getElementById(id);
+    if (!target && calibrationSubSections.includes(id)) {
+      target = document.getElementById('sec-mai-calibration');
+    }
     if (!target && openSectionPage(id)) return;
     if (target) {
       target.classList.add("active");
@@ -167,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Remove any query params or trailing slashes that might be added by messenger apps
       hashId = hashId.split('?')[0].split('/')[0];
       
-      if (document.getElementById(hashId) && document.getElementById(hashId).classList.contains('content-section')) {
+      if (document.querySelector(`.nav-item[data-section="${hashId}"]`) || document.getElementById(hashId)?.classList.contains('content-section')) {
         showSection(hashId, false);
         // Expand parent menus in the sidebar
         const navItem = document.querySelector(`.nav-item[data-section="${hashId}"]`);
@@ -195,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
       runSearch(e.state.searchQuery);
     } else if (window.location.hash) {
       var hashId = window.location.hash.substring(1);
-      if (document.getElementById(hashId) && document.getElementById(hashId).classList.contains('content-section')) {
+      if (document.querySelector(`.nav-item[data-section="${hashId}"]`) || document.getElementById(hashId)?.classList.contains('content-section')) {
         showSection(hashId, false);
       }
     } else {
@@ -364,7 +377,107 @@ document.addEventListener("DOMContentLoaded", () => {
     return parts.join(' › ');
   }
 
+  // The manuals are split into separate HTML files.  Build a lightweight, in-memory
+  // index from those pages only when the user searches, so the global search keeps
+  // finding content outside the currently open manual without making the initial
+  // page load heavier.
+  var siteSearchIndexPromise = null;
+
+  function buildSiteSearchIndex() {
+    if (siteSearchIndexPromise) return siteSearchIndexPromise;
+
+    siteSearchIndexPromise = new Promise(function(resolve) {
+      var pageFiles = Array.from(document.querySelectorAll('.nav-item[data-section]'))
+        .map(function(item) { return getSectionPage(item.dataset.section); })
+        .filter(function(page, index, pages) { return page && pages.indexOf(page) === index; });
+      var currentPage = decodeURIComponent(window.location.pathname).split('/').pop() || 'index.html';
+      var entries = [];
+      var pending = pageFiles.length;
+      var settled = false;
+      var temporaryFrames = [];
+      var timeoutId;
+
+      function collectDocument(sourceDocument) {
+        if (!sourceDocument) return;
+        sourceDocument.querySelectorAll('.content-section[id]').forEach(function(section) {
+          if (section.id === 'section-search' || section.id === 'section-home') return;
+          if (entries.some(function(entry) { return entry.sectionId === section.id; })) return;
+
+          var navItem = sourceDocument.querySelector('.nav-item[data-section="' + section.id + '"]');
+          if (!navItem) return;
+          var cleanSection = section.cloneNode(true);
+          cleanSection.querySelectorAll('script, style, noscript').forEach(function(node) { node.remove(); });
+          entries.push({
+            sectionId: section.id,
+            titleText: navItem.textContent.replace(/\s+/g, ' ').trim(),
+            contentText: cleanSection.textContent.replace(/\s+/g, ' ').trim(),
+            breadcrumb: getBreadcrumb(navItem)
+          });
+        });
+      }
+
+      function finishOne() {
+        pending -= 1;
+        if (pending <= 0) finish();
+      }
+
+      function finish() {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timeoutId);
+        temporaryFrames.forEach(function(frame) { frame.remove(); });
+        resolve(entries);
+      }
+
+      // Nested tutorial iframes can keep a document's load event pending.  Its own
+      // text is already parsed by this point, so do not make the search wait for
+      // third-party video resources.
+      timeoutId = window.setTimeout(function() {
+        temporaryFrames.forEach(function(frame) {
+          try {
+            collectDocument(frame.contentDocument);
+          } catch (error) {
+            // Keep the current-page index if a browser blocks a local frame.
+          }
+        });
+        finish();
+      }, 900);
+      pageFiles.forEach(function(page) {
+        if (page === currentPage) {
+          collectDocument(document);
+          finishOne();
+          return;
+        }
+
+        var frame = document.createElement('iframe');
+        frame.setAttribute('aria-hidden', 'true');
+        frame.tabIndex = -1;
+        frame.style.cssText = 'position:fixed; width:1px; height:1px; opacity:0; pointer-events:none; border:0; left:-9999px; top:-9999px;';
+        temporaryFrames.push(frame);
+        frame.addEventListener('load', function() {
+          try {
+            collectDocument(frame.contentDocument);
+          } catch (error) {
+            // The current page remains searchable even if a local browser blocks a frame.
+          }
+          finishOne();
+        }, { once: true });
+        frame.addEventListener('error', finishOne, { once: true });
+        frame.src = encodeURI(page);
+        document.body.appendChild(frame);
+      });
+    });
+
+    return siteSearchIndexPromise;
+  }
+
   function runSearch(query) {
+    buildSiteSearchIndex().then(function(siteSearchEntries) {
+      renderSearch(query, siteSearchEntries);
+    });
+  }
+
+  function renderSearch(query, siteSearchEntries) {
     var lowerQuery = query.toLowerCase();
     
     // Create a space-insensitive regex
@@ -376,23 +489,21 @@ document.addEventListener("DOMContentLoaded", () => {
     var searchRegex = new RegExp(regexStr, 'i');
     var searchRegexGlobal = new RegExp('(' + regexStr + ')', 'gi');
 
-    // Search in nav-items (sections)
+    // Search all indexed sections, including the content in the split pages.
     var navItems = Array.from(document.querySelectorAll('.nav-item[data-section]'));
     // Search in feature-cards (modals)
     var featureCards = Array.from(document.querySelectorAll('.feature-card[data-feature-key]'));
     
     var results = [];
 
-    navItems.forEach(function(item) {
-      var sectionId = item.dataset.section;
-      var sectionEl = document.getElementById(sectionId);
-      if (!sectionEl) return;
+    siteSearchEntries.forEach(function(entry) {
+      var sectionId = entry.sectionId;
 
       // Skip if this sectionId is already in results (deduplication)
       if (results.some(function(r) { return r.type === 'section' && r.sectionId === sectionId; })) return;
 
-      var titleText = item.textContent.trim();
-      var contentText = sectionEl.textContent.replace(/\s+/g, ' ').trim();
+      var titleText = entry.titleText;
+      var contentText = entry.contentText;
 
       if (searchRegex.test(titleText) || searchRegex.test(contentText)) {
         var snippet = "";
@@ -408,7 +519,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           snippet = contentText.substring(0, 100) + "...";
         }
-        var breadcrumb = getBreadcrumb(item);
+        var breadcrumb = entry.breadcrumb;
         results.push({ type: 'section', sectionId: sectionId, titleText: titleText, snippet: snippet, breadcrumb: breadcrumb });
       }
     });

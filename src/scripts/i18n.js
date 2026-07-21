@@ -2891,19 +2891,31 @@ const KO_HYPERDENT_OVERRIDES = {
 Object.assign(TRANSLATIONS.ko, KO_HYPERDENT_OVERRIDES);
 
 Object.assign(TRANSLATIONS.ko, {
-  "tooltip-recommended-time": "권장 사용시간"
+  "tooltip-recommended-time": "권장 사용시간",
+  "tooltip-material-zirconia": "지르코니아",
+  "tooltip-material-hybrid-ceramic": "하이브리드 세라믹",
+  "tooltip-material-pmma-peek": "PMMA / PEEK"
 });
 
 Object.assign(TRANSLATIONS.en, {
-  "tooltip-recommended-time": "Recommended Usage Time"
+  "tooltip-recommended-time": "Recommended Usage Time",
+  "tooltip-material-zirconia": "Zirconia",
+  "tooltip-material-hybrid-ceramic": "Hybrid Ceramic",
+  "tooltip-material-pmma-peek": "PMMA / PEEK"
 });
 
 Object.assign(TRANSLATIONS.ja, {
-  "tooltip-recommended-time": "推奨使用時間"
+  "tooltip-recommended-time": "推奨使用時間",
+  "tooltip-material-zirconia": "ジルコニア",
+  "tooltip-material-hybrid-ceramic": "ハイブリッドセラミック",
+  "tooltip-material-pmma-peek": "PMMA / PEEK"
 });
 
 Object.assign(TRANSLATIONS.es, {
-  "tooltip-recommended-time": "Tiempo de uso recomendado"
+  "tooltip-recommended-time": "Tiempo de uso recomendado",
+  "tooltip-material-zirconia": "Circonia",
+  "tooltip-material-hybrid-ceramic": "Cerámica híbrida",
+  "tooltip-material-pmma-peek": "PMMA / PEEK"
 });
 
 const JA_NAV_OVERRIDES = {
