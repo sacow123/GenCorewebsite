@@ -127,6 +127,20 @@ body {
 }
 .content-section { display: none; animation: fadeIn 0.35s ease; }
 .content-section.active { display: block; }
+
+/* Long image manuals live in standalone documents while retaining the existing section navigation. */
+.external-document-section {
+  padding: 0;
+  overflow: hidden;
+}
+
+.external-document-frame {
+  display: block;
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  border: 0;
+  background: #f8fafc;
+}
 .content-section h2 {
   font-size: 26px; font-weight: 700; color: #222;
   margin-bottom: 8px; letter-spacing: -0.5px;

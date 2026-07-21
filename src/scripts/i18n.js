@@ -3667,7 +3667,7 @@ Object.assign(TRANSLATIONS.ja, {
 
 Object.assign(TRANSLATIONS.ko, {
   "rep-mai-parts-search-placeholder": "부품명 또는 교체 방법 검색 (예: 스핀들, 메인보드, 센서, PC, 초기화...)",
-  "rep-mai-parts-spindle-category": "⚙️ 스핀들 관련 (Spindle Parts)",
+  "rep-mai-parts-spindle-category": "스핀들 관련 (Spindle Parts)",
   "rep-mai-parts-spindle-position": "스핀들 위치 조정 방법 (Adjust the spindle position)",
   "rep-mai-parts-spindle-replacement": "스핀들 교체 방법 (Spindle replacement)",
   "rep-mai-parts-spindle-drive": "스핀들 드라이브 교체 방법 (Spindle drive replacement)",
@@ -3675,18 +3675,18 @@ Object.assign(TRANSLATIONS.ko, {
   "rep-mai-parts-pc-category": "🖥️ PC 관련 (PC Parts)",
   "rep-mai-parts-mainboard": "메인보드 교체 방법 (Replace Mainboard / PC)",
   "rep-mai-parts-pc-reset": "PC 초기화 방법 (PC Factory Reset - 한국어/English)",
-  "rep-mai-parts-drive-category": "🔧 구동부 관련 (Drive Parts)",
+  "rep-mai-parts-drive-category": "구동부 관련 (Drive Parts)",
   "rep-mai-parts-x-bracket": "X축 브라켓 교체 방법 (Replace the X-axis bracket)",
   "rep-mai-parts-x-coupling": "X축 커플링 교체 방법 (Replace the X-axis coupling)",
   "rep-mai-parts-bellows": "자바라 교체 방법 (Replace Sliding Bellows)",
-  "rep-mai-parts-sensor-category": "🛠️ 센서 관련 (Sensor Parts)",
+  "rep-mai-parts-sensor-category": "센서 관련 (Sensor Parts)",
   "rep-mai-parts-tool-touch-sensor": "툴터치센서 교체 방법 (Replace Tool touch sensor)",
   "rep-mai-parts-no-results": "검색된 부품/교체 가이드가 없습니다. 다른 검색어를 입력해보세요."
 });
 
 Object.assign(TRANSLATIONS.en, {
   "rep-mai-parts-search-placeholder": "Search by part name or replacement procedure (e.g., spindle, mainboard, sensor, PC, reset...)",
-  "rep-mai-parts-spindle-category": "⚙️ Spindle Parts",
+  "rep-mai-parts-spindle-category": "Spindle Parts",
   "rep-mai-parts-spindle-position": "Adjust Spindle Position",
   "rep-mai-parts-spindle-replacement": "Replace Spindle",
   "rep-mai-parts-spindle-drive": "Replace Spindle Drive",
@@ -3694,18 +3694,18 @@ Object.assign(TRANSLATIONS.en, {
   "rep-mai-parts-pc-category": "🖥️ PC Parts",
   "rep-mai-parts-mainboard": "Replace Mainboard / PC",
   "rep-mai-parts-pc-reset": "PC Factory Reset",
-  "rep-mai-parts-drive-category": "🔧 Drive Parts",
+  "rep-mai-parts-drive-category": "Drive Parts",
   "rep-mai-parts-x-bracket": "Replace the X-axis Bracket",
   "rep-mai-parts-x-coupling": "Replace the X-axis Coupling",
   "rep-mai-parts-bellows": "Replace Sliding Bellows",
-  "rep-mai-parts-sensor-category": "🛠️ Sensor Parts",
+  "rep-mai-parts-sensor-category": "Sensor Parts",
   "rep-mai-parts-tool-touch-sensor": "Replace Tool Touch Sensor",
   "rep-mai-parts-no-results": "No matching parts or replacement guides were found. Try another search term."
 });
 
 Object.assign(TRANSLATIONS.ja, {
   "rep-mai-parts-search-placeholder": "部品名または交換方法を検索（例：スピンドル、メインボード、センサー、PC、初期化…）",
-  "rep-mai-parts-spindle-category": "⚙️ スピンドル関連（Spindle Parts）",
+  "rep-mai-parts-spindle-category": "スピンドル関連（Spindle Parts）",
   "rep-mai-parts-spindle-position": "スピンドル位置の調整方法",
   "rep-mai-parts-spindle-replacement": "スピンドルの交換方法",
   "rep-mai-parts-spindle-drive": "スピンドルドライブの交換方法",
@@ -3713,11 +3713,11 @@ Object.assign(TRANSLATIONS.ja, {
   "rep-mai-parts-pc-category": "🖥️ PC関連（PC Parts）",
   "rep-mai-parts-mainboard": "メインボードの交換方法",
   "rep-mai-parts-pc-reset": "PCの初期化方法",
-  "rep-mai-parts-drive-category": "🔧 駆動部関連（Drive Parts）",
+  "rep-mai-parts-drive-category": "駆動部関連（Drive Parts）",
   "rep-mai-parts-x-bracket": "X軸ブラケットの交換方法",
   "rep-mai-parts-x-coupling": "X軸カップリングの交換方法",
   "rep-mai-parts-bellows": "蛇腹の交換方法",
-  "rep-mai-parts-sensor-category": "🛠️ センサー関連（Sensor Parts）",
+  "rep-mai-parts-sensor-category": "センサー関連（Sensor Parts）",
   "rep-mai-parts-tool-touch-sensor": "工具タッチセンサーの交換方法",
   "rep-mai-parts-no-results": "該当する部品・交換ガイドが見つかりません。別の検索語を入力してください。"
 });
@@ -5157,6 +5157,16 @@ try {
   console.warn("localStorage not available", e);
 }
 
+function createExternalDocumentLanguageMessage(lang) {
+  return {
+    type: "gencore-language-change",
+    lang,
+    // file:// pages are isolated from their parent window. Send the dictionary
+    // instead of requiring the embedded document to access parent functions.
+    translations: TRANSLATIONS[lang] || {}
+  };
+}
+
 function applyLanguage(lang) {
   captureOriginalContentSections();
   const activeSection = document.querySelector(".content-section.active");
@@ -5207,6 +5217,123 @@ function applyLanguage(lang) {
   }
   applyStaticContentTranslations(lang, document.body);
   document.querySelectorAll('iframe[data-language-sync]').forEach((frame) => {
-    frame.contentWindow?.postMessage({ type: 'gencore-language-change', lang }, '*');
+    frame.addEventListener('load', () => {
+      frame.contentWindow?.postMessage(createExternalDocumentLanguageMessage(lang), '*');
+      frame.contentWindow?.postMessage({ type: 'gencore-request-document-height' }, '*');
+    }, { once: true });
+    frame.contentWindow?.postMessage(createExternalDocumentLanguageMessage(lang), '*');
+  });
+}
+
+Object.assign(TRANSLATIONS.ko, {
+  "b-axis-card-title": "B축 타이밍 벨트 교체",
+  "b-axis-title": "B축 타이밍 벨트 교체",
+  "b-axis-subtitle": "M AI° 구동부 수리 가이드",
+  "b-axis-close": "닫기",
+  "b-axis-video-fallback": "브라우저가 영상을 지원하지 않습니다.",
+  "b-axis-symptom-heading": "1. 증상",
+  "b-axis-symptom-text": "Homing 동작 시 B축 좌표는 계속 변화하는데 실제 축은 움직이지 않습니다.",
+  "b-axis-prep-heading": "2. 작업 전 준비",
+  "b-axis-prep-table": "밀링 테이블 비우기",
+  "b-axis-prep-table-text": "가공룸 안 업대 위에 아무것도 남기지 않고 깨끗하게 비웁니다.",
+  "b-axis-prep-tool": "준비물: M2.5 육각 드라이버",
+  "b-axis-process-heading": "3. 작업 과정",
+  "b-axis-step-01-title": "Ready 상태에서",
+  "b-axis-step-02-title": "밀링 테이블 배치",
+  "b-axis-step-02-text": "Axis jog 모드에서 작업 편의를 위해 스핀들을 안쪽으로 위치시키고, A- 방향으로 180도 이상 회전시켜 커버를 탈착하기 용이한 위치로 이동합니다.",
+  "b-axis-caution-label": "⚠️ 주의",
+  "b-axis-step-02-caution": "Homing을 완료할 수 없으므로 정확한 위치 좌표가 표시되지 않을 수 있습니다. 눈으로 직접 확인하면서 충돌하지 않도록 조심히 작업하십시오.",
+  "b-axis-step-03-title": "커버 제거",
+  "b-axis-step-04-title": "파손된 B축 타이밍 벨트 제거",
+  "b-axis-step-05-title": "풀리에 날카롭거나 뾰족한 구조물이 없는지 확인",
+  "b-axis-step-06-title": "텐셔너 위치 마킹",
+  "b-axis-step-07-title": "텐셔너 고정 나사를 살짝 풀어 움직일 수 있는 상태로 만듭니다.",
+  "b-axis-step-08-title": "B축 타이밍 벨트 장착",
+  "b-axis-step-08-text": "손으로 풀리를 돌려 벨트가 미끄러짐 없이 물려 돌아가는지 확인합니다.",
+  "b-axis-step-09-title": "타이밍 벨트 텐션 조정",
+  "b-axis-step-09-text": "텐셔너를 표시한 위치로 이동시켜 타이밍 벨트의 텐션을 조정하고, 적절한 위치에서 볼트를 조여 고정합니다. 텐션 세기를 확인합니다.",
+  "b-axis-step-10-title": "B축 동작 확인",
+  "b-axis-step-10-text": "Axis jog 페이지에서 B축을 +, - 방향으로 여러 번 이동시키며 소음 발생 또는 오작동이 없는지 확인합니다.",
+  "b-axis-step-11-title": "나사 구멍에 록타이트 바르기",
+  "b-axis-step-12-title": "방향을 맞춰 커버 덮기",
+  "b-axis-step-12-text": "가체결 → 위치 조정 → 완전체결 순으로 진행하고, 위쪽에 단차가 생기지 않는지 확인합니다.",
+  "b-axis-step-13-title": "A축을 어느 정도 수평이 되는 위치로 이동",
+  "b-axis-step-14-title": "Homing을 진행하여 완료되는지 확인합니다. 작업 완료."
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "b-axis-card-title": "Replace B-axis Timing Belt", "b-axis-title": "Replace B-axis Timing Belt", "b-axis-subtitle": "M AI° Drive Unit Repair Guide", "b-axis-close": "Close", "b-axis-video-fallback": "Your browser does not support video playback.",
+  "b-axis-symptom-heading": "1. Symptom", "b-axis-symptom-text": "During homing, the B-axis coordinates continue to change but the physical axis does not move.",
+  "b-axis-prep-heading": "2. Preparation", "b-axis-prep-table": "Clear the milling table", "b-axis-prep-table-text": "Remove everything from the workpiece platform in the machining chamber and clean it thoroughly.", "b-axis-prep-tool": "Required tool: M2.5 hex driver",
+  "b-axis-process-heading": "3. Procedure", "b-axis-step-01-title": "At the Ready status", "b-axis-step-02-title": "Position the milling table", "b-axis-step-02-text": "In Axis jog mode, position the spindle inward and rotate it more than 180° in the A- direction to make the cover easy to remove.", "b-axis-caution-label": "⚠️ Caution", "b-axis-step-02-caution": "Because homing cannot be completed, the exact position coordinates may not be displayed. Check visually and work carefully to avoid collisions.",
+  "b-axis-step-03-title": "Remove the cover", "b-axis-step-04-title": "Remove the damaged B-axis timing belt", "b-axis-step-05-title": "Check the pulley for sharp or pointed structures", "b-axis-step-06-title": "Mark the tensioner position", "b-axis-step-07-title": "Slightly loosen the tensioner fastening screw so that the tensioner can move.",
+  "b-axis-step-08-title": "Install the B-axis timing belt", "b-axis-step-08-text": "Turn the pulley by hand and check that the belt engages and rotates without slipping.", "b-axis-step-09-title": "Adjust timing-belt tension", "b-axis-step-09-text": "Move the tensioner to the marked position, adjust the timing-belt tension, and tighten the bolt at the proper position. Check the tension level.",
+  "b-axis-step-10-title": "Check B-axis operation", "b-axis-step-10-text": "On the Axis jog page, move the B-axis several times in the + and - directions and check for noise or malfunction.", "b-axis-step-11-title": "Apply Loctite to the screw holes", "b-axis-step-12-title": "Install the cover in the correct direction", "b-axis-step-12-text": "Proceed in the order of temporary fastening → position adjustment → final tightening, and make sure there is no step at the top.", "b-axis-step-13-title": "Move the A-axis to a roughly level position", "b-axis-step-14-title": "Run homing and verify that it completes. The procedure is complete."
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "b-axis-card-title": "B軸タイミングベルトの交換", "b-axis-title": "B軸タイミングベルトの交換", "b-axis-subtitle": "M AI° 駆動部修理ガイド", "b-axis-close": "閉じる", "b-axis-video-fallback": "お使いのブラウザは動画再生に対応していません。",
+  "b-axis-symptom-heading": "1. 症状", "b-axis-symptom-text": "Homing動作時にB軸の座標は変化し続けますが、実際の軸は動きません。",
+  "b-axis-prep-heading": "2. 作業前の準備", "b-axis-prep-table": "ミリングテーブルを空にする", "b-axis-prep-table-text": "加工室内の作業台の上に何も残さず、きれいに片付けます。", "b-axis-prep-tool": "準備物：M2.5六角ドライバー",
+  "b-axis-process-heading": "3. 作業手順", "b-axis-step-01-title": "Ready状態で", "b-axis-step-02-title": "ミリングテーブルを配置する", "b-axis-step-02-text": "Axis jogモードで作業しやすいようにスピンドルを内側に配置し、A-方向に180度以上回転させて、カバーを取り外しやすい位置へ移動します。", "b-axis-caution-label": "⚠️ 注意", "b-axis-step-02-caution": "Homingを完了できないため、正確な位置座標が表示されない場合があります。目視で確認し、衝突しないよう注意して作業してください。",
+  "b-axis-step-03-title": "カバーを取り外す", "b-axis-step-04-title": "破損したB軸タイミングベルトを取り外す", "b-axis-step-05-title": "プーリーに鋭利または尖った部分がないか確認する", "b-axis-step-06-title": "テンショナーの位置をマーキングする", "b-axis-step-07-title": "テンショナー固定ネジを少し緩め、動かせる状態にします。",
+  "b-axis-step-08-title": "B軸タイミングベルトを取り付ける", "b-axis-step-08-text": "手でプーリーを回し、ベルトが滑らずに噛み合って回転することを確認します。", "b-axis-step-09-title": "タイミングベルトの張力を調整する", "b-axis-step-09-text": "テンショナーをマーキングした位置へ移動してタイミングベルトの張力を調整し、適切な位置でボルトを締めて固定します。張力の強さを確認します。",
+  "b-axis-step-10-title": "B軸の動作を確認する", "b-axis-step-10-text": "Axis jogページでB軸を+、-方向へ数回移動させ、異音や誤動作がないか確認します。", "b-axis-step-11-title": "ネジ穴にロックタイトを塗布する", "b-axis-step-12-title": "向きを合わせてカバーを取り付ける", "b-axis-step-12-text": "仮締め→位置調整→本締めの順に進め、上部に段差が生じていないことを確認します。", "b-axis-step-13-title": "A軸をおおよそ水平になる位置へ移動する", "b-axis-step-14-title": "Homingを実行し、完了することを確認します。作業完了です。"
+});
+
+Object.assign(TRANSLATIONS.es, {
+  "b-axis-card-title": "Sustitución de la correa dentada del eje B", "b-axis-title": "Sustitución de la correa dentada del eje B", "b-axis-subtitle": "Guía de reparación de la unidad de accionamiento M AI°", "b-axis-close": "Cerrar", "b-axis-video-fallback": "Su navegador no admite la reproducción de vídeo.",
+  "b-axis-symptom-heading": "1. Síntoma", "b-axis-symptom-text": "Durante el homing, las coordenadas del eje B siguen cambiando, pero el eje físico no se mueve.",
+  "b-axis-prep-heading": "2. Preparación", "b-axis-prep-table": "Vaciar la mesa de fresado", "b-axis-prep-table-text": "Retire todo de la plataforma de trabajo dentro de la cámara de mecanizado y límpiela completamente.", "b-axis-prep-tool": "Herramienta necesaria: destornillador hexagonal M2.5",
+  "b-axis-process-heading": "3. Procedimiento", "b-axis-step-01-title": "En estado Ready", "b-axis-step-02-title": "Colocar la mesa de fresado", "b-axis-step-02-text": "En el modo Axis jog, coloque el husillo hacia dentro y gírelo más de 180° en la dirección A- para situarlo en una posición que facilite retirar la cubierta.", "b-axis-caution-label": "⚠️ Precaución", "b-axis-step-02-caution": "Como no se puede completar el homing, es posible que no se muestren las coordenadas de posición exactas. Compruebe visualmente y trabaje con cuidado para evitar colisiones.",
+  "b-axis-step-03-title": "Retirar la cubierta", "b-axis-step-04-title": "Retirar la correa dentada dañada del eje B", "b-axis-step-05-title": "Comprobar que la polea no tenga estructuras afiladas o puntiagudas", "b-axis-step-06-title": "Marcar la posición del tensor", "b-axis-step-07-title": "Afloje ligeramente el tornillo de fijación del tensor para que pueda moverse.",
+  "b-axis-step-08-title": "Instalar la correa dentada del eje B", "b-axis-step-08-text": "Gire la polea con la mano y compruebe que la correa engrane y gire sin deslizarse.", "b-axis-step-09-title": "Ajustar la tensión de la correa dentada", "b-axis-step-09-text": "Mueva el tensor a la posición marcada, ajuste la tensión de la correa dentada y apriete el perno en la posición adecuada. Compruebe el nivel de tensión.",
+  "b-axis-step-10-title": "Comprobar el funcionamiento del eje B", "b-axis-step-10-text": "En la página Axis jog, mueva el eje B varias veces en las direcciones + y - y compruebe que no haya ruido ni funcionamiento incorrecto.", "b-axis-step-11-title": "Aplicar Loctite en los orificios de los tornillos", "b-axis-step-12-title": "Instalar la cubierta en la orientación correcta", "b-axis-step-12-text": "Proceda en el orden de fijación temporal → ajuste de posición → apriete final y asegúrese de que no haya desnivel en la parte superior.", "b-axis-step-13-title": "Mover el eje A a una posición aproximadamente nivelada", "b-axis-step-14-title": "Ejecute el homing y confirme que se completa. El procedimiento ha finalizado."
+});
+
+Object.assign(TRANSLATIONS.ko, {
+  "machine-settings-title": "머신 세팅"
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "machine-settings-title": "Machine Settings"
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "machine-settings-title": "マシン設定"
+});
+
+Object.assign(TRANSLATIONS.es, {
+  "machine-settings-title": "Configuración de la máquina"
+});
+
+if (typeof document !== 'undefined' && typeof window !== 'undefined') {
+  // Standalone long documents use this small, explicit bridge instead of relying
+  // on functions declared in this script's private scope.
+  window.GenCoreI18nBridge = {
+    getText(lang, key, fallbackText) {
+      return getI18nText(lang, key, fallbackText);
+    }
+  };
+
+  const syncExternalDocument = (frame) => {
+    frame.contentWindow?.postMessage(createExternalDocumentLanguageMessage(currentLang), '*');
+    frame.contentWindow?.postMessage({ type: 'gencore-request-document-height' }, '*');
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('iframe[data-language-sync]').forEach((frame) => {
+      frame.addEventListener('load', () => syncExternalDocument(frame));
+    });
+  });
+
+  window.addEventListener('load', () => {
+    document.querySelectorAll('iframe[data-language-sync]').forEach(syncExternalDocument);
+  });
+
+  window.addEventListener('message', (event) => {
+    if (event.data?.type !== 'gencore-document-height' || typeof event.data.height !== 'number') return;
+    const frame = document.querySelector(`.external-document-frame[data-document-id="${event.data.documentId}"]`);
+    if (frame) frame.style.height = `${Math.max(720, Math.ceil(event.data.height))}px`;
   });
 }

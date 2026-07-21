@@ -615,7 +615,10 @@
         </div>
         <p class="subtitle">M AI & MillFix hyperDENT</p>
         <div class="content-card">
-          <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
+          <button type="button" onclick="openMachineSettingsModal('mai')" style="width:100%; background:var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition:box-shadow .2s, transform .2s, border-color .2s; box-shadow:0 2px 6px rgba(0,0,0,.05); display:flex; align-items:center; gap:14px; text-align:left;" onmouseover="this.style.boxShadow='0 8px 24px rgba(168,85,247,.2)'; this.style.transform='translateY(-3px)'; this.style.borderColor='#a855f7';" onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,.05)'; this.style.transform=''; this.style.borderColor='#e5e7eb';">
+            <span style="flex-shrink:0;"><img loading="lazy" src="assets/images/hyperdent/hyperdent-icon.webp" alt="hyperDENT" style="width:40px; height:auto; object-fit:contain;"></span>
+            <span style="color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5;" data-i18n="machine-settings-title">머신 세팅</span>
+          </button>
         </div>
       </section>
       <section id="sec-mai-hd-blank" class="content-section">
@@ -1497,224 +1500,7 @@
           <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
         </div>
       </section>
-      <section id="sec-mf-tools" class="content-section">
-        <h2 data-i18n="nav-mf-tools"><span data-i18n="mf-auto-612">🪛 공구</span></h2>
-        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-mf-tools" style="color:#a855f7; text-decoration:none;">#sec-mf-tools</a></div>
-        <p class="subtitle"><span data-i18n="mf-auto-367">MillFix 소개</span></p>
-        <div class="content-card">
-          <h3 style="margin-top:0; margin-bottom:20px; color:#374151; font-size:20px; font-weight:700;"><span data-i18n="mf-auto-593">💰 공구 포켓 위치</span></h3>
-          <img loading="lazy" src="./assets/images/sec-mf-tools/image-1.webp" alt="공구 포켓 위치"
-            style="margin:0 auto; width:100%; max-width:600px; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <hr class="divider-heavy">
-
-          <h3 id="mf-tool-list-target" style="margin-top:0; margin-bottom:20px; color:#374151; font-size:20px; font-weight:700; scroll-margin-top:20px;"><span data-i18n="mf-auto-613">🔩 공구 리스트&권장시간</span></h3>
-
-          <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; align-items:stretch;">
-            <div
-              class="parts-card" data-tool-id="T31">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t31-z20b.webp" alt="T31-Z2.0B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T31-Z2.0B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#f3f4f6; color:#6b7280; border:1px solid #d1d5db; margin-bottom:8px;">White</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Ball End Mill Ø2.0_L19
-                </div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Zirconia /
-                  Wax / Sintering Metal</div>
-              </div>
-            </div>
-            <!-- T32 -->
-            <div
-              class="parts-card" data-tool-id="T32">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t32-z10b.webp" alt="T32-Z1.0B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T32-Z1.0B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#f3f4f6; color:#6b7280; border:1px solid #d1d5db; margin-bottom:8px;">White</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Ball End Mill Ø1.0_L17
-                </div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Zirconia /
-                  Wax / Sintering Metal</div>
-              </div>
-            </div>
-            <!-- T33 -->
-            <div
-              class="parts-card" data-tool-id="T33">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t33-z06b.webp" alt="T33-Z0.6B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T33-Z0.6B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#f3f4f6; color:#6b7280; border:1px solid #d1d5db; margin-bottom:8px;">White</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Ball End Mill Ø0.6_L5
-                </div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Zirconia /
-                  Wax / Sintering Metal, PMMA / PEEK</div>
-              </div>
-            </div>
-            <!-- T34 -->
-            <div
-              class="parts-card" data-tool-id="T34">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t34-z03b.webp" alt="T34-Z0.3B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T34-Z0.3B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#f3f4f6; color:#6b7280; border:1px solid #d1d5db; margin-bottom:8px;">White</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Ball End Mill Ø0.3_L3
-                </div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Zirconia /
-                  Wax / Sintering Metal, PMMA / PEEK</div>
-              </div>
-            </div>
-            <!-- T35 -->
-            <div
-              class="parts-card" data-tool-id="T35">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t35-g20b.webp" alt="T35-G2.0B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T35-G2.0B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#dbeafe; color:#2563eb; border:1px solid #93c5fd; margin-bottom:8px;">Blue</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Diamond bur Ø2.0_L16</div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Hybrid
-                  Ceramic</div>
-              </div>
-            </div>
-            <!-- T36 -->
-            <div
-              class="parts-card" data-tool-id="T36">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t36-g10b.webp" alt="T36-G1.0B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T36-G1.0B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#dbeafe; color:#2563eb; border:1px solid #93c5fd; margin-bottom:8px;">Blue</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Diamond bur Ø1.0_L10</div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Hybrid
-                  Ceramic</div>
-              </div>
-            </div>
-            <!-- T37 -->
-            <div
-              class="parts-card" data-tool-id="T37">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t37-g06b.webp" alt="T37-G0.6B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T37-G0.6B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#dbeafe; color:#2563eb; border:1px solid #93c5fd; margin-bottom:8px;">Blue</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Diamond bur Ø0.6_L2</div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Hybrid
-                  Ceramic</div>
-              </div>
-            </div>
-            <!-- T38 -->
-            <div
-              class="parts-card" data-tool-id="T38">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t38-m20b.webp" alt="T38-M2.0B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T38-M2.0B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#fee2e2; color:#dc2626; border:1px solid #fca5a5; margin-bottom:8px;">Red</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Ball End Mill Ø2.0_L15
-                </div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">PMMA /
-                  PEEK</div>
-              </div>
-            </div>
-            <!-- T39 -->
-            <div
-              class="parts-card" data-tool-id="T39">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t39-m10b.webp" alt="T39-M1.0B"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T39-M1.0B</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#fee2e2; color:#dc2626; border:1px solid #fca5a5; margin-bottom:8px;">Red</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Ball End Mill Ø1.0_L15
-                </div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">PMMA /
-                  PEEK</div>
-              </div>
-            </div>
-            <!-- T40 Empty -->
-            <div
-              style="width:100%; border-radius:10px; border:2px dashed #d1d5db; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#f9fafb; color:#9ca3af; font-size:14px; font-weight:700;">
-              <span style="font-size:24px; margin-bottom:4px;">T40</span>
-              Empty
-            </div>
-            <!-- T41 Empty -->
-            <div
-              style="width:100%; border-radius:10px; border:2px dashed #d1d5db; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#f9fafb; color:#9ca3af; font-size:14px; font-weight:700;">
-              <span style="font-size:24px; margin-bottom:4px;">T41</span>
-              Empty
-            </div>
-            <!-- T42 -->
-            <div
-              class="parts-card" data-tool-id="T42">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t42-m15fl.webp" alt="T42-M1.5FL"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T42-M1.5FL</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#fee2e2; color:#dc2626; border:1px solid #fca5a5; margin-bottom:8px;">Red</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Flat End Mill Ø1.5_L15
-                </div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Screw
-                  channel machining for Zirconia / Wax / Sintering Metal, PMMA / PEEK</div>
-              </div>
-            </div>
-            <!-- T43 -->
-            <div
-              class="parts-card" data-tool-id="T43">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t43-m10f.webp" alt="T43-M1.0F"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T43-M1.0F</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#fee2e2; color:#dc2626; border:1px solid #fca5a5; margin-bottom:8px;">Red</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Flat End Mill Ø1.0_L6
-                </div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Implant
-                  interface machining for Zirconia / Wax / Sintering Metal, PMMA / PEEK</div>
-              </div>
-            </div>
-            <!-- T44 -->
-            <div
-              class="parts-card" data-tool-id="T44">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t44-m15r.webp" alt="T44-M1.5R"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T44-M1.5R</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#fee2e2; color:#dc2626; border:1px solid #fca5a5; margin-bottom:8px;">Red</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">Corner Radius End Mill
-                  Ø1.5_L7</div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Implant
-                  interface machining for Zirconia / Wax / Sintering Metal, PMMA / PEEK</div>
-              </div>
-            </div>
-            <!-- T45 -->
-            <div
-              class="parts-card" data-tool-id="T45">
-              <img loading="lazy" src="./assets/images/sec-mf-tools/t45-m16t.webp" alt="T45-M1.6T"
-                class="parts-card-img">
-              <div class="parts-card-body">
-                <div style="font-weight:800; font-size:15px; color:#1f2937; margin-bottom:6px;">T45-M1.6T</div>
-                <span
-                  style="display:inline-block; padding:2px 10px; border-radius:4px; font-size:12px; font-weight:600; background:#fef9c3; color:#a16207; border:1px solid #fde68a; margin-bottom:8px;">Yellow</span>
-                <div style="font-size:12px; color:#374151; line-height:1.6; font-weight:600;">T cutter Ø1.6_L8</div>
-                <div style="font-size:11px; color:#6b7280; line-height:1.5; margin-top:4px; font-weight:700;">Angled
-                  screw channel machining for Zirconia / Wax / Sintering Metal, PMMA / PEEK</div>
-              </div>
-            </div>
-      </section>
+      <section id="sec-mf-tools" class="content-section external-document-section"><iframe class="external-document-frame" data-language-sync data-document-id="millfix-tool-management" src="assets/documents/millfix/tool-management.html" title="MillFix Tool Management"></iframe></section>
       <!-- MillFix 설치/ 기본 조작 -->
       <section id="sec-mf-precheck" class="content-section">
         <h2 data-i18n="nav-mf-precheck"><span data-i18n="mf-auto-391">⚙️ 설치 및 준비 조건</span></h2>
@@ -2017,176 +1803,7 @@
             <img loading="lazy" src="./assets/images/sec-mf-transport/image-3.webp" alt="청소 모드 실행" style="flex:1; min-width:200px; max-width:48%; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
           </div>
       </section>
-      <section id="sec-mf-cable" class="content-section">
-        <h2 data-i18n="nav-mf-cable"><span data-i18n="mf-auto-1">🔌 케이블 연결</span></h2>
-        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-mf-cable" style="color:#a855f7; text-decoration:none;">#sec-mf-cable</a></div>
-        <p class="subtitle"><span data-i18n="mf-auto-2">MillFix 설치 및 기본 조작</span></p>
-
-        <div style="display:flex; gap:12px; margin-bottom:24px; flex-wrap:wrap;">
-          <a href="#sec-mf-cable-air" onclick="event.preventDefault(); document.getElementById('sec-mf-cable-air').scrollIntoView({behavior:'smooth', block:'start'});" style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#f8fafc; border:2px solid #e2e8f0; border-radius:10px; color:#374151; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='#eef2ff'; this.style.borderColor='#6366f1';" onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0';"><span data-i18n="mf-auto-3">💨 에어 레귤레이터 설치</span></a>
-          <a href="#sec-mf-cable-power" onclick="event.preventDefault(); document.getElementById('sec-mf-cable-power').scrollIntoView({behavior:'smooth', block:'start'});" style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#f8fafc; border:2px solid #e2e8f0; border-radius:10px; color:#374151; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='#eef2ff'; this.style.borderColor='#6366f1';" onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0';"><span data-i18n="mf-auto-4">🔌 전원 케이블 / LAN 케이블</span></a>
-          <a href="#sec-mf-cable-dust" onclick="event.preventDefault(); document.getElementById('sec-mf-cable-dust').scrollIntoView({behavior:'smooth', block:'start'});" style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#f8fafc; border:2px solid #e2e8f0; border-radius:10px; color:#374151; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='#eef2ff'; this.style.borderColor='#6366f1';" onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0';"><span data-i18n="mf-auto-5">🌪️ 집진 호스 연결</span></a>
-          <a href="#sec-mf-cable-signal" onclick="event.preventDefault(); document.getElementById('sec-mf-cable-signal').scrollIntoView({behavior:'smooth', block:'start'});" style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#f8fafc; border:2px solid #e2e8f0; border-radius:10px; color:#374151; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='#eef2ff'; this.style.borderColor='#6366f1';" onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0';"><span data-i18n="mf-auto-6">🔗 집진기 신호 케이블 연결</span></a>
-          <a href="#sec-mf-cable-ground" onclick="event.preventDefault(); document.getElementById('sec-mf-cable-ground').scrollIntoView({behavior:'smooth', block:'start'});" style="display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:#f8fafc; border:2px solid #e2e8f0; border-radius:10px; color:#374151; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.background='#eef2ff'; this.style.borderColor='#6366f1';" onmouseout="this.style.background='#f8fafc'; this.style.borderColor='#e2e8f0';"><span data-i18n="mf-auto-7">⚡ 접지선 연결</span></a>
-        </div>
-
-        <div class="content-card">
-          <h3 id="sec-mf-cable-air" style="color:#374151; font-size:20px; margin-top:12px; margin-bottom:16px; border-bottom:2px solid #e5e7eb; padding-bottom:8px; scroll-margin-top:80px;"><span data-i18n="mf-auto-3">💨 에어 레귤레이터 설치</span></h3>
-
-          <ul class="content-list">
-            <li><span data-i18n="mf-auto-8">장비 뒷면에 에어 레귤레이터를 걸 수 있는 </span><strong style="font-size:16px;"><span data-i18n="mf-auto-9">2개의 고정 볼트</span></strong><span data-i18n="mf-auto-10">가 있습니다. 에어 레귤레이터를 걸 수 있을 정도만 볼트를 풀어 둡니다.</span></li>
-          </ul>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-1.webp" alt="에어 레귤레이터 고정 볼트" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <ul class="content-list">
-            <li><span data-i18n="mf-auto-11">에어 레귤레이터를 볼트에 걸고, 볼트를 조여 고정합니다.</span></li>
-          </ul>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-2.webp" alt="에어 레귤레이터 고정" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <ul class="content-list">
-            <li><span data-i18n="mf-auto-12">에어 레귤레이터 우측 포트에 연결되어 있는 </span><strong style="font-size:16px;"><span data-i18n="mf-auto-13">직경 6mm 에어 호스</span></strong><span data-i18n="mf-auto-14">를 </span><strong style="font-size:16px;"><span data-i18n="mf-auto-15">[Air Input] 포트</span></strong><span data-i18n="mf-auto-16">에 연결합니다.</span></li>
-          </ul>
-
-          <div style="background:#fffbeb; border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px; margin-bottom:24px;">
-            <div style="display:flex; align-items:flex-start;">
-              <span style="font-size:18px; margin-right:12px;">⚠️</span>
-              <span style="color:#78350f; font-size:14px; line-height:1.6; font-weight:700;"><span data-i18n="mf-auto-17">호스를 연결한 후에는 손으로 가볍게 당겨 제대로 장착되었는지 확인하십시오!</span>
-            </div>
-          </div>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-3.webp" alt="에어 호스 연결" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <ul class="content-list">
-            <li><strong style="font-size:16px;"><span data-i18n="mf-auto-18">직경 8mm 호스</span></strong><span data-i18n="mf-auto-19">로 에어 컴프레서와 에어 레귤레이터 </span><strong style="font-size:16px;"><span data-i18n="mf-auto-20">좌측 포트</span></strong><span data-i18n="mf-auto-21">를 연결합니다.</span></li>
-          </ul>
-
-          <div style="background:#fffbeb; border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px; margin-bottom:24px;">
-            <div style="display:flex; align-items:flex-start;">
-              <span style="font-size:18px; margin-right:12px;">⚠️</span>
-              <span style="color:#78350f; font-size:14px; line-height:1.6; font-weight:700;"><span data-i18n="mf-auto-22">모든 에어 호스를 연결한 후에는 에어가 새는 부분이 없는지 (“쉬익” 소리 등) 반드시 확인하십시오!</span>
-            </div>
-          </div>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-4.webp" alt="컴프레서 연결" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <hr class="divider">
-
-          <h3 id="sec-mf-cable-power" style="color:#374151; font-size:20px; margin-top:0; margin-bottom:16px; border-bottom:2px solid #e5e7eb; padding-bottom:8px; scroll-margin-top:80px;"><span data-i18n="mf-auto-4">🔌 전원 케이블 / LAN 케이블</span></h3>
-
-          <ul style="margin:0 0 24px 0; padding-left:20px; color:#374151; font-size:15px; line-height:1.7;">
-            <li><span data-i18n="mf-auto-23">장비 좌측 후면에 전원 코드 및 LAN 포트 코드가 있습니다. 동봉된 전원 케이블을 전원 코드에, LAN케이블은 LAN 포트 코드에 연결합니다.</span></li>
-          </ul>
-
-          <div style="display:flex; flex-direction:row; gap:24px; align-items:flex-start; flex-wrap:wrap;">
-            <div style="flex:1; min-width:300px;">
-              <img loading="lazy" src="./assets/images/sec-mf-cable/lan.webp" alt="전원 케이블 및 LAN 케이블 연결" style="width:100%; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-            </div>
-
-            <div style="flex:1; min-width:300px; display:flex; flex-direction:column; gap:16px;">
-              <div class="info-callout">
-                <h4 style="margin:0 0 8px 0; color:#374151; font-size:16px;"><span data-i18n="mf-auto-24">📡 케이블 간 간섭 방지 (중요)</span></h4>
-                <ul style="margin:0; padding-left:20px; color:#374151; font-size:14px; line-height:1.6; font-weight:700;">
-                  <li><span data-i18n="mf-auto-25">LAN 케이블 사용 시, 전원 케이블과 </span><strong style="font-size:15px;"><span data-i18n="mf-auto-26">최소 1m 이상 이격하여 배치하십시오.</span></strong></li>
-                  <li><span data-i18n="mf-auto-27">케이블이 꺾이거나 눌리지 않도록 정리하여 단선 및 노이즈를 예방하십시오.</span></li>
-                </ul>
-              </div>
-
-              <div style="background:#fef2f2; border-left:4px solid #ef4444; padding:14px 18px; border-radius:8px;">
-                <h4 style="margin:0 0 8px 0; color:#991b1b; font-size:16px;"><span data-i18n="mf-auto-28">⚠️ 노이즈 영향 주의</span></h4>
-                <ul style="margin:0; padding-left:20px; color:#991b1b; font-size:14px; line-height:1.6; font-weight:700;">
-                  <li><span data-i18n="mf-auto-29">전원 케이블에서 발생하는 </span><strong style="font-size:15px;"><span data-i18n="mf-auto-30">50~60Hz 전자 노이즈</span></strong><span data-i18n="mf-auto-31">로 인해 장비 PC 동작에 영향을 줄 수 있습니다.</span></li>
-                </ul>
-              </div>
-
-              <div style="background:#fffbeb; border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px;">
-                <h4 style="margin:0 0 8px 0; color:#92400e; font-size:16px;"><span data-i18n="mf-auto-32">🧷 허브 연결 시 주의</span></h4>
-                <ul style="margin:0; padding-left:20px; color:#92400e; font-size:14px; line-height:1.6; font-weight:700;">
-                  <li><span data-i18n="mf-auto-33">허브에 연결된 LAN 케이블 또한 전원 케이블과 이격하여 배치하십시오.</span></li>
-                </ul>
-              </div>
-
-              <div class="info-callout">
-                <h4 style="margin:0 0 8px 0; color:#374151; font-size:16px;"><span data-i18n="mf-auto-34">🔌 전원 안정성 확인</span></h4>
-                <ul style="margin:0; padding-left:20px; color:#374151; font-size:14px; line-height:1.6; font-weight:700;">
-                  <li><span data-i18n="mf-auto-35">전원 연결 전, 콘센트 접촉 불량 및 전압 상태를 점검하십시오.</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <hr class="divider">
-
-          <h3 id="sec-mf-cable-dust" style="color:#374151; font-size:20px; margin-top:0; margin-bottom:16px; border-bottom:2px solid #e5e7eb; padding-bottom:8px; scroll-margin-top:80px;"><span data-i18n="mf-auto-5">🌪️ 집진 호스 연결</span></h3>
-
-          <ul style="margin:0 0 24px 0; padding-left:20px; color:#374151; font-size:15px; line-height:1.7;">
-            <li><span data-i18n="mf-auto-36">연결할 수 있는 집진 호스의 규격을 확인하십시오. (</span><a href="#sec-mf-precheck-dust-collector" onclick="event.preventDefault(); document.querySelector('.nav-item[data-section=\'sec-mf-precheck\']').click(); setTimeout(() => document.getElementById('sec-mf-precheck-dust-collector').scrollIntoView({behavior:'smooth', block:'start'}), 100);" style="color:#6366f1; text-decoration:underline; font-weight:bold; cursor:pointer;"><span data-i18n="mf-auto-37">🌪️ 집진기</span></a><span data-i18n="mf-auto-38"> 참고)
-              </span><ul style="margin-top:6px; padding-left:20px; color:#4b5563;">
-                <li><span data-i18n="mf-auto-39">내경 약 46.7mm / 외경: 약 50.6mm</span></li>
-              </ul>
-            </li>
-            <li style="margin-top:12px;"><span data-i18n="mf-auto-40">집진기 호스를 장비 후면의 </span><strong style="font-size:16px;"><span data-i18n="mf-auto-41">집진 호스 포트</span></strong><span data-i18n="mf-auto-42">에 밀어 넣어 연결하십시오.</span></li>
-          </ul>
-
-          <div style="display:flex; flex-direction:row; gap:16px; align-items:flex-start; flex-wrap:wrap; margin-bottom:24px;">
-            <img loading="lazy" src="./assets/images/sec-mf-cable/image-6.webp" alt="집진 호스 규격" style="flex:1; min-width:200px; max-width:48%; aspect-ratio:1.5; border-radius:10px; object-fit:cover; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-            <img loading="lazy" src="./assets/images/sec-mf-cable/image-7.webp" alt="집진 호스 포트 연결" style="flex:1; min-width:200px; max-width:48%; aspect-ratio:1.5; border-radius:10px; object-fit:cover; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-          </div>
-
-          <hr class="divider">
-
-          <h3 id="sec-mf-cable-signal" style="color:#374151; font-size:20px; margin-top:0; margin-bottom:16px; border-bottom:2px solid #e5e7eb; padding-bottom:8px; scroll-margin-top:80px;"><span data-i18n="mf-auto-6">🔗 집진기 신호 케이블 연결</span></h3>
-
-          <ul class="content-list">
-            <li><span data-i18n="mf-auto-43">신호 케이블의 사양을 반드시 확인하십시오. (</span><strong style="font-size:16px;"><span data-i18n="mf-auto-44">DC 타입 및 A접점 방식 모두 사용 가능</span></strong>)</li>
-          </ul>
-
-          <div style="background:#fffbeb; border-left:4px solid #f59e0b; padding:14px 18px; border-radius:8px; margin-bottom:24px;">
-            <div style="display:flex; align-items:flex-start;">
-              <span style="font-size:18px; margin-right:12px;">⚠️</span>
-              <div style="color:#78350f; font-size:14px; line-height:1.6; font-weight:700;">
-                <p style="margin:0 0 4px 0;"><span data-i18n="mf-auto-45">🧭 집진기 신호 케이블은 공급처에 문의하십시오.</span></p>
-                <p style="margin:0;"><span data-i18n="mf-auto-46">🏷️ 잘못된 포트 연결을 방지하기 위해 포트 라벨을 반드시 확인하십시오.</span></p>
-              </div>
-            </div>
-          </div>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-8.webp" alt="포트 라벨 확인" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <ul class="content-list">
-            <li><span data-i18n="mf-auto-47">신호 케이블 단자를 끝까지 밀어 넣어 완전히 체결되도록 합니다.</span></li>
-          </ul>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-9.webp" alt="신호 케이블 체결" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <ul class="content-list">
-            <li><span data-i18n="mf-auto-48">케이블 분리할 때는, 커넥터의 검은 부분을 </span><strong style="font-size:16px;"><span data-i18n="mf-auto-49">일자(-) 드라이버 등으로 누른채로 케이블을 당겨 분리</span></strong><span data-i18n="mf-auto-50">하십시오.</span></li>
-          </ul>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-10.webp" alt="케이블 분리 방법" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <hr class="divider">
-
-          <h3 id="sec-mf-cable-ground" style="color:#374151; font-size:20px; margin-top:0; margin-bottom:16px; border-bottom:2px solid #e5e7eb; padding-bottom:8px; scroll-margin-top:80px;"><span data-i18n="mf-auto-7">⚡ 접지선 연결</span></h3>
-
-          <ul class="content-list">
-            <li><span data-i18n="mf-auto-51">장비 보호 및 안정적인 동작을 위해 접지 장치 설치를 강력히 권장합니다.</span></li>
-            <li><span data-i18n="mf-auto-52">접지 플러그를 사용할 수 있는 환경에서는 반드시 사용하십시오.</span></li>
-          </ul>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-11.webp" alt="접지 플러그 사용 권장" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <ul class="content-list">
-            <li><span data-i18n="mf-auto-53">스타터 키트에 포함된 접지선도 반드시 설치하십시오.</span></li>
-          </ul>
-
-          <img loading="lazy" src="./assets/images/sec-mf-cable/image-12.webp" alt="스타터 키트 접지선 설치" style="width:100%; max-width:600px; margin:0 auto 24px auto; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-
-          <hr class="divider">
-        </div>
-      </section>
+      <section id="sec-mf-cable" class="content-section external-document-section"><iframe class="external-document-frame" data-language-sync data-document-id="millfix-cable-connection" src="assets/documents/millfix/cable-connection.html" title="MillFix Cable Connection"></iframe></section>
       <section id="sec-mf-power" class="content-section">
         <h2 data-i18n="nav-mf-power"><span data-i18n="mf-auto-370">⚡ 전원 켜기/ 끄기, 워밍업</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
@@ -2412,748 +2029,11 @@
             style="margin:16px auto 0; width:100%; max-width:600px; border-radius:10px; object-fit:contain; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.10);">
         </div>
       </section>
-      <section id="sec-mf-calibration-auto" class="content-section">
-        <h2 data-i18n="nav-mf-calibration-auto"><span data-i18n="mf-auto-93">🤖 오토 캘리브레이션</span></h2>
-        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-mf-calibration-auto"
-            style="color:#a855f7; text-decoration:none;">#sec-mf-calibration-auto</a></div>
-        <p class="subtitle"><span data-i18n="mf-auto-94">MillFix 캘리브레이션</span></p>
-        <div class="content-card">
-          <div class="step-container">
+      <section id="sec-mf-calibration-auto" class="content-section external-document-section"><iframe class="external-document-frame" data-language-sync data-document-id="millfix-auto-calibration" src="assets/documents/millfix/auto-calibration.html" title="MillFix Auto Calibration"></iframe></section>
 
-            <!-- Step 1 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 1</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-1.webp" alt="오토 캘리브레이션 Step 1"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-95">
-                셋업 페이지의 "Auto" 버튼을 클릭해 오토 캘리브레이션 메뉴로 진입합니다.
-            </span></div>
+      <section id="sec-mf-calibration-manual" class="content-section external-document-section"><iframe class="external-document-frame" data-language-sync data-document-id="millfix-manual-calibration" src="assets/documents/millfix/manual-calibration.html" title="MillFix Manual Calibration"></iframe></section>
 
-            <!-- Step 2 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 2</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-2.webp" alt="오토 캘리브레이션 Step 2"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-96">
-                해당 물품들을 준비해주세요. Calibration Pin(Probe Pin), Calibration Jig, Torque Driver 0.6N.
-                </span><br><span data-i18n="mf-auto-97">캘리브레이션 전에 반드시 밀링 룸, 캘리브레이션 핀, 캘리브레이션 지그는 깨끗하게 청소해주세요.
-              </span></p>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 3</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-3.webp" alt="오토 캘리브레이션 Step 3"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-98">
-                화면의 안내에 따라 캘리브레이션 핀을 스핀들에 장착합니다. </span><br><span data-i18n="mf-auto-99">1. 핀을 준비해주세요.
-            </span></div>
-
-            <!-- Step 4 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 4</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-4.webp" alt="오토 캘리브레이션 Step 4"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-98">
-                화면의 안내에 따라 캘리브레이션 핀을 스핀들에 장착합니다. </span><br><span data-i18n="mf-auto-100">2. Open 버튼을 클릭해 콜렛 척을 개방합니다.
-            </span></div>
-
-            <!-- Step 5 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 5</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-5.webp" alt="오토 캘리브레이션 Step 5"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-98">
-                화면의 안내에 따라 캘리브레이션 핀을 스핀들에 장착합니다. </span><br><span data-i18n="mf-auto-101">3. 캘리브레이션 핀을 개방된 콜렛 척에 끝까지 밀어넣어주세요.
-            </span></div>
-
-            <!-- Step 6 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 6</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-6.webp" alt="오토 캘리브레이션 Step 6"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-98">
-                화면의 안내에 따라 캘리브레이션 핀을 스핀들에 장착합니다. </span><br><span data-i18n="mf-auto-102">4. 이제 Close 버튼을 클릭해 콜렛 척을 닫아 캘리브레이션 핀을 고정해주세요.
-            </span></div>
-
-            <!-- Step 7 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 7</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-7.webp" alt="오토 캘리브레이션 Step 7"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-63">
-                Next 버튼을 눌러 다음 단계로 넘어갑니다.
-            </span></div>
-
-            <!-- Step 8 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 8</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-8.webp" alt="오토 캘리브레이션 Step 8"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-103">
-                사진에 표시된 B축 기울기 버튼을 눌러 주세요
-            </span></div>
-
-            <!-- Step 9 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 9</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-9.webp" alt="오토 캘리브레이션 Step 9"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-104">
-                캘리브레이션 지그(캘리브레이션 판)을 사진과 같이 C클랩프에 넣어주세요.
-            </span></div>
-
-            <!-- Step 10 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 10</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-10.webp" alt="오토 캘리브레이션 Step 10"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-105">
-                다시 B축 기울기 버튼을 눌러 B축을 원래대로 돌려주세요.
-            </span></div>
-
-            <!-- Step 11 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 11</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-11.webp" alt="오토 캘리브레이션 Step 11"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-106">
-                B축이 원래대로 돌아왔으면, 준비했던 0.6N의 토크 드라이버로 사진과 같이 캘리브레이션 지그를 장착해주세요. </span><br><span data-i18n="mf-auto-107"> 캘리브레이션 지그가 흔들리지 않도록 손으로 밀면서 체결해주세요.
-            </span></div>
-
-            <!-- Step 12 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 12</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-12.webp" alt="오토 캘리브레이션 Step 12"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-63">
-                Next 버튼을 눌러 다음 단계로 넘어갑니다.
-            </span></div>
-
-            <!-- Step 13 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 13</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-13.webp" alt="오토 캘리브레이션 Step 13"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-108">
-                "Checking for Cleaning" 버튼을 누르기 전 캘리브레이션 핀과 지그의 청소 상태를 마지막으로 확인해주세요. </span><br><span data-i18n="mf-auto-109"> 캘리브레이션 핀과 지그에 이물질, 물기 등이 있으면 캘리브레이션이 실패할 수 있습니다. </span><br><span data-i18n="mf-auto-110"> 청소 상태가 양호하다면 이제 "Checking for Cleaning" 버튼을 눌러주세요.
-            </span></div>
-
-            <!-- Step 14 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 14</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-14.webp" alt="오토 캘리브레이션 Step 14"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-111">
-                스타터 키트에 동봉된 통전선을 이용해 캘리브레이션 핀과 지그 사이에 전류가 흐르는지 확인하세요. 
-            </span></div>
-
-            <!-- Step 15 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 15</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-15.webp" alt="오토 캘리브레이션 Step 15"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-112">
-                통전 체크는 최소 3번 하셔야합니다. 
-            </span></div>
-
-            <!-- Step 16 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 16</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-16.webp" alt="오토 캘리브레이션 Step 16"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-113">
-                3번 이상 통전 체크가 완료되면, "Next" 버튼을 눌러 다음 단계로 넘어갑니다.
-            </span></div>
-
-            <!-- Step 17 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 17</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-17.webp" alt="오토 캘리브레이션 Step 17"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-114">
-                이제 모든 확인이 끝났습니다. </span><br><span data-i18n="mf-auto-115"> Calibration Start 버튼을 눌러 캘리브레이션을 시작하세요.
-            </span></div>
-
-            <!-- Step 18 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 18</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-18.webp" alt="오토 캘리브레이션 Step 18"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-116">
-                OK를 눌러 주세요.
-            </span></div>
-
-            <!-- Step 19 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 19</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-19.webp" alt="오토 캘리브레이션 Step 19"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-117">
-                캘리브레이션에는 대략 20분 정도의 시간이 소요됩니다. 
-            </span></div>
-
-            <!-- Step 20 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 20</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-20.webp" alt="오토 캘리브레이션 Step 20"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-118">
-                캘리브레이션이 끝나면 "Save Work Offset" 버튼을 눌러 파라미터를 저장합니다. 
-            </span></div>
-
-            <!-- Step 21 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 21</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-21.webp" alt="오토 캘리브레이션 Step 21"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-119">
-                Save 버튼을 눌러주세요. 해당 버튼을 2~3회 정도 눌러주시는 걸 권장합니다. 
-            </span></div>
-
-            <!-- Step 22 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 22</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-22.webp" alt="오토 캘리브레이션 Step 22"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-120">
-                Save 버튼을 눌렀으면 이제 Close 버튼을 눌러 닫아주세요. 
-            </span></div>
-
-            <!-- Step 23 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 23</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-23.webp" alt="오토 캘리브레이션 Step 23"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-63">
-                Next 버튼을 눌러 다음 단계로 넘어갑니다.
-            </span></div>
-
-            <!-- Step 24 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 24</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-24.webp" alt="오토 캘리브레이션 Step 24"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-121">
-                화면의 안내에 따라 캘리브레이션 핀과 지그를 제거해주세요. </span><br><span data-i18n="mf-auto-122"> 1. 버튼을 누른 후 스핀들이 앞으로 오면, 장착했던 캘리브레이션 핀을 손으로 잡아주세요
-            </span></div>
-
-            <!-- Step 25 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 25</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-25.webp" alt="오토 캘리브레이션 Step 25"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-121">
-                화면의 안내에 따라 캘리브레이션 핀과 지그를 제거해주세요. </span><br><span data-i18n="mf-auto-123"> 2. 콜렛 척 Open 버튼을 눌러 콜렛 척을 열어주세요. 
-            </span></div>
-
-            <!-- Step 26 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 26</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-26.webp" alt="오토 캘리브레이션 Step 26"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-121">
-                화면의 안내에 따라 캘리브레이션 핀과 지그를 제거해주세요. </span><br><span data-i18n="mf-auto-124"> 3. 콜렛 척이 열리면, 캘리브레이션 핀을 콜렛 척에서 빼서 제거합니다.
-            </span></div>
-
-            <!-- Step 27 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 27</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-27.webp" alt="오토 캘리브레이션 Step 27"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-121">
-                화면의 안내에 따라 캘리브레이션 핀과 지그를 제거해주세요. </span><br><span data-i18n="mf-auto-125"> 4. Close 버튼을 눌러 콜렛 척을 닫아주세요.
-            </span></div>
-
-            <!-- Step 28 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 28</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-28.webp" alt="오토 캘리브레이션 Step 28"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-63">
-                Next 버튼을 눌러 다음 단계로 넘어갑니다.
-            </span></div>
-
-            <!-- Step 29 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 29</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-29.webp" alt="오토 캘리브레이션 Step 29"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-126">
-                화면의 안내에 따라 캘리브레이션 지그를 탈거해주세요. </span><br><span data-i18n="mf-auto-127"> 1. A축 기울기 버튼을 눌러 A축을 기울여주세요.
-            </span></div>
-
-            <!-- Step 30 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 30</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-30.webp" alt="오토 캘리브레이션 Step 30"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-126">
-                화면의 안내에 따라 캘리브레이션 지그를 탈거해주세요. </span><br><span data-i18n="mf-auto-128"> 2. 토크 드라이버를 이용해 아까 고정한 캘리브레이션 지그를 풀어주세요.
-            </span></div>
-
-            <!-- Step 31 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 31</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-31.webp" alt="오토 캘리브레이션 Step 31"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-126">
-                화면의 안내에 따라 캘리브레이션 지그를 탈거해주세요. </span><br><span data-i18n="mf-auto-129"> 3. B축 기울기 버튼을 눌러 B축을 기울여주세요.
-            </span></div>
-
-            <!-- Step 32 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 32</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-32.webp" alt="오토 캘리브레이션 Step 32"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-126">
-                화면의 안내에 따라 캘리브레이션 지그를 탈거해주세요. </span><br><span data-i18n="mf-auto-130"> 4. 캘리브레이션 지그를 손으로 빼주세요.
-            </span></div>
-
-            <!-- Step 33 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 33</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-33.webp" alt="오토 캘리브레이션 Step 33"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-131">
-                이제 Complete 버튼을 눌러 캘리브레이션을 완료해주세요.
-            </span></div>
-
-            <!-- Step 34 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 34</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-auto/auto-calibration-step-34.webp" alt="오토 캘리브레이션 Step 34"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-132">
-                오토 캘리브레이션 후에 바로 매뉴얼 캘리브레이션을 진행하시는 것을 권장드립니다. 
-            </span></div>
-      </section>
-
-      <section id="sec-mf-calibration-manual" class="content-section">
-        <h2 data-i18n="nav-mf-calibration-manual"><span data-i18n="mf-auto-133">🖐️ 매뉴얼 캘리브레이션</span></h2>
-        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-mf-calibration-manual"
-            style="color:#a855f7; text-decoration:none;">#sec-mf-calibration-manual</a></div>
-        <p class="subtitle"><span data-i18n="mf-auto-94">MillFix 캘리브레이션</span></p>
-        <div class="content-card">
-          <div class="step-container">
-            <div class="step-card">
-              <div class="step-badge">STEP 1</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-1.webp" alt="매뉴얼 캘리브레이션 1" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-134">
-                Manual 버튼을 눌러 매뉴얼 캘리브레이션으로 진입하세요.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 2</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-2.webp" alt="매뉴얼 캘리브레이션 2" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-135">
-                왁스 디스크 10~12mm, 전자 버니어 캘리퍼스, 31번 공구가 준비되어 있는지 확인하세요.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 3</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-3.webp" alt="매뉴얼 캘리브레이션 3" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-136">
-                먼저 B축을 기울여 왁스를 장착하기 편한 위치로 회전시킵니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 4</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-4.webp" alt="매뉴얼 캘리브레이션 4" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-137">
-                왁스를 장착했으면 다시 B축을 원래대로 회전시킨 후 토크 드라이버를 이용해 고정해주세요.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 5</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-5.webp" alt="매뉴얼 캘리브레이션 5" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-138">
-               왁스 디스크의 고정이 끝났으면, 사진에 표시된 Start 버튼을 눌러 A 큐브 가공을 시작합니다. </span><br><span data-i18n="mf-auto-139"> A큐브는 y축을 보정합니다. </span><br><span data-i18n="mf-auto-140"> 좌측 상단의 로딩창이 완전히 끝나 사라질 때까지 기다려주세요. </span><br><span data-i18n="mf-auto-141"> 가공은 대략 4분 내외의 시간이 소요됩니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 6</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-6.webp" alt="매뉴얼 캘리브레이션 6" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-142">
-                가공이 끝나면 Next 버튼을 눌러 다음 단계로 넘어가세요.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 7</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-7.webp" alt="매뉴얼 캘리브레이션 7" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-143">
-                가공이 완료되면 </span><br><span data-i18n="mf-auto-144">1. 먼저 큐브를 왁스 디스크에서 분리한다. </span><br><span data-i18n="mf-auto-145">2. 큐브 12시 방향의 홈을 기준으로 해당 큐브의 값이 +인지, -인지 구분한다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 8</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-8.webp" alt="매뉴얼 캘리브레이션 8" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-146">
-                3.화면 속 이미지 처럼 튀어나온 단차 부분에 버니어 캘리퍼스의 머리를 얹어 단차의 양을 측정합니다. </span><br><span data-i18n="mf-auto-147"> 4.측정값을 입력한다. </span><br><span data-i18n="mf-auto-148">이때 +큐브라면 값만큼 윗 방향의 화살표를, -큐브라면 값만큼 아래 방향의 화살표를 입력해주세요. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 9</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-9.webp" alt="매뉴얼 캘리브레이션 9" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-149">
-               설명 속 큐브는 + 큐브였으며, 버니어 캘리퍼스로 측정된 단차의 값은 0.02mm 였습니다. </span><br><span data-i18n="mf-auto-150">따라서 +0.02mm가 되도록 윗 방향의 화살표를 입력했습니다. </span><br><span data-i18n="mf-auto-151"> -큐브였다면 -0.02mm가 되도록 아래 방향의 화살표를 입력하시면 됩니다. </span><br><span data-i18n="mf-auto-152"> 수치 입력 후 Apply Correction Value 버튼을 눌러주세요.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 10</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-10.webp" alt="매뉴얼 캘리브레이션 10" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-153">
-               Apply 버튼을 누른 후 확인 메시지 창에 OK 버튼을 눌러주세요. Apply 버튼은 한번만 누르시기 바랍니다. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 11</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-11.webp" alt="매뉴얼 캘리브레이션 11" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-63">
-               Next 버튼을 눌러 다음 단계로 넘어갑니다. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 12</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-12.webp" alt="매뉴얼 캘리브레이션 12" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-154">
-               이제 높이를 측정해주세요. 화면 속 이미지의 큐브 홈의 위치를 참고해 높이를 측정해주시기 바랍니다. </span><br><span data-i18n="mf-auto-155"> 높이 기본값은 8mm 입니다. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 13</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-13.webp" alt="매뉴얼 캘리브레이션 13" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-156">
-               측정한 높이를 입력하세요. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 14</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-14.webp" alt="매뉴얼 캘리브레이션 14" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-153">
-               Apply 버튼을 누른 후 확인 메시지 창에 OK 버튼을 눌러주세요. Apply 버튼은 한번만 누르시기 바랍니다. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 15</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-15.webp" alt="매뉴얼 캘리브레이션 15" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-63">
-               Next 버튼을 눌러 다음 단계로 넘어갑니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 16</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-16.webp" alt="매뉴얼 캘리브레이션 16" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-157">
-               이제 B큐브를 가공합니다. C클램프에서 왁스 디스크를 제거하지말고 그 상태 그대로 6시 방향에 B큐브를 가공합니다. B큐브는 x축을 보정합니다. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 17</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-17.webp" alt="매뉴얼 캘리브레이션 17" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-158">
-               B큐브 가공이 끝나면 Next 버튼을 눌러 다음 단계로 넘어갑니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 18</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-18.webp" alt="매뉴얼 캘리브레이션 18" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-159">
-               A큐브와 같이 화면 속 이미지를 참고해 큐브가 +인지 -인지 구분한 후, 버니어 캘리퍼스로 단차의 양을 측정합니다. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 19</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-19.webp" alt="매뉴얼 캘리브레이션 19" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-160">
-               A큐브와 같이 +큐브라면 윗 방향의 화살표를, -큐브라면 아래 방향의 화살표를 입력해주세요. 수치 입력 후 Apply Correction Value 버튼을 눌러주세요.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 20</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-20.webp" alt="매뉴얼 캘리브레이션 20" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-161">
-               Apply Correction Value 버튼을 누른 후 확인 메시지 창에 OK 버튼을 눌러주세요. Apply 버튼은 한번만 누르시기 바랍니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 21</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-21.webp" alt="매뉴얼 캘리브레이션 21" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-162">
-               OK 버튼 클릭
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 22</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-22.webp" alt="매뉴얼 캘리브레이션 22" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-163">
-               Next를 눌러 다음 단계로 넘어갑니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 23</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-23.webp" alt="매뉴얼 캘리브레이션 23" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-164">
-               A큐브와 같이 이번엔 높이를 측정합니다. 화면 속 이미지의 큐브 홈의 위치를 참고해 높이를 측정해주시기 바랍니다. </span><br><span data-i18n="mf-auto-155"> 높이 기본값은 8mm 입니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 24</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-24.webp" alt="매뉴얼 캘리브레이션 24" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-165">
-               측정된 높이 입력 후
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 25</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-25.webp" alt="매뉴얼 캘리브레이션 25" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-166">
-               Apply 버튼 클릭. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 26</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-26.webp" alt="매뉴얼 캘리브레이션 26" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-167">
-               OK 버튼 클릭 후 Complete를 눌러 캘리브레이션을 완료합니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 27</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-27.webp" alt="매뉴얼 캘리브레이션 27" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-168">
-               Save Work Offset 버튼을 눌러 보정값을 저장합니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 28</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-28.webp" alt="매뉴얼 캘리브레이션 28" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-169">
-               Work Offsets 창이 뜨는데 save 버튼을 눌러주세요. 그리고 휴대폰으로 해당 화면의 사진을 찍으세요. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 29</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-29.webp" alt="매뉴얼 캘리브레이션 29" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-170">
-               사진 촬영이 끝났으면 Close 버튼을 눌러 창을 닫아주세요.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 30</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-30.webp" alt="매뉴얼 캘리브레이션 30" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-171">
-               표시된 버튼을 눌러 메인 페이지로 돌아갑니다.
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 31</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-31.webp" alt="매뉴얼 캘리브레이션 31" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-172">
-               캘리브레이션은 끝났지만 해당 Offset들이 정상적으로 적용됐는지 확인할 차례입니다. </span><br><span data-i18n="mf-auto-173"> Set up 페이지로 이동후, Parameter & I/O List 메뉴로 진입해주세요. 
-              </span></p>
-            </div>
-            <div class="step-card">
-              <div class="step-badge">STEP 32</div>
-              <img loading="lazy" src="./assets/images/sec-mf-calibration-manual/manual-calibration-32.webp" alt="매뉴얼 캘리브레이션 32" class="step-img">
-              <p class="step-text"><span data-i18n="mf-auto-174">
-               아까 찍은 사진을 이용해 저장된 Work Offset과 일치하는지 확인하세요. 
-              </span></p>
-            </div>
-      </section>
-
-      <section id="sec-mf-cal-tool-pos-auto" class="content-section">
-        <h2 data-i18n="nav-mf-cal-tool-pos-auto"><span data-i18n="mf-auto-54">🤖 툴 포지션 캘리브레이션(오토)</span></h2>
-        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-mf-cal-tool-pos-auto"
-            style="color:#a855f7; text-decoration:none;">#sec-mf-cal-tool-pos-auto</a></div>
-        <p class="subtitle"><span data-i18n="mf-auto-55">MillFix 툴 포지션 캘리브레이션</span></p>
-        <div class="content-card">
-          <div class="step-container">
-
-            <!-- Step 1 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 1</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-1.webp" alt="툴 포지션 캘리브레이션(오토) Step 1"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-56">
-                Set up 페이지로 진입하시고 </span><br><span data-i18n="mf-auto-57">툴 포지션 캘리브레이션 매뉴에서 Auto를 클릭해주세요.
-              </span></p>
-            </div>
-            <!-- Step 2 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 2</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-2.webp" alt="툴 포지션 캘리브레이션(오토) Step 2"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-58">
-                화면에 표시된 밀링룸, 툴 포켓, 캘리브레이션 프로브(핀)의 청결 상태를 확인 해주세요. 
-              </span></p>
-            </div>
-            <!-- Step 3 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 3</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-3.webp" alt="툴 포지션 캘리브레이션(오토) Step 3"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-59">
-                캘리브레이션 핀을 준비하시고
-              </span></p>
-            </div>
-            <!-- Step 4 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 4</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-4.webp" alt="툴 포지션 캘리브레이션(오토) Step 4"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-60">
-                화면 속 표시된 버튼을 눌러 콜렛 척을 개방해주세요.
-              </span></p>
-            </div>
-            <!-- Step 5 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 5</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-5.webp" alt="툴 포지션 캘리브레이션(오토) Step 5"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-61">
-                개방된 콜렛 척에 핀을 밀어넣은 상태로
-              </span></p>
-            </div>
-            <!-- Step 6 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 6</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-6.webp" alt="툴 포지션 캘리브레이션(오토) Step 6"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-62">
-                콜렛 척을 닫아 핀을 콜렛 척에 장착합니다. 
-              </span></p>
-            </div>
-            <!-- Step 7 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 7</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-7.webp" alt="툴 포지션 캘리브레이션(오토) Step 7"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-63">
-                Next 버튼을 눌러 다음 단계로 넘어갑니다.
-              </span></p>
-            </div>
-            <!-- Step 8 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 8</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-8.webp" alt="툴 포지션 캘리브레이션(오토) Step 8"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-64">
-                다시 한번 화면 속에 초록색으로 표시된 툴 포켓 부분과, 캘리브레이션 핀의 청결 상태를 확인 하세요. </span><br><span data-i18n="mf-auto-65"> 청결 상태가 양호하다면 화면에 표시된 Checking for Cleaning 버튼을 눌러주세요.
-              </span></p>
-            </div>
-            <!-- Step 9 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 9</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-9.webp" alt="툴 포지션 캘리브레이션(오토) Step 9"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-66">
-                Checking for Cleaning 버튼을 누르면 전류가 흐릅니다. 스타터 키트에 포함된 통전선을 이용해 프로브 핀과 툴 포켓 부분을 이어 전류가 정상적으로 흐르는지 확인합니다. 
-              </span></p>
-            </div>
-            <!-- Step 10 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 10</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-10.webp" alt="툴 포지션 캘리브레이션(오토) Step 10"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-67">
-                최소 3번 이상 확인하면 이제 Next를 눌러 다음 단계로 넘어갈 수 있습니다. 
-              </span></p>
-            </div>
-            <!-- Step 11 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 11</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-11.webp" alt="툴 포지션 캘리브레이션(오토) Step 11"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-68">
-                캘리브레이션 스타트 버튼을 눌러 캘리브레이션을 시작합니다.
-              </span></p>
-            </div>
-            <!-- Step 12 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 12</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-12.webp" alt="툴 포지션 캘리브레이션(오토) Step 12"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-69">
-                OK를 눌러주세요.
-              </span></p>
-            </div>
-            <!-- Step 13 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 13</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-13.webp" alt="툴 포지션 캘리브레이션(오토) Step 13"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-70">
-                총 3단계의 캘리브레이션이 끝나면 Next 버튼을 눌러 다음 단계로 넘어갑니다.
-              </span></p>
-            </div>
-            <!-- Step 14 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 14</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-14.webp" alt="툴 포지션 캘리브레이션(오토) Step 14"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-71">
-                캘리브레이션이 끝났습니다. Next 버튼을 눌러 다음 단계로 넘어갑니다. 
-              </span></p>
-            </div>
-            <!-- Step 15 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 15</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-15.webp" alt="툴 포지션 캘리브레이션(오토) Step 15"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-72">
-                이제 장착했던 캘리브레이션 핀을 제거합니다. 화면속 1번을 눌러주세요. </span><br><span data-i18n="mf-auto-73"> 스핀들이 앞으로 오면 프로브핀을 손으로 가볍게 잡아주세요. 
-              </span></p>
-            </div>
-            <!-- Step 16 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 16</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-16.webp" alt="툴 포지션 캘리브레이션(오토) Step 16"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-74">
-                2번 콜렛 척 오픈 버튼을 눌러 콜렛 척을 개방해주세요. </span><br><span data-i18n="mf-auto-75"> 콜렛 척이 개방되면 프로브 핀을 제거합니다.
-              </span></p>
-            </div>
-            <!-- Step 17 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 17</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-17.webp" alt="툴 포지션 캘리브레이션(오토) Step 17"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-76">
-                핀을 제거했으면 3번을 눌러주세요.
-              </span></p>
-            </div>
-            <!-- Step 18 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 18</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-18.webp" alt="툴 포지션 캘리브레이션(오토) Step 18"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-77">
-                핀이 제거된 콜렛 척을 닫아주세요. 4번 콜렛 척 클로즈 버튼을 눌러 콜렛 척을 닫아주세요.
-              </span></p>
-            </div>
-            <!-- Step 19 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 19</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-19.webp" alt="툴 포지션 캘리브레이션(오토) Step 19"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-78">
-                Complete 버튼을 눌러 캘리브레이션을 완료합니다. 이제 툴 포지션 캘리브레이션(오토)이 완료되었습니다. 
-              </span></p>
-            </div>
-            <!-- Step 20 -->
-            <div class="step-card">
-              <div class="step-badge">STEP 20</div>
-              <img loading="lazy" src="./assets/images/sec-mf-cal-tool-pos-auto/tool-position-calibration-auto-step-20.webp" alt="툴 포지션 캘리브레이션(오토) Step 20"
-                class="step-img">
-                <p class="step-text"><span data-i18n="mf-auto-79">
-                메인 페이지로 가는 버튼을 눌러 마무리합니다. 
-              </span></p>
-            </div>
-      </section>
+      <section id="sec-mf-cal-tool-pos-auto" class="content-section external-document-section"><iframe class="external-document-frame" data-language-sync data-document-id="millfix-auto-tool-position-calibration" src="assets/documents/millfix/auto-tool-position-calibration.html" title="MillFix Auto Tool Position Calibration"></iframe></section>
 
       <section id="sec-mf-cal-tool-pos-manual" class="content-section">
         <h2 data-i18n="nav-mf-cal-tool-pos-manual"><span data-i18n="mf-auto-80">🖐️ 툴 포지션 캘리브레이션(매뉴얼)</span></h2>
@@ -4647,6 +3527,12 @@
               </div>
               <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;"><span data-i18n="mf-auto-319">MillFix 하이퍼덴트 설정방법</span></p>
             </div>
+            <button type="button" onclick="openMachineSettingsModal('millfix')" style="width:100%; background:var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition:box-shadow .2s, transform .2s, border-color .2s; box-shadow:0 2px 6px rgba(0,0,0,.05); display:flex; align-items:center; gap:14px; text-align:left;" onmouseover="this.style.boxShadow='0 8px 24px rgba(168,85,247,.2)'; this.style.transform='translateY(-3px)'; this.style.borderColor='#a855f7';" onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,.05)'; this.style.transform=''; this.style.borderColor='#e5e7eb';">
+              <span style="flex-shrink:0;"><img loading="lazy" src="assets/images/hyperdent/hyperdent-icon.webp" alt="hyperDENT" style="width:40px; height:auto; object-fit:contain;"></span>
+              <span style="color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5;" data-i18n="machine-settings-title">머신 세팅</span>
+            </button>
+          </div>
+        </div>
       </section>
       <section id="sec-mf-hd-blanks" class="content-section">
         <h2 data-i18n="nav-mf-hd-blanks"><span class="icon-puck"></span><span data-i18n="mf-auto-292"> 소재(blanks)</span></h2>
@@ -6614,6 +5500,19 @@
         </script>
       </section>
 <section id="sec-rep-mai-parts-guide" class="content-section">
+        <style>
+          /* Keep the repair-guide layout unified while making each part category identifiable at a glance. */
+          #sec-rep-mai-parts-guide .mai-category-group[data-category="spindle"] { --mai-theme:#a855f7; --mai-theme-soft:#f3e8ff; --mai-theme-border:#e9d5ff; --mai-theme-shadow:rgba(168,85,247,.15); }
+          #sec-rep-mai-parts-guide .mai-category-group[data-category="pc"] { --mai-theme:#2563eb; --mai-theme-soft:#dbeafe; --mai-theme-border:#bfdbfe; --mai-theme-shadow:rgba(37,99,235,.15); }
+          #sec-rep-mai-parts-guide .mai-category-group[data-category="drive"] { --mai-theme:#d97706; --mai-theme-soft:#fef3c7; --mai-theme-border:#fde68a; --mai-theme-shadow:rgba(217,119,6,.16); }
+          #sec-rep-mai-parts-guide .mai-category-group[data-category="sensor"] { --mai-theme:#0f766e; --mai-theme-soft:#ccfbf1; --mai-theme-border:#99f6e4; --mai-theme-shadow:rgba(15,118,110,.15); }
+          #sec-rep-mai-parts-guide .mai-category-header { color:var(--mai-theme) !important; border-left-color:var(--mai-theme) !important; }
+          #sec-rep-mai-parts-guide .mai-category-icon { width:22px; height:22px; flex:0 0 22px; display:inline-block; color:var(--mai-theme); }
+          #sec-rep-mai-parts-guide .mai-category-icon svg { width:100%; height:100%; display:block; }
+          #sec-rep-mai-parts-guide .mai-category-icon img { width:100%; height:100%; display:block; object-fit:contain; }
+          #sec-rep-mai-parts-guide .mai-card-item > div > div:first-child { background:var(--mai-theme-soft) !important; color:var(--mai-theme) !important; }
+          #sec-rep-mai-parts-guide .mai-card-item:hover { border-color:var(--mai-theme) !important; box-shadow:0 8px 24px var(--mai-theme-shadow) !important; }
+        </style>
         <h2 data-i18n="nav-rep-parts-guide"><span data-i18n="mf-auto-668">🔧 수리 가이드</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#sec-rep-mai-parts-guide"
@@ -6632,7 +5531,8 @@
             <!-- Category 1: Spindle -->
             <div class="mai-category-group" data-category="spindle" style="display:flex; flex-direction:column; gap:12px;">
               <div class="mai-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
-                <span data-i18n="rep-mai-parts-spindle-category">⚙️ 스핀들 관련 (Spindle Parts)</span>
+                <span class="mai-category-icon" aria-hidden="true"><img src="assets/images/icons/spindle.webp" alt=""></span>
+                <span data-i18n="rep-mai-parts-spindle-category">스핀들 관련 (Spindle Parts)</span>
               </div>
               <div style="display:flex; flex-direction:column; gap:12px;">
                 <div class="mai-card-item" data-title="스핀들 위치 조정 방법 adjust the spindle position" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('스핀들 위치 조정 방법 (Adjust the spindle position)', 'https://www.youtube.com/embed/LXlTPxAAxFo')">
@@ -6649,10 +5549,10 @@
                   </div>
                 </div>
 
-                <div class="mai-card-item" data-title="스핀들 드라이브 교체 방법 spindle drive replacement" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openSpindleDriveModal()">
+                <div class="mai-card-item" data-title="M AI 스핀들 드라이브 교체 방법 M AI spindle drive replacement" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openSpindleDriveModal('mai')">
                   <div style="display:flex; align-items:center; gap:12px;">
                     <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px; flex-shrink:0;">▶</div>
-                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span data-i18n="rep-mai-parts-spindle-drive">스핀들 드라이브 교체 방법 (Spindle drive replacement)</span></h3>
+                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;">M AI 스핀들 드라이브 교체 방법 (M AI spindle drive replacement)</h3>
                   </div>
                 </div>
 
@@ -6690,7 +5590,8 @@
             <!-- Category 3: Drive -->
             <div class="mai-category-group" data-category="drive" style="display:flex; flex-direction:column; gap:12px;">
               <div class="mai-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
-                <span data-i18n="rep-mai-parts-drive-category">🔧 구동부 관련 (Drive Parts)</span>
+                <span class="mai-category-icon" aria-hidden="true"><img src="assets/images/icons/drive-belt-gears.webp" alt=""></span>
+                <span data-i18n="rep-mai-parts-drive-category">구동부 관련 (Drive Parts)</span>
               </div>
               <div style="display:flex; flex-direction:column; gap:12px;">
                 <div class="mai-card-item" data-title="x축 브라켓 교체 방법 replace the x-axis bracket" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('X축 브라켓 교체 방법 (Replace the X-axis bracket)', 'https://www.youtube.com/embed/48z-f1OA-YY')">
@@ -6713,13 +5614,21 @@
                     <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span data-i18n="rep-mai-parts-bellows">자바라 교체 방법 (Replace Sliding Bellows)</span></h3>
                   </div>
                 </div>
+
+                <div class="mai-card-item" data-title="b-axis timing belt replacement" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openBAxisTimingBeltModal()" aria-haspopup="dialog">
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px; flex-shrink:0;">🔧</div>
+                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;"><span data-i18n="b-axis-card-title">B축 타이밍 벨트 교체</span></h3>
+                  </div>
+                </div>
               </div>
             </div>
 
             <!-- Category 4: Sensor -->
             <div class="mai-category-group" data-category="sensor" style="display:flex; flex-direction:column; gap:12px;">
               <div class="mai-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
-                <span data-i18n="rep-mai-parts-sensor-category">🛠️ 센서 관련 (Sensor Parts)</span>
+                <span class="mai-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h7v10H8z"/><path d="M10 4V2h3v2M10 14v3M13 14v3M7 20h9"/><path d="M17.5 7.5c1.5.8 2.5 2.4 2.5 4.5s-1 3.7-2.5 4.5"/><path d="M19.5 5.5c2.2 1.3 3.5 3.6 3.5 6.5s-1.3 5.2-3.5 6.5"/></svg></span>
+                <span data-i18n="rep-mai-parts-sensor-category">센서 관련 (Sensor Parts)</span>
               </div>
               <div style="display:flex; flex-direction:column; gap:12px;">
                 <div class="mai-card-item" data-title="툴터치센서 교체 방법 replace tool touch sensor" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('툴터치센서 교체 방법 (Replace Tool touch sensor)', 'https://www.youtube.com/embed/UUYd7q-JbM0')">
@@ -6803,6 +5712,18 @@
   </div>
 </section>
       <section id="sec-rep-mf-parts-guide" class="content-section">
+        <style>
+          #sec-rep-mf-parts-guide .mf-category-group[data-category="spindle"] { --mf-theme:#a855f7; --mf-theme-soft:#f3e8ff; --mf-theme-shadow:rgba(168,85,247,.15); }
+          #sec-rep-mf-parts-guide .mf-category-group[data-category="pc"] { --mf-theme:#2563eb; --mf-theme-soft:#dbeafe; --mf-theme-shadow:rgba(37,99,235,.15); }
+          #sec-rep-mf-parts-guide .mf-category-group[data-category="drive"] { --mf-theme:#d97706; --mf-theme-soft:#fef3c7; --mf-theme-shadow:rgba(217,119,6,.16); }
+          #sec-rep-mf-parts-guide .mf-category-group[data-category="sensor"] { --mf-theme:#0f766e; --mf-theme-soft:#ccfbf1; --mf-theme-shadow:rgba(15,118,110,.15); }
+          #sec-rep-mf-parts-guide .mf-category-header { color:var(--mf-theme) !important; border-left-color:var(--mf-theme) !important; }
+          #sec-rep-mf-parts-guide .mf-category-icon { width:22px; height:22px; flex:0 0 22px; display:inline-block; color:var(--mf-theme); }
+          #sec-rep-mf-parts-guide .mf-category-icon img,
+          #sec-rep-mf-parts-guide .mf-category-icon svg { width:100%; height:100%; display:block; object-fit:contain; }
+          #sec-rep-mf-parts-guide .mf-card-item > div > div:first-child { background:var(--mf-theme-soft) !important; color:var(--mf-theme) !important; }
+          #sec-rep-mf-parts-guide .mf-card-item:hover { border-color:var(--mf-theme) !important; box-shadow:0 8px 24px var(--mf-theme-shadow) !important; }
+        </style>
         <h2 data-i18n="nav-rep-parts-guide"><span data-i18n="mf-auto-668">🔧 수리 가이드</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#sec-rep-mf-parts-guide"
@@ -6818,7 +5739,23 @@
           </div>
 
           <div id="mf-parts-list" style="display:flex; flex-direction:column; gap:24px;">
-            <!-- Category 1: PC -->
+            <!-- Category 1: Spindle -->
+            <div class="mf-category-group" data-category="spindle" style="display:flex; flex-direction:column; gap:12px;">
+              <div class="mf-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
+                <span class="mf-category-icon" aria-hidden="true"><img src="assets/images/icons/spindle.webp" alt=""></span>
+                <span>스핀들 관련 (Spindle Parts)</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <div class="mf-card-item" data-title="MillFix 스핀들 드라이브 교체 방법 millfix spindle drive replacement" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openSpindleDriveModal('millfix')">
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:40px; height:40px; border-radius:8px; background:#f3e8ff; display:flex; align-items:center; justify-content:center; color:#a855f7; font-size:20px; flex-shrink:0;">▶</div>
+                    <h3 style="margin:0; font-size:17px; color:#1f2937; font-weight:700;">MillFix 스핀들 드라이브 교체 방법 (MillFix spindle drive replacement)</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2: PC -->
             <div class="mf-category-group" data-category="pc" style="display:flex; flex-direction:column; gap:12px;">
               <div class="mf-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
                 <span>🖥️ PC 관련 (PC Parts)</span>
@@ -6833,10 +5770,11 @@
               </div>
             </div>
 
-            <!-- Category 2: Drive -->
+            <!-- Category 3: Drive -->
             <div class="mf-category-group" data-category="drive" style="display:flex; flex-direction:column; gap:12px;">
               <div class="mf-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
-                <span>🔧 구동부 관련 (Drive Parts)</span>
+                <span class="mf-category-icon" aria-hidden="true"><img src="assets/images/icons/drive-belt-gears.webp" alt=""></span>
+                <span>구동부 관련 (Drive Parts)</span>
               </div>
               <div style="display:flex; flex-direction:column; gap:12px;">
                 <div class="mf-card-item" data-title="x축 베어링 교체방법 replace x-axis bearing" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('X축 베어링 교체방법', 'https://www.youtube.com/embed/DoqDVRFI2R8')">
@@ -6848,10 +5786,11 @@
               </div>
             </div>
 
-            <!-- Category 3: Sensor -->
+            <!-- Category 4: Sensor -->
             <div class="mf-category-group" data-category="sensor" style="display:flex; flex-direction:column; gap:12px;">
               <div class="mf-category-header" style="font-size:16px; font-weight:700; color:#a855f7; display:flex; align-items:center; gap:8px; margin-bottom:4px; border-left:4px solid #a855f7; padding-left:10px;">
-                <span>🛠️ 센서 관련 (Sensor Parts)</span>
+                <span class="mf-category-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h7v10H8z"/><path d="M10 4V2h3v2M10 14v3M13 14v3M7 20h9"/><path d="M17.5 7.5c1.5.8 2.5 2.4 2.5 4.5s-1 3.7-2.5 4.5"/><path d="M19.5 5.5c2.2 1.3 3.5 3.6 3.5 6.5s-1.3 5.2-3.5 6.5"/></svg></span>
+                <span>센서 관련 (Sensor Parts)</span>
               </div>
               <div style="display:flex; flex-direction:column; gap:12px;">
                 <div class="mf-card-item" data-title="z축 센서 케이블 교체 방법 replace z-axis sensor cable" style="padding:18px 20px; background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.03); transition:all 0.2s; display:flex;" onmouseover="this.style.borderColor='#a855f7'; this.style.boxShadow='0 8px 24px rgba(168,85,247,0.15)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';" onclick="openVideoModal('Z축 센서 케이블 교체 방법', 'https://www.youtube.com/embed/sXIljc8bs2Q')">
@@ -7200,14 +6139,117 @@
   </script>
 
   
+  <!-- ===== B-axis timing belt replacement modal ===== -->
+  <div id="b-axis-timing-belt-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="b-axis-timing-belt-modal-title" style="display:none; position:fixed; inset:0; background:rgba(15,23,42,.55); z-index:1200; justify-content:center; align-items:center; padding:20px;">
+    <div class="standard-modal-dialog" style="max-width:1100px;">
+      <div style="padding:20px 24px; border-bottom:1px solid #e5e7eb; display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-shrink:0;">
+        <div>
+          <h3 id="b-axis-timing-belt-modal-title" style="margin:0; color:#a855f7; font-size:22px; font-weight:700;" data-i18n="b-axis-title">B축 타이밍 벨트 교체</h3>
+          <p style="margin:5px 0 0; color:#64748b; font-size:14px;" data-i18n="b-axis-subtitle">M AI° 구동부 수리 가이드</p>
+        </div>
+        <button type="button" onclick="closeBAxisTimingBeltModal()" aria-label="Close" data-i18n-aria-label="b-axis-close" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; padding:0; line-height:1;">&times;</button>
+      </div>
+      <div style="padding:26px; overflow-y:auto; flex:1; display:flex; flex-direction:column; gap:24px;">
+        <section style="padding:18px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px;">
+          <h4 style="margin:0 0 8px; color:#1e293b; font-size:17px;" data-i18n="b-axis-symptom-heading">1. 증상</h4>
+          <p style="margin:0; color:#475569; line-height:1.65;" data-i18n="b-axis-symptom-text">Homing 동작 시 B축 좌표는 계속 변화하는데 실제 축은 움직이지 않습니다.</p>
+          <video controls preload="metadata" style="width:100%; max-width:720px; margin-top:14px; display:block; border-radius:10px; background:#0f172a;"><source src="assets/videos/sec-mai-parts/b-axis-timing-belt/web/symptom-homing.mp4" type="video/mp4"><span data-i18n="b-axis-video-fallback">브라우저가 영상을 지원하지 않습니다.</span></video>
+        </section>
+
+        <section>
+          <h4 style="margin:0 0 12px; color:#1e293b; font-size:17px;" data-i18n="b-axis-prep-heading">2. 작업 전 준비</h4>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px;">
+            <div style="padding:16px; border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <strong style="display:block; color:#334155; margin-bottom:10px;" data-i18n="b-axis-prep-table">밀링 테이블 비우기</strong>
+              <p style="margin:0 0 12px; color:#475569; font-size:14px; line-height:1.6;" data-i18n="b-axis-prep-table-text">가공룸 안 업대 위에 아무것도 남기지 않고 깨끗하게 비웁니다.</p>
+              <img src="assets/images/sec-mai-parts/b-axis-timing-belt/prepare-clear-table.webp" alt="Milling table cleared" data-i18n-alt="b-axis-alt-clear-table" style="width:100%; height:auto; display:block; border:1px solid #e2e8f0; border-radius:8px;">
+            </div>
+            <div style="padding:16px; border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <strong style="display:block; color:#334155; margin-bottom:10px;" data-i18n="b-axis-prep-tool">준비물: M2.5 육각 드라이버</strong>
+              <img src="assets/images/sec-mai-parts/b-axis-timing-belt/tool-m25-hex-driver.webp" alt="M2.5 hex driver" data-i18n-alt="b-axis-alt-hex-driver" style="width:180px; max-width:100%; height:auto; display:block; border:1px solid #e2e8f0; border-radius:8px;">
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h4 style="margin:0 0 12px; color:#1e293b; font-size:17px;" data-i18n="b-axis-process-heading">3. 작업 과정</h4>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div class="b-axis-step"><span>1</span><div><strong data-i18n="b-axis-step-01-title">Ready 상태에서</strong></div></div>
+            <div class="b-axis-step"><span>2</span><div style="min-width:0; flex:1;"><strong data-i18n="b-axis-step-02-title">밀링 테이블 배치</strong><p data-i18n="b-axis-step-02-text">Axis jog 모드에서 작업 편의를 위해 스핀들을 안쪽으로 위치시키고, A- 방향으로 180도 이상 회전시켜 커버를 탈착하기 용이한 위치로 이동합니다.</p><div class="b-axis-caution"><strong data-i18n="b-axis-caution-label">⚠️ 주의</strong><span data-i18n="b-axis-step-02-caution">Homing을 완료할 수 없으므로 정확한 위치 좌표가 표시되지 않을 수 있습니다. 눈으로 직접 확인하면서 충돌하지 않도록 조심히 작업하십시오.</span></div><img src="assets/images/sec-mai-parts/b-axis-timing-belt/step-02-table-position.webp" alt="Milling table position" data-i18n-alt="b-axis-alt-table-position"></div></div>
+            <div class="b-axis-step"><span>3</span><div><strong data-i18n="b-axis-step-03-title">커버 제거</strong></div></div>
+            <div class="b-axis-step"><span>4</span><div><strong data-i18n="b-axis-step-04-title">파손된 B축 타이밍 벨트 제거</strong></div></div>
+            <div class="b-axis-step"><span>5</span><div><strong data-i18n="b-axis-step-05-title">풀리에 날카롭거나 뾰족한 구조물이 없는지 확인</strong></div></div>
+            <div class="b-axis-step"><span>6</span><div style="min-width:0; flex:1;"><strong data-i18n="b-axis-step-06-title">텐셔너 위치 마킹</strong><img src="assets/images/sec-mai-parts/b-axis-timing-belt/step-06-tensioner-mark.webp" alt="Tensioner position marking" data-i18n-alt="b-axis-alt-tensioner-mark"></div></div>
+            <div class="b-axis-step"><span>7</span><div><strong data-i18n="b-axis-step-07-title">텐셔너 고정 나사를 살짝 풀어 움직일 수 있는 상태로 만듭니다.</strong></div></div>
+            <div class="b-axis-step"><span>8</span><div style="min-width:0; flex:1;"><strong data-i18n="b-axis-step-08-title">B축 타이밍 벨트 장착</strong><p data-i18n="b-axis-step-08-text">손으로 풀리를 돌려 벨트가 미끄러짐 없이 물려 돌아가는지 확인합니다.</p><video controls preload="metadata"><source src="assets/videos/sec-mai-parts/b-axis-timing-belt/web/step-08-install-belt.mp4" type="video/mp4"><span data-i18n="b-axis-video-fallback">브라우저가 영상을 지원하지 않습니다.</span></video></div></div>
+            <div class="b-axis-step"><span>9</span><div style="min-width:0; flex:1;"><strong data-i18n="b-axis-step-09-title">타이밍 벨트 텐션 조정</strong><p data-i18n="b-axis-step-09-text">텐셔너를 표시한 위치로 이동시켜 타이밍 벨트의 텐션을 조정하고, 적절한 위치에서 볼트를 조여 고정합니다. 텐션 세기를 확인합니다.</p><video controls preload="metadata"><source src="assets/videos/sec-mai-parts/b-axis-timing-belt/web/step-09-adjust-tension.mp4" type="video/mp4"><span data-i18n="b-axis-video-fallback">브라우저가 영상을 지원하지 않습니다.</span></video></div></div>
+            <div class="b-axis-step"><span>10</span><div style="min-width:0; flex:1;"><strong data-i18n="b-axis-step-10-title">B축 동작 확인</strong><p data-i18n="b-axis-step-10-text">Axis jog 페이지에서 B축을 +, - 방향으로 여러 번 이동시키며 소음 발생 또는 오작동이 없는지 확인합니다.</p><video controls preload="metadata"><source src="assets/videos/sec-mai-parts/b-axis-timing-belt/web/step-10-axis-jog-check.mp4" type="video/mp4"><span data-i18n="b-axis-video-fallback">브라우저가 영상을 지원하지 않습니다.</span></video></div></div>
+            <div class="b-axis-step"><span>11</span><div style="min-width:0; flex:1;"><strong data-i18n="b-axis-step-11-title">나사 구멍에 록타이트 바르기</strong><video controls preload="metadata"><source src="assets/videos/sec-mai-parts/b-axis-timing-belt/web/step-11-apply-loctite.mp4" type="video/mp4"><span data-i18n="b-axis-video-fallback">브라우저가 영상을 지원하지 않습니다.</span></video></div></div>
+            <div class="b-axis-step"><span>12</span><div style="min-width:0; flex:1;"><strong data-i18n="b-axis-step-12-title">방향을 맞춰 커버 덮기</strong><p data-i18n="b-axis-step-12-text">가체결 → 위치 조정 → 완전체결 순으로 진행하고, 위쪽에 단차가 생기지 않는지 확인합니다.</p><video controls preload="metadata"><source src="assets/videos/sec-mai-parts/b-axis-timing-belt/web/step-12-install-cover.mp4" type="video/mp4"><span data-i18n="b-axis-video-fallback">브라우저가 영상을 지원하지 않습니다.</span></video></div></div>
+            <div class="b-axis-step"><span>13</span><div style="min-width:0; flex:1;"><strong data-i18n="b-axis-step-13-title">A축을 어느 정도 수평이 되는 위치로 이동</strong><img src="assets/images/sec-mai-parts/b-axis-timing-belt/step-12-level-a-axis.webp" alt="A-axis level position" data-i18n-alt="b-axis-alt-a-axis-level"></div></div>
+            <div class="b-axis-step"><span>14</span><div><strong data-i18n="b-axis-step-14-title">Homing을 진행하여 완료되는지 확인합니다. 작업 완료.</strong></div></div>
+          </div>
+        </section>
+      </div>
+      <div style="padding:14px 24px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; flex-shrink:0;">
+        <button type="button" onclick="closeBAxisTimingBeltModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;" data-i18n="b-axis-close">닫기</button>
+      </div>
+    </div>
+  </div>
+  <style>
+    #b-axis-timing-belt-modal .standard-modal-dialog :is(h3, h4, p, strong, span, button) { color:#111827 !important; font-weight:700 !important; }
+    #b-axis-timing-belt-modal .b-axis-step { display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; color:#475569; font-size:14px; line-height:1.6; }
+    #b-axis-timing-belt-modal .b-axis-step > span { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0; }
+    #b-axis-timing-belt-modal .b-axis-step strong { color:#1e293b; display:block; }
+    #b-axis-timing-belt-modal .b-axis-step p { margin:5px 0 0; }
+    #b-axis-timing-belt-modal .b-axis-step img, #b-axis-timing-belt-modal .b-axis-step video { display:block; width:100%; max-width:680px; height:auto; margin-top:12px; border:1px solid #e2e8f0; border-radius:8px; background:#0f172a; }
+    #b-axis-timing-belt-modal .b-axis-caution { display:flex; flex-direction:column; gap:4px; margin-top:12px; padding:12px; border:1px solid #fde68a; border-radius:8px; background:#fffbeb; color:#92400e; }
+    @media (max-width:600px) { #b-axis-timing-belt-modal { padding:10px !important; } #b-axis-timing-belt-modal > div > div:nth-child(2) { padding:18px !important; } }
+  </style>
+  <script>
+    function openBAxisTimingBeltModal() { const modal = document.getElementById('b-axis-timing-belt-modal'); if (modal) { applyModalTranslations(modal); modal.style.display = 'flex'; } }
+    function closeBAxisTimingBeltModal() { const modal = document.getElementById('b-axis-timing-belt-modal'); if (modal) { modal.querySelectorAll('video').forEach(video => { video.pause(); video.currentTime = 0; }); modal.style.display = 'none'; } }
+    document.getElementById('b-axis-timing-belt-modal')?.addEventListener('click', function (event) { if (event.target === this) closeBAxisTimingBeltModal(); });
+    document.addEventListener('keydown', function (event) { if (event.key === 'Escape' && document.getElementById('b-axis-timing-belt-modal')?.style.display === 'flex') closeBAxisTimingBeltModal(); });
+  </script>
+
   <!-- ===== Generic Video Modal ===== -->
+  <div id="machine-settings-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="machine-settings-modal-title" style="display:none; position:fixed; inset:0; background:rgba(15,23,42,.55); z-index:1200; justify-content:center; align-items:center; padding:20px;">
+    <div class="standard-modal-dialog" style="max-width:1000px;">
+      <div style="padding:20px 24px; border-bottom:1px solid #e5e7eb; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-shrink:0;">
+        <h3 id="machine-settings-modal-title" style="margin:0; color:#a855f7; font-size:22px; font-weight:700;" data-i18n="machine-settings-title">머신 세팅</h3>
+        <button type="button" onclick="closeMachineSettingsModal()" aria-label="Close" style="background:none; border:none; font-size:28px; cursor:pointer; color:#64748b; padding:0; line-height:1;">&times;</button>
+      </div>
+      <div style="padding:24px; overflow-y:auto; flex:1; background:#f8fafc;">
+        <img id="machine-settings-modal-image" src="" alt="Machine settings" style="display:block; width:100%; height:auto; border:1px solid #cbd5e1; border-radius:8px; background:#fff;">
+      </div>
+      <div style="padding:14px 24px; background:#f8fafc; border-top:1px solid #e5e7eb; display:flex; justify-content:flex-end; flex-shrink:0;">
+        <button type="button" onclick="closeMachineSettingsModal()" style="padding:10px 24px; background:#e2e8f0; color:#334155; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;" data-i18n="b-axis-close">닫기</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openMachineSettingsModal(machine) {
+      const modal = document.getElementById('machine-settings-modal');
+      const image = document.getElementById('machine-settings-modal-image');
+      const images = { mai: 'assets/images/hyperdent/machine-settings-mai.webp', millfix: 'assets/images/hyperdent/machine-settings-millfix.webp' };
+      if (!modal || !image || !images[machine]) return;
+      image.src = images[machine];
+      applyModalTranslations(modal);
+      modal.style.display = 'flex';
+    }
+    function closeMachineSettingsModal() { const modal = document.getElementById('machine-settings-modal'); if (modal) modal.style.display = 'none'; }
+    document.getElementById('machine-settings-modal')?.addEventListener('click', function (event) { if (event.target === this) closeMachineSettingsModal(); });
+    document.addEventListener('keydown', function (event) { if (event.key === 'Escape' && document.getElementById('machine-settings-modal')?.style.display === 'flex') closeMachineSettingsModal(); });
+  </script>
+
   <div id="video-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.55); z-index:1100; justify-content:center; align-items:center; padding:20px;">
-    <div style="background:var(--bg-color,#ffffff); border-radius:14px; width:100%; max-width:850px; max-height:95vh; display:flex; flex-direction:column; box-shadow:0 16px 40px rgba(0,0,0,0.25);">
+    <div class="standard-modal-dialog" style="background:var(--bg-color,#ffffff); border-radius:14px;">
       <div style="padding:20px 24px; border-bottom:1px solid #e5e7eb; display:flex; justify-content:space-between; align-items:center; flex-shrink:0;">
         <h3 id="video-modal-title" style="margin:0; color:#a855f7; font-size:22px; font-weight:700;"></h3>
         <button id="video-modal-close" style="background:none; border:none; font-size:26px; cursor:pointer; color:var(--text-muted,#6b7280); line-height:1;">&times;</button>
       </div>
-      <div style="padding:28px 32px; overflow-y:auto; flex:1; font-size:16px; line-height:1.7; color:var(--text-color,#374151);">
+      <div style="padding:20px 24px; overflow-y:auto; flex:1; font-size:16px; line-height:1.7; color:var(--text-color,#374151);">
         <div style="position:relative; width:100%; aspect-ratio:16/9; border-radius:12px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.15);">
           <iframe id="video-modal-iframe" src="" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
@@ -7661,7 +6703,7 @@
             🔧
           </div>
           <div style="display:flex; flex-direction:column; gap:2px;">
-            <h3 style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">스핀들 드라이브 교체 방법 (Spindle drive replacement)</h3>
+            <h3 id="spindle-drive-modal-title" style="margin:0; font-size:19px; color:#1f2937; font-weight:700;">MillFix 스핀들 드라이브 교체 방법 (MillFix spindle drive replacement)</h3>
             <span style="font-size:13px; color:#a855f7; font-weight:600;">How to replace the spindle drive</span>
           </div>
         </div>
@@ -7671,9 +6713,11 @@
         <div style="display:flex; flex-direction:column; gap:14px;">
           <div style="display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border-radius:12px; border:1px solid #e2e8f0;">
             <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">1</span>
-            <div>
+            <div style="min-width:0; flex:1; display:flex; flex-direction:column; gap:12px;">
               <strong style="color:#1e293b; display:block; margin-bottom:4px;">우측 커버 제거 (Open the right cover)</strong>
-              <span style="color:#475569; font-size:14px; line-height:1.5;">우측면 케이스를 고정하고 있는 나사들을 제거하고 커버를 분리합니다. (Loosen all bolts fixed the right cover, and take it off.)</span>
+              <span id="spindle-drive-cover-description" style="color:#475569; font-size:14px; line-height:1.5;">우측면 케이스를 고정하고 있는 나사들을 제거하고 커버를 분리합니다. (Loosen all bolts fixed the right cover, and take it off.)</span>
+              <img id="mai-spindle-drive-cover-removal-image" src="assets/images/repairs/mai-spindle-drive-cover-removal.webp" alt="M AI spindle drive cover removal points" style="display:none; width:100%; max-width:680px; height:auto; border:1px solid #e2e8f0; border-radius:8px;">
+              <img id="millfix-spindle-drive-cover-removal-image" src="assets/images/repairs/millfix-spindle-drive-cover-removal.webp" alt="MillFix spindle drive cover removal points" style="display:none; width:100%; max-width:680px; height:auto; border:1px solid #e2e8f0; border-radius:8px; background:#0b0f14;">
             </div>
           </div>
           <div style="display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border-radius:12px; border:1px solid #e2e8f0;">
@@ -7681,7 +6725,7 @@
             <div style="min-width:0; flex:1; display:flex; flex-direction:column; gap:12px;">
               <img src="assets/images/repairs/spindle-drive-cables.webp" alt="Spindle drive cable connections" style="display:block; width:100%; max-width:680px; height:auto; border:1px solid #e2e8f0; border-radius:8px;">
               <strong style="color:#1e293b; display:block; margin-bottom:4px;">케이블 분리 (Disconnect cables)</strong>
-              <span style="color:#475569; font-size:14px; line-height:1.5;">스핀들 드라이브는 우측면 하단에 위치해 있습니다. 스핀들 드라이브에 연결되어 있는 3개 케이블을 분리합니다. (The spindle drive is located above of right surface. Disconnect 3 cables that are connected to it.)</span>
+              <span id="spindle-drive-cable-description" style="color:#475569; font-size:14px; line-height:1.5;">스핀들 드라이브는 우측면 하단에 위치해 있습니다. 스핀들 드라이브에 연결되어 있는 3개 케이블을 분리합니다. (The spindle drive is located at the lower right side. Disconnect the three cables connected to it.)</span>
             </div>
           </div>
           <div style="display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border-radius:12px; border:1px solid #e2e8f0;">
@@ -7689,18 +6733,18 @@
             <div style="min-width:0; flex:1; display:flex; flex-direction:column; gap:12px;">
               <img src="assets/images/repairs/spindle-drive-removal.webp" alt="Removing the spindle drive" style="display:block; width:100%; max-width:680px; height:auto; border:1px solid #e2e8f0; border-radius:8px;">
               <strong style="color:#1e293b; display:block; margin-bottom:4px;">고정 나사 해제 및 드라이브 분리 (Remove the spindle drive)</strong>
-              <span style="color:#475569; font-size:14px; line-height:1.5;">스핀들 드라이브를 고정하고 있는 4개의 고정 나사를 풀어서 분리합니다. (Remove the spindle drive by loosening 4 fixed bolts.)</span>
+              <span id="spindle-drive-removal-description" style="color:#475569; font-size:14px; line-height:1.5;">스핀들 드라이브를 고정하고 있는 4개의 고정 나사를 풀어서 분리합니다. (Remove the spindle drive by loosening 4 fixed bolts.)</span>
             </div>
           </div>
           <div style="display:flex; align-items:flex-start; gap:12px; padding:14px; background:#f8fafc; border-radius:12px; border:1px solid #e2e8f0;">
             <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#f3e8ff; color:#a855f7; font-size:14px; font-weight:700; flex-shrink:0;">4</span>
             <div>
               <strong style="color:#1e293b; display:block; margin-bottom:4px;">새 드라이브 장착 및 재조립 (Assemble with new spindle drive)</strong>
-              <span style="color:#475569; font-size:14px; line-height:1.5;">스핀들 드라이브를 교체하고 역순으로 조립합니다. (Replace to the new spindle drive and assemble it with reverse order.)</span>
+              <span id="spindle-drive-reassembly-description" style="color:#475569; font-size:14px; line-height:1.5;">스핀들 드라이브를 교체하고 역순으로 조립합니다. (Replace to the new spindle drive and assemble it with reverse order.)</span>
             </div>
           </div>
           <div style="padding:16px; background:#fffbeb; border:1px solid #fde68a; border-radius:12px; color:#b45309; font-size:14px; line-height:1.5;">
-            <strong>⚠️ 주의사항:</strong> 교체된 스핀들 드라이브는 반드시 GenCore에 회수되도록 조치하여 주십시오. (The replaced spindle drive should be returned to GenCore.)
+            <strong>⚠️ 주의사항:</strong> <span id="spindle-drive-caution-description">교체된 스핀들 드라이브는 반드시 GenCore에 회수되도록 조치하여 주십시오. (The replaced spindle drive should be returned to GenCore.)</span>
           </div>
         </div>
       </div>
@@ -7729,9 +6773,48 @@
   </script>
 
   <script>
-    function openSpindleDriveModal() {
+    function openSpindleDriveModal(machine) {
       const m = document.getElementById('spindle-drive-modal');
-      if (m) { applyModalTranslations(m); m.style.display = 'flex'; }
+      const title = document.getElementById('spindle-drive-modal-title');
+      const coverDescription = document.getElementById('spindle-drive-cover-description');
+      const cableDescription = document.getElementById('spindle-drive-cable-description');
+      const removalDescription = document.getElementById('spindle-drive-removal-description');
+      const reassemblyDescription = document.getElementById('spindle-drive-reassembly-description');
+      const cautionDescription = document.getElementById('spindle-drive-caution-description');
+      const maiCoverRemovalImage = document.getElementById('mai-spindle-drive-cover-removal-image');
+      const coverRemovalImage = document.getElementById('millfix-spindle-drive-cover-removal-image');
+      const machineName = machine === 'mai' ? 'M AI' : 'MillFix';
+      const isMai = machine === 'mai';
+      if (m) applyModalTranslations(m);
+      if (title) {
+        title.textContent = currentLang === 'en'
+          ? machineName + ' Spindle Drive Replacement'
+          : machineName + ' 스핀들 드라이브 교체 방법 (' + machineName + ' spindle drive replacement)';
+      }
+      if (cableDescription) {
+        cableDescription.textContent = currentLang === 'en'
+          ? (isMai
+            ? 'The spindle drive is located at the upper right side. Disconnect the three cables connected to it.'
+            : 'The spindle drive is located at the lower right side. Disconnect the three cables connected to it.')
+          : (isMai
+            ? '스핀들 드라이브는 우측면 상단에 위치해 있습니다. 스핀들 드라이브에 연결되어 있는 3개 케이블을 분리합니다. (The spindle drive is located at the upper right side. Disconnect the three cables connected to it.)'
+            : '스핀들 드라이브는 우측면 하단에 위치해 있습니다. 스핀들 드라이브에 연결되어 있는 3개 케이블을 분리합니다. (The spindle drive is located at the lower right side. Disconnect the three cables connected to it.)');
+      }
+      if (coverDescription) coverDescription.textContent = currentLang === 'en'
+        ? 'Remove the screws securing the right-side case and detach the cover.'
+        : '우측면 케이스를 고정하고 있는 나사들을 제거하고 커버를 분리합니다. (Loosen all bolts fixed the right cover, and take it off.)';
+      if (removalDescription) removalDescription.textContent = currentLang === 'en'
+        ? 'Loosen the four mounting screws securing the spindle drive and remove it.'
+        : '스핀들 드라이브를 고정하고 있는 4개의 고정 나사를 풀어서 분리합니다. (Remove the spindle drive by loosening 4 fixed bolts.)';
+      if (reassemblyDescription) reassemblyDescription.textContent = currentLang === 'en'
+        ? 'Replace the spindle drive and reassemble it in reverse order.'
+        : '스핀들 드라이브를 교체하고 역순으로 조립합니다. (Replace to the new spindle drive and assemble it with reverse order.)';
+      if (cautionDescription) cautionDescription.textContent = currentLang === 'en'
+        ? 'Return the replaced spindle drive to GenCore.'
+        : '교체된 스핀들 드라이브는 반드시 GenCore에 회수되도록 조치하여 주십시오. (The replaced spindle drive should be returned to GenCore.)';
+      if (maiCoverRemovalImage) maiCoverRemovalImage.style.display = isMai ? 'block' : 'none';
+      if (coverRemovalImage) coverRemovalImage.style.display = isMai ? 'none' : 'block';
+      if (m) m.style.display = 'flex';
     }
     function closeSpindleDriveModal() {
       const m = document.getElementById('spindle-drive-modal');
