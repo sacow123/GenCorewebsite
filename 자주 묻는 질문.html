@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>GenCore Technical Support Center</title>
+  <title>자주 묻는 질문 | GenCore Technical Support Center</title>
   <meta name="description" content="GenCore 제품 매뉴얼 및 기술 지원 센터">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
@@ -412,18 +412,30 @@
         <div id="search-results-grid" style="display:grid; grid-template-columns: 1fr; gap:12px; margin-top:8px;"></div>
       </section>
 
-<section id="section-home" class="content-section active active">
-        <h2 data-i18n="section-home-title">GenCore Technical Support Center</h2>
+<section id="section-faq" class="content-section active">
+        <style>
+          #section-faq .faq-list { display:flex; flex-direction:column; gap:12px; }
+          #section-faq .faq-item { width:100%; display:flex; align-items:center; gap:14px; padding:18px 20px; border:1px solid #e2e8f0; border-radius:14px; background:#ffffff; color:#1f2937; text-align:left; cursor:pointer; box-shadow:0 2px 8px rgba(15,23,42,.04); transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+          #section-faq .faq-item:hover { border-color:#a855f7; box-shadow:0 8px 20px rgba(168,85,247,.12); transform:translateY(-1px); }
+          #section-faq .faq-item:focus-visible { outline:3px solid rgba(168,85,247,.28); outline-offset:3px; }
+          #section-faq .faq-mai-logo { width:68px; height:34px; flex-shrink:0; object-fit:contain; object-position:center; }
+          #section-faq .faq-item-title { font-size:16px; font-weight:700; line-height:1.5; }
+          #section-faq .faq-item-arrow { margin-left:auto; color:#a855f7; font-size:20px; }
+          :root { --standard-modal-max-width:1200px; --standard-modal-max-height:95vh; }
+          .standard-modal-dialog { width:100%; max-width:var(--standard-modal-max-width); max-height:var(--standard-modal-max-height); overflow:hidden; border-radius:18px; background:#ffffff; box-shadow:0 24px 60px rgba(15,23,42,.32); display:flex; flex-direction:column; }
+        </style>
+        <h2 data-i18n="section-faq-title"><span data-i18n="mf-auto-669">자주 묻는 질문</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#section-home" style="color:#a855f7; text-decoration:none;">#section-home</a></div>
-        <p class="subtitle" data-i18n="section-home-desc"><span data-i18n="mf-auto-671">제품 매뉴얼 및 기술 지원 센터에 오신 것을 환영합니다. 좌측 메뉴에서 원하는 항목을 선택해 주세요.</span></p>
+          Anchor: <a href="#section-faq" style="color:#a855f7; text-decoration:none;">#section-faq</a></div>
+        <p class="subtitle" data-i18n="section-faq-desc"><span data-i18n="mf-auto-815">고객분들이 자주 문의하시는 질문과 답변입니다.</span></p>
         <div class="content-card">
-          <h3 data-i18n="card-welcome-title"><span data-i18n="mf-auto-672">환영합니다</span></h3>
-          <p data-i18n="card-welcome-body"><span data-i18n="mf-auto-673">GenCore 제품의 설치, 사용, 유지보수에 관한 모든 정보를 이곳에서 확인할 수 있습니다.</span></p>
-        </div>
-        <div class="content-card">
-          <h3 data-i18n="card-lang-title"><span data-i18n="mf-auto-674">다국어 지원</span></h3>
-          <p data-i18n="card-lang-body"><span data-i18n="mf-auto-675">우측 상단의 🌐 아이콘을 클릭하여 한국어, English, 日本語, Español 중 원하는 언어를 선택할 수 있습니다.</span></p>
+          <div class="faq-list">
+            <button type="button" class="faq-item" onclick="openGlassCeramicFaqModal()" aria-haspopup="dialog">
+              <img class="faq-mai-logo" src="assets/images/brand/mai-logo-black.webp" alt="M AI 로고">
+              <span class="faq-item-title" data-i18n="faq-glass-ceramic-title">Glass Ceramic 가공 시 Normal - Fast 버전의 차이</span>
+              <span class="faq-item-arrow" aria-hidden="true">›</span>
+            </button>
+          </div>
         </div>
       </section>
 </main>

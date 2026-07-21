@@ -1,4 +1,22 @@
 /* ===== Navigation & UI Logic ===== */
+function getSectionPage(sectionId) {
+  if (sectionId === 'section-home' || sectionId === 'section-search') return 'index.html';
+  if (sectionId === 'section-safety') return '취급시 주의사항.html';
+  if (sectionId === 'section-faq') return '자주 묻는 질문.html';
+  if (sectionId.startsWith('sec-rep-')) return '기술 지원 매뉴얼.html';
+  if (sectionId.startsWith('sec-mai-') || sectionId.startsWith('sec-mf-')) return '사용자 매뉴얼.html';
+  return null;
+}
+
+function openSectionPage(sectionId) {
+  const page = getSectionPage(sectionId);
+  if (!page) return false;
+  const currentPage = decodeURIComponent(window.location.pathname).split('/').pop() || 'index.html';
+  if (currentPage === page) return false;
+  window.location.assign(encodeURI(page) + '#' + encodeURIComponent(sectionId));
+  return true;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // --- Language Selector ---
   const langBtn = document.getElementById("langBtn");
@@ -35,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".nav-item").forEach(n => n.classList.remove("active"));
     
     const target = document.getElementById(id);
+    if (!target && openSectionPage(id)) return;
     if (target) {
       target.classList.add("active");
       renderSection(id);
