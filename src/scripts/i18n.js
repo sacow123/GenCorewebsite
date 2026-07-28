@@ -5335,6 +5335,26 @@ Object.assign(TRANSLATIONS.es, {
   "db-filter-empty": "No se encontraron plantillas que coincidan."
 });
 
+Object.assign(TRANSLATIONS.ko, {
+  "nav-mai-ui-2": "M AI° UI 2.0(구버전)",
+  "nav-mai-ui-3": "M AI° UI 3.0(신버전)"
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "nav-mai-ui-2": "M AI° UI 2.0 (Legacy)",
+  "nav-mai-ui-3": "M AI° UI 3.0 (Latest)"
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "nav-mai-ui-2": "M AI° UI 2.0（旧バージョン）",
+  "nav-mai-ui-3": "M AI° UI 3.0（新バージョン）"
+});
+
+Object.assign(TRANSLATIONS.es, {
+  "nav-mai-ui-2": "M AI° UI 2.0 (Versión anterior)",
+  "nav-mai-ui-3": "M AI° UI 3.0 (Versión más reciente)"
+});
+
 if (typeof document !== 'undefined' && typeof window !== 'undefined') {
   // Standalone long documents use this small, explicit bridge instead of relying
   // on functions declared in this script's private scope.

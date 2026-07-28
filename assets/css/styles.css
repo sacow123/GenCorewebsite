@@ -120,6 +120,11 @@ body {
 .sub-menu .sub-menu .sub-menu .sub-menu .nav-item:hover { color: var(--primary); }
 .sub-menu .sub-menu .sub-menu .sub-menu .nav-item.active { color: var(--primary); font-weight: 600; }
 
+/* M AI° UI version selector: keep the two UI versions visibly nested under M AI°. */
+#nav-mai > .sub-menu > .mai-ui-version > .nav-item {
+  padding-left: 40px;
+}
+
 /* ===== MAIN CONTENT ===== */
 .main-content {
   flex: 1; padding: 32px 40px; overflow-y: auto; max-width: 1200px;

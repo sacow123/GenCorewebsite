@@ -16,6 +16,7 @@
 </head>
 <body>
   <script src="src/scripts/layout-shell.js"></script>
+  <script src="src/scripts/mai-ui-version-nav.js"></script>
 
 <section id="section-search" class="content-section">
         <h2 id="search-results-title"><span data-i18n="mf-auto-670">🔍 검색 결과</span></h2>
@@ -224,8 +225,8 @@
             </div>
 
 
-            <!-- Feature 7 -->
-            <div class="feature-card" data-feature-key="screw-channel-category"
+            <!-- Feature 7: standalone guide -->
+            <div class="feature-card external-guide-card" data-guide-modal="screwchannel-category-guide-modal" role="button" tabindex="0"
               style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px;">
               <div style="font-size:32px; flex-shrink:0;">📍</div>
               <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;"><span data-i18n="mf-auto-311">스크류 채널 카테고리 (Screw channel's Category)</span></p>
@@ -3406,8 +3407,8 @@
             </div>
 
 
-            <!-- Feature 7 -->
-            <div class="feature-card" data-feature-key="screw-channel-category"
+            <!-- Feature 7: standalone guide -->
+            <div class="feature-card external-guide-card" data-guide-modal="screwchannel-category-guide-modal" role="button" tabindex="0"
               style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px;">
               <div style="font-size:32px; flex-shrink:0;">📍</div>
               <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;"><span data-i18n="mf-auto-311">스크류 채널 카테고리 (Screw channel's Category)</span></p>
@@ -5708,31 +5709,6 @@
         ]
       },
 
-      'screw-channel-category': {
-                title: '<span data-i18n="mf-auto-2147">Screw channel\'s Category</span>',
-        steps: [
-          {
-            heading: '<span data-i18n="mf-auto-2147">Screw channel\'s Category</span>',
-            items: [
-              {
-                label: '<span data-i18n="mf-auto-2148">Depending on the connection type of the screw to be milled, select the appropriate Category (Object feature).</span>',
-                img: 'assets/images/sec-mf-Features/Screw channels Category/image.webp'
-              },
-              {
-                label: 'Category 1 (Object feature 1)',
-                desc: '<strong><span data-i18n="mf-auto-2149">Select this when using a screw with a flat bottom connection part.</span></strong>',
-                img: 'assets/images/sec-mf-Features/Screw channels Category/image 1.webp'
-              },
-              {
-                label: 'Category 2 (Object feature 2)',
-                desc: '<strong><span data-i18n="mf-auto-2150">Select this when using a screw with a tapered bottom connection part.</span></strong>',
-                img: 'assets/images/sec-mf-Features/Screw channels Category/image 2.webp'
-              }
-            ]
-          }
-        ]
-      },
-
       'connector-settings': {
         title: '<span data-i18n="mf-auto-2151">Connector settings</span>',
         steps: [
@@ -6286,11 +6262,40 @@
       </div>
     </div>
   </div>
+  <div id="screwchannel-category-guide-modal" role="dialog" aria-modal="true" aria-labelledby="screwchannel-category-guide-title" style="display:none; position:fixed; inset:0; z-index:1090; align-items:center; justify-content:center; padding:20px; background:rgba(15,23,42,.62);">
+    <div class="standard-modal-dialog" style="background:var(--bg-color,#ffffff); width:100%; max-width:1200px; height:95vh; max-height:calc(100vh - 40px); display:flex; flex-direction:column; overflow:hidden; border-radius:14px; box-shadow:0 16px 40px rgba(0,0,0,0.25);">
+      <div style="display:flex; align-items:center; gap:14px; padding:20px 24px; border-bottom:1px solid #e2e8f0; background:#f8fafc;">
+        <h3 id="screwchannel-category-guide-title" style="margin:0; flex:1; color:#1f2937; font-size:19px; font-weight:700; line-height:1.45;">스크류 채널 CAT1 · CAT2 선택 가이드</h3>
+        <button type="button" onclick="closeScrewchannelCategoryGuideModal()" aria-label="닫기" style="border:0; background:transparent; color:#64748b; font-size:29px; line-height:1; cursor:pointer; padding:4px 7px;">&times;</button>
+      </div>
+      <div style="overflow:hidden; flex:1;">
+        <iframe id="screwchannel-category-guide-document" data-language-sync data-document-id="screwchannel-cat-guide" src="assets/documents/screwchannel-cat-guide/screwchannel-cat1-cat2-guide.html" title="스크류 채널 CAT1 · CAT2 선택 가이드" style="display:block; width:100%; height:calc(95vh - 87px); border:0;"></iframe>
+      </div>
+    </div>
+  </div>
 <script>
   function openGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'flex'; }
   function closeGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'none'; }
   document.getElementById('glass-ceramic-faq-modal')?.addEventListener('click', function (event) { if (event.target === this) closeGlassCeramicFaqModal(); });
   document.getElementById('glass-ceramic-faq-document')?.addEventListener('load', function () {
+    this.contentWindow?.postMessage({ type: 'gencore-language-change', lang: currentLang }, '*');
+  });
+  const screwchannelCategoryGuideHash = '#feature-screw-channel-category';
+  let screwchannelCategoryGuideOrigin = 'sec-mai-hd-features';
+  function openScrewchannelCategoryGuideModal(updateHash = true) {
+    document.getElementById('screwchannel-category-guide-modal').style.display = 'flex';
+    if (updateHash && window.location.hash !== screwchannelCategoryGuideHash) {
+      history.replaceState(null, '', screwchannelCategoryGuideHash);
+    }
+  }
+  function closeScrewchannelCategoryGuideModal() {
+    document.getElementById('screwchannel-category-guide-modal').style.display = 'none';
+    if (window.location.hash === screwchannelCategoryGuideHash) {
+      history.replaceState(null, '', '#' + screwchannelCategoryGuideOrigin);
+    }
+  }
+  document.getElementById('screwchannel-category-guide-modal')?.addEventListener('click', function (event) { if (event.target === this) closeScrewchannelCategoryGuideModal(); });
+  document.getElementById('screwchannel-category-guide-document')?.addEventListener('load', function () {
     this.contentWindow?.postMessage({ type: 'gencore-language-change', lang: currentLang }, '*');
   });
   function openCtrlProgUpdateModal() { const modal = document.getElementById('ctrl-prog-update-modal'); applyModalTranslations(modal); modal.style.display = 'flex'; }
@@ -6299,6 +6304,24 @@
   document.querySelectorAll('#sec-rep-overview [data-section]').forEach(function (card) {
     card.addEventListener('click', function () { document.getElementById('menu-' + this.dataset.section)?.click(); });
   });
+  document.addEventListener('click', function (event) {
+    const card = event.target.closest('.external-guide-card[data-guide-modal="screwchannel-category-guide-modal"]');
+    if (!card) return;
+    screwchannelCategoryGuideOrigin = card.closest('section')?.id || screwchannelCategoryGuideOrigin;
+    openScrewchannelCategoryGuideModal();
+  });
+  document.addEventListener('keydown', function (event) {
+    const card = event.target.closest('.external-guide-card[data-guide-modal="screwchannel-category-guide-modal"]');
+    if (!card || (event.key !== 'Enter' && event.key !== ' ')) return;
+    event.preventDefault();
+    screwchannelCategoryGuideOrigin = card.closest('section')?.id || screwchannelCategoryGuideOrigin;
+    openScrewchannelCategoryGuideModal();
+  });
+  function checkHashForScrewchannelCategoryGuide() {
+    if (window.location.hash === screwchannelCategoryGuideHash) openScrewchannelCategoryGuideModal(false);
+  }
+  window.addEventListener('hashchange', checkHashForScrewchannelCategoryGuide);
+  checkHashForScrewchannelCategoryGuide();
 </script>
 
 
