@@ -1063,7 +1063,7 @@
       },
 
       'edit-nc-file': {
-        title: 'NC 파일 편집하는 법',
+        title: '<span data-i18n="mf-auto-2059">NC 파일 수정방법 - hyperVIEW</span>',
         steps: [
           {
             heading: '1. 특정 공정부터 시작하도록 NC 파일을 편집하는 방법',
@@ -1707,6 +1707,7 @@
       }
 
     };
+    FEATURE_DATA['nc-file-editing-notepad'] = { title: '<span data-i18n="nc-file-editing-notepad-title">NC 파일 수정방법 - 메모장</span>' };
 
     // ── Build modal HTML ──────────────────────────────────────────────
     function buildFeatureHTML(data) {
@@ -1839,8 +1840,16 @@
       const data = FEATURE_DATA[key];
       if (!data) return;
       if (originSectionId) lastSectionId = originSectionId;
-      mTitle.textContent = data.title;
-      mBody.innerHTML = buildFeatureHTML(data);
+      mTitle.innerHTML = data.title;
+      if (key === 'nc-file-editing-notepad') {
+        mBody.innerHTML = '<iframe data-language-sync src="assets/documents/millfix/nc-file-editing/index.html" title="NC 파일 수정방법 - 메모장" style="display:block; width:100%; height:calc(95vh - 150px); min-height:520px; border:0; border-radius:8px;"></iframe>';
+        const documentFrame = mBody.querySelector('iframe[data-language-sync]');
+        documentFrame.addEventListener('load', () => {
+          documentFrame.contentWindow?.postMessage(createExternalDocumentLanguageMessage(currentLang), '*');
+        }, { once: true });
+      } else {
+        mBody.innerHTML = buildFeatureHTML(data);
+      }
       modal.style.display = 'flex';
       mBody.scrollTop = 0;
       history.replaceState(null, null, `#feature-${key}`);
@@ -1849,6 +1858,7 @@
 
     function closeFeatureModal() {
       modal.style.display = 'none';
+      mBody.innerHTML = '';
       // 창을 닫으면 원래 있던 섹션(또는 기본 섹션)으로 이동
       window.location.replace('#' + lastSectionId);
     }

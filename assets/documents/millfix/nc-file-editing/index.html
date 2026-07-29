@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="page-title">NC 파일 수정방법 - 메모장</title>
+  <style>
+    :root { --purple:#a855f7; --purple-dark:#6b21a8; --line:#e5e7eb; --ink:#1f2937; --muted:#4b5563; --surface:#ffffff; --page:#f8fafc; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--page); color:var(--ink); font-family:"Malgun Gothic","맑은 고딕",Arial,sans-serif; font-weight:700; line-height:1.65; }
+    .page { max-width:1080px; margin:0 auto; padding:48px 24px 72px; }
+    .hero { background:linear-gradient(135deg,#fff 0%,#faf5ff 100%); border:1px solid #e9d5ff; border-radius:18px; padding:32px; box-shadow:0 4px 18px rgba(107,33,168,.08); }
+    h1 { margin:0; font-size:30px; letter-spacing:-.04em; }
+    .subtitle { margin:8px 0 0; color:var(--muted); font-size:16px; }
+    .video-guide { margin:24px 0 32px; }
+    .video-link { display:inline-flex; align-items:center; justify-content:center; gap:9px; margin-top:16px; padding:12px 16px; background:#ff0000; color:#ffffff; border:none; border-radius:10px; font-size:14px; font-weight:700; text-decoration:none; cursor:pointer; transition:background .2s, transform .2s; box-shadow:0 4px 10px rgba(255,0,0,.22); }
+    .video-link:hover { background:#cc0000; transform:translateY(-1px); }
+    .youtube-play { display:inline-grid; place-items:center; width:22px; height:16px; border-radius:5px; background:#ffffff; color:#ff0000; font-size:10px; line-height:1; }
+    h2 { margin:0 0 22px; padding-left:14px; border-left:4px solid var(--purple); font-size:21px; }
+    .steps { display:grid; gap:24px; }
+    .step { overflow:hidden; background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:0 2px 8px rgba(0,0,0,.035); }
+    .step-body { padding:20px 22px 22px; }
+    .step-title { display:flex; align-items:flex-start; gap:11px; margin:0; color:#374151; font-size:17px; font-weight:700; }
+    .number { display:inline-grid; place-items:center; width:28px; height:28px; flex:0 0 28px; border-radius:50%; background:#f3e8ff; color:var(--purple-dark); font-size:14px; }
+    img { display:block; width:100%; height:auto; border-top:1px solid var(--line); background:#f3f4f6; }
+    .final { margin-top:32px; padding:20px 22px; border:1px solid #bbf7d0; border-radius:14px; background:#f0fdf4; color:#166534; }
+    .final strong { display:block; margin-bottom:4px; font-size:18px; }
+    @media (max-width:640px) { .page { padding:24px 14px 48px; } .hero { padding:24px 20px; } h1 { font-size:25px; } .step-body { padding:16px; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1 data-i18n="hero-title">✂️ NC 파일 수정방법 - 메모장</h1>
+      <p class="subtitle" data-i18n="hero-subtitle">특정 공정부터 가공하도록 NC 파일의 앞부분을 정리하는 방법</p>
+    </header>
+
+    <div class="video-guide">
+      <a class="video-link" href="https://youtu.be/wgCeXI_1vi4" target="_blank" rel="noopener noreferrer"><span class="youtube-play">▶</span> <span data-i18n="video-link">YouTube에서 영상 보기</span></a>
+    </div>
+
+    <section aria-labelledby="guide-title">
+      <h2 id="guide-title" data-i18n="guide-title">T11 공정부터 시작하도록 수정하는 방법</h2>
+      <div class="steps">
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">1</span><span data-i18n="step-1">편집할 NC 파일을 선택한 후 복사합니다.</span></p></div><img src="1. 편집할 NC 파일을 선택 후 복사.webp" alt="편집할 NC 파일을 선택하여 복사하는 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">2</span><span data-i18n="step-2">원본이 아닌 복사본을 메모장으로 열어 편집합니다.</span></p></div><img src="2. 우리는 복사본을 편집한다.webp" alt="복사본을 편집하는 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">3</span><span data-i18n="step-3">시작하려는 공정의 공구 번호를 확인합니다. 예시에서는 T11부터 시작합니다.</span></p></div><img src="3. 시작하고 싶은 지점은 T11.webp" alt="T11 공정부터 시작할 위치"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">4</span><span data-i18n="step-4">Ctrl + F를 눌러 찾기 창을 열고, 시작할 공구 번호인 T11을 입력합니다.</span></p></div><img src="4. 첫 T11공정을 찾기위해 T11 타이핑 .webp" alt="찾기 창에 T11을 입력하는 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">5</span><span data-i18n="step-5">Enter 키는 한 번만 눌러 첫 번째 T11 공정을 찾습니다.</span></p></div><img src="5. 컨트롤 F는 한번만 눌러라.webp" alt="첫 번째 T11 공정을 찾는 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">6</span><span data-i18n="step-6">첫 T11 공정을 찾았다면 그 위의 코드 전체를 삭제할 준비를 합니다.</span></p></div><img src="6. 첫 T11 찾았으면 그 위는 다 지운다 .webp" alt="T11 위의 코드를 삭제할 위치"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">7</span><span data-i18n="step-7">삭제할 부분 바로 윗 줄의 끝을 클릭합니다. 예시 화면에서는 'G0 G53 Z-3' 코드의 끝인 '3'입니다.</span></p></div><img src="7. 바로 직전 코드를 클릭한다.webp" alt="삭제 범위의 마지막 줄을 선택하는 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">8</span><span data-i18n="step-8">스크롤바를 맨 위로 이동합니다.</span></p></div><img src="8. 그 다음 맨 위로 이동해라.webp" alt="문서 맨 위로 이동하는 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">9</span><span data-i18n="step-9">Shift 키를 누른 상태로 맨 앞의 코드 줄을 클릭하여 앞부분 전체를 선택합니다.</span></p></div><img src="9. 시프트 누른 상태로 맨 앞 코드 누르면 아까 누른 지점부터 처음까지 다 선택된다..webp" alt="Shift 키로 삭제할 코드 범위를 선택하는 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">10</span><span data-i18n="step-10">Delete 키를 눌러 선택한 코드만 삭제합니다.</span></p></div><img src="10. 그런 다음 딜리트 누르면 그거만 다 지워진다.webp" alt="선택한 코드가 삭제된 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">11</span><span data-i18n="step-11">수정이 끝났으면 파일을 저장합니다.</span></p></div><img src="11. 끝났다. 이제 저장해라.webp" alt="수정한 NC 파일을 저장하는 화면"></article>
+        <article class="step"><div class="step-body"><p class="step-title"><span class="number">12</span><span data-i18n="step-12">저장한 파일을 다시 열어 첫 공정이 M06 T11 코드부터 시작하는지 최종 확인합니다.</span></p></div><img src="12. 다시 열어서 마지막으로 확인.webp" alt="수정한 NC 파일을 다시 열어 확인하는 화면"></article>
+      </div>
+    </section>
+
+    <aside class="final"><strong data-i18n="final-title">최종확인</strong><span data-i18n="final-text">NC파일의 이름을 잘 확인 후 가공 시작하시기 바랍니다.</span></aside>
+  </main>
+  <script>
+    const translations = {
+      en: {
+        'page-title': 'NC File Editing - Notepad', 'hero-title': '✂️ NC File Editing - Notepad', 'hero-subtitle': 'How to organize the beginning of an NC file so machining starts from a specific process.', 'video-link': 'Watch on YouTube', 'guide-title': 'How to edit the file to start from the T11 process',
+        'step-1': 'Select the NC file you want to edit and make a copy.', 'step-2': 'Open the copy—not the original—in Notepad and edit it.', 'step-3': 'Check the tool number for the process where you want to start. This example starts at T11.', 'step-4': 'Press Ctrl + F to open the search box, then enter T11, the tool number where you want to start.', 'step-5': 'Press Enter only once to find the first T11 process.', 'step-6': 'After finding the first T11 process, prepare to delete all code above it.', 'step-7': "Click the end of the line immediately above the part to delete. In this example, it is the '3' at the end of the 'G0 G53 Z-3' code.", 'step-8': 'Move the scroll bar to the top of the document.', 'step-9': 'Hold Shift and click the first line of code to select everything before the chosen point.', 'step-10': 'Press Delete to remove only the selected code.', 'step-11': 'When editing is complete, save the file.', 'step-12': 'Reopen the saved file and confirm that the first process starts with M06 T11.', 'final-title': 'Final check', 'final-text': 'Confirm the NC file name before starting machining.'
+      },
+      ja: {
+        'page-title': 'NCファイル編集方法 - メモ帳', 'hero-title': '✂️ NCファイル編集方法 - メモ帳', 'hero-subtitle': '特定の工程から加工を開始できるよう、NCファイルの先頭部分を整理する方法です。', 'video-link': 'YouTubeで動画を見る', 'guide-title': 'T11工程から開始するための編集方法',
+        'step-1': '編集するNCファイルを選択し、コピーを作成します。', 'step-2': '元ファイルではなくコピーをメモ帳で開いて編集します。', 'step-3': '開始したい工程の工具番号を確認します。この例ではT11から開始します。', 'step-4': 'Ctrl + Fで検索ウィンドウを開き、開始する工具番号のT11を入力します。', 'step-5': 'Enterキーは一度だけ押して、最初のT11工程を見つけます。', 'step-6': '最初のT11工程を見つけたら、その上にあるコード全体を削除する準備をします。', 'step-7': "削除する部分のすぐ上の行の末尾をクリックします。この例では、『G0 G53 Z-3』コードの末尾にある『3』です。", 'step-8': 'スクロールバーを文書の一番上まで移動します。', 'step-9': 'Shiftキーを押しながら先頭のコード行をクリックし、選択した位置より前の部分をすべて選択します。', 'step-10': 'Deleteキーを押して、選択したコードだけを削除します。', 'step-11': '編集が完了したら、ファイルを保存します。', 'step-12': '保存したファイルを開き直し、最初の工程がM06 T11コードから開始していることを確認します。', 'final-title': '最終確認', 'final-text': '加工を開始する前に、NCファイル名をよく確認してください。'
+      }
+    };
+
+    function applyLanguage(lang) {
+      document.documentElement.lang = lang || 'ko';
+      const dictionary = translations[lang] || {};
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const text = dictionary[element.dataset.i18n];
+        if (text) element.textContent = text;
+      });
+    }
+
+    window.addEventListener('message', (event) => {
+      if (event.data?.type === 'gencore-language-change') applyLanguage(event.data.lang);
+    });
+  </script>
+</body>
+</html>

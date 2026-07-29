@@ -2918,6 +2918,42 @@ Object.assign(TRANSLATIONS.es, {
   "tooltip-material-pmma-peek": "PMMA / PEEK"
 });
 
+Object.assign(TRANSLATIONS.ko, {
+  "mf-auto-307": "NC 파일 수정방법 - hyperVIEW",
+  "mf-auto-2059": "NC 파일 수정방법 - hyperVIEW"
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "mf-auto-307": "NC File Editing - hyperVIEW",
+  "mf-auto-2059": "NC File Editing - hyperVIEW"
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "mf-auto-307": "NCファイル編集方法 - hyperVIEW",
+  "mf-auto-2059": "NCファイル編集方法 - hyperVIEW"
+});
+
+Object.assign(TRANSLATIONS.es, {
+  "mf-auto-307": "Edición de archivos NC - hyperVIEW",
+  "mf-auto-2059": "Edición de archivos NC - hyperVIEW"
+});
+
+Object.assign(TRANSLATIONS.ko, {
+  "nc-file-editing-notepad-title": "NC 파일 수정방법 - 메모장"
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "nc-file-editing-notepad-title": "NC File Editing - Notepad"
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "nc-file-editing-notepad-title": "NCファイル編集方法 - メモ帳"
+});
+
+Object.assign(TRANSLATIONS.es, {
+  "nc-file-editing-notepad-title": "Edición de archivos NC - Bloc de notas"
+});
+
 const JA_NAV_OVERRIDES = {
   "nav-menu-label": "メニュー",
   "nav-mai-setup": "設置 / 基本操作",
