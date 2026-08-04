@@ -5865,85 +5865,85 @@
       },
 
       'long-screw-channel': {
-                title: '<span data-i18n="mf-auto-3027">How to mill long screw channel over 15mm</span>',
+                title: '<span data-i18n="mf-auto-3027">15mm 이상의 긴 스크류 채널 가공 방법</span>',
         steps: [
           {
-                heading: '<span data-i18n="mf-auto-3028">1. Requirements</span>',
+                heading: '<span data-i18n="mf-auto-3028">1. 준비물</span>',
             items: [
               {
-                label: '<span data-i18n="mf-auto-3029">① hyperDENT version 10.1.1 or higher</span><br><em>hyperDENT Version 10.1.1 or higher</em><br><br><span data-i18n="mf-auto-3030">hyperDENT version can be checked by pressing the F12 key on the keyboard.</span><br><em>You can check your hyperDENT version by pressing F12 on your keyboard.</em>',
+                label: '<span data-i18n="mf-auto-3029">① hyperDENT 버전 10.1.1 이상</span><br><br><span data-i18n="mf-auto-3030">키보드의 F12 키를 눌러 hyperDENT 버전을 확인할 수 있습니다.</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 43.png'
               },
               {
-                label: '<span data-i18n="mf-auto-3031">② MAI DB(database) 251115 or higher</span><br><em>MAI DB(database) 251115 or later</em><br><br><span data-i18n="mf-auto-3032">Pressing the F4 key checks the database version.</span><br><em>You can check your database version by pressing F4 on your keyboard.</em>',
+                label: '<span data-i18n="mf-auto-3031">② MAI DB(데이터베이스) 251115 이상</span><br><br><span data-i18n="mf-auto-3032">키보드의 F4 키를 눌러 데이터베이스 버전을 확인할 수 있습니다.</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 44.png'
               },
               {
-                label: '<strong><span data-i18n="mf-auto-889">③ T01, T23 tools</span></strong><br><em>T01, T23 tools</em><span data-i18n="mf-auto-890">'
+                label: '<strong><span data-i18n="mf-auto-889">③ T01, T23 공구</span></strong>'
               }
             ]
           },
           {
-                heading: '<span data-i18n="mf-auto-3033">2. How to Calculate</span>',
+                heading: '<span data-i18n="mf-auto-3033">2. 계산 방법</span>',
             items: [
               {
-                label: '<span data-i18n="mf-auto-2187">Finish settings as usual and press the calculate button.</span><br><em>Once all setup is complete, please start calculating as usual.</em>',
+                label: '<span data-i18n="mf-auto-2187">평소처럼 설정을 마친 뒤 계산 버튼을 눌러주세요.</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 45.png'
               },
               {
-                label: '<span data-i18n="mf-auto-2188">After calculation, go to the "Show toolpaths" menu to edit the NC file.</span><br><em>After calculation is done, please enter the \'Show toolpaths\' menu to edit NC file.</em>',
+                label: '<span data-i18n="mf-auto-2188">계산 완료 후 NC 파일 편집을 위해 공구 경로 보기 메뉴로 가주세요.</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 46.png'
               },
               {
-                label: '<span data-i18n="mf-auto-2189">Separate all connector-related processes.</span><br><span data-i18n="mf-auto-893">Two NC files will be generated: one for bar milling (NC1) and one for connector only (NC3).</span>',
+                label: '<span data-i18n="mf-auto-2189">커넥터 관련 공정을 모두 분리합니다.</span><br><span data-i18n="mf-auto-893">바 가공용(NC1)과 커넥터 전용(NC3) NC 파일 두 개가 생성됩니다.</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 47.png'
               },
               {
-                label: '<span data-i18n="mf-auto-3034">Create NC1 (Bar milling only)</span>',
+                label: '<span data-i18n="mf-auto-3034">NC1 생성(바 가공 전용)</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 48.png'
               },
               {
-                label: '<span data-i18n="mf-auto-2191">NC3 Creation (Connector cutting only)</span><br><br><span data-i18n="mf-auto-894">Separate all connector-related processes into a new NC file. Two NC files will be created: Bar milling (NC1) and Connector cutting (NC2).</span><br><em>Separate all connector-related processes to create a new NC file. Two files will be generated: one for bar milling only (NC1) and another for connector milling only (NC2).</em>',
+                label: '<span data-i18n="mf-auto-2191">NC3 생성(커넥터 전용)</span><br><br><span data-i18n="mf-auto-894">커넥터 관련 공정을 새 NC 파일로 분리합니다. 바 가공(NC1)과 커넥터 가공(NC2)용 파일 두 개가 생성됩니다.</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 49.png'
               },
               {
-                label: '<span data-i18n="mf-auto-3035">Please unlock the STL calculated just now. (Shortcut: Ctrl + L)</span><br><em>Then, please unlock the STL file that was calculated just before. (Shortcut: Ctrl + L)</em>',
+                label: '<span data-i18n="mf-auto-3035">방금 계산한 STL을 잠금 해제해 주세요. (단축키: Ctrl + L)</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 50.png'
               },
               {
-                label: '<span data-i18n="mf-auto-3036">Among the templates, select "####_Screw Head(T cut)" and calculate again (NC2).</span><br><em>Select the template titled <strong style="color:#ef4444">"####_Screw Head(T cut)"</strong> and calculate again (NC2).</em>',
+                label: '<span data-i18n="mf-auto-3036">템플릿에서 "####_Screw Head(T cut)"를 선택한 뒤 다시 계산하세요(NC2).</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 51.png'
               },
               {
-                label: '<span data-i18n="mf-auto-3037">Check NC2 calculation result</span>',
+                label: '<span data-i18n="mf-auto-3037">NC2 계산 결과 확인</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 52.png'
               },
               {
-                label: '<span data-i18n="mf-auto-3038">Now process sequentially: NC1 (bar milling) → NC2 (additional hole milling) → Check fit → NC3 (connector milling). Please check the fit before running NC3.</span><br><em>Please process the milling sequentially: NC1 (bar milling) → NC2 (additional hole milling) → check fit → NC3 (connector cutting). Before running NC3, please check the fit.</em>',
+                label: '<span data-i18n="mf-auto-3038">NC1(바 가공) → NC2(홀 추가 가공) → 적합 확인 → NC3(커넥터 가공) 순서로 진행하세요. NC3 전에는 반드시 적합을 확인하세요.</span>',
               }
             ]
           },
           {
-                heading: '<span data-i18n="mf-auto-3039">3. Working principle</span>',
+                heading: '<span data-i18n="mf-auto-3039">3. 가공 원리</span>',
             items: [
               {
-                label: '<span data-i18n="mf-auto-2196">Past method: Long hole machining (Machining not possible for 15mm or more)</span><br><em>Past long-hole milling — Drilling over 15mm was not possible.</em>',
+                label: '<span data-i18n="mf-auto-2196">기존 방식: 롱홀 가공(15mm 이상 가공 불가)</span>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 53.png'
               },
               {
-                label: '<ul style="margin:8px 0 0 20px; padding:0; list-style:disk;"><li style="margin-bottom:6px; color:#4b5563; font-size:15px;"><span data-i18n="mf-auto-902">Mill up to 20mm using the Zirconia-specific tool (T01).</span> </span><em>(NC1)</em><br><em>Milling up to 20mm using the Zir 2.0B tool (T01) — NC1</em></li><li style="margin-bottom:6px; color:#4b5563; font-size:15px;"><span data-i18n="mf-auto-903">However, an unmachined part remains (indicated by green circle).</span><br><em>However, un-milled areas still remain (marked with green circles).</em></li><li style="margin-bottom:6px; color:#4b5563; font-size:15px;"><span data-i18n="mf-auto-904">Perform additional machining on that part with a T-cutter.</span> </span><em>(NC2)</em><br><em>Mill that area using a T-cutter — NC2</em></li></ul>',
+                label: '<ul style="margin:8px 0 0 20px; padding:0; list-style:disk;"><li style="margin-bottom:6px; color:#4b5563; font-size:15px;"><span data-i18n="mf-auto-902">지르코니아 전용 공구(T01)로 최대 20mm까지 가공합니다.</span> (NC1)</li><li style="margin-bottom:6px; color:#4b5563; font-size:15px;"><span data-i18n="mf-auto-903">다만 가공되지 않은 부분이 남습니다(초록색 원 표시).</span></li><li style="margin-bottom:6px; color:#4b5563; font-size:15px;"><span data-i18n="mf-auto-904">해당 부분을 T 커터로 추가 가공합니다-Cavity 방향에서 진입.</span> (NC2)</li></ul>',
                 img: 'assets/images/sec-mf-Features/Long screw channel/image 54.png'
               }
             ]
           },
           {
-                heading: '<span data-i18n="mf-auto-3040">4. ⚠️ Precaution</span>',
+                heading: '<span data-i18n="mf-auto-3040">4. ⚠️ 주의사항</span>',
             items: [
               {
-                label: '<strong style="color:#ef4444"><span data-i18n="mf-auto-906">⚠️ Because Titanium or PMMA is machined with a Zirconia tool, the risk of tool damage is very high. Be sure to check the tool condition after machining.</span></strong><br><em>The risk of tool damage is extremely high since Titanium or PMMA is machined with Zirconia tools. Please check the tool\'s condition after milling.</em>'
+                label: '<strong style="color:#ef4444"><span data-i18n="mf-auto-906">⚠️ 티타늄 또는 PMMA를 지르코니아용 공구로 가공하므로 공구 파손 위험이 매우 높습니다. 가공 후 반드시 공구 상태를 확인하세요.</span></strong>'
               },
               {
-                label: '<strong style="color:#ef4444"><span data-i18n="mf-auto-907">⚠️ Since the T-cutter is not perfectly right-angled, perfect machining is difficult if the screw channel is a right angle.</span></strong><br><em>Since T-cutters are not perfectly square, perfect machining is impossible if the screw channel has a right angle.</em><span data-i18n="mf-auto-908">'
+                label: '<strong style="color:#ef4444"><span data-i18n="mf-auto-907">⚠️ T 커터는 완전한 직각 형태가 아니므로 스크류 채널이 직각이면 완벽한 가공이 어렵습니다.</span></strong>'
               }
             ]
           }

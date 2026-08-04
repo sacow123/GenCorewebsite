@@ -47,6 +47,11 @@
               <span class="faq-item-title" data-i18n="faq-glass-ceramic-title">Glass Ceramic 가공 시 Normal - Fast 버전의 차이</span>
               <span class="faq-item-arrow" aria-hidden="true">›</span>
             </button>
+            <button type="button" class="faq-item" onclick="openMaiDryWetFaqModal()" aria-haspopup="dialog">
+              <img class="faq-mai-logo" src="assets/images/brand/mai-logo-black.webp" alt="M AI 로고">
+              <span class="faq-item-title" data-i18n="faq-mai-dry-wet-title">M AI 사용 시 건식 🔄 습식 전환</span>
+              <span class="faq-item-arrow" aria-hidden="true">›</span>
+            </button>
           </div>
         </div>
       </section>
@@ -2507,6 +2512,17 @@
       </div>
     </div>
   </div>
+  <!-- FAQ: M AI dry / wet switching -->
+  <div id="mai-dry-wet-faq-modal" role="dialog" aria-modal="true" aria-labelledby="mai-dry-wet-faq-title" style="display:none; position:fixed; inset:0; z-index:1090; align-items:center; justify-content:center; padding:20px; background:rgba(15,23,42,.62);">
+    <div class="standard-modal-dialog">
+      <div style="display:flex; align-items:center; gap:14px; padding:20px 24px; border-bottom:1px solid #e2e8f0; background:#f8fafc;">
+        <img src="assets/images/brand/mai-logo-black.webp" alt="M AI 로고" style="width:82px; height:42px; flex-shrink:0; object-fit:contain; object-position:center;">
+        <h3 id="mai-dry-wet-faq-title" data-i18n="faq-mai-dry-wet-title" style="margin:0; flex:1; color:#1f2937; font-size:19px; font-weight:700; line-height:1.45;">M AI 사용 시 건식 🔄 습식 전환</h3>
+        <button type="button" onclick="closeMaiDryWetFaqModal()" aria-label="닫기" style="border:0; background:transparent; color:#64748b; font-size:29px; line-height:1; cursor:pointer; padding:4px 7px;">&times;</button>
+      </div>
+      <div aria-label="내용 준비 중" style="height:calc(95vh - 87px); flex:1;"></div>
+    </div>
+  </div>
 <script>
   function openGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'flex'; }
   function closeGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'none'; }
@@ -2514,6 +2530,9 @@
   document.getElementById('glass-ceramic-faq-document')?.addEventListener('load', function () {
     this.contentWindow?.postMessage({ type: 'gencore-language-change', lang: currentLang }, '*');
   });
+  function openMaiDryWetFaqModal() { document.getElementById('mai-dry-wet-faq-modal').style.display = 'flex'; }
+  function closeMaiDryWetFaqModal() { document.getElementById('mai-dry-wet-faq-modal').style.display = 'none'; }
+  document.getElementById('mai-dry-wet-faq-modal')?.addEventListener('click', function (event) { if (event.target === this) closeMaiDryWetFaqModal(); });
   function openCtrlProgUpdateModal() { const modal = document.getElementById('ctrl-prog-update-modal'); applyModalTranslations(modal); modal.style.display = 'flex'; }
   function closeCtrlProgUpdateModal() { document.getElementById('ctrl-prog-update-modal').style.display = 'none'; }
   document.getElementById('ctrl-prog-update-modal')?.addEventListener('click', function (event) { if (event.target === this) closeCtrlProgUpdateModal(); });

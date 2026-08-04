@@ -17,12 +17,12 @@
     .video-link:hover { background:#cc0000; transform:translateY(-1px); }
     .youtube-play { display:inline-grid; place-items:center; width:22px; height:16px; border-radius:5px; background:#ffffff; color:#ff0000; font-size:10px; line-height:1; }
     h2 { margin:0 0 22px; padding-left:14px; border-left:4px solid var(--purple); font-size:21px; }
-    .steps { display:grid; gap:24px; }
-    .step { overflow:hidden; background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:0 2px 8px rgba(0,0,0,.035); }
-    .step-body { padding:20px 22px 22px; }
+    .steps { display:grid; gap:28px; }
+    .step { display:flex; flex-direction:column; overflow:hidden; background:var(--surface); border:2px solid #d8b4fe; border-radius:14px; box-shadow:0 4px 12px rgba(107,33,168,.10); }
+    .step-body { order:2; padding:20px 22px 22px; border-top:2px solid #d8b4fe; background:#fdfaff; }
     .step-title { display:flex; align-items:flex-start; gap:11px; margin:0; color:#374151; font-size:17px; font-weight:700; }
     .number { display:inline-grid; place-items:center; width:28px; height:28px; flex:0 0 28px; border-radius:50%; background:#f3e8ff; color:var(--purple-dark); font-size:14px; }
-    img { display:block; width:100%; height:auto; border-top:1px solid var(--line); background:#f3f4f6; }
+    .step img { order:1; display:block; width:100%; height:auto; background:#f3f4f6; }
     .final { margin-top:32px; padding:20px 22px; border:1px solid #bbf7d0; border-radius:14px; background:#f0fdf4; color:#166534; }
     .final strong { display:block; margin-bottom:4px; font-size:18px; }
     @media (max-width:640px) { .page { padding:24px 14px 48px; } .hero { padding:24px 20px; } h1 { font-size:25px; } .step-body { padding:16px; } }
