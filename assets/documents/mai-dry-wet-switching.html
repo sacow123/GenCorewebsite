@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M AI 건·습식 전환 매뉴얼</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
+    :root { --purple:#a855f7; --purple-dark:#7e22ce; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --surface:#fff; --wash:#faf7ff; --warn:#fff7ed; --warn-line:#fdba74; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#f7f7fb; color:var(--ink); font-family:Inter,"Noto Sans KR",sans-serif; line-height:1.65; word-break:keep-all; }
+    .topbar { position:sticky; top:0; z-index:10; height:66px; display:flex; align-items:center; background:rgba(255,255,255,.94); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    .topbar-inner, main { width:min(1080px, calc(100% - 40px)); margin:0 auto; }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:800; letter-spacing:-.02em; }
+    .brand-mark { display:grid; place-items:center; width:32px; height:32px; border-radius:9px; color:#fff; background:linear-gradient(135deg,#c084fc,var(--purple-dark)); font-size:14px; }
+    main { padding:54px 0 80px; }
+    .hero { padding:42px; border-radius:22px; color:#fff; background:linear-gradient(125deg,#35105d,#7e22ce 61%,#c084fc); box-shadow:0 18px 36px rgba(126,34,206,.18); }
+    .eyebrow { margin:0 0 10px; color:#e9d5ff; font-size:13px; font-weight:700; letter-spacing:.08em; }
+    h1 { margin:0; font-size:clamp(28px,5vw,43px); line-height:1.25; letter-spacing:-.05em; }
+    .hero p:last-child { margin:15px 0 0; color:#f5f3ff; font-size:16px; }
+    .toc { margin:30px 0 46px; padding:26px; border:1px solid var(--line); border-radius:16px; background:var(--surface); box-shadow:0 2px 6px rgba(0,0,0,.04); }
+    .toc h2 { margin:0 0 16px; color:var(--purple-dark); font-size:18px; }
+    .toc-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+    .toc a { display:flex; align-items:center; gap:12px; padding:17px; border:1px solid var(--line); border-radius:12px; color:var(--ink); text-decoration:none; font-weight:700; transition:.2s; }
+    .toc a:hover { border-color:var(--purple); box-shadow:0 8px 20px rgba(168,85,247,.14); transform:translateY(-2px); }
+    .toc-num { display:grid; place-items:center; flex:0 0 28px; width:28px; height:28px; border-radius:50%; color:var(--purple-dark); background:#f3e8ff; font-size:13px; }
+    section { scroll-margin-top:88px; margin-top:54px; }
+    .section-heading { display:flex; gap:14px; align-items:flex-start; margin-bottom:18px; }
+    .heading-icon { display:grid; place-items:center; flex:0 0 46px; height:46px; border-radius:12px; background:#f3e8ff; font-size:23px; }
+    h2 { margin:0; font-size:25px; letter-spacing:-.04em; }
+    .subtitle { margin:4px 0 0; color:var(--muted); font-size:14px; }
+    .notice { margin:22px 0; padding:17px 19px; border:1px solid var(--warn-line); border-radius:12px; background:var(--warn); color:#9a3412; font-size:14px; }
+    .intro-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:24px 0 30px; }
+    .reference-card, .step { border:1px solid var(--line); border-radius:16px; overflow:hidden; background:var(--surface); box-shadow:0 2px 6px rgba(0,0,0,.045); }
+    .reference-card img { width:100%; height:285px; object-fit:cover; display:block; background:#f3f4f6; }
+    .reference-card img[alt="M AI 단면도"] { object-fit:contain; background:#fff; }
+    .diagram-card { grid-row:span 2; display:flex; flex-direction:column; min-height:0; height:100%; overflow:hidden; }
+    .diagram-card img { height:0; min-height:0; flex:1 1 0; }
+    .reference-card .copy { padding:10px 18px; }
+    h3 { margin:0 0 5px; color:var(--purple-dark); font-size:17px; }
+    .copy p { margin:0; color:#4b5563; font-size:14px; font-weight:700; }
+    .steps { display:grid; gap:18px; }
+    .step { display:grid; grid-template-columns:minmax(260px,42%) 1fr; min-height:260px; }
+    .media { min-height:100%; background:#171717; }
+    .media img, .media video { width:100%; height:100%; max-height:380px; display:block; object-fit:cover; }
+    .media video { object-fit:contain; }
+    .warmup-card .media img { object-fit:contain; background:#050505; }
+    .step-copy { padding:28px; display:flex; flex-direction:column; justify-content:center; }
+    .step h3 { font-size:20px; }
+    .step-copy p { margin:9px 0 0; color:#4b5563; font-size:15px; font-weight:700; }
+    .step-copy ul { margin:10px 0 0; padding-left:19px; color:#4b5563; font-size:15px; }
+    .step-copy li+li { margin-top:4px; }
+    .text-step { display:block; min-height:auto; border-left:4px solid var(--purple); }
+    .text-step .step-copy { padding:22px 26px; }
+    .footer { margin-top:54px; padding:20px; border-top:1px solid var(--line); color:var(--muted); text-align:center; font-size:13px; }
+    @media (max-width:720px) { .topbar-inner, main { width:min(100% - 28px,1080px); } main { padding-top:28px; } .hero { padding:28px 24px; border-radius:16px; } .toc-grid,.intro-grid { grid-template-columns:1fr; } .diagram-card { grid-row:auto; } .step { grid-template-columns:1fr; } .media { min-height:220px; } .media img,.media video { height:auto; min-height:220px; max-height:440px; } .reference-card img { height:auto; max-height:420px; } .step-copy { padding:22px; } }
+
+    .reference-card:not(.diagram-card) img { height:auto; object-fit:contain; }
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-mark">M</span>GenCore Technical Support Center</div></div></header>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">M AI · USER GUIDE</p>
+      <h1>건·습식 전환 매뉴얼</h1>
+      <p>M AI 장비의 습식과 건식 가공 환경을 안전하게 전환하는 절차입니다.</p>
+    </header>
+
+    <nav class="toc" aria-label="목차">
+      <h2>📚 목차</h2>
+      <div class="toc-grid">
+        <a href="#wet-to-dry"><span class="toc-num">01</span>습식에서 건식으로 전환</a>
+        <a href="#dry-to-wet"><span class="toc-num">02</span>건식에서 습식으로 전환</a>
+      </div>
+    </nav>
+
+    <section id="wet-to-dry">
+      <div class="section-heading"><div class="heading-icon">💧</div><div><h2>습식에서 건식으로 전환</h2><p class="subtitle">절삭유를 제거하고 건식 가공용 덮개를 장착합니다.</p></div></div>
+      <div class="notice"><strong>⚠️ 작업 전 확인</strong><br>장비를 정지시키고 작업하시오. 기계 내부에 절삭유가 남지 않도록 유의바랍니다.</div>
+
+      <div class="intro-grid">
+        <article class="reference-card"><img src="../images/faq/mai-dry-wet/0. 자 여기가 1번이고 저기가 2번이야.webp" alt="장비 내부 1번과 2번 위치"><div class="copy"><h3>사전 확인 · 내부 위치</h3><p>1번: 습식 전용 배수구.<br>2번: 건식 사이클론 전용 흡입구.</p></div></article>
+        <article class="reference-card diagram-card"><img src="../images/faq/mai-dry-wet/0-2.M AI 단면도 간략화.webp" alt="M AI 단면도"><div class="copy"><h3>사전 확인 · 장비 단면</h3><p>전환 전 장비 내부 구조와 흐름을 확인합니다.</p></div></article>
+        <article class="reference-card"><img src="../images/faq/mai-dry-wet/0-1. 자 여기가 오일탱크고 저기가 사이클론이야.webp" alt="오일 탱크와 사이클론 위치"><div class="copy"><h3>사전 확인 · 오일 탱크 및 사이클론</h3><p>1번: 오일탱크<br>2번: 사이클론</p></div></article>
+      </div>
+
+      <div class="steps">
+        <article class="step text-step"><div class="step-copy"><h3>절삭유를 모두 배출합니다</h3><p>오일 탱크의 절삭유가 남지 않도록 완전히 비웁니다.</p></div></article>
+        <article class="step"><div class="media"><video controls preload="metadata"><source src="../videos/faq/mai-dry-wet/1-1 스핀들 앞으로 불러오고 바람 쏘시면 됩니다.mp4" type="video/mp4">이 브라우저는 동영상 재생을 지원하지 않습니다.</video></div><div class="step-copy"><h3>스핀들을 앞으로 이동하고 에어를 분사합니다</h3><p>스핀들을 앞으로 불러온 뒤, 내부에 남아 있는 절삭유와 이물질을 에어로 충분히 제거합니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/1-2. 바람 쏠곳.webp" alt="에어 분사 위치"></div><div class="step-copy"><h3>에어 분사 위치를 확인합니다</h3><p>장비 뒤편에 있는 절삭유 호스를 분리하고 해당 위치에 에어를 분사하세요.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/1-3.바람 쏠곳2.webp" alt="에어 분사 위치 추가"></div><div class="step-copy"><h3>반대쪽도 에어로 청소합니다</h3><p>장비 아래쪽 오일탱크의 호스도 분리 후 에어를 분사합니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/3. 절삭유 다 뺐으면 물로 청소.webp" alt="물로 장비 내부 청소"></div><div class="step-copy"><h3>물로 내부를 청소합니다</h3><p>절삭유를 모두 뺀 뒤 물을 사용해 내부를 청소합니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/4.  물 청소 후 마른 수건 및 휴지로 내부 청소.webp" alt="마른 수건과 휴지로 내부 청소"></div><div class="step-copy"><h3>내부의 물기를 제거하세요.</h3><p>물 청소 후 마른 수건과 휴지로 내부의 물기를 꼼꼼히 제거합니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/5. 청소 다 했으면 뚜껑 고정하는 나사 제거.webp" alt="덮개 고정 나사 제거"></div><div class="step-copy"><h3>덮개 고정 나사를 풉니다</h3><p>청소가 끝나면 기존 덮개를 고정하고 있는 나사를 제거합니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/6. 나사 제거 후 뚜껑 따기.webp" alt="나사 제거 후 덮개 분리"></div><div class="step-copy"><h3>기존 덮개를 분리합니다</h3><p>나사를 제거한 뒤 덮개를 조심스럽게 들어 냅니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/7. 반대쪽도 나사 풀르고.webp" alt="반대쪽 나사 풀기"></div><div class="step-copy"><h3>반대쪽 나사도 풉니다</h3><p>반대쪽 고정 나사도 동일하게 풀어 덮개 장착을 준비합니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/8. 뚜껑 넣은다음 다시 나사 고정.webp" alt="덮개 장착 및 나사 고정"></div><div class="step-copy"><h3>습식 전용 배수구에 덮개를 장착한 후 나사로 고정하세요.</h3><p>습식 전용 배수구에 덮개를 장착한 후 나사로 고정하세요.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/9. 뚜껑 반대쪽에 끼웠으면 아까 풀은 나사 고정.webp" alt="덮개 나사 고정"></div><div class="step-copy"><h3>아까 풀었던 나사를 다시 장착하세요.</h3><p>반대쪽 덮개를 장착한 후 앞서 풀었던 나사를 단단히 고정합니다.</p></div></article>
+        <article class="step warmup-card"><div class="media"><img src="../images/faq/mai-dry-wet/워밍업하세요 최소 2번.webp" alt="M AI 워밍업 메뉴 위치"></div><div class="step-copy"><h3>건식 전환 후 워밍업을 진행합니다</h3><p>건식으로 전환 후에는 최소한 2번의 워밍업을 진행해주세요.<br>에어를 불어도 절삭유가 내부에 남아있을 수 있습니다.</p></div></article>
+      </div>
+    </section>
+
+    <section id="dry-to-wet">
+      <div class="section-heading"><div class="heading-icon">💦</div><div><h2>건식에서 습식으로 전환</h2><p class="subtitle">지르코니아 분진 청소 후 습식 전용 배수구에서 덮개를 제거해 건식 전용 흡입구에 장착합니다.</p></div></div>
+      <div class="notice"><strong>⚠️ 중요</strong><br>습식 전환 전에는 내부의 지르코니아 분진을 최대한 제거하십시오. 습식 전환 후에는 절삭유 상태와 누수 여부를 확인한 뒤 가공을 시작합니다.</div>
+      <div class="steps">
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/10. 건식에서 습식으로 가기 전 청소, 최대한 지르코니아 가루 제거.webp" alt="건식에서 습식 전환 전 분진 청소"></div><div class="step-copy"><h3>내부의 지르코니아 분진을 청소합니다</h3><p>건식에서 습식으로 전환하기 전, 지르코니아 가루를 최대한 제거합니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/11 습식에 있던 뚜껑 따기.webp" alt="습식용 덮개 분리"></div><div class="step-copy"><h3>습식 전용 배수구에서 덮개를 분리합니다.</h3><p>나사를 풀어 습식 전용 배수구에서 덮개를 분리하세요.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/12 반대쪽 나사도 풀러서 뚜껑 끼울수있게.webp" alt="반대쪽 나사 풀기"></div><div class="step-copy"><h3>반대쪽 나사를 풀어 장착을 준비합니다</h3><p>덮개를 끼울 수 있도록 반대쪽 고정 나사도 풉니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/13 뚜껑 이제 건식 구멍 덮으러 ㄱㄱ.webp" alt="건식 구멍을 덮는 습식용 덮개"></div><div class="step-copy"><h3>습식용 덮개로 건식 구멍을 덮습니다</h3><p>덮개를 건식 전용 흡입구에 장착합니다.</p></div></article>
+        <article class="step"><div class="media"><img src="../images/faq/mai-dry-wet/14건식 덮고 나사 고정.webp" alt="습식용 덮개 나사 고정"></div><div class="step-copy"><h3>나사를 고정하고 마무리합니다</h3><p>나사를 단단히 고정한 뒤, 절삭유가 잘 나오는지 확인합니다.</p></div></article>
+      </div>
+    </section>
+    <footer class="footer">M AI 건·습식 전환 매뉴얼 · GenCore Technical Support Center</footer>
+  </main>
+  <script>
+    const DRY_WET_TRANSLATIONS = {
+      en: {
+        '건·습식 전환 매뉴얼': 'Dry/Wet Switching Manual', 'M AI 장비의 습식과 건식 가공 환경을 안전하게 전환하는 방법입니다.': 'This guide explains how to safely switch the M AI between wet and dry machining environments.', '목차': 'Contents', '습식에서 건식으로 전환': 'Switching from Wet to Dry', '건식에서 습식으로 전환': 'Switching from Dry to Wet', '절삭유를 제거하고 건식 가공용 덮개를 장착합니다.': 'Remove the cutting fluid and install the cover for dry machining.', '⚠️ 작업 전 확인': '⚠️ Before You Begin', '장비를 정지시키고 작업하시오. 기계 내부에 절삭유가 남지 않도록 유의바랍니다.': 'Stop the machine before beginning. Make sure no cutting fluid remains inside the machine.', '사전 확인 · 내부 위치': 'Pre-check · Internal Locations', '1번: 습식 전용 배수구.': 'No. 1: Wet-mode drain.', '2번: 건식 사이클론 전용 흡입구.': 'No. 2: Dry-mode cyclone inlet.', '사전 확인 · 장비 단면': 'Pre-check · Machine Cross-section', '전환 전 장비 내부 구조와 흐름을 확인합니다.': 'Check the machine’s internal structure and flow before switching.', '사전 확인 · 오일 탱크 및 사이클론': 'Pre-check · Oil Tank and Cyclone', '1번: 오일탱크': 'No. 1: Oil tank', '2번: 사이클론': 'No. 2: Cyclone', '절삭유를 모두 배출합니다': 'Drain All Cutting Fluid', '오일 탱크의 절삭유가 남지 않도록 완전히 비웁니다.': 'Empty the oil tank completely so that no cutting fluid remains.', '스핀들을 앞으로 이동하고 에어를 분사합니다': 'Move the Spindle Forward and Blow Air', '스핀들을 앞으로 불러온 뒤, 내부에 남아 있는 절삭유와 이물질을 에어로 충분히 제거합니다.': 'Move the spindle forward, then use air to thoroughly remove residual cutting fluid and debris.', '에어 분사 위치를 확인합니다': 'Check the Air-Blowing Location', '장비 뒤편에 있는 절삭유 호스를 분리하고 해당 위치에 에어를 분사하세요.': 'Disconnect the cutting-fluid hose at the rear of the machine and blow air into that location.', '반대쪽도 에어로 청소합니다': 'Clean the Other Side with Air', '장비 아래쪽 오일탱크의 호스도 분리 후 에어를 분사합니다.': 'Disconnect the hose from the lower oil tank as well, then blow air through it.', '물로 내부를 청소합니다': 'Clean the Interior with Water', '절삭유를 모두 뺀 뒤 물을 사용해 내부를 청소합니다.': 'After draining all cutting fluid, clean the interior with water.', '내부를 완전히 건조합니다': 'Dry the Interior Completely', '물 청소 후 마른 수건과 휴지로 내부의 물기를 꼼꼼히 제거합니다.': 'After washing with water, thoroughly remove moisture with dry towels and tissues.', '덮개 고정 나사를 풉니다': 'Loosen the Cover Screws', '청소가 끝나면 기존 덮개를 고정하고 있는 나사를 제거합니다.': 'After cleaning, remove the screws securing the existing cover.', '기존 덮개를 분리합니다': 'Remove the Existing Cover', '나사를 제거한 뒤 덮개를 조심스럽게 들어 냅니다.': 'After removing the screws, carefully lift off the cover.', '반대쪽 나사도 풉니다': 'Loosen the Screws on the Other Side', '반대쪽 고정 나사도 동일하게 풀어 덮개 장착을 준비합니다.': 'Loosen the retaining screws on the other side as well to prepare for cover installation.', '건식용 덮개를 장착하고 나사를 고정합니다': 'Install the Dry Cover and Secure the Screws', '건식용 덮개를 넣은 뒤, 나사를 다시 조여 고정합니다.': 'Fit the dry-mode cover, then retighten the screws.', '덮개 분리 후 아까 풀었던 나사를 다시 장착합니다.': 'Reinstall the Screws Removed Earlier', '반대쪽 덮개를 장착한 후 앞서 풀었던 나사를 단단히 고정합니다.': 'After fitting the cover on the other side, firmly tighten the screws removed earlier.', '건식 전환 후 워밍업을 진행합니다': 'Run Warm-up After Switching to Dry Mode', '건식으로 전환 후에는 최소한 2번의 워밍업을 진행해주세요.': 'After switching to dry mode, run the warm-up cycle at least twice.', '에어를 불어도 절삭유가 내부에 남아있을 수 있습니다.': 'Cutting fluid may remain inside even after blowing air.', '지르코니아 분진 청소 후 습식 전용 배수구에서 덮개를 제거해 건식 전용 흡입구에 장착합니다.': 'After cleaning zirconia dust, remove the cover from the wet-mode drain and install it on the dry-mode inlet.', '⚠️ 중요': '⚠️ Important', '습식 전환 전에는 내부의 지르코니아 분진을 최대한 제거하십시오. 습식 전환 후에는 절삭유 상태와 누수 여부를 확인한 뒤 가공을 시작합니다.': 'Before switching to wet mode, remove as much zirconia dust as possible. After switching, check the cutting-fluid condition and for leaks before machining.', '내부의 지르코니아 분진을 청소합니다': 'Clean Zirconia Dust from the Interior', '건식에서 습식으로 전환하기 전, 지르코니아 가루를 최대한 제거합니다.': 'Before switching from dry to wet mode, remove as much zirconia powder as possible.', '습식 전용 배수구에서 덮개를 분리합니다.': 'Remove the Cover from the Wet-mode Drain', '나사를 풀어 습식 전용 배수구에서 덮개를 분리하세요.': 'Loosen the screws and remove the cover from the wet-mode drain.', '반대쪽 나사를 풀어 장착을 준비합니다': 'Loosen the Other-side Screws', '덮개를 끼울 수 있도록 반대쪽 고정 나사도 풉니다.': 'Loosen the retaining screws on the other side so the cover can be fitted.', '습식용 덮개로 건식 구멍을 덮습니다': 'Cover the Dry Opening with the Wet-mode Cover', '덮개를 건식 전용 흡입구에 장착합니다.': 'Install the cover on the dry-mode inlet.', '나사를 고정하고 마무리합니다': 'Secure the Screws and Finish', '나사를 단단히 고정한 뒤, 절삭유가 잘 나오는지 확인합니다.': 'Secure the screws firmly, then check that the cutting fluid flows properly.', 'M AI 건·습식 전환 매뉴얼 · GenCore Technical Support Center': 'M AI Dry/Wet Switching Manual · GenCore Technical Support Center'
+      },
+      ja: {
+        '건·습식 전환 매뉴얼': '乾式・湿式切替マニュアル', 'M AI 장비의 습식과 건식 가공 환경을 안전하게 전환하는 방법입니다.': 'M AI装置の湿式・乾式加工環境を安全に切り替える方法です。', '목차': '目次', '습식에서 건식으로 전환': '湿式から乾式への切替', '건식에서 습식으로 전환': '乾式から湿式への切替', '절삭유를 제거하고 건식 가공용 덮개를 장착합니다.': '切削液を除去し、乾式加工用カバーを取り付けます。', '⚠️ 작업 전 확인': '⚠️ 作業前の確認', '장비를 정지시키고 작업하시오. 기계 내부에 절삭유가 남지 않도록 유의바랍니다.': '装置を停止してから作業してください。装置内部に切削液が残らないよう注意してください。', '사전 확인 · 내부 위치': '事前確認・内部位置', '1번: 습식 전용 배수구.': '1番：湿式専用排水口。', '2번: 건식 사이클론 전용 흡입구.': '2番：乾式サイクロン専用吸入口。', '사전 확인 · 장비 단면': '事前確認・装置断面', '전환 전 장비 내부 구조와 흐름을 확인합니다.': '切替前に装置内部の構造と流れを確認します。', '사전 확인 · 오일 탱크 및 사이클론': '事前確認・オイルタンクおよびサイクロン', '1번: 오일탱크': '1番：オイルタンク', '2번: 사이클론': '2番：サイクロン', '절삭유를 모두 배출합니다': '切削液をすべて排出します', '오일 탱크의 절삭유가 남지 않도록 완전히 비웁니다.': 'オイルタンクの切削液が残らないよう完全に空にします。', '스핀들을 앞으로 이동하고 에어를 분사합니다': 'スピンドルを前方に移動し、エアを噴射します', '스핀들을 앞으로 불러온 뒤, 내부에 남아 있는 절삭유와 이물질을 에어로 충분히 제거합니다.': 'スピンドルを前方に移動した後、内部に残った切削液と異物をエアで十分に除去します。', '에어 분사 위치를 확인합니다': 'エア噴射位置を確認します', '장비 뒤편에 있는 절삭유 호스를 분리하고 해당 위치에 에어를 분사하세요.': '装置背面の切削液ホースを外し、その位置にエアを噴射してください。', '반대쪽도 에어로 청소합니다': '反対側もエアで清掃します', '장비 아래쪽 오일탱크의 호스도 분리 후 에어를 분사합니다.': '装置下部のオイルタンクホースも外してからエアを噴射します。', '물로 내부를 청소합니다': '水で内部を清掃します', '절삭유를 모두 뺀 뒤 물을 사용해 내부를 청소합니다.': '切削液をすべて抜いた後、水で内部を清掃します。', '내부를 완전히 건조합니다': '内部を完全に乾燥させます', '물 청소 후 마른 수건과 휴지로 내부의 물기를 꼼꼼히 제거합니다.': '水洗い後、乾いたタオルとペーパーで内部の水分を丁寧に除去します。', '덮개 고정 나사를 풉니다': 'カバー固定ネジを緩めます', '청소가 끝나면 기존 덮개를 고정하고 있는 나사를 제거합니다.': '清掃が終わったら、既存カバーを固定しているネジを外します。', '기존 덮개를 분리합니다': '既存カバーを取り外します', '나사를 제거한 뒤 덮개를 조심스럽게 들어 냅니다.': 'ネジを外した後、カバーを慎重に持ち上げて取り外します。', '반대쪽 나사도 풉니다': '反対側のネジも緩めます', '반대쪽 고정 나사도 동일하게 풀어 덮개 장착을 준비합니다.': '反対側の固定ネジも同様に緩め、カバーの取付準備をします。', '건식용 덮개를 장착하고 나사를 고정합니다': '乾式用カバーを取り付け、ネジを固定します', '건식용 덮개를 넣은 뒤, 나사를 다시 조여 고정합니다.': '乾式用カバーを取り付けた後、ネジを締め直して固定します。', '덮개 분리 후 아까 풀었던 나사를 다시 장착합니다.': '先ほど外したネジを再度取り付けます', '반대쪽 덮개를 장착한 후 앞서 풀었던 나사를 단단히 고정합니다.': '反対側のカバーを取り付けた後、先ほど緩めたネジをしっかり固定します。', '건식 전환 후 워밍업을 진행합니다': '乾式切替後にウォームアップを行います', '건식으로 전환 후에는 최소한 2번의 워밍업을 진행해주세요.': '乾式への切替後は、少なくとも2回ウォームアップを行ってください。', '에어를 불어도 절삭유가 내부에 남아있을 수 있습니다.': 'エアを吹いても切削液が内部に残っている場合があります。', '지르코니아 분진 청소 후 습식 전용 배수구에서 덮개를 제거해 건식 전용 흡입구에 장착합니다.': 'ジルコニア粉塵を清掃した後、湿式専用排水口のカバーを外して乾式専用吸入口に取り付けます。', '⚠️ 중요': '⚠️ 重要', '습식 전환 전에는 내부의 지르코니아 분진을 최대한 제거하십시오. 습식 전환 후에는 절삭유 상태와 누수 여부를 확인한 뒤 가공을 시작합니다.': '湿式へ切り替える前に、内部のジルコニア粉塵をできる限り除去してください。切替後は切削液の状態と漏れを確認してから加工を開始します。', '내부의 지르코니아 분진을 청소합니다': '内部のジルコニア粉塵を清掃します', '건식에서 습식으로 전환하기 전, 지르코니아 가루를 최대한 제거합니다.': '乾式から湿式へ切り替える前に、ジルコニア粉末をできる限り除去します。', '습식 전용 배수구에서 덮개를 분리합니다.': '湿式専用排水口からカバーを取り外します', '나사를 풀어 습식 전용 배수구에서 덮개를 분리하세요.': 'ネジを緩めて湿式専用排水口からカバーを取り外してください。', '반대쪽 나사를 풀어 장착을 준비합니다': '反対側のネジを緩めて取付準備をします', '덮개를 끼울 수 있도록 반대쪽 고정 나사도 풉니다.': 'カバーを取り付けられるよう、反対側の固定ネジも緩めます。', '습식용 덮개로 건식 구멍을 덮습니다': '湿式用カバーで乾式開口部を塞ぎます', '덮개를 건식 전용 흡입구에 장착합니다.': 'カバーを乾式専用吸入口に取り付けます。', '나사를 고정하고 마무리합니다': 'ネジを固定して完了します', '나사를 단단히 고정한 뒤, 절삭유가 잘 나오는지 확인합니다.': 'ネジをしっかり固定した後、切削液が正常に出ることを確認します。', 'M AI 건·습식 전환 매뉴얼 · GenCore Technical Support Center': 'M AI 乾式・湿式切替マニュアル · GenCore Technical Support Center'
+      }
+    };
+    Object.assign(DRY_WET_TRANSLATIONS.en, {
+      '내부의 물기를 제거하세요.': 'Remove all moisture from the interior.',
+      '습식 전용 배수구에 덮개를 장착한 후 나사로 고정하세요.': 'Install the cover on the wet-mode drain, then secure it with the screws.',
+      '아까 풀었던 나사를 다시 장착하세요.': 'Reinstall the screws removed earlier.'
+    });
+    Object.assign(DRY_WET_TRANSLATIONS.ja, {
+      '내부의 물기를 제거하세요.': '内部の水分を取り除いてください。',
+      '습식 전용 배수구에 덮개를 장착한 후 나사로 고정하세요.': '湿式専用排水口にカバーを取り付け、ネジで固定してください。',
+      '아까 풀었던 나사를 다시 장착하세요.': '先ほど外したネジを再度取り付けてください。'
+    });
+    const DRY_WET_ORIGINAL_NODES = new WeakMap();
+    function applyDryWetLanguage(lang) {
+      const language = lang === 'ko' ? 'ko' : (Object.prototype.hasOwnProperty.call(DRY_WET_TRANSLATIONS, lang) ? lang : 'en');
+      const dictionary = DRY_WET_TRANSLATIONS[language] || {};
+      document.documentElement.lang = language;
+      document.title = language === 'ja' ? 'M AI 乾式・湿式切替マニュアル' : language === 'en' ? 'M AI Dry/Wet Switching Manual' : 'M AI 건·습식 전환 매뉴얼';
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) {
+        if (node.parentElement?.closest('script, style')) continue;
+        if (!DRY_WET_ORIGINAL_NODES.has(node)) DRY_WET_ORIGINAL_NODES.set(node, node.nodeValue);
+        const original = DRY_WET_ORIGINAL_NODES.get(node);
+        const trimmed = original.trim();
+        node.nodeValue = dictionary[trimmed] ? original.replace(trimmed, dictionary[trimmed]) : original;
+      }
+    }
+    window.addEventListener('message', (event) => {
+      if (event.data?.type === 'gencore-language-change') applyDryWetLanguage(event.data.lang);
+    });
+  </script>
+</body>
+</html>

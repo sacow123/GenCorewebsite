@@ -2520,7 +2520,9 @@
         <h3 id="mai-dry-wet-faq-title" data-i18n="faq-mai-dry-wet-title" style="margin:0; flex:1; color:#1f2937; font-size:19px; font-weight:700; line-height:1.45;">M AI 사용 시 건식 🔄 습식 전환</h3>
         <button type="button" onclick="closeMaiDryWetFaqModal()" aria-label="닫기" style="border:0; background:transparent; color:#64748b; font-size:29px; line-height:1; cursor:pointer; padding:4px 7px;">&times;</button>
       </div>
-      <div aria-label="내용 준비 중" style="height:calc(95vh - 87px); flex:1;"></div>
+      <div style="overflow:hidden; flex:1;">
+        <iframe id="mai-dry-wet-faq-document" data-language-sync src="assets/documents/mai-dry-wet-switching.html" title="M AI 사용 시 건식 🔄 습식 전환" style="display:block; width:100%; height:calc(95vh - 87px); border:0;"></iframe>
+      </div>
     </div>
   </div>
 <script>
@@ -2528,6 +2530,9 @@
   function closeGlassCeramicFaqModal() { document.getElementById('glass-ceramic-faq-modal').style.display = 'none'; }
   document.getElementById('glass-ceramic-faq-modal')?.addEventListener('click', function (event) { if (event.target === this) closeGlassCeramicFaqModal(); });
   document.getElementById('glass-ceramic-faq-document')?.addEventListener('load', function () {
+    this.contentWindow?.postMessage({ type: 'gencore-language-change', lang: currentLang }, '*');
+  });
+  document.getElementById('mai-dry-wet-faq-document')?.addEventListener('load', function () {
     this.contentWindow?.postMessage({ type: 'gencore-language-change', lang: currentLang }, '*');
   });
   function openMaiDryWetFaqModal() { document.getElementById('mai-dry-wet-faq-modal').style.display = 'flex'; }
