@@ -130,8 +130,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     toggle.addEventListener("click", (e) => {
       e.stopPropagation();
-      // If this nav-item also has data-section, show that section
-      if (toggle.dataset.section) {
+      // The technical-support parent is an expandable menu. Keep its first
+      // click local so the M AI° and MillFix options open without a page load.
+      if (toggle.dataset.section && parent.id !== 'nav-repair-manual') {
         showSection(toggle.dataset.section);
       }
       parent.classList.toggle("open");
@@ -143,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".nav-item[data-section]").forEach(item => {
     item.addEventListener("click", (e) => {
       e.stopPropagation();
+      if (item.parentElement?.id === 'nav-repair-manual') return;
       showSection(item.dataset.section, true, item);
     });
   });
@@ -175,6 +177,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Check URL Hash for Direct Linking ---
   if (window.location.hash) {
+    // Open the top-level repair menu before the deferred hash handling below.
+    // This prevents a visible closed-menu flash after navigating to its overview.
+    if (window.location.hash.substring(1).split('?')[0].split('/')[0] === 'sec-rep-overview') {
+      const repairMenu = document.getElementById('nav-repair-manual');
+      repairMenu?.classList.add('open');
+      repairMenu?.querySelector(':scope > .sub-menu')?.classList.add('open');
+    }
+
     setTimeout(() => {
       let hashId = window.location.hash.substring(1);
       // Remove any query params or trailing slashes that might be added by messenger apps
@@ -193,6 +203,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             currentParent = currentParent.parentElement.closest('.sub-menu');
           }
+        }
+
+        // The technical-support overview is the top-level repair menu's own
+        // destination. Its parent is not inside a sub-menu, so open it
+        // explicitly after cross-page navigation.
+        if (hashId === 'sec-rep-overview') {
+          const repairMenu = document.getElementById('nav-repair-manual');
+          repairMenu?.classList.add('open');
+          repairMenu?.querySelector(':scope > .sub-menu')?.classList.add('open');
         }
         // Scroll to top just in case
         window.scrollTo(0, 0);
