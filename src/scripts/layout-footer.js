@@ -1,6 +1,7 @@
 /* Shared footer and page controls. */
 document.write(`
 </main>
+</div>
 <div class="page-scroll-controls" aria-label="Page scroll controls">
   <button type="button" id="scrollTopBtn" class="page-scroll-btn" aria-label="Scroll to top" title="TOP">
     <span class="scroll-arrow">▲</span>

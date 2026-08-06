@@ -251,6 +251,17 @@ body {
 .menu-toggle { display: none; background: none; border: none; color: #333; font-size: 22px; cursor: pointer; }
 
 @media (max-width: 768px) {
+  /* Keep the off-canvas navigation out of the flex width calculation.
+     Without this, a fixed sidebar can still reserve space on some mobile
+     browsers and squeeze long manual iframes into a narrow column. */
+  .app-layout {
+    display: block;
+  }
+  .main-content {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
   .site-header {
     padding: 0 12px;
     gap: 8px;
@@ -309,6 +320,36 @@ body {
   .sidebar.open { left: 0; }
   .main-content { padding: 20px 16px; }
   .content-section h2 { font-size: 22px; }
+  .external-document-section {
+    margin: 0 -16px;
+  }
+  .external-document-frame {
+    min-height: calc(100dvh - 84px);
+  }
+  /* Standalone manuals use the same stylesheet inside their iframe.  Reduce
+     nested padding only there so instructions and screenshots remain legible
+     without affecting normal in-app content cards. */
+  body > .content-section {
+    padding: 20px 12px 40px !important;
+  }
+  body > .content-section .section-anchor {
+    display: none;
+  }
+  body > .content-section .content-card {
+    padding: 16px;
+  }
+  body > .content-section .step-container {
+    gap: 24px;
+  }
+  body > .content-section .step-card {
+    width: 100%;
+    max-width: none;
+    padding: 14px;
+  }
+  body > .content-section .step-text {
+    font-size: 15px;
+    line-height: 1.65;
+  }
   .page-scroll-controls { right: 14px; bottom: 42px; }
   .page-scroll-btn { width: 52px; height: 48px; border-radius: 10px; }
 }
