@@ -350,6 +350,37 @@ body {
     font-size: 15px;
     line-height: 1.65;
   }
+  /* Desktop callouts are placed over a large image and opened by hover.  On a
+     phone, show the selected explanation as a centred tap-to-close panel so
+     it never overflows the illustration or gets clipped by the viewport. */
+  .mf-callout,
+  .mf-callout-custom {
+    position: fixed !important;
+    z-index: 130;
+    top: 50% !important;
+    right: 16px !important;
+    bottom: auto !important;
+    left: 16px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 32px) !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translateY(calc(-50% + 12px)) !important;
+    transition: opacity .18s ease, transform .18s ease, visibility .18s ease !important;
+  }
+  .mf-callout.mobile-callout-open,
+  .mf-callout-custom.mobile-callout-open {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateY(-50%) !important;
+  }
+  .mf-hotspot,
+  #sec-mf-jog .mf-jog-border {
+    touch-action: manipulation;
+  }
   .page-scroll-controls { right: 14px; bottom: 42px; }
   .page-scroll-btn { width: 52px; height: 48px; border-radius: 10px; }
 }

@@ -18,6 +18,45 @@ function openSectionPage(sectionId) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Image annotations are hover-driven on desktop.  On small screens a hover
+  // state can remain stuck and the desktop-sized callout may overflow.  Make
+  // each hotspot explicitly toggle one centred, viewport-safe explanation.
+  const mobileCalloutQuery = '.mf-callout, .mf-callout-custom';
+  const isMobileCalloutView = () => window.matchMedia('(max-width: 768px)').matches;
+  const closeMobileCallouts = () => {
+    document.querySelectorAll(mobileCalloutQuery + '.mobile-callout-open').forEach((callout) => {
+      callout.classList.remove('mobile-callout-open');
+    });
+    document.querySelectorAll('.mf-hotspot[aria-expanded="true"], .mf-jog-border[aria-expanded="true"]').forEach((hotspot) => {
+      hotspot.setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  document.addEventListener('click', (event) => {
+    if (!isMobileCalloutView()) return;
+    const hotspot = event.target.closest('.mf-hotspot, .mf-jog-border');
+    if (!hotspot) {
+      if (!event.target.closest(mobileCalloutQuery)) closeMobileCallouts();
+      return;
+    }
+
+    let callout = hotspot.nextElementSibling;
+    while (callout && !callout.matches(mobileCalloutQuery)) callout = callout.nextElementSibling;
+    if (!callout) return;
+
+    event.preventDefault();
+    const shouldOpen = !callout.classList.contains('mobile-callout-open');
+    closeMobileCallouts();
+    if (shouldOpen) {
+      callout.classList.add('mobile-callout-open');
+      hotspot.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMobileCallouts();
+  });
+
   // --- Language Selector ---
   const langBtn = document.getElementById("langBtn");
   const langDropdown = document.getElementById("langDropdown");
