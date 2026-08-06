@@ -21,36 +21,50 @@ document.addEventListener("DOMContentLoaded", () => {
   // Image annotations are hover-driven on desktop.  On small screens a hover
   // state can remain stuck and the desktop-sized callout may overflow.  Make
   // each hotspot explicitly toggle one centred, viewport-safe explanation.
-  const mobileCalloutQuery = '.mf-callout, .mf-callout-custom';
+  const mobileCalloutQuery = '.mf-callout, .mf-callout-custom, #sec-mf-settings .callout';
   const isMobileCalloutView = () => window.matchMedia('(max-width: 768px)').matches;
   const closeMobileCallouts = () => {
-    document.querySelectorAll(mobileCalloutQuery + '.mobile-callout-open').forEach((callout) => {
-      callout.classList.remove('mobile-callout-open');
+    document.querySelectorAll('.mobile-hotspot-detail.mobile-detail-open').forEach((detail) => {
+      detail.classList.remove('mobile-detail-open');
     });
-    document.querySelectorAll('.mf-hotspot[aria-expanded="true"], .mf-jog-border[aria-expanded="true"]').forEach((hotspot) => {
+    document.querySelectorAll('.mf-hotspot[aria-expanded="true"], .mf-jog-border[aria-expanded="true"], #sec-mf-settings .hotspot[aria-expanded="true"]').forEach((hotspot) => {
       hotspot.setAttribute('aria-expanded', 'false');
     });
   };
 
+  const renderMobileCalloutDetail = (hotspot, callout) => {
+    const stage = hotspot.offsetParent;
+    if (!stage) return;
+    let detail = stage.parentElement?.querySelector(':scope > .mobile-hotspot-detail');
+    if (!detail) {
+      detail = document.createElement('div');
+      detail.className = 'mobile-hotspot-detail';
+      detail.setAttribute('role', 'status');
+      stage.insertAdjacentElement('afterend', detail);
+    }
+    detail.innerHTML = callout.innerHTML;
+    detail.classList.add('mobile-detail-open');
+  };
+
   document.addEventListener('click', (event) => {
     if (!isMobileCalloutView()) return;
-    const hotspot = event.target.closest('.mf-hotspot, .mf-jog-border');
+    const hotspot = event.target.closest('.mf-hotspot, .mf-jog-border, #sec-mf-settings .hotspot');
     if (!hotspot) {
-      if (!event.target.closest(mobileCalloutQuery)) closeMobileCallouts();
+      if (!event.target.closest('.mobile-hotspot-detail')) closeMobileCallouts();
       return;
     }
 
     let callout = hotspot.nextElementSibling;
     while (callout && !callout.matches(mobileCalloutQuery)) callout = callout.nextElementSibling;
+    if (hotspot.classList.contains('trigger-shared-popup')) {
+      callout = hotspot.parentElement?.querySelector('#shared-popup') || callout;
+    }
     if (!callout) return;
 
     event.preventDefault();
-    const shouldOpen = !callout.classList.contains('mobile-callout-open');
     closeMobileCallouts();
-    if (shouldOpen) {
-      callout.classList.add('mobile-callout-open');
-      hotspot.setAttribute('aria-expanded', 'true');
-    }
+    hotspot.setAttribute('aria-expanded', 'true');
+    renderMobileCalloutDetail(hotspot, callout);
   });
 
   document.addEventListener('keydown', (event) => {

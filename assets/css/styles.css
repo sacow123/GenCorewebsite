@@ -251,6 +251,75 @@ body {
 .menu-toggle { display: none; background: none; border: none; color: #333; font-size: 22px; cursor: pointer; }
 
 @media (max-width: 768px) {
+  /* Mobile safety net: page content must reflow or scroll within its own
+     component, never widen the viewport or disappear beyond its edge. */
+  html, body, .app-layout, .main-content, .content-section {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+  .content-section,
+  .content-section :is(p, h1, h2, h3, h4, h5, h6, li, td, th, span, button, label) {
+    overflow-wrap: anywhere;
+  }
+  .content-section img,
+  .content-section video,
+  .content-section iframe,
+  .content-section canvas {
+    max-width: 100%;
+  }
+  .content-section pre,
+  .content-section code {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .content-section [style*="min-width"] {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .content-section [style*="white-space: nowrap"] {
+    white-space: normal !important;
+  }
+  body > .content-section [style*="display:flex"] {
+    flex-wrap: wrap;
+  }
+  /* Long data tables keep their columns and scroll inside the card instead of
+     forcing the whole mobile page sideways. */
+  .content-card:has(table),
+  .table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* All full-screen dialogs share one mobile-safe frame, including inline
+     legacy modals in the static manual pages. */
+  :is(.modal-overlay, [role="dialog"], [id$="-modal"]) {
+    padding: 12px !important;
+  }
+  :is(.modal-overlay, [role="dialog"], [id$="-modal"]) > :first-child {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    max-height: calc(100dvh - 24px) !important;
+  }
+  :is(.modal-overlay, [role="dialog"], [id$="-modal"]) h1,
+  :is(.modal-overlay, [role="dialog"], [id$="-modal"]) h2,
+  :is(.modal-overlay, [role="dialog"], [id$="-modal"]) h3 {
+    font-size: clamp(17px, 5vw, 22px) !important;
+    overflow-wrap: anywhere;
+  }
+  :is(.modal-overlay, [role="dialog"], [id$="-modal"]) img,
+  :is(.modal-overlay, [role="dialog"], [id$="-modal"]) video,
+  :is(.modal-overlay, [role="dialog"], [id$="-modal"]) iframe {
+    max-width: 100% !important;
+  }
+  /* Hover-only annotations are not reliable on touch devices.  The pages that
+     need instructions provide the tap-to-read card below their image. */
+  .pulse-tooltip,
+  .tool-usage-tooltip {
+    display: none !important;
+  }
   /* Keep the off-canvas navigation out of the flex width calculation.
      Without this, a fixed sidebar can still reserve space on some mobile
      browsers and squeeze long manual iframes into a narrow column. */
@@ -350,39 +419,77 @@ body {
     font-size: 15px;
     line-height: 1.65;
   }
-  /* Desktop callouts are placed over a large image and opened by hover.  On a
-     phone, show the selected explanation as a centred tap-to-close panel so
-     it never overflows the illustration or gets clipped by the viewport. */
+  /* Desktop callouts are placed over a large image and opened by hover. On a
+     phone, their text is shown in one card below the image instead. */
   .mf-callout,
   .mf-callout-custom {
-    position: fixed !important;
-    z-index: 130;
-    top: 50% !important;
-    right: 16px !important;
-    bottom: auto !important;
-    left: 16px !important;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: calc(100vw - 32px) !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-    transform: translateY(calc(-50% + 12px)) !important;
-    transition: opacity .18s ease, transform .18s ease, visibility .18s ease !important;
+    display: none !important;
   }
-  .mf-callout.mobile-callout-open,
-  .mf-callout-custom.mobile-callout-open {
-    visibility: visible !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    transform: translateY(-50%) !important;
+  #sec-mf-settings .callout,
+  #sec-mf-tool-usage #shared-popup {
+    display: none !important;
+  }
+  .mobile-hotspot-detail {
+    display: none;
+    margin: 14px 12px 12px;
+    padding: 14px 16px;
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+    background: #171225;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(15, 12, 24, .2);
+  }
+  .mobile-hotspot-detail.mobile-detail-open {
+    display: block;
+  }
+  .mobile-hotspot-detail .title {
+    display: block;
+    margin-bottom: 6px;
+    color: #ffcc00;
+    font-size: clamp(18px, 5vw, 22px) !important;
+    line-height: 1.25 !important;
+    font-weight: 800;
+  }
+  .mobile-hotspot-detail .desc {
+    display: block;
+    color: #fff;
+    font-size: clamp(14px, 4.2vw, 18px) !important;
+    line-height: 1.45 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+  }
+  .mf-stage > div[style*="bottom: -40px"],
+  .mf-jog-stage > div[style*="bottom: -40px"],
+  #sec-mf-code-view [style*="bottom: -40px"],
+  #sec-mf-tool-list [style*="bottom: -40px"],
+  #sec-mf-main-page [style*="bottom: -40px"],
+  #sec-mf-settings [style*="bottom: -40px"] {
+    display: none !important;
   }
   .mf-hotspot,
-  #sec-mf-jog .mf-jog-border {
+  #sec-mf-jog .mf-jog-border,
+  #sec-mf-settings .hotspot {
     touch-action: manipulation;
+    border-width: 2px !important;
+    animation: mobile-hotspot-pulse 2s infinite !important;
+  }
+  #sec-mf-jog .jog-hotspot,
+  #sec-mf-clean .clean-hotspot,
+  #sec-mf-env-settings .env-hotspot {
+    border-width: 2px !important;
+  }
+  #sec-mf-clean svg.clean-hotspot path {
+    stroke-width: 2px !important;
   }
   .page-scroll-controls { right: 14px; bottom: 42px; }
   .page-scroll-btn { width: 52px; height: 48px; border-radius: 10px; }
+}
+
+@keyframes mobile-hotspot-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.62); }
+  70% { box-shadow: 0 0 0 6px rgba(255, 204, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
 }
 
 /* ===== ANIMATIONS ===== */
