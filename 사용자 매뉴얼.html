@@ -3694,6 +3694,8 @@
   <script src="src/data/dbconfig-data-en.js"></script>
   <script src="src/data/dbconfig-data-ko.js"></script>
   <script src="src/data/dbconfig-data-ja.js"></script>
+  <script src="src/data/hybrid-template-localizations.js?v=20260806d"></script>
+  <script src="src/scripts/hybrid-template-card.js?v=20260806ab"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const modal = document.getElementById('template-modal');
@@ -3909,6 +3911,7 @@
 
         window.addEventListener('resize', updateProsthesisDetailConnector);
         renderFilters();
+        window.refreshDbconfigFilters = renderFilters;
       }
 
       dbConfigSection?.addEventListener('click', (e) => {
@@ -3930,6 +3933,22 @@
             if (!db && typeof dbConfigDataEN !== 'undefined') db = dbConfigDataEN; // Fallback to English
             
             if (db && db[title]) {
+        if (title.startsWith('Hybrid Ceramic_') && window.GenCoreHybridTemplateCard) {
+                const language = typeof currentLang !== 'undefined' ? currentLang : 'en';
+                modalBody.innerHTML = window.GenCoreHybridTemplateCard.render({ title, sourceText: db[title], lang: language });
+                modal.style.display = 'flex';
+                modalBody.scrollTop = 0;
+                history.replaceState(null, null, '#template-' + encodeURIComponent(title));
+          return;
+        }
+        if (/^(PMMA|PEEK|Wax|Zirconia)_/.test(title) && window.GenCoreMaterialTemplateCard) {
+          const language = typeof currentLang !== 'undefined' ? currentLang : 'en';
+          modalBody.innerHTML = window.GenCoreMaterialTemplateCard.render({ title, sourceText: db[title], lang: language });
+          modal.style.display = 'flex';
+          modalBody.scrollTop = 0;
+          history.replaceState(null, null, '#template-' + encodeURIComponent(title));
+          return;
+        }
               const japaneseText = currentLang === 'ja' ? db[title] : null;
               // Keep the English source as the rendering blueprint so that headings,
               // bullets, tables, and embedded images retain exactly the same layout.

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hybrid Ceramic – Card Draft</title>
+  <style>
+    :root { --violet: #7141e8; --ink: #141526; --purple: #21104c; --yellow: #ffc400; --line: #deddeb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; padding: 40px 20px; background: #f5f4f8; color: var(--ink); font-family: Arial, "Noto Sans KR", sans-serif; }
+    .template-card { width: min(920px, 100%); margin: 0 auto; padding: clamp(24px, 5vw, 54px); background: #fff; border: 2px solid var(--violet); border-radius: 34px; box-shadow: 0 18px 42px #25144a1d; }
+    .eyebrow { display: inline-block; margin-bottom: 20px; padding: 10px 22px; border-radius: 10px; background: linear-gradient(110deg, #8557f2, #6630dc); color: #fff; font-weight: 800; letter-spacing: .04em; }
+    h1 { margin: 0; font-size: clamp(40px, 8vw, 76px); line-height: .98; letter-spacing: -.06em; }
+    .subtitle { margin: 16px 0 32px; color: #515368; font-size: clamp(19px, 3.2vw, 31px); font-weight: 600; }
+    .info-row { min-height: 150px; border: 2px solid #bba8f5; border-left: 7px solid var(--violet); border-radius: 18px; margin-top: 16px; }
+    .row-body { padding: 25px 30px; }
+    .row-title { display: flex; align-items: center; gap: 14px; margin: 0 0 15px; color: #5023d6; font-size: 27px; font-weight: 800; }
+    .step { display: inline-grid; place-items: center; flex: none; width: 39px; height: 39px; border-radius: 50%; color: #fff; background: var(--violet); font-size: 22px; }
+    ul { margin: 0; padding-left: 23px; font-size: 19px; line-height: 1.65; }
+    li::marker { color: var(--violet); }
+    .tools { margin-top: 18px; overflow: hidden; border: 2px solid #bba8f5; border-radius: 18px; }
+    .tools-heading { display: flex; align-items: center; gap: 14px; padding: 16px 28px; background: linear-gradient(105deg, #1d0c48, #311768); color: #fff; font-size: 27px; font-weight: 800; }
+    .tools-heading > .tools-number { display: inline-grid; place-items: center; width: 39px; height: 39px; border-radius: 50%; background: #fff; color: var(--purple); }
+    .tool-group-title { display:flex; align-items:center; gap:9px; margin:0; padding:17px 18px 0; color:#24114f; font-size:18px; font-weight:800; }
+    .tool-group-title::before { content:''; width:7px; height:20px; border-radius:4px; background:var(--violet); }
+    .tool-group-title small { color:#71688a; font-size:13px; font-weight:700; }
+    .tool-grid { display: grid; gap: 14px; padding: 14px 18px 18px; }
+    .tool-grid-basic { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .tool-grid-conditional { grid-template-columns: repeat(2, minmax(120px, 1fr)); max-width: 360px; padding-top:14px; }
+    .tool-card { min-width: 0; padding: 12px 8px; border: 1.5px solid #855bf0; border-radius: 12px; text-align: center; }
+    .tool-crop { position: relative; width: 72px; height: 154px; margin: 0 auto 9px; overflow: hidden; }
+    .tool-crop img { position: absolute; top: 0; left: 66px; width: 300px; height: auto; transform: rotate(90deg); transform-origin: top left; }
+    .tool-id { display: block; color: var(--ink); font-size: 22px; font-weight: 800; }
+    .tool-type { display: block; margin-top: 2px; color: #542bd6; font-size: 17px; font-weight: 700; }
+    .tool-condition { display:inline-block; margin-top:8px; padding:5px 7px; border-radius:7px; background:#f2ecff; color:#542bd6; font-size:12px; font-weight:800; line-height:1.25; }
+    .tool-card.is-conditional { border:2px solid #7c3aed; background:linear-gradient(180deg, #fff 0%, #fbf9ff 100%); }
+    .caution { display: flex; align-items: center; gap: 18px; margin-top: 20px; padding: 17px 21px; border: 2px solid var(--yellow); border-radius: 15px; color: #242332; font-size: 18px; font-weight: 700; }
+    .caution b { display: grid; place-items: center; flex: none; width: 38px; height: 38px; border: 3px solid var(--yellow); border-radius: 50%; font-size: 26px; }
+    @media (max-width: 680px) { body { padding: 12px; } .template-card { padding: 24px 16px; border-radius: 24px; } .info-row { min-height: 142px; } .row-body { padding: 18px 16px; } .row-title, .tools-heading { font-size: 21px; } .step { width: 31px; height: 31px; font-size: 17px; } ul { padding-left: 18px; font-size: 15px; line-height: 1.48; } .tool-grid { gap: 10px; padding: 12px; } .tool-grid-basic { grid-template-columns:repeat(2, minmax(0, 1fr)); } .tool-grid-conditional { grid-template-columns:repeat(2, minmax(0, 1fr)); max-width:none; } .tool-crop { height: 122px; transform: scale(.82); transform-origin: top center; margin-bottom: -16px; } .tool-id { font-size: 19px; } .tool-type { font-size: 14px; } .tool-condition { font-size:11px; } .caution { align-items: flex-start; font-size: 15px; line-height: 1.4; } }
+  </style>
+</head>
+<body>
+  <main class="template-card">
+    <span class="eyebrow">MILLFIX TEMPLATE</span>
+    <h1>Hybrid Ceramic</h1>
+    <p class="subtitle" data-i18n="subtitle">Abutment Crown Bridge · NCS (Highness)</p>
+
+    <section class="info-row"><div class="row-body"><h2 class="row-title"><span class="step">1</span><span data-i18n="whenTitle">WHEN TO USE</span></h2><ul><li data-i18n="when1">Hybrid ceramic disk / block</li><li data-i18n="when2">Abutment crown bridge</li><li data-i18n="when3">Highness interface included</li></ul></div></section>
+
+    <section class="info-row"><div class="row-body"><h2 class="row-title"><span class="step">2</span><span data-i18n="prepareTitle">PREPARE</span></h2><ul><li data-i18n="prepare1">Set abutment-base margin line</li><li data-i18n="prepare2">Screw channel for each abutment interface</li><li data-i18n="prepare3">Other holes as holes</li></ul></div></section>
+
+    <section class="info-row"><div class="row-body"><h2 class="row-title"><span class="step">3</span><span data-i18n="adjustTitle">ADJUSTABLE</span></h2><ul><li data-i18n="adjust1">Boundary offset &amp; angle</li><li data-i18n="adjust2">Add. allowance XY</li><li data-i18n="adjust3">Fissure machining G0.6B</li></ul></div></section>
+
+    <section class="tools">
+      <h2 class="tools-heading"><span class="tools-number">4</span><span data-i18n="toolsTitle">TOOLS</span></h2>
+      <p class="tool-group-title"><span data-i18n="basicTools">Basic tools</span><small data-i18n="basicToolsHint">Always used</small></p>
+      <div class="tool-grid tool-grid-basic">
+        <article class="tool-card"><div class="tool-crop"><img src="../assets/images/sec-mf-tools/t35-g20b.webp" alt="T35 G2.0B"></div><span class="tool-id">T35</span><span class="tool-type">G2.0B</span></article>
+        <article class="tool-card"><div class="tool-crop"><img src="../assets/images/sec-mf-tools/t36-g10b.webp" alt="T36 G1.0B"></div><span class="tool-id">T36</span><span class="tool-type">G1.0B</span></article>
+        <article class="tool-card"><div class="tool-crop"><img src="../assets/images/sec-mf-tools/t42-m15fl.webp" alt="T42 M1.5FL"></div><span class="tool-id">T42</span><span class="tool-type">M1.5FL</span></article>
+        <article class="tool-card"><div class="tool-crop"><img src="../assets/images/sec-mf-tools/t43-m10f.webp" alt="T43 M1.0F"></div><span class="tool-id">T43</span><span class="tool-type">M1.0F</span></article>
+      </div>
+      <p class="tool-group-title"><span data-i18n="conditionalTools">Conditional tools</span><small data-i18n="conditionalToolsHint">Used when applicable</small></p>
+      <div class="tool-grid tool-grid-conditional">
+        <article class="tool-card is-conditional"><div class="tool-crop"><img src="../assets/images/sec-mf-tools/t37-g06b.webp" alt="T37 G0.6B"></div><span class="tool-id">T37</span><span class="tool-type">G0.6B</span><span class="tool-condition" data-i18n="t37Condition">Fissure machining ON</span></article>
+        <article class="tool-card is-conditional"><div class="tool-crop"><img src="../assets/images/sec-mf-tools/t45-m16t.webp" alt="T45 M1.6T"></div><span class="tool-id">T45</span><span class="tool-type">M1.6T</span><span class="tool-condition" data-i18n="t45Condition">For angled screw channel</span></article>
+      </div>
+    </section>
+    <aside class="caution"><b>!</b><span data-i18n="caution">Check interface and screw-channel settings before machining.</span></aside>
+  </main>
+  <script>
+    const copy = {
+      ko: {
+        subtitle: '어버트먼트 크라운 브리지 · NCS (Highness)', whenTitle: '사용 조건', when1: 'Hybrid Ceramic 디스크 / 블록', when2: '어버트먼트 크라운 브리지', when3: 'Highness 인터페이스 포함',
+        prepareTitle: '준비 사항', prepare1: '각 인터페이스에 어버트먼트 베이스 마진 라인 설정', prepare2: '각 어버트먼트 인터페이스에 스크류 채널 설정', prepare3: '그 외 홀은 Holes로 설정',
+        adjustTitle: '조정 가능 항목', adjust1: 'Boundary offset 및 angle', adjust2: 'Add. allowance XY', adjust3: 'Fissure machining G0.6B', toolsTitle: '공구', basicTools: '기본 사용 공구', basicToolsHint: '항상 사용', conditionalTools: '조건부 사용 공구', conditionalToolsHint: '조건에 따라 사용', t37Condition: '열구 가공 ON 시', t45Condition: '앵글드 스크류 채널 전용', caution: '가공 전 인터페이스와 스크류 채널 설정을 확인해 주세요.'
+      },
+      ja: {
+        subtitle: 'アバットメントクラウンブリッジ · NCS (Highness)', whenTitle: '使用条件', when1: 'ハイブリッドセラミックディスク／ブロック', when2: 'アバットメントクラウンブリッジ', when3: 'Highnessインターフェースを含む',
+        prepareTitle: '準備', prepare1: '各インターフェースにアバットメントベースのマージンラインを設定', prepare2: '各アバットメントインターフェースにスクリューチャネルを設定', prepare3: 'その他の穴は「Holes」に設定',
+        adjustTitle: '調整可能', adjust1: 'Boundary offset / angle', adjust2: 'Add. allowance XY', adjust3: 'Fissure machining G0.6B', toolsTitle: '工具', basicTools: '基本使用工具', basicToolsHint: '常に使用', conditionalTools: '条件付き使用工具', conditionalToolsHint: '条件に応じて使用', t37Condition: '咬合溝加工がONの場合', t45Condition: 'アングルドスクリューチャネル専用', caution: '加工前にインターフェースとスクリューチャネルの設定を確認してください。'
+      }
+    };
+    const lang = new URLSearchParams(location.search).get('lang');
+    if (copy[lang]) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach((element) => { element.textContent = copy[lang][element.dataset.i18n]; });
+    }
+  </script>
+</body>
+</html>

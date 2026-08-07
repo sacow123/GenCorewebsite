@@ -5222,7 +5222,11 @@ function createExternalDocumentLanguageMessage(lang) {
 function applyLanguage(lang) {
   captureOriginalContentSections();
   const activeSection = document.querySelector(".content-section.active");
-  restoreContentSection(activeSection);
+  // The DBconfig filters are created dynamically and own their event handlers.
+  // Restoring this section's original HTML removes those controls on every
+  // language change, so preserve the live section and refresh its labels below.
+  const preservesDbconfigFilters = activeSection?.id === "sec-mf-hd-dbconfig";
+  if (!preservesDbconfigFilters) restoreContentSection(activeSection);
 
   currentLang = lang;
   try {
@@ -5266,6 +5270,9 @@ function applyLanguage(lang) {
     renderSection(activeSection.id);
   } else if (lang !== "ko" && activeSection) {
     sanitizeMissingTranslationDom(lang, activeSection);
+  }
+  if (preservesDbconfigFilters && typeof window.refreshDbconfigFilters === "function") {
+    window.refreshDbconfigFilters();
   }
   applyStaticContentTranslations(lang, document.body);
   document.querySelectorAll('iframe[data-language-sync]').forEach((frame) => {

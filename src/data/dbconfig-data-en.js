@@ -25,6 +25,7 @@ Increase these parameters when you get the boundary error during calculation!
 Finishing inside abutment bases [M1.0F_L06]_highness
 Finishing inside abutments with 1.0mm diameter Flat tool
 Add. Allowance XY: Available to adjust the abutment inside fit.
+The more negative the value, the looser the fit becomes; increasing the value in the positive direction makes the fit tighter.
 Fissure machining [G0.6B] -0
 Occlusal groove machining process with 0.6mm diameter tool
 Calculate : Selectable operate this process or skip, (Default: On)
