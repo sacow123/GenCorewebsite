@@ -17,6 +17,9 @@
 <body>
   <script src="src/scripts/layout-shell.js"></script>
   <script src="src/scripts/mai-ui-version-nav.js"></script>
+  <script src="src/scripts/mai-components-nav.js"></script>
+  <script src="src/scripts/mai-tool-list.js"></script>
+  <script src="src/scripts/mai-tool-tooltip-fix.js"></script>
 
 <section id="section-search" class="content-section">
         <h2 id="search-results-title"><span data-i18n="mf-auto-670">🔍 검색 결과</span></h2>
@@ -179,14 +182,160 @@
   @media (max-width:768px) { .mai-parts-photo-grid { grid-template-columns:1fr; } .mai-parts-photo-card, .mai-parts-front-card { width:100%; } .mai-parts-hotspot { width:clamp(25px, 9%, 34px); } .mai-parts-hotspot > span { font-size:11px; } .mai-parts-coordinate-tool { right:auto; left:50%; top:auto; bottom:18px; width:min(760px, calc(100vw - 32px)); transform:translateX(-50%); } }
 </style>
 
-<section id="sec-mai-components" class="content-section">
-        <h2 data-i18n="nav-mai-components"><span data-i18n="mf-auto-267">📦 구성품</span></h2>
+<section id="sec-mai-components-basic" class="content-section">
+        <h2 data-i18n="nav-mai-components-basic">📦 기본 구성품</h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
-          Anchor: <a href="#sec-mai-components" style="color:#a855f7; text-decoration:none;">#sec-mai-components</a>
+          Anchor: <a href="#sec-mai-components-basic" style="color:#a855f7; text-decoration:none;">#sec-mai-components-basic</a>
         </div>
         <p class="subtitle">M AI°</p>
         <div class="content-card">
-          <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
+          <style>
+            #sec-mai-components-basic .mai-components-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:18px; }
+            #sec-mai-components-basic .mai-component-category { grid-column:1 / -1; margin:18px 0 -2px; color:#4c1d95; font-size:18px; font-weight:700; }
+            #sec-mai-components-basic .mai-component-category:first-child { margin-top:0; }
+            #sec-mai-components-basic .mai-component-category--install { order:1; }
+            #sec-mai-components-basic .mai-component-category--jig { order:3; }
+            #sec-mai-components-basic .mai-component-category--tool { order:5; }
+            #sec-mai-components-basic .mai-component-category--care { order:20; }
+            #sec-mai-components-basic .mai-component-category--other { order:22; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-02.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-03.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-07.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-08.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-11.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-12.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-13.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-31.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-32.webp']) { order:2; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-01.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-06.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-14.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-18.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-19.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-20.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-24.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-25.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-26.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-27.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-35.webp']) { order:4; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-15.webp']) { order:6; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-22.webp']) { order:7; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-29.webp']) { order:8; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-16.webp']) { order:9; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-23.webp']) { order:10; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-30.webp']) { order:11; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-17.webp']) { order:12; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-05.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-10.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-21.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-33.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-34.webp']) { order:21; }
+            #sec-mai-components-basic .mai-component-card:has(img[src$='component-04.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-09.webp']), #sec-mai-components-basic .mai-component-card:has(img[src$='component-28.webp']) { order:23; }
+            #sec-mai-components-basic .mai-component-card { display:flex; flex-direction:column; min-width:0; overflow:hidden; border:1px solid #e5e7eb; border-radius:12px; background:#fff; box-shadow:0 1px 2px rgba(15,23,42,.04); }
+            #sec-mai-components-basic .mai-component-image { display:flex; align-items:center; justify-content:center; height:180px; padding:14px; background:#f8fafc; }
+            #sec-mai-components-basic .mai-component-image img { display:block; width:100%; height:100%; object-fit:contain; }
+            #sec-mai-components-basic .mai-component-name { margin:0; padding:12px 14px 14px; color:#374151; font-size:14px; font-weight:600; line-height:1.5; }
+            @media (max-width:480px) { #sec-mai-components-basic .mai-components-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); gap:12px; } #sec-mai-components-basic .mai-component-image { height:140px; padding:10px; } #sec-mai-components-basic .mai-component-name { padding:10px; font-size:13px; } }
+          </style>
+          <div class="mai-components-grid" aria-label="스타터 키트 기본 구성품">
+            <h3 class="mai-component-category mai-component-category--install">설치·연결 부품</h3>
+            <h3 class="mai-component-category mai-component-category--jig">지그·캘리브레이션 공구</h3>
+            <h3 class="mai-component-category mai-component-category--tool">가공 공구 (기본으로 지급되는 공구는 국가마다 다를 수도 있습니다)</h3>
+            <h3 class="mai-component-category mai-component-category--care">유지관리·소모품</h3>
+            <h3 class="mai-component-category mai-component-category--other">조작·기타</h3>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-01.webp" alt="C-clamp jig"></div><p class="mai-component-name">C-clamp jig x 1ea (D98.5mm disc)</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-02.webp" alt="Filter box"></div><p class="mai-component-name">Filter box x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-03.webp" alt="Filter"></div><p class="mai-component-name">Filter x 10ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-04.webp" alt="Wired keyboard"></div><p class="mai-component-name">Wired keyboard x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-05.webp" alt="Spray for cleaning machine"></div><p class="mai-component-name">Spray for cleaning machine x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-06.webp" alt="PreMill jig"></div><p class="mai-component-name">PreMill jig x 1ea (Ti. Pre-Mill block, # 10ea)</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-07.webp" alt="Pump"></div><p class="mai-component-name">Pump (120W, 50Hz / 60Hz) x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-08.webp" alt="Communication cable"></div><p class="mai-component-name">Communication cable x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-09.webp" alt="Starter kit box"></div><p class="mai-component-name">Starter kit box x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-10.webp" alt="Cutting oil"></div><p class="mai-component-name">Cutting oil (2L)</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-11.webp" alt="Air regulator"></div><p class="mai-component-name">Air regulator x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-12.webp" alt="Cutting oil tank"></div><p class="mai-component-name">Cutting oil tank x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-13.webp" alt="Power cable"></div><p class="mai-component-name">Power cable x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-14.webp" alt="Wax disc"></div><p class="mai-component-name">Wax disc x 2ea (for Manual Disc Calibration)</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-15.webp" alt="Zirconia Tool Z2.0B"></div><p class="mai-component-name">Zirconia Tool, Z2.0B (T1) x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-16.webp" alt="Metal PMMA Tool M3.0B"></div><p class="mai-component-name">Metal/PMMA Tool, M3.0B (T9) x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-17.webp" alt="Metal PMMA Tool M1.0B"></div><p class="mai-component-name">Metal/PMMA Tool, M1.0B (T12) x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-18.webp" alt="Tip set"></div><p class="mai-component-name">Tip set x 1set</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-19.webp" alt="Driver handle"></div><p class="mai-component-name">Driver handle x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-20.webp" alt="Bolts"></div><p class="mai-component-name">Bolts (M6, M5, M4, M3)</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-21.webp" alt="Cleaning brush"></div><p class="mai-component-name">Cleaning brush x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-22.webp" alt="Zirconia Tool Z1.0B"></div><p class="mai-component-name">Zirconia Tool, Z1.0B (T2) x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-23.webp" alt="Metal PMMA Tool M2.0B"></div><p class="mai-component-name">Metal/PMMA Tool, M2.0B (T10) x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-24.webp" alt="Calibration PIN"></div><p class="mai-component-name">Calibration PIN, A4.0C x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-25.webp" alt="Torque adaptors"></div><p class="mai-component-name">Torque adaptors (0.6N·m, 2 N·m, 5N·m) x 1ea each</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-26.webp" alt="Torque driver"></div><p class="mai-component-name">Torque driver (Tonichi)</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-27.webp" alt="1.2mm Hex screw tip"></div><p class="mai-component-name">1.2mm Hex screw tip</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-28.webp" alt="Touch pen"></div><p class="mai-component-name">Touch pen x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-29.webp" alt="Zirconia Tool Z0.6B"></div><p class="mai-component-name">Zirconia Tool, Z0.6B (T3) x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-30.webp" alt="Metal PMMA Tool M1.5B"></div><p class="mai-component-name">Metal/PMMA Tool, M1.5B (T11) x 2ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-31.webp" alt="Conductive cable"></div><p class="mai-component-name">Conductive cable x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-32.webp" alt="Earth cable"></div><p class="mai-component-name">Earth cable x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-33.webp" alt="Grease"></div><p class="mai-component-name">Grease x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-34.webp" alt="Collet cleaning brush"></div><p class="mai-component-name">Collet cleaning brush x 1ea</p></article>
+            <article class="mai-component-card"><div class="mai-component-image"><img loading="lazy" src="assets/images/sec-mai-components/component-35.webp" alt="Collet Adaptor"></div><p class="mai-component-name">Collet Adaptor x 1ea</p></article>
+          </div>
+        </div>
+      </section>
+
+<section id="sec-mai-components-optional" class="content-section">
+        <h2 data-i18n="nav-mai-components-optional">📦 선택 구성품</h2>
+        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
+          Anchor: <a href="#sec-mai-components-optional" style="color:#a855f7; text-decoration:none;">#sec-mai-components-optional</a>
+        </div>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card">
+          <style>
+            #sec-mai-components-optional .mai-optional-components-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:18px; }
+            #sec-mai-components-optional .mai-optional-category { grid-column:1 / -1; margin:18px 0 -2px; color:#4c1d95; font-size:18px; font-weight:700; }
+            #sec-mai-components-optional .mai-optional-category:first-child { margin-top:0; }
+            #sec-mai-components-optional .mai-optional-card { display:flex; flex-direction:column; min-width:0; overflow:hidden; border:1px solid #e5e7eb; border-radius:12px; background:#fff; box-shadow:0 1px 2px rgba(15,23,42,.04); }
+            #sec-mai-components-optional .mai-optional-image { display:flex; align-items:center; justify-content:center; height:180px; padding:14px; background:#f8fafc; }
+            #sec-mai-components-optional .mai-optional-image img { display:block; width:100%; height:100%; object-fit:contain; }
+            #sec-mai-components-optional .mai-optional-name { margin:0; padding:12px 14px 14px; color:#374151; font-size:14px; font-weight:600; line-height:1.5; }
+            @media (max-width:480px) { #sec-mai-components-optional .mai-optional-components-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); gap:12px; } #sec-mai-components-optional .mai-optional-image { height:140px; padding:10px; } #sec-mai-components-optional .mai-optional-name { padding:10px; font-size:13px; } }
+          </style>
+          <div class="mai-optional-components-grid" aria-label="선택 구성품">
+            <h3 class="mai-optional-category">선택 지그</h3>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/block-jig.webp" alt="블록 지그"></div><p class="mai-optional-name">블록 지그</p></article>
+            <h3 class="mai-optional-category">선택 공구</h3>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t04.webp" alt="T04-0.3B"></div><p class="mai-optional-name">T04-0.3B</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t05.webp" alt="T05-2.5B"></div><p class="mai-optional-name">T05-2.5B</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t06.webp" alt="T06-1.5B"></div><p class="mai-optional-name">T06-1.5B</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t07.webp" alt="T07-1.0"></div><p class="mai-optional-name">T07-1.0</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t08.webp" alt="T08-0.6"></div><p class="mai-optional-name">T08-0.6</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t13.webp" alt="T13-0.6"></div><p class="mai-optional-name">T13-0.6</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t14.webp" alt="T14-2.0BL"></div><p class="mai-optional-name">T14-2.0BL</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t15.webp" alt="T15-1.5RL"></div><p class="mai-optional-name">T15-1.5RL</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t16.webp" alt="T16-1.5FL"></div><p class="mai-optional-name">T16-1.5FL</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t17.webp" alt="T17-1.5F"></div><p class="mai-optional-name">T17-1.5F</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t18.webp" alt="T18-1.5R"></div><p class="mai-optional-name">T18-1.5R</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t19.webp" alt="T19-1.0F"></div><p class="mai-optional-name">T19-1.0F</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t20.webp" alt="T20-0.5F"></div><p class="mai-optional-name">T20-0.5F</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t23.webp" alt="T23-1.6T"></div><p class="mai-optional-name">T23-1.6T</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t24.webp" alt="T24-2.0T"></div><p class="mai-optional-name">T24-2.0T</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t25.webp" alt="T25-2.0TH"></div><p class="mai-optional-name">T25-2.0TH</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t26.webp" alt="T26-1.8TH"></div><p class="mai-optional-name">T26-1.8TH</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t27.webp" alt="T27-1.6TH"></div><p class="mai-optional-name">T27-1.6TH</p></article>
+            <article class="mai-optional-card"><div class="mai-optional-image"><img loading="lazy" src="assets/images/sec-mai-components-optional/t28.webp" alt="T28-1.4TH"></div><p class="mai-optional-name">T28-1.4TH</p></article>
+          </div>
+        </div>
+      </section>
+
+<section id="sec-mai-tools" class="content-section">
+        <h2 data-i18n="nav-mai-tools">🪛 공구</h2>
+        <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
+          Anchor: <a href="#sec-mai-tools" style="color:#a855f7; text-decoration:none;">#sec-mai-tools</a>
+        </div>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card">
+          <style>
+            #sec-mai-tools .mai-tools-stamps { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 24px; padding-bottom:16px; border-bottom:1px dashed #e5e7eb; }
+            #sec-mai-tools .mai-tools-stamp { display:inline-flex; align-items:center; padding:9px 14px; border:1px solid #e9d5ff; border-radius:999px; background:#faf5ff; color:#7e22ce; font-size:13px; font-weight:700; cursor:pointer; transition:transform .2s ease, box-shadow .2s ease, background .2s ease; }
+            #sec-mai-tools .mai-tools-stamp:hover, #sec-mai-tools .mai-tools-stamp:focus-visible { background:#f3e8ff; box-shadow:0 5px 12px rgba(168,85,247,.16); transform:translateY(-1px); outline:none; }
+            #sec-mai-tools .mai-tools-item + .mai-tools-item { margin-top:36px; padding-top:28px; border-top:1px solid #e5e7eb; }
+            #sec-mai-tools .mai-tools-item-title { margin:0 0 16px; color:#374151; font-size:20px; }
+            #sec-mai-tools .mai-tools-figure { margin:0 0 20px; }
+            #sec-mai-tools .mai-tools-figure:last-child { margin-bottom:0; }
+            #sec-mai-tools .mai-tools-figure img { display:block; width:100%; height:auto; border:1px solid #e5e7eb; border-radius:10px; }
+            #sec-mai-tools .mai-tools-description { margin:-4px 0 20px; color:#4b5563; font-size:15px; line-height:1.65; }
+            @media (max-width:480px) { #sec-mai-tools .mai-tools-stamps { gap:8px; } #sec-mai-tools .mai-tools-stamp { padding:7px 10px; font-size:12px; } #sec-mai-tools .mai-tools-item-title { font-size:18px; } }
+          </style>
+          <nav class="mai-tools-stamps" aria-label="공구 항목 바로가기">
+            <button type="button" class="mai-tools-stamp" onclick="document.getElementById('mai-tools-pocket-open')?.scrollIntoView({ behavior: 'smooth', block: 'start' });">1. 공구 포켓 열기</button>
+            <button type="button" class="mai-tools-stamp" onclick="document.getElementById('mai-tools-list-time')?.scrollIntoView({ behavior: 'smooth', block: 'start' });">2. 공구 리스트 &amp; 권장시간</button>
+          </nav>
+          <section id="mai-tools-pocket-open" class="mai-tools-item">
+            <h3 class="mai-tools-item-title">1. 공구 포켓 열기</h3>
+            <figure class="mai-tools-figure"><img loading="lazy" src="assets/images/sec-mai-tools/tool-pocket-open.webp" alt="공구 포켓 열기 화면"></figure>
+            <p class="mai-tools-description">표시된 해당 버튼 &lt;ATC Open/Close&gt;을 누르시면 공구 포켓이 열립니다.<br>한번 더 누르면 닫힙니다.</p>
+            <figure class="mai-tools-figure"><img loading="lazy" src="assets/images/sec-mai-tools/tool-pocket-photo.webp" alt="열린 공구 포켓"></figure>
+          </section>
+          <section id="mai-tools-list-time" class="mai-tools-item">
+            <h3 class="mai-tools-item-title">2. 공구 리스트 &amp; 권장시간</h3>
+          </section>
         </div>
       </section>
 
