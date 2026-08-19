@@ -856,7 +856,13 @@ window.VISIBLE_I18N_AUTO = {
     "YouTube에서 공구 장착 영상 열기": "Open tool mounting video on YouTube",
     "YouTube에서 공구 교체 영상 열기": "Open tool change video on YouTube",
     "공구 교체 영상": "Tool replacement video",
-    "🔄 공구 교체": "🔄 Tool change"
+    "🔄 공구 교체": "🔄 Tool change",
+    "🛠️ 공구 장착 및 교체": "🛠️ Tool installation and replacement",
+    "📖 공구 장착 자세히 보기": "📖 Learn more about tool installation",
+    "공구 장착 및 교체 섹션": "Tool Mounting and Replacement Section",
+    "🎬 영상으로 확인하기": "🎬 Check it out in the video",
+    "📖 공구 장착 사진으로 보기": "📖 See photos of tool installation",
+    "📖 공구 교체 사진으로 보기": "📖 View tool replacement photos"
   },
   "ja": {
     "MillFix 기본 구성품": "MillFixの基本コンポーネント",
@@ -1714,6 +1720,12 @@ window.VISIBLE_I18N_AUTO = {
     "공구 교체 영상": "ツール交換ビデオ",
     "YouTube에서 공구 교체 영상 열기": "YouTubeで工具交換ビデオを開く",
     "YouTube에서 공구 장착 영상 열기": "YouTubeでツールマウントビデオを開く",
-    "공구 장착 영상": "工具取り付け画像"
+    "공구 장착 영상": "工具取り付け画像",
+    "🛠️ 공구 장착 및 교체": "🛠️工具の取り付けと交換",
+    "🎬 영상으로 확인하기": "🎬ビデオで確認する",
+    "공구 장착 및 교체 섹션": "工具の取り付けと交換セクション",
+    "📖 공구 장착 자세히 보기": "📖ツールの取り付け詳細を見る",
+    "📖 공구 장착 사진으로 보기": "📖工具装着写真で見る",
+    "📖 공구 교체 사진으로 보기": "📖工具交換写真で見る"
   }
 };

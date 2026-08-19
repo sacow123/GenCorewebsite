@@ -130,20 +130,11 @@ body {
 #nav-mai-tool-setup-parent > .sub-menu,
 [id^="nav-mai-components-parent"] > .sub-menu {
   margin-left: 14px;
-  border-left: 2px solid rgba(124, 58, 237, 0.28);
 }
 
 #nav-mai-tool-setup-parent > .sub-menu > .nav-item,
 [id^="nav-mai-components-parent"] > .sub-menu > .nav-item {
   padding-left: 84px;
-}
-
-#nav-mai-tool-setup-parent > .sub-menu > .nav-item::before,
-[id^="nav-mai-components-parent"] > .sub-menu > .nav-item::before {
-  content: "└";
-  margin-right: 2px;
-  color: #8b5cf6;
-  font-weight: 700;
 }
 
 /* ===== MAIN CONTENT ===== */
@@ -938,4 +929,105 @@ body {
 #mai-tutorial-grid .feature-card, #mf-tutorial-grid .feature-card, #mai-feature-grid .feature-card, #mf-feature-grid .feature-card {
   width: 100%;
   max-width: none;
+}
+
+/* M AI tool mounting / replacement: nested cards for clear item grouping. */
+#sec-mai-tool-setup .mai-tool-content-group {
+  padding: 26px;
+  border: 1px solid #ddd6fe;
+  border-radius: 18px;
+  background: #fafaff;
+  box-shadow: 0 6px 18px rgba(76, 29, 149, 0.08);
+}
+
+#sec-mai-tool-setup #mai-tool-videos article,
+#sec-mai-tool-setup [data-tool-step],
+#sec-mai-tool-setup [data-tool-replacement-step] {
+  padding: 12px;
+  border-color: #d8b4fe !important;
+  border-radius: 13px !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(76, 29, 149, 0.10) !important;
+}
+
+#sec-mai-tool-setup [data-tool-step] > img,
+#sec-mai-tool-setup [data-tool-replacement-step] > img {
+  border-radius: 8px;
+}
+
+#sec-mai-tool-setup .mai-tool-photo-grid {
+  counter-reset: tool-photo-step;
+}
+
+#sec-mai-tool-setup .mai-tool-photo-grid > article {
+  position: relative;
+  counter-increment: tool-photo-step;
+}
+
+#sec-mai-tool-setup .mai-tool-photo-grid > article::before {
+  content: "스텝 " counter(tool-photo-step);
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  z-index: 1;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #a16207;
+  color: #1f2937;
+  background: #facc15;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.30);
+}
+
+html[data-lang="en"] #sec-mai-tool-setup .mai-tool-photo-grid > article::before {
+  content: "STEP " counter(tool-photo-step);
+}
+
+html[data-lang="ja"] #sec-mai-tool-setup .mai-tool-photo-grid > article::before {
+  content: "ステップ " counter(tool-photo-step);
+}
+
+html[data-lang="es"] #sec-mai-tool-setup .mai-tool-photo-grid > article::before {
+  content: "PASO " counter(tool-photo-step);
+}
+
+/* M AI tool lifetime settings: one landscape screenshot per card. */
+#sec-mai-tool-time .mai-tool-time-photo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#sec-mai-tool-time .mai-tool-time-photo-card {
+  overflow: hidden;
+  padding: 12px;
+  border: 1px solid #d8b4fe;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(76, 29, 149, 0.10);
+}
+
+#sec-mai-tool-time .mai-tool-time-photo-card > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+  #sec-mai-tool-setup .mai-tool-content-group {
+    padding: 16px;
+  }
+
+  #sec-mai-tool-setup .mai-tool-photo-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #sec-mai-tool-time .mai-tool-time-photo-list {
+    gap: 20px;
+  }
 }
