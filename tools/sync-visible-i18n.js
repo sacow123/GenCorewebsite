@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 
 const rootDir = path.resolve(__dirname, "..");
-const htmlPath = path.join(rootDir, "index.html");
 const outputPath = path.join(rootDir, "src", "data", "visible-i18n-auto.js");
 const hangul = /[\uAC00-\uD7A3]/;
 const voidTags = new Set(["img", "input", "br", "meta", "link", "hr", "source", "area", "base", "col", "embed", "param", "track", "wbr"]);
@@ -78,7 +77,17 @@ async function syncLanguage(translations, sourceTexts, language) {
 
 async function main() {
   const translations = loadAutoTranslations();
-  const sourceTexts = collectVisibleKorean(fs.readFileSync(htmlPath, "utf8"));
+  const htmlPaths = fs.readdirSync(rootDir)
+    .filter(name => name.toLowerCase().endsWith(".html"))
+    .map(name => path.join(rootDir, name))
+    .concat(
+      fs.readdirSync(path.join(rootDir, "assets", "documents", "mai-install"))
+        .filter(name => name.toLowerCase().endsWith(".html"))
+        .map(name => path.join(rootDir, "assets", "documents", "mai-install", name))
+    );
+  const sourceTexts = [...new Set(htmlPaths.flatMap(htmlPath =>
+    [...collectVisibleKorean(fs.readFileSync(htmlPath, "utf8"))]
+  ))];
   const [englishAdded, japaneseAdded] = await Promise.all([
     syncLanguage(translations, sourceTexts, "en"),
     syncLanguage(translations, sourceTexts, "ja")

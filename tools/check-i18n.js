@@ -3,7 +3,6 @@ const path = require("path");
 const vm = require("vm");
 
 const rootDir = path.resolve(__dirname, "..");
-const htmlPath = path.join(rootDir, "index.html");
 const i18nPath = path.join(rootDir, "src", "scripts", "i18n.js");
 const autoVisibleI18nPath = path.join(rootDir, "src", "data", "visible-i18n-auto.js");
 
@@ -156,7 +155,17 @@ function findVisibleKorean(markup) {
 
 function main() {
   const options = parseArgs(process.argv.slice(2));
-  const html = fs.readFileSync(htmlPath, "utf8");
+  const htmlPaths = fs.readdirSync(rootDir)
+    .filter(name => name.toLowerCase().endsWith(".html"))
+    .map(name => path.join(rootDir, name))
+    .concat(
+      fs.readdirSync(path.join(rootDir, "assets", "documents", "mai-install"))
+        .filter(name => name.toLowerCase().endsWith(".html"))
+        .map(name => path.join(rootDir, "assets", "documents", "mai-install", name))
+    );
+  const html = htmlPaths
+    .map(htmlPath => fs.readFileSync(htmlPath, "utf8"))
+    .join("\n");
   const i18n = loadI18n();
   const sections = getSections(html);
 

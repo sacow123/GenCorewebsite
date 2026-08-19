@@ -20,3 +20,32 @@
   };
   document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', attach) : attach();
 })();
+
+(function () {
+  const labels = {
+    ko: '권장 사용시간',
+    en: 'Recommended Usage Time',
+    ja: '推奨使用時間',
+    es: 'Tiempo de uso recomendado'
+  };
+
+  const syncPopupHeaders = () => {
+    const label = labels[document.documentElement.lang] || labels.ko;
+    document.querySelectorAll('.mai-tool-popup-head').forEach((header) => {
+      const toolId = header.textContent.match(/T\d+/)?.[0];
+      if (!toolId) return;
+      const text = `⏱️ ${toolId} ${label}`;
+      if (header.textContent !== text) header.textContent = text;
+    });
+  };
+
+  const attach = () => {
+    new MutationObserver(syncPopupHeaders).observe(document.body, { childList: true, subtree: true });
+    new MutationObserver(syncPopupHeaders).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+    syncPopupHeaders();
+  };
+
+  document.readyState === 'loading'
+    ? document.addEventListener('DOMContentLoaded', attach)
+    : attach();
+}());

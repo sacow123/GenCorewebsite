@@ -125,6 +125,27 @@ body {
   padding-left: 40px;
 }
 
+/* Make the generated M AI component menu and the M AI tool setup menu
+   visibly read as children instead of aligning with their parent trigger. */
+#nav-mai-tool-setup-parent > .sub-menu,
+[id^="nav-mai-components-parent"] > .sub-menu {
+  margin-left: 14px;
+  border-left: 2px solid rgba(124, 58, 237, 0.28);
+}
+
+#nav-mai-tool-setup-parent > .sub-menu > .nav-item,
+[id^="nav-mai-components-parent"] > .sub-menu > .nav-item {
+  padding-left: 84px;
+}
+
+#nav-mai-tool-setup-parent > .sub-menu > .nav-item::before,
+[id^="nav-mai-components-parent"] > .sub-menu > .nav-item::before {
+  content: "└";
+  margin-right: 2px;
+  color: #8b5cf6;
+  font-weight: 700;
+}
+
 /* ===== MAIN CONTENT ===== */
 .main-content {
   flex: 1; padding: 32px 40px; overflow-y: auto; max-width: 1200px;

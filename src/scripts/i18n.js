@@ -1,4 +1,4 @@
-﻿/* ===== i18n 다국어 전환 시스템 ===== */
+/* ===== i18n 다국어 전환 시스템 ===== */
 const TRANSLATIONS = {
   "ko": {
     "site-title": "GenCore Technical Support Center",
@@ -393,7 +393,7 @@ const TRANSLATIONS = {
     "mf-auto-641": "🇰🇷 한국어",
     "mf-auto-642": "취급시 주의사항(공통)",
     "mf-auto-643": "사용자 매뉴얼",
-    "mf-auto-644": "M AI° 소개",
+    "mf-auto-644": "M AI° Introduction",
     "mf-auto-560": "📊 사양",
     "mf-auto-366": "🏷️ 부분 명칭",
     "mf-auto-267": "📦 구성품",
@@ -403,17 +403,17 @@ const TRANSLATIONS = {
     "mf-auto-1": "🔌 케이블 연결",
     "mf-auto-370": "⚡ Power On/Off, Warm-up",
     "mf-auto-592": "🛠️ 공구 세팅",
-    "mf-auto-646": "캘리브레이션",
-    "mf-auto-647": "디스크 캘리브레이션",
+    "mf-auto-646": "Calibration",
+    "mf-auto-647": "Disk Calibration",
     "mf-auto-648": " AI 디스크 캘리브레이션",
-    "mf-auto-649": "🖐️ 매뉴얼 디스크 캘리브레이션",
-    "mf-auto-650": "프리밀 캘리브레이션",
+    "mf-auto-649": "🖐️ Manual Disk Calibration",
+    "mf-auto-650": "Premill Calibration",
     "mf-auto-651": " AI 프리밀 캘리브레이션 V1.2",
     "mf-auto-652": " AI 프리밀 캘리브레이션 V2.0",
-    "mf-auto-653": "툴포켓 캘리브레이션",
-    "mf-auto-654": "🤖 툴포켓 캘리브레이션(오토)",
-    "mf-auto-655": "🖐️ 툴포켓 캘리브레이션(매뉴얼)",
-    "mf-auto-656": "컨트롤 프로그램",
+    "mf-auto-653": "Tool Pocket Calibration",
+    "mf-auto-654": "🤖 Auto Tool Pocket Calibration",
+    "mf-auto-655": "🖐️ Manual Tool Pocket Calibration",
+    "mf-auto-656": "Control Program",
     "mf-auto-326": "🏠 메인 페이지",
     "mf-auto-657": "📋 공구 리스트 페이지",
     "mf-auto-535": "⚙️ 설정 페이지",
@@ -422,7 +422,7 @@ const TRANSLATIONS = {
     "mf-auto-659": "📝 세팅 파일(settings)",
     "mf-auto-305": "💡 사용 방법(features)",
     "mf-auto-660": "🎓 튜토리얼(Tutorials)",
-    "mf-auto-661": "유지 보수",
+    "mf-auto-661": "Maintenance",
     "mf-auto-443": "🧹 수시 관리 사항",
     "mf-auto-574": "공구 관리",
     "mf-auto-200": "🗜️ 콜렛 관리",
@@ -4234,6 +4234,13 @@ const STATIC_CONTENT_TRANSLATIONS = {
 };
 
 Object.assign(STATIC_CONTENT_TRANSLATIONS.en, {
+  "공구 항목 바로가기": "Tool Section Shortcuts",
+  "1. 공구 포켓 열기": "1. Open the Tool Pocket",
+  "2. 공구 리스트 & 권장시간": "2. Tool List & Recommended Usage Time",
+  "공구 포켓 열기 화면": "Tool Pocket Open Screen",
+  "표시된 해당 버튼 <ATC Open/Close>을 누르시면 공구 포켓이 열립니다.": "Press the indicated <ATC Open/Close> button to open the tool pocket.",
+  "한번 더 누르면 닫힙니다.": "Press it once more to close it.",
+  "열린 공구 포켓": "Open Tool Pocket",
   "검색...": "Search...",
   "Menu": "Menu",
   "오류 코드 리스트 및 대응 방안 확인하기": "View the Error Code List and Response Guide",
@@ -4306,6 +4313,13 @@ Object.assign(STATIC_CONTENT_TRANSLATIONS.en, {
 });
 
 Object.assign(STATIC_CONTENT_TRANSLATIONS.ja, {
+  "공구 항목 바로가기": "工具項目ショートカット",
+  "1. 공구 포켓 열기": "1. 工具ポケットを開く",
+  "2. 공구 리스트 & 권장시간": "2. 工具リストと推奨使用時間",
+  "공구 포켓 열기 화면": "工具ポケットを開く画面",
+  "표시된 해당 버튼 <ATC Open/Close>을 누르시면 공구 포켓이 열립니다.": "表示されている<ATC Open/Close>ボタンを押すと、工具ポケットが開きます。",
+  "한번 더 누르면 닫힙니다.": "もう一度押すと閉じます。",
+  "열린 공구 포켓": "開いた工具ポケット",
   "검색...": "検索...",
   "Menu": "メニュー",
   "오류 코드 리스트 및 대응 방안 확인하기": "エラーコード一覧と対応方法を確認する",
@@ -4377,12 +4391,62 @@ if (autoVisibleTranslations) {
   });
 }
 
+Object.assign(STATIC_CONTENT_TRANSLATIONS.ja, {
+  "<노즐에서 에어 및 절삭유 분출 강도를 조절하실 수 있습니다.>": "＜ノズルからエアおよび切削油の噴出強度を調節できます。＞",
+  "<하단부>": "＜下端部＞",
+  "Pre-check video manual": "設置前確認の動画マニュアル",
+  "Connecting cables video manual": "ケーブル接続の動画マニュアル",
+  "Power on/off video manual": "電源オン／オフの動画マニュアル",
+  "Fix the air regulator": "エアレギュレーターを固定する",
+  "The bolts to hang the air regulator on": "エアレギュレーターを掛けるためのボルト",
+  "Power button": "電源ボタン",
+  "Power switch in the rear side of machine (Machine, Table)": "装置背面の電源スイッチ（本体、テーブル）",
+  "inside": "内部",
+  "Processor:": "プロセッサー：",
+  "RAM memory:": "RAMメモリー：",
+  "HDD:": "HDD：",
+  "Graphic card:": "グラフィックカード：",
+  "VRAM Graphic card:": "VRAMグラフィックカード：",
+  "USB-Slot:": "USBスロット：",
+  "Input: AC 220V / 3~6A (Max. 10A) / 60Hz": "入力：AC 220V／3～6A（最大10A）／60Hz",
+  "(A perfect function with other graphics cards cannot be guaranteed.)": "（他のグラフィックカードでの完全な動作は保証されません。）",
+  "(Site)": "（サイト）",
+  "Tags": "タグ"
+});
+
+STATIC_CONTENT_TRANSLATIONS.ko ||= {};
+Object.assign(STATIC_CONTENT_TRANSLATIONS.ko, {
+  "Pre-check video manual": "설치 전 확인 영상 매뉴얼",
+  "Connecting cables video manual": "케이블 연결 영상 매뉴얼",
+  "Power on/off video manual": "전원 켜기/끄기 영상 매뉴얼",
+  "Fix the air regulator": "에어 레귤레이터 고정",
+  "The bolts to hang the air regulator on": "에어 레귤레이터를 거는 볼트",
+  "Power button": "전원 버튼",
+  "Power switch in the rear side of machine (Machine, Table)": "장비 후면 전원 스위치(본체, 테이블)",
+  "inside": "내부",
+  "Processor:": "프로세서:",
+  "RAM memory:": "RAM 메모리:",
+  "HDD:": "HDD:",
+  "Graphic card:": "그래픽 카드:",
+  "VRAM Graphic card:": "VRAM 그래픽 카드:",
+  "USB-Slot:": "USB 슬롯:",
+  "Input: AC 220V / 3~6A (Max. 10A) / 60Hz": "입력: AC 220V / 3~6A(최대 10A) / 60Hz",
+  "(A perfect function with other graphics cards cannot be guaranteed.)": "(다른 그래픽 카드에서는 완전한 동작을 보장할 수 없습니다.)",
+  "(Site)": "(현장)",
+  "Tags": "태그"
+});
+
 const STATIC_TRANSLATION_CACHE = new Map();
 const ORIGINAL_STATIC_TEXT = new WeakMap();
 const STATIC_ATTRIBUTE_NAMES = ["placeholder", "title", "alt", "aria-label", "data-title"];
 
 function getStaticTranslation(lang, text) {
-  const staticTranslation = STATIC_CONTENT_TRANSLATIONS[lang]?.[text];
+  const staticTranslations = STATIC_CONTENT_TRANSLATIONS[lang] || {};
+  const staticTranslation = staticTranslations[text]
+    || staticTranslations[String(text)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")];
   if (staticTranslation) return staticTranslation;
 
   if (lang === "en") {
@@ -4470,7 +4534,7 @@ function applyStaticContentTranslations(lang, root = document.body) {
       }
       const original = el.getAttribute(originalName);
       const translated = lang === "ko" ? original : getStaticTranslation(lang, original);
-      if (translated) el.setAttribute(name, translated);
+      if (translated && el.getAttribute(name) !== translated) el.setAttribute(name, translated);
     });
   });
 
@@ -4499,7 +4563,8 @@ function applyStaticContentTranslations(lang, root = document.body) {
     const translated = lang === "ko" ? trimmed : getStaticTranslation(lang, trimmed);
     if (!translated) return;
 
-    node.nodeValue = original.replace(trimmed, translated);
+    const nextValue = original.replace(trimmed, translated);
+    if (node.nodeValue !== nextValue) node.nodeValue = nextValue;
   });
 }
 
@@ -5231,7 +5296,8 @@ function createExternalDocumentLanguageMessage(lang) {
     lang,
     // file:// pages are isolated from their parent window. Send the dictionary
     // instead of requiring the embedded document to access parent functions.
-    translations: TRANSLATIONS[lang] || {}
+    translations: TRANSLATIONS[lang] || {},
+    staticTranslations: STATIC_CONTENT_TRANSLATIONS[lang] || {}
   };
 }
 
@@ -5291,12 +5357,12 @@ function applyLanguage(lang) {
     window.refreshDbconfigFilters();
   }
   applyStaticContentTranslations(lang, document.body);
+  window.dispatchEvent(new CustomEvent('gencore-language-changed', { detail: { lang } }));
   document.querySelectorAll('iframe[data-language-sync]').forEach((frame) => {
     frame.addEventListener('load', () => {
-      frame.contentWindow?.postMessage(createExternalDocumentLanguageMessage(lang), '*');
-      frame.contentWindow?.postMessage({ type: 'gencore-request-document-height' }, '*');
+      window.syncExternalDocument?.(frame);
     }, { once: true });
-    frame.contentWindow?.postMessage(createExternalDocumentLanguageMessage(lang), '*');
+    window.syncExternalDocument?.(frame);
   });
 }
 
@@ -5413,6 +5479,11 @@ Object.assign(TRANSLATIONS.ja, {
   "nav-mai-ui-3": "M AI° UI 3.0（新バージョン）"
 });
 
+Object.assign(TRANSLATIONS.ja, {
+  "mf-auto-817": "",
+  "mf-auto-818": ""
+});
+
 Object.assign(TRANSLATIONS.es, {
   "nav-mai-ui-2": "M AI° UI 2.0 (Versión anterior)",
   "nav-mai-ui-3": "M AI° UI 3.0 (Versión más reciente)"
@@ -5427,19 +5498,106 @@ if (typeof document !== 'undefined' && typeof window !== 'undefined') {
     }
   };
 
-  const syncExternalDocument = (frame) => {
+  const EXTERNAL_DOCUMENT_ORIGINAL_TEXT = new WeakMap();
+
+  const applyExternalDocumentTranslations = (frame, lang) => {
+    const externalDocument = frame.contentDocument;
+    if (!externalDocument?.body) return;
+
+    externalDocument.documentElement.lang = lang;
+    externalDocument.querySelectorAll('*').forEach((element) => {
+      STATIC_ATTRIBUTE_NAMES.forEach((name) => {
+        if (!element.hasAttribute(name)) return;
+        const originalName = `data-i18n-static-original-${name}`;
+        if (!element.hasAttribute(originalName)) {
+          element.setAttribute(originalName, element.getAttribute(name));
+        }
+        const original = element.getAttribute(originalName);
+      const translated = getStaticTranslation(lang, original) || original;
+        if (translated && element.getAttribute(name) !== translated) element.setAttribute(name, translated);
+      });
+    });
+
+    const walker = externalDocument.createTreeWalker(externalDocument.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!parent || ['SCRIPT', 'STYLE', 'NOSCRIPT'].includes(parent.tagName)) return NodeFilter.FILTER_REJECT;
+        return EXTERNAL_DOCUMENT_ORIGINAL_TEXT.has(node) || hasHangulText(node.nodeValue)
+          ? NodeFilter.FILTER_ACCEPT
+          : NodeFilter.FILTER_SKIP;
+      }
+    });
+
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+      if (!EXTERNAL_DOCUMENT_ORIGINAL_TEXT.has(node)) EXTERNAL_DOCUMENT_ORIGINAL_TEXT.set(node, node.nodeValue);
+      const original = EXTERNAL_DOCUMENT_ORIGINAL_TEXT.get(node);
+      const trimmed = original.trim();
+      const translated = getStaticTranslation(lang, trimmed) || trimmed;
+      if (!translated) return;
+      const nextValue = original.replace(trimmed, translated);
+      if (node.nodeValue !== nextValue) node.nodeValue = nextValue;
+    });
+
+    const height = Math.max(720, Math.ceil(externalDocument.documentElement.scrollHeight + 24));
+    frame.style.height = `${height}px`;
+  };
+
+  window.syncExternalDocument = (frame) => {
     frame.contentWindow?.postMessage(createExternalDocumentLanguageMessage(currentLang), '*');
     frame.contentWindow?.postMessage({ type: 'gencore-request-document-height' }, '*');
+    // The document can finish parsing shortly after the iframe load event.
+    // Reapply after that point so a language switch never leaves its source text visible.
+    [0, 100, 500].forEach((delay) => {
+      window.setTimeout(() => {
+        try {
+          applyExternalDocumentTranslations(frame, currentLang);
+        } catch {
+          // file:// iframes are isolated; their own bridge handles the message.
+        }
+      }, delay);
+    });
   };
 
   document.addEventListener('DOMContentLoaded', () => {
+    // Capture iframe loads even when a menu click or a language change recreates
+    // a lazy iframe after the initial page setup.
+    document.addEventListener('load', (event) => {
+      const frame = event.target;
+      if (frame instanceof HTMLIFrameElement && frame.matches('iframe[data-language-sync]')) {
+        window.syncExternalDocument?.(frame);
+      }
+    }, true);
+
     document.querySelectorAll('iframe[data-language-sync]').forEach((frame) => {
-      frame.addEventListener('load', () => syncExternalDocument(frame));
+      frame.addEventListener('load', () => window.syncExternalDocument(frame));
     });
+
+    let translationRefreshQueued = false;
+    const refreshDynamicTranslations = () => {
+      if (currentLang === 'ko' || translationRefreshQueued) return;
+      translationRefreshQueued = true;
+      window.setTimeout(() => {
+        translationRefreshQueued = false;
+        applyStaticContentTranslations(currentLang, document.body);
+      }, 0);
+    };
+
+    const translationObserverRoot = document.body || document.documentElement;
+    if (translationObserverRoot instanceof Node) {
+      new MutationObserver(refreshDynamicTranslations).observe(translationObserverRoot, {
+        childList: true,
+        subtree: true,
+        characterData: true,
+        attributes: true,
+        attributeFilter: STATIC_ATTRIBUTE_NAMES
+      });
+    }
   });
 
   window.addEventListener('load', () => {
-    document.querySelectorAll('iframe[data-language-sync]').forEach(syncExternalDocument);
+    document.querySelectorAll('iframe[data-language-sync]').forEach(window.syncExternalDocument);
   });
 
   window.addEventListener('message', (event) => {
