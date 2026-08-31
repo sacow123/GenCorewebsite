@@ -5276,6 +5276,75 @@ Object.assign(TRANSLATIONS.ja, {
   "search-results-try-again": "別のキーワードで再度お試しください。"
 });
 
+Object.assign(TRANSLATIONS.ko, {
+  "mai-tool-mount-step-01": "먼저 ATC Open/Close 버튼을 눌러주세요",
+  "mai-tool-mount-step-02": "그런 다음, Manual tool change 버튼을 눌러주세요.",
+  "mai-tool-mount-step-03": "장착하고 싶은 공구의 앞 부분을 눌러주세요, 이 설명에서는 9번과 10번입니다.",
+  "mai-tool-mount-step-04": "앞 부분을 누르면 스핀들이 전방으로 이동합니다.<br>이동하면, spindle chuck open/close 버튼을 눌러 콜렛을 개방합니다.",
+  "mai-tool-mount-step-05": "개방된 콜렛에 공구를 끝까지 밀어 넣은 후,<br>다시 한번 spindle chuck open/close 버튼을 눌러 콜렛을 닫아주세요.",
+  "mai-tool-mount-step-06": "화면에 표시된 Tool return 버튼을 눌러 복귀시키세요.",
+  "mai-tool-mount-step-07": "장착이 다 끝나면 ATC open/ close 버튼을 눌러 ATC를 닫아주세요."
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "mai-tool-mount-step-01": "Please press the ATC Open/Close button first.",
+  "mai-tool-mount-step-02": "Then press the Manual tool change button.",
+  "mai-tool-mount-step-03": "Press the front part of the tool you want to mount; in this example, they are No. 9 and No. 10.",
+  "mai-tool-mount-step-04": "When you press the front part, the spindle moves forward. Once it has moved, press the spindle chuck open/close button to open the collet.",
+  "mai-tool-mount-step-05": "Push the tool all the way into the open collet, then press the spindle chuck open/close button again to close the collet.",
+  "mai-tool-mount-step-06": "Press the Tool return button displayed on the screen to return it.",
+  "mai-tool-mount-step-07": "Once installation is complete, press the ATC open/close button to close the ATC."
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "mai-tool-mount-step-01": "最初にATC Open/Closeボタンを押してください。",
+  "mai-tool-mount-step-02": "次に、Manual tool changeボタンを押してください。",
+  "mai-tool-mount-step-03": "装着したい工具の前側を押してください。この説明では9番と10番です。",
+  "mai-tool-mount-step-04": "前側を押すとスピンドルが前方へ移動します。移動後、spindle chuck open/closeボタンを押してコレットを開きます。",
+  "mai-tool-mount-step-05": "開いたコレットに工具を奥まで差し込み、もう一度spindle chuck open/closeボタンを押してコレットを閉じてください。",
+  "mai-tool-mount-step-06": "画面に表示されているTool returnボタンを押して復帰させてください。",
+  "mai-tool-mount-step-07": "装着が完了したらATC open/closeボタンを押してATCを閉じてください。"
+});
+
+Object.assign(TRANSLATIONS.ko, {
+  "mai-tool-replacement-step-01": "교체를 위해 ATC open/close 버튼을 눌러 ATC를 개방합니다.",
+  "mai-tool-replacement-step-02": "Manual tool change 버튼을 눌러 활성화 합니다.",
+  "mai-tool-replacement-step-03": "교체를 원하는 번호의 공구 이미지 앞 부분을 눌러주세요.",
+  "mai-tool-replacement-step-04": "스핀들이 이미지 앞 부분을 누른 공구를 물고 오면 이를 뺍니다.",
+  "mai-tool-replacement-step-05": "반드시 공구를 잡은 상태로 Collet chuck open/ close 버튼을 눌러 콜렛을 개방하고 공구를 제거합니다.",
+  "mai-tool-replacement-step-06": "기존 공구를 제거했으면 열린 콜렛에 새 공구를 끼워넣습니다.",
+  "mai-tool-replacement-step-07": "새 공구를 끝까지 밀어넣으시고",
+  "mai-tool-replacement-step-08": "Collet chuck open/close 버튼을 다시 눌러 콜렛을 닫아 주세요.",
+  "mai-tool-replacement-step-09": "Tool return 버튼을 누르면 M AI가 공구를 ATC 내 제자리에 삽입합니다.",
+  "mai-tool-replacement-step-10": "다 끝났으면 ATC open/close 버튼을 눌러 ATC 를 닫아주세요."
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "mai-tool-replacement-step-01": "To replace a tool, press the ATC open/close button to open the ATC.",
+  "mai-tool-replacement-step-02": "Press the Manual tool change button to activate it.",
+  "mai-tool-replacement-step-03": "Press the front part of the image for the tool number you want to replace.",
+  "mai-tool-replacement-step-04": "When the spindle brings the tool whose image front part you pressed, remove it.",
+  "mai-tool-replacement-step-05": "Be sure to hold the tool while pressing the Collet chuck open/close button to open the collet and remove the tool.",
+  "mai-tool-replacement-step-06": "Once the existing tool is removed, insert the new tool into the open collet.",
+  "mai-tool-replacement-step-07": "Push the new tool all the way in.",
+  "mai-tool-replacement-step-08": "Press the Collet chuck open/close button again to close the collet.",
+  "mai-tool-replacement-step-09": "Press the Tool return button to insert the tool back into its original position in the ATC.",
+  "mai-tool-replacement-step-10": "When finished, press the ATC open/close button to close the ATC."
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "mai-tool-replacement-step-01": "交換のためにATC open/closeボタンを押してATCを開きます。",
+  "mai-tool-replacement-step-02": "Manual tool changeボタンを押して有効にします。",
+  "mai-tool-replacement-step-03": "交換したい番号の工具画像の前側を押してください。",
+  "mai-tool-replacement-step-04": "スピンドルが画像の前側を押した工具をくわえてきたら、それを取り外します。",
+  "mai-tool-replacement-step-05": "必ず工具を持った状態でCollet chuck open/closeボタンを押してコレットを開き、工具を取り外します。",
+  "mai-tool-replacement-step-06": "既存の工具を取り外したら、開いたコレットに新しい工具を差し込みます。",
+  "mai-tool-replacement-step-07": "新しい工具を奥まで押し込みます。",
+  "mai-tool-replacement-step-08": "Collet chuck open/closeボタンをもう一度押してコレットを閉じてください。",
+  "mai-tool-replacement-step-09": "Tool returnボタンを押すと、M AIが工具をATC内の元の位置に戻します。",
+  "mai-tool-replacement-step-10": "すべて完了したらATC open/closeボタンを押してATCを閉じてください。"
+});
+
 const LANG_OPTION_LABELS = {
   ko: { ko: "🇰🇷 한국어", en: "🇺🇸 English", ja: "🇯🇵 日本語", es: "🇪🇸 Español" },
   en: { ko: "Korean", en: "English", ja: "Japanese", es: "Spanish" },
