@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Dealer Access | GenCore</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, "Noto Sans KR", system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: linear-gradient(145deg, #f4f3ff, #eef6ff); color: #202236; }
+    .panel { width: min(100%, 430px); padding: 38px; border: 1px solid #e3e4ee; border-radius: 22px; background: rgba(255,255,255,.96); box-shadow: 0 24px 70px rgba(54,45,114,.14); }
+    .brand { margin: 0 0 28px; color: #6947d9; font-size: 18px; font-weight: 800; letter-spacing: .02em; }
+    h1 { margin: 0 0 10px; font-size: 28px; }
+    .subtitle, .notice { color: #656979; line-height: 1.65; }
+    .subtitle { margin: 0 0 26px; }
+    label { display: block; margin-bottom: 8px; font-weight: 700; }
+    input { width: 100%; padding: 14px 15px; border: 1px solid #cfd2df; border-radius: 10px; font: inherit; }
+    input:focus { outline: 3px solid rgba(105,71,217,.16); border-color: #6947d9; }
+    .submit { width: 100%; margin-top: 16px; padding: 14px 18px; border: 0; border-radius: 10px; background: #6947d9; color: #fff; font: inherit; font-weight: 800; cursor: pointer; }
+    .submit:hover { background: #5736c7; }
+    .error { display: none; margin: 0 0 18px; padding: 11px 13px; border-radius: 9px; background: #fff0f0; color: #a32929; line-height: 1.5; }
+    .notice { margin: 22px 0 0; font-size: 13px; }
+    .languages { display: flex; gap: 6px; margin-top: 24px; }
+    .languages button { border: 1px solid #d8dae5; border-radius: 8px; padding: 7px 9px; background: #fff; color: #545767; cursor: pointer; }
+    .languages button[aria-pressed="true"] { border-color: #6947d9; color: #6947d9; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main class="panel">
+    <p class="brand">GenCore Technical Support Center</p>
+    <h1 data-text="title" data-i18n="auth-access-title">딜러 전용 사이트</h1>
+    <p class="subtitle" data-text="subtitle" data-i18n="auth-access-subtitle">공식 딜러에게 제공된 공통 비밀번호를 입력해 주세요.</p>
+    <p id="errorMessage" class="error" role="alert"></p>
+    <form method="post" action="/api/auth/login" autocomplete="on">
+      <input id="next" type="hidden" name="next" value="/">
+      <label for="password" data-text="label" data-i18n="auth-password-label">공통 비밀번호</label>
+      <input id="password" type="password" name="password" autocomplete="current-password" required autofocus data-placeholder="placeholder" data-i18n="auth-password-input" placeholder="Enter password">
+      <button class="submit" type="submit" data-text="submit" data-i18n="auth-access-submit">접속하기</button>
+    </form>
+    <p class="notice" data-text="notice" data-i18n="auth-access-notice">접근 비밀번호를 제3자에게 전달하거나 공개된 장소에 게시하지 마십시오.</p>
+    <div class="languages" aria-label="Language">
+      <button type="button" data-lang="ko" data-i18n="auth-language-ko">한국어</button>
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="ja">日本語</button>
+      <button type="button" data-lang="es">Español</button>
+    </div>
+  </main>
+  <script>
+    const copy = {
+      ko: { title: "딜러 전용 사이트", subtitle: "공식 딜러에게 제공된 공통 비밀번호를 입력해 주세요.", label: "공통 비밀번호", placeholder: "비밀번호 입력", submit: "접속하기", notice: "접근 비밀번호를 제3자에게 전달하거나 공개된 장소에 게시하지 마십시오.", invalid: "비밀번호가 올바르지 않습니다.", rate: "로그인 시도가 너무 많습니다. 10분 후 다시 시도해 주세요." },
+      en: { title: "Dealer-only site", subtitle: "Enter the shared password provided to authorized dealers.", label: "Shared password", placeholder: "Enter password", submit: "Continue", notice: "Do not share this password with third parties or post it publicly.", invalid: "The password is incorrect.", rate: "Too many attempts. Please try again in 10 minutes." },
+      ja: { title: "販売店専用サイト", subtitle: "正規販売店に提供された共通パスワードを入力してください。", label: "共通パスワード", placeholder: "パスワードを入力", submit: "アクセス", notice: "アクセス用パスワードを第三者に渡したり、公開の場所に掲載したりしないでください。", invalid: "パスワードが正しくありません。", rate: "ログイン試行回数が多すぎます。10分後にもう一度お試しください。" },
+      es: { title: "Sitio exclusivo para distribuidores", subtitle: "Introduce la contraseña compartida proporcionada a los distribuidores autorizados.", label: "Contraseña compartida", placeholder: "Introduce la contraseña", submit: "Acceder", notice: "No compartas esta contraseña con terceros ni la publiques.", invalid: "La contraseña es incorrecta.", rate: "Demasiados intentos. Vuelve a intentarlo en 10 minutos." }
+    };
+
+    const params = new URLSearchParams(location.search);
+    const nextInput = document.getElementById("next");
+    const candidate = params.get("next") || "/";
+    nextInput.value = candidate.startsWith("/") && !candidate.startsWith("//") ? candidate : "/";
+    if (location.hash) nextInput.value += location.hash;
+
+    function applyLanguage(language) {
+      const lang = copy[language] ? language : "ko";
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-text]").forEach(element => {
+        element.textContent = copy[lang][element.dataset.text];
+      });
+      document.querySelectorAll("[data-placeholder]").forEach(element => {
+        element.placeholder = copy[lang][element.dataset.placeholder];
+      });
+      document.querySelectorAll("[data-lang]").forEach(button => {
+        button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
+      });
+      const error = params.get("error");
+      const errorMessage = document.getElementById("errorMessage");
+      errorMessage.textContent = error === "rate" ? copy[lang].rate : error ? copy[lang].invalid : "";
+      errorMessage.style.display = error ? "block" : "none";
+      try { localStorage.setItem("gencore-lang", lang); } catch {}
+    }
+
+    document.querySelectorAll("[data-lang]").forEach(button => {
+      button.addEventListener("click", () => applyLanguage(button.dataset.lang));
+    });
+    let savedLanguage = "ko";
+    try { savedLanguage = localStorage.getItem("gencore-lang") || "ko"; } catch {}
+    applyLanguage(savedLanguage);
+  </script>
+</body>
+</html>
