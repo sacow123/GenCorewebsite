@@ -14,7 +14,8 @@
   };
 
   const escapeHtml = (value) => String(value || '').replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
-  const cleanLine = (value) => String(value || '')
+  const normalizeToolCodes = (value) => String(value || '').replace(/\b(T\d{2})([A-Z]\d(?:\.\d+)?[A-Z]?)\b/g, '$1-$2');
+  const cleanLine = (value) => normalizeToolCodes(value)
     .replace(/<br\s*\/?\s*>/gi, ' ')
     .replace(/^[\s\-•·]+/, '')
     .replace(/\s+/g, ' ')
@@ -117,7 +118,7 @@
       || /^fissure machining(?=[\s_\[]|$)/i.test(line)
       || /^finishing inside[\s_]+(?!.*\bwith\b)/i.test(line)
       || /^(overall finishing|overall restmachining|roughing|rest machining)\b/i.test(line)
-      || /^(마무리 가공|열구 가공|仕上げ|ひび割れ加工)/.test(line);
+      || /^(마무리 가공|열구 가공|仕上げ|ひび割れ加工|裂溝加工|咬合面全体仕上げ|キャビティ側全体仕上げ)/.test(line);
   }
 
   function isGeneralSettingsHeading(line) {
@@ -135,14 +136,14 @@
   }
 
   function isAdjustmentNote(line) {
-    return /increase these|boundary error|if you get|만약 계산|경고 메시지|오류가 발생|\uB9CC\uC57D\s*\uACC4\uC0B0|\uACBD\uACE0\s*\uBA54\uC2DC\uC9C0|\uC624\uB958\uAC00\s*\uBC1C\uC0DD|計算.*エラー|エラー.*場合/i.test(line);
+    return /increase these|boundary error|if you get|error.*occurs|occurs.*error|만약 계산|경고 메시지|오류가 발생|\uB9CC\uC57D\s*\uACC4\uC0B0|\uACBD\uACE0\s*\uBA54\uC2DC\uC9C0|\uC624\uB958\uAC00\s*\uBC1C\uC0DD|計算.*エラー|エラー.*場合/i.test(line);
   }
 
-  function adjustmentNoteMarkup(note, language) {
+  function adjustmentNoteMarkup(note, continuation, language) {
     if (language === 'ko' && /만약 계산중에 에러가 발생|\uB9CC\uC57D\s*\uACC4\uC0B0\uC911\uC5D0\s*\uC5D0\uB7EC\uAC00\s*\uBC1C\uC0DD/i.test(note)) {
       return `만약 계산중에 '경계 옵셋이나 경계각이 너무 적음'과 같은 에러가 발생한다면<br>해당 수치들을 조금 늘려 다시 시도해보세요.`;
     }
-    return escapeHtml(note);
+    return `${escapeHtml(note)}${continuation ? `<br>${escapeHtml(continuation)}` : ''}`;
   }
 
   function isAdjustmentParameter(line) {
@@ -176,19 +177,20 @@
     let current = null;
     items.forEach((line) => {
       if (isAdjustmentHeading(line)) {
-        current = { title: line, items: [], parameters: [], note: '' };
+        current = { title: line, items: [], parameters: [], note: '', noteContinuation: '' };
         groups.push(current);
         return;
       }
       if (!current) {
-        current = { title: '', items: [], parameters: [], note: '' };
+        current = { title: '', items: [], parameters: [], note: '', noteContinuation: '' };
         groups.push(current);
       }
-      if (isAdjustmentNote(line)) current.note = line;
+      if (current.note && !current.noteContinuation) current.noteContinuation = line;
+      else if (isAdjustmentNote(line)) current.note = line;
       else if (isAdjustmentParameter(line)) current.parameters.push(line);
       else current.items.push(line);
     });
-    const groupsMarkup = groups.map((group) => `<div class="hybrid-adjustment-group">${group.title ? `<h5>${escapeHtml(group.title)}</h5>` : ''}${listMarkup(group.items)}${group.parameters.map((parameter) => adjustmentParameterMarkup(parameter, language)).join('')}${group.note ? `<p class="hybrid-adjustment-note"><strong>※</strong> ${adjustmentNoteMarkup(group.note, language)}</p>` : ''}${isGeneralSettingsHeading(group.title) ? boundaryImageMarkup(language) : ''}</div>`).join('');
+    const groupsMarkup = groups.map((group) => `<div class="hybrid-adjustment-group">${group.title ? `<h5>${escapeHtml(group.title)}</h5>` : ''}${listMarkup(group.items)}${group.parameters.map((parameter) => adjustmentParameterMarkup(parameter, language)).join('')}${group.note ? `<p class="hybrid-adjustment-note"><strong>※</strong> ${adjustmentNoteMarkup(group.note, group.noteContinuation, language)}</p>` : ''}${isGeneralSettingsHeading(group.title) ? boundaryImageMarkup(language) : ''}</div>`).join('');
     return `<section class="hybrid-card-section"><h4><span aria-hidden="true"></span>${escapeHtml(label)}</h4>${groupsMarkup}</section>`;
   }
 

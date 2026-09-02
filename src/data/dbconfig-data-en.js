@@ -1943,6 +1943,18 @@ Category 4 : T39M1.0B, T33-Z0.6B
 
 Overwritable processes
 
+Overall finishing occlusal side (bridge)_[M1.0B_L15]
+
+Overall finishing of the occlusal side using a 1.0mm tool.
+
+Calculate : Selectable operate this process or skip, (Default: On)
+
+Overall finishing cavity side (bridge)_[M1.0B_L15]
+
+Overall finishing of the occlusal side using a 1.0mm tool.
+
+Calculate : Selectable operate this process or skip, (Default: On)
+
 Fissure machining [M1.0B_L15]
 
 Occlusal groove machining process with 1.0mm diameter tool
