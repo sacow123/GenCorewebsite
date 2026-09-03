@@ -78,6 +78,12 @@ export default async function middleware(request: Request) {
   if (PUBLIC_PATHS.has(url.pathname)) return;
 
   if (!process.env.DEALER_PASSWORD_HASH || !process.env.SESSION_SECRET) {
+    if (!url.pathname.startsWith("/api/")) {
+      const loginUrl = new URL("/dealer-access", request.url);
+      loginUrl.searchParams.set("next", `${url.pathname}${url.search}`);
+      return Response.redirect(loginUrl, 307);
+    }
+
     return new Response("Authentication is not configured.", {
       status: 503,
       headers: { "Cache-Control": "no-store", "Content-Type": "text/plain; charset=utf-8" }

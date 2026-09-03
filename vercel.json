@@ -5,6 +5,10 @@
 
   "rewrites": [
     {
+      "source": "/dealer-access",
+      "destination": "/dealer-access.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
