@@ -5467,7 +5467,30 @@ function applyLanguage(lang) {
   });
 }
 
+STATIC_CONTENT_TRANSLATIONS.ko ||= {};
+STATIC_CONTENT_TRANSLATIONS.en ||= {};
+STATIC_CONTENT_TRANSLATIONS.ja ||= {};
+STATIC_CONTENT_TRANSLATIONS.es ||= {};
+Object.assign(STATIC_CONTENT_TRANSLATIONS.ko, {
+  "z축 텐션 조절방법 z-axis tension adjustment": "z축 텐션 조절방법 z-axis tension adjustment"
+});
+Object.assign(STATIC_CONTENT_TRANSLATIONS.en, {
+  "z축 텐션 조절방법 z-axis tension adjustment": "z-axis tension adjustment"
+});
+Object.assign(STATIC_CONTENT_TRANSLATIONS.ja, {
+  "z축 텐션 조절방법 z-axis tension adjustment": "Z軸テンションの調整方法"
+});
+Object.assign(STATIC_CONTENT_TRANSLATIONS.es, {
+  "z축 텐션 조절방법 z-axis tension adjustment": "ajuste de la tensión del eje Z"
+});
+
 Object.assign(TRANSLATIONS.ko, {
+  "z-axis-tension-card-title": "Z축 텐션 조절방법",
+  "z-axis-tension-title": "Z축 텐션 조절방법",
+  "z-axis-tension-subtitle": "M AI° 구동부 수리 가이드",
+  "z-axis-tension-video-heading": "작업 영상",
+  "z-axis-tension-steps-heading": "작업 사진",
+  "z-axis-tension-close": "닫기",
   "b-axis-card-title": "B축 타이밍 벨트 교체",
   "b-axis-title": "B축 타이밍 벨트 교체",
   "b-axis-subtitle": "M AI° 구동부 수리 가이드",
@@ -5504,6 +5527,12 @@ Object.assign(TRANSLATIONS.ko, {
 });
 
 Object.assign(TRANSLATIONS.en, {
+  "z-axis-tension-card-title": "Z-axis Tension Adjustment",
+  "z-axis-tension-title": "Z-axis Tension Adjustment",
+  "z-axis-tension-subtitle": "M AI° Drive Unit Repair Guide",
+  "z-axis-tension-video-heading": "Video Guide",
+  "z-axis-tension-steps-heading": "Procedure Photos",
+  "z-axis-tension-close": "Close",
   "b-axis-card-title": "Replace B-axis Timing Belt", "b-axis-title": "Replace B-axis Timing Belt", "b-axis-subtitle": "M AI° Drive Unit Repair Guide", "b-axis-close": "Close", "b-axis-video-fallback": "Your browser does not support video playback.",
   "b-axis-symptom-heading": "1. Symptom", "b-axis-symptom-text": "During homing, the B-axis coordinates continue to change but the physical axis does not move.",
   "b-axis-prep-heading": "2. Preparation", "b-axis-prep-table": "Clear the milling table", "b-axis-prep-table-text": "Remove everything from the workpiece platform in the machining chamber and clean it thoroughly.", "b-axis-prep-tool": "Required tool: M2.5 hex driver",
@@ -5514,6 +5543,12 @@ Object.assign(TRANSLATIONS.en, {
 });
 
 Object.assign(TRANSLATIONS.ja, {
+  "z-axis-tension-card-title": "Z軸テンションの調整方法",
+  "z-axis-tension-title": "Z軸テンションの調整方法",
+  "z-axis-tension-subtitle": "M AI° 駆動部修理ガイド",
+  "z-axis-tension-video-heading": "作業動画",
+  "z-axis-tension-steps-heading": "作業写真",
+  "z-axis-tension-close": "閉じる",
   "b-axis-card-title": "B軸タイミングベルトの交換", "b-axis-title": "B軸タイミングベルトの交換", "b-axis-subtitle": "M AI° 駆動部修理ガイド", "b-axis-close": "閉じる", "b-axis-video-fallback": "お使いのブラウザは動画再生に対応していません。",
   "b-axis-symptom-heading": "1. 症状", "b-axis-symptom-text": "Homing動作時にB軸の座標は変化し続けますが、実際の軸は動きません。",
   "b-axis-prep-heading": "2. 作業前の準備", "b-axis-prep-table": "ミリングテーブルを空にする", "b-axis-prep-table-text": "加工室内の作業台の上に何も残さず、きれいに片付けます。", "b-axis-prep-tool": "準備物：M2.5六角ドライバー",
@@ -5524,6 +5559,12 @@ Object.assign(TRANSLATIONS.ja, {
 });
 
 Object.assign(TRANSLATIONS.es, {
+  "z-axis-tension-card-title": "Ajuste de la tensión del eje Z",
+  "z-axis-tension-title": "Ajuste de la tensión del eje Z",
+  "z-axis-tension-subtitle": "Guía de reparación de la unidad de accionamiento M AI°",
+  "z-axis-tension-video-heading": "Vídeo de trabajo",
+  "z-axis-tension-steps-heading": "Fotos del procedimiento",
+  "z-axis-tension-close": "Cerrar",
   "b-axis-card-title": "Sustitución de la correa dentada del eje B", "b-axis-title": "Sustitución de la correa dentada del eje B", "b-axis-subtitle": "Guía de reparación de la unidad de accionamiento M AI°", "b-axis-close": "Cerrar", "b-axis-video-fallback": "Su navegador no admite la reproducción de vídeo.",
   "b-axis-symptom-heading": "1. Síntoma", "b-axis-symptom-text": "Durante el homing, las coordenadas del eje B siguen cambiando, pero el eje físico no se mueve.",
   "b-axis-prep-heading": "2. Preparación", "b-axis-prep-table": "Vaciar la mesa de fresado", "b-axis-prep-table-text": "Retire todo de la plataforma de trabajo dentro de la cámara de mecanizado y límpiela completamente.", "b-axis-prep-tool": "Herramienta necesaria: destornillador hexagonal M2.5",
