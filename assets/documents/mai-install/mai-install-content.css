@@ -1,0 +1,120 @@
+/* The parent user-manual section owns the page title and subtitle.
+   This stylesheet leaves only the exported document body visible. */
+html,
+body {
+  margin: 0 !important;
+  max-width: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+  color: #374151 !important;
+  font-family: Arial, "Noto Sans KR", sans-serif !important;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+article.page > header { display: none !important; }
+.page-body { margin: 0 !important; padding: 0 !important; }
+
+.page-body > h3 {
+  margin: 32px 0 16px !important;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e5e7eb;
+  color: #374151;
+  font-size: 21px !important;
+  line-height: 1.4;
+}
+
+.page-body > h3:first-of-type { margin-top: 0 !important; }
+
+.page-body > ul.bulleted-list {
+  margin: 12px 0 !important;
+  padding: 14px 18px 14px 38px !important;
+  border-left: 4px solid #6366f1;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.page-body ul.bulleted-list ul.bulleted-list {
+  margin: 8px 0 0 !important;
+  padding-left: 22px !important;
+}
+
+.page-body li { margin: 0 !important; }
+
+.page-body figure.image {
+  width: 100% !important;
+  max-width: 760px;
+  margin: 18px auto 24px !important;
+  text-align: center;
+}
+
+.page-body figure.image img {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .1);
+}
+
+.page-body figure.image figcaption {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.page-body .callout {
+  gap: 12px;
+  margin: 18px 0 !important;
+  padding: 14px 18px !important;
+  border-left: 4px solid #6366f1;
+  border-radius: 8px;
+  background: #f8fafc !important;
+}
+
+.page-body .callout p { margin: 0 !important; }
+.page-body mark.highlight-red { background: #fee2e2 !important; color: #991b1b; }
+.page-body mark.highlight-yellow { background: #fef3c7 !important; color: #92400e; }
+.page-body mark.highlight-green { background: #dcfce7 !important; color: #166534; }
+.page-body mark.highlight-blue { background: #dbeafe !important; color: #1d4ed8; }
+
+.page-body hr {
+  margin: 30px 0 !important;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.page-body > .column-list {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin: 0 0 24px;
+}
+
+/* The first column in the exported video blocks contains only blank spacer text. */
+.page-body > .column-list.mai-install-video > .column:first-child { display: none !important; }
+.page-body > .column-list.mai-install-video > .column:last-child {
+  width: min(220px, 100%) !important;
+  flex: 0 0 min(220px, 100%);
+  margin-left: auto;
+}
+
+.page-body .column-list:not(:first-child) {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  margin: 16px 0;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.page-body .column-list:not(:first-child) > .column { min-width: 180px; }
+
+@media (max-width: 640px) {
+  .page-body > h3 { font-size: 19px !important; }
+  .page-body > ul.bulleted-list { padding: 12px 14px 12px 32px !important; }
+  .page-body > .column-list.mai-install-video > .column:last-child { margin: 0 auto; }
+}

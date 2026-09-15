@@ -1,5 +1,13 @@
 (() => {
   const originalText = new WeakMap();
+  const ensureInstallContentStyles = () => {
+    if (document.getElementById('gencore-mai-install-content-styles')) return;
+    const stylesheet = document.createElement('link');
+    stylesheet.id = 'gencore-mai-install-content-styles';
+    stylesheet.rel = 'stylesheet';
+    stylesheet.href = 'mai-install-content.css';
+    document.head?.append(stylesheet);
+  };
   const ensureHighlightStyles = () => {
     if (document.getElementById('gencore-embedded-highlight-styles')) return;
     const style = document.createElement('style');
@@ -41,6 +49,8 @@
   });
 
   window.addEventListener('DOMContentLoaded', () => {
+    ensureInstallContentStyles();
+    document.querySelector('.page-body > .column-list')?.classList.add('mai-install-video');
     // The parent sends the current language after every iframe load.
   });
 })();
