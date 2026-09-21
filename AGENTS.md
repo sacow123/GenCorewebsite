@@ -11,6 +11,11 @@
 - English and Japanese validation must fail if Korean remains in rendered text or user-facing attributes within the changed scope.
 - Do not report translation completion from source inspection or automated checks alone. Verify the user's specified execution environment; if that environment cannot be opened, state that before work and do not claim completion.
 
+## hyperDENT Manual Content
+
+- When adding a hyperDENT post title, body description, caption, button, or navigation label, add its Korean, English, and Japanese translations in the same change.
+- A hyperDENT post is not ready to report until its Korean, English, and Japanese screen text has been wired to the language switcher.
+
 ## Direct Visual Verification
 
 - When the user provides a `file:///C:/Users/USER/Documents/GitHub/GenCorewebsite/...` URL and asks to directly check, inspect, or verify it, automatically convert the project-relative path to `http://127.0.0.1:8766/...` and launch the read-only local preview server with `node tools/preview-server.js 8766` if it is not already running.

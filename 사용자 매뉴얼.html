@@ -16,15 +16,106 @@
 </head>
 <body>
   <script src="src/scripts/layout-shell.js"></script>
+  <script src="src/scripts/product-navigation.js"></script>
   <script src="src/scripts/mai-ui-version-nav.js"></script>
   <script src="src/scripts/mai-components-nav.js"></script>
   <script src="src/scripts/mai-tool-list.js"></script>
+  <script src="src/scripts/tool-dimensions.js"></script>
   <script src="src/scripts/mai-tool-tooltip-fix.js"></script>
 
 <section id="section-search" class="content-section">
         <h2 id="search-results-title"><span data-i18n="mf-auto-670">🔍 검색 결과</span></h2>
         <p class="subtitle" id="search-results-subtitle"></p>
         <div id="search-results-grid" style="display:grid; grid-template-columns: 1fr; gap:12px; margin-top:8px;"></div>
+      </section>
+
+<section id="sec-hyperdent-basic" class="content-section">
+        <h2 data-i18n="hyperdent-basic-title">hyperDENT 기본 조작</h2>
+        <div class="hyperdent-post-list">
+          <a class="hyperdent-post-card" href="#sec-hyperdent-machine-fixture">
+            <span data-i18n="hyperdent-machine-fixture-title">1. 하이퍼덴트 기계와 픽스처 선택</span>
+            <span class="hyperdent-post-arrow" aria-hidden="true">›</span>
+          </a>
+          <a class="hyperdent-post-card" href="#sec-hyperdent-stl-material">
+            <span data-i18n="hyperdent-stl-material-title">2. STL 과 재료 불러오기</span>
+            <span class="hyperdent-post-arrow" aria-hidden="true">›</span>
+          </a>
+          <a class="hyperdent-post-card" href="#sec-hyperdent-crown-part-info">
+            <span data-i18n="hyperdent-crown-part-info-title">3. 파트 정보 설정하기 - 크라운</span>
+            <span class="hyperdent-post-arrow" aria-hidden="true">›</span>
+          </a>
+        </div>
+      </section>
+
+<section id="sec-hyperdent-machine-fixture" class="content-section">
+        <h2 data-i18n="hyperdent-machine-fixture-title">1. 하이퍼덴트 기계와 픽스처 선택</h2>
+        <div class="hyperdent-basic-grid">
+          <article class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/basic-operation/step-01.webp" alt="hyperDENT basic operation screen 1"></article>
+          <article class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/basic-operation/step-02.webp" alt="hyperDENT basic operation screen 2"></article>
+          <article class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/basic-operation/step-03.webp" alt="hyperDENT basic operation screen 3"></article>
+          <article class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/basic-operation/step-04.webp" alt="hyperDENT basic operation screen 4"></article>
+          <article class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/basic-operation/step-05.webp" alt="hyperDENT basic operation screen 5"></article>
+          <article class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/basic-operation/step-06.webp" alt="hyperDENT basic operation screen 6"></article>
+          <article class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/basic-operation/step-07.webp" alt="hyperDENT basic operation screen 7"></article>
+        </div>
+        <a class="hyperdent-basic-back" href="#sec-hyperdent-basic" data-i18n="hyperdent-back-to-list">← 기본 조작 목록</a>
+      </section>
+
+<section id="sec-hyperdent-stl-material" class="content-section">
+        <h2 data-i18n="hyperdent-stl-material-title">2. STL 과 재료 불러오기</h2>
+        <div class="hyperdent-basic-accordion-list">
+          <details class="hyperdent-basic-accordion">
+            <summary data-i18n="hyperdent-stl-first-title">STL을 먼저 불러왔을 때</summary>
+            <div class="hyperdent-basic-grid">
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/stl-material/step-01.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/stl-material/step-02.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/stl-material/step-03.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/stl-material/step-04.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/stl-material/step-05.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/stl-material/step-06.webp" alt=""></figure>
+            </div>
+          </details>
+          <details class="hyperdent-basic-accordion">
+            <summary data-i18n="hyperdent-material-first-title">재료를 먼저 불러왔을 때</summary>
+            <div class="hyperdent-basic-grid">
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-01.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-02.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-03.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-04.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-05.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-06.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-07.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-08.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-09.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-10.webp" alt=""></figure>
+              <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/material-first/step-11.webp" alt=""></figure>
+            </div>
+          </details>
+        </div>
+        <a class="hyperdent-basic-back" href="#sec-hyperdent-basic" data-i18n="hyperdent-back-to-list">← 기본 조작 목록</a>
+      </section>
+
+<section id="sec-hyperdent-crown-part-info" class="content-section">
+        <h2 data-i18n="hyperdent-crown-part-info-title">3. 파트 정보 설정하기 - 크라운</h2>
+        <div class="hyperdent-basic-grid">
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-01.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-02.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-03.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-04.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-05.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-06.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-07.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-08.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-09.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-10.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-11.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-12.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-13.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-14.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-15.webp" alt=""></figure>
+          <figure class="hyperdent-basic-card"><img loading="lazy" src="assets/images/hyperdent/crown-part-info/step-16.webp" alt=""></figure>
+        </div>
+        <a class="hyperdent-basic-back" href="#sec-hyperdent-basic" data-i18n="hyperdent-back-to-list">← 기본 조작 목록</a>
       </section>
 
 <section id="sec-mai-spec" class="content-section active">
@@ -129,6 +220,7 @@
 <style>
   #sec-mai-parts.mai-parts-measuring { cursor:crosshair; position:relative; user-select:none; }
   .mai-parts-coordinate-tool { position:fixed; right:24px; top:50%; z-index:30; display:flex; align-items:center; flex-wrap:wrap; gap:10px; width:min(300px, calc(100vw - 32px)); padding:10px 12px; border:1px dashed #a855f7; border-radius:10px; background:#faf5ff; box-shadow:0 8px 22px rgba(88,28,135,.28); transform:translateY(-50%); }
+  .mai-parts-coordinate-tool[hidden] { display:none; }
   .mai-parts-coordinate-toggle { border:0; border-radius:7px; padding:8px 12px; background:#7e22ce; color:#fff; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
   .mai-parts-coordinate-toggle[aria-pressed="true"] { background:#4c1d95; }
   .mai-parts-coordinate-copy { border:1px solid #a855f7; border-radius:7px; padding:7px 11px; background:#fff; color:#6b21a8; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
@@ -558,6 +650,8 @@
         </div>
       </section>
 
+<!-- Deprecated: hyperDENT 사용 방법은 sec-mf-hd-features 공용 섹션 하나만 표시합니다. -->
+<template>
 <section id="sec-mai-hd-features" class="content-section">
         <h2 data-i18n="nav-mai-hd-features"><span data-i18n="mf-auto-305">💡 사용 방법(features)</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
@@ -630,7 +724,9 @@
               <div style="font-size:32px; flex-shrink:0;">🕳️</div>
               <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;"><span data-i18n="mf-auto-313">15mm 이상의 긴 스크류 채널 가공하는 법</span></p>
             </div>
+
       </section>
+</template>
 
 <section id="sec-mai-hd-tutorials" class="content-section">
         <h2 data-i18n="nav-mai-hd-tutorials"><span data-i18n="mf-auto-660">🎓 튜토리얼(Tutorials)</span></h2>
@@ -3833,6 +3929,13 @@
               <div style="font-size:32px; flex-shrink:0;">🕳️</div>
               <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;"><span data-i18n="mf-auto-313">15mm 이상의 긴 스크류 채널 가공하는 법</span></p>
             </div>
+
+            <!-- Feature 10 -->
+            <div class="feature-card" data-feature-key="create-thread"
+              style="background: var(--bg-color,#fff); border:1px solid #e5e7eb; border-radius:12px; padding:20px; cursor:pointer; transition: box-shadow .2s, transform .2s; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:flex; align-items:center; gap:14px;">
+              <div style="font-size:32px; flex-shrink:0;">🧵</div>
+              <p style="margin:0; color:var(--text-color,#1f2937); font-size:16px; font-weight:700; line-height:1.5; word-break:keep-all;"><span data-i18n="thread-guide-title">나사산 생성 방법</span></p>
+            </div>
       </section>
 
 <section id="sec-mf-routine" class="content-section">
@@ -4099,7 +4202,7 @@
     })();
   </script>
   <script src="src/data/images.js"></script>
-  <script src="src/scripts/app.js"></script>
+  <script src="src/scripts/app.js?v=hyperdent-shared-usage"></script>
   <!-- Template Modal -->
   <div id="template-modal" class="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; padding: 20px;">
     <div style="background: var(--bg-color, #ffffff); border-radius: 12px; width: 100%; max-width: 1400px; max-height: 90vh; display: flex; flex-direction: column; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
@@ -6435,6 +6538,104 @@
     };
     FEATURE_DATA['nc-file-editing-notepad'] = { title: '<span data-i18n="nc-file-editing-notepad-title">NC 파일 수정방법 - 메모장</span>' };
 
+    FEATURE_DATA['create-thread'] = {
+      title: '<span data-i18n="thread-guide-title">How to Create Threads</span>',
+      steps: [
+        {
+          heading: '<span data-i18n="thread-guide-step-01-heading">1. Set the thread area to Holes</span>',
+          description: '<span data-i18n="thread-guide-intro">M AI can create threaded holes in prostheses. Follow the steps below to configure a threaded hole in hyperDENT.</span>',
+          items: [{
+            label: '<span data-i18n="thread-guide-step-01">Set the area where you want to create a thread to <strong>Holes</strong>, not <strong>Implant interface</strong>.</span>',
+            img: 'assets/images/sec-mf-features/how-to-set-thread/step-01.webp'
+          }]
+        },
+        {
+          heading: '<span data-i18n="thread-guide-step-02-heading">2. Create the hole</span>',
+          items: [{
+            label: '<span data-i18n="thread-guide-step-02">In the Holes menu, click three points where the thread will be created to set the hole.</span>',
+            img: 'assets/images/sec-mf-features/how-to-set-thread/step-02.webp'
+          }]
+        },
+        {
+          heading: '<span data-i18n="thread-guide-step-03-heading">3. Enable Use Thread</span>',
+          items: [{
+            label: '<span data-i18n="thread-guide-step-03">Select the <strong>Use Thread</strong> checkbox at the bottom.</span>',
+            img: 'assets/images/sec-mf-features/how-to-set-thread/step-03.webp'
+          }]
+        },
+        {
+          heading: '<span data-i18n="thread-guide-step-04-heading">4. Check the available thread conditions</span>',
+          items: [{
+            label: '<span data-i18n="thread-guide-step-04">M AI provides four thread conditions.</span>',
+            bullets: [
+              '<span data-i18n="thread-guide-condition-14">ISO M1.4 - 1.1 → For screws with a 1.4 mm diameter.</span>',
+              '<span data-i18n="thread-guide-condition-16">ISO M1.6 - 1.25 → For screws with a 1.6 mm diameter.</span>',
+              '<span data-i18n="thread-guide-condition-18">ISO M1.8 - 1.45 → For screws with a 1.8 mm diameter.</span>',
+              '<span data-i18n="thread-guide-condition-20">ISO M2 - 1.6 → For screws with a 2.0 mm diameter.</span>'
+            ],
+            img: 'assets/images/sec-mf-features/how-to-set-thread/step-04.webp'
+          }]
+        },
+        {
+          heading: '<span data-i18n="thread-guide-step-05-heading">5. Select the thread condition</span>',
+          items: [{
+            label: '<span data-i18n="thread-guide-step-05">Select the condition that matches the screw type you are setting.</span>',
+            img: 'assets/images/sec-mf-features/how-to-set-thread/step-05.webp'
+          }]
+        },
+        {
+          heading: '<span data-i18n="thread-guide-step-06-heading">6. Set the hole diameter</span>',
+          items: [{
+            label: '<span data-i18n="thread-guide-step-06">Set the hole diameter to match the selected thread condition.</span>',
+            bullets: [
+              '<span data-i18n="thread-guide-diameter-14">ISO M1.4 - 1.1 → 1.100 mm</span>',
+              '<span data-i18n="thread-guide-diameter-16">ISO M1.6 - 1.25 → 1.25 mm</span>',
+              '<span data-i18n="thread-guide-diameter-18">ISO M1.8 - 1.45 → 1.450 mm</span>',
+              '<span data-i18n="thread-guide-diameter-20">ISO M2 - 1.6 → 1.600 mm</span>'
+            ],
+            desc: '<span data-i18n="thread-guide-step-06-note">For example, select a 1.45 mm hole diameter when ISO M1.8 - 1.45 is selected.</span>',
+            img: 'assets/images/sec-mf-features/how-to-set-thread/step-06.webp'
+          }]
+        },
+        {
+          heading: '<span data-i18n="thread-guide-step-07-heading">7. Set Object feature (Category)</span>',
+          items: [{
+            label: '<span data-i18n="thread-guide-step-07">Set Object feature (Category) to match the selected thread condition.</span>',
+            bullets: [
+              '<span data-i18n="thread-guide-category-14">ISO M1.4 - 1.1 → 14</span>',
+              '<span data-i18n="thread-guide-category-16">ISO M1.6 - 1.25 → 16</span>',
+              '<span data-i18n="thread-guide-category-18">ISO M1.8 - 1.45 → 18</span>',
+              '<span data-i18n="thread-guide-category-20">ISO M2 - 1.6 → 20</span>'
+            ],
+            desc: '<span data-i18n="thread-guide-step-07-note">For example, set the category to 18 when ISO M1.8 - 1.45 is selected.</span>',
+            img: 'assets/images/sec-mf-features/how-to-set-thread/step-07.webp'
+          }, {
+            label: '<span data-i18n="thread-guide-tool-heading">Thread condition and matching tool</span>',
+            bullets: [
+              '<span data-i18n="thread-guide-tool-14">ISO M1.4 - 1.1 → T28-M1.4TH tool</span>',
+              '<span data-i18n="thread-guide-tool-16">ISO M1.6 - 1.25 → T27-M1.6TH tool</span>',
+              '<span data-i18n="thread-guide-tool-18">ISO M1.8 - 1.45 → T26-M1.8TH tool</span>',
+              '<span data-i18n="thread-guide-tool-20">ISO M2 - 1.6 → T25-M2.0TH tool</span>'
+            ],
+            imgs: [
+              'assets/images/sec-mf-features/how-to-set-thread/step-08.webp',
+              'assets/images/sec-mf-features/how-to-set-thread/step-09.webp',
+              'assets/images/sec-mf-features/how-to-set-thread/step-10.webp',
+              'assets/images/sec-mf-features/how-to-set-thread/step-11.webp'
+            ]
+          }]
+        },
+        {
+          heading: '<span data-i18n="thread-guide-step-08-heading">8. Finish the setting</span>',
+          items: [{
+            label: '<span data-i18n="thread-guide-step-08">Click <strong>OK</strong> to finish the setting.</span>',
+            desc: '<span data-i18n="thread-guide-complete">The thread configuration is complete.</span>',
+            img: 'assets/images/sec-mf-features/how-to-set-thread/step-12.webp'
+          }]
+        }
+      ]
+    };
+
     // ── Build modal HTML ──────────────────────────────────────────────
     function buildFeatureHTML(data) {
       let html = '';
@@ -6771,7 +6972,7 @@
     this.contentWindow?.postMessage({ type: 'gencore-language-change', lang: currentLang }, '*');
   });
   const screwchannelCategoryGuideHash = '#feature-screw-channel-category';
-  let screwchannelCategoryGuideOrigin = 'sec-mai-hd-features';
+  let screwchannelCategoryGuideOrigin = 'sec-mf-hd-features';
   function openScrewchannelCategoryGuideModal(updateHash = true) {
     document.getElementById('screwchannel-category-guide-modal').style.display = 'flex';
     if (updateHash && window.location.hash !== screwchannelCategoryGuideHash) {
@@ -7049,6 +7250,47 @@
   });
 </script>
 
+  <div id="hyperdent-image-lightbox" class="hyperdent-image-lightbox" role="dialog" aria-modal="true" aria-label="확대 사진" data-i18n-aria-label="hyperdent-image-dialog-label" hidden>
+    <div class="hyperdent-image-lightbox__dialog">
+      <button type="button" class="hyperdent-image-lightbox__close" aria-label="확대 사진 닫기" data-i18n-aria-label="hyperdent-image-close">&times;</button>
+      <img class="hyperdent-image-lightbox__image" src="" alt="">
+    </div>
+  </div>
+  <script>
+    (function initHyperdentImageLightbox() {
+      const lightbox = document.getElementById('hyperdent-image-lightbox');
+      const image = lightbox?.querySelector('.hyperdent-image-lightbox__image');
+      const closeButton = lightbox?.querySelector('.hyperdent-image-lightbox__close');
+      const photoSelector = '#sec-hyperdent-machine-fixture .hyperdent-basic-card > img, #sec-hyperdent-stl-material .hyperdent-basic-card > img, #sec-hyperdent-crown-part-info .hyperdent-basic-card > img';
+      if (!lightbox || !image || !closeButton) return;
+
+      const close = () => {
+        lightbox.hidden = true;
+        image.removeAttribute('src');
+        image.alt = '';
+        document.body.classList.remove('hyperdent-image-lightbox-open');
+      };
+      const open = (photo) => {
+        image.src = photo.currentSrc || photo.src;
+        image.alt = photo.alt;
+        lightbox.hidden = false;
+        document.body.classList.add('hyperdent-image-lightbox-open');
+        closeButton.focus();
+      };
+
+      document.addEventListener('click', (event) => {
+        const photo = event.target.closest(photoSelector);
+        if (photo) open(photo);
+      });
+      closeButton.addEventListener('click', close);
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) close();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !lightbox.hidden) close();
+      });
+    })();
+  </script>
 
 </body>
 </html>

@@ -725,3 +725,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+// M AI°와 MillFix의 hyperDENT 사용 방법은 공용 섹션 하나를 사용합니다.
+(() => {
+  const sharedSectionId = 'sec-mf-hd-features';
+  const legacySectionId = 'sec-mai-hd-features';
+  const maiMenu = document.getElementById('menu-sec-mai-hd-features');
+
+  if (maiMenu) maiMenu.dataset.section = sharedSectionId;
+
+  const redirectLegacyHash = () => {
+    if (window.location.hash !== `#${legacySectionId}`) return;
+    history.replaceState(null, '', `#${sharedSectionId}`);
+    // showSection은 기존 초기화 범위 안에 있으므로, 공용 메뉴를 통해
+    // 같은 기존 이동 흐름을 실행합니다.
+    window.setTimeout(() => {
+      document.getElementById('menu-sec-mf-hd-features')?.click();
+    }, 60);
+  };
+
+  redirectLegacyHash();
+  window.addEventListener('hashchange', redirectLegacyHash);
+})();

@@ -5417,11 +5417,11 @@ function createExternalDocumentLanguageMessage(lang) {
 function applyLanguage(lang) {
   captureOriginalContentSections();
   const activeSection = document.querySelector(".content-section.active");
-  // The DBconfig filters are created dynamically and own their event handlers.
-  // Restoring this section's original HTML removes those controls on every
-  // language change, so preserve the live section and refresh its labels below.
+  // These sections create controls after the original HTML is captured.
+  // Preserve their live DOM and event handlers while translating the labels.
   const preservesDbconfigFilters = activeSection?.id === "sec-mf-hd-dbconfig";
-  if (!preservesDbconfigFilters) restoreContentSection(activeSection);
+  const preservesMaiTools = activeSection?.id === "sec-mai-tools";
+  if (!preservesDbconfigFilters && !preservesMaiTools) restoreContentSection(activeSection);
 
   currentLang = lang;
   try {
@@ -5447,6 +5447,15 @@ function applyLanguage(lang) {
     const fallbackText = el.getAttribute("data-i18n-placeholder-default");
     const text = typeof getI18nText === "function" ? getI18nText(lang, key, fallbackText) : dict[key];
     if (text !== undefined) el.setAttribute("placeholder", text);
+  });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+    if (!el.hasAttribute("data-i18n-aria-label-default")) {
+      el.setAttribute("data-i18n-aria-label-default", el.getAttribute("aria-label") || "");
+    }
+    const key = el.getAttribute("data-i18n-aria-label");
+    const fallbackText = el.getAttribute("data-i18n-aria-label-default");
+    const text = typeof getI18nText === "function" ? getI18nText(lang, key, fallbackText) : dict[key];
+    if (text !== undefined) el.setAttribute("aria-label", text);
   });
   // Update lang button label
   const btn = document.getElementById("langBtnLabel");
@@ -5620,17 +5629,47 @@ Object.assign(TRANSLATIONS.es, {
 
 Object.assign(TRANSLATIONS.ko, {
   "nav-mai-ui-2": "M AI° UI 2.0(구버전)",
-  "nav-mai-ui-3": "M AI° UI 3.0(신버전)"
+  "nav-mai-ui-3": "M AI° UI 3.0(신버전)",
+  "nav-hyperdent-basic": "기본 조작",
+  "hyperdent-basic-title": "hyperDENT 기본 조작",
+  "hyperdent-machine-fixture-title": "1. 하이퍼덴트 기계와 픽스처 선택",
+  "hyperdent-stl-material-title": "2. STL 과 재료 불러오기",
+  "hyperdent-stl-first-title": "STL을 먼저 불러왔을 때",
+  "hyperdent-material-first-title": "재료를 먼저 불러왔을 때",
+  "hyperdent-crown-part-info-title": "3. 파트 정보 설정하기 - 크라운",
+  "hyperdent-back-to-list": "← 기본 조작 목록",
+  "hyperdent-image-dialog-label": "확대 사진",
+  "hyperdent-image-close": "확대 사진 닫기"
 });
 
 Object.assign(TRANSLATIONS.en, {
   "nav-mai-ui-2": "M AI° UI 2.0 (Legacy)",
-  "nav-mai-ui-3": "M AI° UI 3.0 (Latest)"
+  "nav-mai-ui-3": "M AI° UI 3.0 (Latest)",
+  "nav-hyperdent-basic": "Basic Operation",
+  "hyperdent-basic-title": "hyperDENT Basic Operation",
+  "hyperdent-machine-fixture-title": "1. Select the hyperDENT machine and fixture",
+  "hyperdent-stl-material-title": "2. Import STL files and materials",
+  "hyperdent-stl-first-title": "When STL Is Imported First",
+  "hyperdent-material-first-title": "When Material Is Imported First",
+  "hyperdent-crown-part-info-title": "3. Configure Part Information - Crown",
+  "hyperdent-back-to-list": "← Basic Operation List",
+  "hyperdent-image-dialog-label": "Enlarged photo",
+  "hyperdent-image-close": "Close enlarged photo"
 });
 
 Object.assign(TRANSLATIONS.ja, {
   "nav-mai-ui-2": "M AI° UI 2.0（旧バージョン）",
-  "nav-mai-ui-3": "M AI° UI 3.0（新バージョン）"
+  "nav-mai-ui-3": "M AI° UI 3.0（新バージョン）",
+  "nav-hyperdent-basic": "基本操作",
+  "hyperdent-basic-title": "hyperDENT 基本操作",
+  "hyperdent-machine-fixture-title": "1. hyperDENTの機械とフィクスチャを選択",
+  "hyperdent-stl-material-title": "2. STLと材料を読み込む",
+  "hyperdent-stl-first-title": "STLを先に読み込む場合",
+  "hyperdent-material-first-title": "材料を先に読み込む場合",
+  "hyperdent-crown-part-info-title": "3. パート情報を設定する - クラウン",
+  "hyperdent-back-to-list": "← 基本操作一覧",
+  "hyperdent-image-dialog-label": "拡大写真",
+  "hyperdent-image-close": "拡大写真を閉じる"
 });
 
 Object.assign(TRANSLATIONS.ja, {
@@ -5640,7 +5679,71 @@ Object.assign(TRANSLATIONS.ja, {
 
 Object.assign(TRANSLATIONS.es, {
   "nav-mai-ui-2": "M AI° UI 2.0 (Versión anterior)",
-  "nav-mai-ui-3": "M AI° UI 3.0 (Versión más reciente)"
+  "nav-mai-ui-3": "M AI° UI 3.0 (Versión más reciente)",
+  "nav-hyperdent-basic": "Operación básica",
+  "hyperdent-basic-title": "Operación básica de hyperDENT",
+  "hyperdent-machine-fixture-title": "1. Seleccionar la máquina y el fijador de hyperDENT",
+  "hyperdent-stl-material-title": "2. Importar archivos STL y materiales",
+  "hyperdent-back-to-list": "← Lista de operación básica",
+  "hyperdent-image-dialog-label": "Foto ampliada",
+  "hyperdent-image-close": "Cerrar foto ampliada"
+});
+
+Object.assign(TRANSLATIONS.ko, {
+  "thread-guide-title": "나사산 생성 방법",
+  "thread-guide-intro": "M AI는 보철물에 나사산을 생성할 수 있습니다. 아래 단계에 따라 hyperDENT에서 나사산을 설정하세요.",
+  "thread-guide-step-01-heading": "1. 나사산 생성 영역을 Holes로 설정", "thread-guide-step-01": "나사산을 생성할 영역은 <strong>Implant interface</strong>가 아닌 <strong>Holes</strong>로 설정하세요.",
+  "thread-guide-step-02-heading": "2. Hole 생성", "thread-guide-step-02": "Holes 메뉴에서 나사산이 생성될 위치에 세 점을 클릭하여 Hole을 설정하세요.",
+  "thread-guide-step-03-heading": "3. Use Thread 활성화", "thread-guide-step-03": "하단의 <strong>Use Thread</strong> 체크박스를 선택하세요.",
+  "thread-guide-step-04-heading": "4. 나사산 조건 확인", "thread-guide-step-04": "M AI는 네 가지 나사산 조건을 제공합니다.",
+  "thread-guide-condition-14": "ISO M1.4 - 1.1 → 지름 1.4 mm 나사용", "thread-guide-condition-16": "ISO M1.6 - 1.25 → 지름 1.6 mm 나사용", "thread-guide-condition-18": "ISO M1.8 - 1.45 → 지름 1.8 mm 나사용", "thread-guide-condition-20": "ISO M2 - 1.6 → 지름 2.0 mm 나사용",
+  "thread-guide-step-05-heading": "5. 나사산 조건 선택", "thread-guide-step-05": "설정하려는 나사 종류에 맞는 조건을 선택하세요.",
+  "thread-guide-step-06-heading": "6. Hole 지름 설정", "thread-guide-step-06": "선택한 나사산 조건에 맞게 Hole 지름을 설정하세요.",
+  "thread-guide-diameter-14": "ISO M1.4 - 1.1 → 1.100 mm", "thread-guide-diameter-16": "ISO M1.6 - 1.25 → 1.25 mm", "thread-guide-diameter-18": "ISO M1.8 - 1.45 → 1.450 mm", "thread-guide-diameter-20": "ISO M2 - 1.6 → 1.600 mm",
+  "thread-guide-step-06-note": "예를 들어 ISO M1.8 - 1.45를 선택한 경우 Hole 지름은 1.45 mm로 설정하세요.",
+  "thread-guide-step-07-heading": "7. Object feature(Category) 설정", "thread-guide-step-07": "선택한 나사산 조건에 맞게 Object feature(Category)를 설정하세요.",
+  "thread-guide-category-14": "ISO M1.4 - 1.1 → 14", "thread-guide-category-16": "ISO M1.6 - 1.25 → 16", "thread-guide-category-18": "ISO M1.8 - 1.45 → 18", "thread-guide-category-20": "ISO M2 - 1.6 → 20",
+  "thread-guide-step-07-note": "예를 들어 ISO M1.8 - 1.45를 선택한 경우 카테고리를 18로 설정하세요.",
+  "thread-guide-tool-heading": "나사산 조건별 사용 공구", "thread-guide-tool-14": "ISO M1.4 - 1.1 → T28-M1.4TH 공구", "thread-guide-tool-16": "ISO M1.6 - 1.25 → T27-M1.6TH 공구", "thread-guide-tool-18": "ISO M1.8 - 1.45 → T26-M1.8TH 공구", "thread-guide-tool-20": "ISO M2 - 1.6 → T25-M2.0TH 공구",
+  "thread-guide-step-08-heading": "8. 설정 완료", "thread-guide-step-08": "<strong>OK</strong>를 눌러 설정을 완료하세요.", "thread-guide-complete": "나사산 설정이 완료되었습니다."
+});
+
+Object.assign(TRANSLATIONS.en, {
+  "thread-guide-title": "How to Create Threads",
+  "thread-guide-intro": "M AI can create threaded holes in prostheses. Follow the steps below to configure a threaded hole in hyperDENT.",
+  "thread-guide-step-01-heading": "1. Set the thread area to Holes", "thread-guide-step-01": "Set the area where you want to create a thread to <strong>Holes</strong>, not <strong>Implant interface</strong>.",
+  "thread-guide-step-02-heading": "2. Create the hole", "thread-guide-step-02": "In the Holes menu, click three points where the thread will be created to set the hole.",
+  "thread-guide-step-03-heading": "3. Enable Use Thread", "thread-guide-step-03": "Select the <strong>Use Thread</strong> checkbox at the bottom.",
+  "thread-guide-step-04-heading": "4. Check the available thread conditions", "thread-guide-step-04": "M AI provides four thread conditions.",
+  "thread-guide-condition-14": "ISO M1.4 - 1.1 → For screws with a 1.4 mm diameter.", "thread-guide-condition-16": "ISO M1.6 - 1.25 → For screws with a 1.6 mm diameter.", "thread-guide-condition-18": "ISO M1.8 - 1.45 → For screws with a 1.8 mm diameter.", "thread-guide-condition-20": "ISO M2 - 1.6 → For screws with a 2.0 mm diameter.",
+  "thread-guide-step-05-heading": "5. Select the thread condition", "thread-guide-step-05": "Select the condition that matches the screw type you are setting.",
+  "thread-guide-step-06-heading": "6. Set the hole diameter", "thread-guide-step-06": "Set the hole diameter to match the selected thread condition.",
+  "thread-guide-diameter-14": "ISO M1.4 - 1.1 → 1.100 mm", "thread-guide-diameter-16": "ISO M1.6 - 1.25 → 1.25 mm", "thread-guide-diameter-18": "ISO M1.8 - 1.45 → 1.450 mm", "thread-guide-diameter-20": "ISO M2 - 1.6 → 1.600 mm",
+  "thread-guide-step-06-note": "For example, select a 1.45 mm hole diameter when ISO M1.8 - 1.45 is selected.",
+  "thread-guide-step-07-heading": "7. Set Object feature (Category)", "thread-guide-step-07": "Set Object feature (Category) to match the selected thread condition.",
+  "thread-guide-category-14": "ISO M1.4 - 1.1 → 14", "thread-guide-category-16": "ISO M1.6 - 1.25 → 16", "thread-guide-category-18": "ISO M1.8 - 1.45 → 18", "thread-guide-category-20": "ISO M2 - 1.6 → 20",
+  "thread-guide-step-07-note": "For example, set the category to 18 when ISO M1.8 - 1.45 is selected.",
+  "thread-guide-tool-heading": "Thread condition and matching tool", "thread-guide-tool-14": "ISO M1.4 - 1.1 → T28-M1.4TH tool", "thread-guide-tool-16": "ISO M1.6 - 1.25 → T27-M1.6TH tool", "thread-guide-tool-18": "ISO M1.8 - 1.45 → T26-M1.8TH tool", "thread-guide-tool-20": "ISO M2 - 1.6 → T25-M2.0TH tool",
+  "thread-guide-step-08-heading": "8. Finish the setting", "thread-guide-step-08": "Click <strong>OK</strong> to finish the setting.", "thread-guide-complete": "The thread configuration is complete."
+});
+
+Object.assign(TRANSLATIONS.ja, {
+  "thread-guide-title": "ねじ山の作成方法",
+  "thread-guide-intro": "M AIでは補綴物にねじ山付きの穴を作成できます。以下の手順でhyperDENTのねじ山を設定します。",
+  "thread-guide-step-01-heading": "1. ねじ山の作成領域をHolesに設定", "thread-guide-step-01": "ねじ山を作成する領域は、<strong>Implant interface</strong>ではなく<strong>Holes</strong>に設定します。",
+  "thread-guide-step-02-heading": "2. Holeを作成", "thread-guide-step-02": "Holesメニューで、ねじ山を作成する位置を3点クリックしてHoleを設定します。",
+  "thread-guide-step-03-heading": "3. Use Threadを有効化", "thread-guide-step-03": "下部の<strong>Use Thread</strong>チェックボックスを選択します。",
+  "thread-guide-step-04-heading": "4. 使用可能なねじ山条件を確認", "thread-guide-step-04": "M AIには4種類のねじ山条件があります。",
+  "thread-guide-condition-14": "ISO M1.4 - 1.1 → 直径1.4 mmのねじ用", "thread-guide-condition-16": "ISO M1.6 - 1.25 → 直径1.6 mmのねじ用", "thread-guide-condition-18": "ISO M1.8 - 1.45 → 直径1.8 mmのねじ用", "thread-guide-condition-20": "ISO M2 - 1.6 → 直径2.0 mmのねじ用",
+  "thread-guide-step-05-heading": "5. ねじ山条件を選択", "thread-guide-step-05": "設定するねじの種類に合った条件を選択します。",
+  "thread-guide-step-06-heading": "6. Holeの直径を設定", "thread-guide-step-06": "選択したねじ山条件に合わせてHoleの直径を設定します。",
+  "thread-guide-diameter-14": "ISO M1.4 - 1.1 → 1.100 mm", "thread-guide-diameter-16": "ISO M1.6 - 1.25 → 1.25 mm", "thread-guide-diameter-18": "ISO M1.8 - 1.45 → 1.450 mm", "thread-guide-diameter-20": "ISO M2 - 1.6 → 1.600 mm",
+  "thread-guide-step-06-note": "たとえばISO M1.8 - 1.45を選択した場合、Holeの直径は1.45 mmに設定します。",
+  "thread-guide-step-07-heading": "7. Object feature（Category）を設定", "thread-guide-step-07": "選択したねじ山条件に合わせてObject feature（Category）を設定します。",
+  "thread-guide-category-14": "ISO M1.4 - 1.1 → 14", "thread-guide-category-16": "ISO M1.6 - 1.25 → 16", "thread-guide-category-18": "ISO M1.8 - 1.45 → 18", "thread-guide-category-20": "ISO M2 - 1.6 → 20",
+  "thread-guide-step-07-note": "たとえばISO M1.8 - 1.45を選択した場合、カテゴリーは18に設定します。",
+  "thread-guide-tool-heading": "ねじ山条件と対応する工具", "thread-guide-tool-14": "ISO M1.4 - 1.1 → T28-M1.4TH工具", "thread-guide-tool-16": "ISO M1.6 - 1.25 → T27-M1.6TH工具", "thread-guide-tool-18": "ISO M1.8 - 1.45 → T26-M1.8TH工具", "thread-guide-tool-20": "ISO M2 - 1.6 → T25-M2.0TH工具",
+  "thread-guide-step-08-heading": "8. 設定を完了", "thread-guide-step-08": "<strong>OK</strong>をクリックして設定を完了します。", "thread-guide-complete": "ねじ山の設定が完了しました。"
 });
 
 if (typeof document !== 'undefined' && typeof window !== 'undefined') {
