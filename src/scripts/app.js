@@ -4,7 +4,7 @@ function getSectionPage(sectionId) {
   if (sectionId === 'section-safety') return '취급시 주의사항.html';
   if (sectionId === 'section-faq') return '자주 묻는 질문.html';
   if (sectionId.startsWith('sec-rep-')) return '기술 지원 매뉴얼.html';
-  if (sectionId.startsWith('sec-mai-') || sectionId.startsWith('sec-mf-')) return '사용자 매뉴얼.html';
+  if (sectionId.startsWith('sec-mai-') || sectionId.startsWith('sec-mf-') || sectionId.startsWith('sec-hyperdent-')) return '사용자 매뉴얼.html';
   return null;
 }
 
