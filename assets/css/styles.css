@@ -224,11 +224,8 @@ body.hyperdent-image-lightbox-open { overflow: hidden; }
 }
 .home-support-inquiry__image {
   display: block;
-  width: auto;
-  max-width: 100%;
-  height: clamp(180px, 27vh, 300px);
-  margin: 0 auto;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: #fff;
@@ -466,10 +463,6 @@ body.hyperdent-image-lightbox-open { overflow: hidden; }
     grid-template-columns: 1fr;
     gap: 16px;
     margin-top: 20px;
-  }
-  .home-support-inquiry__image {
-    width: 100%;
-    height: auto;
   }
   .external-document-section {
     margin: 0 -16px;
