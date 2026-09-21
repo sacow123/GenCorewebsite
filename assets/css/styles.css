@@ -214,6 +214,27 @@ body.hyperdent-image-lightbox-open { overflow: hidden; }
 .content-card h3 { font-size: 16px; color: #222; margin-bottom: 10px; }
 .content-card p { font-size: 14px; color: var(--text-muted); }
 
+/* Home support inquiry posters are language-specific source images. */
+.home-support-inquiry {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+  margin-top: 28px;
+}
+.home-support-inquiry__image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: clamp(180px, 27vh, 300px);
+  margin: 0 auto;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(31, 41, 55, 0.08);
+}
+
 .card-list { list-style: none; padding-left: 0; margin-top: 10px; }
 .card-list li { margin-bottom: 12px; font-size: 14px; color: var(--text-muted); line-height: 1.5; }
 .card-list li:last-child { margin-bottom: 0; }
@@ -441,6 +462,15 @@ body.hyperdent-image-lightbox-open { overflow: hidden; }
   .sidebar.open { left: 0; }
   .main-content { padding: 20px 16px; }
   .content-section h2 { font-size: 22px; }
+  .home-support-inquiry {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .home-support-inquiry__image {
+    width: 100%;
+    height: auto;
+  }
   .external-document-section {
     margin: 0 -16px;
   }

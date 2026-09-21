@@ -4,7 +4,8 @@ const PUBLIC_PATHS = new Set([
   "/dealer-access",
   "/dealer-access.html",
   "/api/auth/login",
-  "/api/auth/logout"
+  "/api/auth/logout",
+  "/assets/images/gencore-logo.webp"
 ]);
 
 function parseCookie(header: string | null, name: string) {
