@@ -1,4 +1,7 @@
 /* Shared header and navigation shell. */
+const measurementToolScript = document.createElement('script');
+measurementToolScript.src = 'htmls/measurement_tool.js';
+document.head.appendChild(measurementToolScript);
 document.addEventListener("DOMContentLoaded", () => {
   const headerActions = document.querySelector(".header-right");
   if (!headerActions || headerActions.querySelector(".auth-logout-form")) return;
