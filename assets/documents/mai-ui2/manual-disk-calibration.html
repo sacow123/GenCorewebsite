@@ -1,0 +1,803 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>5.3.c. 매뉴얼 디스크 캘리브레이션</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><style>
+    html, body { background: transparent; }
+    @media only screen { body { margin: 0; max-width: none; } }
+    .page-body { padding: 0; }
+    @media (max-width: 720px) {
+      .column-list { flex-direction: column; gap: 0; }
+      .column[style] { width: 100% !important; }
+    }
+  </style></head><body><article class="page sans mai-ui2-import"><div class="page-body"><div id="1d7cfb3e-9058-800d-af0f-d8cc8a4da224" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-804d-a7b6-db4fd1330cda" style="width:81.25%" class="column" data-notion-column-ratio="0.8125" dir="auto"><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1cbcfb3e-9058-802d-8bf4-d984cdf77ac9" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1cbcfb3e-9058-8073-b99f-f4fe8c1d11dd" class="" dir="auto"><mark class="highlight-purple" data-notion-highlight="purple">GenCore°</mark>의 <mark class="highlight-orange" data-notion-highlight="orange">M AI°</mark> 컨트롤 프로그램은 직관적으로 디자인 되어, 이해하기 쉬운 사용자 인터페이스가 적용되어 있습니다. 화면에 나오는 지시대로 진행하십시오.</p></div></aside></div><div id="1d7cfb3e-9058-80e8-b0ad-f4839ac69c6b" style="width:18.749999999999996%" class="column" data-notion-column-ratio="0.18749999999999997" dir="auto"><div dir="auto"><figure id="1bbcfb3e-9058-81e5-bdc3-cc0bd42dd314" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/qr-code-manual-disc-calibration-25-03-19-0fbeed3bba.webp" dir="ltr"><a href="../../images/mai-ui2/qr-code-manual-disc-calibration-25-03-19-0fbeed3bba.webp"><img style="width:192px" src="../../images/mai-ui2/qr-code-manual-disc-calibration-25-03-19-0fbeed3bba.webp"/></a><figcaption>매뉴얼 디스크 캘리브레이션 영상 가이드.</figcaption></figure></div></div></div><div id="1d7cfb3e-9058-803e-bddf-c43632a174b5" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-8057-b61b-c2bad5005868" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8195-a94b-ca49c59c775c" class="image" data-notion-image="../../images/mai-ui2/image-133-f51c696b0b.webp" dir="ltr"><a href="../../images/mai-ui2/image-133-f51c696b0b.webp"><img style="width:441.3125px" src="../../images/mai-ui2/image-133-f51c696b0b.webp"/></a></figure></div><div id="1d7cfb3e-9058-80f1-bfaf-c2482382bbfe" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-81c4-92a0-eb4134c95896" class="numbered-list" start="1" dir="auto"><li>10-12mm 두께의 왁스 디스크, 디지털 버니어 캘리퍼스,   T10-M2.0B 툴을 준비하세요.<br/></li></ol><ol type="1" id="1bbcfb3e-9058-81e0-abeb-d7ea162ea056" class="numbered-list" start="2" dir="auto"><li>C-클램프 지그에 왁스 디스크를 장착하세요.<br/></li></ol><ol type="1" id="1bbcfb3e-9058-8194-91b2-daf2c0e58652" class="numbered-list" start="3" dir="auto"><li>장착 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.</li></ol></div></div><div id="1d7cfb3e-9058-8020-9f16-fb8256f8f08d" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-8008-be52-e7da01eb0e77" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8170-89bc-dc230e87cc4c" class="image" data-notion-image="../../images/mai-ui2/image-134-997a35c21a.webp" dir="ltr"><a href="../../images/mai-ui2/image-134-997a35c21a.webp"><img style="width:707.96875px" src="../../images/mai-ui2/image-134-997a35c21a.webp"/></a></figure></div><div id="1d7cfb3e-9058-803d-8cd0-d365fcd1a6f5" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-81f3-bcf0-c53fb9f24b55" class="numbered-list" start="4" dir="auto"><li>NC파일을 불러오면 “A cube milling start” 버튼을 눌러 A-큐브 가공을 시작하세요. 가공 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.  </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8013-8588-f61d9c1c5323" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-80e5-8d0e-e9871213bbd4" class="" dir="auto">만약 왁스 디스크가 이미 사용된 것이라면 A-큐브의 모양이 잘 나오도록 방향을 조절해서 장착하세요. </p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8009-8b0b-c57b74cc5253" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-8035-8a52-ca69b60bb5b2" class="" dir="auto">가공이 끝난 A-큐브는 12시 방향 윗부분에 특정 표시가 있습니다. 양 옆의 커넥터를 커터로 절단해 디스크에서 떼어내세요</p></div></aside></div></div><div id="1d7cfb3e-9058-80b2-824e-d15148d3dccb" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80da-b846-dd82d08738db" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-81ea-a85b-f2e223663b83" class="image" data-notion-image="../../images/mai-ui2/image-135-9b3c73cac8.webp" dir="ltr"><a href="../../images/mai-ui2/image-135-9b3c73cac8.webp"><img style="width:441.3125px" src="../../images/mai-ui2/image-135-9b3c73cac8.webp"/></a></figure></div><div id="1d7cfb3e-9058-8055-aa1a-f0c0245e9273" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-810a-ad4a-d2f168ef3ccc" class="numbered-list" start="5" dir="auto"><li> 화면을 따라 A 큐브의 단차를 디지털 버니어 캘리퍼스로 측정하세요.<br/></li></ol><ol type="1" id="1bbcfb3e-9058-814a-a16c-e2ea8b4fadd7" class="numbered-list" start="6" dir="auto"><li>측정한 단차값을 화면에 입력하고, “Apply correction value” 버튼을 눌러 적용하세요, 그 후 “Next”를 눌러 다음 단계로 진행하세요. </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8068-ac67-ef040c407e6e" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-80de-b002-d059753bda85" class="" dir="auto">측정 전 디지털 버니어 캘리퍼스의 정밀도를 확인하세요. </p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-801c-9413-f92f2c99a870" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-80ce-8d8d-cb75f762c165" class="" dir="auto">측정된 단차값을 입력하기 전에 화면을 참고하여 단차가 발생한 방향이 “+” 방향인지 “-” 방향 인지 확인한 후 입력하십시오.</p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-80a3-b6f3-cd03ad84ace9" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-809b-81ae-cf3505380350" class="" dir="auto">&quot;Apply correction value&quot; 버튼을 두 번 누르면, 입력된 값이 두 번 적용됩니다. 주의하여 한 번만 누르십시오.</p></div></aside></div></div><div id="1d7cfb3e-9058-8059-8a34-d46004a758d5" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-802b-bb99-e833a41a480f" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8100-9d71-eeb8e143662d" class="image" data-notion-image="../../images/mai-ui2/image-136-d12a50625d.webp" dir="ltr"><a href="../../images/mai-ui2/image-136-d12a50625d.webp"><img style="width:441.3125px" src="../../images/mai-ui2/image-136-d12a50625d.webp"/></a></figure></div><div id="1d7cfb3e-9058-8007-9e7d-c07d287aeb26" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-81ee-86b9-dd2f731db169" class="numbered-list" start="7" dir="auto"><li>디지털 버니어 캘리퍼스를 이용해 화면을 따라 A-큐브의 높이를 측정합니다.<br/></li></ol><ol type="1" id="1bbcfb3e-9058-814f-bb2f-db1e65b9d3ae" class="numbered-list" start="8" dir="auto"><li>측정한 A-큐브의 높이를 입력하고 “Apply correction value” 버튼을 눌러 적용하세요. 그 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.</li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8009-a38d-d135761fa42a" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-80bd-939e-c30cec841d81" class="" dir="auto">측정한 높이가 정확히 8mm라면 입력 단계를 생략하고 다음 단계로 진행하세요.</p></div></aside></div></div><div id="1d7cfb3e-9058-80e0-afa1-f04ef03ba456" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80c7-a574-fd27a1b106d6" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8184-b73f-ed1fbaa07790" class="image" data-notion-image="../../images/mai-ui2/image-137-7fd259b9a9.webp" dir="ltr"><a href="../../images/mai-ui2/image-137-7fd259b9a9.webp"><img style="width:441.296875px" src="../../images/mai-ui2/image-137-7fd259b9a9.webp"/></a></figure></div><div id="1d7cfb3e-9058-80b7-b4e7-cc0c456ad55f" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-81c2-8c90-cd59b2b7815f" class="numbered-list" start="9" dir="auto"><li>NC파일을 불러오면 “B cube milling start” 버튼을 눌러 B-큐브 가공을 시작하세요. 가공 후 “Next” 버튼을 눌러 다음 단계로 진행하세요. </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8001-a8fd-f81ab49e44f4" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-809e-b008-ee0790661cc6" class="" dir="auto">만약 왁스 디스크가 이미 사용된 것이라면 A-큐브의 모양이 잘 나오도록 방향을 조절해서 장착하세요. </p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-80ec-817c-e5c08ac09da5" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-8087-b34a-d792541cb569" class="" dir="auto">가공이 끝난 B-큐브는 12시 방향 윗부분에 특정 표시가 있습니다. 양 옆의 커넥터를 커터로 절단해 디스크에서 떼어내세요</p></div></aside></div></div><div id="1d7cfb3e-9058-805f-879e-e64ff7e5f266" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80d0-b223-e0c0aeb80e7a" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8141-9109-f5eee9c19209" class="image" data-notion-image="../../images/mai-ui2/image-138-4472ffbbd8.webp" dir="ltr"><a href="../../images/mai-ui2/image-138-4472ffbbd8.webp"><img style="width:441.3125px" src="../../images/mai-ui2/image-138-4472ffbbd8.webp"/></a></figure><p id="388cfb3e-9058-80f3-b41d-f317f96c0b05" class="" dir="auto">
+</p></div><div id="1d7cfb3e-9058-80e9-b7fe-cf45d1adfcac" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-8194-8ad0-e1d961265efd" class="numbered-list numbered-list-digits-2" start="10" dir="auto"><li>화면dmf 따라 B-큐브의 단차를 전자 버니어 캘리퍼스로 측정하세요.<br/></li></ol><ol type="1" id="1bbcfb3e-9058-81a7-9ec2-ce9bbd05b028" class="numbered-list numbered-list-digits-2" start="11" dir="auto"><li>측정한 단차값을 화면에 입력하고, “Apply correction value” 버튼을 눌러 적용하세요, <br/>그 후 “Next”를 눌러 다음 단계로 진행하세요.</li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-80ce-b24f-cb9ba9238c77" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-8069-af2f-c2cbcd75011e" class="" dir="auto">측정 전 디지털 버니어 캘리퍼스의 정밀도를 확인하세요. </p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8048-b270-cba3cba22b91" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-8013-bf1d-dae4793d3f6c" class="" dir="auto">측정된 단차값을 입력하기 전에 화면을 참고하여 단차가 발생한 방향이 “+” 방향인지 “-” 방향 인지 확인한 후 입력하십시오.</p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8084-8706-d49b9343beb5" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-8005-a02a-fd5660bd0497" class="" dir="auto">&quot;Apply correction value&quot; 버튼을 두 번 누르면, 입력된 값이 두 번 적용됩니다. 주의하여 한 번만 누르십시오.</p></div></aside></div></div><div id="1d7cfb3e-9058-806d-8b59-df99eda1d534" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80b5-93a6-f9f16492e002" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-81a5-bec7-e655526fc5c2" class="image" data-notion-image="../../images/mai-ui2/image-139-e78ca0879e.webp" dir="ltr"><a href="../../images/mai-ui2/image-139-e78ca0879e.webp"><img style="width:441.3125px" src="../../images/mai-ui2/image-139-e78ca0879e.webp"/></a></figure></div><div id="1d7cfb3e-9058-80ab-b4b1-f664c882ce6b" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-81fb-9b89-faf30b89a37b" class="numbered-list numbered-list-digits-2" start="12" dir="auto"><li>디지털 버니어 캘리퍼스를 이용해 화면에 따라 B-큐브의 높이를 측정합니다.<br/></li></ol><ol type="1" id="1bbcfb3e-9058-814c-8195-eaffe1ba3b57" class="numbered-list numbered-list-digits-2" start="13" dir="auto"><li>측정한 B-큐브의 높이를 입력하고 “Apply correction value” 버튼을 눌러 적용하세요. 그 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.</li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-803e-b6ce-d64ab1e43ca6" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-80c3-8e8e-eb3e825884fa" class="" dir="auto">측정한 높이가 정확히 8mm라면 입력 단계를 생략하고 다음 단계로 진행하세요.</p></div></aside></div></div><div id="1d7cfb3e-9058-8025-99b8-d23dc620d81e" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80b9-bc69-fe9c3309597a" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8196-849e-e812c2236812" class="image" data-notion-image="../../images/mai-ui2/image-140-ec66260ab9.webp" dir="ltr"><a href="../../images/mai-ui2/image-140-ec66260ab9.webp"><img style="width:441.296875px" src="../../images/mai-ui2/image-140-ec66260ab9.webp"/></a></figure></div><div id="1d7cfb3e-9058-8079-bdda-dfb424138913" style="width:31.250000000000007%" class="column" data-notion-column-ratio="0.31250000000000006" dir="auto"><ol type="1" id="1bbcfb3e-9058-817a-abc0-d2598516c706" class="numbered-list numbered-list-digits-2" start="14" dir="auto"><li>캘리브레이션 과정이 완료되면 “Save work offset”을 클릭하여 “Work offset” 페이지를 열고 측정된 결과를 저장합니다.</li></ol></div></div><div id="1d7cfb3e-9058-80d1-ae02-d0ee9023c556" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80ce-9e1f-f32e2ddada3a" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-81a0-9c9b-f43029a325a0" class="image" data-notion-image="../../images/mai-ui2/image-141-32d6b01c2c.webp" dir="ltr"><a href="../../images/mai-ui2/image-141-32d6b01c2c.webp"><img style="width:441.3125px" src="../../images/mai-ui2/image-141-32d6b01c2c.webp"/></a></figure></div><div id="1d7cfb3e-9058-8096-acfb-f8d83a2d89d5" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-8131-916c-f4380076091f" class="numbered-list numbered-list-digits-2" start="15" dir="auto"><li>“Save work offset” 화면에서 “Save” 버튼을 클릭하여 저장한 후, “Close” 버튼을 클릭하여 창을 닫습니다. </li></ol></div></div><div id="1d7cfb3e-9058-80ed-8c4b-f3b79f63ed66" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-807e-b556-e9fcb4a25088" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-811d-b9f4-f0221315427d" class="image" data-notion-image="../../images/mai-ui2/image-142-c196c31ed5.webp" dir="ltr"><a href="../../images/mai-ui2/image-142-c196c31ed5.webp"><img style="width:441.3125px" src="../../images/mai-ui2/image-142-c196c31ed5.webp"/></a></figure></div><div id="1d7cfb3e-9058-8024-a84a-eb7df24fba83" style="width:31.250000000000007%" class="column" data-notion-column-ratio="0.31250000000000006" dir="auto"><ol type="1" id="1bbcfb3e-9058-81ba-90b4-c5ffb090d3ad" class="numbered-list numbered-list-digits-2" start="16" dir="auto"><li>모든 단계를 완료하였다면 “Setup screen”을 클릭하여 캘리브레이션을 종료하십시오.</li></ol></div></div><hr id="1bbcfb3e-9058-816e-9d10-f4527cf98861" dir="auto"/></div></article><script src="mai-ui2-document-i18n.js?v=20260923n"></script></body></html>

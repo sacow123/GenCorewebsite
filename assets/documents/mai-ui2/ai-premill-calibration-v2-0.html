@@ -1,0 +1,832 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>5.3.b.2. AI 프리밀 캘리브레이션 V2.0</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><style>
+    html, body { background: transparent; }
+    @media only screen { body { margin: 0; max-width: none; } }
+    .page-body { padding: 0; }
+    @media (max-width: 720px) {
+      .column-list { flex-direction: column; gap: 0; }
+      .column[style] { width: 100% !important; }
+    }
+  </style></head><body><article class="page sans mai-ui2-import"><div class="page-body"><div id="215cfb3e-9058-80e5-acdf-d03493bb30fd" class="column-list" data-notion-column-list="" dir="auto"><div id="215cfb3e-9058-802f-b4ab-fe99dfd7df3d" style="width:81.25%" class="column" data-notion-column-ratio="0.8125" dir="auto"><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="215cfb3e-9058-8008-bff4-d244627cd446" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="215cfb3e-9058-80fa-ac86-c0af1d29195b" class="" dir="auto"><mark class="highlight-purple" data-notion-highlight="purple">GenCore°</mark>의 <mark class="highlight-orange" data-notion-highlight="orange">M AI°</mark> 컨트롤 프로그램은 직관적으로 디자인 되어, 이해하기 쉬운 사용자 인터페이스가 적용되어 있습니다. 화면에 나오는 지시대로 진행하십시오.</p></div></aside></div><div id="215cfb3e-9058-80ea-9c49-e0c24ec06407" style="width:18.750000000000004%" class="column" data-notion-column-ratio="0.18750000000000003" dir="auto"><div dir="auto"><figure id="21ccfb3e-9058-80c7-a9f7-c5b7b3db58ed" class="image" data-notion-image="../../images/mai-ui2/qr-code-how-to-use-m-ai-ai-premill-calibration-v2-0-en-25-06-17-r1-5b71d9f7b2.webp" dir="ltr"><a href="../../images/mai-ui2/qr-code-how-to-use-m-ai-ai-premill-calibration-v2-0-en-25-06-17-r1-5b71d9f7b2.webp"><img style="width:255.1875px" src="../../images/mai-ui2/qr-code-how-to-use-m-ai-ai-premill-calibration-v2-0-en-25-06-17-r1-5b71d9f7b2.webp"/></a><figcaption>AI Premill calibration V2.0 video manual</figcaption></figure></div></div></div><p id="215cfb3e-9058-8054-aa60-eaa2b96ab3ca" class="" dir="auto">
+</p><div id="211cfb3e-9058-803f-92b1-cdc050a661d6" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-8054-8a33-e9dbfa142983" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="215cfb3e-9058-8007-bc84-ceaf3b46d9b7" class="image" data-notion-image="../../images/mai-ui2/image-211-26c251f430.webp" dir="ltr"><a href="../../images/mai-ui2/image-211-26c251f430.webp"><img style="width:800.21875px" src="../../images/mai-ui2/image-211-26c251f430.webp"/></a></figure></div><div id="211cfb3e-9058-80cd-9bdb-f1fc275931c1" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><ol type="1" id="211cfb3e-9058-8039-aaac-e02ffc2ba908" class="numbered-list" start="1" dir="auto"><li>AI V2.0 Ti. Premill milling page(<mark class="highlight-red" data-notion-highlight="red"><strong>①</strong></mark>)를 선택한 후, 우측 화살표 버튼(<mark class="highlight-red" data-notion-highlight="red">②</mark>)을 클릭하여 페이지로 진입합니다.</li></ol></div></div><p id="211cfb3e-9058-80a7-8e52-d6da9aa5118c" class="" dir="auto">
+</p><div id="211cfb3e-9058-80e8-ae7f-c0cc9f7ab8ca" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-80b7-9cff-f671b15a4017" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-8010-81f3-f40c8d73b618" class="image" style="text-align:left" data-notion-image="../../images/mai-ui2/2-0-89372a0733.webp" dir="ltr"><a href="../../images/mai-ui2/2-0-89372a0733.webp"><img style="width:960px" src="../../images/mai-ui2/2-0-89372a0733.webp"/></a></figure></div><div id="211cfb3e-9058-80f4-b4f0-f56f6bbf8918" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><ol type="1" id="211cfb3e-9058-80a4-b4a2-f5db15d31c08" class="numbered-list" start="2" dir="auto"><li>hyperDENT의 Fixture 폴더가 네트워크 공유로 연결되어 있는 경우, 네트워크 연결 상태를 확인합니다. (<mark class="highlight-red" data-notion-highlight="red"><strong>①</strong></mark>)</li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="215cfb3e-9058-80f1-9663-c42d3a506598" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="215cfb3e-9058-8087-ac89-ea869ff94112" class="" dir="auto"><mark class="highlight-default" data-notion-highlight="default">네트워크 공유는 </mark> 페이지를 참고<mark class="highlight-default" data-notion-highlight="default">하십시오.</mark></p></div></aside></div></div><p id="215cfb3e-9058-8084-a237-f4b204b08735" class="" dir="auto">
+</p><div id="215cfb3e-9058-80fc-897f-f3e2e2b8bd6b" class="column-list" data-notion-column-list="" dir="auto"><div id="215cfb3e-9058-80a9-9b13-e572daff9610" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-8025-87f1-f5d9debf4583" class="image" data-notion-image="../../images/mai-ui2/aabeb31b-2b34-4f2c-af5f-afb70a2e24d7-6702b0df7e.webp" dir="ltr"><a href="../../images/mai-ui2/aabeb31b-2b34-4f2c-af5f-afb70a2e24d7-6702b0df7e.webp"><img style="width:454.57943925233644px" src="../../images/mai-ui2/aabeb31b-2b34-4f2c-af5f-afb70a2e24d7-6702b0df7e.webp"/></a></figure></div><div id="215cfb3e-9058-8025-b7a8-e3248d52714b" style="width:24.999999999999993%" class="column" data-notion-column-ratio="0.24999999999999994" dir="auto"><ol type="1" id="215cfb3e-9058-8048-8fb8-c63589fad424" class="numbered-list" start="3" dir="auto"><li>가공할 Ti. 프리밀 블럭의 길이를 측정합니다. </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="215cfb3e-9058-80d9-8302-d469f8a7cf2f" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="215cfb3e-9058-8045-87df-ddfa89c4e2aa" class="" dir="auto">블럭은 인터페이스 형상을 제외한 나머지 부분의 길이를 측정합니다.  </p></div></aside></div></div><p id="215cfb3e-9058-8055-8c52-eacd43c0e80f" class="" dir="auto">
+</p><div id="211cfb3e-9058-8073-8de8-fe21a31b4224" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-80da-a7c9-d34606f69519" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-80f9-b6e4-f9e4c83554fb" class="image" data-notion-image="../../images/mai-ui2/image-076651a149.webp" dir="ltr"><a href="../../images/mai-ui2/image-076651a149.webp"><img style="width:4400px" src="../../images/mai-ui2/image-076651a149.webp"/></a></figure></div><div id="211cfb3e-9058-80c9-952b-e91e1184a682" style="width:24.999999999999993%" class="column" data-notion-column-ratio="0.24999999999999994" dir="auto"><ol type="1" id="211cfb3e-9058-80c3-aa98-ffa8e95e2ca2" class="numbered-list" start="4" dir="auto"><li>측정한 길이를 입력합니다. (<mark class="highlight-red" data-notion-highlight="red">②</mark>)</li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="215cfb3e-9058-8088-ba97-e8408f716b25" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="215cfb3e-9058-80f5-b564-cb5d94cab46f" class="" dir="auto">복수의 Ti. 프리밀 블럭을 가공하는 경우, 동일한 길이의 프리밀 블럭만 사용하십시오. </p><p id="215cfb3e-9058-8073-8c3d-d5d383c4381b" class="" dir="auto">상이한 길이의 블럭을 장착하면 캘리브레이션 중 충돌을 야기할 수 있습니다.</p></div></aside></div></div><p id="211cfb3e-9058-80bf-a946-c982c93180bd" class="" dir="auto"> </p><div id="211cfb3e-9058-80b1-b6ec-d68fa59f285a" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-8020-96a2-d261f871a03a" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="215cfb3e-9058-802b-b5cb-d26caeb862b5" class="image" data-notion-image="../../images/mai-ui2/image-212-b51b05c1cb.webp" dir="ltr"><a href="../../images/mai-ui2/image-212-b51b05c1cb.webp"><img style="width:800.234375px" src="../../images/mai-ui2/image-212-b51b05c1cb.webp"/></a></figure></div><div id="211cfb3e-9058-801c-9a57-d8d40aba4a6b" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><ol type="1" id="211cfb3e-9058-80ad-8031-f307b1871848" class="numbered-list" start="5" dir="auto"><li>#1 ~ #10 슬롯 중, Ti. 프리밀 블럭을 장착할 슬롯을 클릭하여 선택합니다. <blockquote id="215cfb3e-9058-8050-8280-e9b0f0fcad3d" class="" dir="auto">이 매뉴얼에서는 #2, #3번 슬롯에 장착하였습니다. </blockquote></li></ol><p id="215cfb3e-9058-8042-a1ca-e3dd608865b0" class="" dir="auto">
+</p></div></div><p id="215cfb3e-9058-80c4-ad13-f8611d5d3468" class="" dir="auto">
+</p><div id="211cfb3e-9058-80eb-8b1e-f50601d6aa4e" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-8087-b71d-e2cc0bc1c73e" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-80ef-b597-c1d47d8b8dc8" class="image" data-notion-image="../../images/mai-ui2/image-1b4150f8d9.webp" dir="ltr"><a href="../../images/mai-ui2/image-1b4150f8d9.webp"><img style="width:2784px" src="../../images/mai-ui2/image-1b4150f8d9.webp"/></a></figure></div><div id="211cfb3e-9058-8053-82c3-cc2e3f39cf92" style="width:24.999999999999993%" class="column" data-notion-column-ratio="0.24999999999999994" dir="auto"><ol type="1" id="211cfb3e-9058-80e5-b1c3-efa904d0e5ba" class="numbered-list" start="6" dir="auto"><li>리버스 지그에 적절한 토크(0.3~0.4N•m) 체결된 Ti. 프리밀 블럭을 선택한 슬롯에 맞춰 장착합니다. </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="215cfb3e-9058-80fa-b7f3-c89d54637d2b" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="215cfb3e-9058-8077-9135-e61b04d1f15b" class="" dir="auto">손가락으로 Ti. 프리밀 블럭을 밀면서 2.0 N•m 토크 어답터를 사용하여 고정 나사를 조입니다.</p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="215cfb3e-9058-80f2-b6b8-f905b42bbb1b" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><figure id="211cfb3e-9058-8080-ac96-f88106e19fd1" class="image" style="text-align:left" data-notion-image="../../images/mai-ui2/25-efc3899278.webp" dir="ltr"><a href="../../images/mai-ui2/25-efc3899278.webp"><img style="width:816px" src="../../images/mai-ui2/25-efc3899278.webp"/></a><figcaption>A축을  25° 기울인 위치에서 장착하기 편리할 수 있습니다. </figcaption></figure></div></aside></div></div><p id="211cfb3e-9058-8003-89ee-ee0b2aea0066" class="" dir="auto">
+</p><div id="211cfb3e-9058-8024-a553-d18e5d722652" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-8046-a5d9-c2b10b4775db" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-80ec-97ca-ef11f835ac75" class="image" data-notion-image="../../images/mai-ui2/ai-d0868225e5.webp" dir="ltr"><a href="../../images/mai-ui2/ai-d0868225e5.webp"><img style="width:4400px" src="../../images/mai-ui2/ai-d0868225e5.webp"/></a></figure></div><div id="211cfb3e-9058-807a-a959-f6c00190cc9c" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><ol type="1" id="211cfb3e-9058-809c-944d-ddf17a5811e0" class="numbered-list" start="7" dir="auto"><li><mark class="highlight-default" data-notion-highlight="default">“AI Calibration” 버튼을 클릭하여 AI Premill calibration V2.0을 시작합니다.</mark></li></ol></div></div><p id="215cfb3e-9058-80b4-a922-ebb20b5de6db" class="" dir="auto">
+</p><div id="211cfb3e-9058-801d-b9a1-d886193b93fa" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-80c4-8411-ec657879f751" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-80b7-a1bd-ed23f2088b12" class="image" data-notion-image="../../images/mai-ui2/image-041c97bd8e.webp" dir="ltr"><a href="../../images/mai-ui2/image-041c97bd8e.webp"><img style="width:4400px" src="../../images/mai-ui2/image-041c97bd8e.webp"/></a></figure></div><div id="211cfb3e-9058-8054-8d3a-fa890a81d4c9" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><ol type="1" id="211cfb3e-9058-8096-8d2a-c04390d9e97d" class="numbered-list" start="8" dir="auto"><li>입력한 Ti. 프리밀 블럭의 길이를 다시 확인합니다. <br/>맞으면 “OK”버튼을 클릭하여 Calibration 측정을 시작합니다.</li></ol></div></div><p id="211cfb3e-9058-8019-9361-cfbc670ef0eb" class="" dir="auto">
+</p><div id="211cfb3e-9058-80d4-8a32-e26e8ece636f" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-8000-92f1-ce3d429c050b" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-80bb-bfa8-dd7f852de985" class="image" data-notion-image="../../images/mai-ui2/111-0c1407cc95.webp" dir="ltr"><a href="../../images/mai-ui2/111-0c1407cc95.webp"><img style="width:4400px" src="../../images/mai-ui2/111-0c1407cc95.webp"/></a></figure></div><div id="211cfb3e-9058-8098-b296-ec5210140aa2" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><ol type="1" id="211cfb3e-9058-801a-99de-f376882d0fb8" class="numbered-list" start="9" dir="auto"><li>화면의 지시에 따라, 캘리브레이션 핀(A4.0C)을 콜렛에 장착합니다. <br/></li></ol><ol type="1" id="215cfb3e-9058-8027-a5ac-c5431d83d548" class="numbered-list numbered-list-digits-2" start="10" dir="auto"><li>“Next” 버튼을 클릭하여, 다음 과정으로 진행합니다.</li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="211cfb3e-9058-80b5-95fc-f40afa6a06e4" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="211cfb3e-9058-803a-bd34-d1058ebd0ef1" class="" dir="auto">캘리브레이션 핀은 캘리브레이션의 정확도 유지를 위해 안전하게 보관되어야 합니다.</p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="211cfb3e-9058-8056-8fd5-cd6361b19551" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="211cfb3e-9058-80f4-b5f2-f4809025b887" class="" dir="auto">습식 가공 직후인 경우라면 호스에 남아있던 절삭유가 떨어질 수 있습니다. 캘리브레이션 커버를 반드시 착용해 주십시오.</p><figure id="211cfb3e-9058-806b-9ac7-dd11dd73dcab" class="image" data-notion-image="../../images/mai-ui2/image-13-72368ae70a.webp" dir="ltr"><a href="../../images/mai-ui2/image-13-72368ae70a.webp"><img style="width:192px" src="../../images/mai-ui2/image-13-72368ae70a.webp"/></a></figure></div></aside></div></div><p id="211cfb3e-9058-807e-9950-de3a526eb7b6" class="" dir="auto">
+</p><div id="211cfb3e-9058-80a3-978e-c384f6f517ed" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-807f-9db0-c8b92f8f15a6" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="215cfb3e-9058-80d7-bb7d-d075c5aa4193" class="image" data-notion-image="../../images/mai-ui2/image-213-749ca47c2f.webp" dir="ltr"><a href="../../images/mai-ui2/image-213-749ca47c2f.webp"><img style="width:800.21875px" src="../../images/mai-ui2/image-213-749ca47c2f.webp"/></a></figure></div><div id="211cfb3e-9058-8042-8e6c-fbdd4eb165d2" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><ol type="1" id="211cfb3e-9058-80fa-98e7-dd15b71eefe8" class="numbered-list numbered-list-digits-2" start="11" dir="auto"><li>프리밀 지그, Ti. 프리밀 블럭, 캘리브레이션 핀 및 주변에 액체, 이물질 등이 없도록 청소합니다. <br/></li></ol><ol type="1" id="215cfb3e-9058-80a7-959c-e7979844f027" class="numbered-list numbered-list-digits-2" start="12" dir="auto"><li>통전 상태를 확인하기 위하여, “Checking for cleaning” 버튼 1회 클릭합니다. </li></ol></div></div><p id="211cfb3e-9058-80c0-ab56-c1dbeef47373" class="" dir="auto">
+</p><div id="211cfb3e-9058-80ee-923b-fe891df3369a" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-80a9-83b3-c56f970d4b47" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><div id="215cfb3e-9058-80c9-beb7-e4babca8e715" class="column-list" data-notion-column-list="" dir="auto"><div id="215cfb3e-9058-80d0-8197-e4db1ccc0073" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="211cfb3e-9058-805d-bc72-cec46f7ed343" class="image" style="text-align:left" data-notion-image="../../images/mai-ui2/15716650-5b95-40b9-890d-97ea9d0588dd-c250de4ffe.webp" dir="ltr"><a href="../../images/mai-ui2/15716650-5b95-40b9-890d-97ea9d0588dd-c250de4ffe.webp"><img style="width:528px" src="../../images/mai-ui2/15716650-5b95-40b9-890d-97ea9d0588dd-c250de4ffe.webp"/></a></figure></div><div id="215cfb3e-9058-80d3-ac54-e5b77dfd05db" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="211cfb3e-9058-800f-8f9d-f2cb6b060f1e" class="image" style="text-align:left" data-notion-image="../../images/mai-ui2/image-b32729308c.webp" dir="ltr"><a href="../../images/mai-ui2/image-b32729308c.webp"><img style="width:528px" src="../../images/mai-ui2/image-b32729308c.webp"/></a></figure></div></div><p id="216cfb3e-9058-8034-b60a-f86423267a7d" class="" dir="auto">
+</p></div><div id="211cfb3e-9058-8055-8683-ef1d6fe461e0" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><ol type="1" id="211cfb3e-9058-80cb-8432-c03fba8b38da" class="numbered-list numbered-list-digits-2" start="13" dir="auto"><li><mark class="highlight-default" data-notion-highlight="default">통전선으로 캘리브레이션 핀과 프리밀 지그 및 Ti. 프리밀 블럭을 연결하여 전류가 흐르는지 확인합니다. </mark><p id="211cfb3e-9058-80f3-bc33-cd947b2ee4c4" class="" dir="auto"><mark class="highlight-default" data-notion-highlight="default">정상적으로 전류가 통전되면 접촉 시 “Touch On “ 버튼에 노란LED가 켜집니다. </mark></p></li></ol></div></div><p id="211cfb3e-9058-80ba-9e19-d44dd2ebf84c" class="" dir="auto">
+</p><div id="211cfb3e-9058-8043-9a53-fda68dad6151" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-80d1-89f1-ecd7c824832c" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="215cfb3e-9058-8016-beca-e06817f8dfb0" class="image" data-notion-image="../../images/mai-ui2/image-214-604a885b9a.webp" dir="ltr"><a href="../../images/mai-ui2/image-214-604a885b9a.webp"><img style="width:498px" src="../../images/mai-ui2/image-214-604a885b9a.webp"/></a></figure></div><div id="211cfb3e-9058-8071-9df4-eb71306a700d" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><ol type="1" id="211cfb3e-9058-804d-8763-faaae12d6327" class="numbered-list numbered-list-digits-2" start="14" dir="auto"><li>정상적으로 통전되는 것을 확인했다면, “Start Calibration” 버튼을 클릭하여 캘리브레이션을 시작합니다. </li></ol></div></div><p id="211cfb3e-9058-80f6-95db-e2579bc5364a" class="" dir="auto">
+</p><div id="211cfb3e-9058-80c5-96d1-e644deab4329" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-80e3-987b-e2e4cc4a301f" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-80b1-8ba4-fc194e871658" class="image" data-notion-image="../../images/mai-ui2/image-64135cd9d1.webp" dir="ltr"><a href="../../images/mai-ui2/image-64135cd9d1.webp"><img style="width:4400px" src="../../images/mai-ui2/image-64135cd9d1.webp"/></a></figure></div><div id="211cfb3e-9058-8074-98d7-f236c8da99b1" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><ol type="1" id="211cfb3e-9058-8095-b049-fc52f0867b81" class="numbered-list numbered-list-digits-2" start="15" dir="auto"><li>프리밀 환봉의 길이를  한번 더 확인 하고, “OK” 버튼을 클릭하면 캘리브레이션 측정을 시작합니다. </li></ol></div></div><p id="215cfb3e-9058-8060-a335-d6e0a03c4349" class="" dir="auto">
+</p><div id="211cfb3e-9058-8021-b3e9-ddd35df99b16" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-803a-8e7d-ed2f506e2fca" style="width:37.5%" class="column" data-notion-column-ratio="0.375" dir="auto"><figure id="211cfb3e-9058-8020-9245-f3ac9bfa27f3" class="image" data-notion-image="../../images/mai-ui2/image-60eeeb976c.webp" dir="ltr"><a href="../../images/mai-ui2/image-60eeeb976c.webp"><img style="width:462.66668701171875px" src="../../images/mai-ui2/image-60eeeb976c.webp"/></a></figure></div><div id="211cfb3e-9058-802c-86d5-c96f9dc84d3e" style="width:37.5%" class="column" data-notion-column-ratio="0.375" dir="auto"><figure id="211cfb3e-9058-80a7-a128-fa6c6340ec62" class="image" data-notion-image="../../images/mai-ui2/2-54ed4d1f89.webp" dir="ltr"><a href="../../images/mai-ui2/2-54ed4d1f89.webp"><img style="width:462.66668701171875px" src="../../images/mai-ui2/2-54ed4d1f89.webp"/></a></figure></div><div id="215cfb3e-9058-80bf-b05b-d35b33fcbabb" style="width:25.00000000000001%" class="column" data-notion-column-ratio="0.2500000000000001" dir="auto"><ol type="1" id="211cfb3e-9058-80c5-a394-c50c18345cd6" class="numbered-list numbered-list-digits-2" start="16" dir="auto"><li>캘리브레이션 측정 중</li></ol></div></div><p id="215cfb3e-9058-80c4-adbe-da93286abfc0" class="" dir="auto">
+</p><div id="211cfb3e-9058-80c6-bf1f-d33099a8d6fa" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-805a-860a-ff1e7bc65480" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-80fe-a60c-d2e2349ce7a0" class="image" data-notion-image="../../images/mai-ui2/fmdf-c2cb242ee6.webp" dir="ltr"><a href="../../images/mai-ui2/fmdf-c2cb242ee6.webp"><img style="width:4400px" src="../../images/mai-ui2/fmdf-c2cb242ee6.webp"/></a></figure><p id="211cfb3e-9058-8042-a612-d81b804686d3" class="" dir="auto">
+</p></div><div id="211cfb3e-9058-8098-9ea2-dfdc05bea6e0" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><ol type="1" id="211cfb3e-9058-80ad-9480-f16963115c77" class="numbered-list numbered-list-digits-2" start="17" dir="auto"><li>정상적으로 캘리브레이션 측정이 완료되었습니다. <br/>Fixture 파일(*.fmdf) 이 [<mark class="highlight-blue" data-notion-highlight="blue">D:\00 - M AI_HyperDent_fmdf</mark>] 에 저장됩니다.<br/>hyperDENT Fixture 폴더가 네트워크로 공유되고 있는 경우, 결과 파일(픽스처 파일)은 <mark class="highlight-yellow" data-notion-highlight="yellow">해당 폴더</mark>에 자동으로 저장됩니다. <p id="21bcfb3e-9058-80d2-9dd3-f968f67348b8" class="" dir="auto">
+</p></li></ol><ol type="1" id="215cfb3e-9058-806f-9188-cc71a8f167e9" class="numbered-list numbered-list-digits-2" start="18" dir="auto"><li>“OK” 버튼을 클릭합니다.</li></ol><p id="215cfb3e-9058-8037-9470-d70b39fccb23" class="" dir="auto">
+</p></div></div><div id="211cfb3e-9058-80d3-b3b3-f0792f9023d3" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-8083-a8ca-fffd30cbe720" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-80a1-954c-d39a7ab20bd4" class="image" data-notion-image="../../images/mai-ui2/2-0-mp4-20250613-190521-838-b8a3813697.webp" dir="ltr"><a href="../../images/mai-ui2/2-0-mp4-20250613-190521-838-b8a3813697.webp"><img style="width:4400px" src="../../images/mai-ui2/2-0-mp4-20250613-190521-838-b8a3813697.webp"/></a></figure></div><div id="211cfb3e-9058-8000-b550-ed6efa87abe4" style="width:24.999999999999993%" class="column" data-notion-column-ratio="0.24999999999999994" dir="auto"><ol type="1" id="211cfb3e-9058-80da-8481-c2ce42ace6b8" class="numbered-list numbered-list-digits-2" start="19" dir="auto"><li>“Save work offset”을 클릭하여 “Work Offsets” 창을 엽니다.</li></ol></div></div><p id="211cfb3e-9058-8095-9f5a-d610e4eaa252" class="" dir="auto">
+</p><div id="211cfb3e-9058-801b-9502-ec5914157f74" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-8072-8b46-c8bb9b00c1f5" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-8054-a93f-e5ebbadaf3c5" class="image" data-notion-image="../../images/mai-ui2/2-0-mp4-20250613-190516-086-1e49eb69c0.webp" dir="ltr"><a href="../../images/mai-ui2/2-0-mp4-20250613-190516-086-1e49eb69c0.webp"><img style="width:4400px" src="../../images/mai-ui2/2-0-mp4-20250613-190516-086-1e49eb69c0.webp"/></a></figure></div><div id="211cfb3e-9058-803d-995d-daf85493bb85" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><ol type="1" id="211cfb3e-9058-80fb-ace7-d87e29cabaa0" class="numbered-list numbered-list-digits-2" start="20" dir="auto"><li>“Save” 버튼을 클릭하여 결과값을 저장합니다. <p id="215cfb3e-9058-8055-beee-fcd9f73cb46c" class="" dir="auto">
+</p></li></ol><ol type="1" id="215cfb3e-9058-803a-afa3-fb899cb903b6" class="numbered-list numbered-list-digits-2" start="21" dir="auto"><li>“Close” 버튼을 클릭하여 “Work Offsets” 창을 닫습니다. <p id="215cfb3e-9058-80fb-8c90-d4e6834f81dc" class="" dir="auto">
+</p></li></ol><ol type="1" id="215cfb3e-9058-805e-9bda-c33ef2814329" class="numbered-list numbered-list-digits-2" start="22" dir="auto"><li>“Next page” 버튼을 클릭하여 다음 단계로 진행합니다.</li></ol><p id="216cfb3e-9058-80b6-a0d3-e39edc70116f" class="" dir="auto">
+</p></div></div><p id="211cfb3e-9058-806c-9d05-d87c0ab40488" class="" dir="auto">
+</p><div id="211cfb3e-9058-804f-92f5-c2d6781cf80b" class="column-list" data-notion-column-list="" dir="auto"><div id="211cfb3e-9058-807a-aa85-fecaefedbaea" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="211cfb3e-9058-806a-9743-f6ed2478eb0e" class="image" data-notion-image="../../images/mai-ui2/image-8acf975213.webp" dir="ltr"><a href="../../images/mai-ui2/image-8acf975213.webp"><img style="width:4400px" src="../../images/mai-ui2/image-8acf975213.webp"/></a></figure></div><div id="211cfb3e-9058-80e9-906a-c7efaf524580" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><ol type="1" id="211cfb3e-9058-80a1-bea0-cf29a0f0fdf3" class="numbered-list numbered-list-digits-2" start="23" dir="auto"><li>화면의 지시에 따라, 캘리브레이션 핀(A4.0C)을 콜렛에서 제거합니다.<p id="215cfb3e-9058-8048-9adf-ca1af17134d6" class="" dir="auto"> </p></li></ol><ol type="1" id="215cfb3e-9058-8006-b192-c80393806dba" class="numbered-list numbered-list-digits-2" start="24" dir="auto"><li>“Next page” 버튼을 클릭하여 다음 단계로 진행합니다.</li></ol></div></div><p id="21bcfb3e-9058-808f-808e-eb856b0310b9" class="" dir="auto">
+</p><div id="21bcfb3e-9058-800c-8ef3-ff7809fc035c" class="column-list" data-notion-column-list="" dir="auto"><div id="21bcfb3e-9058-80a3-a7a9-d486740a29ef" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="217cfb3e-9058-803e-8e5c-d63614069bec" class="image" data-notion-image="../../images/mai-ui2/2-1-c5aa5688b4.webp" dir="ltr"><a href="../../images/mai-ui2/2-1-c5aa5688b4.webp"><img style="width:4398px" src="../../images/mai-ui2/2-1-c5aa5688b4.webp"/></a></figure></div><div id="21bcfb3e-9058-8011-a344-f611aa0547bf" style="width:24.999999999999993%" class="column" data-notion-column-ratio="0.24999999999999994" dir="auto"><p id="21bcfb3e-9058-8079-a883-d663ae8b975f" class="" dir="auto">(hyperDENT Fixture 폴더가 네트워크 공유로 연결되어 있지 않은 경우)</p><ol type="1" id="217cfb3e-9058-800f-bb90-f03bb0ca25f8" class="numbered-list numbered-list-digits-2" start="25" dir="auto"><li>USB 저장 장치를 장착한고, 장비의 PC에서 아래 경로로 이동합니다. <br/><mark class="highlight-blue" data-notion-highlight="blue"><strong>[D:\00 - M AI_HyperDent_fmdf]</strong></mark></li></ol><p id="21bcfb3e-9058-80f8-a668-df05bc5f959f" class="" dir="auto">
+</p></div></div><p id="211cfb3e-9058-80dc-b45f-e41fa7fbcaf8" class="" dir="auto">
+</p><div id="21bcfb3e-9058-8079-a72d-cbdde855f5c5" class="column-list" data-notion-column-list="" dir="auto"><div id="21bcfb3e-9058-805d-8e43-fa70bd309900" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="217cfb3e-9058-8061-b2c4-f423d83bc4ba" class="image" data-notion-image="../../images/mai-ui2/3-cc4242b1a2.webp" dir="ltr"><a href="../../images/mai-ui2/3-cc4242b1a2.webp"><img style="width:4398px" src="../../images/mai-ui2/3-cc4242b1a2.webp"/></a></figure></div><div id="21bcfb3e-9058-80df-a5b0-e65414898730" style="width:24.999999999999993%" class="column" data-notion-column-ratio="0.24999999999999994" dir="auto"><p id="21bcfb3e-9058-802c-863e-f2319035ec98" class="" dir="auto">(hyperDENT Fixture 폴더가 네트워크 공유로 연결되어 있지 않은 경우)</p><ol type="1" id="217cfb3e-9058-8024-8e72-cd48ce7b4e75" class="numbered-list numbered-list-digits-2" start="26" dir="auto"><li>캘리브레이션의 결과로 생성된 Fixture 파일을 USB에 복사 하십시오.<aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="💡" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="21bcfb3e-9058-8028-8149-cfa1bfda2676" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p id="21bcfb3e-9058-8030-9d1e-cdf9b43b7a73" class="" dir="auto">파일명의 장비번호, 버전, 픽스처 유형, 그리고 생성된 날짜와 시간을 잘 확인하십시오.</p></div></aside></li></ol></div></div><p id="21bcfb3e-9058-80ec-9ea5-fd9e46ddcd62" class="" dir="auto">
+</p><div id="21bcfb3e-9058-8089-aaff-cb0df11991cd" class="column-list" data-notion-column-list="" dir="auto"><div id="21bcfb3e-9058-80dc-a6e3-fe00eef88ba4" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="217cfb3e-9058-80e2-baef-e5d4fc632930" class="image" data-notion-image="../../images/mai-ui2/image-215-53f4d36569.webp" dir="ltr"><a href="../../images/mai-ui2/image-215-53f4d36569.webp"><img style="width:1686.319580078125px" src="../../images/mai-ui2/image-215-53f4d36569.webp"/></a></figure><p id="21bcfb3e-9058-8070-a818-dffff44a133d" class="" dir="auto">
+</p></div><div id="21bcfb3e-9058-80fb-9b4b-ccb78a34e622" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><p id="21bcfb3e-9058-8051-b45d-fc536cef5878" class="" dir="auto">(hyperDENT Fixture 폴더가 네트워크 공유로 연결되어 있지 않은 경우)</p><ol type="1" id="217cfb3e-9058-8054-b48a-c52dee6c5784" class="numbered-list numbered-list-digits-2" start="27" dir="auto"><li>USB로 복사한 fmdf 파일을 하이퍼덴트 Fixture 폴더로 붙여넣기 합니다. </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="💡" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="21bcfb3e-9058-80d9-81f2-f479a06acf60" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p id="21bcfb3e-9058-80b3-b92c-f1e5f97eb2d4" class="" dir="auto">Fixture 폴더가 네트워크 공유로 연결되어 있는 경우, 자동으로 복사됩니다. </p></div></aside></div></div><div id="21bcfb3e-9058-808d-b817-c74b66410683" class="column-list" data-notion-column-list="" dir="auto"><div id="21bcfb3e-9058-80cc-8eb6-eab1f7e7c018" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="21bcfb3e-9058-80a1-b5a1-ed76ae24dbd3" class="image" data-notion-image="../../images/mai-ui2/image-216-b9b79f81f0.webp" dir="ltr"><a href="../../images/mai-ui2/image-216-b9b79f81f0.webp"><img style="width:971.3229370117188px" src="../../images/mai-ui2/image-216-b9b79f81f0.webp"/></a></figure></div><div id="21bcfb3e-9058-80e8-98a4-db053a13bcb7" style="width:25.000000000000007%" class="column" data-notion-column-ratio="0.25000000000000006" dir="auto"><ol type="1" id="217cfb3e-9058-80e8-babc-ef2b332afb1d" class="numbered-list numbered-list-digits-2" start="28" dir="auto"><li>hyperDENT를 실행하고, 복사된 Fixture를  선택합니다.</li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="💡" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="21bcfb3e-9058-8004-ab71-ff3ab6e597e9" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p id="21bcfb3e-9058-8051-8dd9-c5451bed50ce" class="" dir="auto">Fixture 명에 표기된 장비번호, 버전,  생성된 날짜 및 시간 등을 확인하십시오.</p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="💡" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="21bcfb3e-9058-80a2-9a6e-d8b540191522" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p id="21bcfb3e-9058-80f6-b8bd-d2c45680b6fa" class="" dir="auto">hyperDENT가 실행되고 있었다면, 모든 hyperDENT 창을 닫고, 재시작해야 적용됩니다. </p></div></aside></div></div><div id="217cfb3e-9058-8044-a0a2-f7c4d49fb6e6" class="column-list" data-notion-column-list="" dir="auto"><div id="217cfb3e-9058-8073-a7b6-e5b4c5386df3" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><figure id="217cfb3e-9058-8083-b324-fd809265a19f" class="image" data-notion-image="../../images/mai-ui2/1-0a6fccb5a9.webp" dir="ltr"><a href="../../images/mai-ui2/1-0a6fccb5a9.webp"><img style="width:3446px" src="../../images/mai-ui2/1-0a6fccb5a9.webp"/></a></figure></div><div id="217cfb3e-9058-800c-9417-c96953c8be79" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><blockquote id="21bcfb3e-9058-8096-a124-c8d397f38b8b" class="" dir="auto">#2, #3번 슬롯만 캘리브레이션을 진행했기 때문에, 이미지와 같이 해당 슬롯만 활성화 되어 있습니다.</blockquote></div></div><hr id="21bcfb3e-9058-8096-93b3-ef0fabd94ad0" dir="auto"/><p id="21bcfb3e-9058-8000-9633-e6e4fcc926a9" class="" dir="auto">
+</p></div></article><script src="mai-ui2-document-i18n.js?v=20260923n"></script></body></html>

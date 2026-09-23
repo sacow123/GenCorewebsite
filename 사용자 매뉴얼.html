@@ -158,6 +158,7 @@
         <div class="content-card">
           <div class="mai-parts-coordinate-tool" data-mai-measure-ignore>
             <button type="button" class="mai-parts-coordinate-toggle" aria-pressed="false">⌖ 비율 측정</button>
+            <button type="button" class="mai-parts-coordinate-arrow-toggle" aria-pressed="false">↗ 화살표 측정</button>
             <button type="button" class="mai-parts-coordinate-copy" disabled>비율 복사</button>
             <span class="mai-parts-coordinate-readout" aria-live="polite">비율 측정 모드를 켠 뒤 사진을 클릭하세요.</span>
           </div>
@@ -219,10 +220,12 @@
 
 <style>
   #sec-mai-parts.mai-parts-measuring { cursor:crosshair; position:relative; user-select:none; }
-  .mai-parts-coordinate-tool { position:fixed; right:24px; top:50%; z-index:30; display:flex; align-items:center; flex-wrap:wrap; gap:10px; width:min(300px, calc(100vw - 32px)); padding:10px 12px; border:1px dashed #a855f7; border-radius:10px; background:#faf5ff; box-shadow:0 8px 22px rgba(88,28,135,.28); transform:translateY(-50%); }
+  .mai-parts-coordinate-tool { display:none !important; }
   .mai-parts-coordinate-tool[hidden] { display:none; }
   .mai-parts-coordinate-toggle { border:0; border-radius:7px; padding:8px 12px; background:#7e22ce; color:#fff; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
   .mai-parts-coordinate-toggle[aria-pressed="true"] { background:#4c1d95; }
+  .mai-parts-coordinate-arrow-toggle { border:1px solid #b45309; border-radius:7px; padding:7px 11px; background:#fffbeb; color:#92400e; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
+  .mai-parts-coordinate-arrow-toggle[aria-pressed="true"] { border-color:#92400e; background:#f59e0b; color:#451a03; }
   .mai-parts-coordinate-copy { border:1px solid #a855f7; border-radius:7px; padding:7px 11px; background:#fff; color:#6b21a8; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
   .mai-parts-coordinate-copy:disabled { opacity:.45; cursor:not-allowed; }
   .mai-parts-coordinate-readout { color:#581c87; font:500 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
@@ -231,6 +234,12 @@
   .mai-parts-coordinate-marker::before { width:1px; height:34px; left:7px; top:-10px; }
   .mai-parts-coordinate-marker::after { width:34px; height:1px; left:-10px; top:7px; }
   .mai-parts-coordinate-selection { position:fixed; z-index:40; border:2px dashed #7e22ce; background:rgba(126,34,206,.14); border-radius:4px; pointer-events:none; }
+  .mai-parts-coordinate-arrow { position:absolute; z-index:20; height:3px; border-radius:3px; background:#f59e0b; transform-origin:left center; pointer-events:none; box-shadow:0 0 0 2px rgba(255,255,255,.8); }
+  .mai-parts-coordinate-arrow::after { content:""; position:absolute; right:-2px; top:50%; width:11px; height:11px; border-top:3px solid #f59e0b; border-right:3px solid #f59e0b; transform:translateY(-50%) rotate(45deg); box-sizing:border-box; }
+  .mai-parts-coordinate-arrow-point { position:absolute; z-index:21; width:16px; height:16px; margin:-8px 0 0 -8px; border:2px solid #b45309; border-radius:50%; background:#fff7ed; pointer-events:none; box-sizing:border-box; }
+  .mai-parts-coordinate-arrow-point::after { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font:700 10px/1 sans-serif; color:#78350f; }
+  .mai-parts-coordinate-arrow-start::after { content:"1"; }
+  .mai-parts-coordinate-arrow-end::after { content:"2"; }
   .mai-parts-photo-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); align-items:start; gap:20px; max-width:960px; margin:0 auto; }
   .mai-parts-photo-card { box-sizing:border-box; width:100%; max-width:100%; margin:0 auto; padding:16px; border:1px solid #ddd6fe; border-radius:12px; background:#fff; box-shadow:0 8px 22px rgba(29,20,57,.12); }
   .mai-parts-photo-card > img { display:block; width:100%; height:auto; border-radius:12px; }
@@ -477,7 +486,7 @@
           Anchor: <a href="#sec-mai-jog" style="color:#a855f7; text-decoration:none;">#sec-mai-jog</a></div>
         <p class="subtitle">M AI°</p>
         <div class="content-card">
-          <p data-i18n="mai-install-content-pending">콘텐츠가 추가될 예정입니다.</p>
+          <iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="jog-mode" title="M AI Jog Mode" src="assets/documents/mai-ui2/jog-mode.html" loading="lazy"></iframe>
         </div>
       </section>
 
@@ -487,7 +496,7 @@
           Anchor: <a href="#sec-mai-clean" style="color:#a855f7; text-decoration:none;">#sec-mai-clean</a></div>
         <p class="subtitle">M AI°</p>
         <div class="content-card">
-          <p data-i18n="mai-install-content-pending">콘텐츠가 추가될 예정입니다.</p>
+          <iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="machining-room-cleaning" title="M AI Machining Room Cleaning" src="assets/documents/mai-ui2/machining-room-cleaning.html" loading="lazy"></iframe>
         </div>
       </section>
 
@@ -585,13 +594,49 @@
         </div>
       </section>
 
+<section id="sec-mai-cal-disk-ai" class="content-section">
+        <h2 data-i18n="nav-mai-cal-disk-ai"><span class="icon-disk"></span> AI 디스크 캘리브레이션</h2>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card"><iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="ai-disk-calibration" title="M AI AI Disk Calibration" src="assets/documents/mai-ui2/ai-disk-calibration.html" loading="lazy"></iframe></div>
+      </section>
+
+<section id="sec-mai-cal-disk-manual" class="content-section">
+        <h2 data-i18n="nav-mai-cal-disk-manual">🖐️ 매뉴얼 디스크 캘리브레이션</h2>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card"><iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="manual-disk-calibration" title="M AI Manual Disk Calibration" src="assets/documents/mai-ui2/manual-disk-calibration.html" loading="lazy"></iframe></div>
+      </section>
+
+<section id="sec-mai-cal-premill-v1" class="content-section">
+        <h2 data-i18n="nav-mai-cal-premill-v1"><span class="icon-premill"></span> AI 프리밀 캘리브레이션 V1.2</h2>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card"><iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="ai-premill-calibration-v1-2" title="M AI AI Premill Calibration V1.2" src="assets/documents/mai-ui2/ai-premill-calibration-v1-2.html" loading="lazy"></iframe></div>
+      </section>
+
+<section id="sec-mai-cal-premill-v2" class="content-section">
+        <h2 data-i18n="nav-mai-cal-premill-v2"><span class="icon-premill"></span> AI 프리밀 캘리브레이션 V2.0</h2>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card"><iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="ai-premill-calibration-v2-0" title="M AI AI Premill Calibration V2.0" src="assets/documents/mai-ui2/ai-premill-calibration-v2-0.html" loading="lazy"></iframe></div>
+      </section>
+
+<section id="sec-mai-cal-tool-auto" class="content-section">
+        <h2 data-i18n="nav-mai-cal-tool-auto">⚙️ 공구 위치 캘리브레이션(오토)</h2>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card"><iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="auto-tool-pocket-calibration" title="M AI Auto Tool Position Calibration" src="assets/documents/mai-ui2/auto-tool-pocket-calibration.html" loading="lazy"></iframe></div>
+      </section>
+
+<section id="sec-mai-cal-tool-manual" class="content-section">
+        <h2 data-i18n="nav-mai-cal-tool-manual">🖐️ 공구 위치 캘리브레이션(매뉴얼)</h2>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card"><iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="manual-tool-pocket-calibration" title="M AI Manual Tool Position Calibration" src="assets/documents/mai-ui2/manual-tool-pocket-calibration.html" loading="lazy"></iframe></div>
+      </section>
+
 <section id="sec-mai-main-page" class="content-section">
         <h2 data-i18n="nav-mai-main-page"><span data-i18n="mf-auto-326">🏠 메인 페이지</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#sec-mai-main-page" style="color:#a855f7; text-decoration:none;">#sec-mai-main-page</a></div>
         <p class="subtitle"><span data-i18n="mf-auto-721">M AI° 컨트롤 프로그램</span></p>
         <div class="content-card">
-          <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
+          <iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="main-page" title="M AI Main Page" src="assets/documents/mai-ui2/main-page.html" loading="lazy"></iframe>
         </div>
       </section>
 
@@ -611,7 +656,7 @@
           Anchor: <a href="#sec-mai-settings" style="color:#a855f7; text-decoration:none;">#sec-mai-settings</a></div>
         <p class="subtitle"><span data-i18n="mf-auto-721">M AI° 컨트롤 프로그램</span></p>
         <div class="content-card">
-          <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
+          <iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="settings-page" title="M AI Settings Page" src="assets/documents/mai-ui2/settings-page.html" loading="lazy"></iframe>
         </div>
       </section>
 
@@ -7017,9 +7062,10 @@
   (function initMaiPartsCoordinateTool() {
     const section = document.getElementById('sec-mai-parts');
     const toggle = section?.querySelector('.mai-parts-coordinate-toggle');
+    const arrowToggle = section?.querySelector('.mai-parts-coordinate-arrow-toggle');
     const copy = section?.querySelector('.mai-parts-coordinate-copy');
     const readout = section?.querySelector('.mai-parts-coordinate-readout');
-    if (!section || !toggle || !copy || !readout) return;
+    if (!section || !toggle || !arrowToggle || !copy || !readout) return;
 
     document.body.appendChild(section.querySelector('.mai-parts-coordinate-tool'));
     const updateToolVisibility = () => {
@@ -7030,10 +7076,16 @@
     updateToolVisibility();
 
     let active = false;
+    let arrowMode = false;
     let marker;
     let lockedPoint;
     let drag;
     let selection;
+    let arrowPress;
+    let arrowStart;
+    let arrowStartMarker;
+    let arrowEndMarker;
+    let arrowLine;
     let suppressNextClick = false;
     const formatPoint = (event) => {
       const image = event.target.closest('.mai-parts-hotspot-stage > img, .mai-parts-diagram-stage > img, .mai-parts-image-stage > img, .mai-parts-photo-card > img');
@@ -7062,6 +7114,22 @@
       imageY: Number((((clamp(event.clientY, imageRect.top, imageRect.bottom) - imageRect.top) / imageRect.height) * 100).toFixed(2)),
       ...getPhotoMeta(image)
     });
+    const positionInSection = (element, image, point, rect = image.getBoundingClientRect()) => {
+      const sectionRect = section.getBoundingClientRect();
+      element.style.left = `${Math.round(rect.left - sectionRect.left + (rect.width * point.imageX / 100))}px`;
+      element.style.top = `${Math.round(rect.top - sectionRect.top + (rect.height * point.imageY / 100))}px`;
+    };
+    const clearArrow = () => {
+      arrowStartMarker?.remove(); arrowEndMarker?.remove(); arrowLine?.remove();
+      arrowStartMarker = null; arrowEndMarker = null; arrowLine = null; arrowStart = null; arrowPress = null;
+    };
+    const createArrowPoint = (className, image, point, rect) => {
+      const pointMarker = document.createElement('span');
+      pointMarker.className = `mai-parts-coordinate-arrow-point ${className}`;
+      pointMarker.setAttribute('aria-hidden', 'true');
+      section.appendChild(pointMarker); positionInSection(pointMarker, image, point, rect);
+      return pointMarker;
+    };
     const showSelection = (start, end) => {
       const left = Math.min(start.x, end.x);
       const top = Math.min(start.y, end.y);
@@ -7076,15 +7144,27 @@
 
     toggle.addEventListener('click', () => {
       active = !active;
+      arrowMode = false;
       toggle.setAttribute('aria-pressed', String(active));
+      arrowToggle.setAttribute('aria-pressed', 'false');
       toggle.textContent = active ? '✕ 측정 종료' : '⌖ 비율 측정';
       section.classList.toggle('mai-parts-measuring', active);
       if (!active && selection) { selection.remove(); selection = null; drag = null; }
+      if (!active) clearArrow();
       readout.textContent = active ? '사진을 클릭하거나 드래그해 X% / Y% 값을 측정하세요.' : '비율 측정 모드를 켠 뒤 사진을 클릭하거나 드래그하세요.';
+    });
+    arrowToggle.addEventListener('click', () => {
+      arrowMode = !arrowMode; active = true; clearArrow();
+      marker?.remove(); marker = null; selection?.remove(); selection = null; drag = null;
+      toggle.setAttribute('aria-pressed', 'true'); toggle.textContent = '✕ 측정 종료';
+      arrowToggle.setAttribute('aria-pressed', String(arrowMode));
+      section.classList.toggle('mai-parts-measuring', true);
+      readout.textContent = arrowMode ? '화살표 시작점을 사진에서 클릭하세요.' : '사진을 클릭하거나 드래그해 X% / Y% 값을 측정하세요.';
     });
 
     section.addEventListener('pointermove', (event) => {
       if (!active || event.target.closest('[data-mai-measure-ignore]')) return;
+      if (arrowPress) { event.preventDefault(); return; }
       if (drag) {
         const end = imagePointFromEvent(event, drag.image, drag.rect);
         drag.end = end;
@@ -7101,6 +7181,10 @@
       const image = event.target.closest('.mai-parts-hotspot-stage > img, .mai-parts-diagram-stage > img, .mai-parts-image-stage > img, .mai-parts-photo-card > img');
       if (!image) return;
       const rect = image.getBoundingClientRect();
+      if (arrowMode) {
+        arrowPress = { image, rect, start: imagePointFromEvent(event, image, rect) };
+        section.setPointerCapture?.(event.pointerId); event.preventDefault(); return;
+      }
       drag = { image, rect, start: imagePointFromEvent(event, image, rect), end: null };
       selection?.remove();
       selection = document.createElement('div');
@@ -7111,6 +7195,38 @@
     });
 
     const endDrag = (event) => {
+      if (arrowPress) {
+        const press = arrowPress;
+        const end = imagePointFromEvent(event, press.image, press.rect);
+        arrowPress = null;
+        const moved = Math.abs(end.x - press.start.x) > 5 || Math.abs(end.y - press.start.y) > 5;
+        if (moved) {
+          readout.textContent = '화살표는 드래그하지 말고 시작점과 끝점을 각각 클릭하세요.';
+        } else if (!arrowStart || arrowStart.image !== press.image) {
+          clearArrow(); marker?.remove(); marker = null; selection?.remove(); selection = null;
+          arrowStart = { image: press.image, rect: press.rect, point: end };
+          arrowStartMarker = createArrowPoint('mai-parts-coordinate-arrow-start', press.image, end, press.rect);
+          lockedPoint = null; copy.disabled = true;
+          readout.textContent = `사진 ${end.photoIndex}번(${end.photoName}) · 화살표 끝점(꼭지점)을 같은 사진에서 한 번 더 클릭하세요.`;
+        } else {
+          arrowEndMarker = createArrowPoint('mai-parts-coordinate-arrow-end', press.image, end, press.rect);
+          arrowLine = document.createElement('span'); arrowLine.className = 'mai-parts-coordinate-arrow'; arrowLine.setAttribute('aria-hidden', 'true'); section.appendChild(arrowLine);
+          const start = arrowStart.point;
+          const dx = end.x - start.x, dy = end.y - start.y;
+          const sectionRect = section.getBoundingClientRect();
+          arrowLine.style.left = `${Math.round(press.rect.left - sectionRect.left + (press.rect.width * start.imageX / 100))}px`;
+          arrowLine.style.top = `${Math.round(press.rect.top - sectionRect.top + (press.rect.height * start.imageY / 100))}px`;
+          arrowLine.style.width = `${Math.hypot(dx, dy)}px`;
+          const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+          arrowLine.style.transform = `translateY(-50%) rotate(${angle}deg)`;
+          lockedPoint = { arrow: true, start, end, angle };
+          arrowStart = null; copy.disabled = false;
+          readout.textContent = `사진 ${start.photoIndex}번(${start.photoName}) · 화살표 시작 X:${start.imageX}% Y:${start.imageY}% → 끝(꼭지점) X:${end.imageX}% Y:${end.imageY}% 방향:${angle.toFixed(2)}°`;
+        }
+        suppressNextClick = true;
+        section.releasePointerCapture?.(event.pointerId);
+        return;
+      }
       if (!drag) return;
       const end = imagePointFromEvent(event, drag.image, drag.rect);
       const moved = Math.abs(end.x - drag.start.x) > 3 || Math.abs(end.y - drag.start.y) > 3;
@@ -7145,6 +7261,7 @@
     section.addEventListener('click', (event) => {
       if (suppressNextClick) { suppressNextClick = false; return; }
       if (!active || event.target.closest('[data-mai-measure-ignore]')) return;
+      if (arrowMode) return;
       const point = formatPoint(event);
       if (!point) return;
       if (!marker) {
@@ -7168,6 +7285,13 @@
       if (lockedPoint.selection) {
         const text = readout.textContent.replace(/^선택\s+/, '');
         try { await navigator.clipboard.writeText(text); } catch (error) { readout.textContent = text; }
+        return;
+      }
+      if (lockedPoint.arrow) {
+        const { start, end, angle } = lockedPoint;
+        const text = `사진 ${start.photoIndex}번(${start.photoName}) · 화살표 시작 X:${start.imageX}% Y:${start.imageY}% → 끝(꼭지점) X:${end.imageX}% Y:${end.imageY}% 방향:${angle.toFixed(2)}°`;
+        try { await navigator.clipboard.writeText(text); copy.textContent = '복사 완료'; window.setTimeout(() => { copy.textContent = '비율 복사'; }, 1200); }
+        catch (error) { readout.textContent = text; }
         return;
       }
       const photo = lockedPoint.photoIndex == null ? '' : `사진 ${lockedPoint.photoIndex}번(${lockedPoint.photoName}) · `;

@@ -1,0 +1,859 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>5.1. 메인 페이지</title><meta name="data-notion-page-icon" content="🏰"/><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%8F%B0%3C%2Ftext%3E%3C%2Fsvg%3E"/><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><style>
+    html, body { background: transparent; }
+    @media only screen { body { margin: 0; max-width: none; } }
+    .page-body { padding: 0; }
+    @media (max-width: 720px) {
+      .column-list { flex-direction: column; gap: 0; }
+      .column[style] { width: 100% !important; }
+    }
+  </style></head><body><article class="page sans mai-ui2-import"><div class="page-body"><p id="1bbcfb3e-9058-818d-9251-c2f20993dee9" class="" dir="auto"> </p><p id="1bbcfb3e-9058-81f9-8e7b-ef0a9a48d1c4" class="" dir="auto"> <div class="indented"><p id="1d6cfb3e-9058-8050-a468-e5b0b89093d5" class="" dir="auto"><a href="5%201%20%EB%A9%94%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%201bbcfb3e9058804196bfc632d597cdb5.html" data-notion-page-id="1d5cfb3e-9058-8068-a11d-dc1fd791496c" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96">5.1.b.1. 공구 수명 설정 창</a> </p></div></p><p id="1bbcfb3e-9058-81ce-9c8f-f4322b73c96c" class="" dir="auto"> </p><hr id="1bbcfb3e-9058-81eb-8193-c305967e6abb" dir="auto"/><p id="1bbcfb3e-9058-81c0-a4d8-ec6c114f7df9" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81f4-bad6-c1af55ee8d02" class="" dir="auto">
+</p><h3 id="1bbcfb3e-9058-818f-a92d-edb5bc1db91b" class="" dir="auto">5.1.a. 버튼</h3><p id="1bbcfb3e-9058-8100-b4ed-c06f1b704fcb" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81aa-9325-ff87fd5579a9" class="image" data-notion-image="../../images/mai-ui2/image-34-2c027c0b22.webp" dir="ltr"><a href="../../images/mai-ui2/image-34-2c027c0b22.webp"><img style="width:834.3125px" src="../../images/mai-ui2/image-34-2c027c0b22.webp"/></a></figure><p id="1bbcfb3e-9058-816e-a340-f982eb8ba5ee" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-8136-9a3f-d6c6f4f164ae" class="image" data-notion-image="../../images/mai-ui2/untitled-11-f84421a897.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-11-f84421a897.webp"><img style="width:707.75px" src="../../images/mai-ui2/untitled-11-f84421a897.webp"/></a><figcaption>NC파일의 이름과 저장된 경로를 보여주는 창.</figcaption></figure><p id="1bbcfb3e-9058-81b9-903a-ced19b20263e" class="" dir="auto">
+</p><div id="1bbcfb3e-9058-8180-9094-ff449babcd75" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-81d1-b754-f75415507d94" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-811b-9c1e-f7e0a311a171" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-12-6021a6a812.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-12-6021a6a812.webp"><img style="width:192px" src="../../images/mai-ui2/untitled-12-6021a6a812.webp"/></a><figcaption>파일 불러오기</figcaption></figure><p id="1d7cfb3e-9058-801c-85c5-f26aaf228780" class="" dir="auto">가공할 파일을 불러옵니다.<br/>지원하는 파일 형식은  *.nc 혹은 *.txt. 입니다. </p><details id="1bbcfb3e-9058-81b6-b9aa-fd8986dcbba6" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-80a5-b20c-f0cbe014b196" class="image" data-notion-image="../../images/mai-ui2/main-page-load-f5d2910f74.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-load-f5d2910f74.webp"><img style="width:1040px" src="../../images/mai-ui2/main-page-load-f5d2910f74.webp"/></a></figure></div></details><p id="1bbcfb3e-9058-819d-941c-f5e6ce027287" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81c3-9cb5-e36106ad69fc" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81fc-81af-c54298cb4f55" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-35-d2c887e7b1.webp" dir="ltr"><a href="../../images/mai-ui2/image-35-d2c887e7b1.webp"><img style="width:144px" src="../../images/mai-ui2/image-35-d2c887e7b1.webp"/></a></figure><p id="1d7cfb3e-9058-8080-a9e8-caa1fece679d" class="" dir="auto">불러온 *.nc 파일을 취소합니다.  </p><details id="1bbcfb3e-9058-8167-93d7-ed5a5aab2f1d" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-80c7-a7c8-efab7d6d2bd0" class="image" data-notion-image="../../images/mai-ui2/main-page-close-nc-dfb0cb5c63.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-close-nc-dfb0cb5c63.webp"><img style="width:288px" src="../../images/mai-ui2/main-page-close-nc-dfb0cb5c63.webp"/></a></figure></div></details></div><div id="1bbcfb3e-9058-8143-9521-f2aa2ac0417a" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-816b-bf6a-ce7c13f70574" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-13-63b9a2891b.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-13-63b9a2891b.webp"><img style="width:205.3125px" src="../../images/mai-ui2/untitled-13-63b9a2891b.webp"/></a><figcaption>가공 시작</figcaption></figure><p id="1bdcfb3e-9058-803a-b2c0-efc02bbd80bf" class="" dir="auto">불러온 NC파일의 가공을 시작합니다. </p><details id="1bbcfb3e-9058-815b-a256-ed3276e44cbd" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-8092-a94b-d9b19c57ee77" class="image" data-notion-image="../../images/mai-ui2/main-page-start-c61fba37d6.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-start-c61fba37d6.webp"><img style="width:301.140625px" src="../../images/mai-ui2/main-page-start-c61fba37d6.webp"/></a></figure></div></details></div><div id="1bbcfb3e-9058-811e-824e-f0a082b24f5d" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><p id="1bbcfb3e-9058-8136-86e6-f0424d6b4926" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81ce-9bcf-f436738c65f4" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-14-00fd6cb677.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-14-00fd6cb677.webp"><img style="width:135.0416717529297px" src="../../images/mai-ui2/untitled-14-00fd6cb677.webp"/></a><figcaption>가공 정지</figcaption></figure><p id="1bbcfb3e-9058-81e0-a4d0-c4c45c0b3771" class="" dir="auto">가공을 정지합니다. </p><details id="1bbcfb3e-9058-817e-8554-e6cc9ea8a1c2" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-805c-b42f-ecb886101c7b" class="image" data-notion-image="../../images/mai-ui2/main-page-stop-2d5770e072.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-stop-2d5770e072.webp"><img style="width:316px" src="../../images/mai-ui2/main-page-stop-2d5770e072.webp"/></a></figure></div></details></div></div><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1bbcfb3e-9058-81ec-9a01-db6ff8061caa" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1bbcfb3e-9058-81ed-a38f-eac389d58f0f" class="" dir="auto">파일은 반드시  M AI° 전용 포스트 프로세서를 이용한  G-코드로 생성되어야 합니다. </p></div></aside><hr id="1bbcfb3e-9058-81f7-ad56-fbe909b0562a" dir="auto"/><p id="1bbcfb3e-9058-81cb-8a06-ff19b18e1848" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81a9-9950-f6142a0df9af" class="image" data-notion-image="../../images/mai-ui2/image-36-f5c9f6f8f3.webp" dir="ltr"><a href="../../images/mai-ui2/image-36-f5c9f6f8f3.webp"><img style="width:834.3229370117188px" src="../../images/mai-ui2/image-36-f5c9f6f8f3.webp"/></a></figure><p id="1bbcfb3e-9058-8124-9942-f5de722071e1" class="" dir="auto">
+</p><div id="1bbcfb3e-9058-81ba-8b28-d2211c4edf74" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-8187-aed9-d639c4a8a5c0" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-816b-b6f5-e21cc48aab14" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-15-9a14c410e9.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-15-9a14c410e9.webp"><img style="width:120px" src="../../images/mai-ui2/untitled-15-9a14c410e9.webp"/></a><figcaption>청소 알람</figcaption></figure><p id="1bbcfb3e-9058-81f9-813f-f306a23a4da1" class="" dir="auto">청소가 필요할 때 점멸합니다. <br/>아이콘을 누르면 <a href="5%203%20g%20%EA%B4%80%EB%A6%AC%20%EC%A0%95%EB%B3%B4%201bbcfb3e905880118cb3e0eb44ae7f28.html" data-notion-page-id="1bbcfb3e-9058-8011-8cb3-e0eb44ae7f28" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/cleaninfo-68c940d5f0.webp"/>5.3.g. 관리 정보</a> 페이지로 진입합니다.</p><details id="1d8cfb3e-9058-80ad-bdb7-c3075b7f12c4" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d8cfb3e-9058-8087-9b7a-c84bff6e64da" class="image" data-notion-image="../../images/mai-ui2/alram-7d1d5f6a48.webp" dir="ltr"><a href="../../images/mai-ui2/alram-7d1d5f6a48.webp"><img style="width:109.109375px" src="../../images/mai-ui2/alram-7d1d5f6a48.webp"/></a></figure></div></details><p id="1d8cfb3e-9058-8066-8a9d-ef78006549f1" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-8160-ab23-e3d767ba77c5" class="image" data-notion-image="../../images/mai-ui2/image-37-65fe9d3c16.webp" dir="ltr"><a href="../../images/mai-ui2/image-37-65fe9d3c16.webp"><img style="width:174.0729217529297px" src="../../images/mai-ui2/image-37-65fe9d3c16.webp"/></a><figcaption>Warm-up</figcaption></figure><p id="1bbcfb3e-9058-8148-82b4-d5f08caa28de" class="" dir="auto">Warm-up을 위한 NC파일을 불러옵니다. </p></div><div id="1bbcfb3e-9058-81e9-8f2a-cb5b31bf13ba" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-81b1-8d20-c91120c37008" class="image" data-notion-image="../../images/mai-ui2/untitled-16-ccb96d0291.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-16-ccb96d0291.webp"><img style="width:192px" src="../../images/mai-ui2/untitled-16-ccb96d0291.webp"/></a><figcaption>공구 정보</figcaption></figure><p id="1bbcfb3e-9058-810b-924b-fa71bccc2766" class="" dir="auto">“공구 정보” 창을 띄웁니다. </p><details id="1d6cfb3e-9058-8075-a37c-f11bb4e72783" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-80e4-a7c9-e1290d73f58c" class="image" data-notion-image="../../images/mai-ui2/main-page-tool-list-e0ea1016bd.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-tool-list-e0ea1016bd.webp"><img style="width:106.25px" src="../../images/mai-ui2/main-page-tool-list-e0ea1016bd.webp"/></a></figure></div></details><p id="1bbcfb3e-9058-81d5-a97e-f60c70f9bdfe" class="" dir="auto">
+</p></div><div id="1bbcfb3e-9058-81bd-aa42-ea5978154d62" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-8196-870c-e9f96c89dd3c" class="image" data-notion-image="../../images/mai-ui2/untitled-17-d23246d4f1.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-17-d23246d4f1.webp"><img style="width:192px" src="../../images/mai-ui2/untitled-17-d23246d4f1.webp"/></a><figcaption>공구 리턴</figcaption></figure><p id="1bbcfb3e-9058-81c7-b4a2-f7082c2926ba" class="" dir="auto">콜렛에 있는 공구를 툴 포켓에 집어넣습니다. </p><p id="1cbcfb3e-9058-80d6-9231-ee3a48c14113" class="" dir="auto">
+</p><p id="1cbcfb3e-9058-8035-87d7-cd125391e443" class="" dir="auto">
+</p><p id="1cbcfb3e-9058-800f-893b-dee548466e31" class="" dir="auto">
+</p></div><div id="1bbcfb3e-9058-8149-b13c-d23647a0fb00" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-81f7-a006-e6410972ca14" class="image" data-notion-image="../../images/mai-ui2/untitled-10-02af84b723.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-10-02af84b723.webp"><img style="width:192px" src="../../images/mai-ui2/untitled-10-02af84b723.webp"/></a><figcaption>ATC 개봉/폐쇄</figcaption></figure><p id="1d6cfb3e-9058-80c5-a210-d368d128060c" class="" dir="auto">툴 포켓을 개봉/ 폐쇄합니다. <br/>툴 포켓이 열리면    “공구 정보” 페이지가 자동으로 열립니다.</p><details id="1bbcfb3e-9058-8173-918a-da1f5790b43c" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-800a-ae0f-c0fe6bb78a15" class="image" data-notion-image="../../images/mai-ui2/main-page-atc-open-close-1-afbf77e10b.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-atc-open-close-1-afbf77e10b.webp"><img style="width:134.25px" src="../../images/mai-ui2/main-page-atc-open-close-1-afbf77e10b.webp"/></a></figure></div></details><p id="1d6cfb3e-9058-8066-ae29-f231085cfaf0" class="" dir="auto">
+</p></div></div><div id="1d6cfb3e-9058-804d-8db4-f7a8a5b8ea08" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-80b0-9087-fd7ecec45370" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-8192-b72d-cd0f78a57fed" class="image" data-notion-image="../../images/mai-ui2/untitled-18-b5b38b8d01.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-18-b5b38b8d01.webp"><img style="width:144px" src="../../images/mai-ui2/untitled-18-b5b38b8d01.webp"/></a><figcaption>A축 회전  25°/0°</figcaption></figure><p id="1d6cfb3e-9058-8024-b54e-cc6c542e4ea3" class="" dir="auto">A축 +25°로 회전합니다.. 한 번 더 누르면,  0°로 회전합니다.</p><details id="1bbcfb3e-9058-81d4-acc9-eb5e45b1e03f" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-8096-8c05-c75c04360c97" class="image" data-notion-image="../../images/mai-ui2/main-page-a25-6661158518.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-a25-6661158518.webp"><img style="width:106.25px" src="../../images/mai-ui2/main-page-a25-6661158518.webp"/></a></figure></div></details></div><div id="1d6cfb3e-9058-803e-a87a-ff467f1b821c" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-810d-b5f2-d24c5cdb983c" class="image" data-notion-image="../../images/mai-ui2/untitled-19-4fe7986c63.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-19-4fe7986c63.webp"><img style="width:240px" src="../../images/mai-ui2/untitled-19-4fe7986c63.webp"/></a><figcaption>B축 회전 90°/-90° </figcaption></figure><p id="1d6cfb3e-9058-80e9-a065-ddeca5ddb211" class="" dir="auto">B축 +90°로 회전합니다. 한 번 더 누르면, -90° 로 회전합니다. </p><details id="1bbcfb3e-9058-812d-8200-dbf1e737dd56" open="" class="toggle" dir="auto"><summary>Tip </summary><div class="indented"><figure id="1d5cfb3e-9058-8091-9480-fc69938fbbb6" class="image" data-notion-image="../../images/mai-ui2/main-page-b90-26392e1623.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-b90-26392e1623.webp"><img style="width:106.25px" src="../../images/mai-ui2/main-page-b90-26392e1623.webp"/></a></figure></div></details></div><div id="1d6cfb3e-9058-8016-86fe-c48914e760bb" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1cbcfb3e-9058-808d-ae55-e838e9d25fc0" class="image" data-notion-image="../../images/mai-ui2/untitled-20-60761d3da9.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-20-60761d3da9.webp"><img style="width:288px" src="../../images/mai-ui2/untitled-20-60761d3da9.webp"/></a><figcaption>B축 회전 45°/-45°</figcaption></figure><p id="1d6cfb3e-9058-8021-b01a-cae0152ab8b8" class="" dir="auto">B축 +45°로 회전합니다. 한 번 더 누르면, -45° 로 회전합니다. </p><details id="1cbcfb3e-9058-8048-bc2e-ebcd86933d0a" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-80e2-883f-c20600a9bc28" class="image" data-notion-image="../../images/mai-ui2/main-page-b45-a7c0a84b91.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-b45-a7c0a84b91.webp"><img style="width:106.25px" src="../../images/mai-ui2/main-page-b45-a7c0a84b91.webp"/></a></figure></div></details></div><div id="1d6cfb3e-9058-806a-8f30-f32ac85ba87a" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-8132-80fb-f84aee937dbd" class="image" data-notion-image="../../images/mai-ui2/untitled-21-650f6b6789.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-21-650f6b6789.webp"><img style="width:240px" src="../../images/mai-ui2/untitled-21-650f6b6789.webp"/></a><figcaption>B축 회전 0°/180°</figcaption></figure><p id="1d6cfb3e-9058-802d-97d9-f16c741f5ccc" class="" dir="auto">B축 0°로 회전합니다. 한 번 더 누르면 180°로 회전합니다. </p><details id="1bbcfb3e-9058-81f5-9393-efe4589433ce" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-807c-8484-d924ecac6e53" class="image" data-notion-image="../../images/mai-ui2/main-page-b180-bd107e2692.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-b180-bd107e2692.webp"><img style="width:108.08333587646484px" src="../../images/mai-ui2/main-page-b180-bd107e2692.webp"/></a></figure></div></details><p id="21bcfb3e-9058-80f0-85c7-e4f6ca93c620" class="" dir="auto">
+</p></div></div><hr id="1bbcfb3e-9058-8154-ab0b-e437eac944e0" dir="auto"/><p id="1bbcfb3e-9058-815b-b636-cf2713279cf9" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81a2-ab04-ffa623609dfe" class="image" data-notion-image="../../images/mai-ui2/image-38-f86db24310.webp" dir="ltr"><a href="../../images/mai-ui2/image-38-f86db24310.webp"><img style="width:834.3229370117188px" src="../../images/mai-ui2/image-38-f86db24310.webp"/></a></figure><div id="1bbcfb3e-9058-818c-b138-d775029523f8" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-81b6-8c14-fa501a97293f" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-81de-a908-e57fd407925c" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-22-542a3f242c.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-22-542a3f242c.webp"><img style="width:330.921875px" src="../../images/mai-ui2/untitled-22-542a3f242c.webp"/></a><figcaption>가공 방식 선택</figcaption></figure><p id="1bbcfb3e-9058-81b0-aa0b-e0457efb5652" class="" dir="auto">가공 방식을 변경하는 버튼입니다. 습식과 건식이 있으며 G-코드가 자동으로 변경, 적용됩니다. (습식 : M3001, 건식: M3002)</p><div id="1d6cfb3e-9058-80c1-b29b-de9d7853ecd5" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-8070-8eeb-dff7e1294e25" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-8192-94fd-e341497c420b" class="image" data-notion-image="../../images/mai-ui2/untitled-23-7137a801ee.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-23-7137a801ee.webp"><img style="width:330.984375px" src="../../images/mai-ui2/untitled-23-7137a801ee.webp"/></a><figcaption>건식→ 습식</figcaption></figure></div><div id="1d6cfb3e-9058-80ef-ab35-e8cb5239a737" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-81d0-8190-cdc3d9642f18" class="image" data-notion-image="../../images/mai-ui2/untitled-24-ef9e4897f9.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-24-ef9e4897f9.webp"><img style="width:330.984375px" src="../../images/mai-ui2/untitled-24-ef9e4897f9.webp"/></a><figcaption>습식 → 건식</figcaption></figure></div></div></div><div id="1bbcfb3e-9058-81e6-8387-f612af869390" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-81d3-aa6b-cf96789c8470" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-25-9ff27b0489.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-25-9ff27b0489.webp"><img style="width:174.97158813476562px" src="../../images/mai-ui2/untitled-25-9ff27b0489.webp"/></a><figcaption>자동 종료 활성화/ 비활성화</figcaption></figure><p id="1bbcfb3e-9058-8146-b898-cd6fb010f3ab" class="" dir="auto">자동 종료 활성화시, 기계는 가공 과정이 끝나고 자동적으로 종료됩니다. 가공 과정 중에도 활성화 시킬 수 있습니다.</p><p id="1d6cfb3e-9058-8090-910c-fe77687d5148" class="" dir="auto">
+</p><div id="1d6cfb3e-9058-80cd-9be4-c6f0de2879b8" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-8077-a081-fcfe43519091" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-81c0-a5e6-ecad26bf47f9" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-26-b2c324c1ff.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-26-b2c324c1ff.webp"><img style="width:107.52083587646484px" src="../../images/mai-ui2/untitled-26-b2c324c1ff.webp"/></a></figure><p id="1bbcfb3e-9058-81a4-afec-cecba2a7ceef" class="" dir="auto"><a href="5%202%20%EC%BD%94%EB%93%9C%EB%B7%B0%20%ED%8E%98%EC%9D%B4%EC%A7%80%201bbcfb3e9058806ba15ae90cc7cf1bf5.html" data-notion-page-id="1bbcfb3e-9058-806b-a15a-e90cc7cf1bf5" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><span class="icon" data-emoji="🔍"></span>5.2. 코드뷰 페이지</a>로 이동.</p></div><div id="1d6cfb3e-9058-8049-a7a1-d4dd67a65b24" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-81b2-a43a-c20d2e251cc0" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-27-fd4f1ae264.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-27-fd4f1ae264.webp"><img style="width:107.51042175292969px" src="../../images/mai-ui2/untitled-27-fd4f1ae264.webp"/></a></figure><p id="1bbcfb3e-9058-8113-bf02-e15e13bf3221" class="" dir="auto"><a href="5%203%20%EC%85%8B%EC%97%85%20%ED%8E%98%EC%9D%B4%EC%A7%80%201bbcfb3e90588013bcb7dbdce159a841.html" data-notion-page-id="1bbcfb3e-9058-8013-bcb7-dbdce159a841" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><span class="icon" data-emoji="🛞"></span>5.3. 셋업 페이지</a>로 이동. <br/>추가적인 설정이 가능합니다. </p></div></div></div></div><hr id="1bbcfb3e-9058-815c-a41b-c2e262f87b37" dir="auto"/><h3 id="1bbcfb3e-9058-81df-b748-d1d8140d7589" class="" dir="auto">5.1.b. 공구 정보</h3><p id="1bbcfb3e-9058-81a6-8f6c-cf9c9b864734" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-8154-8314-d46945079149" class="image" data-notion-image="../../images/mai-ui2/image-39-554706c830.webp" dir="ltr"><a href="../../images/mai-ui2/image-39-554706c830.webp"><img style="width:834.3229370117188px" src="../../images/mai-ui2/image-39-554706c830.webp"/></a></figure><p id="1bbcfb3e-9058-8158-a4c6-dfd707543b17" class="" dir="auto">
+</p><div id="1d6cfb3e-9058-80ae-a240-e9f82cd9ec4f" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-80c6-8696-f85b066778d2" style="width:33.33333333333333%" class="column" data-notion-column-ratio="0.3333333333333333" dir="auto"><figure id="1d5cfb3e-9058-809e-b532-d1fe2825539a" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/29c123dc-33b0-4ab6-a04e-3c9e377488fc-ca09785709.webp" dir="ltr"><a href="../../images/mai-ui2/29c123dc-33b0-4ab6-a04e-3c9e377488fc-ca09785709.webp"><img style="width:96px" src="../../images/mai-ui2/29c123dc-33b0-4ab6-a04e-3c9e377488fc-ca09785709.webp"/></a></figure><p id="1bbcfb3e-9058-8149-9302-c948251e352a" class="" dir="auto"><a href="5%201%20%EB%A9%94%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%201bbcfb3e9058804196bfc632d597cdb5.html" data-notion-page-id="1d5cfb3e-9058-8068-a11d-dc1fd791496c" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96">5.1.b.1. 공구 수명 설정 창</a> 페이지를 엽니다. </p></div><div id="1d6cfb3e-9058-807a-a820-f15380d61cd6" style="width:20.833333333333332%" class="column" data-notion-column-ratio="0.20833333333333331" dir="auto"><figure id="1d5cfb3e-9058-80be-b41d-f368b9bc7e7f" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/3edb832a-4e8a-4df6-b3dd-3f8eeaf8269f-83f578af77.webp" dir="ltr"><a href="../../images/mai-ui2/3edb832a-4e8a-4df6-b3dd-3f8eeaf8269f-83f578af77.webp"><img style="width:96px" src="../../images/mai-ui2/3edb832a-4e8a-4df6-b3dd-3f8eeaf8269f-83f578af77.webp"/></a></figure><p id="1bbcfb3e-9058-8177-923b-c65674d79b17" class="" dir="auto">모든 공구의 사용 시간 리셋</p><details id="1d6cfb3e-9058-8011-aba0-f7d9465d514b" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d6cfb3e-9058-8030-a8c5-c6bf551cfc82" class="image" data-notion-image="../../images/mai-ui2/reset-used-timeall-f2e05baabd.webp" dir="ltr"><a href="../../images/mai-ui2/reset-used-timeall-f2e05baabd.webp"><img style="width:1328px" src="../../images/mai-ui2/reset-used-timeall-f2e05baabd.webp"/></a></figure></div></details></div><div id="1d6cfb3e-9058-80b3-b9f2-d7ac9e88ee6b" style="width:45.833333333333336%" class="column" data-notion-column-ratio="0.45833333333333337" dir="auto"><figure id="1bbcfb3e-9058-81a2-98e6-ef3372936803" class="image" data-notion-image="../../images/mai-ui2/image-40-1e9f119c69.webp" dir="ltr"><a href="../../images/mai-ui2/image-40-1e9f119c69.webp"><img style="width:384px" src="../../images/mai-ui2/image-40-1e9f119c69.webp"/></a></figure><p id="1bbcfb3e-9058-8146-88bd-c2a10457ba03" class="" dir="auto">총 스핀들 회전 시간</p></div></div><p id="1d6cfb3e-9058-8023-a12f-f7285f7ced39" class="" dir="auto">
+</p><ul id="1bbcfb3e-9058-813f-b616-d1cd791c6317" class="bulleted-list" dir="auto"><li style="list-style-type:disc">공구 이미지 상단에 각각의 공구 사용 시간이 표기되어 있습니다. 사용 시간을 참고해 공구를 교체하세요<figure id="1bbcfb3e-9058-8166-989e-f496a345714e" class="image" data-notion-image="../../images/mai-ui2/image-41-eba7e907d0.webp" dir="ltr"><a href="../../images/mai-ui2/image-41-eba7e907d0.webp"><img style="width:720px" src="../../images/mai-ui2/image-41-eba7e907d0.webp"/></a></figure></li></ul><details id="1d7cfb3e-9058-801a-8307-fcfdd43442a7" open="" class="toggle" dir="auto"><summary>Tip. 공구 이미지 상단의 공구 사용 시간은 키보드로 숫자를 입력하여 변경할 수 있습니다.</summary><div class="indented"><figure id="1d6cfb3e-9058-80b9-b25e-d515d5acd4f9" class="image" data-notion-image="../../images/mai-ui2/change-used-timemanually-f814a8e652.webp" dir="ltr"><a href="../../images/mai-ui2/change-used-timemanually-f814a8e652.webp"><img style="width:658.5px" src="../../images/mai-ui2/change-used-timemanually-f814a8e652.webp"/></a></figure></div></details><p id="1d6cfb3e-9058-8041-a929-da6559079402" class="" dir="auto">
+</p><ul id="1bbcfb3e-9058-8106-b645-f782306e3ec5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">공구 이미지의 상단부를 누르면, 사용 시간 초기화를 묻는 창이 나타납니다. (OK: 초기화, Cancel: 초기화 취소)<div id="1d6cfb3e-9058-80e6-93ef-d8b0a9645d14" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-80ab-b4d8-ff991f41e1a8" style="width:43.75%" class="column" data-notion-column-ratio="0.4375" dir="auto"><figure id="1d6cfb3e-9058-807b-974d-e59e37a3c903" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-42-e37774dbb5.webp" dir="ltr"><a href="../../images/mai-ui2/image-42-e37774dbb5.webp"><img style="width:60px" src="../../images/mai-ui2/image-42-e37774dbb5.webp"/></a></figure></div><div id="1d6cfb3e-9058-807e-b1f1-ff9bf6f2d4eb" style="width:62.499999999999986%" class="column" data-notion-column-ratio="0.6249999999999999" dir="auto"><figure id="1bbcfb3e-9058-812f-86e4-d89dd8805ae0" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-43-7ab732274d.webp" dir="ltr"><a href="../../images/mai-ui2/image-43-7ab732274d.webp"><img style="width:432px" src="../../images/mai-ui2/image-43-7ab732274d.webp"/></a></figure><details id="1d6cfb3e-9058-8013-b3f0-fab10bce90e2" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d6cfb3e-9058-8049-8902-c193521ab2da" class="image" data-notion-image="../../images/mai-ui2/reset-used-timeone-476940dd75.webp" dir="ltr"><a href="../../images/mai-ui2/reset-used-timeone-476940dd75.webp"><img style="width:686.484375px" src="../../images/mai-ui2/reset-used-timeone-476940dd75.webp"/></a></figure></div></details></div></div></li></ul><p id="1bbcfb3e-9058-817e-aa2d-fa51515c771f" class="" dir="auto">
+</p><ul id="1bbcfb3e-9058-81d1-933c-f1e3df5c9b40" class="bulleted-list" dir="auto"><li style="list-style-type:disc">“Manual tool change mode” 가 활성화 된 상태에서 공구 이미지의 하단부를 누르면, 콜렛(스핀들)이 선택한 공구를 잡아 도어쪽으로 가져옵니다. <div id="1d6cfb3e-9058-8041-a675-e8504add8a27" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-80e0-8907-f751a3d2a196" style="width:43.75%" class="column" data-notion-column-ratio="0.4375" dir="auto"><figure id="1d6cfb3e-9058-8099-9a3e-ebac599c4120" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-44-deb9f1177c.webp" dir="ltr"><a href="../../images/mai-ui2/image-44-deb9f1177c.webp"><img style="width:72px" src="../../images/mai-ui2/image-44-deb9f1177c.webp"/></a></figure></div><div id="1d6cfb3e-9058-8087-8c91-dbca89c86b4a" style="width:56.25%" class="column" data-notion-column-ratio="0.5625" dir="auto"><figure id="1bbcfb3e-9058-8121-97ab-ed651d4fbe5b" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-45-ab50683235.webp" dir="ltr"><a href="../../images/mai-ui2/image-45-ab50683235.webp"><img style="width:344.7083435058594px" src="../../images/mai-ui2/image-45-ab50683235.webp"/></a></figure><p id="1d6cfb3e-9058-8081-9603-d87a4c3d0b32" class="" dir="auto">
+</p><ul id="1bbcfb3e-9058-81b8-bccc-e975a75d077d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">“Manual tool change mode” 활성화/비활성화</li></ul><div id="1d6cfb3e-9058-80b8-a399-e15c081e800e" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-807b-b784-e780bc29b483" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1d6cfb3e-9058-80cf-bbc9-e83938775a1c" class="image" style="text-align:right" data-notion-image="../../images/mai-ui2/da9919d1-e964-4a6e-91f2-b6b404da5ea9-70e4058aab.webp" dir="ltr"><a href="../../images/mai-ui2/da9919d1-e964-4a6e-91f2-b6b404da5ea9-70e4058aab.webp"><img style="width:288px" src="../../images/mai-ui2/da9919d1-e964-4a6e-91f2-b6b404da5ea9-70e4058aab.webp"/></a><figcaption>Manual tool change mode OFF</figcaption></figure></div><div id="1d6cfb3e-9058-8063-b217-f1ae6bf33237" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1d6cfb3e-9058-80fa-aac5-dc6e985f5abf" class="image" style="text-align:left" data-notion-image="../../images/mai-ui2/image-46-8f3bd90d30.webp" dir="ltr"><a href="../../images/mai-ui2/image-46-8f3bd90d30.webp"><img style="width:288px" src="../../images/mai-ui2/image-46-8f3bd90d30.webp"/></a><figcaption>Manual tool change mode ON</figcaption></figure></div></div><p id="1d6cfb3e-9058-8039-b940-c3d93752c0d2" class="" dir="auto"> 참고</p></div></div></li></ul><p id="1bbcfb3e-9058-81ed-9027-c03b952c8bde" class="" dir="auto">
+</p><div id="1bbcfb3e-9058-817d-b1d8-c18daf3d6cb8" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-81d3-b3e6-ddde8186f49f" style="width:79.16666666666666%" class="column" data-notion-column-ratio="0.7916666666666666" dir="auto"><figure id="1bbcfb3e-9058-819e-ad9b-d36dcde44235" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-27-f007e53e3d.webp" dir="ltr"><a href="../../images/mai-ui2/image-27-f007e53e3d.webp"><img style="width:247.42709350585938px" src="../../images/mai-ui2/image-27-f007e53e3d.webp"/></a><figcaption>콜렛(스핀들) 개봉/ 폐쇄</figcaption></figure><p id="1d6cfb3e-9058-80de-aa01-ca30a7c32374" class="" dir="auto">콜렛 개봉/폐쇄</p><details id="1d5cfb3e-9058-80a3-abb6-d41fe80c4833" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-8087-867d-f27c25b0b566" class="image" data-notion-image="../../images/mai-ui2/setup-page-collet-open-close-2a33882a12.webp" dir="ltr"><a href="../../images/mai-ui2/setup-page-collet-open-close-2a33882a12.webp"><img style="width:178.6041717529297px" src="../../images/mai-ui2/setup-page-collet-open-close-2a33882a12.webp"/></a></figure></div></details><p id="1d5cfb3e-9058-80ac-b9fa-c3b231c962aa" class="" dir="auto">
+</p></div><div id="1bbcfb3e-9058-815e-92ec-d3fb358c6697" style="width:120.83333333333334%" class="column" data-notion-column-ratio="1.2083333333333335" dir="auto"><figure id="1bbcfb3e-9058-8165-8297-d4cafd7cfef8" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-10-02af84b723.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-10-02af84b723.webp"><img style="width:192px" src="../../images/mai-ui2/untitled-10-02af84b723.webp"/></a><figcaption>ATC 개봉/폐쇄</figcaption></figure><p id="1d6cfb3e-9058-80dc-bb32-d892612dfe76" class="" dir="auto">툴 포켓 개봉/폐쇄</p><details id="1d5cfb3e-9058-80ce-8866-d956274e98f6" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d5cfb3e-9058-80f4-bf4e-d9801089f2ae" class="image" data-notion-image="../../images/mai-ui2/main-page-atc-open-close-1-afbf77e10b.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-atc-open-close-1-afbf77e10b.webp"><img style="width:134.25px" src="../../images/mai-ui2/main-page-atc-open-close-1-afbf77e10b.webp"/></a></figure></div></details><p id="1bbcfb3e-9058-81e5-a64c-c63841a3dff2" class="" dir="auto">
+</p></div><div id="1bbcfb3e-9058-81f3-991c-e776b7007c12" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1d5cfb3e-9058-8017-a0ad-e0211848f482" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-17-d23246d4f1.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-17-d23246d4f1.webp"><img style="width:192px" src="../../images/mai-ui2/untitled-17-d23246d4f1.webp"/></a><figcaption>공구 리턴</figcaption></figure><p id="1bbcfb3e-9058-818e-9cb8-d7d5cff41a01" class="" dir="auto">스핀들에 장착되어 있는 공구를 툴 포켓으로 되돌림.</p></div></div><p id="1d5cfb3e-9058-8068-a11d-dc1fd791496c" class="" dir="auto"><strong>5.1.b.1. 공구 수명 설정 창</strong></p><figure id="1bbcfb3e-9058-81c3-8d54-de3fa77776ea" class="image" data-notion-image="../../images/mai-ui2/toolinfo-2-84662f66f9.webp" dir="ltr"><a href="../../images/mai-ui2/toolinfo-2-84662f66f9.webp"><img style="width:864px" src="../../images/mai-ui2/toolinfo-2-84662f66f9.webp"/></a><figcaption>공구 사용 시간 설정</figcaption></figure><div id="1d6cfb3e-9058-8064-95a0-f9e07dadfadf" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-8028-b280-d68c74020608" style="width:50%" class="column" data-notion-column-ratio="0.5" dir="auto"><ul id="1d6cfb3e-9058-80c7-8ead-dcda01681fd5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">각 공구의 수명을 키보드로 입력할 수 있습니다. </li></ul><figure id="1d6cfb3e-9058-807c-9883-c406f024ba77" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-47-f203c8c565.webp" dir="ltr"><a href="../../images/mai-ui2/image-47-f203c8c565.webp"><img style="width:288px" src="../../images/mai-ui2/image-47-f203c8c565.webp"/></a></figure></div><div id="1d6cfb3e-9058-8055-9663-ffc551e1fe16" style="width:50%" class="column" data-notion-column-ratio="0.5" dir="auto"><ul id="1d6cfb3e-9058-80fe-b62f-e204a169a78d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">“Enable tool life notification” - 해당 공구가 설정한 수명에 도달하면 이미지 우측의 빨간 LED가 깜박거리도록 설정합니다.</li></ul><figure id="1d6cfb3e-9058-8000-b257-feef6b59f67b" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-48-3dc1ba4f27.webp" dir="ltr"><a href="../../images/mai-ui2/image-48-3dc1ba4f27.webp"><img style="width:320.3958435058594px" src="../../images/mai-ui2/image-48-3dc1ba4f27.webp"/></a></figure><ul id="1d6cfb3e-9058-80b8-9b54-fd78673c579e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">“Do you want to reset all red LEDs?” - 현재 깜박거리고 있는 모든 빨간 LED를 끕니다.</li></ul></div></div><hr id="1bbcfb3e-9058-81cc-aa91-f25c3670a709" dir="auto"/><h3 id="1bbcfb3e-9058-8124-a8d2-d38f16745aae" class="" dir="auto">5.1.c. 아이콘/ 알람</h3><p id="1bbcfb3e-9058-817d-bf3f-e1c014a2b3e0" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-810b-87c6-ed91d1518cbf" class="image" data-notion-image="../../images/mai-ui2/image-49-bef6ef4de8.webp" dir="ltr"><a href="../../images/mai-ui2/image-49-bef6ef4de8.webp"><img style="width:834.3229370117188px" src="../../images/mai-ui2/image-49-bef6ef4de8.webp"/></a></figure><p id="1d6cfb3e-9058-8028-874a-f000a0380816" class="" dir="auto">
+</p><div id="1d6cfb3e-9058-8054-9306-c6d68118852f" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-80d0-b30d-fe238f2930aa" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-812a-a9b7-caa5b3706f03" class="image" data-notion-image="../../images/mai-ui2/1550c3a8-71fc-4617-82e6-76454f2ae289-92084e06d1.webp" dir="ltr"><a href="../../images/mai-ui2/1550c3a8-71fc-4617-82e6-76454f2ae289-92084e06d1.webp"><img style="width:708px" src="../../images/mai-ui2/1550c3a8-71fc-4617-82e6-76454f2ae289-92084e06d1.webp"/></a><figcaption>Homing</figcaption></figure></div><div id="1d6cfb3e-9058-802b-b05c-f04f1907ac56" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><ul id="1bbcfb3e-9058-81d3-9ffa-d729c7af70e4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">모든 축을 원점으로 이동. </li></ul><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d6cfb3e-9058-8086-bba4-fec9d3c2d9d6" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d6cfb3e-9058-80a9-a149-fca8f3ff1cee" class="" dir="auto">기계 전원이 켜진 직후 또는 의도치 않게 정지한 경우에는 반드시 실행해야 합니다.</p></div></aside></div></div><div id="1d6cfb3e-9058-8045-aab2-ce4e3d90228d" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-8067-9773-c2eefc603904" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-8139-a7c3-f6e97ec0fca3" class="image" data-notion-image="../../images/mai-ui2/49ec2d5d-c9f4-477b-9863-2d8c2c6cb1c7-8b1b94142c.webp" dir="ltr"><a href="../../images/mai-ui2/49ec2d5d-c9f4-477b-9863-2d8c2c6cb1c7-8b1b94142c.webp"><img style="width:479.76011994002994px" src="../../images/mai-ui2/49ec2d5d-c9f4-477b-9863-2d8c2c6cb1c7-8b1b94142c.webp"/></a><figcaption>Current position</figcaption></figure></div><div id="1d6cfb3e-9058-8049-bd31-c8140462abda" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><p id="1d6cfb3e-9058-8057-80c8-f8f7321155e7" class="" dir="auto">
+</p><ul id="1bbcfb3e-9058-8138-85ab-ea26e06e29c1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">현재 각 축의 위치 좌표</li></ul></div></div><div id="1d6cfb3e-9058-80b5-9305-d61ee80b78fe" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-80b5-a337-f7ce856e646e" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-815d-b4e6-f2f45b88b460" class="image" data-notion-image="../../images/mai-ui2/10ddd4c1-3ff8-419c-9dcf-44620f5444b7-31fee7c3e2.webp" dir="ltr"><a href="../../images/mai-ui2/10ddd4c1-3ff8-419c-9dcf-44620f5444b7-31fee7c3e2.webp"><img style="width:288px" src="../../images/mai-ui2/10ddd4c1-3ff8-419c-9dcf-44620f5444b7-31fee7c3e2.webp"/></a></figure></div><div id="1d6cfb3e-9058-8036-a2dc-d859dc9d7998" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><ul id="1bbcfb3e-9058-81e5-b2b0-ee6cf97aab33" class="bulleted-list" dir="auto"><li style="list-style-type:disc">G##: 좌표 종류</li></ul><ul id="1d6cfb3e-9058-8006-b2d4-d4fdc3b8a542" class="bulleted-list" dir="auto"><li style="list-style-type:disc">G-코드 라인 수</li></ul><ul id="1d6cfb3e-9058-8075-9ff9-c16cfb60b0f0" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Feedrate: *.nc파일 상의 이동 속도</li></ul><ul id="1d6cfb3e-9058-80f1-b994-e7e44ba6b8a7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Unit/min.: 가공 중 실제 이동 속도</li></ul><ul id="1d6cfb3e-9058-80c3-ae28-ff583f57d746" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Unit/Rev.: 가공 과정 중 실제 회전 속도</li></ul><ul id="1d6cfb3e-9058-80a4-9cf4-f8af3950c7f1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">RPM: 스핀들의 분당 회전 수</li></ul></div></div><div id="1d6cfb3e-9058-805b-906e-e17abf470a7f" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-80c0-8ddd-d76a71eddd90" style="width:25%" class="column" data-notion-column-ratio="0.25" dir="auto"><figure id="1bbcfb3e-9058-81f4-9e06-dff90be86a90" class="image" data-notion-image="../../images/mai-ui2/23f1bbfe-37a5-4a6d-95f5-fd4f8453c643-8292ef76cc.webp" dir="ltr"><a href="../../images/mai-ui2/23f1bbfe-37a5-4a6d-95f5-fd4f8453c643-8292ef76cc.webp"><img style="width:467.49452154857556px" src="../../images/mai-ui2/23f1bbfe-37a5-4a6d-95f5-fd4f8453c643-8292ef76cc.webp"/></a></figure></div><div id="1d6cfb3e-9058-8030-85ac-e4ae6ad6e301" style="width:75%" class="column" data-notion-column-ratio="0.75" dir="auto"><ul id="1bbcfb3e-9058-817a-9d67-ee95aa6472f7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Tool #: 현재 스핀들에 장착되어 있는 공구 번호<br/></li></ul><ul id="1d6cfb3e-9058-8038-8b2b-e792d1cdef17" class="bulleted-list" dir="auto"><li style="list-style-type:disc">가공 경과 시간<br/></li></ul><ul id="1d6cfb3e-9058-8043-aa0b-da202b2ff813" class="bulleted-list" dir="auto"><li style="list-style-type:disc">E- stop: 긴급 정지 버튼</li></ul></div></div><p id="1bbcfb3e-9058-81f2-ae99-e48cd6915050" class="" dir="auto">
+</p><ul id="1bbcfb3e-9058-8111-9ece-f5f2f73a8c82" class="bulleted-list" dir="auto"><li style="list-style-type:disc">에러 메시지, 가공 진행 상황 관련 메시지 등 여러 종류의 메시지가 뜹니다. <figure id="1bbcfb3e-9058-8183-bbd1-c3bc5a5a0c66" class="image" style="text-align:left" data-notion-image="../../images/mai-ui2/untitled-28-282928d91d.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-28-282928d91d.webp"><img style="width:576px" src="../../images/mai-ui2/untitled-28-282928d91d.webp"/></a><figcaption>메시지 창</figcaption></figure></li></ul><p id="1bbcfb3e-9058-8151-91cf-de58b66a29ec" class="" dir="auto">
+</p><hr id="1bbcfb3e-9058-8165-9b0d-ef94ae71f2c5" dir="auto"/><p id="1bbcfb3e-9058-8165-b6ba-cff80a565f5b" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81a8-9b67-f64d091d4d4a" class="image" data-notion-image="../../images/mai-ui2/image-50-f9552b3110.webp" dir="ltr"><a href="../../images/mai-ui2/image-50-f9552b3110.webp"><img style="width:834.3229370117188px" src="../../images/mai-ui2/image-50-f9552b3110.webp"/></a></figure><p id="1bbcfb3e-9058-815b-8e30-f8c3ae30eaf8" class="" dir="auto">
+</p><div id="1d6cfb3e-9058-80d0-88de-f4a0b88c9981" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-804c-b83a-c8b6cfedea42" style="width:12.5%" class="column" data-notion-column-ratio="0.125" dir="auto"><figure id="1bbcfb3e-9058-8101-b0fc-cfdcaef5c635" class="image" data-notion-image="../../images/mai-ui2/untitled-29-f179cfdccf.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-29-f179cfdccf.webp"><img style="width:85.046875px" src="../../images/mai-ui2/untitled-29-f179cfdccf.webp"/></a><figcaption>경고</figcaption></figure></div><div id="1d6cfb3e-9058-8047-a533-e0ebddbd2a99" style="width:87.5%" class="column" data-notion-column-ratio="0.875" dir="auto"><p id="1d6cfb3e-9058-806e-9bab-d4e6f9c7c8bc" class="" dir="auto">
+</p><ul id="1bbcfb3e-9058-816d-ab1d-d5e2b9ed1bc7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">기계에 문제 발생 시 경고 아이콘이 점멸합니다.</li></ul></div></div><div id="1d6cfb3e-9058-80b8-88bd-c42ccf3eef05" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-80b0-a0db-c618193ff692" style="width:12.5%" class="column" data-notion-column-ratio="0.125" dir="auto"><figure id="1bbcfb3e-9058-81e2-9514-ff8947882072" class="image" data-notion-image="../../images/mai-ui2/untitled-30-332044990d.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-30-332044990d.webp"><img style="width:80.09375px" src="../../images/mai-ui2/untitled-30-332044990d.webp"/></a><figcaption>서보 모터</figcaption></figure></div><div id="1d6cfb3e-9058-808a-8d69-f8a63dea59a0" style="width:87.5%" class="column" data-notion-column-ratio="0.875" dir="auto"><p id="1d6cfb3e-9058-80de-a4dc-f60a2434fc8f" class="" dir="auto">
+</p><ul id="1bbcfb3e-9058-810f-8017-eac06cf39bc6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">서보 모터에 문제 발생 시 아이콘이 점멸합니다. </li></ul></div></div><div id="1d6cfb3e-9058-8034-8182-ddcfe37d0ddd" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-800b-baf1-ca9fe681cd08" style="width:12.5%" class="column" data-notion-column-ratio="0.125" dir="auto"><figure id="1bbcfb3e-9058-8186-83b4-cd728d809c70" class="image" data-notion-image="../../images/mai-ui2/untitled-31-66f3a1e361.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-31-66f3a1e361.webp"><img style="width:85.0625px" src="../../images/mai-ui2/untitled-31-66f3a1e361.webp"/></a><figcaption>스핀들</figcaption></figure></div><div id="1d6cfb3e-9058-8087-a478-e6741d535b89" style="width:87.5%" class="column" data-notion-column-ratio="0.875" dir="auto"><ul id="1bbcfb3e-9058-81f3-9a79-fa1b4958a81e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">스핀들에 문제 발생 시 아이콘이 점멸합니다. </li></ul></div></div><div id="1d6cfb3e-9058-80b4-9890-ca377903a95f" class="column-list" data-notion-column-list="" dir="auto"><div id="1d6cfb3e-9058-8048-a3ae-c1f3faa73ccd" style="width:12.5%" class="column" data-notion-column-ratio="0.125" dir="auto"><figure id="1bbcfb3e-9058-817f-97b5-da97c44e3adb" class="image" data-notion-image="../../images/mai-ui2/untitled-32-5b4167594c.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-32-5b4167594c.webp"><img style="width:56.04166793823242px" src="../../images/mai-ui2/untitled-32-5b4167594c.webp"/></a><figcaption>공기압</figcaption></figure></div><div id="1d6cfb3e-9058-8058-9b67-c6b36c95c933" style="width:87.5%" class="column" data-notion-column-ratio="0.875" dir="auto"><ul id="1bbcfb3e-9058-8118-911a-cc1bd64f8c97" class="bulleted-list" dir="auto"><li style="list-style-type:disc">공기압이 0.5 Mph 보다 낮을 때 나타납니다. (에어 컴프레서를 확인하세요)</li></ul></div></div><hr id="1bbcfb3e-9058-814c-9dfe-e84fff24b8f4" dir="auto"/><figure id="1bbcfb3e-9058-8173-bdc5-f236e0b75559" class="image" data-notion-image="../../images/mai-ui2/image-51-5d8436546e.webp" dir="ltr"><a href="../../images/mai-ui2/image-51-5d8436546e.webp"><img style="width:834.3125px" src="../../images/mai-ui2/image-51-5d8436546e.webp"/></a></figure><p id="1bbcfb3e-9058-817d-9f02-d55b69760116" class="" dir="auto">
+</p><div id="1bbcfb3e-9058-81bd-9865-da1f179cd36b" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-8112-b50d-c22e75cab591" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-8130-88d7-cab6f5e5cf4d" class="image" data-notion-image="../../images/mai-ui2/icon-vaccum-359ae0d1f6.webp" dir="ltr"><a href="../../images/mai-ui2/icon-vaccum-359ae0d1f6.webp"><img style="width:120px" src="../../images/mai-ui2/icon-vaccum-359ae0d1f6.webp"/></a><figcaption>집진기 끔/켬</figcaption></figure><p id="1bbcfb3e-9058-81fa-a624-cd212d71a89a" class="" dir="auto">집진기가 작동 중 </p><p id="1cbcfb3e-9058-806c-9f18-c2e085636457" class="" dir="auto">
+</p><p id="1d6cfb3e-9058-8095-abfc-ca753644dff1" class="" dir="auto">
+</p><p id="1cbcfb3e-9058-8042-9dc9-fefb4f18af40" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-8109-8a50-e7b2e3a7ea05" class="image" data-notion-image="../../images/mai-ui2/untitled-33-10163ed02e.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-33-10163ed02e.webp"><img style="width:143.59375px" src="../../images/mai-ui2/untitled-33-10163ed02e.webp"/></a><figcaption>AI 캘리브레이션</figcaption></figure><p id="1bbcfb3e-9058-81d1-bb87-f695c8f52ba3" class="" dir="auto">AI 캘리브레이션 진행 중</p><p id="1d6cfb3e-9058-800b-b912-f51acf6e2cd5" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81c8-9973-fe11fb6d0f56" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81d1-93ed-fbe3a5834869" class="image" data-notion-image="../../images/mai-ui2/untitled-34-c7f232b0f6.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-34-c7f232b0f6.webp"><img style="width:136.53125px" src="../../images/mai-ui2/untitled-34-c7f232b0f6.webp"/></a><figcaption>M-코드 모드.</figcaption></figure><p id="1bbcfb3e-9058-818f-bb8c-e5252edfa2f9" class="" dir="auto">M-코드 과정 중에 표시됩니다. 이 사인이 보인다면 아무것도 클릭하지 마세요.</p></div><div id="1bbcfb3e-9058-81b6-b804-fd93283232c0" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-8128-a1ec-e83e83f2ada4" class="image" data-notion-image="../../images/mai-ui2/icon-air-blast-3e18494cfc.webp" dir="ltr"><a href="../../images/mai-ui2/icon-air-blast-3e18494cfc.webp"><img style="width:144px" src="../../images/mai-ui2/icon-air-blast-3e18494cfc.webp"/></a><figcaption>공기 분사 끔/켬</figcaption></figure><p id="1bbcfb3e-9058-81d2-9e5b-c01680d27259" class="" dir="auto">공기 분사 중</p><p id="1d6cfb3e-9058-8071-b9bc-f026cc042acc" class="" dir="auto">
+</p><p id="1cbcfb3e-9058-80e6-9fbb-dc24736aa98d" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81af-aa23-f9681311de1f" class="image" data-notion-image="../../images/mai-ui2/untitled-35-52e8f33cbe.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-35-52e8f33cbe.webp"><img style="width:108.578125px" src="../../images/mai-ui2/untitled-35-52e8f33cbe.webp"/></a><figcaption>안전 모드</figcaption></figure><p id="1bbcfb3e-9058-8155-ab00-eebf232c42cb" class="" dir="auto">안전 모드 활성화 중</p><p id="1bbcfb3e-9058-81db-8f88-c1df08190a9d" class="" dir="auto">
+</p><p id="1e0cfb3e-9058-80aa-9c70-cc5e32d49044" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-8161-a2ae-c0e5f200356f" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-819d-82b0-e470eb1c41da" class="image" data-notion-image="../../images/mai-ui2/untitled-36-76460a8f71.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-36-76460a8f71.webp"><img style="width:108.5625px" src="../../images/mai-ui2/untitled-36-76460a8f71.webp"/></a><figcaption>문 열림</figcaption></figure><p id="1bbcfb3e-9058-81fa-9b49-eeb5402d3360" class="" dir="auto">문이 열려있는 동안 표시됩니다. </p><p id="1bccfb3e-9058-8082-8799-e87dd86de4d5" class="" dir="auto">
+</p></div><div id="1bbcfb3e-9058-81ea-94df-e83ff0c18cde" style="width:96.875%" class="column" data-notion-column-ratio="0.96875" dir="auto"><figure id="1bbcfb3e-9058-818c-b030-e40cc1948206" class="image" data-notion-image="../../images/mai-ui2/icon-pump-73522e9419.webp" dir="ltr"><a href="../../images/mai-ui2/icon-pump-73522e9419.webp"><img style="width:132px" src="../../images/mai-ui2/icon-pump-73522e9419.webp"/></a><figcaption>오일 펌프 끔/켬</figcaption></figure><p id="1bbcfb3e-9058-8197-a063-e76999fed230" class="" dir="auto">펌프가 작동 중</p><p id="1cbcfb3e-9058-808c-ba0e-c9badbe08ee9" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-816b-b551-deeeb1cf409b" class="image" data-notion-image="../../images/mai-ui2/untitled-37-56ef889b08.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-37-56ef889b08.webp"><img style="width:132.28125px" src="../../images/mai-ui2/untitled-37-56ef889b08.webp"/></a><figcaption>가공 모드</figcaption></figure><p id="1bbcfb3e-9058-816b-9b6c-ed820f2b65ab" class="" dir="auto">가공 과정 중. 가공 중에는 정지 버튼 외에는 작동하지 않습니다.</p><p id="1d6cfb3e-9058-80ce-a386-e6908dcdd848" class="" dir="auto"> </p><figure id="1bbcfb3e-9058-816c-a687-eb4f8b11f8b3" class="image" data-notion-image="../../images/mai-ui2/untitled-38-199e508045.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-38-199e508045.webp"><img style="width:104.578125px" src="../../images/mai-ui2/untitled-38-199e508045.webp"/></a><figcaption>전원 끄기</figcaption></figure><p id="1bbcfb3e-9058-8144-b7d2-e8bfabcba396" class="" dir="auto">종료 버튼입니다. </p></div><div id="1bbcfb3e-9058-818e-92f5-d7ad4b0462a6" style="width:99.99999999999997%" class="column" data-notion-column-ratio="0.9999999999999998" dir="auto"><figure id="1bbcfb3e-9058-8185-b152-d5615db702a3" class="image" data-notion-image="../../images/mai-ui2/icon-tool-touch-v2-ce14c46235.webp" dir="ltr"><a href="../../images/mai-ui2/icon-tool-touch-v2-ce14c46235.webp"><img style="width:144px" src="../../images/mai-ui2/icon-tool-touch-v2-ce14c46235.webp"/></a><figcaption>공구 터치센서 접촉</figcaption></figure><p id="1bbcfb3e-9058-8113-a3e4-da33e9be8f31" class="" dir="auto">터치 센서가 인식된 경우</p><p id="1d6cfb3e-9058-8088-8a60-d15a5c4396e8" class="" dir="auto">
+</p><p id="1cbcfb3e-9058-8035-894e-d03d54aa54c2" class="" dir="auto">
+</p><p id="1cbcfb3e-9058-801e-b39f-ff8a43c33123" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81b7-b09c-c618afc7a824" class="image" data-notion-image="../../images/mai-ui2/untitled-39-d2bafdf21d.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-39-d2bafdf21d.webp"><img style="width:143.578125px" src="../../images/mai-ui2/untitled-39-d2bafdf21d.webp"/></a><figcaption>스핀들 작동중</figcaption></figure><p id="1bbcfb3e-9058-81f0-82e4-d3835fafc3c9" class="" dir="auto">스핀들 작동 중</p><p id="1bbcfb3e-9058-8163-8c51-ff1311b726bb" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81b1-a560-da61e253be80" class="" dir="auto">
+</p></div></div><p id="1bbcfb3e-9058-8158-bf6a-c2216449e4c7" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81fe-a612-d8dc88030f6c" class="" dir="auto">
+</p><hr id="1bbcfb3e-9058-8161-b2ba-cf5c6ae85c98" dir="auto"/><div id="1bbcfb3e-9058-8187-8011-cd96bb8d11ef" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-8134-b9f4-cd0e57b9b03b" style="width:50%" class="column" data-notion-column-ratio="0.5" dir="auto"><p id="1bbcfb3e-9058-8182-bc78-d4de781014f3" class="" dir="auto"> </p><p id="1bbcfb3e-9058-81da-9b2a-dbe5501691ce" class="" dir="auto"> <div class="indented"><p id="1d6cfb3e-9058-805c-aa4b-f8ddcf878eda" class="" dir="auto"><a href="5%201%20%EB%A9%94%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%201bbcfb3e9058804196bfc632d597cdb5.html" data-notion-page-id="1d5cfb3e-9058-8068-a11d-dc1fd791496c" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96">5.1.b.1. 공구 수명 설정 창</a> </p></div></p><p id="1bbcfb3e-9058-8101-bbc6-e47f90e700bf" class="" dir="auto"> </p></div></div></div></article><script src="mai-ui2-document-i18n.js?v=20260923n"></script></body></html>

@@ -1,0 +1,811 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>5.3.b.1. AI 프리밀 캘리브레이션 V1.2</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><style>
+    html, body { background: transparent; }
+    @media only screen { body { margin: 0; max-width: none; } }
+    .page-body { padding: 0; }
+    @media (max-width: 720px) {
+      .column-list { flex-direction: column; gap: 0; }
+      .column[style] { width: 100% !important; }
+    }
+  </style></head><body><article class="page sans mai-ui2-import"><div class="page-body"><p id="211cfb3e-9058-80e7-b243-f5a1a596879d" class="" dir="auto">
+</p><div id="1bbcfb3e-9058-8112-9f31-c56a09419e58" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-81ed-bbbf-e2090d16e6ee" style="width:81.25%" class="column" data-notion-column-ratio="0.8125" dir="auto"><p id="1bccfb3e-9058-80ec-8391-c7726f90622d" class="" dir="auto">
+</p><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1cbcfb3e-9058-801d-a28e-c23d1c60f3bb" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1cbcfb3e-9058-80d2-ac5a-e69cbcb198e5" class="" dir="auto"><mark class="highlight-purple" data-notion-highlight="purple">GenCore°</mark>의 <mark class="highlight-orange" data-notion-highlight="orange">M AI°</mark> 컨트롤 프로그램은 직관적으로 디자인 되어, 이해하기 쉬운 사용자 인터페이스가 적용되어 있습니다. 화면에 나오는 지시대로 진행하십시오.</p></div></aside></div><div id="1bbcfb3e-9058-81ed-832a-ca92a875c6fa" style="width:18.750000000000004%" class="column" data-notion-column-ratio="0.18750000000000003" dir="auto"><div dir="auto"><figure id="1bacfb3e-9058-8086-8d51-e23d262ece8f" class="image" data-notion-image="../../images/mai-ui2/qr-code-ai-premill-calib-25-03-18-c9fcf6b80a.webp" dir="ltr"><a href="../../images/mai-ui2/qr-code-ai-premill-calib-25-03-18-c9fcf6b80a.webp"><img style="width:173.5px" src="../../images/mai-ui2/qr-code-ai-premill-calib-25-03-18-c9fcf6b80a.webp"/></a><figcaption>AI Premill calibration v1.2 video manual</figcaption></figure></div></div></div><div id="1d7cfb3e-9058-80c0-8b02-dd79d6cfc1a0" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80a0-b452-ecec40902169" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8192-bc9e-cdc7eac4102f" class="image" data-notion-image="../../images/mai-ui2/image-20-4d0b0e824e.webp" dir="ltr"><a href="../../images/mai-ui2/image-20-4d0b0e824e.webp"><img style="width:455.09375px" src="../../images/mai-ui2/image-20-4d0b0e824e.webp"/></a></figure></div><div id="1d7cfb3e-9058-8026-a036-d1cd02163c16" style="width:31.249999999999993%" class="column" data-notion-column-ratio="0.31249999999999994" dir="auto"><ol type="1" id="1bbcfb3e-9058-81bd-8bfb-c7765f597479" class="numbered-list" start="1" dir="auto"><li>현재 사용중인 CAM 소프트웨어를 선택하세요</li></ol><ol type="1" id="1bbcfb3e-9058-8133-b89a-fcd3701020b5" class="numbered-list" start="2" dir="auto"><li>캘리브레이션 하고싶은 프리밀 지그를 선택하세요. </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8055-9b5f-d28acd531cbd" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-8091-9fd6-fdd92ebd8b86" class="" dir="auto">1대의 M AI° 기계로   5개의 프리밀 지그를    등록할 수 있습니다. </p></div></aside><p id="1d7cfb3e-9058-8055-89d4-d1de01bdd150" class="" dir="auto"><div class="indented"><p id="1bbcfb3e-9058-812f-91f5-d050c3fb412e" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-8141-adbd-fdea64e0d755" class="" dir="auto">
+</p></div></p></div></div><div id="1d7cfb3e-9058-80e3-b01d-c6e75f8cef8e" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-8077-b4d8-edace54d7858" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-81b9-a151-dc3559554c93" class="image" data-notion-image="../../images/mai-ui2/image-11-198eedd1ef.webp" dir="ltr"><a href="../../images/mai-ui2/image-11-198eedd1ef.webp"><img style="width:455.109375px" src="../../images/mai-ui2/image-11-198eedd1ef.webp"/></a></figure></div><div id="1d7cfb3e-9058-8068-a1f9-f99c261fc32d" style="width:31.250000000000007%" class="column" data-notion-column-ratio="0.31250000000000006" dir="auto"><ol type="1" id="1bbcfb3e-9058-8154-94eb-f9646343df64" class="numbered-list" start="3" dir="auto"><li>화면에 나오는 대로, 3번과 8번 슬롯에 Ti.Pre-mill이 장착된 프리밀 지그를 기계에 체결합니다. “Next”를 눌러 다음 단계로 넘어갑니다. </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-80c9-bcbd-fe60e26381af" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-80ed-bc55-d05eacd1f2f6" class="" dir="auto">A축과 B축을 사용자에 맞게 회전시키면 편하게 장착하실 수 있습니다. </p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-809b-9c4a-d8507e8a4742" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-800e-8548-e3866aefb9f4" class="" dir="auto">AI 캘리브레이션은 약한 전류를 흘려보내 진행됩니다. 따라서 캘리브레이션 핀이 닿는(초록 부분)에 물, 먼지 등의 이물질이 없도록 깨끗이 유지하세요. </p></div></aside></div></div><div id="1d7cfb3e-9058-8029-a642-c6f269e120c3" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-8003-b3bc-fb132b294263" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-818e-993d-f8fe25aeda16" class="image" data-notion-image="../../images/mai-ui2/image-12-234aceddd0.webp" dir="ltr"><a href="../../images/mai-ui2/image-12-234aceddd0.webp"><img style="width:455.109375px" src="../../images/mai-ui2/image-12-234aceddd0.webp"/></a></figure><p id="28dcfb3e-9058-8053-8e6e-ff1f4246fa5d" class="" dir="auto">
+</p></div><div id="1d7cfb3e-9058-8099-976e-c581111f3ab2" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-8160-b11b-f7860a5be866" class="numbered-list" start="4" dir="auto"><li>화면 속 지시사항을 따라, 캘리브레이션 핀(A4.0C)을 콜렛에 삽입하세요. 삽입 후 “Next” 버튼을 눌러 다음 과정으로 넘어가세요. </li></ol><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8049-9649-d692bc8a97f1" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-80d4-a5cc-ced32e8599cb" class="" dir="auto">캘리브레이션 핀은 안전하게 보관되어야합니다. 캘리브레이션의 정확도 유지를 위해 구부러지거나 충격을 받지 않게 보관하세요.</p></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🔔" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="1d7cfb3e-9058-8020-a961-f582dc72dff1" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🔔"></span></div><div style="width:100%"><p id="1d7cfb3e-9058-8060-8d2b-e396093ce24d" class="" dir="auto">습식 가공 직후라면 호스에 남아있던 절삭유가 떨어질 수 있습니다. 캘리브레이션 커버를 반드시 착용해 주십시오.</p><figure id="1d7cfb3e-9058-8063-b723-c44c35ef5b3c" class="image" data-notion-image="../../images/mai-ui2/image-13-72368ae70a.webp" dir="ltr"><a href="../../images/mai-ui2/image-13-72368ae70a.webp"><img style="width:192px" src="../../images/mai-ui2/image-13-72368ae70a.webp"/></a></figure></div></aside><p id="1bccfb3e-9058-803d-b347-cb7333fef716" class="" dir="auto">
+</p><p id="1bccfb3e-9058-80ee-8976-e44c7b4c2884" class="" dir="auto">
+</p></div></div><div id="1d7cfb3e-9058-80fb-b894-faa1dcb82729" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-8043-b15f-d565bc640c62" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8164-ba6f-df431c00121e" class="image" data-notion-image="../../images/mai-ui2/image-21-a5dad40315.webp" dir="ltr"><a href="../../images/mai-ui2/image-21-a5dad40315.webp"><img style="width:455.109375px" src="../../images/mai-ui2/image-21-a5dad40315.webp"/></a></figure></div><div id="1d7cfb3e-9058-8063-9cfa-c1dc03d4cc29" style="width:31.249999999999993%" class="column" data-notion-column-ratio="0.31249999999999994" dir="auto"><ol type="1" id="1bccfb3e-9058-8017-9c93-e2e2e78af1a7" class="numbered-list" start="5" dir="auto"><li>“Checking for cleaning” 버튼을 누른 후, 캘리브레이션 핀과 초록 부분에 전류가 잘 흐르는지 확인하세요.<br/></li></ol><ol type="1" id="1bbcfb3e-9058-815a-affc-eee654377f8b" class="numbered-list" start="6" dir="auto"><li>“Start” 버튼을 눌러 캘리브레이션을 진행하세요.<br/></li></ol><ol type="1" id="1bbcfb3e-9058-818a-818e-eaa4331deb30" class="numbered-list" start="7" dir="auto"><li>캘리브레이션이 끝나면  “Save work offset” 을 눌러  “work offset” 창을 띄웁니다. 그 후 수치를 저장하세요</li></ol></div></div><div id="1d7cfb3e-9058-8039-ba55-c2e889832f7c" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80e9-bbf8-dc323e29840b" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-81db-9038-d30be231120c" class="image" data-notion-image="../../images/mai-ui2/image-22-2d35daf8c4.webp" dir="ltr"><a href="../../images/mai-ui2/image-22-2d35daf8c4.webp"><img style="width:455.109375px" src="../../images/mai-ui2/image-22-2d35daf8c4.webp"/></a></figure></div><div id="1d7cfb3e-9058-8017-8fee-d58f60ae0124" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-81e9-95fb-cd7afe40bf7b" class="numbered-list" start="8" dir="auto"><li>“Save” 버튼을 눌러 캘리브레이션으로 나온 좌표값을 저장한 뒤 적용합니다.  저장 후 “Close” 버튼을 눌러 창을 닫아주세요.</li></ol><p id="1d7cfb3e-9058-80ff-b6c0-c2d13331c9f3" class="" dir="auto">
+</p></div></div><div id="1d7cfb3e-9058-8080-ba1e-e04d6dce88cb" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-80e2-aa57-c8945283519c" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8196-b89c-f35725983656" class="image" data-notion-image="../../images/mai-ui2/image-23-33ffa50cc3.webp" dir="ltr"><a href="../../images/mai-ui2/image-23-33ffa50cc3.webp"><img style="width:455.09375px" src="../../images/mai-ui2/image-23-33ffa50cc3.webp"/></a></figure></div><div id="1d7cfb3e-9058-80e7-82fa-d5dbf2642921" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-8114-b7c7-cece9f907b72" class="numbered-list" start="9" dir="auto"><li>“Next” 버튼을 눌러 다음 단계로 진행합니다. </li></ol></div></div><div id="1d7cfb3e-9058-80cc-b328-ccebde39286e" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-8048-b414-ed5320f390eb" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-81c4-aeb4-fd2018522ac9" class="image" data-notion-image="../../images/mai-ui2/image-17-97a5831716.webp" dir="ltr"><a href="../../images/mai-ui2/image-17-97a5831716.webp"><img style="width:455.109375px" src="../../images/mai-ui2/image-17-97a5831716.webp"/></a></figure></div><div id="1d7cfb3e-9058-807e-9847-ed905d7d9d13" style="width:31.249999999999993%" class="column" data-notion-column-ratio="0.31249999999999994" dir="auto"><ol type="1" id="1bbcfb3e-9058-81b9-a30b-c2a59fc3e154" class="numbered-list numbered-list-digits-2" start="10" dir="auto"><li>캘리브레이션 핀을 화면에 나오는 안내에 따라 제거한 후 “Next” 버튼을 눌러 다음 단계로 진행합니다. </li></ol></div></div><div id="1d7cfb3e-9058-8007-9590-fc853f5933fb" class="column-list" data-notion-column-list="" dir="auto"><div id="1d7cfb3e-9058-804b-915b-e2be4093a863" style="width:68.75%" class="column" data-notion-column-ratio="0.6875" dir="auto"><figure id="1bbcfb3e-9058-8130-ab6b-fa2d7ce13a0b" class="image" data-notion-image="../../images/mai-ui2/image-18-f5d491427a.webp" dir="ltr"><a href="../../images/mai-ui2/image-18-f5d491427a.webp"><img style="width:455.109375px" src="../../images/mai-ui2/image-18-f5d491427a.webp"/></a></figure></div><div id="1d7cfb3e-9058-80b7-9898-ff7d90bbc5f7" style="width:31.25%" class="column" data-notion-column-ratio="0.3125" dir="auto"><ol type="1" id="1bbcfb3e-9058-812a-bb71-fba683231df4" class="numbered-list numbered-list-digits-2" start="11" dir="auto"><li>모든 과정이 끝나면 “Setup screen” 버튼을 눌러 캘리브레이션을 종료할 수 있습니다. <p id="1bbcfb3e-9058-8102-b7ce-ca9e765a890e" class="" dir="auto">”Save work offset” 버튼을 눌러 좌표값을 다시 확인하거나 저장할 수 있습니다. </p></li></ol></div></div><p id="1bbcfb3e-9058-8138-bcd5-d90b56222967" class="" dir="auto">
+</p><hr id="1bbcfb3e-9058-8169-ae1c-cfec27f36c88" dir="auto"/></div></article><script src="mai-ui2-document-i18n.js?v=20260923n"></script></body></html>

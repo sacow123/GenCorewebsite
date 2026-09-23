@@ -1,0 +1,828 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>5.3. 셋업 페이지</title><meta name="data-notion-page-icon" content="🛞"/><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%9B%9E%3C%2Ftext%3E%3C%2Fsvg%3E"/><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><style>
+    html, body { background: transparent; }
+    @media only screen { body { margin: 0; max-width: none; } }
+    .page-body { padding: 0; }
+    @media (max-width: 720px) {
+      .column-list { flex-direction: column; gap: 0; }
+      .column[style] { width: 100% !important; }
+    }
+  </style></head><body><article class="page sans mai-ui2-import"><div class="page-body"><figure id="1bbcfb3e-9058-81d8-b6b2-ffa4c33c100b" class="image" data-notion-image="../../images/mai-ui2/image-24-d41c59eba2.webp" dir="ltr"><a href="../../images/mai-ui2/image-24-d41c59eba2.webp"><img style="width:834.3229370117188px" src="../../images/mai-ui2/image-24-d41c59eba2.webp"/></a></figure><p id="1bbcfb3e-9058-8117-9247-d85df6401570" class="" dir="auto">
+</p><div id="1bbcfb3e-9058-8197-b131-f484d27ec7fc" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-81b4-ad8a-e54cc3b63cc4" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-810e-bc6b-c492639a530c" class="image" data-notion-image="../../images/mai-ui2/untitled-b5703ac068.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-b5703ac068.webp"><img style="width:240px" src="../../images/mai-ui2/untitled-b5703ac068.webp"/></a></figure><p id="1bbcfb3e-9058-81e1-9038-fe6bd3a52665" class="" dir="auto"><a href="5%203%20a%20AI%20%EB%94%94%EC%8A%A4%ED%81%AC%20%EC%BA%98%EB%A6%AC%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%85%98%201bbcfb3e90588007ac1cec65f847f1ee.html" data-notion-page-id="1bbcfb3e-9058-8007-ac1c-ec65f847f1ee" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/discai-94db700c95.webp"/>5.3.a. AI 디스크 캘리브레이션</a> 페이지를 엽니다.</p><p id="1bbcfb3e-9058-8129-a4c5-f1cf9b3575c2" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81da-83f2-cab948c13a0d" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81aa-a934-dce08c7bfe1b" class="image" data-notion-image="../../images/mai-ui2/untitled-1-6ed13dd8aa.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-1-6ed13dd8aa.webp"><img style="width:288px" src="../../images/mai-ui2/untitled-1-6ed13dd8aa.webp"/></a></figure><p id="1bbcfb3e-9058-81c1-9ae2-e03fbf7474bd" class="" dir="auto">  <a href="5%203%20d%20AI%20%ED%88%B4%ED%8F%AC%EC%BC%93%20%EC%BA%98%EB%A6%AC%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%85%98%201bbcfb3e90588046acbfde510e888f7f.html" data-notion-page-id="1bbcfb3e-9058-8046-acbf-de510e888f7f" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/autopocket-1ecfd563b5.webp"/> 5.3.d. AI 툴포켓 캘리브레이션</a> 페이지를 엽니다.</p></div><div id="1bbcfb3e-9058-8143-a138-d02a4cf38792" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-8170-a670-c6b5a9543dfe" class="image" data-notion-image="../../images/mai-ui2/aa85dd39-864a-460b-b6d8-ac67733c9976-5a72c7d154.webp" dir="ltr"><a href="../../images/mai-ui2/aa85dd39-864a-460b-b6d8-ac67733c9976-5a72c7d154.webp"><img style="width:288px" src="../../images/mai-ui2/aa85dd39-864a-460b-b6d8-ac67733c9976-5a72c7d154.webp"/></a></figure><p id="1bbcfb3e-9058-8129-aae1-c45809aaa520" class="" dir="auto"><a href="5%203%20b%201%20AI%20%ED%94%84%EB%A6%AC%EB%B0%80%20%EC%BA%98%EB%A6%AC%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%85%98%20V1%202%201bbcfb3e90588012be05f98e0ad8f3c7.html" data-notion-page-id="1bbcfb3e-9058-8012-be05-f98e0ad8f3c7" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/premillai-20a5d6f13c.webp"/>5.3.b.1. AI 프리밀 캘리브레이션 V1.2</a> 페이지를 엽니다. </p><p id="1bccfb3e-9058-8015-bebe-cecc5b94ea4d" class="" dir="auto">
+</p><p id="1bccfb3e-9058-8057-81f6-eb5f1b9b03c0" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81d3-b91e-e9c2c4283e0b" class="" dir="auto">
+</p></div><div id="1bbcfb3e-9058-81b6-b918-e859815c445d" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-81e0-8d01-c735246a4388" class="image" data-notion-image="../../images/mai-ui2/untitled-2-a062d1b7bb.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-2-a062d1b7bb.webp"><img style="width:240px" src="../../images/mai-ui2/untitled-2-a062d1b7bb.webp"/></a></figure><p id="1bbcfb3e-9058-8154-99eb-d8ebec1e218f" class="" dir="auto"><a href="5%203%20c%20%EB%A7%A4%EB%89%B4%EC%96%BC%20%EB%94%94%EC%8A%A4%ED%81%AC%20%EC%BA%98%EB%A6%AC%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%85%98%201bbcfb3e905880f380e8eaac233f5dd1.html" data-notion-page-id="1bbcfb3e-9058-80f3-80e8-eaac233f5dd1" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/manualdisc-a8a775db9e.webp"/>5.3.c. 매뉴얼 디스크 캘리브레이션</a> 페이지를 엽니다. </p><p id="1cbcfb3e-9058-804f-b5f1-fb5caf245f42" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81eb-a3b7-f97961ce43f3" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81d9-8184-e2764f8ce439" class="image" data-notion-image="../../images/mai-ui2/untitled-3-ca3d35b79b.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-3-ca3d35b79b.webp"><img style="width:288px" src="../../images/mai-ui2/untitled-3-ca3d35b79b.webp"/></a></figure><p id="1bbcfb3e-9058-819e-a08f-e6f8855919c1" class="" dir="auto"><a href="5%203%20e%20%EB%A7%A4%EB%89%B4%EC%96%BC%20%ED%88%B4%ED%8F%AC%EC%BC%93%20%EC%BA%98%EB%A6%AC%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%85%98%201bbcfb3e90588036a4afe83051500ff4.html" data-notion-page-id="1bbcfb3e-9058-8036-a4af-e83051500ff4" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/manualpocket-6b81564383.webp"/>5.3.e. 매뉴얼 툴포켓 캘리브레이션</a> 페이지를 엽니다. </p></div></div><hr id="1bbcfb3e-9058-817f-8d2e-ebfef04307f8" dir="auto"/><figure id="1bbcfb3e-9058-8187-b23c-f395e99d9c8c" class="image" data-notion-image="../../images/mai-ui2/image-25-2c04857c73.webp" dir="ltr"><a href="../../images/mai-ui2/image-25-2c04857c73.webp"><img style="width:834.3229370117188px" src="../../images/mai-ui2/image-25-2c04857c73.webp"/></a></figure><p id="1bbcfb3e-9058-8174-bc03-f6750d2ae276" class="" dir="auto">
+</p><div id="1bbcfb3e-9058-8154-b6cd-ec414204c903" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-8144-8707-dc8c2ae2228d" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-8136-9fa5-ef3b69406bd4" class="image" data-notion-image="../../images/mai-ui2/untitled-4-cfc50d79b2.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-4-cfc50d79b2.webp"><img style="width:336px" src="../../images/mai-ui2/untitled-4-cfc50d79b2.webp"/></a><figcaption>가공실 청소</figcaption></figure><p id="1bbcfb3e-9058-8127-9900-ded0271c1a5d" class="" dir="auto"> <a href="5%203%20f%20%EA%B0%80%EA%B3%B5%EB%A3%B8%20%EC%B2%AD%EC%86%8C%201bbcfb3e905880dcaa3bdad7af7c6560.html" data-notion-page-id="1bbcfb3e-9058-80dc-aa3b-dad7af7c6560" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/millringroomclean-306972d096.webp"/>5.3.f. 가공룸 청소</a> 페이지를 엽니다.<br/>가공룸을 청소하기 편하게 내부 기구의 위치를 이동시킵니다.</p><p id="1d7cfb3e-9058-80ef-b336-f22aa9c5d057" class="" dir="auto">
+</p><p id="1d7cfb3e-9058-8065-9805-e3df89964460" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81e0-8233-fb0668ad77b2" class="image" data-notion-image="../../images/mai-ui2/untitled-5-c04d78b1ad.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-5-c04d78b1ad.webp"><img style="width:288px" src="../../images/mai-ui2/untitled-5-c04d78b1ad.webp"/></a><figcaption>원격 지원 프로그램</figcaption></figure><p id="1bbcfb3e-9058-8119-9b61-e88cb2c91120" class="" dir="auto">원격 지원이 필요한 경우, 팀뷰어를 실행합니다. ID를 알려주십시오.</p><details id="1d7cfb3e-9058-80d0-ab95-e602c4476075" open="" class="toggle" dir="auto"><summary>Tip</summary><div class="indented"><figure id="1d7cfb3e-9058-80f3-aeed-cff29dd6e713" class="image" data-notion-image="../../images/mai-ui2/open-teamviewer-d73a3a6623.webp" dir="ltr"><a href="../../images/mai-ui2/open-teamviewer-d73a3a6623.webp"><img style="width:256px" src="../../images/mai-ui2/open-teamviewer-d73a3a6623.webp"/></a></figure></div></details></div><div id="1bbcfb3e-9058-813c-b716-cddf516c7e8d" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-81a6-b348-cd64ba76c6ed" class="image" data-notion-image="../../images/mai-ui2/untitled-6-8458d00c1f.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-6-8458d00c1f.webp"><img style="width:288px" src="../../images/mai-ui2/untitled-6-8458d00c1f.webp"/></a><figcaption>청소 가이드</figcaption></figure><p id="1bbcfb3e-9058-8152-ad5c-f5f2d05ccaa9" class="" dir="auto"><a href="5%203%20g%20%EA%B4%80%EB%A6%AC%20%EC%A0%95%EB%B3%B4%201bbcfb3e905880118cb3e0eb44ae7f28.html" data-notion-page-id="1bbcfb3e-9058-8011-8cb3-e0eb44ae7f28" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/cleaninfo-68c940d5f0.webp"/>5.3.g. 관리 정보</a> 페이지를 엽니다. <br/>유지 관리가 필요한 부품의 청소 주기와 관리 방법 가이드 및 주의 사항 확인합니다.</p><p id="1bbcfb3e-9058-81d3-8f91-fb9935353ff1" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-812a-97bb-c26dfa142c96" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81d8-a487-d63c7116e1a0" class="image" data-notion-image="../../images/mai-ui2/untitled-7-d7f2fc1f76.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-7-d7f2fc1f76.webp"><img style="width:336px" src="../../images/mai-ui2/untitled-7-d7f2fc1f76.webp"/></a><figcaption>종료</figcaption></figure><p id="1bbcfb3e-9058-8157-8661-e7a4ff0a96c1" class="" dir="auto">컨트롤 프로그램 종료</p></div><div id="1bbcfb3e-9058-81c3-9cb0-ecec02758834" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><figure id="1bbcfb3e-9058-811c-bfb5-ed7117797d6e" class="image" data-notion-image="../../images/mai-ui2/untitled-8-b2ded19f3a.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-8-b2ded19f3a.webp"><img style="width:288px" src="../../images/mai-ui2/untitled-8-b2ded19f3a.webp"/></a><figcaption>Axis Jog</figcaption></figure><p id="1bbcfb3e-9058-81db-90ce-c2ef0d7374e6" class="" dir="auto"><a href="5%203%20h%20%EC%A1%B0%EA%B7%B8%20%EB%AA%A8%EB%93%9C%201bbcfb3e905880ac8a9ac745adfb8e80.html" data-notion-page-id="1bbcfb3e-9058-80ac-8a9a-c745adfb8e80" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/jog-9a2a0eb1e4.webp"/>5.3.h. 조그 모드</a> 페이지를 열니다. <br/>각 축의 위치를 조정해 볼 수 있습니다.</p><p id="1bbcfb3e-9058-8177-b3e9-f54c44c6f197" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-818a-97db-e005caf7b43a" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-819d-b992-f6ed7bf4c911" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81b4-a900-d15686a216db" class="image" data-notion-image="../../images/mai-ui2/untitled-9-3a4a532fe8.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-9-3a4a532fe8.webp"><img style="width:144px" src="../../images/mai-ui2/untitled-9-3a4a532fe8.webp"/></a><figcaption>Parameter &amp; I/O List</figcaption></figure><p id="1bbcfb3e-9058-81a6-b251-f753e9448d4c" class="" dir="auto"><a href="5%203%20i%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%201bbcfb3e905880418cb8cd7d23b2e9b9.html" data-notion-page-id="1bbcfb3e-9058-8041-8cb8-cd7d23b2e9b9" data-notion-space-id="8c752b3e-5d6b-4546-af9c-4f50324def96"><img class="icon" src="../../images/mai-ui2/param-047522531a.webp"/>5.3.i. 환경 설정</a> 페이지를 엽니다.</p><p id="1bbcfb3e-9058-81df-aac6-d515914118e6" class="" dir="auto">
+</p></div></div><hr id="1bbcfb3e-9058-813c-9850-e71d4f176646" dir="auto"/><figure id="1bbcfb3e-9058-81d2-b498-cbbf4d700f9a" class="image" data-notion-image="../../images/mai-ui2/image-26-df7c5d00be.webp" dir="ltr"><a href="../../images/mai-ui2/image-26-df7c5d00be.webp"><img style="width:834.3229370117188px" src="../../images/mai-ui2/image-26-df7c5d00be.webp"/></a></figure><p id="1bbcfb3e-9058-8170-9059-c00b700dd649" class="" dir="auto">
+</p><div id="1bbcfb3e-9058-817e-be6e-e614370b0ccb" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-8170-8944-c08fb46feac9" style="width:70.83333333333333%" class="column" data-notion-column-ratio="0.7083333333333333" dir="auto"><figure id="1bbcfb3e-9058-81df-a98e-c78c4d4810c0" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/untitled-10-02af84b723.webp" dir="ltr"><a href="../../images/mai-ui2/untitled-10-02af84b723.webp"><img style="width:144px" src="../../images/mai-ui2/untitled-10-02af84b723.webp"/></a><figcaption>ATC open / close</figcaption></figure><details id="1bbcfb3e-9058-8190-b861-c13968d7c2bd" open="" class="toggle" dir="auto"><summary>툴 포켓 개봉/폐쇄</summary><div class="indented"><figure id="1d5cfb3e-9058-80ef-9af9-e1e23a6a1115" class="image" data-notion-image="../../images/mai-ui2/main-page-atc-open-close-e242e3753d.webp" dir="ltr"><a href="../../images/mai-ui2/main-page-atc-open-close-e242e3753d.webp"><img style="width:139.25px" src="../../images/mai-ui2/main-page-atc-open-close-e242e3753d.webp"/></a></figure></div></details><p id="1d5cfb3e-9058-80bd-a155-d8fd7f3b2c9b" class="" dir="auto">
+</p></div><div id="1bbcfb3e-9058-8181-8b1c-d8af5e4b5593" style="width:87.5%" class="column" data-notion-column-ratio="0.875" dir="auto"><figure id="1bbcfb3e-9058-81a2-a0c8-fc752ae4c659" class="image" style="text-align:center" data-notion-image="../../images/mai-ui2/image-27-f007e53e3d.webp" dir="ltr"><a href="../../images/mai-ui2/image-27-f007e53e3d.webp"><img style="width:240px" src="../../images/mai-ui2/image-27-f007e53e3d.webp"/></a><figcaption>Collet Open/Close</figcaption></figure><details id="1bbcfb3e-9058-81cb-aa4d-dcebf367226b" open="" class="toggle" dir="auto"><summary>콜렛 개봉/폐쇄</summary><div class="indented"><figure id="1d5cfb3e-9058-80cb-b0ca-eddd8e8418ba" class="image" data-notion-image="../../images/mai-ui2/setup-page-collet-open-close-2a33882a12.webp" dir="ltr"><a href="../../images/mai-ui2/setup-page-collet-open-close-2a33882a12.webp"><img style="width:178.6041717529297px" src="../../images/mai-ui2/setup-page-collet-open-close-2a33882a12.webp"/></a></figure></div></details><p id="1bbcfb3e-9058-81cc-9b58-e38a7a542963" class="" dir="auto">
+</p><figure id="1bbcfb3e-9058-81d1-a7a5-e7df8e4711c3" class="image" data-notion-image="../../images/mai-ui2/image-28-c7ef4e1e15.webp" dir="ltr"><a href="../../images/mai-ui2/image-28-c7ef4e1e15.webp"><img style="width:336px" src="../../images/mai-ui2/image-28-c7ef4e1e15.webp"/></a><figcaption>Move forward</figcaption></figure><details id="1bbcfb3e-9058-81b5-92c4-f75c5d8a7cef" open="" class="toggle" dir="auto"><summary>스핀들이 문 방향, 앞으로, 옵니다. </summary><div class="indented"><figure id="1d5cfb3e-9058-805f-8c43-e32b8c6299f0" class="image" data-notion-image="../../images/mai-ui2/setup-page-move-forward-ae6b7aa1b3.webp" dir="ltr"><a href="../../images/mai-ui2/setup-page-move-forward-ae6b7aa1b3.webp"><img style="width:226.55209350585938px" src="../../images/mai-ui2/setup-page-move-forward-ae6b7aa1b3.webp"/></a></figure></div></details></div><div id="1bbcfb3e-9058-818d-a723-e2af3f008b7b" style="width:91.66666666666666%" class="column" data-notion-column-ratio="0.9166666666666666" dir="auto"><figure id="1bbcfb3e-9058-8155-90d1-ed84e7d3f19e" class="image" data-notion-image="../../images/mai-ui2/image-29-e68057fa83.webp" dir="ltr"><a href="../../images/mai-ui2/image-29-e68057fa83.webp"><img style="width:272.1770935058594px" src="../../images/mai-ui2/image-29-e68057fa83.webp"/></a><figcaption>Spindle test run</figcaption></figure><details id="1bbcfb3e-9058-8118-96a8-c354ddf9af06" open="" class="toggle" dir="auto"><summary>스핀들 회전 활성화/끄기</summary><div class="indented"><figure id="1d5cfb3e-9058-809c-be57-c6ebdc89f201" class="image" data-notion-image="../../images/mai-ui2/setup-page-spindle-rotate-test-6d20dd3e88.webp" dir="ltr"><a href="../../images/mai-ui2/setup-page-spindle-rotate-test-6d20dd3e88.webp"><img style="width:238.6875px" src="../../images/mai-ui2/setup-page-spindle-rotate-test-6d20dd3e88.webp"/></a></figure></div></details></div></div><div id="1bbcfb3e-9058-819e-a4a1-d9b4f0d156ac" class="column-list" data-notion-column-list="" dir="auto"><div id="1bbcfb3e-9058-8116-8320-cd92fda82866" style="width:50%" class="column" data-notion-column-ratio="0.5" dir="auto"><figure id="1bbcfb3e-9058-81c1-9c5a-fb8790654cf6" class="image" style="text-align:left" data-notion-image="../../images/mai-ui2/image-30-4c3e730a06.webp" dir="ltr"><a href="../../images/mai-ui2/image-30-4c3e730a06.webp"><img style="width:288px" src="../../images/mai-ui2/image-30-4c3e730a06.webp"/></a><figcaption>Test Vaccum / Test Coolant</figcaption></figure></div><div id="1bbcfb3e-9058-8187-8890-c978af16510f" style="width:50%" class="column" data-notion-column-ratio="0.5" dir="auto"><p id="1bbcfb3e-9058-8140-a7e0-c648074e7ac4" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-819a-9c22-c7deb8786f2f" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-818c-af37-cc3a61d1096f" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-8109-b42c-d76e436f9b73" class="" dir="auto">건식 가공 시 진공 상태 활성화/ 끄기</p><p id="1bbcfb3e-9058-81c8-8439-d04509973456" class="" dir="auto">습식 가공 시 펌프 전원 키기/끄기</p><p id="1bbcfb3e-9058-81ce-9c2b-cddf0fb3974c" class="" dir="auto">
+</p></div></div><p id="1bbcfb3e-9058-8191-81a1-efc4ed227593" class="" dir="auto">
+</p><p id="1bbcfb3e-9058-81f0-b276-ed4a675827b8" class="" dir="auto">
+</p><hr id="1bbcfb3e-9058-8142-aa65-c829c81654d0" dir="auto"/></div></article><script src="mai-ui2-document-i18n.js?v=20260923n"></script></body></html>
