@@ -26,6 +26,23 @@
 
   const ui2Menu = createVersionMenu('nav-mai-ui-2', 'M AI°_UI_2.0(구버전)', existingSubMenu);
   const ui3Menu = createVersionMenu('nav-mai-ui-3', 'M AI°_UI_3.0(신버전)', ui3SubMenu);
+
+  const addFolderSharingMenu = (versionMenu, sectionId, menuId) => {
+    const setupMenu = versionMenu.querySelector('[id^="nav-mai-setup"]');
+    const cableMenu = setupMenu?.querySelector('[id^="menu-sec-mai-cable"]');
+    if (!cableMenu) return;
+
+    const folderSharingMenu = document.createElement('div');
+    folderSharingMenu.className = 'nav-item';
+    folderSharingMenu.id = menuId;
+    folderSharingMenu.dataset.section = sectionId;
+    folderSharingMenu.innerHTML = '<span data-i18n="nav-mai-folder-sharing">📁 폴더 공유 설정</span>';
+    cableMenu.insertAdjacentElement('afterend', folderSharingMenu);
+  };
+
+  addFolderSharingMenu(ui2Menu, 'sec-mai-ui2-folder-sharing', 'menu-sec-mai-ui2-folder-sharing');
+  addFolderSharingMenu(ui3Menu, 'sec-mai-ui3-folder-sharing', 'menu-sec-mai-ui3-folder-sharing');
+
   const versionSubMenu = document.createElement('div');
   versionSubMenu.className = 'sub-menu';
   versionSubMenu.append(ui2Menu, ui3Menu);

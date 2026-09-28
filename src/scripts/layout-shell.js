@@ -3,6 +3,14 @@ const measurementToolScript = document.createElement('script');
 measurementToolScript.src = 'htmls/measurement_tool.js';
 document.head.appendChild(measurementToolScript);
 document.addEventListener("DOMContentLoaded", () => {
+  const cableMenu = document.getElementById("menu-sec-mf-cable");
+  if (cableMenu && !document.getElementById("menu-sec-mf-folder-sharing")) {
+    cableMenu.insertAdjacentHTML(
+      "afterend",
+      '<div class="nav-item" data-section="sec-mf-folder-sharing" id="menu-sec-mf-folder-sharing"><span data-i18n="nav-mf-folder-sharing">📁 폴더 공유 설정</span></div>'
+    );
+  }
+
   const headerActions = document.querySelector(".header-right");
   if (!headerActions || headerActions.querySelector(".auth-logout-form")) return;
 

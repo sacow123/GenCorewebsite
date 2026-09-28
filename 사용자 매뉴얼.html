@@ -158,7 +158,6 @@
         <div class="content-card">
           <div class="mai-parts-coordinate-tool" data-mai-measure-ignore>
             <button type="button" class="mai-parts-coordinate-toggle" aria-pressed="false">⌖ 비율 측정</button>
-            <button type="button" class="mai-parts-coordinate-arrow-toggle" aria-pressed="false">↗ 화살표 측정</button>
             <button type="button" class="mai-parts-coordinate-copy" disabled>비율 복사</button>
             <span class="mai-parts-coordinate-readout" aria-live="polite">비율 측정 모드를 켠 뒤 사진을 클릭하세요.</span>
           </div>
@@ -224,8 +223,6 @@
   .mai-parts-coordinate-tool[hidden] { display:none; }
   .mai-parts-coordinate-toggle { border:0; border-radius:7px; padding:8px 12px; background:#7e22ce; color:#fff; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
   .mai-parts-coordinate-toggle[aria-pressed="true"] { background:#4c1d95; }
-  .mai-parts-coordinate-arrow-toggle { border:1px solid #b45309; border-radius:7px; padding:7px 11px; background:#fffbeb; color:#92400e; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
-  .mai-parts-coordinate-arrow-toggle[aria-pressed="true"] { border-color:#92400e; background:#f59e0b; color:#451a03; }
   .mai-parts-coordinate-copy { border:1px solid #a855f7; border-radius:7px; padding:7px 11px; background:#fff; color:#6b21a8; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
   .mai-parts-coordinate-copy:disabled { opacity:.45; cursor:not-allowed; }
   .mai-parts-coordinate-readout { color:#581c87; font:500 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
@@ -234,12 +231,6 @@
   .mai-parts-coordinate-marker::before { width:1px; height:34px; left:7px; top:-10px; }
   .mai-parts-coordinate-marker::after { width:34px; height:1px; left:-10px; top:7px; }
   .mai-parts-coordinate-selection { position:fixed; z-index:40; border:2px dashed #7e22ce; background:rgba(126,34,206,.14); border-radius:4px; pointer-events:none; }
-  .mai-parts-coordinate-arrow { position:absolute; z-index:20; height:3px; border-radius:3px; background:#f59e0b; transform-origin:left center; pointer-events:none; box-shadow:0 0 0 2px rgba(255,255,255,.8); }
-  .mai-parts-coordinate-arrow::after { content:""; position:absolute; right:-2px; top:50%; width:11px; height:11px; border-top:3px solid #f59e0b; border-right:3px solid #f59e0b; transform:translateY(-50%) rotate(45deg); box-sizing:border-box; }
-  .mai-parts-coordinate-arrow-point { position:absolute; z-index:21; width:16px; height:16px; margin:-8px 0 0 -8px; border:2px solid #b45309; border-radius:50%; background:#fff7ed; pointer-events:none; box-sizing:border-box; }
-  .mai-parts-coordinate-arrow-point::after { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font:700 10px/1 sans-serif; color:#78350f; }
-  .mai-parts-coordinate-arrow-start::after { content:"1"; }
-  .mai-parts-coordinate-arrow-end::after { content:"2"; }
   .mai-parts-photo-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); align-items:start; gap:20px; max-width:960px; margin:0 auto; }
   .mai-parts-photo-card { box-sizing:border-box; width:100%; max-width:100%; margin:0 auto; padding:16px; border:1px solid #ddd6fe; border-radius:12px; background:#fff; box-shadow:0 8px 22px rgba(29,20,57,.12); }
   .mai-parts-photo-card > img { display:block; width:100%; height:auto; border-radius:12px; }
@@ -498,6 +489,19 @@
         <div class="content-card">
           <iframe class="external-document-frame mai-install-document" data-language-sync data-document-id="machining-room-cleaning" title="M AI Machining Room Cleaning" src="assets/documents/mai-ui2/machining-room-cleaning.html" loading="lazy"></iframe>
         </div>
+      </section>
+
+<section id="sec-mai-ui2-folder-sharing" class="content-section">
+        <h2 data-i18n="nav-mai-folder-sharing">📁 폴더 공유 설정</h2>
+        <p class="subtitle">M AI°</p>
+        <div class="content-card">
+          <iframe id="mai-ui2-folder-sharing-document" class="external-document-frame mai-install-document" data-language-sync data-document-id="mai-ui2-folder-sharing" title="폴더 공유 설정" src="assets/documents/mai-ui2/folder-sharing.html" loading="lazy"></iframe>
+        </div>
+      </section>
+
+<section id="sec-mai-ui3-folder-sharing" class="content-section">
+        <h2 data-i18n="nav-mai-folder-sharing">📁 폴더 공유 설정</h2>
+        <p class="subtitle">M AI°</p>
       </section>
 
 <section id="sec-mai-tool-setup" class="content-section">
@@ -1972,6 +1976,14 @@
           </div>
       </section>
 
+<section id="sec-mf-folder-sharing" class="content-section">
+        <h2 data-i18n="nav-mf-folder-sharing">📁 폴더 공유 설정</h2>
+        <p class="subtitle">MillFix</p>
+        <div class="content-card">
+          <iframe id="mf-folder-sharing-document" class="external-document-frame mai-install-document" data-language-sync data-document-id="millfix-folder-sharing" title="MillFix Folder Sharing Settings" src="assets/documents/millfix/folder-sharing.html" loading="lazy"></iframe>
+        </div>
+      </section>
+
 <section id="sec-mf-tool-setup" class="content-section">
         <h2 data-i18n="nav-mf-tool-setup"><span data-i18n="mf-auto-592">🛠️ 공구 세팅</span></h2>
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
@@ -2735,6 +2747,37 @@
             -webkit-user-drag: none;
           }
 
+          #sec-mf-env-settings .mf-env-image-card {
+            padding: 12px;
+            overflow: hidden;
+            background: #11111a;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: var(--radius);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+          }
+
+          #sec-mf-env-settings .mf-env-image-card .mf-env-stage {
+            overflow: hidden;
+          }
+
+          #sec-mf-env-settings .mf-env-image-caption {
+            margin: 12px 4px 2px;
+            color: #f3e8ff;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+          }
+
+          @media (max-width: 640px) {
+            #sec-mf-env-settings .mf-env-image-card {
+              padding: 8px;
+            }
+
+            #sec-mf-env-settings .mf-env-image-caption {
+              font-size: 14px;
+            }
+          }
+
           /* Environment-page-only overlay namespace. Keep all future overlays under mf-env-*. */
           #sec-mf-env-settings .mf-env-border,
           #sec-mf-env-settings .mf-env-popup {
@@ -2742,26 +2785,23 @@
           }
         </style>
 
-        <p style="text-align: center; color: #a855f7; font-size: 16px; font-weight: bold; margin-bottom: 12px;"><span data-i18n="mf-auto-180">
-          💡 사진 위에 마우스를 올리시면 설명을 확인하실 수 있습니다.
-        </span></p>
-
         <!-- Image 1 -->
-        <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
+        <div class="content-card mf-env-image-card" style="margin-bottom: 24px;">
           <div class="mf-env-stage" id="mf-env-stage-1">
             <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-1.webp" alt="환경설정 1" />
           </div>
+          <p class="mf-env-image-caption" data-i18n="mf-env-parameter-io-entry">Parameter &amp; I/O List 버튼을 눌러 진입하세요</p>
         </div>
 
         <!-- Image 2 -->
-        <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius); margin-bottom: 24px;">
+        <div class="content-card mf-env-image-card" style="margin-bottom: 24px;">
           <div class="mf-env-stage" id="mf-env-stage-2">
             <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-2.webp" alt="환경설정 2" />
           </div>
         </div>
 
         <!-- Image 3 -->
-        <div class="content-card" style="padding:0; overflow:visible; background:#0a0a10; border-radius: var(--radius);">
+        <div class="content-card mf-env-image-card">
           <div class="mf-env-stage" id="mf-env-stage-3">
             <img loading="lazy" src="./assets/images/sec-mf-env-settings/env-settings-3.webp" alt="환경설정 3" />
           </div>
@@ -4191,7 +4231,7 @@
 
   <script src="src/scripts/layout-footer.js"></script>
   <script src="src/data/visible-i18n-auto.js"></script>
-  <script src="src/scripts/i18n.js"></script>
+<script src="src/scripts/i18n.js"></script>
   <script>
     (() => {
       function fitToolMountDescriptions() {

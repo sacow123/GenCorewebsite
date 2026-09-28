@@ -61,6 +61,7 @@ const TRANSLATIONS = {
     "nav-mai-clean": "🧹 가공실 청소",
     "mai-install-content-pending": "콘텐츠가 추가될 예정입니다.",
     "nav-mai-tool-setup": "🛠️ 공구 세팅",
+    "nav-mai-folder-sharing": "📁 폴더 공유 설정",
     "nav-mai-calibration": "🎯 캘리브레이션",
     "nav-mai-control": "M AI° 컨트롤 프로그램",
     "nav-mai-main-page": "🏠 메인 페이지",
@@ -87,6 +88,7 @@ const TRANSLATIONS = {
     "nav-mf-cable": "🔌 케이블 연결",
     "nav-mf-power": "⚡ 전원 켜기/ 끄기, 워밍업",
     "nav-mf-tool-setup": "🛠️ 공구 세팅",
+    "nav-mf-folder-sharing": "📁 폴더 공유 설정",
     "nav-mf-calibration": "캘리브레이션",
     "nav-mf-calibration-auto": "🤖 오토 캘리브레이션",
     "nav-mf-calibration-manual": "🖐️ 매뉴얼 캘리브레이션",
@@ -948,6 +950,7 @@ const TRANSLATIONS = {
     "mf-auto-325": "키보드를 통해 스핀들을 조작할 수 있습니다.",
     "mf-auto-179": " 버튼을 터치하여 진입합니다.\n              ",
     "mf-auto-180": "\n          💡 사진 위에 마우스를 올리시면 설명을 확인하실 수 있습니다.\n        ",
+    "mf-env-parameter-io-entry": "Parameter & I/O List 버튼을 눌러 진입하세요",
     "mf-auto-181": "\n              스핀들 및 c클램프가 해당 이미지대로 위치합니다.\n            ",
     "mf-auto-182": "홈잉(Homing) 동작을 실시합니다",
     "mf-auto-183": "각 축의 현재 위치 좌표",
@@ -1438,6 +1441,7 @@ const TRANSLATIONS = {
     "nav-mai-clean": "🧹 Machining Room Cleaning",
     "mai-install-content-pending": "Content will be added soon.",
     "nav-mai-tool-setup": "🛠️ Tool Setup",
+    "nav-mai-folder-sharing": "📁 Folder Sharing Settings",
     "nav-mai-calibration": "🎯 Calibration",
     "nav-mai-control": "M AI° Control Program",
     "nav-mai-main-page": "🏠 Main Page",
@@ -1464,6 +1468,7 @@ const TRANSLATIONS = {
     "nav-mf-cable": "🔌 Cable Connection",
     "nav-mf-power": "⚡ Power On/Off, Warm-up",
     "nav-mf-tool-setup": "🛠️ Tool Setup",
+    "nav-mf-folder-sharing": "📁 Folder Sharing Settings",
     "nav-mf-calibration": "Calibration",
     "nav-mf-calibration-auto": "🤖 Auto Calibration",
     "nav-mf-calibration-manual": "🖐️ Manual Calibration",
@@ -1685,6 +1690,7 @@ const TRANSLATIONS = {
     "nav-mai-clean": "🧹 加工室清掃",
     "mai-install-content-pending": "コンテンツは準備中です。",
     "nav-mai-tool-setup": "🛠️ 工具セッティング",
+    "nav-mai-folder-sharing": "📁 フォルダー共有設定",
     "nav-mai-calibration": "🎯 キャリブレーション",
     "nav-mai-control": "M AI° コントロールプログラム",
     "nav-mai-main-page": "🏠 メインページ",
@@ -1711,6 +1717,7 @@ const TRANSLATIONS = {
     "nav-mf-cable": "🔌 ケーブル接続",
     "nav-mf-power": "⚡ 電源オン/オフ、ウォームアップ",
     "nav-mf-tool-setup": "🛠️ 工具セッティング",
+    "nav-mf-folder-sharing": "📁 フォルダー共有設定",
     "nav-mf-calibration": "キャリブレーション",
     "nav-mf-calibration-auto": "🤖 オートキャリブレーション",
     "nav-mf-calibration-manual": "🖐️ マニュアルキャリブレーション",
@@ -1875,6 +1882,7 @@ const TRANSLATIONS = {
     "nav-mai-clean": "🧹 Limpieza de la sala de mecanizado",
     "mai-install-content-pending": "El contenido se añadirá pronto.",
     "nav-mai-tool-setup": "🛠️ Configuración de Herramientas",
+    "nav-mai-folder-sharing": "📁 Configuración de uso compartido de carpetas",
     "nav-mai-calibration": "🎯 Calibración",
     "nav-mai-control": "Programa de Control M AI°",
     "nav-mai-main-page": "🏠 Página Principal",
@@ -1901,6 +1909,7 @@ const TRANSLATIONS = {
     "nav-mf-cable": "🔌 Conexión de Cables",
     "nav-mf-power": "⚡ Encendido/Apagado, Calentamiento",
     "nav-mf-tool-setup": "🛠️ Configuración de Herramientas",
+    "nav-mf-folder-sharing": "📁 Configuración de uso compartido de carpetas",
     "nav-mf-calibration": "Calibración",
     "nav-mf-calibration-auto": "🤖 Calibración Automática",
     "nav-mf-calibration-manual": "🖐️ Calibración Manual",
@@ -2448,6 +2457,7 @@ const EN_COMPLETION_OVERRIDES = {
   "mf-auto-178": "After checking the precautions,",
   "mf-auto-179": "tap the button to enter.",
   "mf-auto-180": "Move the mouse over the photo to view the description.",
+  "mf-env-parameter-io-entry": "Select the Parameter & I/O List button to enter.",
   "mf-auto-181": "The spindle and C-clamp are positioned as shown in the image.",
   "mf-auto-182": "Performs homing.",
   "mf-auto-183": "Current coordinate values of each axis",
@@ -3453,6 +3463,7 @@ Object.assign(TRANSLATIONS.ja, {
   "mf-auto-178": "注意事項を確認した後、",
   "mf-auto-179": "ボタンをタッチして入ります。",
   "mf-auto-180": "写真にマウスを合わせると説明を確認できます。",
+  "mf-env-parameter-io-entry": "Parameter & I/O Listボタンを押して進んでください。",
   "mf-auto-181": "スピンドルおよびCクランプが画像の位置になります。",
   "mf-auto-182": "Homing動作を実行します。",
   "mf-auto-183": "各軸の現在位置座標",
@@ -3656,6 +3667,7 @@ const ES_NAV_OVERRIDES = {
   "mf-auto-200": "🗜️ Gestión de collet",
   "mf-auto-267": "📦 Componentes",
   "mf-auto-271": "⚙️ Configuración de entorno",
+  "mf-env-parameter-io-entry": "Pulse el botón Parameter & I/O List para acceder.",
   "mf-auto-292": " Material",
   "mf-auto-305": "💡 Uso",
   "mf-auto-317": "💻 Instalación / Configuración básica",
@@ -5503,6 +5515,19 @@ Object.assign(STATIC_CONTENT_TRANSLATIONS.ja, {
 });
 Object.assign(STATIC_CONTENT_TRANSLATIONS.es, {
   "z축 텐션 조절방법 z-axis tension adjustment": "ajuste de la tensión del eje Z"
+});
+
+Object.assign(STATIC_CONTENT_TRANSLATIONS.ko, {
+  "폴더 공유 설정": "폴더 공유 설정"
+});
+Object.assign(STATIC_CONTENT_TRANSLATIONS.en, {
+  "폴더 공유 설정": "Folder Sharing Settings"
+});
+Object.assign(STATIC_CONTENT_TRANSLATIONS.ja, {
+  "폴더 공유 설정": "フォルダー共有設定"
+});
+Object.assign(STATIC_CONTENT_TRANSLATIONS.es, {
+  "폴더 공유 설정": "Configuración de uso compartido de carpetas"
 });
 
 Object.assign(TRANSLATIONS.ko, {

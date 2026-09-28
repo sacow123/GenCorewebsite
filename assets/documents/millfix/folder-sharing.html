@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MillFix Folder Sharing Settings</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #1f2937; font-family: "Segoe UI", "Noto Sans KR", Arial, sans-serif; }
+    .manual { padding: 4px 0 12px; }
+    .step-list { display: grid; gap: 28px; }
+    .step-card { position: relative; overflow: hidden; padding: 12px; border: 1px solid #d8b4fe; border-radius: 14px; background: #fff; box-shadow: 0 4px 12px rgba(76, 29, 149, .10); }
+    .step-card::before { content: attr(data-step); position: absolute; z-index: 1; top: 22px; left: 22px; padding: 6px 10px; border: 1px solid #a16207; border-radius: 999px; background: #facc15; color: #1f2937; box-shadow: 0 2px 7px rgba(15, 23, 42, .3); font-size: 13px; font-weight: 800; letter-spacing: .02em; }
+    .step-card img { display: block; width: 100%; height: auto; border-radius: 8px; background: #f3f4f6; }
+    .step-caption { margin: 0; padding: 14px 10px 4px; color: #374151; font-size: 15px; font-weight: 650; line-height: 1.6; text-align: center; word-break: keep-all; }
+    @media (max-width: 640px) { .manual { padding-top: 0; } .intro { padding: 14px; font-size: 14px; } .step-list { gap: 20px; } .step-card { padding: 8px; border-radius: 12px; } .step-card::before { top: 16px; left: 16px; font-size: 12px; } .step-caption { padding: 12px 6px 4px; font-size: 14px; } }
+  </style>
+</head>
+<body>
+  <main class="manual">
+    <section id="folder-sharing-steps" class="step-list" aria-label="Folder sharing steps"></section>
+  </main>
+  <script src="folder-sharing.js?v=20260928a"></script>
+</body>
+</html>
