@@ -115,11 +115,28 @@ body {
 .hyperdent-basic-accordion summary { padding: 20px 24px; color: #1f2937; font-size: 16px; font-weight: 700; cursor: pointer; }
 .hyperdent-basic-accordion[open] summary { border-bottom: 1px solid var(--border); color: var(--primary); }
 .hyperdent-basic-accordion .hyperdent-basic-grid { padding: 20px; }
-#sec-hyperdent-stl-material .hyperdent-basic-grid, #sec-hyperdent-machine-fixture .hyperdent-basic-grid, #sec-hyperdent-crown-part-info .hyperdent-basic-grid { grid-template-columns: 1fr; align-items: start; counter-reset: hyperdent-photo; }
-#sec-hyperdent-stl-material .hyperdent-basic-card, #sec-hyperdent-machine-fixture .hyperdent-basic-card, #sec-hyperdent-crown-part-info .hyperdent-basic-card { position: relative; padding: 10px; border-radius: 12px; box-shadow: 0 4px 14px rgba(15, 23, 42, .10); counter-increment: hyperdent-photo; }
-#sec-hyperdent-stl-material .hyperdent-basic-card::before, #sec-hyperdent-machine-fixture .hyperdent-basic-card::before, #sec-hyperdent-crown-part-info .hyperdent-basic-card::before { content: counter(hyperdent-photo, decimal-leading-zero); position: absolute; z-index: 1; top: 16px; left: 16px; min-width: 34px; padding: 6px 8px; border-radius: 7px; background: rgba(15, 23, 42, .86); color: #fff; font-size: 13px; font-weight: 800; line-height: 1; text-align: center; box-shadow: 0 2px 6px rgba(15, 23, 42, .22); }
-#sec-hyperdent-stl-material .hyperdent-basic-card img, #sec-hyperdent-machine-fixture .hyperdent-basic-card img, #sec-hyperdent-crown-part-info .hyperdent-basic-card img { border-radius: 7px; }
-#sec-hyperdent-stl-material .hyperdent-basic-card > img, #sec-hyperdent-machine-fixture .hyperdent-basic-card > img, #sec-hyperdent-crown-part-info .hyperdent-basic-card > img { cursor: zoom-in; }
+#sec-hyperdent-stl-material .hyperdent-basic-grid, #sec-hyperdent-machine-fixture .hyperdent-basic-grid, #sec-hyperdent-crown-part-info .hyperdent-basic-grid, #sec-hyperdent-placement-calculation .hyperdent-basic-grid { grid-template-columns: 1fr; align-items: start; counter-reset: hyperdent-photo; }
+#sec-hyperdent-stl-material .hyperdent-basic-card, #sec-hyperdent-machine-fixture .hyperdent-basic-card, #sec-hyperdent-crown-part-info .hyperdent-basic-card, #sec-hyperdent-placement-calculation .hyperdent-basic-card { position: relative; padding: 10px; border-radius: 12px; box-shadow: 0 4px 14px rgba(15, 23, 42, .10); counter-increment: hyperdent-photo; }
+#sec-hyperdent-stl-material .hyperdent-basic-card::before, #sec-hyperdent-machine-fixture .hyperdent-basic-card::before, #sec-hyperdent-crown-part-info .hyperdent-basic-card::before, #sec-hyperdent-placement-calculation .hyperdent-basic-card::before { content: counter(hyperdent-photo, decimal-leading-zero); position: absolute; z-index: 1; top: 16px; left: 16px; min-width: 34px; padding: 6px 8px; border-radius: 7px; background: rgba(15, 23, 42, .86); color: #fff; font-size: 13px; font-weight: 800; line-height: 1; text-align: center; box-shadow: 0 2px 6px rgba(15, 23, 42, .22); }
+#sec-hyperdent-stl-material .hyperdent-basic-card img, #sec-hyperdent-machine-fixture .hyperdent-basic-card img, #sec-hyperdent-crown-part-info .hyperdent-basic-card img, #sec-hyperdent-placement-calculation .hyperdent-basic-card img { border-radius: 7px; }
+#sec-hyperdent-stl-material .hyperdent-basic-card > img, #sec-hyperdent-machine-fixture .hyperdent-basic-card > img, #sec-hyperdent-crown-part-info .hyperdent-basic-card > img, #sec-hyperdent-placement-calculation .hyperdent-basic-card > img { cursor: zoom-in; }
+#sec-hyperdent-machine-fixture .hyperdent-basic-caption, #sec-hyperdent-stl-material .hyperdent-basic-caption { margin: 14px 4px 4px; color: #1f2937; font-size: 16px; line-height: 1.65; font-weight: 700; white-space: pre-line; }
+#sec-hyperdent-stl-material .hyperdent-material-choice--purple { color: #9333ea; }
+#sec-hyperdent-stl-material .hyperdent-material-choice--red { color: #dc2626; }
+#sec-hyperdent-crown-part-info .hyperdent-basic-caption { margin: 14px 4px 4px; color: #1f2937; font-size: 16px; line-height: 1.65; font-weight: 700; white-space: pre-line; }
+#sec-hyperdent-placement-calculation .hyperdent-basic-caption { margin: 14px 4px 4px; color: #1f2937; font-size: 16px; line-height: 1.65; font-weight: 700; white-space: pre-line; }
+#sec-hyperdent-placement-calculation .hyperdent-placement-calculation-video { display: block; width: 100%; height: auto; border-radius: 7px; background: #000; }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-details { margin: 16px 4px 0; }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-trigger { display: block; color: #15803d; font-size: 18px; font-weight: 800; line-height: 1.5; cursor: pointer; list-style: none; }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-trigger::-webkit-details-marker { display: none; }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-trigger::after { content: '⌄'; display: inline-block; margin-left: .42em; color: #6b7280; transition: transform .2s ease; }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-details[open] .hyperdent-main-direction-trigger::after { transform: rotate(180deg); }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-trigger:focus-visible { outline: 3px solid rgba(37, 99, 235, .45); outline-offset: 4px; border-radius: 4px; }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-guide-panel { margin-top: 16px; padding-top: 16px; border-top: 1px solid #e5e7eb; }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-guide { margin: 0; }
+#sec-hyperdent-crown-part-info .hyperdent-main-direction-guide-caption { margin: 16px 4px; color: #1f2937; font-size: 16px; font-weight: 700; line-height: 1.65; }
+#sec-hyperdent-crown-part-info .hyperdent-step-number { display: inline-grid; place-items: center; width: 1.45em; height: 1.45em; margin-right: .22em; border: 2px solid currentColor; border-radius: 50%; font-size: .9em; line-height: 1; vertical-align: -.16em; }
+#sec-hyperdent-crown-part-info .hyperdent-insertion-warning { color: #dc2626; }
 .hyperdent-image-lightbox[hidden] { display: none !important; }
 .hyperdent-image-lightbox { position: fixed; z-index: 1300; inset: 0; display: grid; place-items: center; padding: 10px; background: rgba(15, 23, 42, .82); }
 .hyperdent-image-lightbox__dialog { position: relative; display: grid; place-items: center; width: 100%; height: 100%; }
