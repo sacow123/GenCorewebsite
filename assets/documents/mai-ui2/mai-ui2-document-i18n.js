@@ -433,6 +433,168 @@
     reportHeight();
   }
 
+	function installCalibrationStepBadges() {
+    const calibrationDocuments = new Set([
+      'manual-disk-calibration.html',
+      'ai-premill-calibration-v1-2.html',
+      'ai-premill-calibration-v2-0.html',
+      'auto-tool-pocket-calibration.html',
+      'manual-tool-pocket-calibration.html'
+    ]);
+    const documentName = location.pathname.split('/').pop();
+    if (!calibrationDocuments.has(documentName) || document.querySelector('.mai-ui2-calibration-step-style')) return;
+
+    const style = document.createElement('style');
+    style.className = 'mai-ui2-calibration-step-style';
+    style.textContent = `
+      .mai-ui2-calibration-step-image { display: inline-block; position: relative; width: fit-content !important; vertical-align: top; }
+      .mai-ui2-calibration-step-badge { position: absolute; top: 12px; left: 12px; z-index: 1; padding: 6px 14px; border-radius: 8px; background: #FFC000; color: #000; font-size: 15px; font-weight: 800; line-height: 1; transform: rotate(-12deg); box-shadow: 0 3px 8px rgba(0,0,0,.2); pointer-events: none; }
+      @media (max-width: 720px) { .mai-ui2-calibration-step-badge { top: 8px; left: 8px; padding: 5px 11px; font-size: 13px; } }
+    `;
+    document.head.append(style);
+
+    document.querySelectorAll('.column-list').forEach((row) => {
+      const qrColumn = Array.from(row.children).find((child) => child.querySelector('figure[data-notion-image*="qr-code"]'));
+      if (!qrColumn) return;
+      qrColumn.remove();
+      row.style.display = 'block';
+      const remainingColumn = row.querySelector(':scope > .column');
+      if (remainingColumn) remainingColumn.style.width = '100%';
+    });
+
+    const addBadge = (figure, label) => {
+      if (!figure || figure.querySelector('.mai-ui2-calibration-step-badge')) return;
+      const link = figure.querySelector(':scope > a');
+      if (!link) return;
+      link.classList.add('mai-ui2-calibration-step-image');
+      const badge = document.createElement('span');
+      badge.className = 'mai-ui2-calibration-step-badge';
+      badge.textContent = label;
+      link.prepend(badge);
+    };
+
+    let photoStep = 0;
+    document.querySelectorAll('.column-list').forEach((row) => {
+      const columns = Array.from(row.querySelectorAll(':scope > .column'));
+      if (columns.length < 2) return;
+      const figure = Array.from(columns[0].children).find((child) => child.matches('figure.image'));
+      const steps = Array.from(columns[1].querySelectorAll(':scope > ol.numbered-list[start]'));
+      if (!figure || !steps.length) return;
+      photoStep += 1;
+      addBadge(figure, `STEP ${photoStep}`);
+    });
+
+    if (documentName === 'manual-tool-pocket-calibration.html') {
+      addBadge(document.querySelector('.page-body > figure.image'), 'STEP 1');
+    }
+    reportHeight();
+  }
+
+  function replaceAiPremillV12FirstImage() {
+    if (!location.pathname.endsWith('/ai-premill-calibration-v1-2.html')) return;
+
+    const figure = document.getElementById('1bbcfb3e-9058-8192-bc9e-cdc7eac4102f');
+    const link = figure?.querySelector(':scope > a');
+    const image = link?.querySelector(':scope > img');
+    if (!figure || !link || !image) return;
+
+    const imagePath = '../../images/mai-ui2/ai-premill-calibration-v1-2-step-01.webp';
+    figure.dataset.notionImage = imagePath;
+    link.href = imagePath;
+    image.src = imagePath;
+  }
+
+  function removeAiPremillV12CamSoftwareStep() {
+    if (!location.pathname.endsWith('/ai-premill-calibration-v1-2.html')) return;
+
+    const camSoftwareStep = document.getElementById('1bbcfb3e-9058-81bd-8bfb-c7765f597479');
+    const premillJigStep = document.getElementById('1bbcfb3e-9058-8133-b89a-fcd3701020b5');
+    if (!camSoftwareStep || !premillJigStep) return;
+
+    camSoftwareStep.remove();
+    premillJigStep.start = 1;
+  }
+
+  function removeAiDiskCalibrationQrCode() {
+    if (!location.pathname.endsWith('/ai-disk-calibration.html')) return;
+    const qrFigure = document.querySelector('figure[data-notion-image*="qr-code"]');
+    const qrColumn = qrFigure?.closest('.column');
+    const headerRow = qrColumn?.closest('.column-list');
+    if (!qrColumn || !headerRow) return;
+    qrColumn.remove();
+    headerRow.style.display = 'block';
+    const remainingColumn = headerRow.querySelector(':scope > .column');
+    if (remainingColumn) remainingColumn.style.width = '100%';
+    reportHeight();
+  }
+
+  function installManualDiskCalibrationLayout() {
+    if (!location.pathname.endsWith('/manual-disk-calibration.html') || document.querySelector('.mai-ui2-manual-disk-layout')) return;
+    const instructions = [
+      { text: ['10-12mm 두께의 왁스 디스크, 디지털 버니어 캘리퍼스, T10-M2.0B 툴을 준비하세요.', 'C-클램프 지그에 왁스 디스크를 장착하세요.', '장착 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.'] },
+      { text: ['NC파일을 불러오면 “A cube milling start” 버튼을 눌러 A-큐브 가공을 시작하세요. 가공 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.'], notes: ['만약 왁스 디스크가 이미 사용된 것이라면 A-큐브의 모양이 잘 나오도록 방향을 조절해서 장착하세요.', '가공이 끝난 A-큐브는 12시 방향 윗부분에 특정 표시가 있습니다. 양 옆의 커넥터를 커터로 절단해 디스크에서 떼어내세요.'] },
+      { text: ['화면을 따라 A 큐브의 단차를 디지털 버니어 캘리퍼스로 측정하세요.', '측정한 단차값을 화면에 입력하고, “Apply correction value” 버튼을 눌러 적용하세요, 그 후 “Next”를 눌러 다음 단계로 진행하세요.'], notes: ['측정 전 디지털 버니어 캘리퍼스의 정밀도를 확인하세요.', '측정된 단차값을 입력하기 전에 화면을 참고하여 단차가 발생한 방향이 “+” 방향인지 “-” 방향 인지 확인한 후 입력하십시오.', '“Apply correction value” 버튼을 두 번 누르면, 입력된 값이 두 번 적용됩니다. 주의하여 한 번만 누르십시오.'] },
+      { text: ['디지털 버니어 캘리퍼스를 이용해 화면을 따라 A-큐브의 높이를 측정합니다.', '측정한 A-큐브의 높이를 입력하고 “Apply correction value” 버튼을 눌러 적용하세요. 그 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.'], notes: ['측정한 높이가 정확히 8mm라면 입력 단계를 생략하고 다음 단계로 진행하세요.'] },
+      { text: ['NC파일을 불러오면 “B cube milling start” 버튼을 눌러 B-큐브 가공을 시작하세요. 가공 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.'], notes: ['만약 왁스 디스크가 이미 사용된 것이라면 B-큐브의 모양이 잘 나오도록 방향을 조절해서 장착하세요.', '가공이 끝난 B-큐브는 12시 방향 윗부분에 특정 표시가 있습니다. 양 옆의 커넥터를 커터로 절단해 디스크에서 떼어내세요.'] },
+      { text: ['화면을 따라 B-큐브의 단차를 전자 버니어 캘리퍼스로 측정하세요.', '측정한 단차값을 화면에 입력하고, “Apply correction value” 버튼을 눌러 적용하세요, 그 후 “Next”를 눌러 다음 단계로 진행하세요.'], notes: ['측정 전 디지털 버니어 캘리퍼스의 정밀도를 확인하세요.', '측정된 단차값을 입력하기 전에 화면을 참고하여 단차가 발생한 방향이 “+” 방향인지 “-” 방향 인지 확인한 후 입력하십시오.', '“Apply correction value” 버튼을 두 번 누르면, 입력된 값이 두 번 적용됩니다. 주의하여 한 번만 누르십시오.'] },
+      { text: ['디지털 버니어 캘리퍼스를 이용해 화면에 따라 B-큐브의 높이를 측정합니다.', '측정한 B-큐브의 높이를 입력하고 “Apply correction value” 버튼을 눌러 적용하세요. 그 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.'], notes: ['측정한 높이가 정확히 8mm라면 입력 단계를 생략하고 다음 단계로 진행하세요.'] },
+      { text: ['캘리브레이션 과정이 완료되면 “Save work offset”을 클릭하여 “Work offset” 페이지를 열고 측정된 결과를 저장합니다.'] },
+      { text: ['“Save work offset” 화면에서 “Save” 버튼을 클릭하여 저장한 후, “Close” 버튼을 클릭하여 창을 닫습니다.'] },
+      { text: ['모든 단계를 완료하였다면 “Setup screen”을 클릭하여 캘리브레이션을 종료하십시오.'] }
+    ];
+    const rows = Array.from(document.querySelectorAll('.column-list')).filter((row) => {
+      const columns = Array.from(row.querySelectorAll(':scope > .column'));
+      return columns.length >= 2 && Array.from(columns[0].children).some((child) => child.matches('figure.image'));
+    });
+    if (rows.length !== instructions.length) return;
+
+    const style = document.createElement('style');
+    style.className = 'mai-ui2-manual-disk-layout';
+    style.textContent = `
+      .mai-ui2-manual-disk-card { display: flex; flex-direction: column; gap: 0; margin: 28px 0; padding: 24px; border: 1px solid #c4b5fd; border-radius: 16px; background: #f5f3ff; box-shadow: 0 6px 18px rgba(124,58,237,.14); }
+      .mai-ui2-manual-disk-card > .column { width: 100% !important; }
+      .mai-ui2-manual-disk-card > .column:first-child > figure { margin: 0; text-align: center; }
+      .mai-ui2-manual-disk-card > .column:first-child > figure > .mai-ui2-calibration-step-image { width: min(100%, 900px) !important; }
+      .mai-ui2-manual-disk-card > .column:first-child > figure img { display: block; width: min(100%, 900px) !important; height: auto; max-width: 100%; margin: 0 auto; }
+      .mai-ui2-manual-disk-text { box-sizing: border-box; margin-top: 18px; padding: 18px 20px; border: 1px solid #e9d5ff; border-radius: 12px; background: #fff; color: #374151; font-weight: 700; }
+      .mai-ui2-manual-disk-text > p { margin: 0 0 12px; line-height: 1.65; }
+      .mai-ui2-manual-disk-text > p:last-of-type { margin-bottom: 0; }
+      .mai-ui2-manual-disk-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 12px; padding: 14px 16px; border-radius: 10px; background: #f3e8ff; color: #374151; line-height: 1.65; }
+      .mai-ui2-manual-disk-note-icon { flex: 0 0 auto; font-size: 1.35em; line-height: 1.25; }
+      .mai-ui2-image-dialog img { width: 100%; }
+      @media (max-width: 720px) { .mai-ui2-manual-disk-card { margin: 18px 0; padding: 14px; } .mai-ui2-manual-disk-text { margin-top: 14px; padding: 14px; } }
+    `;
+    document.head.append(style);
+
+    rows.forEach((row, index) => {
+      const [photoColumn, textColumn] = Array.from(row.querySelectorAll(':scope > .column'));
+      const content = instructions[index];
+      row.classList.add('mai-ui2-manual-disk-card');
+      textColumn.replaceChildren();
+      const textCard = document.createElement('div');
+      textCard.className = 'mai-ui2-manual-disk-text';
+      content.text.forEach((value) => {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = value;
+        textCard.append(paragraph);
+      });
+      (content.notes || []).forEach((value) => {
+        const note = document.createElement('div');
+        note.className = 'mai-ui2-manual-disk-note';
+        const icon = document.createElement('span');
+        icon.className = 'mai-ui2-manual-disk-note-icon';
+        icon.textContent = '🔔';
+        const message = document.createElement('span');
+        message.textContent = value;
+        note.append(icon, message);
+        textCard.append(note);
+      });
+      textColumn.append(textCard);
+      photoColumn.style.width = '100%';
+    });
+    reportHeight();
+  }
+
   addEventListener('message', (event) => {
     if (event.data?.type === 'gencore-language-change') {
       translate(event.data.lang || 'ko');
@@ -442,6 +604,11 @@
   addEventListener('DOMContentLoaded', () => {
     installImageLightbox();
     installJogModeLayout();
+    replaceAiPremillV12FirstImage();
+    removeAiPremillV12CamSoftwareStep();
+    installCalibrationStepBadges();
+    removeAiDiskCalibrationQrCode();
+    installManualDiskCalibrationLayout();
     reportHeight();
     new ResizeObserver(reportHeight).observe(document.body);
   });

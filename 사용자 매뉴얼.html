@@ -1118,9 +1118,39 @@
         <div class="section-anchor" style="font-size:12px; color:#a855f7; margin-bottom:16px; font-family:monospace;">🔗
           Anchor: <a href="#sec-mai-collet" style="color:#a855f7; text-decoration:none;">#sec-mai-collet</a></div>
         <p class="subtitle"><span data-i18n="mf-auto-734">M AI° 유지 보수</span></p>
-        <div class="content-card">
-          <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
-        </div>
+        <div id="mai-collet-content"></div>
+        <script>
+          (() => {
+            function copyMillFixCollet() {
+            const source = document.getElementById('sec-mf-collet');
+            const target = document.getElementById('mai-collet-content');
+            if (!source || !target || target.childElementCount) return;
+
+            const idMap = {
+              'anchor-routine': 'mai-collet-anchor-routine',
+              'anchor-cleaning': 'mai-collet-anchor-cleaning'
+            };
+            let node = source.querySelector('.subtitle')?.nextElementSibling;
+            while (node) {
+              const copy = node.cloneNode(true);
+              [copy, ...copy.querySelectorAll('[id], [href], [onclick]')].forEach((element) => {
+                if (element.id && idMap[element.id]) element.id = idMap[element.id];
+                if (element.hasAttribute('href')) {
+                  element.setAttribute('href', element.getAttribute('href').replace(/#(anchor-routine|anchor-cleaning)/g, (_, id) => `#${idMap[id]}`));
+                }
+                if (element.hasAttribute('onclick')) {
+                  element.setAttribute('onclick', element.getAttribute('onclick').replace(/(anchor-routine|anchor-cleaning)/g, (id) => idMap[id]));
+                }
+              });
+              target.append(copy);
+              node = node.nextElementSibling;
+            }
+            }
+
+            document.addEventListener('DOMContentLoaded', copyMillFixCollet);
+            window.addEventListener('gencore-language-changed', copyMillFixCollet);
+          })();
+        </script>
       </section>
 
 <section id="sec-mf-spec" class="content-section">
