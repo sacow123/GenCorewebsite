@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -84,9 +84,8 @@
                 </div>
               </div>
               <!-- M AI° 설치/ 기본 조작 -->
-              <div class="nav-parent" id="nav-mai-setup">
-                <div class="nav-item">
-                  <span data-i18n="nav-mai-setup">설치/ 기본 조작</span>
+              <div class="nav-parent" id="nav-mai-setup"><div class="nav-item">
+                  <span data-i18n="nav-mai-setup">설치/기본 조작 (UI 2.0)</span>
                   <span class="nav-arrow"></span>
                 </div>
                 <div class="sub-menu">
@@ -96,6 +95,8 @@
                       data-i18n="nav-mai-transport">🚚 설치 및 운반 주의 사항</span></div>
                   <div class="nav-item" data-section="sec-mai-cable" id="menu-sec-mai-cable"><span
                       data-i18n="nav-mai-cable">🔌 케이블 연결</span></div>
+<div class="nav-item" data-section="sec-mai-cutting-oil-pump" id="menu-sec-mai-cutting-oil-pump"><span data-i18n="nav-mai-cutting-oil-pump">💧 절삭유 및 펌프 세팅</span></div>
+<div class="nav-item" data-section="sec-mai-jigs" id="menu-sec-mai-jigs"><span data-i18n="nav-mai-jigs">🔩 지그 사용 방법</span></div>
                   <div class="nav-item" data-section="sec-mai-power" id="menu-sec-mai-power"><span
                       data-i18n="nav-mai-power">⚡ 전원 켜기/ 끄기, 워밍업</span></div>
                   <div class="nav-item" data-section="sec-mai-jog" id="menu-sec-mai-jog"><span
@@ -145,9 +146,8 @@
                 </div>
               </div>
               <!-- M AI° 컨트롤 프로그램 -->
-              <div class="nav-parent" id="nav-mai-ctrl">
-                <div class="nav-item">
-                  <span data-i18n="nav-mai-ctrl">컨트롤 프로그램</span>
+              <div class="nav-parent" id="nav-mai-ctrl"><div class="nav-item">
+                  <span data-i18n="nav-mai-ctrl">컨트롤 프로그램 (UI 2.0)</span>
                   <span class="nav-arrow"></span>
                 </div>
                 <div class="sub-menu">
@@ -400,38 +400,21 @@
 
 
     <script>
-      (function splitMaiNavigationByUiVersion() {
+      (function addMaiFolderSharingNavigation() {
         const maiNavigation = document.getElementById('nav-mai');
-        if (!maiNavigation || maiNavigation.querySelector('#nav-mai-ui-2')) return;
-
-        const existingSubMenu = Array.from(maiNavigation.children)
-          .find((child) => child.classList.contains('sub-menu'));
-        if (!existingSubMenu) return;
-
-        const createVersionMenu = (id, label, subMenu) => {
-          const versionMenu = document.createElement('div');
-          versionMenu.className = 'nav-parent mai-ui-version';
-          versionMenu.id = id;
-
-          const versionButton = document.createElement('div');
-          versionButton.className = 'nav-item';
-          versionButton.style.paddingLeft = '40px';
-          versionButton.innerHTML = `<span>${label}</span><span class="nav-arrow"></span>`;
-          versionMenu.append(versionButton, subMenu);
-          return versionMenu;
-        };
-
-        const ui3SubMenu = existingSubMenu.cloneNode(true);
-        ui3SubMenu.querySelectorAll('[id]').forEach((element) => {
-          element.id = `${element.id}-ui3`;
-        });
-
-        const ui2Menu = createVersionMenu('nav-mai-ui-2', 'M AI°_UI_2.0(구버전)', existingSubMenu);
-        const ui3Menu = createVersionMenu('nav-mai-ui-3', 'M AI°_UI_3.0(신버전)', ui3SubMenu);
-        const versionSubMenu = document.createElement('div');
-        versionSubMenu.className = 'sub-menu';
-        versionSubMenu.append(ui2Menu, ui3Menu);
-        maiNavigation.append(versionSubMenu);
+        if (!maiNavigation || maiNavigation.querySelector('#menu-sec-mai-ui2-folder-sharing')) return;
+      
+        const setupMenu = maiNavigation.querySelector('#nav-mai-setup');
+        const cableMenu = setupMenu?.querySelector('#menu-sec-mai-cable');
+        if (!cableMenu) return;
+      
+        const folderSharingMenu = document.createElement('div');
+        folderSharingMenu.className = 'nav-item';
+        folderSharingMenu.id = 'menu-sec-mai-ui2-folder-sharing';
+        folderSharingMenu.dataset.section = 'sec-mai-ui2-folder-sharing';
+        folderSharingMenu.innerHTML = '<span data-i18n="nav-mai-folder-sharing">📁 폴더 공유 설정</span>';
+        const lastSetupMenu = setupMenu.querySelector('#menu-sec-mai-jigs') || setupMenu.querySelector('#menu-sec-mai-cutting-oil-pump') || cableMenu;
+  lastSetupMenu.insertAdjacentElement('afterend', folderSharingMenu);
       }());
     </script>
 
@@ -455,6 +438,8 @@
       <!-- INCLUDE: src/components/sections/sec-mai-precheck.html -->
       <!-- INCLUDE: src/components/sections/sec-mai-transport.html -->
       <!-- INCLUDE: src/components/sections/sec-mai-cable.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-cutting-oil-pump.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-jigs.html -->
       <!-- INCLUDE: src/components/sections/sec-mai-power.html -->
       <!-- INCLUDE: src/components/sections/sec-mai-tool-setup.html -->
       <!-- INCLUDE: src/components/sections/sec-mai-ui2-folder-sharing.html -->

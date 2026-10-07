@@ -1555,7 +1555,7 @@ const TRANSLATIONS = {
     "mf-auto-3084": "Calculate Custom Abutment using premilled blank and reverse jig / hyperDENT",
     "mf-auto-3085": "Using premilled blank and reverse jig",
     "nav-menu-label": "MENU",
-    "nav-mai-setup": "Installation / Basic Operation",
+    "nav-mai-setup": "Installation / Basic Operation (UI 2.0)",
     "nav-mai-cal-disk": "Disk Calibration",
     "nav-mai-cal-disk-ai": "<span class=\"icon-disk\"></span> AI Disk Calibration",
     "nav-mai-cal-disk-manual": "Manual Disk Calibration",
@@ -1565,7 +1565,7 @@ const TRANSLATIONS = {
     "nav-mai-cal-tool": "Tool Pocket Calibration",
     "nav-mai-cal-tool-auto": "Auto Tool Pocket Calibration",
     "nav-mai-cal-tool-manual": "Manual Tool Pocket Calibration",
-    "nav-mai-ctrl": "Control Program",
+    "nav-mai-ctrl": "Control Program (UI 2.0)",
     "nav-mai-hd": "hyperDENT",
     "nav-mai-hd-install": "Installation / Basic Settings",
     "nav-mai-hd-tutorials": "Tutorials",
@@ -2762,8 +2762,8 @@ Object.assign(TRANSLATIONS.en, EN_COMPLETION_OVERRIDES);
 
 const KO_NAV_OVERRIDES = {
   "nav-menu-label": "메뉴",
-  "nav-mai-setup": "설치 / 기본 조작",
-  "nav-mai-ctrl": "컨트롤 프로그램",
+  "nav-mai-setup": "설치/기본 조작 (UI 2.0)",
+  "nav-mai-ctrl": "컨트롤 프로그램 (UI 2.0)",
   "nav-mai-hd": "hyperDENT",
   "nav-mai-hd-install": "💻 설치 / 기본 설정",
   "nav-mai-hd-blank": "<span class='icon-puck'></span> 소재",
@@ -3033,8 +3033,8 @@ Object.assign(TRANSLATIONS.es, {
 
 const JA_NAV_OVERRIDES = {
   "nav-menu-label": "メニュー",
-  "nav-mai-setup": "設置 / 基本操作",
-  "nav-mai-ctrl": "コントロールプログラム",
+  "nav-mai-setup": "設置 / 基本操作 (UI 2.0)",
+  "nav-mai-ctrl": "コントロールプログラム (UI 2.0)",
   "nav-mai-hd": "hyperDENT",
   "nav-mai-hd-install": "💻 インストール / 基本設定",
   "nav-mai-hd-blank": "<span class='icon-puck'></span> 素材",
@@ -3631,8 +3631,8 @@ Object.assign(TRANSLATIONS.ja, {
 
 const ES_NAV_OVERRIDES = {
   "nav-menu-label": "Menú",
-  "nav-mai-setup": "Instalación / Operación básica",
-  "nav-mai-ctrl": "Programa de control",
+  "nav-mai-setup": "Instalación / Operación básica (UI 2.0)",
+  "nav-mai-ctrl": "Programa de control (UI 2.0)",
   "nav-mai-hd": "hyperDENT",
   "nav-mai-hd-install": "💻 Instalación / Configuración básica",
   "nav-mai-hd-blank": "<span class='icon-puck'></span> Material",
@@ -5656,7 +5656,7 @@ Object.assign(TRANSLATIONS.es, {
 });
 
 Object.assign(TRANSLATIONS.ko, {
-  "nav-mai-ui-2": "M AI° UI 2.0(구버전)",
+  "nav-mai-ui-2": "M AI° with UI version 2.0",
   "nav-mai-ui-3": "M AI° UI 3.0(신버전)",
   "nav-hyperdent-basic": "기본 조작",
   "hyperdent-basic-title": "hyperDENT 기본 조작",
@@ -5751,7 +5751,7 @@ Object.assign(TRANSLATIONS.ko, {
 });
 
 Object.assign(TRANSLATIONS.en, {
-  "nav-mai-ui-2": "M AI° UI 2.0 (Legacy)",
+  "nav-mai-ui-2": "M AI° with UI version 2.0",
   "nav-mai-ui-3": "M AI° UI 3.0 (Latest)",
   "nav-hyperdent-basic": "Basic Operation",
   "hyperdent-basic-title": "hyperDENT Basic Operation",
@@ -5846,7 +5846,7 @@ Object.assign(TRANSLATIONS.en, {
 });
 
 Object.assign(TRANSLATIONS.ja, {
-  "nav-mai-ui-2": "M AI° UI 2.0（旧バージョン）",
+  "nav-mai-ui-2": "M AI° with UI version 2.0",
   "nav-mai-ui-3": "M AI° UI 3.0（新バージョン）",
   "nav-hyperdent-basic": "基本操作",
   "hyperdent-basic-title": "hyperDENT 基本操作",
@@ -5946,7 +5946,7 @@ Object.assign(TRANSLATIONS.ja, {
 });
 
 Object.assign(TRANSLATIONS.es, {
-  "nav-mai-ui-2": "M AI° UI 2.0 (Versión anterior)",
+  "nav-mai-ui-2": "M AI° with UI version 2.0",
   "nav-mai-ui-3": "M AI° UI 3.0 (Versión más reciente)",
   "nav-hyperdent-basic": "Operación básica",
   "hyperdent-basic-title": "Operación básica de hyperDENT",
@@ -6132,3 +6132,13 @@ if (typeof document !== 'undefined' && typeof window !== 'undefined') {
     if (frame) frame.style.height = `${Math.max(720, Math.ceil(event.data.height))}px`;
   });
 }
+
+Object.assign(TRANSLATIONS.ko, { "nav-mai-cutting-oil-pump": "💧 절삭유 및 펌프 세팅" });
+Object.assign(TRANSLATIONS.en, { "nav-mai-cutting-oil-pump": "💧 Cutting Oil and Pump Setup" });
+Object.assign(TRANSLATIONS.ja, { "nav-mai-cutting-oil-pump": "💧 切削油・ポンプの設定" });
+Object.assign(TRANSLATIONS.es, { "nav-mai-cutting-oil-pump": "💧 Configuración del aceite de corte y la bomba" });
+
+Object.assign(TRANSLATIONS.ko, { "nav-mai-jigs": "🔩 지그 사용 방법" });
+Object.assign(TRANSLATIONS.en, { "nav-mai-jigs": "🔩 How to Use the Jigs" });
+Object.assign(TRANSLATIONS.ja, { "nav-mai-jigs": "🔩 ジグの使用方法" });
+Object.assign(TRANSLATIONS.es, { "nav-mai-jigs": "🔩 Cómo utilizar los útiles de sujeción" });
