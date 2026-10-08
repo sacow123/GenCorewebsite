@@ -255,5 +255,5 @@
   }
 
   window.GenCoreHybridTemplateCard = { render };
-  window.GenCoreMaterialTemplateCard = { render };
+  window.GenCoreMaterialTemplateCard = { render, styles: styleMarkup };
 })();

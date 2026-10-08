@@ -33,6 +33,8 @@ const {
 } = require("../lib/auth");
 
 const host = process.env.HOST || "127.0.0.1";
+// Internal development on loopback does not require deployment credentials.
+const isLocalDevelopment = host === "127.0.0.1" || host === "::1" || host === "localhost";
 const requestedPort = Number(process.env.PORT || process.argv[2] || 8080);
 const attempts = new Map();
 const WINDOW_MS = 10 * 60 * 1000;
@@ -163,7 +165,7 @@ function createServer() {
     }
 
     const cookies = parseCookies(request.headers.cookie || "");
-    if (!verifySessionToken(cookies[LOCAL_COOKIE_NAME])) {
+    if (!isLocalDevelopment && !verifySessionToken(cookies[LOCAL_COOKIE_NAME])) {
       const loginUrl = `/dealer-access?next=${encodeURIComponent(`${url.pathname}${url.search}`)}`;
       response.writeHead(307, { "Location": loginUrl, "Cache-Control": "no-store" });
       response.end();
@@ -187,7 +189,9 @@ function listen(port) {
   server.listen(port, host, () => {
     console.log("");
     console.log("=========================================================");
-    console.log("  GenCore authenticated local server is running.");
+    console.log(isLocalDevelopment
+      ? "  GenCore local development server is running (no login required)."
+      : "  GenCore authenticated local server is running.");
     console.log(`  Browser URL: http://${host}:${port}/`);
     console.log("  Press Ctrl+C in this terminal to stop the server.");
     console.log("=========================================================");

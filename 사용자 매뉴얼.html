@@ -12,10 +12,13 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/mai-dbconfig.css">
+  <link rel="stylesheet" href="assets/css/template-articles.css">
 
 </head>
 <body>
   <script src="src/scripts/layout-shell.js"></script>
+  <script src="src/scripts/hyperdent-settings-nav.js"></script>
   <script src="src/scripts/product-navigation.js"></script>
   <script src="src/scripts/mai-ui-version-nav.js"></script>
   <script src="src/scripts/mai-components-nav.js"></script>
@@ -825,6 +828,25 @@
           <p><span data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</span></p>
         </div>
       </section>
+
+<section id="sec-mai-hd-settings-db" class="content-section">
+  <h2 data-i18n="nav-mai-hd-settings-db">DB(데이터 베이스_템플릿)</h2>
+  <p class="subtitle">M AI hyperDENT</p>
+  <div class="content-card">
+    <p class="mai-db-intro"></p>
+    <div class="dbconfig-filter-panel">
+      <div class="dbconfig-filter-group"><span class="dbconfig-filter-label" data-mai-label="material"></span><div class="dbconfig-filter-options mai-material-filters"></div></div>
+      <div class="dbconfig-filter-group"><span class="dbconfig-filter-label" data-mai-label="prosthesis"></span><div class="dbconfig-prosthesis-picker"><div class="dbconfig-prosthesis-types"></div><div class="dbconfig-prosthesis-detail" hidden></div></div></div>
+    </div>
+    <div class="mai-template-groups"></div>
+  </div>
+</section>
+
+<section id="sec-mai-hd-settings-fixture" class="content-section">
+  <h2 data-i18n="nav-mai-hd-settings-fixture">Fixture(픽스처)</h2>
+  <p class="subtitle">M AI hyperDENT</p>
+  <div class="content-card"><p data-i18n="mf-auto-270">콘텐츠가 추가될 예정입니다.</p></div>
+</section>
 
 <!-- Deprecated: hyperDENT 사용 방법은 sec-mf-hd-features 공용 섹션 하나만 표시합니다. -->
 <template>
@@ -4463,6 +4485,14 @@
   <script src="src/data/dbconfig-data-ja.js"></script>
   <script src="src/data/hybrid-template-localizations.js?v=20260806d"></script>
   <script src="src/scripts/hybrid-template-card.js?v=20260806ab"></script>
+  <script src="src/data/mai-cocr-templates.js"></script>
+  <script src="src/data/mai-glass-templates.js"></script>
+  <script src="src/data/mai-hybrid-templates.js"></script>
+  <script src="src/data/mai-peek-templates.js"></script>
+  <script src="src/data/mai-pmma-templates.js"></script>
+  <script src="src/data/mai-batch-templates.js"></script>
+  <script src="src/scripts/template-article-navigation.js"></script>
+  <script src="src/scripts/mai-dbconfig.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const modal = document.getElementById('template-modal');
@@ -4471,17 +4501,12 @@
       const modalBody = document.getElementById('template-modal-body');
 
       function closeTemplateModal() {
-        modal.style.display = 'none';
-        window.location.replace('#sec-mf-hd-dbconfig');
+        window.TemplateArticleNavigation.back('mf');
       }
 
       closeBtn.addEventListener('click', closeTemplateModal);
 
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          closeTemplateModal();
-        }
-      });
+
 
       const dbConfigSection = document.getElementById('sec-mf-hd-dbconfig');
       const templateGroups = document.getElementById('dbconfig-template-groups');
@@ -4685,10 +4710,10 @@
       dbConfigSection?.addEventListener('click', (e) => {
         const item = e.target.closest('.card-list li');
         if (!item || !dbConfigSection.contains(item)) return;
-        openTemplateModalByTitle(item.textContent.trim());
+        openTemplateModalByTitle(item.textContent.trim(), true);
       });
 
-      function openTemplateModalByTitle(title) {
+      function openTemplateModalByTitle(title, pushHistory = false) {
         modalTitle.textContent = title;
         
         let db = null;
@@ -4704,17 +4729,17 @@
         if (title.startsWith('Hybrid Ceramic_') && window.GenCoreHybridTemplateCard) {
                 const language = typeof currentLang !== 'undefined' ? currentLang : 'en';
                 modalBody.innerHTML = window.GenCoreHybridTemplateCard.render({ title, sourceText: db[title], lang: language });
-                modal.style.display = 'flex';
+                window.TemplateArticleNavigation.show('mf', title, pushHistory);
                 modalBody.scrollTop = 0;
-                history.replaceState(null, null, '#template-' + encodeURIComponent(title));
+
           return;
         }
         if (/^(PMMA|PEEK|Wax|Zirconia)_/.test(title) && window.GenCoreMaterialTemplateCard) {
           const language = typeof currentLang !== 'undefined' ? currentLang : 'en';
           modalBody.innerHTML = window.GenCoreMaterialTemplateCard.render({ title, sourceText: db[title], lang: language });
-          modal.style.display = 'flex';
+          window.TemplateArticleNavigation.show('mf', title, pushHistory);
           modalBody.scrollTop = 0;
-          history.replaceState(null, null, '#template-' + encodeURIComponent(title));
+
           return;
         }
               const japaneseText = currentLang === 'ja' ? db[title] : null;
@@ -4922,9 +4947,9 @@
             modalBody.innerHTML = '<p><span data-i18n="mf-auto-819">데이터를 불러올 수 없습니다.</span></p>';
           }
           
-          modal.style.display = 'flex';
+          window.TemplateArticleNavigation.show('mf', title, pushHistory);
           modalBody.scrollTop = 0;
-          history.replaceState(null, null, '#template-' + encodeURIComponent(title));
+
       }
 
       function checkHashForTemplate() {
@@ -4936,6 +4961,9 @@
       }
 
       window.addEventListener('hashchange', checkHashForTemplate);
+      window.addEventListener('gencore-language-changed', () => {
+        if (modal.classList.contains('active')) openTemplateModalByTitle(modalTitle.textContent, false);
+      });
       checkHashForTemplate();
     });
   </script>

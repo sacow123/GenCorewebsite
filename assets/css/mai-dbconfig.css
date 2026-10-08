@@ -1,0 +1,50 @@
+
+            #sec-mai-hd-settings-db .dbconfig-filter-panel { margin:0 0 32px; padding:0; border:0; border-radius:0; background:transparent; display:flex; flex-direction:column; gap:28px; }
+            #sec-mai-hd-settings-db .dbconfig-filter-group { display:grid; grid-template-columns:110px minmax(0, 1fr); align-items:start; gap:18px; }
+            #sec-mai-hd-settings-db .dbconfig-filter-group:first-child { padding-bottom:28px; border-bottom:1px solid #e5e7eb; }
+            #sec-mai-hd-settings-db .dbconfig-filter-label { width:auto; padding-top:15px; color:#111827; font-size:19px; font-weight:800; letter-spacing:-.03em; }
+            #sec-mai-hd-settings-db .dbconfig-filter-options { display:flex; flex:1; flex-wrap:wrap; gap:12px; }
+            #sec-mai-hd-settings-db .dbconfig-filter-button { min-height:48px; border:1px solid #d1d5db; border-radius:12px; background:#fff; color:#1f2937; padding:9px 22px; font:inherit; font-size:15px; font-weight:700; cursor:pointer; transition:background .2s, border-color .2s, color .2s, box-shadow .2s; }
+            #sec-mai-hd-settings-db .dbconfig-filter-button:hover { border-color:#7c3aed; color:#6d28d9; }
+            #sec-mai-hd-settings-db .dbconfig-filter-button.is-active { background:#fff; border:2px solid #7c3aed; color:#6d28d9; box-shadow:0 2px 8px rgba(124,58,237,.08); }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-picker { width:100%; max-width:724px; min-width:0; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-types { display:grid; grid-template-columns:repeat(6, minmax(0, 1fr)); gap:16px; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-type { min-height:190px; padding:20px 10px; border:1px solid #a78bfa; border-radius:20px; background:#fff; color:#111827; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:18px; font:inherit; font-size:16px; font-weight:700; text-align:center; cursor:pointer; transition:background .2s, border-color .2s, color .2s, box-shadow .2s; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-type:hover { border-color:#7c3aed; color:#6d28d9; box-shadow:0 5px 16px rgba(124,58,237,.10); }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-type.is-active { background:linear-gradient(135deg, #fff 0%, #faf5ff 100%); border:2px solid #7c3aed; color:#6d28d9; box-shadow:0 5px 16px rgba(124,58,237,.10); }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-icon { width:120px; height:76px; display:grid; place-items:center; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-icon img { display:block; max-width:118px; max-height:76px; object-fit:contain; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail { --dbconfig-detail-connector-x:50%; position:relative; display:flex; flex-wrap:nowrap; gap:8px; margin-top:34px; padding:22px; border:1px solid #d1d5db; border-radius:18px; background:#fff; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail .dbconfig-filter-button { min-height:44px; padding:8px 12px; font-size:14px; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail .dbconfig-filter-button:first-child { white-space:nowrap; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail::before { content:''; position:absolute; top:-34px; left:var(--dbconfig-detail-connector-x); width:1px; height:34px; background:#a78bfa; transform:translateX(-50%); }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail[hidden] { display:none; }
+            #sec-mai-hd-settings-db .dbconfig-filter-empty { margin:0; padding:18px; border:1px dashed #c4b5fd; border-radius:8px; background:#fff; color:#6b21a8; font-size:14px; font-weight:700; text-align:center; }
+            @media (max-width:1450px) { #sec-mai-hd-settings-db .dbconfig-prosthesis-types { grid-template-columns:repeat(3, minmax(118px, 1fr)); } }
+            @media (max-width:640px) { #sec-mai-hd-settings-db .dbconfig-filter-group { grid-template-columns:1fr; gap:10px; } #sec-mai-hd-settings-db .dbconfig-filter-label { padding-top:0; } #sec-mai-hd-settings-db .dbconfig-prosthesis-picker { width:100%; } #sec-mai-hd-settings-db .dbconfig-prosthesis-types { grid-template-columns:repeat(2, minmax(100px, 1fr)); gap:10px; } #sec-mai-hd-settings-db .dbconfig-prosthesis-type { min-height:155px; font-size:14px; } #sec-mai-hd-settings-db .dbconfig-prosthesis-icon { width:84px; height:54px; } #sec-mai-hd-settings-db .dbconfig-prosthesis-icon img { max-width:82px; max-height:54px; } #sec-mai-hd-settings-db .dbconfig-prosthesis-detail { flex-wrap:wrap; } }
+          
+
+#sec-mai-hd-settings-db .mai-template-list button{border:0;background:transparent;color:inherit;text-align:left;font:inherit;cursor:pointer;padding:5px 0;overflow-wrap:anywhere}
+#sec-mai-hd-settings-db .mai-template-list button:hover,#sec-mai-hd-settings-db .mai-template-list button:focus-visible{color:#7c3aed;text-decoration:underline}
+#sec-mai-hd-settings-db .mai-template-group{background:var(--bg-color,#fff);border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-top:16px;box-shadow:0 2px 4px rgba(0,0,0,.02)}
+#sec-mai-hd-settings-db .mai-template-group h4{color:#a855f7;margin:0 0 12px;border-bottom:2px solid #f3e8ff;padding-bottom:8px}
+#sec-mai-hd-settings-db .mai-template-list{margin:0;padding-left:20px;font-size:21px;color:var(--text-color,#4b5563)}
+#mai-template-modal .mai-template-illustrations{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin-top:20px}
+#mai-template-modal [data-mai-image]{display:block;border:0;padding:0;background:transparent;cursor:zoom-in}
+#mai-template-modal [data-mai-image]:focus-visible{outline:3px solid #7c3aed;outline-offset:4px;border-radius:8px}
+#mai-template-modal .mai-template-illustrations button{width:calc((100% - 32px)/3)}
+#mai-template-modal .mai-template-illustrations img{width:100%;max-height:320px;object-fit:contain;border-radius:8px}
+#mai-template-modal .mai-template-illustrations button:only-child{width:min(100%,620px)}
+#mai-template-modal .mai-template-illustrations button:only-child img{max-height:480px}
+@media(max-width:640px){#mai-template-modal .mai-template-illustrations button{width:100%}#mai-template-modal .mai-template-illustrations img{max-height:280px}}
+#mai-template-image-viewer{position:fixed;inset:0;margin:auto;padding:48px 16px 16px;border:0;border-radius:12px;background:#fff;max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);overflow:auto}
+#mai-template-image-viewer::backdrop{background:rgba(15,23,42,.85)}
+#mai-template-image-viewer .mai-image-close{position:absolute;right:8px;top:8px;width:34px;height:34px;border:0;border-radius:50%;background:#5424d8;color:#fff;font-size:26px;cursor:pointer}
+#mai-template-image-viewer .mai-image-close:focus-visible{outline:3px solid #a78bfa;outline-offset:2px}
+#mai-template-image-viewer .mai-image-content>img{display:block;width:auto;height:auto;max-width:calc(100vw - 56px);max-height:calc(100dvh - 88px);object-fit:contain}
+#mai-template-image-viewer.is-tool .mai-image-content{position:relative;width:148px;height:260px;overflow:clip}
+#mai-template-image-viewer.is-tool .mai-image-content>img{position:absolute;left:50%;top:-20px;width:880px;max-width:none;max-height:none;height:auto;transform:rotate(90deg) translateY(-50%);transform-origin:top left}
+
+/* Original M AI tool-list WebP, rotated clockwise so the cutting edge faces up. */
+#mai-template-modal .mai-template-tool-photo{position:relative;width:74px;height:130px;margin:0 auto 6px;overflow:clip}
+#mai-template-modal .mai-template-tool-photo img{position:absolute;left:50%;top:-10px;width:440px;max-width:none;height:auto;transform:rotate(90deg) translateY(-50%);transform-origin:top left}

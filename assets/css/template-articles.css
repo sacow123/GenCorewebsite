@@ -1,0 +1,7 @@
+.template-detail-page .template-detail-header{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid #e5e7eb}
+.template-detail-page .template-detail-header h3{order:2;margin:0;color:#7c3aed;font-size:clamp(20px,2.2vw,30px);line-height:1.4;overflow-wrap:anywhere}
+.template-detail-page .template-detail-back{order:1;border:1px solid #c4b5fd;border-radius:9px;background:#fff;color:#6d28d9;font:inherit;font-size:15px;font-weight:700;padding:10px 16px;cursor:pointer}
+.template-detail-page .template-detail-back:hover,.template-detail-page .template-detail-back:focus-visible{background:#f5f3ff;border-color:#7c3aed}
+.template-detail-page .template-detail-body{font-size:21px;line-height:1.6;color:var(--text-color,#374151);overflow-wrap:anywhere}
+.template-detail-page .template-detail-panel{width:100%;min-width:0}
+@media(max-width:640px){.template-detail-page .template-detail-header{gap:14px;margin-bottom:16px}.template-detail-page .template-detail-body{font-size:16px}}

@@ -5436,7 +5436,8 @@ function applyLanguage(lang) {
   // Preserve their live DOM and event handlers while translating the labels.
   const preservesDbconfigFilters = activeSection?.id === "sec-mf-hd-dbconfig";
   const preservesMaiTools = activeSection?.id === "sec-mai-tools";
-  if (!preservesDbconfigFilters && !preservesMaiTools) restoreContentSection(activeSection);
+  const preservesTemplateArticle = activeSection?.classList.contains('template-detail-page') || activeSection?.id === 'sec-mai-hd-settings-db';
+  if (!preservesDbconfigFilters && !preservesMaiTools && !preservesTemplateArticle) restoreContentSection(activeSection);
 
   currentLang = lang;
   try {
@@ -6142,3 +6143,8 @@ Object.assign(TRANSLATIONS.ko, { "nav-mai-jigs": "🔩 지그 사용 방법" });
 Object.assign(TRANSLATIONS.en, { "nav-mai-jigs": "🔩 How to Use the Jigs" });
 Object.assign(TRANSLATIONS.ja, { "nav-mai-jigs": "🔩 ジグの使用方法" });
 Object.assign(TRANSLATIONS.es, { "nav-mai-jigs": "🔩 Cómo utilizar los útiles de sujeción" });
+
+Object.assign(TRANSLATIONS.ko, {"nav-mai-hd-settings-db":"DB(데이터 베이스_템플릿)","nav-mai-hd-settings-fixture":"Fixture(픽스처)"});
+Object.assign(TRANSLATIONS.en, {"nav-mai-hd-settings-db":"DB(Database_Templates)","nav-mai-hd-settings-fixture":"Fixture"});
+Object.assign(TRANSLATIONS.ja, {"nav-mai-hd-settings-db":"DB(データベース_テンプレート)","nav-mai-hd-settings-fixture":"Fixture(フィクスチャ)"});
+Object.assign(TRANSLATIONS.es, {"nav-mai-hd-settings-db":"DB(Base de datos_Plantillas)","nav-mai-hd-settings-fixture":"Fixture(Dispositivo de sujeción)"});

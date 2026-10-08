@@ -1,0 +1,194 @@
+{
+  "environment": "http://127.0.0.1:8080/사용자 매뉴얼.html",
+  "languageCycle": [
+    "ko",
+    "en",
+    "ja",
+    "en",
+    "ko"
+  ],
+  "checks": [
+    {
+      "lang": "ko",
+      "title": "Glass Ceramic_Crown / Veneer",
+      "sections": true,
+      "tools": [
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "brokenImages": []
+    },
+    {
+      "lang": "ko",
+      "title": "Glass Ceramic_Crown / Veneer_D0.6",
+      "sections": true,
+      "tools": [
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "brokenImages": []
+    },
+    {
+      "lang": "ko",
+      "title": "Glass Ceramic_Crown / Veneer_D0.6_Fast-II",
+      "sections": true,
+      "tools": [
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "brokenImages": []
+    },
+    {
+      "lang": "ko",
+      "title": "Glass Ceramic_Inlay/Onlay",
+      "sections": true,
+      "tools": [
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "brokenImages": []
+    },
+    {
+      "lang": "ko",
+      "title": "Glass Ceramic_Inlay/Onlay_1st-Cavity",
+      "sections": true,
+      "tools": [
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "brokenImages": []
+    },
+    {
+      "lang": "ko",
+      "title": "Glass Ceramic_Inlay/Onlay_2nd-Occlusal",
+      "sections": true,
+      "tools": [
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "brokenImages": []
+    },
+    {
+      "lang": "ko",
+      "title": "Glass Ceramic_Inlay/Onlay_D0.6",
+      "sections": true,
+      "tools": [
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "brokenImages": []
+    },
+    {
+      "lang": "en",
+      "title": "Glass Ceramic_Crown / Veneer",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "en",
+      "title": "Glass Ceramic_Crown / Veneer_D0.6",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "en",
+      "title": "Glass Ceramic_Crown / Veneer_D0.6_Fast-II",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "en",
+      "title": "Glass Ceramic_Inlay/Onlay",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "en",
+      "title": "Glass Ceramic_Inlay/Onlay_1st-Cavity",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "en",
+      "title": "Glass Ceramic_Inlay/Onlay_2nd-Occlusal",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "en",
+      "title": "Glass Ceramic_Inlay/Onlay_D0.6",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "ja",
+      "title": "Glass Ceramic_Crown / Veneer",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "ja",
+      "title": "Glass Ceramic_Crown / Veneer_D0.6",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "ja",
+      "title": "Glass Ceramic_Crown / Veneer_D0.6_Fast-II",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "ja",
+      "title": "Glass Ceramic_Inlay/Onlay",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "ja",
+      "title": "Glass Ceramic_Inlay/Onlay_1st-Cavity",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "ja",
+      "title": "Glass Ceramic_Inlay/Onlay_2nd-Occlusal",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    },
+    {
+      "lang": "ja",
+      "title": "Glass Ceramic_Inlay/Onlay_D0.6",
+      "koreanResidual": false,
+      "sections": true,
+      "brokenImages": []
+    }
+  ]
+}

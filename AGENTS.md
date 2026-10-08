@@ -1,5 +1,14 @@
 # Project Coding Rules
 
+## Protected Local Entry — 사용자 명시 승인 없이 변경 금지
+
+- `index.html`을 `file:///`로 열면 `http://127.0.0.1:8080/index.html`로 자동 이동해야 합니다. 기존 query와 hash를 유지합니다.
+- HTTP/HTTPS로 실행하는 페이지는 이동시키지 않습니다.
+- `src/scripts/local-entry.js`와 `index.html`, `src/index.template.html`의 초기 로딩 연결을 삭제·우회·비활성화하거나 주소·포트를 변경하지 마십시오. 리팩터링·빌드·재생성 과정에서도 반드시 유지합니다.
+- 위 동작은 사용자 보호 요청입니다. 변경하려면 해당 변경에 대한 사용자의 명시적인 승인을 먼저 받아야 합니다. 다른 수정 요청을 승인으로 간주하지 마십시오.
+- HTML은 로컬 서버를 직접 시작할 수 없습니다. `로컬 서버 열기.cmd`와 `run_server.ps1`의 8080 서버 실행 경로를 유지합니다.
+- 내부 개발용 loopback 로컬 서버(`127.0.0.1`, `localhost`, `::1`)는 로그인 없이 접속합니다. 사용자 명시 승인 없이 로컬 로그인 요구를 다시 추가하지 마십시오. 배포 사이트의 인증 보호는 유지하며, 로컬 편의를 위해 배포 인증 코드를 변경하지 마십시오.
+
 1. When inserting images into HTML, check whether the source image is already WebP. If it is not WebP, convert it to WebP first, then place it in the appropriate folder under `assets/images/` before referencing it from HTML.
 
 ## Permanent Translation Rules
