@@ -6148,3 +6148,11 @@ Object.assign(TRANSLATIONS.ko, {"nav-mai-hd-settings-db":"DB(데이터 베이스
 Object.assign(TRANSLATIONS.en, {"nav-mai-hd-settings-db":"DB(Database_Templates)","nav-mai-hd-settings-fixture":"Fixture"});
 Object.assign(TRANSLATIONS.ja, {"nav-mai-hd-settings-db":"DB(データベース_テンプレート)","nav-mai-hd-settings-fixture":"Fixture(フィクスチャ)"});
 Object.assign(TRANSLATIONS.es, {"nav-mai-hd-settings-db":"DB(Base de datos_Plantillas)","nav-mai-hd-settings-fixture":"Fixture(Dispositivo de sujeción)"});
+
+Object.assign(TRANSLATIONS.ko, {"safety-no-unauthorized-operation":"임의 조작 금지","safety-no-unauthorized-operation-desc":"매뉴얼 및 교육 내용과 다른 방법으로 장비를 운용하면 예상치 못한 문제가 발생할 수 있으며, 이로 인해 발생한 문제에 대한 책임은 사용자에게 있습니다."});
+
+Object.assign(TRANSLATIONS.en, {"safety-no-unauthorized-operation":"Do Not Operate Without Authorization","safety-no-unauthorized-operation-desc":"Operating the equipment in ways that differ from the manual and training may cause unexpected problems. The user is responsible for any resulting problems."});
+
+Object.assign(TRANSLATIONS.ja, {"safety-no-unauthorized-operation":"独自の判断による操作禁止","safety-no-unauthorized-operation-desc":"マニュアルおよび研修内容と異なる方法で機器を操作すると、予期しない問題が発生する可能性があります。これにより生じた問題の責任は使用者にあります。"});
+
+Object.assign(TRANSLATIONS.es, {"safety-no-unauthorized-operation":"Prohibido operar sin autorización","safety-no-unauthorized-operation-desc":"Operar el equipo de forma distinta a lo indicado en el manual y en la formación puede causar problemas imprevistos. El usuario es responsable de los problemas que se deriven de ello."});
