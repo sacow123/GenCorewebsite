@@ -1,0 +1,49 @@
+#sec-mai-hd-settings-fixture{--fixture-purple:#7544cf;--fixture-ink:#24233a;--fixture-muted:#747586;color:var(--fixture-ink)}
+#sec-mai-hd-settings-fixture *{box-sizing:border-box}
+#sec-mai-hd-settings-fixture .mai-fixture-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:28px}
+#sec-mai-hd-settings-fixture .mai-fixture-eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--fixture-purple);margin:0 0 12px}
+#sec-mai-hd-settings-fixture h2{font-size:40px;letter-spacing:-1.5px;line-height:1.2;margin:0 0 14px;border:0;padding:0;color:var(--fixture-ink)}
+#sec-mai-hd-settings-fixture .mai-fixture-heading-sub{font-size:17px;font-weight:500;letter-spacing:-.5px;color:var(--fixture-muted);display:inline-block;margin-left:12px}
+#sec-mai-hd-settings-fixture .mai-fixture-lead{margin:0;font-size:15px;color:#656678;line-height:1.8}
+#sec-mai-hd-settings-fixture .mai-fixture-version{white-space:nowrap;margin-top:4px;background:#eee8fa;border:1px solid #ded3f3;border-radius:7px;padding:8px 13px;color:#67429e;font-size:12px;font-weight:700}
+#sec-mai-hd-settings-fixture .mai-fixture-version>span{margin:0 6px;opacity:.5}
+#sec-mai-hd-settings-fixture .mai-fixture-package{display:flex;align-items:center;gap:15px;background:linear-gradient(110deg,#f0eafa,#f8f6fc);border:1px solid #e6def2;border-radius:12px;padding:19px 22px;margin-bottom:30px}
+#sec-mai-hd-settings-fixture .mai-fixture-package-icon{display:grid;place-items:center;width:42px;height:42px;flex-shrink:0;border-radius:10px;background:#fff;color:#8b62cb;font-size:29px}
+#sec-mai-hd-settings-fixture .mai-fixture-package strong{font-size:14px;font-weight:700;overflow-wrap:anywhere}
+#sec-mai-hd-settings-fixture .mai-fixture-package p{margin:5px 0 0;font-size:12px;color:#80728e;line-height:1.6}
+#sec-mai-hd-settings-fixture .mai-fixture-controls{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+#sec-mai-hd-settings-fixture .mai-fixture-filters{display:flex;gap:7px;flex-wrap:wrap}
+#sec-mai-hd-settings-fixture .mai-fixture-filters button{display:flex;align-items:center;gap:8px;border:1px solid #e4e2eb;background:white;border-radius:8px;color:#666476;font-family:inherit;font-size:13px;font-weight:600;padding:10px 14px;cursor:pointer;transition:background .15s}
+#sec-mai-hd-settings-fixture .mai-fixture-filters button:hover{border-color:#ac8add}
+#sec-mai-hd-settings-fixture .mai-fixture-filters button[aria-pressed=true]{background:#7544cf;color:white;border-color:#7544cf}
+#sec-mai-hd-settings-fixture button:focus-visible,#sec-mai-hd-settings-fixture a:focus-visible{outline:3px solid #ac8add;outline-offset:3px}
+#sec-mai-hd-settings-fixture .mai-fixture-count{font-size:11px;opacity:.7}
+#sec-mai-hd-settings-fixture .mai-fixture-controls-note{font-size:11px;color:#8c8a98}
+#sec-mai-hd-settings-fixture .mai-fixture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+#sec-mai-hd-settings-fixture .mai-fixture-card{display:flex;flex-direction:column;min-width:0;border:1px solid #e7e5ed;border-radius:13px;overflow:hidden;background:white;box-shadow:0 3px 12px #28203e03}
+#sec-mai-hd-settings-fixture .mai-fixture-card[hidden]{display:none!important}
+#sec-mai-hd-settings-fixture .mai-fixture-visual{height:204px;position:relative;display:flex;align-items:center;justify-content:center;background:#f6f7f9;border-bottom:1px solid #eeedf2}
+#sec-mai-hd-settings-fixture .mai-fixture-visual img{width:178px;height:178px;object-fit:contain;mix-blend-mode:multiply;display:block;border:0;margin:0}
+#sec-mai-hd-settings-fixture .mai-fixture-position{position:absolute;bottom:12px;right:14px;border:1px solid #e4e5e9;background:#ffffffd9;border-radius:5px;padding:4px 7px;font-size:10px;color:#777a86}
+#sec-mai-hd-settings-fixture .mai-fixture-body{padding:21px 22px;display:flex;flex-direction:column;flex:1;min-width:0}
+#sec-mai-hd-settings-fixture .mai-fixture-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px}
+#sec-mai-hd-settings-fixture .mai-fixture-family{font-size:10px;letter-spacing:1.8px;font-weight:700;color:#9693a6}
+#sec-mai-hd-settings-fixture .mai-fixture-badge{font-size:10px;font-weight:700;padding:4px 8px;border-radius:5px;background:#eee8f8;color:#7753aa}
+#sec-mai-hd-settings-fixture .mai-fixture-badge.dry{background:#fff4df;color:#986d20}
+#sec-mai-hd-settings-fixture .mai-fixture-badge.wet{background:#eaf4fc;color:#3877a3}
+#sec-mai-hd-settings-fixture h3{font-size:20px;line-height:1.4;letter-spacing:-.5px;margin:0 0 11px;color:var(--fixture-ink);border:0;padding:0;overflow-wrap:anywhere}
+#sec-mai-hd-settings-fixture .mai-fixture-desc{font-size:13px;color:#777687;line-height:1.8;margin:0 0 21px;flex:1}
+#sec-mai-hd-settings-fixture .mai-fixture-meta{margin:0 0 18px;font-size:11px}
+#sec-mai-hd-settings-fixture .mai-fixture-meta>div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px;margin:6px 0}
+#sec-mai-hd-settings-fixture dt{color:#94909f;font-weight:400}
+#sec-mai-hd-settings-fixture dd{margin:0;overflow-wrap:anywhere;color:#696475;line-height:1.5}
+#sec-mai-hd-settings-fixture .mai-fixture-file{display:flex;align-items:flex-start;gap:9px;border-top:1px solid #eeedf3;padding-top:14px;font-size:11px;line-height:1.6}
+#sec-mai-hd-settings-fixture .mai-fixture-file>span{font-size:9px;letter-spacing:.5px;font-weight:700;color:#9274b6;background:#f2eef9;padding:2px 5px;border-radius:3px;flex-shrink:0}
+#sec-mai-hd-settings-fixture .mai-fixture-file code{font-family:Consolas,monospace;color:#6a607b;overflow-wrap:anywhere;background:none;padding:0;font-size:11px}
+#sec-mai-hd-settings-fixture .mai-fixture-note{border-left:3px solid #ac8add;background:#f2eef8;padding:20px 23px;margin-top:28px;border-radius:0 10px 10px 0}
+#sec-mai-hd-settings-fixture .mai-fixture-note strong{font-size:13px;color:#715891}
+#sec-mai-hd-settings-fixture .mai-fixture-note p{font-size:12px;color:#8a7c9a;line-height:1.9;margin:8px 0 0}
+#sec-mai-hd-settings-fixture .mai-fixture-source{font-size:10px;line-height:1.8;color:#aaa4b3;margin:20px 0 0;overflow-wrap:anywhere}
+#sec-mai-hd-settings-fixture .mai-fixture-source a{color:#9077ae;text-underline-offset:3px}
+@media(min-width:1500px){#sec-mai-hd-settings-fixture .mai-fixture-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:640px){#sec-mai-hd-settings-fixture .mai-fixture-grid{grid-template-columns:1fr}#sec-mai-hd-settings-fixture .mai-fixture-heading{gap:8px}#sec-mai-hd-settings-fixture h2{font-size:33px}#sec-mai-hd-settings-fixture .mai-fixture-heading-sub{display:block;margin:8px 0 0;font-size:14px}#sec-mai-hd-settings-fixture .mai-fixture-lead{font-size:13px}#sec-mai-hd-settings-fixture .mai-fixture-version{font-size:10px;padding:7px 9px}#sec-mai-hd-settings-fixture .mai-fixture-package{padding:15px}#sec-mai-hd-settings-fixture .mai-fixture-filters button{padding:9px 12px}#sec-mai-hd-settings-fixture .mai-fixture-meta>div{grid-template-columns:105px minmax(0,1fr)}}

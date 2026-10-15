@@ -10,7 +10,7 @@
   submenu.className = 'sub-menu';
   submenu.innerHTML = `
     <div class="nav-item" data-section="sec-mai-hd-settings-db" id="menu-sec-mai-hd-settings-db"><span data-i18n="nav-mai-hd-settings-db">DB(데이터 베이스_템플릿)</span></div>
-    <div class="nav-item" data-section="sec-mai-hd-settings-fixture" id="menu-sec-mai-hd-settings-fixture"><span data-i18n="nav-mai-hd-settings-fixture">Fixture(픽스처)</span></div>`;
+    <div class="nav-item" data-section="sec-mai-hd-settings-fixture" id="menu-sec-mai-hd-settings-fixture"><span data-i18n="nav-mai-hd-settings-fixture">Fixture(픽스처, 지그)</span></div>`;
   menu.removeAttribute('data-section');
   parent.append(menu, submenu);
 })();
