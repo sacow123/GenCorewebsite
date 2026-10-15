@@ -1,0 +1,3834 @@
+[
+  {
+    "id": "1e5cfb3e-9058-808f-aca1-c08cf145061f",
+    "text": "Closefit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used for machining interface\n\n\n3.0 (NP)\n\t\nHex\n\t\n\t\nGEN_Closefit_30_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.0 (NP)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Closefit_30_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.5 (RP)\n\t\nHex\n\t\n\t\nGEN_Closefit_35_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5 (RP)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Closefit_35_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.3 / 5.0 (WP)\n\t\nHex\n\t\n\t\nGEN_Closefit_43.50_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.3 / 5.0 (WP)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Closefit_43.50_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nTouareg S & OS\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used for machining interface\n\n\n3.5 / 3.75 / 4.2 / 5.0 / 6.0\n\t\nHex\n\t\n\t\nGEN_Touareg_35.375.42.50.60_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.5 / 3.75 / 4.2 / 5.0 / 6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Touareg_35.375.42.50.60_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used for machining interface"
+          ],
+          [
+            "3.0 (NP)",
+            "Hex",
+            "",
+            "GEN_Closefit_30_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.0 (NP)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Closefit_30_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.5 (RP)",
+            "Hex",
+            "",
+            "GEN_Closefit_35_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 (RP)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Closefit_35_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.3 / 5.0 (WP)",
+            "Hex",
+            "",
+            "GEN_Closefit_43.50_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.3 / 5.0 (WP)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Closefit_43.50_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Closefit"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used for machining interface"
+          ],
+          [
+            "3.5 / 3.75 / 4.2 / 5.0 / 6.0",
+            "Hex",
+            "",
+            "GEN_Touareg_35.375.42.50.60_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.5 / 3.75 / 4.2 / 5.0 / 6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Touareg_35.375.42.50.60_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Touareg S & OS"
+      }
+    ],
+    "title": "M.Ai_Adin"
+  },
+  {
+    "id": "1e5cfb3e-9058-8036-9d54-e39b47f10616",
+    "text": "DF\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used for machining interface\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_DF_48_MUA\n\t\nT16-M1.5FL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used for machining interface"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_DF_48_MUA",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "DF"
+      }
+    ],
+    "title": "M.Ai_All about abutment"
+  },
+  {
+    "id": "21dcfb3e-9058-8098-9741-e972cf3941c0",
+    "text": "Internal Hex type (DFI etc)\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used for machining interface\n\n\n4.2 / 5.0 / 6.0\n\t\nHex\n\t\n\t\nGEN_DFI_42.50.60_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.2 / 5.0 / 6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_DFI_42.50.60_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used for machining interface"
+          ],
+          [
+            "4.2 / 5.0 / 6.0",
+            "Hex",
+            "",
+            "GEN_DFI_42.50.60_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.2 / 5.0 / 6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_DFI_42.50.60_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Internal Hex type (DFI etc)"
+      }
+    ],
+    "title": "M.Ai_AlphaBioTec"
+  },
+  {
+    "id": "223cfb3e-9058-80bc-9096-fa562d5b7e25",
+    "text": "Anker - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used for machining interface\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Anker_MUA\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used for machining interface"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Anker_MUA",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Anker - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Anker"
+  },
+  {
+    "id": "223cfb3e-9058-8049-a978-d0048363c4c0",
+    "text": "Anthofit OI\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used for machining interface\n\n\n3.5\n\t\nHex\n\t\n\t\nGEN_Anthofit_35_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Anthofit_35_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.0\n\t\nHex\n\t\n\t\nGEN_Anthofit_40_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Anthofit_40_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nAxiom\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used for machining interface\n\n\n\t\nEngaged (Tri-narrow indexing)\n\t\n\t\nGEN_Axiom_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_Axiom_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nAxiom - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used for machining interface\n\n\n4.0\n\t\nMultiunit\n\t\n\t\nGEN_Axiom_40_MUA\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_Axiom_48_MUA\n\t\nT16-M1.5FL, T19-M1.0F\n\n\n4.0\n\t\nMultiunit\n\t\n\t\nGEN_Axiom_Con_40_MUA\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used for machining interface"
+          ],
+          [
+            "3.5",
+            "Hex",
+            "",
+            "GEN_Anthofit_35_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Anthofit_35_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0",
+            "Hex",
+            "",
+            "GEN_Anthofit_40_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Anthofit_40_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Anthofit OI"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used for machining interface"
+          ],
+          [
+            "",
+            "Engaged (Tri-narrow indexing)",
+            "",
+            "GEN_Axiom_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_Axiom_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Axiom"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used for machining interface"
+          ],
+          [
+            "4.0",
+            "Multiunit",
+            "",
+            "GEN_Axiom_40_MUA",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_Axiom_48_MUA",
+            "T16-M1.5FL, T19-M1.0F"
+          ],
+          [
+            "4.0",
+            "Multiunit",
+            "",
+            "GEN_Axiom_Con_40_MUA",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Axiom - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Anthogyr"
+  },
+  {
+    "id": "1e5cfb3e-9058-8069-a947-ca1b9bd09042",
+    "text": "MasterFix\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n5.5 (R)\n\t\nNCS (Cementless)\n\t\n\t\nGEN_MasterFix_55_NCS\n\t\nT18-M1.5R, T24_M2.0T",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "5.5 (R)",
+            "NCS (Cementless)",
+            "",
+            "GEN_MasterFix_55_NCS",
+            "T18-M1.5R, T24_M2.0T"
+          ]
+        ],
+        "series": "MasterFix"
+      }
+    ],
+    "title": "M.Ai_Arum"
+  },
+  {
+    "id": "21dcfb3e-9058-8091-a501-dfc9e0c04593",
+    "text": "OsseoSpeed EV - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nMultiunit\n\t\n\t\nGEN_EV_UNI_MUA\n\t\nT15-M1.5RL, T17_M1.5F, T18-M1.5R\nOsseoSpeed TX\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.0 (Yellow)\n\t\nHex\n\t\n\t\nGEN_TX_30_Yellow_(H)\n\t\nT15-M1.5RL, T17_M1.5F, T18-M1.5R\n\n\n3.0 (Yellow)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TX_30_Yellow_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.5 / 4.0 (Aqua)\n\t\nHex\n\t\n\t\nGEN_TX_35.40_Aqua_(H)\n\t\nT15-M1.5RL, T17_M1.5F, T18-M1.5R\n\n\n3.5 / 4.0 (Aqua)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TX_35.40_Aqua_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.5 / 5.0 (Lilac)\n\t\nHex\n\t\n\t\nGEN_TX_45.50_Lilac_(H)\n\t\nT16-M1.5FL, T17_M1.5F, T18-M1.5R\n\n\n4.5 / 5.0 (Lilac)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TX_45.50_Lilac_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\nOsseoSpeed TX - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n(20 degree)\n\t\nMultiunit\n\t\n\t\nGEN_TX_UNI20_MUA\n\t\nT16-M1.5FL, T17_M1.5F, T18-M1.5R\n\n\n(45 degree)\n\t\nMultiunit\n\t\n\t\nGEN_TX_UNI45_MUA\n\t\nT16-M1.5FL, T17_M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_EV_UNI_MUA",
+            "T15-M1.5RL, T17_M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "OsseoSpeed EV - Multiunit"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.0 (Yellow)",
+            "Hex",
+            "",
+            "GEN_TX_30_Yellow_(H)",
+            "T15-M1.5RL, T17_M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.0 (Yellow)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TX_30_Yellow_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.5 / 4.0 (Aqua)",
+            "Hex",
+            "",
+            "GEN_TX_35.40_Aqua_(H)",
+            "T15-M1.5RL, T17_M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 / 4.0 (Aqua)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TX_35.40_Aqua_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.5 / 5.0 (Lilac)",
+            "Hex",
+            "",
+            "GEN_TX_45.50_Lilac_(H)",
+            "T16-M1.5FL, T17_M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5 / 5.0 (Lilac)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TX_45.50_Lilac_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "OsseoSpeed TX"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "(20 degree)",
+            "Multiunit",
+            "",
+            "GEN_TX_UNI20_MUA",
+            "T16-M1.5FL, T17_M1.5F, T18-M1.5R"
+          ],
+          [
+            "(45 degree)",
+            "Multiunit",
+            "",
+            "GEN_TX_UNI45_MUA",
+            "T16-M1.5FL, T17_M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "OsseoSpeed TX - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Astra"
+  },
+  {
+    "id": "21dcfb3e-9058-801e-844c-d2ba778adfe2",
+    "text": "Semados\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.25 / 3.75\n\t\nHex\n\t\n\t\nGEN_Semados_325.375_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.25 / 3.75\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Semados_325.375_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.1\n\t\nHex\n\t\n\t\nGEN_Semados_41_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.1\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Semados_41_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nHex\n\t\n\t\nGEN_Semados_45_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Semados_45_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nHex\n\t\n\t\nGEN_Semados_55_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Semados_55_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nSemados - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Semados_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.25 / 3.75",
+            "Hex",
+            "",
+            "GEN_Semados_325.375_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.25 / 3.75",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Semados_325.375_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.1",
+            "Hex",
+            "",
+            "GEN_Semados_41_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.1",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Semados_41_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Hex",
+            "",
+            "GEN_Semados_45_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Semados_45_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Hex",
+            "",
+            "GEN_Semados_55_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Semados_55_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Semados"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Semados_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Semados - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Bego"
+  },
+  {
+    "id": "1e5cfb3e-9058-807d-957d-d524886f6ea0",
+    "text": "External\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5\n\t\nHex\n\t\n\t\nGEN_External_35_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n3.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_External_35_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.0\n\t\nHex\n\t\n\t\nGEN_External_40_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n4.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_External_40_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.0\n\t\nHex\n\t\n\t\nGEN_External_50_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n5.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_External_50_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n6.0\n\t\nHex\n\t\n\t\nGEN_External_60_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_External_60_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nInternal\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.0\n\t\nHex\n\t\n\t\nGEN_Internal_30_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Internal_30_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5\n\t\nHex\n\t\n\t\nGEN_Internal_35_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Internal_35_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nHex\n\t\n\t\nGEN_Internal_45_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Internal_45_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.7\n\t\nHex\n\t\n\t\nGEN_Internal_57_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n5.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Internal_57_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5",
+            "Hex",
+            "",
+            "GEN_External_35_(H)",
+            "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "3.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_External_35_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0",
+            "Hex",
+            "",
+            "GEN_External_40_(H)",
+            "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "4.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_External_40_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.0",
+            "Hex",
+            "",
+            "GEN_External_50_(H)",
+            "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "5.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_External_50_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.0",
+            "Hex",
+            "",
+            "GEN_External_60_(H)",
+            "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_External_60_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "External"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.0",
+            "Hex",
+            "",
+            "GEN_Internal_30_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Internal_30_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Hex",
+            "",
+            "GEN_Internal_35_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Internal_35_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Hex",
+            "",
+            "GEN_Internal_45_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Internal_45_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.7",
+            "Hex",
+            "",
+            "GEN_Internal_57_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "5.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Internal_57_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Internal"
+      }
+    ],
+    "title": "M.Ai_Biohorizons"
+  },
+  {
+    "id": "21dcfb3e-9058-8045-911d-e6ec8e39f682",
+    "text": "Certain External\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.4 (M)\n\t\nHex\n\t\n\t\nGEN_Certain_External_34_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n3.4 (M)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Certain_External_34_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.1 (R)\n\t\nHex\n\t\n\t\nGEN_Certain_External_41_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n4.1 (R)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Certain_External_41_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.0 (W)\n\t\nHex\n\t\n\t\nGEN_Certain_External_50_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n5.0 (W)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Certain_External_50_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n6.0 (XW)\n\t\nHex\n\t\n\t\nGEN_Certain_External_60_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n6.0 (XW)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Certain_External_60_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nCertain Internal\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.4\n\t\nHex\n\t\n\t\nGEN_Certain_Internal_34_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.4\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Certain_Internal_34_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.1\n\t\nHex\n\t\n\t\nGEN_Certain_Internal_41_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.1\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Certain_Internal_41_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.0\n\t\nHex\n\t\n\t\nGEN_Certain_Internal_50_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Certain_Internal_50_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n6.0\n\t\nHex\n\t\n\t\nGEN_Certain_Internal_60_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Certain_Internal_60_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.4 (M)",
+            "Hex",
+            "",
+            "GEN_Certain_External_34_(H)",
+            "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "3.4 (M)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Certain_External_34_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.1 (R)",
+            "Hex",
+            "",
+            "GEN_Certain_External_41_(H)",
+            "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "4.1 (R)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Certain_External_41_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.0 (W)",
+            "Hex",
+            "",
+            "GEN_Certain_External_50_(H)",
+            "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "5.0 (W)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Certain_External_50_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.0 (XW)",
+            "Hex",
+            "",
+            "GEN_Certain_External_60_(H)",
+            "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "6.0 (XW)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Certain_External_60_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Certain External"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.4",
+            "Hex",
+            "",
+            "GEN_Certain_Internal_34_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.4",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Certain_Internal_34_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.1",
+            "Hex",
+            "",
+            "GEN_Certain_Internal_41_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.1",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Certain_Internal_41_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.0",
+            "Hex",
+            "",
+            "GEN_Certain_Internal_50_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Certain_Internal_50_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.0",
+            "Hex",
+            "",
+            "GEN_Certain_Internal_60_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Certain_Internal_60_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Certain Internal"
+      }
+    ],
+    "title": "M.Ai_Biomet 3i"
+  },
+  {
+    "id": "21dcfb3e-9058-800a-9e5e-edcb3b948585",
+    "text": "Kontact\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.6 / 4.2 / 4.8 / 5.4\n\t\nEngaged (Tri-lobe)\n\t\n\t\nGEN_Kontact_36.42.48.54_(H)\n\t\nT15-M1.5RL, T18-M1.5R, T20-M0.5F\n\n\n3.6 / 4.2 / 4.8 / 5.4\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_Kontact_36.42.48.54_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.6 / 4.2 / 4.8 / 5.4",
+            "Engaged (Tri-lobe)",
+            "",
+            "GEN_Kontact_36.42.48.54_(H)",
+            "T15-M1.5RL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "3.6 / 4.2 / 4.8 / 5.4",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_Kontact_36.42.48.54_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Kontact"
+      }
+    ],
+    "title": "M.Ai_Biotech Dental"
+  },
+  {
+    "id": "223cfb3e-9058-8014-9cd5-df48e165b799",
+    "text": "Mytis Arrow\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nC type\n\t\nHex\n\t\n\t\nGEN_Mytis Arrow_C_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nC type\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Mytis Arrow_C_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\nEW type\n\t\nHex\n\t\n\t\nGEN_Mytis Arrow_EW_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nEW type\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Mytis Arrow_EW_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "C type",
+            "Hex",
+            "",
+            "GEN_Mytis Arrow_C_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "C type",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Mytis Arrow_C_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "EW type",
+            "Hex",
+            "",
+            "GEN_Mytis Arrow_EW_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "EW type",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Mytis Arrow_EW_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Mytis Arrow"
+      }
+    ],
+    "title": "M.Ai_BrainBase Corp"
+  },
+  {
+    "id": "223cfb3e-9058-80c6-bb52-f9cbad850bfa",
+    "text": "Sky\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 (Narrow)\n\t\nMulti-lobe\n\t\n\t\nGEN_Sky_35_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5 (Narrow)\n\t\nNon-Multi-lobe (Circle)\n\t\n\t\nGEN_Sky_35_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.0 (Blue, Classic)\n\t\nMulti-lobe\n\t\n\t\nGEN_Sky_40_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.0 (Blue, Classic)\n\t\nNon-Multi-lobe (Circle)\n\t\n\t\nGEN_Sky_40_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 (Narrow)",
+            "Multi-lobe",
+            "",
+            "GEN_Sky_35_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 (Narrow)",
+            "Non-Multi-lobe (Circle)",
+            "",
+            "GEN_Sky_35_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0 (Blue, Classic)",
+            "Multi-lobe",
+            "",
+            "GEN_Sky_40_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0 (Blue, Classic)",
+            "Non-Multi-lobe (Circle)",
+            "",
+            "GEN_Sky_40_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Sky"
+      }
+    ],
+    "title": "M.Ai_Bredent"
+  },
+  {
+    "id": "223cfb3e-9058-80ec-bb7f-eb717239a139",
+    "text": "Internai\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 (Narrow)\n\t\nMulti-lobe\n\t\n\t\nGEN_Internai_35_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T20-M0.5F\n\n\n3.5 (Narrow)\n\t\nNon-Multi-lobe (Circle)\n\t\n\t\nGEN_Internai_35_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n4.1 (Universal)\n\t\nMulti-lobe\n\t\n\t\nGEN_Internai_41_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T20-M0.5F\n\n\n4.1 (Universal)\n\t\nNon-Multi-lobe (Circle)\n\t\n\t\nGEN_Internai_41_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n5.5 (Wide)\n\t\nMulti-lobe\n\t\n\t\nGEN_Internai_55_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T20-M0.5F\n\n\n5.5 (Wide)\n\t\nNon-Multi-lobe (Circle)\n\t\n\t\nGEN_Internai_55_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 (Narrow)",
+            "Multi-lobe",
+            "",
+            "GEN_Internai_35_(H)",
+            "T16-M1.5FL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "3.5 (Narrow)",
+            "Non-Multi-lobe (Circle)",
+            "",
+            "GEN_Internai_35_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "4.1 (Universal)",
+            "Multi-lobe",
+            "",
+            "GEN_Internai_41_(H)",
+            "T16-M1.5FL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "4.1 (Universal)",
+            "Non-Multi-lobe (Circle)",
+            "",
+            "GEN_Internai_41_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "5.5 (Wide)",
+            "Multi-lobe",
+            "",
+            "GEN_Internai_55_(H)",
+            "T16-M1.5FL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "5.5 (Wide)",
+            "Non-Multi-lobe (Circle)",
+            "",
+            "GEN_Internai_55_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "Internai"
+      }
+    ],
+    "title": "M.Ai_BTI"
+  },
+  {
+    "id": "223cfb3e-9058-800c-bb1b-e951b1b09e06",
+    "text": "Conic\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 / 4.0 / 4.5 / 5.0 / 6.0\n\t\nHex\n\t\n\t\nGEN_Conic_35.40.45.50.60_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5 / 4.0 / 4.5 / 5.0 / 6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Conic_35.40.45.50.60_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 / 4.0 / 4.5 / 5.0 / 6.0",
+            "Hex",
+            "",
+            "GEN_Conic_35.40.45.50.60_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 / 4.0 / 4.5 / 5.0 / 6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Conic_35.40.45.50.60_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Conic"
+      }
+    ],
+    "title": "M.Ai_CLC"
+  },
+  {
+    "id": "223cfb3e-9058-803d-b41a-f124cf37c0a1",
+    "text": "Cortex\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.3 / 3.8 / 4.2 / 5.0 / 6.0\n\t\nHex\n\t\n\t\nGEN_Cortex_33.38.42.50.60_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.3 / 3.8 / 4.2 / 5.0 / 6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Cortex_33.38.42.50.60_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.3 / 3.8 / 4.2 / 5.0 / 6.0",
+            "Hex",
+            "",
+            "GEN_Cortex_33.38.42.50.60_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.3 / 3.8 / 4.2 / 5.0 / 6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Cortex_33.38.42.50.60_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Cortex"
+      }
+    ],
+    "title": "M.Ai_Cortex"
+  },
+  {
+    "id": "223cfb3e-9058-80ec-9367-c3b7c42737a1",
+    "text": "Esthetic line\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.8 / 4.3 / 5.1\n\t\nHex\n\t\n\t\nGEN_Esthetic line_38.43.51_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T20-M0.5F\n\n\n3.8 / 4.3 / 5.1\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Esthetic line_38.43.51_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.8 / 4.3 / 5.1",
+            "Hex",
+            "",
+            "GEN_Esthetic line_38.43.51_(H)",
+            "T16-M1.5FL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "3.8 / 4.3 / 5.1",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Esthetic line_38.43.51_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "Esthetic line"
+      }
+    ],
+    "title": "M.Ai_C-Tech"
+  },
+  {
+    "id": "223cfb3e-9058-807c-89cb-eac51426768b",
+    "text": "s-Clean\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nRegular / Wide\n\t\nHex\n\t\n\t\nGEN_sClean_R.W_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nRegular / Wide\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_sClean_R.W_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nMultiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Dentis_MUA\n\t\nT16-M1.5FL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Regular / Wide",
+            "Hex",
+            "",
+            "GEN_sClean_R.W_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Regular / Wide",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_sClean_R.W_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "s-Clean"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Dentis_MUA",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "Multiunit"
+      }
+    ],
+    "title": "M.Ai_Dentis"
+  },
+  {
+    "id": "225cfb3e-9058-80f4-9055-ca8fc5d08838",
+    "text": "Bright\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 / 3.8 / 4.3 / 4.8 / 6.0\n\t\nHex\n\t\n\t\nGEN_Bright_35.38.43.48.60_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5 / 3.8 / 4.3 / 4.8 / 6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Bright_35.38.43.48.60_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nNR Line\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.4\n\t\nHex\n\t\n\t\nGEN_NR Line_34_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.4\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_NR Line_34_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.6\n\t\nHex\n\t\n\t\nGEN_NR Line_36_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.6\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_NR Line_36_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nSuperLine\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.1\n\t\nHex\n\t\n\t\nGEN_SuperLine_31_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.1\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_SuperLine_31_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.6 / 4.0 / 4.5 / 5.0 / 6.0 / 7.0\n\t\nHex\n\t\n\t\nGEN_SuperLine_36.40.45.50.60.70_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.6 / 4.0 / 4.5 / 5.0 / 6.0 / 7.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_SuperLine_36.40.45.50.60.70_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nSuperLine - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n5.5\n\t\nMultiunit\n\t\n\t\nGEN_SuperLine_55_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 / 3.8 / 4.3 / 4.8 / 6.0",
+            "Hex",
+            "",
+            "GEN_Bright_35.38.43.48.60_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 / 3.8 / 4.3 / 4.8 / 6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Bright_35.38.43.48.60_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Bright"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.4",
+            "Hex",
+            "",
+            "GEN_NR Line_34_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.4",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_NR Line_34_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.6",
+            "Hex",
+            "",
+            "GEN_NR Line_36_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.6",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_NR Line_36_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "NR Line"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.1",
+            "Hex",
+            "",
+            "GEN_SuperLine_31_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.1",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_SuperLine_31_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.6 / 4.0 / 4.5 / 5.0 / 6.0 / 7.0",
+            "Hex",
+            "",
+            "GEN_SuperLine_36.40.45.50.60.70_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.6 / 4.0 / 4.5 / 5.0 / 6.0 / 7.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_SuperLine_36.40.45.50.60.70_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "SuperLine"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "5.5",
+            "Multiunit",
+            "",
+            "GEN_SuperLine_55_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "SuperLine - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Dentium"
+  },
+  {
+    "id": "25bcfb3e-9058-808a-a469-dcc95899fecf",
+    "text": "Dentsply - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n5.5\n\t\nMultiunit\n\t\n\t\nGEN_SuperLine_55_MUA\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "5.5",
+            "Multiunit",
+            "",
+            "GEN_SuperLine_55_MUA",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Dentsply - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Dentsply"
+  },
+  {
+    "id": "225cfb3e-9058-80e4-be28-d61ff155d752",
+    "text": "Dess - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\t\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Multiunit_MUA\n\t\nT16-M1.5FL, T18-M1.5R\n\t\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Multiunit_MUA_powerball10\n\t\nT15-M1.5RL, T18-M1.5R\n\t\nPowerball screw applied",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used",
+            ""
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Multiunit_MUA",
+            "T16-M1.5FL, T18-M1.5R",
+            ""
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Multiunit_MUA_powerball10",
+            "T15-M1.5RL, T18-M1.5R",
+            "Powerball screw applied"
+          ]
+        ],
+        "series": "Dess - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Dess"
+  },
+  {
+    "id": "247cfb3e-9058-8005-97cf-c83a01909c18",
+    "text": "SM\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nMini\n\t\nTorx\n\t\n\t\nGEN_SM_M_(H)\n\t\nT15-M1.5RL, T18-M1.5R, T19-M1.0F\n\n\nMini\n\t\nNon-Torx (Circle)\n\t\n\t\nGEN_SM_M_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\nRegular / Wide / Extra Wide\n\t\nTorx\n\t\n\t\nGEN_SM_R.W.EW_(H)\n\t\nT15-M1.5RL, T18-M1.5R, T19-M1.0F\n\n\nRegular / Wide / Extra Wide\n\t\nNon-Torx (Circle)\n\t\n\t\nGEN_SM_R.W.EW_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nUF - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_UF_48_MUA\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nUF\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nNarrow\n\t\nHex\n\t\n\t\nGEN_UF_N_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nNarrow\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_UF_N_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\nRegular / Wide\n\t\nHex\n\t\n\t\nGEN_UF_R.W_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nRegular / Wide\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_UF_R.W_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Mini",
+            "Torx",
+            "",
+            "GEN_SM_M_(H)",
+            "T15-M1.5RL, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "Mini",
+            "Non-Torx (Circle)",
+            "",
+            "GEN_SM_M_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "Regular / Wide / Extra Wide",
+            "Torx",
+            "",
+            "GEN_SM_R.W.EW_(H)",
+            "T15-M1.5RL, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "Regular / Wide / Extra Wide",
+            "Non-Torx (Circle)",
+            "",
+            "GEN_SM_R.W.EW_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "SM"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_UF_48_MUA",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "UF - Multiunit"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Narrow",
+            "Hex",
+            "",
+            "GEN_UF_N_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Narrow",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_UF_N_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "Regular / Wide",
+            "Hex",
+            "",
+            "GEN_UF_R.W_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Regular / Wide",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_UF_R.W_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "UF"
+      }
+    ],
+    "title": "M.Ai_Dio"
+  },
+  {
+    "id": "225cfb3e-9058-807e-82c7-f617a077c906",
+    "text": "Pushin Octalock\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n3.6 / 4.0 / 5.0\n\t\nOcta\n\t\n\t\nGEN_Pushin.Octalock_36.40.50_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.6 / 4.0 / 5.0\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_Pushin.Octalock_36.40.50_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "3.6 / 4.0 / 5.0",
+            "Octa",
+            "",
+            "GEN_Pushin.Octalock_36.40.50_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.6 / 4.0 / 5.0",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_Pushin.Octalock_36.40.50_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Pushin Octalock"
+      }
+    ],
+    "title": "M.Ai_DYNA"
+  },
+  {
+    "id": "225cfb3e-9058-80cf-ab49-fc6aa5ff0878",
+    "text": "FDM EBA - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n4.5\n\t\nMultiunit\n\t\n\t\nGEN_FDM_EBA_4510_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nMultiunit\n\t\n\t\nGEN_FDM_EBA_5510_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n6.5\n\t\nMultiunit\n\t\n\t\nGEN_FDM_EBA_6510_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nZP - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n4.5\n\t\nMultiunit\n\t\n\t\nGEN_ZP_45_PFM_MUA\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n5.5\n\t\nMultiunit\n\t\n\t\nGEN_ZP_55_PFM_MUA\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n6.5\n\t\nMultiunit\n\t\n\t\nGEN_ZP_65_PFM_MUA\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "4.5",
+            "Multiunit",
+            "",
+            "GEN_FDM_EBA_4510_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Multiunit",
+            "",
+            "GEN_FDM_EBA_5510_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.5",
+            "Multiunit",
+            "",
+            "GEN_FDM_EBA_6510_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "FDM EBA - Multiunit"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "4.5",
+            "Multiunit",
+            "",
+            "GEN_ZP_45_PFM_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Multiunit",
+            "",
+            "GEN_ZP_55_PFM_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "6.5",
+            "Multiunit",
+            "",
+            "GEN_ZP_65_PFM_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "ZP - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Foxden"
+  },
+  {
+    "id": "225cfb3e-9058-8083-b525-eaf47a325a32",
+    "text": "In-Kone - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n4.7\n\t\nMultiunit\n\t\n\t\nGEN_In-Kone_Angled_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.3\n\t\nMultiunit\n\t\n\t\nGEN_In-Kone_Straight_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nTekka In-Kone\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n3.5 / 4.0 / 4.5 / 5.5\n\t\nHex\n\t\n\t\nGEN_Tekka.In-Kone_35.40.45.55_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5 / 4.0 / 4.5 / 5.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Tekka.In-Kone_35.40.45.55_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "4.7",
+            "Multiunit",
+            "",
+            "GEN_In-Kone_Angled_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.3",
+            "Multiunit",
+            "",
+            "GEN_In-Kone_Straight_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "In-Kone - Multiunit"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "3.5 / 4.0 / 4.5 / 5.5",
+            "Hex",
+            "",
+            "GEN_Tekka.In-Kone_35.40.45.55_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 / 4.0 / 4.5 / 5.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Tekka.In-Kone_35.40.45.55_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Tekka In-Kone"
+      }
+    ],
+    "title": "M.Ai_Global D"
+  },
+  {
+    "id": "25bcfb3e-9058-80ac-8118-fc8b37874535",
+    "text": "Highness\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n4.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_HDL_(C+3)_45_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F\n\n\n5.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_HDL_(C+3)_55_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F\n\n\n6.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_HDL_(C+3)_65_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F\n\n\n4.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_HDL_45+3_Angled_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F\n\n\n5.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_HDL_55+3_Angled_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F\n\n\n4.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_PR_(B+2)_45_tem7.3_exo_NCS\n\t\nT15-M1.5RL, T13-M0.6B, T20-M0.5F\n\n\n5.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_PR_(B+2)_55_tem7.3_exo_NCS\n\t\nT15-M1.5RL, T13-M0.6B, T20-M0.5F\n\n\n6.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_PR_(B+2)_65_tem7.21_exo_NCS\n\t\nT15-M1.5RL, T13-M0.6B, T20-M0.5F\n\n\n4.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_PR_45_3.15_NCS\n\t\nT15-M1.5RL, T13-M0.6B, T20-M0.5F\n\n\n5.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_PR_55_3.15_NCS\n\t\nT15-M1.5RL, T13-M0.6B, T20-M0.5F\n\n\n6.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_PR_65_3.15_NCS\n\t\nT15-M1.5RL, T13-M0.6B, T20-M0.5F\n\n\n4.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_RB_45_Metal_2.5_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_RB_55_Metal_2.5_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n6.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_RB_65_Metal_2.5_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_SB_(B+3)_45_tem7.16_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_SB_(B+3)_55_tem7.16_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_SB_(B+5)_45_tem7.16_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_SB_(B+5)_55_tem7.16_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_SB_45_tem7.15_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_SB_55_tem7.15_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n6.5\n\t\nNCS (Cementless)\n\t\n\t\nGEN_SB_65_tem7.15_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.0\n\t\nNCS (Cementless)\n\t\n\t\nGEN_SB_OSS_40_tem7.15_exo_NCS\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "4.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_HDL_(C+3)_45_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "5.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_HDL_(C+3)_55_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "6.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_HDL_(C+3)_65_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "4.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_HDL_45+3_Angled_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "5.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_HDL_55+3_Angled_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "4.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_PR_(B+2)_45_tem7.3_exo_NCS",
+            "T15-M1.5RL, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "5.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_PR_(B+2)_55_tem7.3_exo_NCS",
+            "T15-M1.5RL, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "6.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_PR_(B+2)_65_tem7.21_exo_NCS",
+            "T15-M1.5RL, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "4.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_PR_45_3.15_NCS",
+            "T15-M1.5RL, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "5.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_PR_55_3.15_NCS",
+            "T15-M1.5RL, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "6.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_PR_65_3.15_NCS",
+            "T15-M1.5RL, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "4.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_RB_45_Metal_2.5_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_RB_55_Metal_2.5_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_RB_65_Metal_2.5_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_SB_(B+3)_45_tem7.16_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_SB_(B+3)_55_tem7.16_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_SB_(B+5)_45_tem7.16_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_SB_(B+5)_55_tem7.16_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_SB_45_tem7.15_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_SB_55_tem7.15_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.5",
+            "NCS (Cementless)",
+            "",
+            "GEN_SB_65_tem7.15_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0",
+            "NCS (Cementless)",
+            "",
+            "GEN_SB_OSS_40_tem7.15_exo_NCS",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Highness"
+      }
+    ],
+    "title": "M.Ai_Highness"
+  },
+  {
+    "id": "225cfb3e-9058-80c2-8748-edf45e6a283c",
+    "text": "Ratio\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\nMini\n\t\nHex\n\t\n\t\nGEN_Ratio_M_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nMini\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Ratio_M_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nStandard\n\t\nHex\n\t\n\t\nGEN_Ratio_S_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nStandard\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Ratio_S_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nLarge\n\t\nHex\n\t\n\t\nGEN_Ratio_L_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nLarge\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Ratio_L_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "Mini",
+            "Hex",
+            "",
+            "GEN_Ratio_M_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Mini",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Ratio_M_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Standard",
+            "Hex",
+            "",
+            "GEN_Ratio_S_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Standard",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Ratio_S_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Large",
+            "Hex",
+            "",
+            "GEN_Ratio_L_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Large",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Ratio_L_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Ratio"
+      }
+    ],
+    "title": "M.Ai_Human Tech"
+  },
+  {
+    "id": "226cfb3e-9058-8035-b99d-df7de5c11e33",
+    "text": "I-CON\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_45_Metal_Link Free_EQ\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_45_Metal_Link Free_SUB\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_45_Resin_Link Free_EQ\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_45_Resin_Link Free_SUB\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n5.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_55_Metal_Link Free_EQ\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n5.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_55_Metal_Link Free_SUB\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n5.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_55_Resin_Link Free_EQ\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n5.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_55_Resin_Link Free_SUB\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_45_Metal_Link Free_EQ",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_45_Metal_Link Free_SUB",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_45_Resin_Link Free_EQ",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_45_Resin_Link Free_SUB",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_55_Metal_Link Free_EQ",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_55_Metal_Link Free_SUB",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_55_Resin_Link Free_EQ",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_55_Resin_Link Free_SUB",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "I-CON"
+      }
+    ],
+    "title": "M.Ai_I-CON"
+  },
+  {
+    "id": "225cfb3e-9058-8037-889a-db7f1a3b8f4b",
+    "text": "Legacy\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.0\n\t\nHex\n\t\n\t\nGEN_Legacy_30_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Legacy_30_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.5\n\t\nHex\n\t\n\t\nGEN_Legacy_35_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Legacy_35_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nHex\n\t\n\t\nGEN_Legacy_45_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Legacy_45_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.7\n\t\nHex\n\t\n\t\nGEN_Legacy_57_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Legacy_57_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nLegacy - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n5.0\n\t\nMultiunit\n\t\n\t\nGEN_Legacy_50_MUA\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.0",
+            "Hex",
+            "",
+            "GEN_Legacy_30_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Legacy_30_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Hex",
+            "",
+            "GEN_Legacy_35_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Legacy_35_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Hex",
+            "",
+            "GEN_Legacy_45_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Legacy_45_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.7",
+            "Hex",
+            "",
+            "GEN_Legacy_57_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Legacy_57_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Legacy"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "5.0",
+            "Multiunit",
+            "",
+            "GEN_Legacy_50_MUA",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Legacy - Multiunit"
+      }
+    ],
+    "title": "M.Ai_Implant Direct"
+  },
+  {
+    "id": "225cfb3e-9058-80a4-9d8d-f16023a4a4e0",
+    "text": "Poiex\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.4\n\t\nHex\n\t\n\t\nGEN_Poiex_34_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.4\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Poiex_34_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.7\n\t\nHex\n\t\n\t\nGEN_Poiex_37_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Poiex_37_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.2\n\t\nHex\n\t\n\t\nGEN_Poiex_42_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.2\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Poiex_42_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.7\n\t\nHex\n\t\n\t\nGEN_Poiex_47_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Poiex_47_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.2\n\t\nHex\n\t\n\t\nGEN_Poiex_52_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.2\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Poiex_52_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.4",
+            "Hex",
+            "",
+            "GEN_Poiex_34_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.4",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Poiex_34_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.7",
+            "Hex",
+            "",
+            "GEN_Poiex_37_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Poiex_37_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.2",
+            "Hex",
+            "",
+            "GEN_Poiex_42_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.2",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Poiex_42_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.7",
+            "Hex",
+            "",
+            "GEN_Poiex_47_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Poiex_47_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.2",
+            "Hex",
+            "",
+            "GEN_Poiex_52_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.2",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Poiex_52_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Poiex"
+      }
+    ],
+    "title": "M.Ai_Japan Medical Materials"
+  },
+  {
+    "id": "225cfb3e-9058-8022-809e-e06ccdd7a260",
+    "text": "Alphatite\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n3.3 / 3.7 / 4.0 / 4.3\n\t\nHex\n\t\n\t\nGEN_Alphatite_SB1_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.3 / 3.7 / 4.0 / 4.3\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Alphatite_SB1_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.6\n\t\nHex\n\t\n\t\nGEN_Alphatite_SB2_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.6\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Alphatite_SB2_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n5.0\n\t\nHex\n\t\n\t\nGEN_Alphatite_SB3_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Alphatite_SB3_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "3.3 / 3.7 / 4.0 / 4.3",
+            "Hex",
+            "",
+            "GEN_Alphatite_SB1_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.3 / 3.7 / 4.0 / 4.3",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Alphatite_SB1_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.6",
+            "Hex",
+            "",
+            "GEN_Alphatite_SB2_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.6",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Alphatite_SB2_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "5.0",
+            "Hex",
+            "",
+            "GEN_Alphatite_SB3_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Alphatite_SB3_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Alphatite"
+      }
+    ],
+    "title": "M.Ai_Kentec"
+  },
+  {
+    "id": "225cfb3e-9058-80f0-9c98-cfc8399da9b0",
+    "text": "Paltop\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Paltop_MUA_Multi\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Paltop_MUA2_Multi\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nPrima Connex\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n3.5\n\t\nTorx\n\t\n\t\nGEN_Prima Connex_35_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T20-M0.5F\n\n\n3.5\n\t\nNon-Torx (Circle)\n\t\n\t\nGEN_Prima Connex_35_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n4.1\n\t\nTorx\n\t\n\t\nGEN_Prima Connex_41_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T20-M0.5F\n\n\n4.1\n\t\nNon-Torx (Circle)\n\t\n\t\nGEN_Prima Connex_41_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n5.0\n\t\nTorx\n\t\n\t\nGEN_Prima Connex_50_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T20-M0.5F\n\n\n5.0\n\t\nNon-Torx (Circle)\n\t\n\t\nGEN_Prima Connex_50_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R, ",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Paltop_MUA_Multi",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Paltop_MUA2_Multi",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Paltop"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "3.5",
+            "Torx",
+            "",
+            "GEN_Prima Connex_35_(H)",
+            "T16-M1.5FL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "3.5",
+            "Non-Torx (Circle)",
+            "",
+            "GEN_Prima Connex_35_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "4.1",
+            "Torx",
+            "",
+            "GEN_Prima Connex_41_(H)",
+            "T16-M1.5FL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "4.1",
+            "Non-Torx (Circle)",
+            "",
+            "GEN_Prima Connex_41_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "5.0",
+            "Torx",
+            "",
+            "GEN_Prima Connex_50_(H)",
+            "T16-M1.5FL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "5.0",
+            "Non-Torx (Circle)",
+            "",
+            "GEN_Prima Connex_50_(N-H)",
+            "T16-M1.5FL, T18-M1.5R,"
+          ]
+        ],
+        "series": "Prima Connex"
+      }
+    ],
+    "title": "M.Ai_Keystone"
+  },
+  {
+    "id": "225cfb3e-9058-806f-88bb-cac74bcc03d7",
+    "text": "Finsia BoneLevel\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n3.2 / 3.4\n\t\nHex\n\t\n\t\nGEN_Finesia BoneLevel_32.34_NP_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.7 / 4.2\n\t\nNon-Torx (Circle)\n\t\n\t\nGEN_Finesia BoneLevel_37.42_WP_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.7 / 5.2\n\t\nTorx\n\t\n\t\nGEN_Finesia BoneLevel_47.52_WP_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "3.2 / 3.4",
+            "Hex",
+            "",
+            "GEN_Finesia BoneLevel_32.34_NP_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.7 / 4.2",
+            "Non-Torx (Circle)",
+            "",
+            "GEN_Finesia BoneLevel_37.42_WP_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.7 / 5.2",
+            "Torx",
+            "",
+            "GEN_Finesia BoneLevel_47.52_WP_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Finsia BoneLevel"
+      }
+    ],
+    "title": "M.Ai_Kyocera"
+  },
+  {
+    "id": "226cfb3e-9058-80c0-b880-d2e9b173c398",
+    "text": "MC External\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n4.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MC_External_40_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MC_External_47_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MC_External_57_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nMC Internal\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n4.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MC_Internal_40_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MC_Internal_47_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MC_Internal_57_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "4.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MC_External_40_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MC_External_47_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MC_External_57_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "MC External"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "4.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MC_Internal_40_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MC_Internal_47_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MC_Internal_57_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "MC Internal"
+      }
+    ],
+    "title": "M.Ai_MC Milling"
+  },
+  {
+    "id": "21dcfb3e-9058-8071-a471-ddde2fc4bc4b",
+    "text": "ICX\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n3.75 / 4.1 / 4.8\n\t\nHex\n\t\n\t\nGEN_ICX_375.41.48_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.75 / 4.1 / 4.8\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_ICX_375.41.48_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nICX Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTool used\n\n\n\t\nMultiunit\n\t\n\t\nGEN_ICX_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "3.75 / 4.1 / 4.8",
+            "Hex",
+            "",
+            "GEN_ICX_375.41.48_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.75 / 4.1 / 4.8",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_ICX_375.41.48_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "ICX"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tool used"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_ICX_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "ICX Multiunit"
+      }
+    ],
+    "title": "M.Ai_Medentis Medical"
+  },
+  {
+    "id": "21dcfb3e-9058-8037-9417-d526bc129e93",
+    "text": "Anyone\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.0 (Mini)\n\t\nHex\n\t\n\t\nGEN_Anyone_30_Mini_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.0 (Mini)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Anyone_30_Mini_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.5 / 4.0 / 4.5 / 5.0 / 5.5 / 6.0 / 7.0\n\t\nHex\n\t\n\t\nGEN_Anyone_35.40.45.50.55.60.70_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5 / 4.0 / 4.5 / 5.0 / 5.5 / 6.0 / 7.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Anyone_35.40.45.50.55.60.70_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nAnyridge\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nSmall / Regular / Wide / Super Wide\n\t\nHex\n\t\n\t\nGEN_Anyridge_S.R.W.SW_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\nSmall / Regular / Wide / Super Wide\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Anyridge_S.R.W.SW_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\nEZ Plus\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nMini\n\t\nEngaged (Tri-lobe)\n\t\n\t\nGEN_EZ Plus_M_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T19-M1.0F\n\n\nMini\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_EZ Plus_M_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\n\n\nRegular / Wide\n\t\nEngaged (Tri-lobe)\n\t\n\t\nGEN_EZ Plus_R.W_(H)\n\t\nT16-M1.5FL, T18-M1.5R, T19-M1.0F\n\n\nRegular / Wide\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_EZ Plus_R.W_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\nMegaFix\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nHex\n\t\n\t\nGEN_MegaFix_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MegaFix_(N-H)\n\t\nT16-M1.5FL, T18-M1.5R\nOcta - External\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nMini\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_Octa_EXT_M_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nStandard\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_Octa_EXT_R_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\nWide\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_Octa_EXT_W_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.0 (Mini)",
+            "Hex",
+            "",
+            "GEN_Anyone_30_Mini_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.0 (Mini)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Anyone_30_Mini_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.5 / 4.0 / 4.5 / 5.0 / 5.5 / 6.0 / 7.0",
+            "Hex",
+            "",
+            "GEN_Anyone_35.40.45.50.55.60.70_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 / 4.0 / 4.5 / 5.0 / 5.5 / 6.0 / 7.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Anyone_35.40.45.50.55.60.70_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Anyone"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Small / Regular / Wide / Super Wide",
+            "Hex",
+            "",
+            "GEN_Anyridge_S.R.W.SW_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Small / Regular / Wide / Super Wide",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Anyridge_S.R.W.SW_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "Anyridge"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Mini",
+            "Engaged (Tri-lobe)",
+            "",
+            "GEN_EZ Plus_M_(H)",
+            "T16-M1.5FL, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "Mini",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_EZ Plus_M_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "Regular / Wide",
+            "Engaged (Tri-lobe)",
+            "",
+            "GEN_EZ Plus_R.W_(H)",
+            "T16-M1.5FL, T18-M1.5R, T19-M1.0F"
+          ],
+          [
+            "Regular / Wide",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_EZ Plus_R.W_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "EZ Plus"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Hex",
+            "",
+            "GEN_MegaFix_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MegaFix_(N-H)",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "MegaFix"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Mini",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_Octa_EXT_M_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Standard",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_Octa_EXT_R_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "Wide",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_Octa_EXT_W_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Octa - External"
+      }
+    ],
+    "title": "M.Ai_Megagen"
+  },
+  {
+    "id": "226cfb3e-9058-80d6-b895-fb880d7b6074",
+    "text": "C1\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nNarrow\n\t\nHex\n\t\n\t\nGEN_C1_Narrow_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nNarrow\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_C1_Narrow_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nStandard\n\t\nHex\n\t\n\t\nGEN_C1_Standard_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nStandard\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_C1_Standard_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nWide\n\t\nHex\n\t\n\t\nGEN_C1_Wide_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nWide\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_C1_Wide_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nMulti-unit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nStandard\n\t\nMultiunit\n\t\n\t\nGEN_MIS_Standard_MUA\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Narrow",
+            "Hex",
+            "",
+            "GEN_C1_Narrow_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Narrow",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_C1_Narrow_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Standard",
+            "Hex",
+            "",
+            "GEN_C1_Standard_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Standard",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_C1_Standard_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Wide",
+            "Hex",
+            "",
+            "GEN_C1_Wide_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Wide",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_C1_Wide_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "C1"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Standard",
+            "Multiunit",
+            "",
+            "GEN_MIS_Standard_MUA",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Multi-unit"
+      }
+    ],
+    "title": "M.Ai_MIS"
+  },
+  {
+    "id": "226cfb3e-9058-80b3-b8b7-ce609c40e827",
+    "text": "IS\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nHex\n\t\n\t\nGEN_IS_Actrive_SCRP_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_IS_Actrive_SCRP_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n\t\nHex\n\t\n\t\nGEN_IS_System_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_IS_System_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Hex",
+            "",
+            "GEN_IS_Actrive_SCRP_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_IS_Actrive_SCRP_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "",
+            "Hex",
+            "",
+            "GEN_IS_System_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_IS_System_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "IS"
+      }
+    ],
+    "title": "M.Ai_Neobiotech"
+  },
+  {
+    "id": "226cfb3e-9058-8034-9468-cc91db956bb2",
+    "text": "GM\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 / 3.75 / 4.0 / 4.3 / 5.0 / 6.0\n\t\nHex\n\t\n\t\nGEN_GM_35.375.40.43.50.60_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.5 / 3.75 / 4.0 / 4.3 / 5.0 / 6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_GM_35.375.40.43.50.60_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 / 3.75 / 4.0 / 4.3 / 5.0 / 6.0",
+            "Hex",
+            "",
+            "GEN_GM_35.375.40.43.50.60_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.5 / 3.75 / 4.0 / 4.3 / 5.0 / 6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_GM_35.375.40.43.50.60_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "GM"
+      }
+    ],
+    "title": "M.Ai_NeoDent"
+  },
+  {
+    "id": "226cfb3e-9058-8079-9d5f-e724c140d118",
+    "text": "Active\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.0\n\t\nTorx\n\t\n\t\nGEN_Active_30_(H)\n\t\nT15-M1.5RL, T18-M1.5R, T20-M0.5F\n\n\n3.0\n\t\nNon-Torx (Circle)\n\t\n\t\nGEN_Active_30_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n3.5\n\t\nHex\n\t\n\t\nGEN_Active_35_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Active_35_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.3 / 5.0\n\t\nHex\n\t\n\t\nGEN_Active_43.50_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.3 / 5.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Active_43.50_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.3 / 5.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Active_43.50_(N-H)_(Geomedi)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nHex\n\t\n\t\nGEN_Active_55_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Active_55_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nBranemark\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 (NP)\n\t\nHex\n\t\n\t\nGEN_Branemark_NP_(H)\n\t\nT16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F\n\n\n3.5 (NP)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Branemark_NP_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.0 (RP)\n\t\nHex\n\t\n\t\nGEN_Branemark_RP_(H)\n\t\nT16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F\n\n\n4.0 (RP)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Branemark_RP_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.0 (WP)\n\t\nHex\n\t\n\t\nGEN_Branemark_WP_(H)\n\t\nT16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F\n\n\n5.0 (WP)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Branemark_WP_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nMultiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_Multiunit_48_MUA\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_Multiunit_48_MUA_powerball.v10\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_Multiunit_48_MUA_WTI\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n6.0\n\t\nMultiunit\n\t\n\t\nGEN_Multiunit_60_MUA\n\t\nT16-M1.5FL, T18-M1.5R\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Multiunit_plus_MUA\n\t\nT16-M1.5FL, T18-M1.5R\nReplace\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 (NP)\n\t\nEngaged (Tri-lobe)\n\t\n\t\nGEN_Replace_NP_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.5 (NP)\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_Replace_NP_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.3 (RP)\n\t\nEngaged (Tri-lobe)\n\t\n\t\nGEN_Replace_RP_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.3 (RP)\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_Replace_RP_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.0 (WP)\n\t\nEngaged (Tri-lobe)\n\t\n\t\nGEN_Replace_WP_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.0 (WP)\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_Replace_WP_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n6.0 (SW)\n\t\nEngaged (Tri-lobe)\n\t\n\t\nGEN_Replace_SW_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n6.0 (SW)\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_Replace_SW_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nUniversal Base\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nMultiunit\n\t\n\t\nGEN_Universal_Base\n\t\nT16-M1.5FL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.0",
+            "Torx",
+            "",
+            "GEN_Active_30_(H)",
+            "T15-M1.5RL, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "3.0",
+            "Non-Torx (Circle)",
+            "",
+            "GEN_Active_30_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Hex",
+            "",
+            "GEN_Active_35_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Active_35_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.3 / 5.0",
+            "Hex",
+            "",
+            "GEN_Active_43.50_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.3 / 5.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Active_43.50_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.3 / 5.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Active_43.50_(N-H)_(Geomedi)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Hex",
+            "",
+            "GEN_Active_55_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Active_55_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Active"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 (NP)",
+            "Hex",
+            "",
+            "GEN_Branemark_NP_(H)",
+            "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "3.5 (NP)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Branemark_NP_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0 (RP)",
+            "Hex",
+            "",
+            "GEN_Branemark_RP_(H)",
+            "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "4.0 (RP)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Branemark_RP_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.0 (WP)",
+            "Hex",
+            "",
+            "GEN_Branemark_WP_(H)",
+            "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "5.0 (WP)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Branemark_WP_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Branemark"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_Multiunit_48_MUA",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_Multiunit_48_MUA_powerball.v10",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_Multiunit_48_MUA_WTI",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "6.0",
+            "Multiunit",
+            "",
+            "GEN_Multiunit_60_MUA",
+            "T16-M1.5FL, T18-M1.5R"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Multiunit_plus_MUA",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "Multiunit"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 (NP)",
+            "Engaged (Tri-lobe)",
+            "",
+            "GEN_Replace_NP_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 (NP)",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_Replace_NP_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.3 (RP)",
+            "Engaged (Tri-lobe)",
+            "",
+            "GEN_Replace_RP_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.3 (RP)",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_Replace_RP_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.0 (WP)",
+            "Engaged (Tri-lobe)",
+            "",
+            "GEN_Replace_WP_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.0 (WP)",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_Replace_WP_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.0 (SW)",
+            "Engaged (Tri-lobe)",
+            "",
+            "GEN_Replace_SW_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.0 (SW)",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_Replace_SW_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "Replace"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_Universal_Base",
+            "T16-M1.5FL, T18-M1.5R"
+          ]
+        ],
+        "series": "Universal Base"
+      }
+    ],
+    "title": "M.Ai_Nobel Biocare"
+  },
+  {
+    "id": "226cfb3e-9058-8071-b231-d639039dd5b7",
+    "text": "T6\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 / 4.0 / 4.5 / 5.0\n\t\nHex\n\t\n\t\nGEN_T6_35.40.45.50_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5 / 4.0 / 4.5 / 5.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_T6_35.40.45.50_N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 / 4.0 / 4.5 / 5.0",
+            "Hex",
+            "",
+            "GEN_T6_35.40.45.50_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5 / 4.0 / 4.5 / 5.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_T6_35.40.45.50_N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "T6"
+      }
+    ],
+    "title": "M.Ai_NucleOSS"
+  },
+  {
+    "id": "226cfb3e-9058-80e0-a081-fea248adbf62",
+    "text": "SS\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n4.8 (Regular)\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_SS_R_(N-H)\n\t\nT16-M1.5FL, T13-M0.6B, T20-M0.5F\n\n\n6.0 (Wide)\n\t\nOcta\n\t\n\t\nGEN_SS_W_(H)\n\t\nT16-M1.5FL, T13-M0.6B, T17-M1.5F, T18-M1.5, T20-M0.5F\n\n\n6.0 (Wide)\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_SS_W_(N-H)\n\t\nT16-M1.5FL, T13-M0.6B, T20-M0.5F\nTS\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nMini\n\t\nHex\n\t\n\t\nGEN_TS_M_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nMini\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TS_M_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\nRegular\n\t\nHex\n\t\n\t\nGEN_TS_R_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nRegular\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TS_R_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nKS\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nRegular\n\t\nHex\n\t\n\t\nGEN_KS_R_(H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\nRegular\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_KS_R_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nTS - Multiunit\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nMini / Regular\n\t\nMultiunit\n\t\n\t\nGEN_TS_Multiunit_M.R_MUA\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.0\n\t\nMultiunit\n\t\n\t\nGEN_TS_Convertible_40_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5\n\n\n5.0\n\t\nMultiunit\n\t\n\t\nGEN_TS_Convertible_50_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5\n\n\n6.0\n\t\nMultiunit\n\t\n\t\nGEN_TS_Convertible_60_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5\nUS\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5 (Mini)\n\t\nHex\n\t\n\t\nGEN_US_M_(H)\n\t\nT16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F\n\n\n3.5 (Mini)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_US_M_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n4.1 (Regular)\n\t\nHex\n\t\n\t\nGEN_US_R_(H)\n\t\nT16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F\n\n\n4.1 (Regular)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_US_R_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n5.1 (Wide)\n\t\nHex\n\t\n\t\nGEN_US_W_(H)\n\t\nT16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F\n\n\n5.1 (Wide)\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_US_W_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "4.8 (Regular)",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_SS_R_(N-H)",
+            "T16-M1.5FL, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "6.0 (Wide)",
+            "Octa",
+            "",
+            "GEN_SS_W_(H)",
+            "T16-M1.5FL, T13-M0.6B, T17-M1.5F, T18-M1.5, T20-M0.5F"
+          ],
+          [
+            "6.0 (Wide)",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_SS_W_(N-H)",
+            "T16-M1.5FL, T13-M0.6B, T20-M0.5F"
+          ]
+        ],
+        "series": "SS"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Mini",
+            "Hex",
+            "",
+            "GEN_TS_M_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Mini",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TS_M_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "Regular",
+            "Hex",
+            "",
+            "GEN_TS_R_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "Regular",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TS_R_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "TS"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Regular",
+            "Hex",
+            "",
+            "GEN_KS_R_(H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "Regular",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_KS_R_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "KS"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "Mini / Regular",
+            "Multiunit",
+            "",
+            "GEN_TS_Multiunit_M.R_MUA",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0",
+            "Multiunit",
+            "",
+            "GEN_TS_Convertible_40_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5"
+          ],
+          [
+            "5.0",
+            "Multiunit",
+            "",
+            "GEN_TS_Convertible_50_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5"
+          ],
+          [
+            "6.0",
+            "Multiunit",
+            "",
+            "GEN_TS_Convertible_60_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5"
+          ]
+        ],
+        "series": "TS - Multiunit"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5 (Mini)",
+            "Hex",
+            "",
+            "GEN_US_M_(H)",
+            "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "3.5 (Mini)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_US_M_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.1 (Regular)",
+            "Hex",
+            "",
+            "GEN_US_R_(H)",
+            "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "4.1 (Regular)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_US_R_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.1 (Wide)",
+            "Hex",
+            "",
+            "GEN_US_W_(H)",
+            "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F"
+          ],
+          [
+            "5.1 (Wide)",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_US_W_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "US"
+      }
+    ],
+    "title": "M.Ai_Osstem"
+  },
+  {
+    "id": "21dcfb3e-9058-80b0-a5cd-e59fd849e611",
+    "text": "Type IV Pro\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.3 / 3.8 / 4.7\n\t\nHex\n\t\n\t\nGEN_Type.IV.Pro_33.38.47_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5\n\n\n3.3 / 3.8 / 4.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Type.IV.Pro_33.38.47_(N-H)\n\t\nT15-M1.5RL, T18-M1.5",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.3 / 3.8 / 4.7",
+            "Hex",
+            "",
+            "GEN_Type.IV.Pro_33.38.47_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5"
+          ],
+          [
+            "3.3 / 3.8 / 4.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Type.IV.Pro_33.38.47_(N-H)",
+            "T15-M1.5RL, T18-M1.5"
+          ]
+        ],
+        "series": "Type IV Pro"
+      }
+    ],
+    "title": "M.Ai_Platon"
+  },
+  {
+    "id": "226cfb3e-9058-80b2-9c03-fe413869dda3",
+    "text": "V1.0\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nMultiunit\n\t\n\t\nGEN_MB_v10_MUA\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n\t\nMultiunit\n\t\n\t\nGEN_MUA_v10_MUA\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n\t\nMultiunit\n\t\n\t\nGEN_SRA_v10_MUA\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_MB_v10_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_MUA_v10_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_SRA_v10_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "V1.0"
+      }
+    ],
+    "title": "M.Ai_Powerball"
+  },
+  {
+    "id": "226cfb3e-9058-80a5-bcee-dc3eb20de352",
+    "text": "MSc External\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.25\n\t\nHex\n\t\n\t\nGEN_MSc_External_325_(H)\n\t\nT16-M1.5FL, T19-M1.0F, T20-M0.5F\n\n\n3.25\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MSc_External_325_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n6.0\n\t\nHex\n\t\n\t\nGEN_MSc_External_60_(H)\n\t\nT16-M1.5FL, T19-M1.0F, T20-M0.5F\n\n\n6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_MSc_External_60_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\nM-series Internal\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.75 / 4.2 / 5.0\n\t\nHex\n\t\n\t\nGEN_M-series_Internal_375.42.50_(H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R\n\n\n3.75 / 4.2 / 5.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_M-series_Internal_375.42.50_(N-H)\n\t\nT16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.25",
+            "Hex",
+            "",
+            "GEN_MSc_External_325_(H)",
+            "T16-M1.5FL, T19-M1.0F, T20-M0.5F"
+          ],
+          [
+            "3.25",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MSc_External_325_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "6.0",
+            "Hex",
+            "",
+            "GEN_MSc_External_60_(H)",
+            "T16-M1.5FL, T19-M1.0F, T20-M0.5F"
+          ],
+          [
+            "6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_MSc_External_60_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "MSc External"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.75 / 4.2 / 5.0",
+            "Hex",
+            "",
+            "GEN_M-series_Internal_375.42.50_(H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.75 / 4.2 / 5.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_M-series_Internal_375.42.50_(N-H)",
+            "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "M-series Internal"
+      }
+    ],
+    "title": "M.Ai_Southern Implant"
+  },
+  {
+    "id": "226cfb3e-9058-8033-a498-f7c5a73f051d",
+    "text": "BoneLevel\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n2.9\n\t\nEngaged\n\t\n\t\nGEN_BoneLevel_29_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n2.9\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_BoneLevel_29_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\nNC\n\t\nEngaged\n\t\n\t\nGEN_BoneLevel_NC_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nNC\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_BoneLevel_NC_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\n\n\nRC\n\t\nEngaged\n\t\n\t\nGEN_BoneLevel_RC_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nRC\n\t\nNon-Engaged (Circle)\n\t\n\t\nGEN_BoneLevel_RC_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R\nBoneLevel Angle\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5\n\t\nMultiunit\n\t\n\t\nGEN_BoneLevel Angle_NC.angle25_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5\n\t\nMultiunit\n\t\n\t\nGEN_BoneLevel Angle_RC.angle25_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nTissueLevel\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n4.8\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_TissueLevel_48_(N-H)\n\t\nT15-M1.5RL, T13-M0.6B, T20-M0.5F\n\n\n4.8\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_TissueLevel_48_(N-H)_R2\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R (no need 0.6, 0.5 tools) \n\n\n6.5\n\t\nOcta\n\t\n\t\nGEN_TissueLevel_65_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R, T13-M0.6B, T20-M0.5F\n\n\n6.5\n\t\nNon-Octa (Circle)\n\t\n\t\nGEN_TissueLevel_65_(N-H)\n\t\nT15-M1.5RL, T13-M0.6B, T20-M0.5F\nSRA\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5\n\t\nMultiunit\n\t\n\t\nGEN_SRA_35_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.6\n\t\nMultiunit\n\t\n\t\nGEN_SRA_46_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nsynOcta\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\nRN\n\t\nMultiunit\n\t\n\t\nGEN_synOcta_RN_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\nWN\n\t\nMultiunit\n\t\n\t\nGEN_synOcta_WN_MUA\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\nVariobase\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n4.6\n\t\nTi. Base\n\t\n\t\nGEN_Variobase_46_(H)\n\t\nT16-M1.5FL, T12-M1.0B, T19-M1.0F",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "2.9",
+            "Engaged",
+            "",
+            "GEN_BoneLevel_29_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "2.9",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_BoneLevel_29_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "NC",
+            "Engaged",
+            "",
+            "GEN_BoneLevel_NC_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "NC",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_BoneLevel_NC_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "RC",
+            "Engaged",
+            "",
+            "GEN_BoneLevel_RC_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "RC",
+            "Non-Engaged (Circle)",
+            "",
+            "GEN_BoneLevel_RC_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "BoneLevel"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5",
+            "Multiunit",
+            "",
+            "GEN_BoneLevel Angle_NC.angle25_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Multiunit",
+            "",
+            "GEN_BoneLevel Angle_RC.angle25_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "BoneLevel Angle"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "4.8",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_TissueLevel_48_(N-H)",
+            "T15-M1.5RL, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "4.8",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_TissueLevel_48_(N-H)_R2",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R (no need 0.6, 0.5 tools)"
+          ],
+          [
+            "6.5",
+            "Octa",
+            "",
+            "GEN_TissueLevel_65_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T13-M0.6B, T20-M0.5F"
+          ],
+          [
+            "6.5",
+            "Non-Octa (Circle)",
+            "",
+            "GEN_TissueLevel_65_(N-H)",
+            "T15-M1.5RL, T13-M0.6B, T20-M0.5F"
+          ]
+        ],
+        "series": "TissueLevel"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5",
+            "Multiunit",
+            "",
+            "GEN_SRA_35_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.6",
+            "Multiunit",
+            "",
+            "GEN_SRA_46_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "SRA"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "RN",
+            "Multiunit",
+            "",
+            "GEN_synOcta_RN_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "WN",
+            "Multiunit",
+            "",
+            "GEN_synOcta_WN_MUA",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "synOcta"
+      },
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "4.6",
+            "Ti. Base",
+            "",
+            "GEN_Variobase_46_(H)",
+            "T16-M1.5FL, T12-M1.0B, T19-M1.0F"
+          ]
+        ],
+        "series": "Variobase"
+      }
+    ],
+    "title": "M.Ai_Straumann"
+  },
+  {
+    "id": "226cfb3e-9058-8074-aaff-debab6f3e3b6",
+    "text": "SPI\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_SPI_35_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_SPI_40_(N-H)\n\t\nT15-M1.5RL, T13-M0.6B,  T20-M0.5F\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_SPI_45_(N-H)\n\t\nT15-M1.5RL, T13-M0.6B,  T20-M0.5F\n\n\n5.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_SPI_50_(N-H)\n\t\nT15-M1.5RL, T13-M0.6B,  T20-M0.5F\n\n\n6.0\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_SPI_60_(N-H)\n\t\nT15-M1.5RL, T13-M0.6B,  T20-M0.5F",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_SPI_35_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_SPI_40_(N-H)",
+            "T15-M1.5RL, T13-M0.6B,  T20-M0.5F"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_SPI_45_(N-H)",
+            "T15-M1.5RL, T13-M0.6B,  T20-M0.5F"
+          ],
+          [
+            "5.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_SPI_50_(N-H)",
+            "T15-M1.5RL, T13-M0.6B,  T20-M0.5F"
+          ],
+          [
+            "6.0",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_SPI_60_(N-H)",
+            "T15-M1.5RL, T13-M0.6B,  T20-M0.5F"
+          ]
+        ],
+        "series": "SPI"
+      }
+    ],
+    "title": "M.Ai_Thommen"
+  },
+  {
+    "id": "226cfb3e-9058-80ba-b39a-fef7543169d0",
+    "text": "TRI Narrow\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.3\n\t\nHex\n\t\n\t\nGEN_TRI_Narrow_3.3_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.3\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TRI_Narrow_3.3_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.3",
+            "Hex",
+            "",
+            "GEN_TRI_Narrow_3.3_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.3",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TRI_Narrow_3.3_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "TRI Narrow"
+      }
+    ],
+    "title": "M.Ai_TRI Dental"
+  },
+  {
+    "id": "25bcfb3e-9058-8068-a870-f83b0a49f603",
+    "text": "ioConnect AOT HS\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nMultiunit\n\t\n\t\nGEN_ioConnect_AOT_HS_MUA\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Multiunit",
+            "",
+            "GEN_ioConnect_AOT_HS_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "ioConnect AOT HS"
+      }
+    ],
+    "title": "M.Ai_Tru Abutment"
+  },
+  {
+    "id": "226cfb3e-9058-80df-8a0b-c81b3491f061",
+    "text": "Multiunit (Nobel biocare)\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_Vortex_04_MUA\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_Vortex_04_MUA\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.8\n\t\nMultiunit\n\t\n\t\nGEN_Vortex_04_MUA\n\t\nT15-M1.5RL, T18-M1.5R\n\n\n4.8\n\t\nMultiunits\n\t\n\t\nGEN_Vortex_04_MUA\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_Vortex_04_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_Vortex_04_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.8",
+            "Multiunit",
+            "",
+            "GEN_Vortex_04_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ],
+          [
+            "4.8",
+            "Multiunits",
+            "",
+            "GEN_Vortex_04_MUA",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Multiunit (Nobel biocare)"
+      }
+    ],
+    "title": "M.Ai_Vortex"
+  },
+  {
+    "id": "226cfb3e-9058-80ed-91da-e7840eef29f9",
+    "text": "Oneplant\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n\t\nHex\n\t\n\t\nGEN_Oneplant_T43.T53_S36.S41.S51_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_Oneplant_T43.T53_S36.S41.S51_(N-H)\n\t\nT15-M1.5RL, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "",
+            "Hex",
+            "",
+            "GEN_Oneplant_T43.T53_S36.S41.S51_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_Oneplant_T43.T53_S36.S41.S51_(N-H)",
+            "T15-M1.5RL, T18-M1.5R"
+          ]
+        ],
+        "series": "Oneplant"
+      }
+    ],
+    "title": "M.Ai_Warantec"
+  },
+  {
+    "id": "226cfb3e-9058-80e8-94ae-dfbc7acc04b6",
+    "text": "TSV\nPlatform diameters\n\t\nInterface shape\n\t\n\t\nCorresponding library file name\n\t\nTools used\n\n\n3.5\n\t\nHex\n\t\n\t\nGEN_TSV_35_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n3.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TSV_35_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nHex\n\t\n\t\nGEN_TSV_45_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n4.5\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TSV_45_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.7\n\t\nHex\n\t\n\t\nGEN_TSV_57_(H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R\n\n\n5.7\n\t\nNon-Hex (Circle)\n\t\n\t\nGEN_TSV_57_(N-H)\n\t\nT15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Platform diameters",
+            "Interface shape",
+            "",
+            "Corresponding library file name",
+            "Tools used"
+          ],
+          [
+            "3.5",
+            "Hex",
+            "",
+            "GEN_TSV_35_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "3.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TSV_35_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Hex",
+            "",
+            "GEN_TSV_45_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "4.5",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TSV_45_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.7",
+            "Hex",
+            "",
+            "GEN_TSV_57_(H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ],
+          [
+            "5.7",
+            "Non-Hex (Circle)",
+            "",
+            "GEN_TSV_57_(N-H)",
+            "T15-M1.5RL, T17-M1.5F, T18-M1.5R"
+          ]
+        ],
+        "series": "TSV"
+      }
+    ],
+    "title": "M.Ai_Zimmer"
+  }
+]

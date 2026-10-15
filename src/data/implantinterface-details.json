@@ -1,0 +1,3969 @@
+{
+  "exact": 316,
+  "spelling": 7,
+  "confirmed": 24,
+  "missing": 0,
+  "groups": [
+    {
+      "folder": "M.Ai_Adin",
+      "source": "https://gencoretech.notion.site/1e5cfb3e9058808faca1c08cf145061f",
+      "rows": [
+        {
+          "series": "Closefit",
+          "platform": "3.0 (NP)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Closefit_30_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Closefit_30_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Closefit",
+          "platform": "3.0 (NP)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Closefit_30_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Closefit_30_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Closefit",
+          "platform": "3.5 (RP)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Closefit_35_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Closefit_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Closefit",
+          "platform": "3.5 (RP)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Closefit_35_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Closefit_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Closefit",
+          "platform": "4.3 / 5.0 (WP)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Closefit_43.50_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Closefit_43.50_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Closefit",
+          "platform": "4.3 / 5.0 (WP)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Closefit_43.50_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Closefit_43.50_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Touareg S & OS",
+          "platform": "3.5 / 3.75 / 4.2 / 5.0 / 6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Touareg_35.375.42.50.60_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Touareg_35.375.42.50.60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Touareg S & OS",
+          "platform": "3.5 / 3.75 / 4.2 / 5.0 / 6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Touareg_35.375.42.50.60_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Touareg_35.375.42.50.60_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_All about abutment",
+      "source": "https://gencoretech.notion.site/1e5cfb3e905880369d54e39b47f10616",
+      "rows": [
+        {
+          "series": "DF",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_DF_48_MUA",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_DF_48_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_AlphaBioTEC",
+      "source": "https://gencoretech.notion.site/21dcfb3e905880989741e972cf3941c0",
+      "rows": [
+        {
+          "series": "Internal Hex type (DFI etc)",
+          "platform": "4.2 / 5.0 / 6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_DFI_42.50.60_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_DFI_42.50.60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal Hex type (DFI etc)",
+          "platform": "4.2 / 5.0 / 6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_DFI_42.50.60_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_DFI_42.50.60_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Anker",
+      "source": "https://gencoretech.notion.site/223cfb3e905880bc9096fa562d5b7e25",
+      "rows": [
+        {
+          "series": "Anker - Multiunit",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Anker_MUA",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anker_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Anthogyr",
+      "source": "https://gencoretech.notion.site/223cfb3e90588049a978d0048363c4c0",
+      "rows": [
+        {
+          "series": "Anthofit OI",
+          "platform": "3.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Anthofit_35_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anthofit_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Anthofit OI",
+          "platform": "3.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Anthofit_35_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anthofit_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Anthofit OI",
+          "platform": "4.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Anthofit_40_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anthofit_40_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Anthofit OI",
+          "platform": "4.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Anthofit_40_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anthofit_40_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Axiom",
+          "platform": "",
+          "shape": "Engaged (Tri-narrow indexing)",
+          "sourceFile": "GEN_Axiom_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Axiom_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Axiom",
+          "platform": "",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_Axiom_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Axiom_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Axiom - Multiunit",
+          "platform": "4.0",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Axiom_40_MUA",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Axiom_40_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Axiom - Multiunit",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Axiom_48_MUA",
+          "tools": "T16-M1.5FL, T19-M1.0F",
+          "note": "",
+          "file": "GEN_Axiom_48_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Axiom - Multiunit",
+          "platform": "4.0",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Axiom_Con_40_MUA",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Axiom_Con_40_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Arum",
+      "source": "https://gencoretech.notion.site/1e5cfb3e90588069a947ca1b9bd09042",
+      "rows": [
+        {
+          "series": "MasterFix",
+          "platform": "5.5 (R)",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_MasterFix_55_NCS",
+          "tools": "T18-M1.5R, T24_M2.0T",
+          "note": "",
+          "file": "GEN_MasterFix_55_NCS.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Astra",
+      "source": "https://gencoretech.notion.site/21dcfb3e90588091a501dfc9e0c04593",
+      "rows": [
+        {
+          "series": "OsseoSpeed EV - Multiunit",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_EV_UNI_MUA",
+          "tools": "T15-M1.5RL, T17_M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_EV_UNI_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "OsseoSpeed TX",
+          "platform": "3.0 (Yellow)",
+          "shape": "Hex",
+          "sourceFile": "GEN_TX_30_Yellow_(H)",
+          "tools": "T15-M1.5RL, T17_M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TX_30_Yellow_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "OsseoSpeed TX",
+          "platform": "3.0 (Yellow)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TX_30_Yellow_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TX_30_Yellow_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "OsseoSpeed TX",
+          "platform": "3.5 / 4.0 (Aqua)",
+          "shape": "Hex",
+          "sourceFile": "GEN_TX_35.40_Aqua_(H)",
+          "tools": "T15-M1.5RL, T17_M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TX_35.40_Aqua_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "OsseoSpeed TX",
+          "platform": "3.5 / 4.0 (Aqua)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TX_35.40_Aqua_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TX_35.40_Aqua_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "OsseoSpeed TX",
+          "platform": "4.5 / 5.0 (Lilac)",
+          "shape": "Hex",
+          "sourceFile": "GEN_TX_45.50_Lilac_(H)",
+          "tools": "T16-M1.5FL, T17_M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TX_45.50_Lilac_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "OsseoSpeed TX",
+          "platform": "4.5 / 5.0 (Lilac)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TX_45.50_Lilac_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TX_45.50_Lilac_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "OsseoSpeed TX - Multiunit",
+          "platform": "(20 degree)",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_TX_UNI20_MUA",
+          "tools": "T16-M1.5FL, T17_M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TX_UNI20_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "OsseoSpeed TX - Multiunit",
+          "platform": "(45 degree)",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_TX_UNI45_MUA",
+          "tools": "T16-M1.5FL, T17_M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TX_UNI45_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Bego",
+      "source": "https://gencoretech.notion.site/21dcfb3e9058801e844cd2ba778adfe2",
+      "rows": [
+        {
+          "series": "Semados",
+          "platform": "3.25 / 3.75",
+          "shape": "Hex",
+          "sourceFile": "GEN_Semados_325.375_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_325.375_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Semados",
+          "platform": "3.25 / 3.75",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Semados_325.375_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_325.375_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Semados",
+          "platform": "4.1",
+          "shape": "Hex",
+          "sourceFile": "GEN_Semados_41_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_41_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Semados",
+          "platform": "4.1",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Semados_41_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_41_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Semados",
+          "platform": "4.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Semados_45_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_45_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Semados",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Semados_45_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_45_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Semados",
+          "platform": "5.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Semados_55_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_55_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Semados",
+          "platform": "5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Semados_55_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_55_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Semados - Multiunit",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Semados_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Semados_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Biohorizons",
+      "source": "https://gencoretech.notion.site/1e5cfb3e9058807d957dd524886f6ea0",
+      "rows": [
+        {
+          "series": "External",
+          "platform": "3.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_External_35_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_External_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "External",
+          "platform": "3.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_External_35_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_External_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "External",
+          "platform": "4.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_External_40_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_External_40_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "External",
+          "platform": "4.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_External_40_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_External_40_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "External",
+          "platform": "5.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_External_50_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_External_50_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "External",
+          "platform": "5.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_External_50_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_External_50_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "External",
+          "platform": "6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_External_60_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_External_60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "External",
+          "platform": "6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_External_60_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_External_60_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal",
+          "platform": "3.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Internal_30_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internal_30_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal",
+          "platform": "3.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Internal_30_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internal_30_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal",
+          "platform": "3.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Internal_35_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internal_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal",
+          "platform": "3.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Internal_35_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internal_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal",
+          "platform": "4.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Internal_45_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internal_45_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Internal_45_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internal_45_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal",
+          "platform": "5.7",
+          "shape": "Hex",
+          "sourceFile": "GEN_Internal_57_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internal_57_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internal",
+          "platform": "5.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Internal_57_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internal_57_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Biomet 3i",
+      "source": "https://gencoretech.notion.site/21dcfb3e90588045911de6ec8e39f682",
+      "rows": [
+        {
+          "series": "Certain External",
+          "platform": "3.4 (M)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Certain_External_34_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Certain_External_34_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain External",
+          "platform": "3.4 (M)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Certain_External_34_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_External_34_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain External",
+          "platform": "4.1 (R)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Certain_External_41_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Certain_External_41_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain External",
+          "platform": "4.1 (R)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Certain_External_41_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_External_41_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain External",
+          "platform": "5.0 (W)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Certain_External_50_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Certain_External_50_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain External",
+          "platform": "5.0 (W)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Certain_External_50_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_External_50_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain External",
+          "platform": "6.0 (XW)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Certain_External_60_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Certain_External_60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain External",
+          "platform": "6.0 (XW)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Certain_External_60_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_External_60_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain Internal",
+          "platform": "3.4",
+          "shape": "Hex",
+          "sourceFile": "GEN_Certain_Internal_34_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_Internal_34_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain Internal",
+          "platform": "3.4",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Certain_Internal_34_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_Internal_34_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain Internal",
+          "platform": "4.1",
+          "shape": "Hex",
+          "sourceFile": "GEN_Certain_Internal_41_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_Internal_41_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain Internal",
+          "platform": "4.1",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Certain_Internal_41_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_Internal_41_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain Internal",
+          "platform": "5.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Certain_Internal_50_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_Internal_50_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain Internal",
+          "platform": "5.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Certain_Internal_50_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_Internal_50_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain Internal",
+          "platform": "6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Certain_Internal_60_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_Internal_60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Certain Internal",
+          "platform": "6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Certain_Internal_60_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Certain_Internal_60_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Biotech Dental",
+      "source": "https://gencoretech.notion.site/21dcfb3e9058800a9e5eedcb3b948585",
+      "rows": [
+        {
+          "series": "Kontact",
+          "platform": "3.6 / 4.2 / 4.8 / 5.4",
+          "shape": "Engaged (Tri-lobe)",
+          "sourceFile": "GEN_Kontact_36.42.48.54_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Kontact_36.42.48.54_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Kontact",
+          "platform": "3.6 / 4.2 / 4.8 / 5.4",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_Kontact_36.42.48.54_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Kontact_36.42.48.54_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_BrainBase Corp",
+      "source": "https://gencoretech.notion.site/223cfb3e905880149cd5df48e165b799",
+      "rows": [
+        {
+          "series": "Mytis Arrow",
+          "platform": "C type",
+          "shape": "Hex",
+          "sourceFile": "GEN_Mytis Arrow_C_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Mytis Arrow_C_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Mytis Arrow",
+          "platform": "C type",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Mytis Arrow_C_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Mytis Arrow_C_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Mytis Arrow",
+          "platform": "EW type",
+          "shape": "Hex",
+          "sourceFile": "GEN_Mytis Arrow_EW_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Mytis Arrow_EW_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Mytis Arrow",
+          "platform": "EW type",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Mytis Arrow_EW_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Mytis Arrow_EW_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Bredent",
+      "source": "https://gencoretech.notion.site/223cfb3e905880c6bb52f9cbad850bfa",
+      "rows": [
+        {
+          "series": "Sky",
+          "platform": "3.5 (Narrow)",
+          "shape": "Multi-lobe",
+          "sourceFile": "GEN_Sky_35_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Sky_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Sky",
+          "platform": "3.5 (Narrow)",
+          "shape": "Non-Multi-lobe (Circle)",
+          "sourceFile": "GEN_Sky_35_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Sky_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Sky",
+          "platform": "4.0 (Blue, Classic)",
+          "shape": "Multi-lobe",
+          "sourceFile": "GEN_Sky_40_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Sky_40_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Sky",
+          "platform": "4.0 (Blue, Classic)",
+          "shape": "Non-Multi-lobe (Circle)",
+          "sourceFile": "GEN_Sky_40_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Sky_40_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_BTI",
+      "source": "https://gencoretech.notion.site/223cfb3e905880ecbb7feb717239a139",
+      "rows": [
+        {
+          "series": "Internai",
+          "platform": "3.5 (Narrow)",
+          "shape": "Multi-lobe",
+          "sourceFile": "GEN_Internai_35_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Internai_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internai",
+          "platform": "3.5 (Narrow)",
+          "shape": "Non-Multi-lobe (Circle)",
+          "sourceFile": "GEN_Internai_35_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internai_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internai",
+          "platform": "4.1 (Universal)",
+          "shape": "Multi-lobe",
+          "sourceFile": "GEN_Internai_41_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Internai_41_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internai",
+          "platform": "4.1 (Universal)",
+          "shape": "Non-Multi-lobe (Circle)",
+          "sourceFile": "GEN_Internai_41_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internai_41_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internai",
+          "platform": "5.5 (Wide)",
+          "shape": "Multi-lobe",
+          "sourceFile": "GEN_Internai_55_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Internai_55_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Internai",
+          "platform": "5.5 (Wide)",
+          "shape": "Non-Multi-lobe (Circle)",
+          "sourceFile": "GEN_Internai_55_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Internai_55_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_C-Tech",
+      "source": "https://gencoretech.notion.site/223cfb3e905880ec9367c3b7c42737a1",
+      "rows": [
+        {
+          "series": "Esthetic line",
+          "platform": "3.8 / 4.3 / 5.1",
+          "shape": "Hex",
+          "sourceFile": "GEN_Esthetic line_38.43.51_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Esthetic line_38.43.51_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Esthetic line",
+          "platform": "3.8 / 4.3 / 5.1",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Esthetic line_38.43.51_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Esthetic line_38.43.51_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_CLC",
+      "source": "https://gencoretech.notion.site/223cfb3e9058800cbb1be951b1b09e06",
+      "rows": [
+        {
+          "series": "Conic",
+          "platform": "3.5 / 4.0 / 4.5 / 5.0 / 6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Conic_35.40.45.50.60_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Conic_35.40.45.50.60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Conic",
+          "platform": "3.5 / 4.0 / 4.5 / 5.0 / 6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Conic_35.40.45.50.60_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Conic_35.40.45.50.60_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Cortex",
+      "source": "https://gencoretech.notion.site/223cfb3e9058803db41af124cf37c0a1",
+      "rows": [
+        {
+          "series": "Cortex",
+          "platform": "3.3 / 3.8 / 4.2 / 5.0 / 6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Cortex_33.38.42.50.60_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Cortex_33.38.42.50.60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Cortex",
+          "platform": "3.3 / 3.8 / 4.2 / 5.0 / 6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Cortex_33.38.42.50.60_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Cortex_33.38.42.50.60_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Dentis",
+      "source": "https://gencoretech.notion.site/223cfb3e9058807c89cbeac51426768b",
+      "rows": [
+        {
+          "series": "Multiunit",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Dentis_MUA",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Dentis_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "s-Clean",
+          "platform": "Regular / Wide",
+          "shape": "Hex",
+          "sourceFile": "GEN_sClean_R.W_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_sClean_R.W_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "s-Clean",
+          "platform": "Regular / Wide",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_sClean_R.W_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_sClean_R.W_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Dentium",
+      "source": "https://gencoretech.notion.site/225cfb3e905880f49055ca8fc5d08838",
+      "rows": [
+        {
+          "series": "Bright",
+          "platform": "3.5 / 3.8 / 4.3 / 4.8 / 6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Bright_35.38.43.48.60_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Bright_35.38.43.48.60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Bright",
+          "platform": "3.5 / 3.8 / 4.3 / 4.8 / 6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Bright_35.38.43.48.60_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Bright_35.38.43.48.60_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "NR Line",
+          "platform": "3.4",
+          "shape": "Hex",
+          "sourceFile": "GEN_NR Line_34_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_NR Line_34_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "NR Line",
+          "platform": "3.4",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_NR Line_34_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_NR Line_34_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "NR Line",
+          "platform": "3.6",
+          "shape": "Hex",
+          "sourceFile": "GEN_NR Line_36_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_NR Line_36_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "NR Line",
+          "platform": "3.6",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_NR Line_36_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_NR Line_36_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SuperLine",
+          "platform": "3.1",
+          "shape": "Hex",
+          "sourceFile": "GEN_SuperLine_31_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SuperLine_31_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SuperLine",
+          "platform": "3.1",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_SuperLine_31_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SuperLine_31_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SuperLine",
+          "platform": "3.6 / 4.0 / 4.5 / 5.0 / 6.0 / 7.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_SuperLine_36.40.45.50.60.70_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SuperLine_36.40.45.50.60.70_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SuperLine",
+          "platform": "3.6 / 4.0 / 4.5 / 5.0 / 6.0 / 7.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_SuperLine_36.40.45.50.60.70_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SuperLine_36.40.45.50.60.70_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SuperLine - Multiunit",
+          "platform": "4.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_SuperLine_45_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SuperLine_45_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User confirmed platform 4.5; shape and tools identical to the 5.5 entry."
+        },
+        {
+          "series": "SuperLine - Multiunit",
+          "platform": "5.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_SuperLine_55_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SuperLine_55_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Dentsply",
+      "source": "https://gencoretech.notion.site/25bcfb3e9058808aa469dcc95899fecf",
+      "rows": [
+        {
+          "series": "Dentsply - Multiunit",
+          "platform": "5.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Multiunit_20_MUA",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Multiunit_20_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User supplied series, platform, interface shape and machining tools."
+        }
+      ],
+      "sourceOnly": [
+        {
+          "series": "Dentsply - Multiunit",
+          "platform": "5.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_SuperLine_55_MUA",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "folder": "M.Ai_Dess",
+      "source": "https://gencoretech.notion.site/225cfb3e905880e4be28d61ff155d752",
+      "rows": [
+        {
+          "series": "Dess - Multiunit",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Multiunit_MUA_powerball10",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "Powerball screw applied",
+          "file": "GEN_Multiunit_MUA_powerball10.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Dess - Multiunit",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Multiunit_MUA",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Multiunit_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Dio",
+      "source": "https://gencoretech.notion.site/247cfb3e9058800597cfc83a01909c18",
+      "rows": [
+        {
+          "series": "SM",
+          "platform": "Mini",
+          "shape": "Torx",
+          "sourceFile": "GEN_SM_M_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_SM_M_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SM",
+          "platform": "Mini",
+          "shape": "Non-Torx (Circle)",
+          "sourceFile": "GEN_SM_M_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SM_M_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SM",
+          "platform": "Regular / Wide / Extra Wide",
+          "shape": "Torx",
+          "sourceFile": "GEN_SM_R.W.EW_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_SM_R.W.EW_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SM",
+          "platform": "Regular / Wide / Extra Wide",
+          "shape": "Non-Torx (Circle)",
+          "sourceFile": "GEN_SM_R.W.EW_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SM_R.W.EW_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "UF - Multiunit",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_UF_48_MUA",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_UF_48_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "UF",
+          "platform": "Narrow",
+          "shape": "Hex",
+          "sourceFile": "GEN_UF_N_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_UF_N_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "UF",
+          "platform": "Narrow",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_UF_N_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_UF_N_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "UF",
+          "platform": "Regular / Wide",
+          "shape": "Hex",
+          "sourceFile": "GEN_UF_R.W_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_UF_R.W_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "UF",
+          "platform": "Regular / Wide",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_UF_R.W_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_UF_R.W_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_DYNA",
+      "source": "https://gencoretech.notion.site/225cfb3e9058807e82c7f617a077c906",
+      "rows": [
+        {
+          "series": "Pushin Octalock",
+          "platform": "3.6 / 4.0 / 5.0",
+          "shape": "Octa",
+          "sourceFile": "GEN_Pushin.Octalock_36.40.50_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Pushin Octalock_36.40.50_(H).hdpartz",
+          "status": "spelling"
+        },
+        {
+          "series": "Pushin Octalock",
+          "platform": "3.6 / 4.0 / 5.0",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_Pushin.Octalock_36.40.50_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Pushin Octalock_36.40.50_(N-H).hdpartz",
+          "status": "spelling"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Foxden",
+      "source": "https://gencoretech.notion.site/225cfb3e905880cfab49fc6aa5ff0878",
+      "rows": [
+        {
+          "series": "FDM EBA - Multiunit",
+          "platform": "4.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_FDM_EBA_4510_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_FDM_EBA_4510_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "FDM EBA - Multiunit",
+          "platform": "5.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_FDM_EBA_5510_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_FDM_EBA_5510_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "FDM EBA - Multiunit",
+          "platform": "6.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_FDM_EBA_6510_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_FDM_EBA_6510_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "platform": "5.5",
+          "shape": "Multiunit",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "series": "X",
+          "file": "GEN_X_55_PFM_N.hdpartz",
+          "sourceFile": "GEN_X_55_PFM_N",
+          "status": "confirmed",
+          "provenance": "User confirmed interface shape Multiunit and machining tools identical to ZP."
+        },
+        {
+          "platform": "6.0",
+          "shape": "Multiunit",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "series": "X",
+          "file": "GEN_X_60_PFM_N.hdpartz",
+          "sourceFile": "GEN_X_60_PFM_N",
+          "status": "confirmed",
+          "provenance": "User confirmed interface shape Multiunit and machining tools identical to ZP."
+        },
+        {
+          "series": "ZP - Multiunit",
+          "platform": "4.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_ZP_45_PFM_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_ZP_45_PFM_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "ZP - Multiunit",
+          "platform": "5.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_ZP_55_PFM_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_ZP_55_PFM_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "ZP - Multiunit",
+          "platform": "6.0",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_ZP_60_PFM_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_ZP_60_PFM_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User confirmed platform 6.0; remaining specifications identical to the 5.5 entry; append last in ZP - Multiunit."
+        }
+      ],
+      "sourceOnly": [
+        {
+          "series": "ZP - Multiunit",
+          "platform": "6.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_ZP_65_PFM_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "folder": "M.Ai_Global D",
+      "source": "https://gencoretech.notion.site/225cfb3e90588083b525eaf47a325a32",
+      "rows": [
+        {
+          "series": "In-Kone - Multiunit",
+          "platform": "4.7",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_In-Kone_Angled_D47_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_In-Kone_Angled_D47_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User supplied correspondence to In-Kone library table, platform diameter, shape and tools."
+        },
+        {
+          "series": "In-Kone - Multiunit",
+          "platform": "4.3",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_In-Kone_Straight_D43_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_In-Kone_Straight_D43_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User supplied correspondence to In-Kone library table, platform diameter, shape and tools."
+        },
+        {
+          "series": "Tekka In-Kone",
+          "platform": "3.5 / 4.0 / 4.5 / 5.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Tekka.In-Kone_35.40.45.55_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Tekka In-Kone_35.40.45.55_(H).hdpartz",
+          "status": "spelling"
+        },
+        {
+          "series": "Tekka In-Kone",
+          "platform": "3.5 / 4.0 / 4.5 / 5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Tekka.In-Kone_35.40.45.55_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Tekka In-Kone_35.40.45.55_(N-H).hdpartz",
+          "status": "spelling"
+        }
+      ],
+      "sourceOnly": [
+        {
+          "series": "In-Kone - Multiunit",
+          "platform": "4.7",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_In-Kone_Angled_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": ""
+        },
+        {
+          "series": "In-Kone - Multiunit",
+          "platform": "4.3",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_In-Kone_Straight_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "folder": "M.Ai_Highness",
+      "source": "https://gencoretech.notion.site/25bcfb3e905880ac8118fc8b37874535",
+      "rows": [
+        {
+          "series": "Highness",
+          "platform": "4.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_HDL_(C+3)_45_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_HDL_(C+3)_45_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "5.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_HDL_(C+3)_55_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_HDL_(C+3)_55_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "6.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_HDL_(C+3)_65_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_HDL_(C+3)_65_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "4.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_HDL_45+3_Angled_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_HDL_45+3_Angled_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "5.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_HDL_55+3_Angled_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_HDL_55+3_Angled_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "4.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_PR_(B+2)_45_tem7.3_exo_NCS",
+          "tools": "T15-M1.5RL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_PR_(B+2)_45_tem7.3_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "5.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_PR_(B+2)_55_tem7.3_exo_NCS",
+          "tools": "T15-M1.5RL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_PR_(B+2)_55_tem7.3_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "6.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_PR_(B+2)_65_tem7.21_exo_NCS",
+          "tools": "T15-M1.5RL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_PR_(B+2)_65_tem7.21_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "4.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_PR_45_3.15_NCS",
+          "tools": "T15-M1.5RL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_PR_45_3.15_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "5.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_PR_55_3.15_NCS",
+          "tools": "T15-M1.5RL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_PR_55_3.15_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "6.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_PR_65_3.15_NCS",
+          "tools": "T15-M1.5RL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_PR_65_3.15_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "4.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_RB_45_Metal_2.5_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_RB_45_Metal_2.5_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "5.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_RB_55_Metal_2.5_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_RB_55_Metal_2.5_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "6.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_RB_65_Metal_2.5_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_RB_65_Metal_2.5_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "4.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_SB_(B+3)_45_tem7.16_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SB_(B+3)_45_tem7.16_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "5.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_SB_(B+3)_55_tem7.16_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SB_(B+3)_55_tem7.16_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "4.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_SB_(B+5)_45_tem7.16_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SB_(B+5)_45_tem7.16_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "5.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_SB_(B+5)_55_tem7.16_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SB_(B+5)_55_tem7.16_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "4.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_SB_45_tem7.15_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SB_45_tem7.15_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "5.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_SB_55_tem7.15_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SB_55_tem7.15_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "6.5",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_SB_65_tem7.15_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SB_65_tem7.15_exo_NCS.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Highness",
+          "platform": "4.0",
+          "shape": "NCS (Cementless)",
+          "sourceFile": "GEN_SB_OSS_40_tem7.15_exo_NCS",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SB_OSS_40_tem7.15_exo_NCS.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Human Tech",
+      "source": "https://gencoretech.notion.site/225cfb3e905880c28748edf45e6a283c",
+      "rows": [
+        {
+          "series": "Ratio",
+          "platform": "Large",
+          "shape": "Hex",
+          "sourceFile": "GEN_Ratio_L_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Ratio_L_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Ratio",
+          "platform": "Large",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Ratio_L_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Ratio_L_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Ratio",
+          "platform": "Mini",
+          "shape": "Hex",
+          "sourceFile": "GEN_Ratio_M_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Ratio_M_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Ratio",
+          "platform": "Mini",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Ratio_M_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Ratio_M_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Ratio",
+          "platform": "Standard",
+          "shape": "Hex",
+          "sourceFile": "GEN_Ratio_S_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Ratio_S_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Ratio",
+          "platform": "Standard",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Ratio_S_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Ratio_S_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_I-CON",
+      "source": "https://gencoretech.notion.site/226cfb3e90588035b99ddf7de5c11e33",
+      "rows": [
+        {
+          "series": "I-CON",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_45_Metal_Link Free_EQ",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_45_Metal_Link Free_EQ.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "I-CON",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_45_Metal_Link Free_SUB_II",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_45_Metal_Link Free_SUB_II.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested replacing the OLD SUB entry with the corresponding SUB_II file, retaining its specifications."
+        },
+        {
+          "series": "I-CON",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_45_Resin_Link Free_EQ",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_45_Resin_Link Free_EQ.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "I-CON",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_45_Resin_Link Free_SUB_II",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_45_Resin_Link Free_SUB_II.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested replacing the OLD SUB entry with the corresponding SUB_II file, retaining its specifications."
+        },
+        {
+          "series": "I-CON",
+          "platform": "5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_55_Metal_Link Free_EQ",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_55_Metal_Link Free_EQ.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "I-CON",
+          "platform": "5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_55_Metal_Link Free_SUB_II",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_55_Metal_Link Free_SUB_II.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested replacing the OLD SUB entry with the corresponding SUB_II file, retaining its specifications."
+        },
+        {
+          "series": "I-CON",
+          "platform": "5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_55_Resin_Link Free_EQ",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_55_Resin_Link Free_EQ.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "I-CON",
+          "platform": "5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_55_Resin_Link Free_SUB_II",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_55_Resin_Link Free_SUB_II.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested replacing the OLD SUB entry with the corresponding SUB_II file, retaining its specifications."
+        }
+      ],
+      "sourceOnly": [
+        {
+          "series": "I-CON",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_45_Metal_Link Free_SUB",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": ""
+        },
+        {
+          "series": "I-CON",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_45_Resin_Link Free_SUB",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": ""
+        },
+        {
+          "series": "I-CON",
+          "platform": "5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_55_Metal_Link Free_SUB",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": ""
+        },
+        {
+          "series": "I-CON",
+          "platform": "5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_55_Resin_Link Free_SUB",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "folder": "M.Ai_Implant Direct",
+      "source": "https://gencoretech.notion.site/225cfb3e90588037889adb7f1a3b8f4b",
+      "rows": [
+        {
+          "series": "Legacy",
+          "platform": "3.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Legacy_30_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_30_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Legacy",
+          "platform": "3.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Legacy_30_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_30_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Legacy",
+          "platform": "3.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Legacy_35_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Legacy",
+          "platform": "3.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Legacy_35_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Legacy",
+          "platform": "4.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Legacy_45_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_45_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Legacy",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Legacy_45_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_45_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Legacy - Multiunit",
+          "platform": "5.0",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Legacy_50_MUA",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_50_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Legacy",
+          "platform": "5.7",
+          "shape": "Hex",
+          "sourceFile": "GEN_Legacy_57_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_57_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Legacy",
+          "platform": "5.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Legacy_57_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Legacy_57_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Japan Medical Materials",
+      "source": "https://gencoretech.notion.site/225cfb3e905880a49d8df16023a4a4e0",
+      "rows": [
+        {
+          "series": "Poiex",
+          "platform": "3.4",
+          "shape": "Hex",
+          "sourceFile": "GEN_Poiex_34_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_34_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "3.4",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Poiex_34_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_34_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "3.7",
+          "shape": "Hex",
+          "sourceFile": "GEN_Poiex_37_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_37_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "3.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Poiex_37_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_37_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "4.2",
+          "shape": "Hex",
+          "sourceFile": "GEN_Poiex_42_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_42_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "4.2",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Poiex_42_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_42_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "4.7",
+          "shape": "Hex",
+          "sourceFile": "GEN_Poiex_47_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_47_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "4.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Poiex_47_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_47_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "5.2",
+          "shape": "Hex",
+          "sourceFile": "GEN_Poiex_52_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_52_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Poiex",
+          "platform": "5.2",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Poiex_52_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Poiex_52_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Kentec",
+      "source": "https://gencoretech.notion.site/225cfb3e90588022809ee06ccdd7a260",
+      "rows": [
+        {
+          "series": "Alphatite",
+          "platform": "3.3 / 3.7 / 4.0 / 4.3",
+          "shape": "Hex",
+          "sourceFile": "GEN_Alphatite_SB1_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Alphatite_SB1_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Alphatite",
+          "platform": "3.3 / 3.7 / 4.0 / 4.3",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Alphatite_SB1_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Alphatite_SB1_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Alphatite",
+          "platform": "4.6",
+          "shape": "Hex",
+          "sourceFile": "GEN_Alphatite_SB2_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Alphatite_SB2_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Alphatite",
+          "platform": "4.6",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Alphatite_SB2_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Alphatite_SB2_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Alphatite",
+          "platform": "5.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Alphatite_SB3_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Alphatite_SB3_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Alphatite",
+          "platform": "5.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Alphatite_SB3_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Alphatite_SB3_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Keystone",
+      "source": "https://gencoretech.notion.site/225cfb3e905880f09c98cfc8399da9b0",
+      "rows": [
+        {
+          "series": "Paltop",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Paltop_MUA",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Paltop_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User supplied Paltop filename correspondence and specifications; platform diameter unspecified."
+        },
+        {
+          "series": "Paltop",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Paltop_MUA2",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Paltop_MUA2.hdpartz",
+          "status": "confirmed",
+          "provenance": "User supplied Paltop filename correspondence and specifications; platform diameter unspecified."
+        },
+        {
+          "series": "Prima Connex",
+          "platform": "3.5",
+          "shape": "Torx",
+          "sourceFile": "GEN_Prima Connex_35_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Prima Connex_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Prima Connex",
+          "platform": "3.5",
+          "shape": "Non-Torx (Circle)",
+          "sourceFile": "GEN_Prima Connex_35_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Prima Connex_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Prima Connex",
+          "platform": "4.1",
+          "shape": "Torx",
+          "sourceFile": "GEN_Prima Connex_41_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Prima Connex_41_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Prima Connex",
+          "platform": "4.1",
+          "shape": "Non-Torx (Circle)",
+          "sourceFile": "GEN_Prima Connex_41_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Prima Connex_41_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Prima Connex",
+          "platform": "5.0",
+          "shape": "Torx",
+          "sourceFile": "GEN_Prima Connex_50_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Prima Connex_50_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Prima Connex",
+          "platform": "5.0",
+          "shape": "Non-Torx (Circle)",
+          "sourceFile": "GEN_Prima Connex_50_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R,",
+          "note": "",
+          "file": "GEN_Prima Connex_50_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": [
+        {
+          "series": "Paltop",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Paltop_MUA_Multi",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": ""
+        },
+        {
+          "series": "Paltop",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Paltop_MUA2_Multi",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "folder": "M.Ai_Kyocera",
+      "source": "https://gencoretech.notion.site/225cfb3e9058806f88bbcac74bcc03d7",
+      "rows": [
+        {
+          "series": "Finsia BoneLevel",
+          "platform": "3.2 / 3.4",
+          "shape": "Hex",
+          "sourceFile": "GEN_Finesia BoneLevel_32.34_NP_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Finesia BoneLevel_32.34_NP_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Finsia BoneLevel",
+          "platform": "3.7 / 4.2",
+          "shape": "Hex",
+          "sourceFile": "GEN_Finesia BoneLevel_37.42_RP_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Finesia BoneLevel_37.42_RP_(H).hdpartz",
+          "status": "confirmed",
+          "provenance": "User confirmed RP platform, Hex shape and tools; WP shape changed to Hex."
+        },
+        {
+          "series": "Finsia BoneLevel",
+          "platform": "4.7 / 5.2",
+          "shape": "Hex",
+          "sourceFile": "GEN_Finesia BoneLevel_47.52_WP_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Finesia BoneLevel_47.52_WP_(H).hdpartz",
+          "status": "confirmed",
+          "provenance": "User confirmed RP platform, Hex shape and tools; WP shape changed to Hex."
+        }
+      ],
+      "sourceOnly": [
+        {
+          "series": "Finsia BoneLevel",
+          "platform": "3.7 / 4.2",
+          "shape": "Non-Torx (Circle)",
+          "sourceFile": "GEN_Finesia BoneLevel_37.42_WP_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "folder": "M.Ai_MC Milling",
+      "source": "https://gencoretech.notion.site/226cfb3e905880c0b880d2e9b173c398",
+      "rows": [
+        {
+          "series": "MC External",
+          "platform": "4.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MC_External_40_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MC_External_40_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MC External",
+          "platform": "4.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MC_External_47_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MC_External_47_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MC External",
+          "platform": "5.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MC_External_57_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MC_External_57_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MC Internal",
+          "platform": "4.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MC_Internal_40_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MC_Internal_40_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MC Internal",
+          "platform": "4.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MC_Internal_47_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MC_Internal_47_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MC Internal",
+          "platform": "5.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MC_Internal_57_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MC_Internal_57_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Medentis Medical",
+      "source": "https://gencoretech.notion.site/21dcfb3e90588071a471ddde2fc4bc4b",
+      "rows": [
+        {
+          "series": "ICX",
+          "platform": "3.75 / 4.1 / 4.8",
+          "shape": "Hex",
+          "sourceFile": "GEN_ICX_375.41.48_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_ICX_375.41.48_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "ICX",
+          "platform": "3.75 / 4.1 / 4.8",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_ICX_375.41.48_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_ICX_375.41.48_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "ICX Multiunit",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_ICX_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_ICX_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Megagen",
+      "source": "https://gencoretech.notion.site/21dcfb3e905880379417d526bc129e93",
+      "rows": [
+        {
+          "series": "Anyone",
+          "platform": "3.0 (Mini)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Anyone_30_Mini_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anyone_30_Mini_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Anyone",
+          "platform": "3.0 (Mini)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Anyone_30_Mini_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anyone_30_Mini_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Anyone",
+          "platform": "3.5 / 4.0 / 4.5 / 5.0 / 5.5 / 6.0 / 7.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Anyone_35.40.45.50.55.60.70_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anyone_35.40.45.50.55.60.70_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Anyone",
+          "platform": "3.5 / 4.0 / 4.5 / 5.0 / 5.5 / 6.0 / 7.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Anyone_35.40.45.50.55.60.70_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anyone_35.40.45.50.55.60.70_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Anyridge",
+          "platform": "Small / Regular / Wide / Super Wide",
+          "shape": "Hex",
+          "sourceFile": "GEN_Anyridge_S.R.W.SW_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anyridge_S.R.W.SW_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Anyridge",
+          "platform": "Small / Regular / Wide / Super Wide",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Anyridge_S.R.W.SW_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Anyridge_S.R.W.SW_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "EZ Plus",
+          "platform": "Mini",
+          "shape": "Engaged (Tri-lobe)",
+          "sourceFile": "GEN_EZ Plus_M_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_EZ Plus_M_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "EZ Plus",
+          "platform": "Mini",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_EZ Plus_M_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_EZ Plus_M_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "EZ Plus",
+          "platform": "Regular / Wide",
+          "shape": "Engaged (Tri-lobe)",
+          "sourceFile": "GEN_EZ Plus_R.W_(H)",
+          "tools": "T16-M1.5FL, T18-M1.5R, T19-M1.0F",
+          "note": "",
+          "file": "GEN_EZ Plus_R.W_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "EZ Plus",
+          "platform": "Regular / Wide",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_EZ Plus_R.W_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_EZ Plus_R.W_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MegaFix",
+          "platform": "",
+          "shape": "Hex",
+          "sourceFile": "GEN_MegaFix_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MegaFix_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MegaFix",
+          "platform": "",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MegaFix_(N-H)",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MegaFix_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Octa - External",
+          "platform": "Mini",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_Octa_EXT_M_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Octa_EXT_M_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Octa - External",
+          "platform": "Standard",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_Octa_EXT_R_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Octa_EXT_R_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Octa - External",
+          "platform": "Wide",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_Octa_EXT_W_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Octa_EXT_W_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "platform": "5.0 / 6.0",
+          "shape": "Hex",
+          "tools": "T16-M1.5FL, T20-M0.5F",
+          "note": "",
+          "series": "Resque - External",
+          "file": "GEN_Rescue_External_50.60_(H).hdpartz",
+          "sourceFile": "GEN_Rescue_External_50.60_(H)",
+          "status": "confirmed",
+          "provenance": "User supplied series and specifications; Internal mapped to explicitly named GEN_Rescue_Internal_(N-H).hdpartz."
+        },
+        {
+          "platform": "5.0 / 6.0",
+          "shape": "Non-Hex (Circle)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "series": "Resque - External",
+          "file": "GEN_Rescue_External_50.60_(N-H).hdpartz",
+          "sourceFile": "GEN_Rescue_External_50.60_(N-H)",
+          "status": "confirmed",
+          "provenance": "User supplied series and specifications; Internal mapped to explicitly named GEN_Rescue_Internal_(N-H).hdpartz."
+        },
+        {
+          "platform": "",
+          "shape": "Non-Engaged (Circle)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "series": "Resque - Internal",
+          "file": "GEN_Rescue_Internal_(N-H).hdpartz",
+          "sourceFile": "GEN_Rescue_Internal_(N-H)",
+          "status": "confirmed",
+          "provenance": "User supplied series and specifications; Internal mapped to explicitly named GEN_Rescue_Internal_(N-H).hdpartz."
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_MIS",
+      "source": "https://gencoretech.notion.site/226cfb3e905880d6b895fb880d7b6074",
+      "rows": [
+        {
+          "series": "C1",
+          "platform": "Narrow",
+          "shape": "Hex",
+          "sourceFile": "GEN_C1_Narrow_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_C1_Narrow_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "C1",
+          "platform": "Narrow",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_C1_Narrow_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_C1_Narrow_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "C1",
+          "platform": "Standard",
+          "shape": "Hex",
+          "sourceFile": "GEN_C1_Standard_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_C1_Standard_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "C1",
+          "platform": "Standard",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_C1_Standard_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_C1_Standard_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "C1",
+          "platform": "Wide",
+          "shape": "Hex",
+          "sourceFile": "GEN_C1_Wide_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_C1_Wide_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "C1",
+          "platform": "Wide",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_C1_Wide_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_C1_Wide_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Multi-unit",
+          "platform": "Standard",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_MIS_Standard_MUA",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MIS_Standard_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Neobiotech",
+      "source": "https://gencoretech.notion.site/226cfb3e905880b3b8b7ce609c40e827",
+      "rows": [
+        {
+          "series": "IS",
+          "platform": "",
+          "shape": "Hex",
+          "sourceFile": "GEN_IS_Actrive_SCRP_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_IS_Actrive_SCRP_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "IS",
+          "platform": "",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_IS_Actrive_SCRP_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_IS_Actrive_SCRP_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "IS",
+          "platform": "",
+          "shape": "Hex",
+          "sourceFile": "GEN_IS_System_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_IS_System_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "IS",
+          "platform": "",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_IS_System_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_IS_System_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_NeoDent",
+      "source": "https://gencoretech.notion.site/226cfb3e905880349468cc91db956bb2",
+      "rows": [
+        {
+          "series": "GM",
+          "platform": "3.5 / 3.75 / 4.0 / 4.3 / 5.0 / 6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_GM_35.375.40.43.50.60_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_GM_35.375.40.43.50.60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "GM",
+          "platform": "3.5 / 3.75 / 4.0 / 4.3 / 5.0 / 6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_GM_35.375.40.43.50.60_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_GM_35.375.40.43.50.60_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Nobel Biocare",
+      "source": "https://gencoretech.notion.site/226cfb3e905880799d5fe724c140d118",
+      "rows": [
+        {
+          "series": "Active",
+          "platform": "3.0",
+          "shape": "Torx",
+          "sourceFile": "GEN_Active_30_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Active_30_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Active",
+          "platform": "3.0",
+          "shape": "Non-Torx (Circle)",
+          "sourceFile": "GEN_Active_30_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Active_30_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Active",
+          "platform": "3.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Active_35_(H)_II",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Active_35_(H)_II.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested third position in Active, platform 3.5 and remaining specifications identical to the 4.3 / 5.0 Hex entry."
+        },
+        {
+          "series": "Active",
+          "platform": "3.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Active_35_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Active_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Active",
+          "platform": "4.3 / 5.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_Active_43.50_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Active_43.50_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Active",
+          "platform": "4.3 / 5.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Active_43.50_(N-H)_(Geomedi)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Active_43.50_(N-H)_(Geomedi).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Active",
+          "platform": "4.3 / 5.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Active_43.50_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Active_43.50_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Active",
+          "platform": "5.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Active_55_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Active_55_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Active",
+          "platform": "5.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Active_55_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Active_55_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Branemark",
+          "platform": "3.5 (NP)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Branemark_NP_(H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Branemark_NP_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Branemark",
+          "platform": "3.5 (NP)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Branemark_NP_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Branemark_NP_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Branemark",
+          "platform": "4.0 (RP)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Branemark_RP_(H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Branemark_RP_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Branemark",
+          "platform": "4.0 (RP)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Branemark_RP_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Branemark_RP_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Branemark",
+          "platform": "5.0 (WP)",
+          "shape": "Hex",
+          "sourceFile": "GEN_Branemark_WP_(H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_Branemark_WP_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Branemark",
+          "platform": "5.0 (WP)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Branemark_WP_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Branemark_WP_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Multiunit",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Multiunit_48_MUA_powerball.v10",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Multiunit_48_MUA_powerball.v10.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Multiunit",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Multiunit_48_MUA_WTI",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Multiunit_48_MUA_WTI.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Multiunit",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Multiunit_48_MUA",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Multiunit_48_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Multiunit",
+          "platform": "6.0",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Multiunit_60_MUA",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Multiunit_60_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Multiunit",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Multiunit_plus_MUA",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Multiunit_plus_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Replace",
+          "platform": "3.5 (NP)",
+          "shape": "Engaged (Tri-lobe)",
+          "sourceFile": "GEN_Replace_NP_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Replace_NP_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Replace",
+          "platform": "3.5 (NP)",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_Replace_NP_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Replace_NP_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Replace",
+          "platform": "4.3 (RP)",
+          "shape": "Engaged (Tri-lobe)",
+          "sourceFile": "GEN_Replace_RP_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Replace_RP_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Replace",
+          "platform": "4.3 (RP)",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_Replace_RP_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Replace_RP_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Replace",
+          "platform": "6.0 (SW)",
+          "shape": "Engaged (Tri-lobe)",
+          "sourceFile": "GEN_Replace_SW_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Replace_SW_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Replace",
+          "platform": "6.0 (SW)",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_Replace_SW_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Replace_SW_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Replace",
+          "platform": "5.0 (WP)",
+          "shape": "Engaged (Tri-lobe)",
+          "sourceFile": "GEN_Replace_WP_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Replace_WP_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Replace",
+          "platform": "5.0 (WP)",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_Replace_WP_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Replace_WP_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Universal Base",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Universal_Base",
+          "tools": "T16-M1.5FL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Universal_Base.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": [
+        {
+          "series": "Active",
+          "platform": "3.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_Active_35_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "folder": "M.Ai_NucleOSS",
+      "source": "https://gencoretech.notion.site/226cfb3e90588071b231d639039dd5b7",
+      "rows": [
+        {
+          "series": "T6",
+          "platform": "3.5 / 4.0 / 4.5 / 5.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_T6_35.40.45.50_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_T6_35.40.45.50_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "T6",
+          "platform": "3.5 / 4.0 / 4.5 / 5.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_T6_35.40.45.50_N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_T6_35.40.45.50_(N-H).hdpartz",
+          "status": "spelling"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Osstem",
+      "source": "https://gencoretech.notion.site/226cfb3e905880e0a081fea248adbf62",
+      "rows": [
+        {
+          "series": "KS",
+          "platform": "Regular",
+          "shape": "Hex",
+          "sourceFile": "GEN_KS_R_(H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_KS_R_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "KS",
+          "platform": "Regular",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_KS_R_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_KS_R_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SS",
+          "platform": "4.8 (Regular)",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_SS_R_(N-H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_SS_R_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SS",
+          "platform": "6.0 (Wide)",
+          "shape": "Octa",
+          "sourceFile": "GEN_SS_W_(H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T17-M1.5F, T18-M1.5, T20-M0.5F",
+          "note": "",
+          "file": "GEN_SS_W_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SS",
+          "platform": "6.0 (Wide)",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_SS_W_(N-H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_SS_W_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TS - Multiunit",
+          "platform": "4.0",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_TS_Convertible_40_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5",
+          "note": "",
+          "file": "GEN_TS_Convertible_40_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TS - Multiunit",
+          "platform": "5.0",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_TS_Convertible_50_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5",
+          "note": "",
+          "file": "GEN_TS_Convertible_50_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TS - Multiunit",
+          "platform": "6.0",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_TS_Convertible_60_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5",
+          "note": "",
+          "file": "GEN_TS_Convertible_60_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TS",
+          "platform": "Mini",
+          "shape": "Hex",
+          "sourceFile": "GEN_TS_M_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TS_M_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TS",
+          "platform": "Mini",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TS_M_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TS_M_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TS - Multiunit",
+          "platform": "Mini / Regular",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_TS_Multiunit_M.R_MUA",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TS_Multiunit_M.R_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TS",
+          "platform": "Regular",
+          "shape": "Hex",
+          "sourceFile": "GEN_TS_R_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TS_R_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TS",
+          "platform": "Regular",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TS_R_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TS_R_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "US",
+          "platform": "3.5 (Mini)",
+          "shape": "Hex",
+          "sourceFile": "GEN_US_M_(H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_US_M_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "US",
+          "platform": "3.5 (Mini)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_US_M_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_US_M_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "US",
+          "platform": "4.1 (Regular)",
+          "shape": "Hex",
+          "sourceFile": "GEN_US_R_(H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_US_R_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "US",
+          "platform": "4.1 (Regular)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_US_R_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_US_R_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "US",
+          "platform": "5.1 (Wide)",
+          "shape": "Hex",
+          "sourceFile": "GEN_US_W_(H)",
+          "tools": "T16-M1.5FL, T13-M0.6B, T18-M1.5R, T20-M0.5F",
+          "note": "",
+          "file": "GEN_US_W_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "US",
+          "platform": "5.1 (Wide)",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_US_W_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_US_W_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Platon",
+      "source": "https://gencoretech.notion.site/21dcfb3e905880b0a5cde59fd849e611",
+      "rows": [
+        {
+          "series": "Type IV Pro",
+          "platform": "3.3 / 3.8 / 4.7",
+          "shape": "Hex",
+          "sourceFile": "GEN_Type.IV.Pro_33.38.47_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5",
+          "note": "",
+          "file": "GEN_Type.IV.Pro_33.38.47_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Type IV Pro",
+          "platform": "3.3 / 3.8 / 4.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Type.IV.Pro_33.38.47_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5",
+          "note": "",
+          "file": "GEN_Type.IV.Pro_33.38.47_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Powerball",
+      "source": "https://gencoretech.notion.site/226cfb3e905880b29c03fe413869dda3",
+      "rows": [
+        {
+          "series": "V1.0",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_MB_v10_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MB_v10_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "V1.0",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_MUA_v10_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MUA_v10_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "V1.0",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_SRA_v10_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SRA_v10_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Southern Implant",
+      "source": "https://gencoretech.notion.site/226cfb3e905880a5bceedc3eb20de352",
+      "rows": [
+        {
+          "series": "M-series Internal",
+          "platform": "3.75 / 4.2 / 5.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_M-series_Internal_375.42.50_(H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_M-series_Internal_375.42.50_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "M-series Internal",
+          "platform": "3.75 / 4.2 / 5.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_M-series_Internal_375.42.50_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_M-series_Internal_375.42.50_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MSc External",
+          "platform": "3.25",
+          "shape": "Hex",
+          "sourceFile": "GEN_MSc_External_325_(H)",
+          "tools": "T16-M1.5FL, T19-M1.0F, T20-M0.5F",
+          "note": "",
+          "file": "GEN_MSc_External_325_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MSc External",
+          "platform": "3.25",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MSc_External_325_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MSc_External_325_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MSc External",
+          "platform": "6.0",
+          "shape": "Hex",
+          "sourceFile": "GEN_MSc_External_60_(H)",
+          "tools": "T16-M1.5FL, T19-M1.0F, T20-M0.5F",
+          "note": "",
+          "file": "GEN_MSc_External_60_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "MSc External",
+          "platform": "6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_MSc_External_60_(N-H)",
+          "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_MSc_External_60_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Straumann",
+      "source": "https://gencoretech.notion.site/226cfb3e90588033a498f7c5a73f051d",
+      "rows": [
+        {
+          "series": "BoneLevel Angle",
+          "platform": "3.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_BoneLevel Angle_NC.angle25_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel Angle_NC.angle25_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "BoneLevel Angle",
+          "platform": "3.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_BoneLevel Angle_RC.angle25_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel Angle_RC.angle25_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "BoneLevel",
+          "platform": "2.9",
+          "shape": "Engaged",
+          "sourceFile": "GEN_BoneLevel_29_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel_29_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "BoneLevel",
+          "platform": "2.9",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_BoneLevel_29_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel_29_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "BoneLevel",
+          "platform": "NC",
+          "shape": "Engaged",
+          "sourceFile": "GEN_BoneLevel_NC_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel_NC_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "BoneLevel",
+          "platform": "NC",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_BoneLevel_NC_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel_NC_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "BoneLevel",
+          "platform": "NC",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_BoneLevel_NC-2",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel_NC-2.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested identical specifications and placement immediately after the corresponding NC/RC Non-Hex entry."
+        },
+        {
+          "series": "BoneLevel",
+          "platform": "RC",
+          "shape": "Engaged",
+          "sourceFile": "GEN_BoneLevel_RC_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel_RC_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "BoneLevel",
+          "platform": "RC",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_BoneLevel_RC_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel_RC_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "BoneLevel",
+          "platform": "RC",
+          "shape": "Non-Engaged (Circle)",
+          "sourceFile": "GEN_BoneLevel_RC-2",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_BoneLevel_RC-2.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested identical specifications and placement immediately after the corresponding NC/RC Non-Hex entry."
+        },
+        {
+          "series": "SRA",
+          "platform": "3.5",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_SRA_35_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SRA_35_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SRA",
+          "platform": "4.6",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_SRA_46_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SRA_46_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "synOcta",
+          "platform": "RN",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_synOcta_RN_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_synOcta_RN_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "synOcta",
+          "platform": "WN",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_synOcta_WN_MUA",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_synOcta_WN_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TissueLevel",
+          "platform": "4.8",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_TissueLevel_48_(N-H)_R2",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R (no need 0.6, 0.5 tools)",
+          "note": "",
+          "file": "GEN_TissueLevel_48_(N-H)_R2.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TissueLevel",
+          "platform": "4.8",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_TissueLevel_48_(N-H)",
+          "tools": "T15-M1.5RL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_TissueLevel_48_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TissueLevel",
+          "platform": "6.5",
+          "shape": "Octa",
+          "sourceFile": "GEN_TissueLevel_65_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_TissueLevel_65_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TissueLevel",
+          "platform": "6.5",
+          "shape": "Non-Octa (Circle)",
+          "sourceFile": "GEN_TissueLevel_65_(N-H)",
+          "tools": "T15-M1.5RL, T13-M0.6B, T20-M0.5F",
+          "note": "",
+          "file": "GEN_TissueLevel_65_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Variobase",
+          "platform": "4.6",
+          "shape": "Ti. Base",
+          "sourceFile": "GEN_Variobase_46_(H)",
+          "tools": "T16-M1.5FL, T12-M1.0B, T19-M1.0F",
+          "note": "",
+          "file": "GEN_Variobase_46_(H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Thommen",
+      "source": "https://gencoretech.notion.site/226cfb3e90588074aaffdebab6f3e3b6",
+      "rows": [
+        {
+          "series": "SPI",
+          "platform": "3.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_SPI_35_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_SPI_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SPI",
+          "platform": "4.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_SPI_40_(N-H)",
+          "tools": "T15-M1.5RL, T13-M0.6B,  T20-M0.5F",
+          "note": "",
+          "file": "GEN_SPI_40_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SPI",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_SPI_45_(N-H)",
+          "tools": "T15-M1.5RL, T13-M0.6B,  T20-M0.5F",
+          "note": "",
+          "file": "GEN_SPI_45_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SPI",
+          "platform": "5.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_SPI_50_(N-H)",
+          "tools": "T15-M1.5RL, T13-M0.6B,  T20-M0.5F",
+          "note": "",
+          "file": "GEN_SPI_50_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "SPI",
+          "platform": "6.0",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_SPI_60_(N-H)",
+          "tools": "T15-M1.5RL, T13-M0.6B,  T20-M0.5F",
+          "note": "",
+          "file": "GEN_SPI_60_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_TRI Dental",
+      "source": "https://gencoretech.notion.site/226cfb3e905880bab39afef7543169d0",
+      "rows": [
+        {
+          "series": "TRI Narrow",
+          "platform": "3.3",
+          "shape": "Hex",
+          "sourceFile": "GEN_TRI_Narrow_3.3_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Tri Narrow_33_(H).hdpartz",
+          "status": "spelling"
+        },
+        {
+          "series": "TRI Narrow",
+          "platform": "3.3",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TRI_Narrow_3.3_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Tri Narrow_33_(N-H).hdpartz",
+          "status": "spelling"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Tru Abutment",
+      "source": "https://gencoretech.notion.site/25bcfb3e90588068a870f83b0a49f603",
+      "rows": [
+        {
+          "series": "ioConnect AOT HS",
+          "platform": "",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_ioConnect_AOT_HS_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_ioConnect_AOT_HS_MUA.hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Vortex",
+      "source": "https://gencoretech.notion.site/226cfb3e905880df8a0bc81b3491f061",
+      "rows": [
+        {
+          "series": "Multiunit (Nobel biocare)",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Vortex_04_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Vortex_04_MUA.hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Multiunit (Nobel biocare)",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Vortex_08_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Vortex_08_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested inclusion in 01 Multiunit with all specifications identical to existing Vortex 04 entry."
+        },
+        {
+          "series": "Multiunit (Nobel biocare)",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Vortex_12_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Vortex_12_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested inclusion in 01 Multiunit with all specifications identical to existing Vortex 04 entry."
+        },
+        {
+          "series": "Multiunit (Nobel biocare)",
+          "platform": "4.8",
+          "shape": "Multiunit",
+          "sourceFile": "GEN_Vortex_14_MUA",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Vortex_14_MUA.hdpartz",
+          "status": "confirmed",
+          "provenance": "User requested inclusion in 01 Multiunit with all specifications identical to existing Vortex 04 entry."
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Warantec",
+      "source": "https://gencoretech.notion.site/226cfb3e905880ed91dae7840eef29f9",
+      "rows": [
+        {
+          "series": "Oneplant",
+          "platform": "",
+          "shape": "Hex",
+          "sourceFile": "GEN_Oneplant_T43.T53_S36.S41.S51_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Oneplant_T43.T53_S36.S41.S51_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "Oneplant",
+          "platform": "",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_Oneplant_T43.T53_S36.S41.S51_(N-H)",
+          "tools": "T15-M1.5RL, T18-M1.5R",
+          "note": "",
+          "file": "GEN_Oneplant_T43.T53_S36.S41.S51_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    },
+    {
+      "folder": "M.Ai_Zimmer",
+      "source": "https://gencoretech.notion.site/226cfb3e905880e894aedfbc7acc04b6",
+      "rows": [
+        {
+          "series": "TSV",
+          "platform": "3.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_TSV_35_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TSV_35_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TSV",
+          "platform": "3.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TSV_35_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TSV_35_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TSV",
+          "platform": "4.5",
+          "shape": "Hex",
+          "sourceFile": "GEN_TSV_45_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TSV_45_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TSV",
+          "platform": "4.5",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TSV_45_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TSV_45_(N-H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TSV",
+          "platform": "5.7",
+          "shape": "Hex",
+          "sourceFile": "GEN_TSV_57_(H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TSV_57_(H).hdpartz",
+          "status": "exact"
+        },
+        {
+          "series": "TSV",
+          "platform": "5.7",
+          "shape": "Non-Hex (Circle)",
+          "sourceFile": "GEN_TSV_57_(N-H)",
+          "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+          "note": "",
+          "file": "GEN_TSV_57_(N-H).hdpartz",
+          "status": "exact"
+        }
+      ],
+      "sourceOnly": []
+    }
+  ]
+}
