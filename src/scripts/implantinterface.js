@@ -13,6 +13,7 @@
       folder.querySelectorAll('[data-ii-filename]').forEach(row => {
         const show = !query || folderMatches || row.dataset.iiFilename.toLocaleLowerCase().includes(query);
         row.hidden = !show;
+        if (row.nextElementSibling?.hasAttribute('data-ii-annotation')) row.nextElementSibling.hidden = !show;
         if (show) matches++;
       });
       folder.querySelectorAll('[data-ii-series]').forEach(series => {

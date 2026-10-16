@@ -1,7 +1,7 @@
 {
-  "exact": 316,
+  "exact": 315,
   "spelling": 7,
-  "confirmed": 24,
+  "confirmed": 25,
   "missing": 0,
   "groups": [
     {
@@ -288,7 +288,13 @@
           "tools": "T15-M1.5RL, T17_M1.5F, T18-M1.5R",
           "note": "",
           "file": "GEN_TX_30_Yellow_(H).hdpartz",
-          "status": "exact"
+          "status": "confirmed",
+          "interfaceNote": {
+            "ko": "실제 인터페이스는 Double-Hex 형상이며, GenCore 라이브러리는 이와 호환되는 일반 Hex 형상으로 제작되었습니다.",
+            "en": "The actual interface has a Double-Hex shape. The GenCore library uses a compatible standard Hex shape.",
+            "ja": "実際のインターフェースはDouble-Hex形状ですが、GenCoreライブラリは互換性のある標準的なHex形状で作成されています。"
+          },
+          "provenance": "User supplied clarification of actual Double-Hex interface and compatible standard Hex library geometry."
         },
         {
           "series": "OsseoSpeed TX",

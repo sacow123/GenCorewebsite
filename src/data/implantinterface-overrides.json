@@ -204,5 +204,17 @@
     "copyFrom": "GEN_Vortex_04_MUA",
     "series": "Multiunit (Nobel biocare)",
     "provenance": "User requested inclusion in 01 Multiunit with all specifications identical to existing Vortex 04 entry."
+  },
+  {
+    "folder": "M.Ai_Astra",
+    "file": "GEN_TX_30_Yellow_(H).hdpartz",
+    "copyFrom": "GEN_TX_30_Yellow_(H)",
+    "series": "OsseoSpeed TX",
+    "interfaceNote": {
+      "ko": "실제 인터페이스는 Double-Hex 형상이며, GenCore 라이브러리는 이와 호환되는 일반 Hex 형상으로 제작되었습니다.",
+      "en": "The actual interface has a Double-Hex shape. The GenCore library uses a compatible standard Hex shape.",
+      "ja": "実際のインターフェースはDouble-Hex形状ですが、GenCoreライブラリは互換性のある標準的なHex形状で作成されています。"
+    },
+    "provenance": "User supplied clarification of actual Double-Hex interface and compatible standard Hex library geometry."
   }
 ]

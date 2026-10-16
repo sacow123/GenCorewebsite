@@ -68,3 +68,10 @@
 #sec-mai-hd-settings-implantinterface .ii-row-note{display:block;color:#9787a9;font-size:10px;line-height:1.7;margin-top:7px;overflow-wrap:anywhere}
 #sec-mai-hd-settings-implantinterface .ii-row-note code{font:10px/1.7 Consolas,monospace;background:transparent;color:inherit;padding:0}
 #sec-mai-hd-settings-implantinterface .ii-missing-note{padding:13px 16px;margin:16px 0 0;border-radius:7px;background:#faf6ec;color:#917541;font-size:11px;line-height:1.8}
+#sec-mai-hd-settings-implantinterface .ii-annotation-row>td{padding:0 13px 15px;background:#fff}
+#sec-mai-hd-settings-implantinterface .ii-interface-note{display:flex;align-items:flex-start;gap:10px;border:1px solid #e8dff4;border-radius:8px;background:#f8f5fc;padding:13px 15px;text-align:left}
+#sec-mai-hd-settings-implantinterface .ii-note-icon{flex-shrink:0;display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#eae1f6;color:#8055b5;font:700 12px/1 Georgia,serif;margin-top:1px}
+#sec-mai-hd-settings-implantinterface .ii-interface-note strong{display:block;color:#78519e;font-size:11px;margin-bottom:4px}
+#sec-mai-hd-settings-implantinterface .ii-interface-note p{margin:0;color:#756a81;font-size:12px;line-height:1.8;white-space:nowrap}
+
+#sec-mai-hd-settings-implantinterface .ii-interface-note>div{min-width:max-content}

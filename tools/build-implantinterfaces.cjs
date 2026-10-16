@@ -32,7 +32,7 @@ function folderMetadata(group) {
       const reference = override.copyFrom ? rows.find(row => row.sourceFile === override.copyFrom) : {platform:'',shape:'',tools:'',note:''};
       if (!reference) throw Error('Missing override reference: '+file);
       audit.confirmed++;
-      return {...reference, platform:override.platform ?? reference.platform, shape:override.shape ?? reference.shape, tools:override.tools ?? reference.tools, series:override.series, file, sourceFile:base, status:'confirmed', provenance:override.provenance};
+      return {...reference, platform:override.platform ?? reference.platform, shape:override.shape ?? reference.shape, tools:override.tools ?? reference.tools, series:override.series, file, sourceFile:base, status:'confirmed', interfaceNote:override.interfaceNote, provenance:override.provenance};
     }
     let candidates = rows.filter(row => row.sourceFile === base);
     let status = 'exact';
@@ -65,13 +65,17 @@ function renderTools(row) {
   const extra = row.note === 'Powerball screw applied' ? t('powerball-note','Powerball 스크류 적용','Powerball screw applied','Powerballスクリュー適用') : esc(row.note);
   return `<div class="ii-tool-list">${tools.map(tool=>`<code>${esc(tool)}</code>`).join('')}</div>${note ? `<small class="ii-row-note">${note}</small>` : ''}${extra ? `<small class="ii-row-note">${extra}</small>` : ''}`;
 }
+function renderInterfaceNote(row) {
+  if (!row.interfaceNote) return '';
+  return `<tr class="ii-annotation-row" data-ii-annotation="${esc(row.file)}"><td colspan="4"><div class="ii-interface-note"><span class="ii-note-icon" aria-hidden="true">i</span><div><p>${t('tx30-shape-note',row.interfaceNote.ko,row.interfaceNote.en,row.interfaceNote.ja)}</p></div></div></td></tr>`;
+}
 function folderBody(group) {
   const metadata = folderMetadata(group);
   const seriesNames = [...new Set(metadata.rows.map(row => row.series || ''))];
   const missingLabel = () => t('missing-detail','상세 정보 확인 필요','Details need verification','詳細情報の確認が必要');
   const tables = seriesNames.map((name,i) => {
     const title = name ? esc(name) : missingLabel();
-    return `<div class="ii-series" data-ii-series><h3><span>${String(i+1).padStart(2,'0')}</span> ${title}</h3><div class="ii-table-scroll" tabindex="0" role="region" aria-label="${esc(name || group.folder)}"><table><caption class="ii-sr-only">${title}</caption><thead><tr><th scope="col">${t('library-file','라이브러리 파일명','Library file name','ライブラリファイル名')}</th><th scope="col">${t('platform','플랫폼 직경','Platform diameters','プラットフォーム径')}</th><th scope="col">${t('shape','인터페이스 형상','Interface shape','インターフェース形状')}</th><th scope="col">${t('tools','사용되는 공구','Tools used','使用工具')}</th></tr></thead><tbody>${metadata.rows.filter(row => (row.series || '') === name).map(row => `<tr data-ii-filename="${esc(row.file)}" data-ii-match="${row.status}"><td><code>${esc(row.file)}</code>${row.status === 'spelling' ? `<small class="ii-row-note">${t('source-filename','Notion 파일명','Notion filename','Notionファイル名')}: <code>${esc(row.sourceFile)}</code></small>` : ''}</td><td>${esc(row.platform || '—')}</td><td>${row.shape ? `<span class="ii-shape ${row.shape.startsWith('Non-') ? 'ii-nonhex' : 'ii-hex'}">${esc(row.shape)}</span>` : '—'}</td><td>${renderTools(row)}</td></tr>`).join('')}</tbody></table></div></div>`;
+    return `<div class="ii-series" data-ii-series><h3><span>${String(i+1).padStart(2,'0')}</span> ${title}</h3><div class="ii-table-scroll" tabindex="0" role="region" aria-label="${esc(name || group.folder)}"><table><caption class="ii-sr-only">${title}</caption><thead><tr><th scope="col">${t('library-file','라이브러리 파일명','Library file name','ライブラリファイル名')}</th><th scope="col">${t('platform','플랫폼 직경','Platform diameters','プラットフォーム径')}</th><th scope="col">${t('shape','인터페이스 형상','Interface shape','インターフェース形状')}</th><th scope="col">${t('tools','사용되는 공구','Tools used','使用工具')}</th></tr></thead><tbody>${metadata.rows.filter(row => (row.series || '') === name).map(row => `<tr data-ii-filename="${esc(row.file)}" data-ii-match="${row.status}"><td><code>${esc(row.file)}</code>${row.status === 'spelling' ? `<small class="ii-row-note">${t('source-filename','Notion 파일명','Notion filename','Notionファイル名')}: <code>${esc(row.sourceFile)}</code></small>` : ''}</td><td>${esc(row.platform || '—')}</td><td>${row.shape ? `<span class="ii-shape ${row.shape.startsWith('Non-') ? 'ii-nonhex' : 'ii-hex'}">${esc(row.shape)}</span>` : '—'}</td><td>${renderTools(row)}</td></tr>${renderInterfaceNote(row)}`).join('')}</tbody></table></div></div>`;
   }).join('');
   const missingNote = metadata.rows.some(row => row.status === 'missing') ? `<p class="ii-missing-note">${t('missing-note','상세 정보 확인 필요: Notion에서 동일 파일명의 정보를 찾지 못했습니다. 플랫폼 직경, 형상, 공구는 확인 후 추가합니다.','Details need verification: no matching filename was found in Notion. Platform diameter, shape and tools will be added after verification.','詳細情報の確認が必要：Notionに一致するファイル名が見つかりません。径・形状・工具は確認後に追加します。')}</p>` : '';
   return `<div class="ii-library-info">${tables}${missingNote}</div>`;
