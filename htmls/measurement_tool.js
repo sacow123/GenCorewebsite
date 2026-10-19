@@ -4,6 +4,7 @@
   if (!isLocalAuthoringEnvironment) return;
 
   const PANEL_ID = 'gencore-image-measure-tool';
+  const helperUrl = document.currentScript?.src || new URL('htmls/measurement_tool.js', location.href).href;
   let enabled = false, drag = null, lockedResult = '', lockedImageLabel = '', marker = null, selection = null;
   const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
   const percent = (value, size) => ((value / size) * 100).toFixed(2);
@@ -14,7 +15,7 @@
     return rect.width >= 32 && rect.height >= 32;
   }
   function getImage(event) {
-    const image = event.target instanceof Element ? event.target.closest('img') : null;
+    const image = event.target instanceof Element ? (event.target.closest('img') || event.target.closest('a')?.querySelector('img')) : null;
     return isMeasureImage(image) ? image : null;
   }
   function pointFor(event, image) {
@@ -47,10 +48,55 @@
   }
   async function copyResult() {
     if (!lockedResult) return;
-    try { await navigator.clipboard.writeText(lockedResult); setReadout(`${lockedResult} · 복사되었습니다.`, true); }
-    catch { setReadout(`${lockedResult} · 복사에 실패했습니다.`, true); }
+    const value = lockedResult;
+    try {
+      await navigator.clipboard.writeText(value);
+      setReadout(`${value} · 복사되었습니다.`, true);
+    } catch {
+      const field = document.createElement('textarea');
+      field.value = value;
+      field.style.cssText = 'position:fixed;left:0;top:0;width:1px;height:1px;opacity:0';
+      document.body.append(field);
+      field.focus(); field.select();
+      const copied = document.execCommand('copy');
+      field.remove();
+      setReadout(`${value} · ${copied ? '복사되었습니다.' : '복사에 실패했습니다.'}`, true);
+    }
+  }
+  function shareResult(root = window.top) {
+    try {
+      root.dispatchEvent(new root.CustomEvent('gencore-measure-result', { detail: { result: lockedResult, label: lockedImageLabel } }));
+      root.document.querySelectorAll('iframe').forEach(frame => {
+        if (frame.contentWindow) shareResult(frame.contentWindow);
+      });
+    } catch { /* External documents cannot share the local measurement result. */ }
   }
   function clearVisuals() { marker?.remove(); selection?.remove(); marker = null; selection = null; }
+  function applyEnabled(value) {
+    enabled = Boolean(value);
+    document.documentElement.dataset.gencoreMeasureEnabled = String(enabled);
+    const toggle = document.querySelector(`#${PANEL_ID} .gencore-measure-toggle`);
+    if (toggle) {
+      toggle.setAttribute('aria-pressed', String(enabled));
+      toggle.textContent = enabled ? '✕ 측정 종료' : '⌖ 비율 측정';
+    }
+    if (!enabled) { drag = null; clearVisuals(); }
+    setReadout(enabled ? '사진을 클릭하거나 드래그해 X% / Y% 값을 측정하세요.' : '비율 측정 모드를 켠 뒤 사진을 클릭하거나 드래그하세요.', Boolean(lockedResult));
+  }
+  function syncEnabled(value, root = window.top) {
+    try {
+      root.document.documentElement.dataset.gencoreMeasureEnabled = String(value);
+      root.dispatchEvent(new root.CustomEvent('gencore-measure-mode', { detail: Boolean(value) }));
+      root.document.querySelectorAll('iframe').forEach(frame => {
+        if (frame.contentWindow) syncEnabled(value, frame.contentWindow);
+      });
+    } catch { /* External frames do not contain the local authoring helper. */ }
+  }
+  function suppressImageAction(event) {
+    if (!enabled || !getImage(event)) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  }
   function visual(className, image) {
     const anchor = image.parentElement || image;
     if (getComputedStyle(anchor).position === 'static') anchor.style.position = 'relative';
@@ -95,7 +141,7 @@
       marker.style.left = `${offset.left + end.x}px`; marker.style.top = `${offset.top + end.y}px`;
       lockedResult = withImageName(drag.image, `사진 X:${end.xPercent}% Y:${end.yPercent}%`);
     }
-    drag = null; setReadout(lockedResult, true);
+    drag = null; setReadout(lockedResult, true); shareResult();
   }
   function installInFrame(frame) {
     const addTool = () => {
@@ -103,7 +149,7 @@
         const frameDocument = frame.contentDocument;
         if (!frameDocument?.head || frameDocument.getElementById('gencore-image-measure-tool-script')) return;
         const script = frameDocument.createElement('script');
-        script.id = 'gencore-image-measure-tool-script'; script.src = new URL('htmls/measurement_tool.js', window.location.href).href;
+        script.id = 'gencore-image-measure-tool-script'; script.src = helperUrl;
         frameDocument.head.append(script);
       } catch { /* A cross-origin document cannot receive the local-only helper. */ }
     };
@@ -123,14 +169,23 @@
     panel.innerHTML = '<button type="button" class="gencore-measure-toggle" aria-pressed="false">⌖ 비율 측정</button><button type="button" class="gencore-measure-copy" data-measure-copy disabled>비율 복사</button><span class="gencore-measure-readout" data-measure-readout>비율 측정 모드를 켠 뒤 사진을 클릭하거나 드래그하세요.</span><span class="gencore-measure-target" data-measure-target>대상 사진: 아직 선택하지 않았습니다.</span>';
     document.body.append(panel);
     panel.querySelector('.gencore-measure-toggle').addEventListener('click', (event) => {
-      enabled = !enabled; event.currentTarget.setAttribute('aria-pressed', String(enabled)); event.currentTarget.textContent = enabled ? '✕ 측정 종료' : '⌖ 비율 측정';
-      if (!enabled) clearVisuals();
-      setReadout(enabled ? '사진을 클릭하거나 드래그해 X% / Y% 값을 측정하세요.' : '비율 측정 모드를 켠 뒤 사진을 클릭하거나 드래그하세요.', Boolean(lockedResult));
+      syncEnabled(!enabled);
     });
     panel.querySelector('[data-measure-copy]').addEventListener('click', copyResult);
   }
   function init() {
-    createPanel(); document.addEventListener('pointerdown', onPointerDown, true); document.addEventListener('pointermove', onPointerMove, true); document.addEventListener('pointerup', onPointerUp, true);
+    createPanel();
+    window.addEventListener('gencore-measure-mode', event => applyEnabled(event.detail));
+    window.addEventListener('gencore-measure-result', event => {
+      lockedResult = event.detail.result;
+      lockedImageLabel = event.detail.label;
+      setReadout(lockedResult, true);
+      const target = document.querySelector(`#${PANEL_ID} [data-measure-target]`);
+      if (target) target.textContent = `대상 사진: ${lockedImageLabel}`;
+    });
+    try { applyEnabled(window.top.document.documentElement.dataset.gencoreMeasureEnabled === 'true'); } catch { applyEnabled(false); }
+    window.addEventListener('pointerdown', onPointerDown, true); window.addEventListener('pointermove', onPointerMove, true); window.addEventListener('pointerup', onPointerUp, true);
+    ['click', 'dblclick', 'auxclick', 'dragstart'].forEach(type => window.addEventListener(type, suppressImageAction, true));
     installInFrames();
     new MutationObserver((records) => records.forEach(record => record.addedNodes.forEach(node => { if (node instanceof Element) installInFrames(node); }))).observe(document.body, { subtree: true, childList: true });
   }

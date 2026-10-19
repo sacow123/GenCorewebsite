@@ -6,6 +6,28 @@
   // Body-only translations for the ten M AI UI 2.0 legacy manuals. The export
   // keeps its source formatting; this table changes only visible text nodes.
   const rows = [
+    ["캘리브레이션 V1.2와 달리 프리밀 블럭의 머리 + 몸통부분의 길이를 측정하세요.","Unlike Calibration V1.2, measure the combined length of the premill block head and body.","キャリブレーションV1.2とは異なり、プリミルブロックの頭部＋胴体部分の長さを測定してください。"],
+    ["캘리브레이션 진행중.....","Calibration in progress.....","キャリブレーション実行中....."],
+    ["캘리브레이션이 끝나면 위와 같은 메시지가 팝업됩니다. OK를 눌러 진행바랍니다.","When calibration is complete, the message shown above appears. Click OK to continue.","キャリブレーションが完了すると、上のようなメッセージが表示されます。OKを押して進めてください。"],
+    ["OK를 눌러주세요","Click OK.","OKを押してください。"],
+    ["사진과 같은 안내 메시지 팝업 시 OK를 눌러 진행하세요.","When the confirmation message shown in the photo appears, click OK to continue.","写真のような案内メッセージが表示されたら、OKを押して進めてください。"],
+    ["캘리브레이션 핀(프로브)와 프리밀 픽스처를 통전선을 통해 연결 시 'Touch on' 부분이 노랗게 점멸하는지 확인 바랍니다.","When connecting the calibration pin (probe) and the premill fixture using the conductive wire, check that the 'Touch on' area flashes yellow.","キャリブレーションピン（プローブ）とプリミルフィクスチャを通電線で接続した際に、'Touch on' 部分が黄色に点滅することを確認してください。"],
+    ["통전 체크하는 방법(클릭)","How to check electrical conductivity (click)","通電チェックの方法（クリック）"],
+    ["통전 체크 방법 영상","Electrical conductivity check video","通電チェック方法の動画"],
+    ["초록색으로 표시된 부분에 청소가 잘 되었는지 확인 후, “Checking for cleaning” 버튼을 눌러주세요. 그 후에 통전선을 이용해 캘리브레이션 핀과 초록 부분에 전류가 잘 흐르는지 확인하세요.","After checking that the area marked in green is clean, press the “Checking for cleaning” button. Then use the conductive wire to check that electric current flows properly through the calibration pin and the green area.","緑色で示された部分が十分に清掃されていることを確認してから、「Checking for cleaning」ボタンを押してください。その後、通電線を使用して、キャリブレーションピンと緑色の部分に電流が正常に流れることを確認してください。"],
+    ["스타터 키트에 동봉된 캘리브레이션 전용 환봉으로 프리밀 캘리브레이션 V1.2를 수행해주세요. 다만 해당 환봉을 분실하셨다면 사진에 표시된 점과 같은 조건을 만족하는 환봉으로 수행해주시면 됩니다.","Perform Premill Calibration V1.2 using the dedicated calibration round bar included in the starter kit. If you have lost this round bar, use a round bar that meets the conditions indicated in the photo.","スターターキットに同梱されているキャリブレーション専用の丸棒で、プリミルキャリブレーションV1.2を実行してください。丸棒を紛失された場合は、写真に示された箇所と同じ条件を満たす丸棒を使用してください。"],
+    ["컬러링 안 된 환봉(아노다이징 안 한 환봉)","Uncolored round bar (not anodized)","着色されていない丸棒（アルマイト処理されていない丸棒）"],
+    ["물기가 없을 것","Must be dry","水分がないこと"],
+    ["먼지가 없을 것","Must be free of dust","ほこりがないこと"],
+    ["환봉 연결부에 링이 없을 것","Must have no ring at the round bar connection","丸棒の接続部にリングがないこと"],
+    ["직경은 10~14mm 일 것","Diameter must be 10–14 mm","直径が10～14mmであること"],
+    ["길이는 18~20mm 일 것","Length must be 18–20 mm","長さが18～20mmであること"],
+    ["※ 리버스 지그(어태치먼트)는 사용에 따른 마모로 길이가 줄어들 수 있습니다. 새 제품과 반복 사용한 제품의 길이 차이를 반영하지 않으면 가공 정밀도에 영향을 줄 수 있습니다. 장착 시 반드시 실제 길이를 정확히 측정한 후 입력해 주십시오.","※ The reverse jig (attachment) may become shorter due to wear from use. Failure to account for the difference in length between a new jig and a repeatedly used jig may affect machining accuracy. When installing the jig, be sure to measure its actual length accurately and enter the measured value.","※ リバースジグ（アタッチメント）は、使用に伴う摩耗により長さが短くなる場合があります。新品と繰り返し使用した製品の長さの違いを反映しないと、加工精度に影響する可能性があります。装着時は必ず実際の長さを正確に測定し、その値を入力してください。"],
+    ["①. 먼저 환봉과 리버스 지그(어태치먼트)가 장착된 길이(장착된 길이)를 잽니다.","①. First, measure the assembled length of the round bar and reverse jig (attachment) (assembled length).","①. まず、丸棒とリバースジグ（アタッチメント）を組み付けた長さ（組付け長さ）を測定します。"],
+    ["②. 환봉 바디의 길이만 측정합니다.","②. Measure only the length of the round bar body.","②. 丸棒本体の長さのみを測定します。"],
+    ["③. ①에서 ②의 길이를 빼면, 리버스 지그만의 길이를 구할 수 있습니다.","③. Subtract length ② from length ① to obtain the length of the reverse jig alone.","③. ①の長さから②の長さを引くと、リバースジグのみの長さを求められます。"],
+    ["프리밀 캘리브레이션 V1.2 수행 전 리버스 지그(어태치먼트)의 길이를 측정 후 입력하세요.","Before performing Premill Calibration V1.2, measure and enter the length of the reverse jig (attachment).","プリミルキャリブレーションV1.2を実行する前に、リバースジグ（アタッチメント）の長さを測定して入力してください。"],
+    ["리버스 지그(어태치먼트)의 길이 측정하는법(클릭)","How to measure the reverse jig (attachment) length (click)","リバースジグ（アタッチメント）の長さの測定方法（クリック）"],
     ['의', "'s", 'の'],
     ['컨트롤 프로그램은 직관적으로 디자인 되어, 이해하기 쉬운 사용자 인터페이스가 적용되어 있습니다. 화면에 나오는 지시대로 진행하십시오.', 'The control program has an intuitive, easy-to-understand user interface. Follow the on-screen instructions.', 'コントロールプログラムには、直感的で理解しやすいユーザーインターフェースが採用されています。画面の指示に従って進めてください。'],
     ['조그 모드 버튼 클릭 후 화면에 뜨는 [경고] 페이지를 충분히 숙지한 뒤에 조그 모드를 시작하세요.', 'After clicking the Jog Mode button, carefully read the [Warning] page that appears before starting Jog Mode.', 'ジョグモードボタンをクリックした後、表示される［警告］ページを十分に確認してからジョグモードを開始してください。'],
@@ -202,6 +224,7 @@
 
     ['현재 사용중인 CAM 소프트웨어를 선택하세요', 'Select the CAM software currently in use.', '現在使用しているCAMソフトウェアを選択してください。'],
     ['캘리브레이션 하고싶은 프리밀 지그를 선택하세요.', 'Select the premill jig you want to calibrate.', 'キャリブレーションしたいプリミルジグを選択してください。'],
+    ['1대의 M AI° 기계로 10개의 프리밀 지그를 등록할 수 있습니다.', 'Up to ten premill jigs can be registered on one M AI° machine.', '1台のM AI°機械に10個のプリミルジグを登録できます。'],
     ['1대의 M AI° 기계로 5개의 프리밀 지그를 등록할 수 있습니다.', 'Up to five premill jigs can be registered on one M AI° machine.', '1台のM AI°機械に5つのプリミルジグを登録できます。'],
     ['습식 가공 직후라면 호스에 남아있던 절삭유가 떨어질 수 있습니다. 캘리브레이션 커버를 반드시 착용해 주십시오.', 'Immediately after wet machining, residual cutting fluid may drip from the hose. Be sure to install the calibration cover.', '湿式加工直後はホースに残っていた切削油が落ちることがあります。必ずキャリブレーションカバーを装着してください。'],
 
@@ -290,11 +313,24 @@
       // Korean first.
       block.innerHTML = originalHtml;
       const source = normalize(block.innerText);
-      const translated = entries?.get(source);
+      const translated = entries?.get(normalize(block.textContent)) || entries?.get(source);
       // Some Notion exports split a sentence into marked spans. Replacing only
       // the matching block keeps its layout while allowing the sentence to be
       // translated as one coherent unit.
-      if (translated) block.textContent = translated;
+      if (translated) {
+        const highlight = block.querySelector('.premill-v12-length-yellow, .premill-v12-length-green');
+        block.textContent = translated;
+        if (highlight) {
+          const phrase = highlight.classList.contains('premill-v12-length-yellow')
+            ? (lang === 'ja' ? '組付け長さ' : 'assembled length')
+            : (lang === 'ja' ? '丸棒本体の長さ' : 'length of the round bar body');
+          const offset = translated.lastIndexOf(phrase);
+          if (offset >= 0) {
+            highlight.textContent = phrase;
+            block.replaceChildren(document.createTextNode(translated.slice(0, offset)), highlight, document.createTextNode(translated.slice(offset + phrase.length)));
+          }
+        }
+      }
     });
     if (!entries) return;
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
@@ -479,7 +515,7 @@
       if (columns.length < 2) return;
       const figure = Array.from(columns[0].children).find((child) => child.matches('figure.image'));
       const steps = Array.from(columns[1].querySelectorAll(':scope > ol.numbered-list[start]'));
-      if (!figure || !steps.length) return;
+      if (!figure || (!steps.length && !row.hasAttribute('data-premill-photo-only'))) return;
       photoStep += 1;
       addBadge(figure, `STEP ${photoStep}`);
     });
