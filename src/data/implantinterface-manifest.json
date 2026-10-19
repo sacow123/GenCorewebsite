@@ -1,0 +1,614 @@
+{
+  "package": "Implantinterfaces_M.Ai_V10_260408 - Gen lock",
+  "folders": 52,
+  "files": 347,
+  "groups": [
+    {
+      "folder": "M.Ai_Adin",
+      "files": [
+        "GEN_Closefit_30_(H).hdpartz",
+        "GEN_Closefit_30_(N-H).hdpartz",
+        "GEN_Closefit_35_(H).hdpartz",
+        "GEN_Closefit_35_(N-H).hdpartz",
+        "GEN_Closefit_43.50_(H).hdpartz",
+        "GEN_Closefit_43.50_(N-H).hdpartz",
+        "GEN_Touareg_35.375.42.50.60_(H).hdpartz",
+        "GEN_Touareg_35.375.42.50.60_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_All about abutment",
+      "files": [
+        "GEN_DF_48_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_AlphaBioTEC",
+      "files": [
+        "GEN_DFI_42.50.60_(H).hdpartz",
+        "GEN_DFI_42.50.60_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Anker",
+      "files": [
+        "GEN_Anker_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Anthogyr",
+      "files": [
+        "GEN_Anthofit_35_(H).hdpartz",
+        "GEN_Anthofit_35_(N-H).hdpartz",
+        "GEN_Anthofit_40_(H).hdpartz",
+        "GEN_Anthofit_40_(N-H).hdpartz",
+        "GEN_Axiom_(H).hdpartz",
+        "GEN_Axiom_(N-H).hdpartz",
+        "GEN_Axiom_40_MUA.hdpartz",
+        "GEN_Axiom_48_MUA.hdpartz",
+        "GEN_Axiom_Con_40_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Arum",
+      "files": [
+        "GEN_MasterFix_55_NCS.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Astra",
+      "files": [
+        "GEN_EV_UNI_MUA.hdpartz",
+        "GEN_TX_30_Yellow_(H).hdpartz",
+        "GEN_TX_30_Yellow_(N-H).hdpartz",
+        "GEN_TX_35.40_Aqua_(H).hdpartz",
+        "GEN_TX_35.40_Aqua_(N-H).hdpartz",
+        "GEN_TX_45.50_Lilac_(H).hdpartz",
+        "GEN_TX_45.50_Lilac_(N-H).hdpartz",
+        "GEN_TX_UNI20_MUA.hdpartz",
+        "GEN_TX_UNI45_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Bego",
+      "files": [
+        "GEN_Semados_325.375_(H).hdpartz",
+        "GEN_Semados_325.375_(N-H).hdpartz",
+        "GEN_Semados_41_(H).hdpartz",
+        "GEN_Semados_41_(N-H).hdpartz",
+        "GEN_Semados_45_(H).hdpartz",
+        "GEN_Semados_45_(N-H).hdpartz",
+        "GEN_Semados_55_(H).hdpartz",
+        "GEN_Semados_55_(N-H).hdpartz",
+        "GEN_Semados_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Biohorizons",
+      "files": [
+        "GEN_External_35_(H).hdpartz",
+        "GEN_External_35_(N-H).hdpartz",
+        "GEN_External_40_(H).hdpartz",
+        "GEN_External_40_(N-H).hdpartz",
+        "GEN_External_50_(H).hdpartz",
+        "GEN_External_50_(N-H).hdpartz",
+        "GEN_External_60_(H).hdpartz",
+        "GEN_External_60_(N-H).hdpartz",
+        "GEN_Internal_30_(H).hdpartz",
+        "GEN_Internal_30_(N-H).hdpartz",
+        "GEN_Internal_35_(H).hdpartz",
+        "GEN_Internal_35_(N-H).hdpartz",
+        "GEN_Internal_45_(H).hdpartz",
+        "GEN_Internal_45_(N-H).hdpartz",
+        "GEN_Internal_57_(H).hdpartz",
+        "GEN_Internal_57_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Biomet 3i",
+      "files": [
+        "GEN_Certain_External_34_(H).hdpartz",
+        "GEN_Certain_External_34_(N-H).hdpartz",
+        "GEN_Certain_External_41_(H).hdpartz",
+        "GEN_Certain_External_41_(N-H).hdpartz",
+        "GEN_Certain_External_50_(H).hdpartz",
+        "GEN_Certain_External_50_(N-H).hdpartz",
+        "GEN_Certain_External_60_(H).hdpartz",
+        "GEN_Certain_External_60_(N-H).hdpartz",
+        "GEN_Certain_Internal_34_(H).hdpartz",
+        "GEN_Certain_Internal_34_(N-H).hdpartz",
+        "GEN_Certain_Internal_41_(H).hdpartz",
+        "GEN_Certain_Internal_41_(N-H).hdpartz",
+        "GEN_Certain_Internal_50_(H).hdpartz",
+        "GEN_Certain_Internal_50_(N-H).hdpartz",
+        "GEN_Certain_Internal_60_(H).hdpartz",
+        "GEN_Certain_Internal_60_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Biotech Dental",
+      "files": [
+        "GEN_Kontact_36.42.48.54_(H).hdpartz",
+        "GEN_Kontact_36.42.48.54_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_BrainBase Corp",
+      "files": [
+        "GEN_Mytis Arrow_C_(H).hdpartz",
+        "GEN_Mytis Arrow_C_(N-H).hdpartz",
+        "GEN_Mytis Arrow_EW_(H).hdpartz",
+        "GEN_Mytis Arrow_EW_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Bredent",
+      "files": [
+        "GEN_Sky_35_(H).hdpartz",
+        "GEN_Sky_35_(N-H).hdpartz",
+        "GEN_Sky_40_(H).hdpartz",
+        "GEN_Sky_40_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_BTI",
+      "files": [
+        "GEN_Internai_35_(H).hdpartz",
+        "GEN_Internai_35_(N-H).hdpartz",
+        "GEN_Internai_41_(H).hdpartz",
+        "GEN_Internai_41_(N-H).hdpartz",
+        "GEN_Internai_55_(H).hdpartz",
+        "GEN_Internai_55_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_C-Tech",
+      "files": [
+        "GEN_Esthetic line_38.43.51_(H).hdpartz",
+        "GEN_Esthetic line_38.43.51_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_CLC",
+      "files": [
+        "GEN_Conic_35.40.45.50.60_(H).hdpartz",
+        "GEN_Conic_35.40.45.50.60_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Cortex",
+      "files": [
+        "GEN_Cortex_33.38.42.50.60_(H).hdpartz",
+        "GEN_Cortex_33.38.42.50.60_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Dentis",
+      "files": [
+        "GEN_Dentis_MUA.hdpartz",
+        "GEN_sClean_R.W_(H).hdpartz",
+        "GEN_sClean_R.W_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Dentium",
+      "files": [
+        "GEN_Bright_35.38.43.48.60_(H).hdpartz",
+        "GEN_Bright_35.38.43.48.60_(N-H).hdpartz",
+        "GEN_NR Line_34_(H).hdpartz",
+        "GEN_NR Line_34_(N-H).hdpartz",
+        "GEN_NR Line_36_(H).hdpartz",
+        "GEN_NR Line_36_(N-H).hdpartz",
+        "GEN_SuperLine_31_(H).hdpartz",
+        "GEN_SuperLine_31_(N-H).hdpartz",
+        "GEN_SuperLine_36.40.45.50.60.70_(H).hdpartz",
+        "GEN_SuperLine_36.40.45.50.60.70_(N-H).hdpartz",
+        "GEN_SuperLine_45_MUA.hdpartz",
+        "GEN_SuperLine_55_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Dentsply",
+      "files": [
+        "GEN_Multiunit_20_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Dess",
+      "files": [
+        "GEN_Multiunit_MUA_powerball10.hdpartz",
+        "GEN_Multiunit_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Dio",
+      "files": [
+        "GEN_SM_M_(H).hdpartz",
+        "GEN_SM_M_(N-H).hdpartz",
+        "GEN_SM_R.W.EW_(H).hdpartz",
+        "GEN_SM_R.W.EW_(N-H).hdpartz",
+        "GEN_UF_48_MUA.hdpartz",
+        "GEN_UF_N_(H).hdpartz",
+        "GEN_UF_N_(N-H).hdpartz",
+        "GEN_UF_R.W_(H).hdpartz",
+        "GEN_UF_R.W_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_DYNA",
+      "files": [
+        "GEN_Pushin Octalock_36.40.50_(H).hdpartz",
+        "GEN_Pushin Octalock_36.40.50_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Foxden",
+      "files": [
+        "GEN_FDM_EBA_4510_MUA.hdpartz",
+        "GEN_FDM_EBA_5510_MUA.hdpartz",
+        "GEN_FDM_EBA_6510_MUA.hdpartz",
+        "GEN_X_55_PFM_N.hdpartz",
+        "GEN_X_60_PFM_N.hdpartz",
+        "GEN_ZP_45_PFM_MUA.hdpartz",
+        "GEN_ZP_55_PFM_MUA.hdpartz",
+        "GEN_ZP_60_PFM_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Global D",
+      "files": [
+        "GEN_In-Kone_Angled_D47_MUA.hdpartz",
+        "GEN_In-Kone_Straight_D43_MUA.hdpartz",
+        "GEN_Tekka In-Kone_35.40.45.55_(H).hdpartz",
+        "GEN_Tekka In-Kone_35.40.45.55_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Highness",
+      "files": [
+        "GEN_HDL_(C+3)_45_exo_NCS.hdpartz",
+        "GEN_HDL_(C+3)_55_exo_NCS.hdpartz",
+        "GEN_HDL_(C+3)_65_exo_NCS.hdpartz",
+        "GEN_HDL_45+3_Angled_NCS.hdpartz",
+        "GEN_HDL_55+3_Angled_NCS.hdpartz",
+        "GEN_PR_(B+2)_45_tem7.3_exo_NCS.hdpartz",
+        "GEN_PR_(B+2)_55_tem7.3_exo_NCS.hdpartz",
+        "GEN_PR_(B+2)_65_tem7.21_exo_NCS.hdpartz",
+        "GEN_PR_45_3.15_NCS.hdpartz",
+        "GEN_PR_55_3.15_NCS.hdpartz",
+        "GEN_PR_65_3.15_NCS.hdpartz",
+        "GEN_RB_45_Metal_2.5_exo_NCS.hdpartz",
+        "GEN_RB_55_Metal_2.5_exo_NCS.hdpartz",
+        "GEN_RB_65_Metal_2.5_exo_NCS.hdpartz",
+        "GEN_SB_(B+3)_45_tem7.16_exo_NCS.hdpartz",
+        "GEN_SB_(B+3)_55_tem7.16_exo_NCS.hdpartz",
+        "GEN_SB_(B+5)_45_tem7.16_exo_NCS.hdpartz",
+        "GEN_SB_(B+5)_55_tem7.16_exo_NCS.hdpartz",
+        "GEN_SB_45_tem7.15_exo_NCS.hdpartz",
+        "GEN_SB_55_tem7.15_exo_NCS.hdpartz",
+        "GEN_SB_65_tem7.15_exo_NCS.hdpartz",
+        "GEN_SB_OSS_40_tem7.15_exo_NCS.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Human Tech",
+      "files": [
+        "GEN_Ratio_L_(H).hdpartz",
+        "GEN_Ratio_L_(N-H).hdpartz",
+        "GEN_Ratio_M_(H).hdpartz",
+        "GEN_Ratio_M_(N-H).hdpartz",
+        "GEN_Ratio_S_(H).hdpartz",
+        "GEN_Ratio_S_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_I-CON",
+      "files": [
+        "GEN_45_Metal_Link Free_EQ.hdpartz",
+        "GEN_45_Metal_Link Free_SUB_II.hdpartz",
+        "GEN_45_Resin_Link Free_EQ.hdpartz",
+        "GEN_45_Resin_Link Free_SUB_II.hdpartz",
+        "GEN_55_Metal_Link Free_EQ.hdpartz",
+        "GEN_55_Metal_Link Free_SUB_II.hdpartz",
+        "GEN_55_Resin_Link Free_EQ.hdpartz",
+        "GEN_55_Resin_Link Free_SUB_II.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Implant Direct",
+      "files": [
+        "GEN_Legacy_30_(H).hdpartz",
+        "GEN_Legacy_30_(N-H).hdpartz",
+        "GEN_Legacy_35_(H).hdpartz",
+        "GEN_Legacy_35_(N-H).hdpartz",
+        "GEN_Legacy_45_(H).hdpartz",
+        "GEN_Legacy_45_(N-H).hdpartz",
+        "GEN_Legacy_50_MUA.hdpartz",
+        "GEN_Legacy_57_(H).hdpartz",
+        "GEN_Legacy_57_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Japan Medical Materials",
+      "files": [
+        "GEN_Poiex_34_(H).hdpartz",
+        "GEN_Poiex_34_(N-H).hdpartz",
+        "GEN_Poiex_37_(H).hdpartz",
+        "GEN_Poiex_37_(N-H).hdpartz",
+        "GEN_Poiex_42_(H).hdpartz",
+        "GEN_Poiex_42_(N-H).hdpartz",
+        "GEN_Poiex_47_(H).hdpartz",
+        "GEN_Poiex_47_(N-H).hdpartz",
+        "GEN_Poiex_52_(H).hdpartz",
+        "GEN_Poiex_52_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Kentec",
+      "files": [
+        "GEN_Alphatite_SB1_(H).hdpartz",
+        "GEN_Alphatite_SB1_(N-H).hdpartz",
+        "GEN_Alphatite_SB2_(H).hdpartz",
+        "GEN_Alphatite_SB2_(N-H).hdpartz",
+        "GEN_Alphatite_SB3_(H).hdpartz",
+        "GEN_Alphatite_SB3_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Keystone",
+      "files": [
+        "GEN_Paltop_MUA.hdpartz",
+        "GEN_Paltop_MUA2.hdpartz",
+        "GEN_Prima Connex_35_(H).hdpartz",
+        "GEN_Prima Connex_35_(N-H).hdpartz",
+        "GEN_Prima Connex_41_(H).hdpartz",
+        "GEN_Prima Connex_41_(N-H).hdpartz",
+        "GEN_Prima Connex_50_(H).hdpartz",
+        "GEN_Prima Connex_50_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Kyocera",
+      "files": [
+        "GEN_Finesia BoneLevel_32.34_NP_(H).hdpartz",
+        "GEN_Finesia BoneLevel_37.42_RP_(H).hdpartz",
+        "GEN_Finesia BoneLevel_47.52_WP_(H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_MC Milling",
+      "files": [
+        "GEN_MC_External_40_(N-H).hdpartz",
+        "GEN_MC_External_47_(N-H).hdpartz",
+        "GEN_MC_External_57_(N-H).hdpartz",
+        "GEN_MC_Internal_40_(N-H).hdpartz",
+        "GEN_MC_Internal_47_(N-H).hdpartz",
+        "GEN_MC_Internal_57_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Medentis Medical",
+      "files": [
+        "GEN_ICX_375.41.48_(H).hdpartz",
+        "GEN_ICX_375.41.48_(N-H).hdpartz",
+        "GEN_ICX_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Megagen",
+      "files": [
+        "GEN_Anyone_30_Mini_(H).hdpartz",
+        "GEN_Anyone_30_Mini_(N-H).hdpartz",
+        "GEN_Anyone_35.40.45.50.55.60.70_(H).hdpartz",
+        "GEN_Anyone_35.40.45.50.55.60.70_(N-H).hdpartz",
+        "GEN_Anyridge_S.R.W.SW_(H).hdpartz",
+        "GEN_Anyridge_S.R.W.SW_(N-H).hdpartz",
+        "GEN_EZ Plus_M_(H).hdpartz",
+        "GEN_EZ Plus_M_(N-H).hdpartz",
+        "GEN_EZ Plus_R.W_(H).hdpartz",
+        "GEN_EZ Plus_R.W_(N-H).hdpartz",
+        "GEN_MegaFix_(H).hdpartz",
+        "GEN_MegaFix_(N-H).hdpartz",
+        "GEN_Octa_EXT_M_(N-H).hdpartz",
+        "GEN_Octa_EXT_R_(N-H).hdpartz",
+        "GEN_Octa_EXT_W_(N-H).hdpartz",
+        "GEN_Rescue_External_50.60_(H).hdpartz",
+        "GEN_Rescue_External_50.60_(N-H).hdpartz",
+        "GEN_Rescue_Internal_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_MIS",
+      "files": [
+        "GEN_C1_Narrow_(H).hdpartz",
+        "GEN_C1_Narrow_(N-H).hdpartz",
+        "GEN_C1_Standard_(H).hdpartz",
+        "GEN_C1_Standard_(N-H).hdpartz",
+        "GEN_C1_Wide_(H).hdpartz",
+        "GEN_C1_Wide_(N-H).hdpartz",
+        "GEN_MIS_Standard_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Neobiotech",
+      "files": [
+        "GEN_IS_Actrive_SCRP_(H).hdpartz",
+        "GEN_IS_Actrive_SCRP_(N-H).hdpartz",
+        "GEN_IS_System_(H).hdpartz",
+        "GEN_IS_System_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_NeoDent",
+      "files": [
+        "GEN_GM_35.375.40.43.50.60_(H).hdpartz",
+        "GEN_GM_35.375.40.43.50.60_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Nobel Biocare",
+      "files": [
+        "GEN_Active_30_(H).hdpartz",
+        "GEN_Active_30_(N-H).hdpartz",
+        "GEN_Active_35_(H)_II.hdpartz",
+        "GEN_Active_35_(N-H).hdpartz",
+        "GEN_Active_43.50_(H).hdpartz",
+        "GEN_Active_43.50_(N-H)_(Geomedi).hdpartz",
+        "GEN_Active_43.50_(N-H).hdpartz",
+        "GEN_Active_55_(H).hdpartz",
+        "GEN_Active_55_(N-H).hdpartz",
+        "GEN_Branemark_NP_(H).hdpartz",
+        "GEN_Branemark_NP_(N-H).hdpartz",
+        "GEN_Branemark_RP_(H).hdpartz",
+        "GEN_Branemark_RP_(N-H).hdpartz",
+        "GEN_Branemark_WP_(H).hdpartz",
+        "GEN_Branemark_WP_(N-H).hdpartz",
+        "GEN_Multiunit_48_MUA_powerball.v10.hdpartz",
+        "GEN_Multiunit_48_MUA_WTI.hdpartz",
+        "GEN_Multiunit_48_MUA.hdpartz",
+        "GEN_Multiunit_60_MUA.hdpartz",
+        "GEN_Multiunit_plus_MUA.hdpartz",
+        "GEN_Replace_NP_(H).hdpartz",
+        "GEN_Replace_NP_(N-H).hdpartz",
+        "GEN_Replace_RP_(H).hdpartz",
+        "GEN_Replace_RP_(N-H).hdpartz",
+        "GEN_Replace_SW_(H).hdpartz",
+        "GEN_Replace_SW_(N-H).hdpartz",
+        "GEN_Replace_WP_(H).hdpartz",
+        "GEN_Replace_WP_(N-H).hdpartz",
+        "GEN_Universal_Base.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_NucleOSS",
+      "files": [
+        "GEN_T6_35.40.45.50_(H).hdpartz",
+        "GEN_T6_35.40.45.50_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Osstem",
+      "files": [
+        "GEN_KS_R_(H).hdpartz",
+        "GEN_KS_R_(N-H).hdpartz",
+        "GEN_SS_R_(N-H).hdpartz",
+        "GEN_SS_W_(H).hdpartz",
+        "GEN_SS_W_(N-H).hdpartz",
+        "GEN_TS_Convertible_40_MUA.hdpartz",
+        "GEN_TS_Convertible_50_MUA.hdpartz",
+        "GEN_TS_Convertible_60_MUA.hdpartz",
+        "GEN_TS_M_(H).hdpartz",
+        "GEN_TS_M_(N-H).hdpartz",
+        "GEN_TS_Multiunit_M.R_MUA.hdpartz",
+        "GEN_TS_R_(H).hdpartz",
+        "GEN_TS_R_(N-H).hdpartz",
+        "GEN_US_M_(H).hdpartz",
+        "GEN_US_M_(N-H).hdpartz",
+        "GEN_US_R_(H).hdpartz",
+        "GEN_US_R_(N-H).hdpartz",
+        "GEN_US_W_(H).hdpartz",
+        "GEN_US_W_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Platon",
+      "files": [
+        "GEN_Type.IV.Pro_33.38.47_(H).hdpartz",
+        "GEN_Type.IV.Pro_33.38.47_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Powerball",
+      "files": [
+        "GEN_MB_v10_MUA.hdpartz",
+        "GEN_MUA_v10_MUA.hdpartz",
+        "GEN_SRA_v10_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Southern Implant",
+      "files": [
+        "GEN_M-series_Internal_375.42.50_(H).hdpartz",
+        "GEN_M-series_Internal_375.42.50_(N-H).hdpartz",
+        "GEN_MSc_External_325_(H).hdpartz",
+        "GEN_MSc_External_325_(N-H).hdpartz",
+        "GEN_MSc_External_60_(H).hdpartz",
+        "GEN_MSc_External_60_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Straumann",
+      "files": [
+        "GEN_BoneLevel Angle_NC.angle25_MUA.hdpartz",
+        "GEN_BoneLevel Angle_RC.angle25_MUA.hdpartz",
+        "GEN_BoneLevel_29_(H).hdpartz",
+        "GEN_BoneLevel_29_(N-H).hdpartz",
+        "GEN_BoneLevel_NC_(H).hdpartz",
+        "GEN_BoneLevel_NC_(N-H).hdpartz",
+        "GEN_BoneLevel_NC-2.hdpartz",
+        "GEN_BoneLevel_RC_(H).hdpartz",
+        "GEN_BoneLevel_RC_(N-H).hdpartz",
+        "GEN_BoneLevel_RC-2.hdpartz",
+        "GEN_SRA_35_MUA.hdpartz",
+        "GEN_SRA_46_MUA.hdpartz",
+        "GEN_synOcta_RN_MUA.hdpartz",
+        "GEN_synOcta_WN_MUA.hdpartz",
+        "GEN_TissueLevel_48_(N-H)_R2.hdpartz",
+        "GEN_TissueLevel_48_(N-H).hdpartz",
+        "GEN_TissueLevel_65_(H).hdpartz",
+        "GEN_TissueLevel_65_(N-H).hdpartz",
+        "GEN_Variobase_46_(H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Thommen",
+      "files": [
+        "GEN_SPI_35_(N-H).hdpartz",
+        "GEN_SPI_40_(N-H).hdpartz",
+        "GEN_SPI_45_(N-H).hdpartz",
+        "GEN_SPI_50_(N-H).hdpartz",
+        "GEN_SPI_60_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_TRI Dental",
+      "files": [
+        "GEN_Tri Narrow_33_(H).hdpartz",
+        "GEN_Tri Narrow_33_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Tru Abutment",
+      "files": [
+        "GEN_ioConnect_AOT_HS_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Vortex",
+      "files": [
+        "GEN_Vortex_04_MUA.hdpartz",
+        "GEN_Vortex_08_MUA.hdpartz",
+        "GEN_Vortex_12_MUA.hdpartz",
+        "GEN_Vortex_14_MUA.hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Warantec",
+      "files": [
+        "GEN_Oneplant_T43.T53_S36.S41.S51_(H).hdpartz",
+        "GEN_Oneplant_T43.T53_S36.S41.S51_(N-H).hdpartz"
+      ]
+    },
+    {
+      "folder": "M.Ai_Zimmer",
+      "files": [
+        "GEN_TSV_35_(H).hdpartz",
+        "GEN_TSV_35_(N-H).hdpartz",
+        "GEN_TSV_45_(H).hdpartz",
+        "GEN_TSV_45_(N-H).hdpartz",
+        "GEN_TSV_57_(H).hdpartz",
+        "GEN_TSV_57_(N-H).hdpartz"
+      ]
+    }
+  ]
+}

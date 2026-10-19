@@ -1,0 +1,220 @@
+[
+  {
+    "folder": "M.Ai_Dentium",
+    "file": "GEN_SuperLine_45_MUA.hdpartz",
+    "copyFrom": "GEN_SuperLine_55_MUA",
+    "platform": "4.5",
+    "series": "SuperLine - Multiunit",
+    "provenance": "User confirmed platform 4.5; shape and tools identical to the 5.5 entry."
+  },
+  {
+    "folder": "M.Ai_Dentsply",
+    "file": "GEN_Multiunit_20_MUA.hdpartz",
+    "copyFrom": "GEN_SuperLine_55_MUA",
+    "series": "Dentsply - Multiunit",
+    "platform": "5.5",
+    "shape": "Multiunit",
+    "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "provenance": "User supplied series, platform, interface shape and machining tools."
+  },
+  {
+    "folder": "M.Ai_Foxden",
+    "file": "GEN_X_55_PFM_N.hdpartz",
+    "series": "X",
+    "platform": "5.5",
+    "shape": "Multiunit",
+    "tools": "T15-M1.5RL, T18-M1.5R",
+    "provenance": "User confirmed interface shape Multiunit and machining tools identical to ZP."
+  },
+  {
+    "folder": "M.Ai_Foxden",
+    "file": "GEN_X_60_PFM_N.hdpartz",
+    "series": "X",
+    "platform": "6.0",
+    "shape": "Multiunit",
+    "tools": "T15-M1.5RL, T18-M1.5R",
+    "provenance": "User confirmed interface shape Multiunit and machining tools identical to ZP."
+  },
+  {
+    "folder": "M.Ai_Foxden",
+    "file": "GEN_ZP_60_PFM_MUA.hdpartz",
+    "copyFrom": "GEN_ZP_55_PFM_MUA",
+    "series": "ZP - Multiunit",
+    "platform": "6.0",
+    "provenance": "User confirmed platform 6.0; remaining specifications identical to the 5.5 entry; append last in ZP - Multiunit."
+  },
+  {
+    "folder": "M.Ai_Global D",
+    "file": "GEN_In-Kone_Angled_D47_MUA.hdpartz",
+    "copyFrom": "GEN_In-Kone_Angled_MUA",
+    "series": "In-Kone - Multiunit",
+    "platform": "4.7",
+    "shape": "Multiunit",
+    "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "provenance": "User supplied correspondence to In-Kone library table, platform diameter, shape and tools."
+  },
+  {
+    "folder": "M.Ai_Global D",
+    "file": "GEN_In-Kone_Straight_D43_MUA.hdpartz",
+    "copyFrom": "GEN_In-Kone_Straight_MUA",
+    "series": "In-Kone - Multiunit",
+    "platform": "4.3",
+    "shape": "Multiunit",
+    "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "provenance": "User supplied correspondence to In-Kone library table, platform diameter, shape and tools."
+  },
+  {
+    "folder": "M.Ai_I-CON",
+    "file": "GEN_45_Metal_Link Free_SUB_II.hdpartz",
+    "copyFrom": "GEN_45_Metal_Link Free_SUB",
+    "series": "I-CON",
+    "platform": "4.5",
+    "provenance": "User requested replacing the OLD SUB entry with the corresponding SUB_II file, retaining its specifications."
+  },
+  {
+    "folder": "M.Ai_I-CON",
+    "file": "GEN_45_Resin_Link Free_SUB_II.hdpartz",
+    "copyFrom": "GEN_45_Resin_Link Free_SUB",
+    "series": "I-CON",
+    "platform": "4.5",
+    "provenance": "User requested replacing the OLD SUB entry with the corresponding SUB_II file, retaining its specifications."
+  },
+  {
+    "folder": "M.Ai_I-CON",
+    "file": "GEN_55_Metal_Link Free_SUB_II.hdpartz",
+    "copyFrom": "GEN_55_Metal_Link Free_SUB",
+    "series": "I-CON",
+    "platform": "5.5",
+    "provenance": "User requested replacing the OLD SUB entry with the corresponding SUB_II file, retaining its specifications."
+  },
+  {
+    "folder": "M.Ai_I-CON",
+    "file": "GEN_55_Resin_Link Free_SUB_II.hdpartz",
+    "copyFrom": "GEN_55_Resin_Link Free_SUB",
+    "series": "I-CON",
+    "platform": "5.5",
+    "provenance": "User requested replacing the OLD SUB entry with the corresponding SUB_II file, retaining its specifications."
+  },
+  {
+    "folder": "M.Ai_Keystone",
+    "file": "GEN_Paltop_MUA.hdpartz",
+    "copyFrom": "GEN_Paltop_MUA_Multi",
+    "series": "Paltop",
+    "platform": "",
+    "shape": "Multiunit",
+    "tools": "T16-M1.5FL, T18-M1.5R",
+    "provenance": "User supplied Paltop filename correspondence and specifications; platform diameter unspecified."
+  },
+  {
+    "folder": "M.Ai_Keystone",
+    "file": "GEN_Paltop_MUA2.hdpartz",
+    "copyFrom": "GEN_Paltop_MUA2_Multi",
+    "series": "Paltop",
+    "platform": "",
+    "shape": "Multiunit",
+    "tools": "T15-M1.5RL, T17-M1.5F, T18-M1.5R",
+    "provenance": "User supplied Paltop filename correspondence and specifications; platform diameter unspecified."
+  },
+  {
+    "folder": "M.Ai_Kyocera",
+    "file": "GEN_Finesia BoneLevel_37.42_RP_(H).hdpartz",
+    "copyFrom": "GEN_Finesia BoneLevel_37.42_WP_(H)",
+    "series": "Finsia BoneLevel",
+    "shape": "Hex",
+    "provenance": "User confirmed RP platform, Hex shape and tools; WP shape changed to Hex.",
+    "platform": "3.7 / 4.2",
+    "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R"
+  },
+  {
+    "folder": "M.Ai_Kyocera",
+    "file": "GEN_Finesia BoneLevel_47.52_WP_(H).hdpartz",
+    "copyFrom": "GEN_Finesia BoneLevel_47.52_WP_(H)",
+    "series": "Finsia BoneLevel",
+    "shape": "Hex",
+    "provenance": "User confirmed RP platform, Hex shape and tools; WP shape changed to Hex."
+  },
+  {
+    "folder": "M.Ai_Megagen",
+    "file": "GEN_Rescue_External_50.60_(H).hdpartz",
+    "series": "Resque - External",
+    "platform": "5.0 / 6.0",
+    "shape": "Hex",
+    "tools": "T16-M1.5FL, T20-M0.5F",
+    "provenance": "User supplied series and specifications; Internal mapped to explicitly named GEN_Rescue_Internal_(N-H).hdpartz."
+  },
+  {
+    "folder": "M.Ai_Megagen",
+    "file": "GEN_Rescue_External_50.60_(N-H).hdpartz",
+    "series": "Resque - External",
+    "platform": "5.0 / 6.0",
+    "shape": "Non-Hex (Circle)",
+    "tools": "T16-M1.5FL, T17-M1.5F, T18-M1.5R",
+    "provenance": "User supplied series and specifications; Internal mapped to explicitly named GEN_Rescue_Internal_(N-H).hdpartz."
+  },
+  {
+    "folder": "M.Ai_Megagen",
+    "file": "GEN_Rescue_Internal_(N-H).hdpartz",
+    "series": "Resque - Internal",
+    "platform": "",
+    "shape": "Non-Engaged (Circle)",
+    "tools": "T15-M1.5RL, T18-M1.5R",
+    "provenance": "User supplied series and specifications; Internal mapped to explicitly named GEN_Rescue_Internal_(N-H).hdpartz."
+  },
+  {
+    "folder": "M.Ai_Nobel Biocare",
+    "file": "GEN_Active_35_(H)_II.hdpartz",
+    "copyFrom": "GEN_Active_43.50_(H)",
+    "series": "Active",
+    "platform": "3.5",
+    "provenance": "User requested third position in Active, platform 3.5 and remaining specifications identical to the 4.3 / 5.0 Hex entry."
+  },
+  {
+    "folder": "M.Ai_Straumann",
+    "file": "GEN_BoneLevel_NC-2.hdpartz",
+    "copyFrom": "GEN_BoneLevel_NC_(N-H)",
+    "series": "BoneLevel",
+    "insertAfter": "GEN_BoneLevel_NC_(N-H).hdpartz",
+    "provenance": "User requested identical specifications and placement immediately after the corresponding NC/RC Non-Hex entry."
+  },
+  {
+    "folder": "M.Ai_Straumann",
+    "file": "GEN_BoneLevel_RC-2.hdpartz",
+    "copyFrom": "GEN_BoneLevel_RC_(N-H)",
+    "series": "BoneLevel",
+    "insertAfter": "GEN_BoneLevel_RC_(N-H).hdpartz",
+    "provenance": "User requested identical specifications and placement immediately after the corresponding NC/RC Non-Hex entry."
+  },
+  {
+    "folder": "M.Ai_Vortex",
+    "file": "GEN_Vortex_08_MUA.hdpartz",
+    "copyFrom": "GEN_Vortex_04_MUA",
+    "series": "Multiunit (Nobel biocare)",
+    "provenance": "User requested inclusion in 01 Multiunit with all specifications identical to existing Vortex 04 entry."
+  },
+  {
+    "folder": "M.Ai_Vortex",
+    "file": "GEN_Vortex_12_MUA.hdpartz",
+    "copyFrom": "GEN_Vortex_04_MUA",
+    "series": "Multiunit (Nobel biocare)",
+    "provenance": "User requested inclusion in 01 Multiunit with all specifications identical to existing Vortex 04 entry."
+  },
+  {
+    "folder": "M.Ai_Vortex",
+    "file": "GEN_Vortex_14_MUA.hdpartz",
+    "copyFrom": "GEN_Vortex_04_MUA",
+    "series": "Multiunit (Nobel biocare)",
+    "provenance": "User requested inclusion in 01 Multiunit with all specifications identical to existing Vortex 04 entry."
+  },
+  {
+    "folder": "M.Ai_Astra",
+    "file": "GEN_TX_30_Yellow_(H).hdpartz",
+    "copyFrom": "GEN_TX_30_Yellow_(H)",
+    "series": "OsseoSpeed TX",
+    "interfaceNote": {
+      "ko": "실제 인터페이스는 Double-Hex 형상이며, GenCore 라이브러리는 이와 호환되는 일반 Hex 형상으로 제작되었습니다.",
+      "en": "The actual interface has a Double-Hex shape. The GenCore library uses a compatible standard Hex shape.",
+      "ja": "実際のインターフェースはDouble-Hex形状ですが、GenCoreライブラリは互換性のある標準的なHex形状で作成されています。"
+    },
+    "provenance": "User supplied clarification of actual Double-Hex interface and compatible standard Hex library geometry."
+  }
+]

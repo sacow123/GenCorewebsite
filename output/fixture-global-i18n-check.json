@@ -1,0 +1,198 @@
+{
+  "scope": "all",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "strictRaw": true,
+  "summary": {
+    "en": {
+      "checkedKeys": 1140,
+      "missingRaw": 0,
+      "pendingRuntime": 0,
+      "hangulRuntime": 0,
+      "englishInKo": 0,
+      "unresolvedVisible": 136,
+      "missingRawSample": [],
+      "pendingRuntimeSample": [],
+      "hangulRuntimeSample": [],
+      "englishInKoSample": [],
+      "unresolvedVisibleSample": [
+        {
+          "type": "text",
+          "text": "작업 순서"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스 연결 → 절삭유 준비 → 절삭유 탱크와 펌프 설치 → 필터 박스 설치 → 지르코니아 가공 방식에 맞는 연결 → 서랍 조립"
+        },
+        {
+          "type": "text",
+          "text": "영상 매뉴얼은 아래 QR 코드를 스캔해 확인하세요."
+        },
+        {
+          "type": "attribute",
+          "text": "절삭유 및 펌프 세팅 영상 매뉴얼 QR 코드"
+        },
+        {
+          "type": "text",
+          "text": "절삭유 및 펌프 세팅 영상 매뉴얼 QR 코드"
+        },
+        {
+          "type": "text",
+          "text": "1. 배수 호스 연결"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스는 가공룸 바닥을 통해 연결합니다. 작업하기 편하도록 먼저 서랍을 빼냅니다."
+        },
+        {
+          "type": "text",
+          "text": "서랍 양쪽에 있는 걸쇠 중 왼쪽은 위로, 오른쪽은 아래로 누르면서 서랍을 당겨 빼냅니다."
+        },
+        {
+          "type": "attribute",
+          "text": "서랍 걸쇠를 눌러 서랍 빼내기"
+        },
+        {
+          "type": "text",
+          "text": "서랍 걸쇠를 눌러 서랍 빼내기"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스의 한쪽 끝을 배수구에 끼우고, 반대쪽 끝은 바닥의 구멍으로 내려보냅니다."
+        },
+        {
+          "type": "attribute",
+          "text": "배수구와 바닥 구멍에 호스 연결"
+        },
+        {
+          "type": "text",
+          "text": "배수구와 바닥 구멍에 호스 연결"
+        },
+        {
+          "type": "text",
+          "text": "십자 드라이버로 나사를 조여 연결한 호스를 고정합니다."
+        },
+        {
+          "type": "attribute",
+          "text": "배수 호스 고정 나사 조이기"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스 고정 나사 조이기"
+        },
+        {
+          "type": "text",
+          "text": "두 배수구를 모두 사용할 경우 배수 호스 2개를 연결합니다."
+        },
+        {
+          "type": "attribute",
+          "text": "배수 호스 2개 연결 상태"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스 2개 연결 상태"
+        },
+        {
+          "type": "text",
+          "text": "2. 절삭유 준비"
+        }
+      ]
+    },
+    "ja": {
+      "checkedKeys": 1140,
+      "missingRaw": 0,
+      "pendingRuntime": 0,
+      "hangulRuntime": 0,
+      "englishInKo": 0,
+      "unresolvedVisible": 136,
+      "missingRawSample": [],
+      "pendingRuntimeSample": [],
+      "hangulRuntimeSample": [],
+      "englishInKoSample": [],
+      "unresolvedVisibleSample": [
+        {
+          "type": "text",
+          "text": "작업 순서"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스 연결 → 절삭유 준비 → 절삭유 탱크와 펌프 설치 → 필터 박스 설치 → 지르코니아 가공 방식에 맞는 연결 → 서랍 조립"
+        },
+        {
+          "type": "text",
+          "text": "영상 매뉴얼은 아래 QR 코드를 스캔해 확인하세요."
+        },
+        {
+          "type": "attribute",
+          "text": "절삭유 및 펌프 세팅 영상 매뉴얼 QR 코드"
+        },
+        {
+          "type": "text",
+          "text": "절삭유 및 펌프 세팅 영상 매뉴얼 QR 코드"
+        },
+        {
+          "type": "text",
+          "text": "1. 배수 호스 연결"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스는 가공룸 바닥을 통해 연결합니다. 작업하기 편하도록 먼저 서랍을 빼냅니다."
+        },
+        {
+          "type": "text",
+          "text": "서랍 양쪽에 있는 걸쇠 중 왼쪽은 위로, 오른쪽은 아래로 누르면서 서랍을 당겨 빼냅니다."
+        },
+        {
+          "type": "attribute",
+          "text": "서랍 걸쇠를 눌러 서랍 빼내기"
+        },
+        {
+          "type": "text",
+          "text": "서랍 걸쇠를 눌러 서랍 빼내기"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스의 한쪽 끝을 배수구에 끼우고, 반대쪽 끝은 바닥의 구멍으로 내려보냅니다."
+        },
+        {
+          "type": "attribute",
+          "text": "배수구와 바닥 구멍에 호스 연결"
+        },
+        {
+          "type": "text",
+          "text": "배수구와 바닥 구멍에 호스 연결"
+        },
+        {
+          "type": "text",
+          "text": "십자 드라이버로 나사를 조여 연결한 호스를 고정합니다."
+        },
+        {
+          "type": "attribute",
+          "text": "배수 호스 고정 나사 조이기"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스 고정 나사 조이기"
+        },
+        {
+          "type": "text",
+          "text": "두 배수구를 모두 사용할 경우 배수 호스 2개를 연결합니다."
+        },
+        {
+          "type": "attribute",
+          "text": "배수 호스 2개 연결 상태"
+        },
+        {
+          "type": "text",
+          "text": "배수 호스 2개 연결 상태"
+        },
+        {
+          "type": "text",
+          "text": "2. 절삭유 준비"
+        }
+      ]
+    }
+  }
+}

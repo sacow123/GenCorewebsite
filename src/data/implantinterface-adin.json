@@ -1,0 +1,90 @@
+{
+  "folder": "M.Ai_Adin",
+  "source": "https://gencoretech.notion.site/M-Ai_Adin-1e5cfb3e9058808faca1c08cf145061f",
+  "rows": [
+    {
+      "series": "Closefit",
+      "platform": "3.0 (NP)",
+      "shape": "Hex",
+      "file": "GEN_Closefit_30_(H).hdpartz",
+      "tools": [
+        "T15-M1.5RL",
+        "T17-M1.5F",
+        "T18-M1.5R"
+      ]
+    },
+    {
+      "series": "Closefit",
+      "platform": "3.0 (NP)",
+      "shape": "Non-Hex (Circle)",
+      "file": "GEN_Closefit_30_(N-H).hdpartz",
+      "tools": [
+        "T15-M1.5RL",
+        "T18-M1.5R"
+      ]
+    },
+    {
+      "series": "Closefit",
+      "platform": "3.5 (RP)",
+      "shape": "Hex",
+      "file": "GEN_Closefit_35_(H).hdpartz",
+      "tools": [
+        "T15-M1.5RL",
+        "T17-M1.5F",
+        "T18-M1.5R"
+      ]
+    },
+    {
+      "series": "Closefit",
+      "platform": "3.5 (RP)",
+      "shape": "Non-Hex (Circle)",
+      "file": "GEN_Closefit_35_(N-H).hdpartz",
+      "tools": [
+        "T15-M1.5RL",
+        "T18-M1.5R"
+      ]
+    },
+    {
+      "series": "Closefit",
+      "platform": "4.3 / 5.0 (WP)",
+      "shape": "Hex",
+      "file": "GEN_Closefit_43.50_(H).hdpartz",
+      "tools": [
+        "T15-M1.5RL",
+        "T17-M1.5F",
+        "T18-M1.5R"
+      ]
+    },
+    {
+      "series": "Closefit",
+      "platform": "4.3 / 5.0 (WP)",
+      "shape": "Non-Hex (Circle)",
+      "file": "GEN_Closefit_43.50_(N-H).hdpartz",
+      "tools": [
+        "T15-M1.5RL",
+        "T17-M1.5F",
+        "T18-M1.5R"
+      ]
+    },
+    {
+      "series": "Touareg S & OS",
+      "platform": "3.5 / 3.75 / 4.2 / 5.0 / 6.0",
+      "shape": "Hex",
+      "file": "GEN_Touareg_35.375.42.50.60_(H).hdpartz",
+      "tools": [
+        "T15-M1.5RL",
+        "T18-M1.5R"
+      ]
+    },
+    {
+      "series": "Touareg S & OS",
+      "platform": "3.5 / 3.75 / 4.2 / 5.0 / 6.0",
+      "shape": "Non-Hex (Circle)",
+      "file": "GEN_Touareg_35.375.42.50.60_(N-H).hdpartz",
+      "tools": [
+        "T15-M1.5RL",
+        "T18-M1.5R"
+      ]
+    }
+  ]
+}
