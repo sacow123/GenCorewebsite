@@ -1077,18 +1077,25 @@ html[data-lang="es"] #sec-mai-tool-setup .mai-tool-photo-grid > article::before 
   content: "PASO " counter(tool-photo-step);
 }
 
-/* M AI tool lifetime settings: one landscape screenshot per card. */
+/* M AI tool lifetime settings: match the main-page photo width. */
+#sec-mai-tool-time > .content-card {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
 #sec-mai-tool-time .mai-tool-time-photo-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 900px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
 }
 
 #sec-mai-tool-time .mai-tool-time-photo-card {
   overflow: hidden;
-  padding: 12px;
+  padding: 24px;
   border: 1px solid #d8b4fe;
   border-radius: 14px;
   background: #ffffff;
@@ -1152,4 +1159,116 @@ html[data-lang="es"] #sec-mai-tool-setup .mai-tool-photo-grid > article::before 
   #sec-mai-tool-time .mai-tool-time-photo-list {
     gap: 20px;
   }
+
+  #sec-mai-tool-time .mai-tool-time-photo-card { padding: 14px; }
 }
+
+#sec-mai-tool-time .mai-tool-time-scroll-links { display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px;padding:14px;border:1px solid #ddd6fe;border-radius:14px;background:#faf5ff; }
+#sec-mai-tool-time .mai-tool-time-scroll-links a { display:inline-block;padding:9px 14px;border:1px solid #c4b5fd;border-radius:999px;background:#fff;color:#6d28d9;font-size:14px;font-weight:700;text-decoration:none; }
+#sec-mai-tool-time .mai-tool-time-scroll-links a:hover,#sec-mai-tool-time .mai-tool-time-scroll-links a:focus-visible { background:#ede9fe;border-color:#8b5cf6; }
+#sec-mai-tool-time .mai-tool-time-photo-card { scroll-margin-top:24px; }
+
+#sec-mai-tool-time .mai-tool-time-first-image > img { display:block;width:100%;height:auto;border-radius:8px; }
+@keyframes mai-tool-time-life-pulse { 0% { box-shadow:0 0 0 0 rgba(255,204,0,.7); } 70% { box-shadow:0 0 0 15px rgba(255,204,0,0); } 100% { box-shadow:0 0 0 0 rgba(255,204,0,0); } }
+
+/* Keep each photo card inside an additional lifetime category card. */
+#sec-mai-tool-time :is(.mai-tool-time-lifetime-group, .mai-tool-time-reset-group) { display:flex;flex-direction:column;gap:30px;padding:16px;border:1px solid #c4b5fd;border-radius:18px;background:#f5f3ff;box-shadow:0 6px 18px rgba(124,58,237,.14);min-width:0; }
+@media(max-width:720px) { #sec-mai-tool-time :is(.mai-tool-time-lifetime-group, .mai-tool-time-reset-group) { gap:20px;padding:10px; } }
+
+#sec-mai-tool-time .mai-tool-time-group-title { margin:0;color:var(--text-color,#1f2937);font-size:22px;font-weight:800;line-height:1.4; }
+@media(max-width:720px) { #sec-mai-tool-time .mai-tool-time-group-title { font-size:19px; } }
+
+#sec-mai-tool-time .mai-tool-time-reset-image > img { display:block;width:100%;height:auto;border-radius:8px; }
+
+/* Show step 02 with the top 12% cropped, preserving its original proportions. */
+#sec-mai-tool-time .mai-tool-time-step02-crop { position:relative;overflow:hidden;aspect-ratio:1280 / 633.6;border-radius:8px; }
+#sec-mai-tool-time .mai-tool-time-step02-crop > img { display:block;position:absolute;width:100%;height:auto;left:0;bottom:0; }
+
+#sec-mai-tool-time .mai-tool-time-description { margin-top:18px;padding:18px 20px;border:1px solid #e9d5ff;border-radius:12px;background:#e5e7eb;font-weight:700;line-height:1.7; }
+#sec-mai-tool-time .mai-tool-time-step02-stage { position:absolute;left:0;bottom:0;width:100%;aspect-ratio:16 / 9; }
+#sec-mai-tool-time .mai-tool-time-step02-stage > img { display:block;width:100%;height:auto; }
+
+#sec-mai-tool-time .mai-tool-time-emphasis-arrow { z-index:2;filter:drop-shadow(0 2px 3px rgba(0,0,0,.85)); }
+
+#sec-mai-tool-time .mai-tool-time-white-border { animation:mai-tool-time-white-pulse 2s infinite; }
+@keyframes mai-tool-time-white-pulse { 0% { box-shadow:0 0 0 0 rgba(255,255,255,.85); } 70% { box-shadow:0 0 0 15px rgba(255,255,255,0); } 100% { box-shadow:0 0 0 0 rgba(255,255,255,0); } }
+
+#sec-mai-tool-time .mai-tool-time-material-highlight { opacity:0;visibility:hidden;animation-play-state:paused;transition:opacity .15s; }
+#sec-mai-tool-time .mai-tool-time-step02-stage:has(.mai-tool-time-material-trigger:hover, .mai-tool-time-material-trigger:focus-visible) .mai-tool-time-material-highlight,
+#sec-mai-tool-time .mai-tool-time-step02-stage.is-material-highlight-active .mai-tool-time-material-highlight { opacity:1;visibility:visible;animation-play-state:running; }
+
+#sec-mai-tool-time .mai-tool-time-sky-border { animation:mai-tool-time-sky-pulse 2s infinite; }
+@keyframes mai-tool-time-sky-pulse { 0% { box-shadow:0 0 0 0 rgba(102,190,255,.85); } 70% { box-shadow:0 0 0 15px rgba(102,190,255,0); } 100% { box-shadow:0 0 0 0 rgba(102,190,255,0); } }
+#sec-mai-tool-time .mai-tool-time-sky-highlight { opacity:0;visibility:hidden;animation-play-state:paused;transition:opacity .15s; }
+#sec-mai-tool-time .mai-tool-time-step02-stage:has(.mai-tool-time-sky-trigger:hover, .mai-tool-time-sky-trigger:focus-visible) .mai-tool-time-sky-highlight,
+#sec-mai-tool-time .mai-tool-time-step02-stage.is-sky-highlight-active .mai-tool-time-sky-highlight { opacity:1;visibility:visible;animation-play-state:running; }
+
+#sec-mai-tool-time .mai-tool-time-red-border { animation:mai-tool-time-red-pulse 2s infinite; }
+@keyframes mai-tool-time-red-pulse { 0% { box-shadow:0 0 0 0 rgba(255,64,64,.85); } 70% { box-shadow:0 0 0 15px rgba(255,64,64,0); } 100% { box-shadow:0 0 0 0 rgba(255,64,64,0); } }
+#sec-mai-tool-time .mai-tool-time-red-highlight { opacity:0;visibility:hidden;animation-play-state:paused;transition:opacity .15s; }
+#sec-mai-tool-time .mai-tool-time-step02-stage:has(.mai-tool-time-red-trigger:hover, .mai-tool-time-red-trigger:focus-visible) .mai-tool-time-red-highlight,
+#sec-mai-tool-time .mai-tool-time-step02-stage.is-red-highlight-active .mai-tool-time-red-highlight { opacity:1;visibility:visible;animation-play-state:running; }
+
+/* Pause the other material pulses while one material is highlighted. */
+#sec-mai-tool-time .mai-tool-time-step02-stage:has(.mai-tool-time-material-trigger:hover, .mai-tool-time-material-trigger:focus-visible) :is(.mai-tool-time-sky-border, .mai-tool-time-red-border),
+#sec-mai-tool-time .mai-tool-time-step02-stage.is-material-highlight-active :is(.mai-tool-time-sky-border, .mai-tool-time-red-border) { animation-play-state:paused; }
+#sec-mai-tool-time .mai-tool-time-step02-stage:has(.mai-tool-time-sky-trigger:hover, .mai-tool-time-sky-trigger:focus-visible) :is(.mai-tool-time-white-border, .mai-tool-time-red-border),
+#sec-mai-tool-time .mai-tool-time-step02-stage.is-sky-highlight-active :is(.mai-tool-time-white-border, .mai-tool-time-red-border) { animation-play-state:paused; }
+#sec-mai-tool-time .mai-tool-time-step02-stage:has(.mai-tool-time-red-trigger:hover, .mai-tool-time-red-trigger:focus-visible) :is(.mai-tool-time-white-border, .mai-tool-time-sky-border),
+#sec-mai-tool-time .mai-tool-time-step02-stage.is-red-highlight-active :is(.mai-tool-time-white-border, .mai-tool-time-sky-border) { animation-play-state:paused; }
+
+/* Material names in the step-02 explanation only. */
+#sec-mai-tool-time .mai-tool-time-label-zirconia { display:inline-block;padding:0 5px;border-radius:3px;background:#000;color:#fff; }
+#sec-mai-tool-time .mai-tool-time-label-sky { color:rgb(102,190,255); }
+#sec-mai-tool-time .mai-tool-time-label-red { color:#ff4040; }
+
+/* Step 04: coordinates are relative to the full 1280 x 720 image. */
+#sec-mai-tool-time .mai-tool-time-step04-stage { position:absolute;left:0;bottom:0;width:100%;aspect-ratio:16 / 9; }
+#sec-mai-tool-time .mai-tool-time-step04-stage > img { display:block;width:100%;height:auto; }
+#sec-mai-tool-time .mai-tool-time-input-border { position:absolute;box-sizing:border-box;border:3px solid #ffcc00;border-radius:6px;background:transparent;padding:0;cursor:pointer;z-index:2;animation:mai-tool-time-life-pulse 2s infinite; }
+#sec-mai-tool-time .mai-tool-time-input-border:hover { animation:none;background:rgba(255,204,0,.10);box-shadow:0 0 0 2px rgba(255,204,0,.18); }
+#sec-mai-tool-time .mai-tool-time-input-anchor { position:absolute;width:0;height:0;z-index:3;pointer-events:none; }
+#sec-mai-tool-time .mai-tool-time-input-callout { position:absolute;top:10px;left:-25px;transform:none;box-sizing:content-box;width:max-content;max-width:calc(100vw - 40px);min-width:170px;padding:12px 16px;background:rgba(20,15,35,.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;border:5px solid #ffcc00;border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.32);text-align:center;opacity:0;visibility:hidden;transition:opacity .15s; }
+#sec-mai-tool-time .mai-tool-time-input-callout .desc { display:block;font-size:21px;line-height:1.35;color:#fff;white-space:nowrap; }
+#sec-mai-tool-time .mai-tool-time-input-callout::before { content:"";position:absolute;left:8px;bottom:100%;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:15px solid #ffcc00; }
+#sec-mai-tool-time .mai-tool-time-input-callout::after { content:"";position:absolute;left:13px;bottom:100%;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid rgba(20,15,35,.45); }
+#sec-mai-tool-time .mai-tool-time-input-border:hover + .mai-tool-time-input-anchor .mai-tool-time-input-callout,
+#sec-mai-tool-time .mai-tool-time-input-border:focus-visible + .mai-tool-time-input-anchor .mai-tool-time-input-callout,
+#sec-mai-tool-time .mai-tool-time-input-border[aria-expanded="true"] + .mai-tool-time-input-anchor .mai-tool-time-input-callout { opacity:1;visibility:visible; }
+@media(max-width:480px) { #sec-mai-tool-time .mai-tool-time-input-callout { min-width:0;padding:12px 16px; } }
+
+#sec-mai-settings .mai-settings-calibration-border { background:transparent;padding:0;cursor:pointer;z-index:2; }
+#sec-mai-settings .mai-settings-calibration-image:has(.mai-settings-calibration-border:hover,.mai-settings-calibration-border:focus-visible,.mai-settings-calibration-border[aria-expanded="true"]) .mai-settings-calibration-border { opacity:.15; }
+#sec-mai-settings .mai-settings-calibration-image .mai-settings-calibration-border:is(:hover,:focus-visible,[aria-expanded="true"]) { opacity:1;animation:none!important;background:rgba(255,204,0,.10);box-shadow:0 0 0 2px rgba(255,204,0,.18); }
+#sec-mai-settings .mai-settings-callout-anchor { position:absolute;width:0;height:0;z-index:3;pointer-events:none; }
+#sec-mai-settings .mai-settings-callout { position:absolute;left:var(--cal-left,0px);bottom:10px;transform:none;width:max-content;min-width:0;max-width:none;padding:12px 16px;background:rgba(20,15,35,.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;border:5px solid #ffcc00;border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.32);text-align:center;opacity:0;visibility:hidden;transition:opacity .15s; }
+#sec-mai-settings .mai-settings-callout .title { display:block;font-size:var(--cal-title-size,22px);line-height:1.15;font-weight:800;color:#ffcc00;margin-bottom:4px;white-space:nowrap; }
+#sec-mai-settings .mai-settings-callout .desc { display:block;font-size:var(--cal-desc-size,21px);line-height:1.35;color:#fff;white-space:nowrap; }
+#sec-mai-settings .mai-settings-callout::before,#sec-mai-settings .mai-settings-callout::after { content:"";position:absolute;left:var(--cal-arrow,50%);top:100%;transform:translateX(-50%);border-left:12px solid transparent;border-right:12px solid transparent;border-top:15px solid #ffcc00; }
+#sec-mai-settings .mai-settings-callout::after { border-left-width:7px;border-right-width:7px;border-top:7px solid rgba(20,15,35,.45); }
+#sec-mai-settings .mai-settings-callout[data-direction="up"] { bottom:auto;top:10px; }
+#sec-mai-settings .mai-settings-callout[data-direction="up"]::before,#sec-mai-settings .mai-settings-callout[data-direction="up"]::after { top:auto;bottom:100%;border-top:0;border-bottom:15px solid #ffcc00; }
+#sec-mai-settings .mai-settings-callout[data-direction="up"]::after { border-bottom:7px solid rgba(20,15,35,.45); }
+#sec-mai-settings .mai-settings-calibration-border:is(:hover,:focus-visible,[aria-expanded="true"]) + .mai-settings-callout-anchor .mai-settings-callout { opacity:1;visibility:visible; }
+#sec-mai-settings .mai-settings-calibration-image:has(.mai-settings-calibration-border:hover) .mai-settings-calibration-border:not(:hover) + .mai-settings-callout-anchor .mai-settings-callout { opacity:0;visibility:hidden; }
+body:has(#sec-mai-settings .mai-settings-calibration-border:is(:hover,:focus-visible,[aria-expanded="true"])) #gencore-image-measure-tool { display:none; }
+#sec-mai-settings .mai-settings-calibration-image .mai-settings-calibration-border:is(:hover,:focus-visible,[aria-expanded="true"]) { opacity:1!important; }
+
+/* Operation popups: the arrow tip is the middle of each border's left edge. */
+#sec-mai-settings .mai-settings-operation-border { background:transparent;padding:0;cursor:pointer;z-index:2; }
+#sec-mai-settings .mai-settings-operation-image:has(.mai-settings-operation-border:hover,.mai-settings-operation-border:focus-visible,.mai-settings-operation-border[aria-expanded="true"]) .mai-settings-operation-border { opacity:.15; }
+#sec-mai-settings .mai-settings-operation-image .mai-settings-operation-border:is(:hover,:focus-visible,[aria-expanded="true"]) { opacity:1!important;animation:none!important;background:rgba(255,204,0,.10);box-shadow:0 0 0 2px rgba(255,204,0,.18); }
+#sec-mai-settings .mai-settings-callout[data-direction="right"] { bottom:auto;top:0;transform:translateY(-50%); }
+#sec-mai-settings .mai-settings-callout[data-direction="right"]::before,#sec-mai-settings .mai-settings-callout[data-direction="right"]::after { left:100%;top:50%;bottom:auto;transform:translateY(-50%);border:12px solid transparent;border-right:0;border-left:15px solid #ffcc00; }
+#sec-mai-settings .mai-settings-callout[data-direction="right"]::after { border:7px solid transparent;border-right:0;border-left:7px solid rgba(20,15,35,.45); }
+#sec-mai-settings .mai-settings-operation-border:is(:hover,:focus-visible,[aria-expanded="true"]) + .mai-settings-callout-anchor .mai-settings-callout { opacity:1;visibility:visible; }
+#sec-mai-settings .mai-settings-operation-image:has(.mai-settings-operation-border:hover) .mai-settings-operation-border:not(:hover) + .mai-settings-callout-anchor .mai-settings-callout { opacity:0;visibility:hidden; }
+body:has(#sec-mai-settings .mai-settings-operation-border:is(:hover,:focus-visible,[aria-expanded="true"])) #gencore-image-measure-tool { display:none; }
+
+/* Distinguish the fifth operation control with a bright cyan accent. */
+@keyframes mai-settings-operation-cyan-pulse { 0% { box-shadow:0 0 0 0 rgba(0,229,255,.7); } 70% { box-shadow:0 0 0 15px rgba(0,229,255,0); } 100% { box-shadow:0 0 0 0 rgba(0,229,255,0); } }
+#sec-mai-settings .mai-settings-operation-border[data-operation-border="5"] { border-color:#00e5ff!important;animation:mai-settings-operation-cyan-pulse 2s infinite!important; }
+#sec-mai-settings .mai-settings-operation-image .mai-settings-operation-border[data-operation-border="5"]:is(:hover,:focus-visible,[aria-expanded="true"]) { animation:none!important;background:rgba(0,229,255,.10);box-shadow:0 0 0 2px rgba(0,229,255,.18); }
+#sec-mai-settings [data-operation-callout="5"] .mai-settings-callout { border-color:#00e5ff; }
+#sec-mai-settings [data-operation-callout="5"] .mai-settings-callout .title { color:#00e5ff; }
+#sec-mai-settings [data-operation-callout="5"] .mai-settings-callout[data-direction="right"]::before { border-left-color:#00e5ff; }
