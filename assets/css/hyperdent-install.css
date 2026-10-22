@@ -1,0 +1,26 @@
+
+
+#hd-auto-setup{margin-top:28px;font-family:inherit;line-height:1.7}
+#hd-auto-setup .card{background:var(--bg-card,#fff);border:1px solid var(--border,#e5e7eb);border-radius:12px;margin:20px 0;padding:26px 28px}
+#hd-auto-setup .hero{border-top:3px solid var(--primary,#7c3aed)}
+#hd-auto-setup .eyebrow{font-size:11px;letter-spacing:1.5px;font-weight:700;color:var(--primary);margin-bottom:10px}
+#hd-auto-setup h2{font-size:20px;margin:0 0 10px}#hd-auto-setup p,#hd-auto-setup li{font-size:14px}#hd-auto-setup p+p{margin-top:8px}
+#hd-auto-setup .notice{background:#faf5ff;border:1px solid #e9d5ff;border-radius:8px;padding:15px 18px;margin-top:18px;font-size:14px}#hd-auto-setup .notice strong{color:#6d28d9}
+#hd-auto-setup .muted{color:#777;font-size:12px}#hd-auto-setup .flow{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}#hd-auto-setup .flow a{color:#6d28d9;text-decoration:none;font-size:12px;border:1px solid #e9d5ff;padding:6px 12px;border-radius:6px}
+#hd-auto-setup code{font-family:Consolas,monospace;background:#f4f4f6;padding:3px 6px;border-radius:4px;color:#5b21b6;overflow-wrap:anywhere}
+#hd-auto-setup ul{padding-left:20px;margin:12px 0}#hd-auto-setup li{margin:7px 0}
+#hd-auto-setup .step{display:grid;grid-template-columns:32px minmax(0,1fr);gap:14px;padding:21px 0;border-bottom:1px solid #eee}#hd-auto-setup .step:last-child{border-bottom:0;padding-bottom:0}#hd-auto-setup .num{width:30px;height:30px;background:#f3e8ff;color:#7c3aed;border-radius:50%;text-align:center;font-weight:700;line-height:30px}#hd-auto-setup .step h3{font-size:16px;margin-bottom:8px}#hd-auto-setup .step p{color:#666}
+#hd-auto-setup figure{margin:18px 0 0}#hd-auto-setup figure img{width:100%;height:auto;display:block;border:1px solid #e5e7eb;border-radius:8px}#hd-auto-setup figcaption{font-size:12px;color:#777;margin-top:8px}
+#hd-auto-setup .result-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}#hd-auto-setup .result{border:1px solid #eee;background:#fcfcfd;padding:18px;border-radius:8px}#hd-auto-setup .result h3{font-size:14px;margin-bottom:9px}#hd-auto-setup .wide{grid-column:1/-1}#hd-auto-setup .small-image{max-width:560px}
+#hd-auto-setup .settings-intro{border-left:3px solid #c4b5fd;padding-left:14px;color:#666}#hd-auto-setup details{border:1px solid #e5e7eb;border-radius:8px;margin-top:12px;background:white}#hd-auto-setup summary{cursor:pointer;padding:15px 18px;font-size:14px;font-weight:600;color:#4c1d95}#hd-auto-setup details[open] summary{border-bottom:1px solid #eee}#hd-auto-setup .detail-body{padding:0 18px 18px}#hd-auto-setup .detail-body figure{margin-top:18px}#hd-auto-setup .portrait{max-width:650px}#hd-auto-setup .source{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid #ddd;padding-top:18px;font-size:12px;color:#777}#hd-auto-setup .source a{color:var(--primary)}#hd-auto-setup section,#hd-auto-setup figure{scroll-margin-top:20px}
+@media(max-width:800px){#hd-auto-setup .card{padding:18px}#hd-auto-setup .result-grid{grid-template-columns:1fr}}
+
+
+/* Distinct groups for general and machine settings within the manual draft. */
+#hd-auto-setup .settings-group{margin-top:22px;padding:18px;border:1px solid #e5e7eb;border-left:4px solid #8b5cf6;border-radius:10px;background:#fdfbff}
+#hd-auto-setup .settings-group-machine{margin-top:32px;border-color:#dbeafe;border-left-color:#2563eb;background:#f8fbff}
+#hd-auto-setup .settings-group-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 0 14px;margin:0;border-bottom:1px solid #e9d5ff;color:#6d28d9;font-size:18px;font-weight:700}
+#hd-auto-setup .settings-group-machine .settings-group-heading{color:#1d4ed8;border-bottom-color:#bfdbfe}
+#hd-auto-setup .settings-group-heading kbd{display:inline-block;background:white;border:1px solid #ddd6fe;border-bottom-width:3px;border-radius:7px;padding:3px 12px;font:700 14px Consolas,monospace;color:inherit}
+#hd-auto-setup .settings-group-machine kbd{border-color:#bfdbfe}
+@media(max-width:600px){#hd-auto-setup .settings-group{padding:12px}#hd-auto-setup .settings-group-heading{font-size:16px}}
