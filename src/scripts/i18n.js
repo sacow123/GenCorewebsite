@@ -5690,7 +5690,8 @@ Object.assign(TRANSLATIONS.ko, {
   "hyperdent-material-first-step-10": "또한 STL을 해당 대기열 창에 드래그&amp; 드랍을 통해서도 불러올 수 있습니다.",
   "hyperdent-material-first-step-11": "대기열의 STL 더블클릭 혹은, 불러온 재료 위에 드래그&amp;드랍을 통해 설정 '마법사'에 진입할 수 있습니다.",
   "hyperdent-crown-part-info-title": "3. 파트 정보 설정하기 - 크라운",
-  "hyperdent-placement-calculation-title": "4. 배치 및 계산",
+  "hyperdent-placement-calculation-title": "4. 배치",
+  "hyperdent-calculation-verification-title": "5. 계산 및 확인",
   "hyperdent-placement-calculation-step-01": "Blank로 불러온 보철물을 더블클릭 하세요",
   "hyperdent-placement-calculation-step-02": "그러면 위와 같이 주황색 테두리로 표시됩니다. 이 상태에서 드래그로 배치할 위치를 정할 수 있습니다.",
   "hyperdent-placement-calculation-step-03": "마우스 커서를 보철물 바깥에 가면 커서 모양이 위 사진처럼 바뀝니다. 해당 커서 모양일 때는 보철물을 회전 시킬 수 있습니다.",
@@ -5785,7 +5786,8 @@ Object.assign(TRANSLATIONS.en, {
   "hyperdent-material-first-step-10": "You can also load the STL by dragging and dropping it into the queue window.",
   "hyperdent-material-first-step-11": "Double-click the STL in the queue or drag and drop it onto the loaded material to enter the configuration Wizard.",
   "hyperdent-crown-part-info-title": "3. Configure Part Information - Crown",
-  "hyperdent-placement-calculation-title": "4. Nesting and Calculation",
+  "hyperdent-placement-calculation-title": "4. Nesting",
+  "hyperdent-calculation-verification-title": "5. Calculation and Verification",
   "hyperdent-placement-calculation-step-01": "Double-click the restoration loaded in the Blank.",
   "hyperdent-placement-calculation-step-02": "It will be highlighted with an orange border as shown above. In this state, drag it to set the placement position.",
   "hyperdent-placement-calculation-step-03": "Move the mouse cursor outside the restoration. The cursor changes as shown above, and you can rotate the restoration while this cursor is displayed.",
@@ -5880,7 +5882,8 @@ Object.assign(TRANSLATIONS.ja, {
   "hyperdent-material-first-step-10": "STLをキューウィンドウへドラッグ＆ドロップして読み込むこともできます。",
   "hyperdent-material-first-step-11": "キュー内のSTLをダブルクリックするか、読み込んだ材料の上へドラッグ＆ドロップすると、設定［ウィザード］に進めます。",
   "hyperdent-crown-part-info-title": "3. パート情報を設定する - クラウン",
-  "hyperdent-placement-calculation-title": "4. 配置と計算",
+  "hyperdent-placement-calculation-title": "4. 配置",
+  "hyperdent-calculation-verification-title": "5. 計算と確認",
   "hyperdent-placement-calculation-step-01": "Blankに読み込んだ補綴物をダブルクリックしてください。",
   "hyperdent-placement-calculation-step-02": "上のようにオレンジ色の枠で表示されます。この状態でドラッグして配置位置を決められます。",
   "hyperdent-placement-calculation-step-03": "マウスカーソルを補綴物の外側へ移動すると、上の写真のようにカーソル形状が変わります。このカーソル形状のときは補綴物を回転できます。",
@@ -5953,7 +5956,8 @@ Object.assign(TRANSLATIONS.es, {
   "hyperdent-basic-title": "Operación básica de hyperDENT",
   "hyperdent-machine-fixture-title": "1. Seleccionar la máquina y el fijador de hyperDENT",
   "hyperdent-stl-material-title": "2. Importar archivos STL y materiales",
-  "hyperdent-placement-calculation-title": "4. Colocación y cálculo",
+  "hyperdent-placement-calculation-title": "4. Colocación",
+  "hyperdent-calculation-verification-title": "5. Cálculo y verificación",
   "hyperdent-back-to-list": "← Lista de operación básica",
   "hyperdent-image-dialog-label": "Foto ampliada",
   "hyperdent-image-close": "Cerrar foto ampliada"
@@ -6299,3 +6303,217 @@ Object.assign(TRANSLATIONS.en, {"mai-settings-operation-title-1":"ATC open/close
 Object.assign(TRANSLATIONS.ja, {"mai-settings-operation-title-1":"ATC open/close","mai-settings-operation-desc-1":"工具保管庫を開閉します。","mai-settings-operation-title-2":"Mover forward","mai-settings-operation-desc-2":"ボタンを押すとスピンドルが前方に移動します。","mai-settings-operation-title-3":"Spindle chuck<br>open/close","mai-settings-operation-desc-3":"スピンドルのコレットを開閉します","mai-settings-operation-title-4":"Spindle<br>rotation test","mai-settings-operation-desc-4":"ボタンを押すとスピンドルのコレットが回転します。","mai-settings-operation-title-5":"Test Coolant","mai-settings-operation-desc-5":"ボタンを押すと切削液が噴出します。"});
 
 Object.assign(TRANSLATIONS.es, {"mai-settings-operation-title-1":"ATC open/close","mai-settings-operation-desc-1":"Abre/cierra el compartimento de herramientas.","mai-settings-operation-title-2":"Mover forward","mai-settings-operation-desc-2":"Pulse el botón para mover el husillo hacia delante.","mai-settings-operation-title-3":"Spindle chuck<br>open/close","mai-settings-operation-desc-3":"Abre/cierra la pinza del husillo","mai-settings-operation-title-4":"Spindle<br>rotation test","mai-settings-operation-desc-4":"Pulse el botón para girar la pinza del husillo.","mai-settings-operation-title-5":"Test Coolant","mai-settings-operation-desc-5":"Pulse el botón para dispensar refrigerante."});
+
+// Calculation and verification: template selection.
+Object.assign(TRANSLATIONS.ko, {
+  "hyperdent-cv-step-01": "사진에 표시된 '템플릿 보기' 항목 클릭",
+  "hyperdent-cv-step-02": "템플릿 보기를 누르면 해당 재료 - 보철물에서 선택 가능한 템플릿 목록들이 표시됩니다.<br>PMMA 재료에서 Crown 타입의 보철물의 경우 사진과 같이 3 종류의 템플릿을 고를 수 있습니다.",
+  "hyperdent-cv-step-03": "원하는 템플릿을 클릭하시면 변경할 수 있습니다. 만약 템플릿들에 대해 자세히 알고싶다면",
+  "hyperdent-cv-mai-link": "M AI 템플릿(클릭)",
+  "hyperdent-cv-mf-link": "MillFix 템플릿(클릭)",
+  "hyperdent-cv-image-01": "템플릿 보기 항목",
+  "hyperdent-cv-image-02": "선택 가능한 템플릿 목록",
+  "hyperdent-cv-image-03": "원하는 템플릿 선택"
+});
+Object.assign(TRANSLATIONS.en, {
+  "hyperdent-cv-step-01": "Click 'View template overwritable parameters' as marked in the image.",
+  "hyperdent-cv-step-02": "Clicking View template displays the templates available for the selected material and restoration.<br>For a Crown restoration in PMMA, you can choose from three templates as shown in the image.",
+  "hyperdent-cv-step-03": "Click the desired template to change it. To learn more about the templates:",
+  "hyperdent-cv-mai-link": "M AI templates (click)",
+  "hyperdent-cv-mf-link": "MillFix templates (click)",
+  "hyperdent-cv-image-01": "View template option",
+  "hyperdent-cv-image-02": "Available template list",
+  "hyperdent-cv-image-03": "Select the desired template"
+});
+Object.assign(TRANSLATIONS.ja, {
+  "hyperdent-cv-step-01": "写真に示された「テンプレート表示」（英語表記：View template overwritable parameters）をクリックしてください。",
+  "hyperdent-cv-step-02": "テンプレート表示をクリックすると、その材料・補綴物で選択可能なテンプレート一覧が表示されます。<br>PMMA材料のCrownタイプの補綴物では、写真のように3種類のテンプレートを選択できます。",
+  "hyperdent-cv-step-03": "希望するテンプレートをクリックすると変更できます。テンプレートについて詳しく知りたい場合は",
+  "hyperdent-cv-mai-link": "M AI テンプレート（クリック）",
+  "hyperdent-cv-mf-link": "MillFix テンプレート（クリック）",
+  "hyperdent-cv-image-01": "テンプレート表示の項目",
+  "hyperdent-cv-image-02": "選択可能なテンプレート一覧",
+  "hyperdent-cv-image-03": "希望するテンプレートを選択"
+});
+Object.assign(TRANSLATIONS.es, {
+  "hyperdent-cv-step-01": "Haga clic en 'View template overwritable parameters', indicado en la imagen.",
+  "hyperdent-cv-step-02": "Al hacer clic en Ver plantilla, se muestran las plantillas disponibles para el material y la restauración seleccionados.<br>Para una restauración de tipo Crown en PMMA, puede elegir entre tres plantillas, como muestra la imagen.",
+  "hyperdent-cv-step-03": "Haga clic en la plantilla deseada para cambiarla. Para obtener más información sobre las plantillas:",
+  "hyperdent-cv-mai-link": "Plantillas de M AI (clic)",
+  "hyperdent-cv-mf-link": "Plantillas de MillFix (clic)",
+  "hyperdent-cv-image-01": "Opción Ver plantilla",
+  "hyperdent-cv-image-02": "Lista de plantillas disponibles",
+  "hyperdent-cv-image-03": "Seleccionar la plantilla deseada"
+});
+
+// Calculation and verification, steps 04–10.
+Object.assign(TRANSLATIONS.ko, {
+  "hyperdent-cv-step-04": "표시된 부분은 조절 가능한 항목들입니다. 자세한 사항은 위의 링크를 참고바랍니다.",
+  "hyperdent-cv-image-04": "계산 및 확인 화면 4",
+  "hyperdent-cv-step-05": "선택이 끝났으면 Ok 를 눌러주세요. 계산 전에는 반드시 템플릿이 제대로 선택됐나 확인바랍니다.",
+  "hyperdent-cv-image-05": "계산 및 확인 화면 5",
+  "hyperdent-cv-step-06": "모든 준비가 끝났으면 사진에 표시된 '계산하기' 를 눌러주세요",
+  "hyperdent-cv-image-06": "계산 및 확인 화면 6",
+  "hyperdent-cv-step-07": "계산 진행 중...",
+  "hyperdent-cv-image-07": "계산 및 확인 화면 7",
+  "hyperdent-cv-step-08": "계산이 끝났습니다. 아래 메시지에서 가공에 필요한 시간을 대략적으로 확인할 수 있습니다.",
+  "hyperdent-cv-image-08": "계산 및 확인 화면 8",
+  "hyperdent-cv-step-09": "계산이 끝나 투명해진 보철물을 선택 후 마우스 우클릭을 하시면 사진과 같은 메뉴창이 뜹니다. 여기서 공구 경로보기 ( show toolpaths)를 선택해주세요.",
+  "hyperdent-cv-image-09": "계산 및 확인 화면 9",
+  "hyperdent-cv-step-10": "공구 경로를 비롯한 여러 정보들을 확인할 수 있는 hyperVIEW가 열립니다.",
+  "hyperdent-cv-image-10": "계산 및 확인 화면 10"
+});
+Object.assign(TRANSLATIONS.en, {
+  "hyperdent-cv-step-04": "The marked area contains adjustable settings. Please refer to the links above for details.",
+  "hyperdent-cv-image-04": "Calculation and verification screen 4",
+  "hyperdent-cv-step-05": "When you have finished making your selections, click OK. Before calculating, always check that the correct template is selected.",
+  "hyperdent-cv-image-05": "Calculation and verification screen 5",
+  "hyperdent-cv-step-06": "When everything is ready, click 'Calculate toolpaths' as marked in the image.",
+  "hyperdent-cv-image-06": "Calculation and verification screen 6",
+  "hyperdent-cv-step-07": "Calculation in progress...",
+  "hyperdent-cv-image-07": "Calculation and verification screen 7",
+  "hyperdent-cv-step-08": "Calculation is complete. The messages below show the approximate machining time.",
+  "hyperdent-cv-image-08": "Calculation and verification screen 8",
+  "hyperdent-cv-step-09": "Select the restoration, which becomes transparent after calculation, and right-click to open the menu shown in the image. Select Show toolpaths.",
+  "hyperdent-cv-image-09": "Calculation and verification screen 9",
+  "hyperdent-cv-step-10": "hyperVIEW opens, where you can check toolpaths and other information.",
+  "hyperdent-cv-image-10": "Calculation and verification screen 10"
+});
+Object.assign(TRANSLATIONS.ja, {
+  "hyperdent-cv-step-04": "表示された部分は調整可能な項目です。詳細は上記のリンクをご参照ください。",
+  "hyperdent-cv-image-04": "計算と確認の画面4",
+  "hyperdent-cv-step-05": "選択が終わったらOKをクリックしてください。計算前に、正しいテンプレートが選択されていることを必ず確認してください。",
+  "hyperdent-cv-image-05": "計算と確認の画面5",
+  "hyperdent-cv-step-06": "準備がすべて整ったら、写真に示された「計算する」（Calculate toolpaths）をクリックしてください。",
+  "hyperdent-cv-image-06": "計算と確認の画面6",
+  "hyperdent-cv-step-07": "計算中...",
+  "hyperdent-cv-image-07": "計算と確認の画面7",
+  "hyperdent-cv-step-08": "計算が終わりました。下のメッセージで、おおよその加工時間を確認できます。",
+  "hyperdent-cv-image-08": "計算と確認の画面8",
+  "hyperdent-cv-step-09": "計算後に透明になった補綴物を選択して右クリックすると、写真のようなメニューが表示されます。ここで「工具経路を表示」（Show toolpaths）を選択してください。",
+  "hyperdent-cv-image-09": "計算と確認の画面9",
+  "hyperdent-cv-step-10": "工具経路をはじめとする各種情報を確認できるhyperVIEWが開きます。",
+  "hyperdent-cv-image-10": "計算と確認の画面10"
+});
+Object.assign(TRANSLATIONS.es, {
+  "hyperdent-cv-step-04": "La zona marcada contiene ajustes modificables. Consulte los enlaces anteriores para más información.",
+  "hyperdent-cv-image-04": "Pantalla de cálculo y verificación 4",
+  "hyperdent-cv-step-05": "Cuando termine de seleccionar, haga clic en OK. Antes de calcular, compruebe siempre que la plantilla correcta esté seleccionada.",
+  "hyperdent-cv-image-05": "Pantalla de cálculo y verificación 5",
+  "hyperdent-cv-step-06": "Cuando todo esté listo, haga clic en 'Calculate toolpaths', como se indica en la imagen.",
+  "hyperdent-cv-image-06": "Pantalla de cálculo y verificación 6",
+  "hyperdent-cv-step-07": "Cálculo en curso...",
+  "hyperdent-cv-image-07": "Pantalla de cálculo y verificación 7",
+  "hyperdent-cv-step-08": "El cálculo ha terminado. Los mensajes siguientes muestran el tiempo aproximado de mecanizado.",
+  "hyperdent-cv-image-08": "Pantalla de cálculo y verificación 8",
+  "hyperdent-cv-step-09": "Seleccione la restauración, que se vuelve transparente al terminar el cálculo, y haga clic con el botón derecho para abrir el menú mostrado. Seleccione Show toolpaths.",
+  "hyperdent-cv-image-09": "Pantalla de cálculo y verificación 9",
+  "hyperdent-cv-step-10": "Se abre hyperVIEW, donde puede consultar las trayectorias de herramienta y otra información.",
+  "hyperdent-cv-image-10": "Pantalla de cálculo y verificación 10"
+});
+
+// Calculation and verification, steps 11–17.
+Object.assign(TRANSLATIONS.ko, {
+  "hyperdent-cv-step-11": "'결과' 항목을 우클릭 후 계산을 누르면 공구 경로에 따른 예상 결과를 확인할 수 있습니다.",
+  "hyperdent-cv-image-11": "계산 및 확인 화면 11",
+  "hyperdent-cv-step-12": "계산 중...",
+  "hyperdent-cv-image-12": "계산 및 확인 화면 12",
+  "hyperdent-cv-step-13": "Tool paths의 전구 아이콘을 누르면 노란색 경로 표시를 가릴 수 있습니다.",
+  "hyperdent-cv-image-13": "계산 및 확인 화면 13",
+  "hyperdent-cv-step-14": "공구 경로가 꺼진 모습입니다. 개별적인 경로에 대해서도 키고 끌 수 있습니다.",
+  "hyperdent-cv-image-14": "계산 및 확인 화면 14",
+  "hyperdent-cv-step-15": "빨간색이 STL, 회색이 예상 가공 결과입니다. 빨간색과 회색이 섞여있는 게 이상적입니다.",
+  "hyperdent-cv-image-15": "계산 및 확인 화면 15",
+  "hyperdent-cv-step-16": "사진에 표시된 것처럼 Model 과 Result를 반투명으로 전환하면 내면까지 체크할 수 있습니다.",
+  "hyperdent-cv-image-16": "계산 및 확인 화면 16",
+  "hyperdent-cv-step-17": "Model - 반투명<br>Result - 반투명",
+  "hyperdent-cv-image-17": "계산 및 확인 화면 17"
+});
+Object.assign(TRANSLATIONS.en, {
+  "hyperdent-cv-step-11": "Right-click 'Result' and select Calculate to view the predicted result based on the toolpaths.",
+  "hyperdent-cv-image-11": "Calculation and verification screen 11",
+  "hyperdent-cv-step-12": "Calculating...",
+  "hyperdent-cv-image-12": "Calculation and verification screen 12",
+  "hyperdent-cv-step-13": "Click the light bulb icon next to Tool paths to hide the yellow toolpath lines.",
+  "hyperdent-cv-image-13": "Calculation and verification screen 13",
+  "hyperdent-cv-step-14": "The toolpaths are hidden. You can also turn individual toolpaths on or off.",
+  "hyperdent-cv-image-14": "Calculation and verification screen 14",
+  "hyperdent-cv-step-15": "Red represents the STL, and gray represents the predicted machining result. Ideally, red and gray should be intermingled.",
+  "hyperdent-cv-image-15": "Calculation and verification screen 15",
+  "hyperdent-cv-step-16": "Set Model and Result to Transparent as shown in the image to inspect the inner surfaces as well.",
+  "hyperdent-cv-image-16": "Calculation and verification screen 16",
+  "hyperdent-cv-step-17": "Model - Transparent<br>Result - Transparent",
+  "hyperdent-cv-image-17": "Calculation and verification screen 17"
+});
+Object.assign(TRANSLATIONS.ja, {
+  "hyperdent-cv-step-11": "「結果」（Result）を右クリックして「計算」（Calculate）を選択すると、工具経路に基づく予測結果を確認できます。",
+  "hyperdent-cv-image-11": "計算と確認の画面11",
+  "hyperdent-cv-step-12": "計算中...",
+  "hyperdent-cv-image-12": "計算と確認の画面12",
+  "hyperdent-cv-step-13": "Tool pathsの電球アイコンをクリックすると、黄色の工具経路表示を非表示にできます。",
+  "hyperdent-cv-image-13": "計算と確認の画面13",
+  "hyperdent-cv-step-14": "工具経路を非表示にした状態です。個別の経路も表示・非表示を切り替えられます。",
+  "hyperdent-cv-image-14": "計算と確認の画面14",
+  "hyperdent-cv-step-15": "赤色はSTL、灰色は予測加工結果です。赤色と灰色が混在している状態が理想的です。",
+  "hyperdent-cv-image-15": "計算と確認の画面15",
+  "hyperdent-cv-step-16": "写真のようにModelとResultを半透明に切り替えると、内面まで確認できます。",
+  "hyperdent-cv-image-16": "計算と確認の画面16",
+  "hyperdent-cv-step-17": "Model - 半透明<br>Result - 半透明",
+  "hyperdent-cv-image-17": "計算と確認の画面17"
+});
+Object.assign(TRANSLATIONS.es, {
+  "hyperdent-cv-step-11": "Haga clic con el botón derecho en 'Result' y seleccione Calculate para ver el resultado previsto según las trayectorias de herramienta.",
+  "hyperdent-cv-image-11": "Pantalla de cálculo y verificación 11",
+  "hyperdent-cv-step-12": "Calculando...",
+  "hyperdent-cv-image-12": "Pantalla de cálculo y verificación 12",
+  "hyperdent-cv-step-13": "Haga clic en el icono de bombilla junto a Tool paths para ocultar las líneas amarillas de las trayectorias.",
+  "hyperdent-cv-image-13": "Pantalla de cálculo y verificación 13",
+  "hyperdent-cv-step-14": "Las trayectorias de herramienta están ocultas. También puede mostrar u ocultar cada trayectoria por separado.",
+  "hyperdent-cv-image-14": "Pantalla de cálculo y verificación 14",
+  "hyperdent-cv-step-15": "El rojo representa el STL y el gris, el resultado previsto del mecanizado. Lo ideal es que el rojo y el gris se mezclen.",
+  "hyperdent-cv-image-15": "Pantalla de cálculo y verificación 15",
+  "hyperdent-cv-step-16": "Cambie Model y Result a Transparent, como se muestra en la imagen, para inspeccionar también las superficies interiores.",
+  "hyperdent-cv-image-16": "Pantalla de cálculo y verificación 16",
+  "hyperdent-cv-step-17": "Model - Transparente<br>Result - Transparente",
+  "hyperdent-cv-image-17": "Pantalla de cálculo y verificación 17"
+});
+
+// Calculation and verification, steps 18–20.
+Object.assign(TRANSLATIONS.ko, {
+  "hyperdent-cv-step-18": "Tool Paths에서 Tools 를 누르면 사용되는 공구를 확인할 수 있습니다.",
+  "hyperdent-cv-image-18": "계산 및 확인 화면 18",
+  "hyperdent-cv-step-19": "사진에 표시된 숫자가 공구 번호입니다. 사진 속 예시에서는 9, 10, 11, 12번이 사용됩니다.",
+  "hyperdent-cv-image-19": "계산 및 확인 화면 19",
+  "hyperdent-cv-step-20": "NC-number 를 눌러 공구의 순서를 오름차순, 내림차순 등으로 변경할 수 있습니다.",
+  "hyperdent-cv-image-20": "계산 및 확인 화면 20"
+});
+Object.assign(TRANSLATIONS.en, {
+  "hyperdent-cv-step-18": "Click Tools under Tool Paths to check the tools used.",
+  "hyperdent-cv-image-18": "Calculation and verification screen 18",
+  "hyperdent-cv-step-19": "The numbers marked in the image are tool numbers. Tools 9, 10, 11, and 12 are used in this example.",
+  "hyperdent-cv-image-19": "Calculation and verification screen 19",
+  "hyperdent-cv-step-20": "Click NC-number to sort the tools in ascending or descending order.",
+  "hyperdent-cv-image-20": "Calculation and verification screen 20"
+});
+Object.assign(TRANSLATIONS.ja, {
+  "hyperdent-cv-step-18": "Tool PathsのToolsをクリックすると、使用する工具を確認できます。",
+  "hyperdent-cv-image-18": "計算と確認の画面18",
+  "hyperdent-cv-step-19": "写真に示された数字は工具番号です。写真の例では9、10、11、12番を使用します。",
+  "hyperdent-cv-image-19": "計算と確認の画面19",
+  "hyperdent-cv-step-20": "NC-numberをクリックすると、工具の並び順を昇順・降順などに変更できます。",
+  "hyperdent-cv-image-20": "計算と確認の画面20"
+});
+Object.assign(TRANSLATIONS.es, {
+  "hyperdent-cv-step-18": "Haga clic en Tools dentro de Tool Paths para consultar las herramientas utilizadas.",
+  "hyperdent-cv-image-18": "Pantalla de cálculo y verificación 18",
+  "hyperdent-cv-step-19": "Los números marcados en la imagen son los números de herramienta. En este ejemplo se utilizan las herramientas 9, 10, 11 y 12.",
+  "hyperdent-cv-image-19": "Pantalla de cálculo y verificación 19",
+  "hyperdent-cv-step-20": "Haga clic en NC-number para ordenar las herramientas de forma ascendente o descendente.",
+  "hyperdent-cv-image-20": "Pantalla de cálculo y verificación 20"
+});
+
+// Calculation and verification: tutorial link card.
+Object.assign(TRANSLATIONS.ko, {"hyperdent-cv-step-21":"크라운 외의 보철물의 설정법 및 계산이 궁금하다면 ","hyperdent-cv-tutorial-link":"튜토리얼 (클릭)","hyperdent-cv-step-21-end":" 으로 이동."});
+Object.assign(TRANSLATIONS.en, {"hyperdent-cv-step-21":"To learn how to configure and calculate restorations other than crowns, go to ","hyperdent-cv-tutorial-link":"Tutorials (click)","hyperdent-cv-step-21-end":"."});
+Object.assign(TRANSLATIONS.ja, {"hyperdent-cv-step-21":"クラウン以外の補綴物の設定方法や計算について知りたい場合は、","hyperdent-cv-tutorial-link":"チュートリアル（クリック）","hyperdent-cv-step-21-end":"へお進みください。"});
+Object.assign(TRANSLATIONS.es, {"hyperdent-cv-step-21":"Para aprender a configurar y calcular restauraciones distintas de las coronas, vaya a ","hyperdent-cv-tutorial-link":"Tutoriales (clic)","hyperdent-cv-step-21-end":"."});

@@ -37,4 +37,14 @@
     </div>`;
 
   productMenu.append(hyperdentMenu);
+
+  const hyperdentSubmenu = hyperdentMenu.querySelector(':scope > .sub-menu');
+  // Both products link to the same manuals. Keep one existing entry per manual
+  // so section targets, translation keys and navigation bindings stay intact.
+  ['features', 'tutorials'].forEach((manual) => {
+    const entry = document.getElementById(`menu-sec-mai-hd-${manual}`);
+    if (!entry) return;
+    hyperdentSubmenu.append(entry);
+    document.getElementById(`menu-sec-mf-hd-${manual}`)?.remove();
+  });
 }());

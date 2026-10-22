@@ -740,7 +740,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // showSection은 기존 초기화 범위 안에 있으므로, 공용 메뉴를 통해
     // 같은 기존 이동 흐름을 실행합니다.
     window.setTimeout(() => {
-      document.getElementById('menu-sec-mf-hd-features')?.click();
+      (document.getElementById('menu-sec-mf-hd-features') ||
+        document.getElementById('menu-sec-mai-hd-features'))?.click();
     }, 60);
   };
 
