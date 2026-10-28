@@ -1,0 +1,105 @@
+{
+  "source": "hyperDENT V10.1.3, M AI, New blank, Environment filter Yes",
+  "groups": [
+    [
+      [
+        "Amber®Mill H C10",
+        "10x8x15",
+        "8",
+        "hass",
+        200,
+        330
+      ],
+      [
+        "Amber®Mill H C12",
+        "12x10x15",
+        "10",
+        "hass",
+        616,
+        330
+      ],
+      [
+        "Amber®Mill H C14",
+        "14x12x18",
+        "12",
+        "hass",
+        1032,
+        330
+      ]
+    ],
+    [
+      [
+        "Fiber Block 19x15.5x40",
+        "Fiber 19x15.5x40",
+        "15.5",
+        "hybrid-top",
+        200,
+        365
+      ],
+      [
+        "Hybrid Ceramic 10x12x15.5",
+        "10x12.2x15.5",
+        "12.2",
+        "hybrid-top",
+        616,
+        365
+      ],
+      [
+        "Hybrid Ceramic 12.5x10.5x16",
+        "12.5x10.5x16",
+        "10.5",
+        "hybrid-top",
+        1032,
+        365
+      ],
+      [
+        "Hybrid Ceramic 12x10x15",
+        "12x10x15",
+        "10",
+        "hybrid-top",
+        200,
+        597
+      ],
+      [
+        "Hybrid Ceramic 12x14x18",
+        "12x14x18",
+        "14",
+        "hybrid-top",
+        616,
+        597
+      ],
+      [
+        "Hybrid Ceramic 14.5x12.5x18",
+        "14.5x12.5x18",
+        "12.5",
+        "hybrid-top",
+        1032,
+        597
+      ],
+      [
+        "Hybrid Ceramic 14.5x14.5x18",
+        "14.5x14.5x18",
+        "14.5",
+        "hybrid-bottom",
+        200,
+        375
+      ],
+      [
+        "Hybrid Ceramic 14x12x18",
+        "14x12x18",
+        "12",
+        "hybrid-bottom",
+        616,
+        375
+      ],
+      [
+        "Hybrid Ceramic 19x15.5x40",
+        "19x15.5x40",
+        "15.5",
+        "hybrid-bottom",
+        1032,
+        375
+      ]
+    ]
+  ]
+}

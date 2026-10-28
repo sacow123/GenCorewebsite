@@ -1,0 +1,535 @@
+{
+  "source": "hyperDENT V10.1.2 / V10.1.2_MillFix / DB_MillFix_V10.1.X_260830_R1",
+  "groups": [
+    {
+      "name": "Hybrid Ceramic Block",
+      "subgroups": [
+        {
+          "name": "Hass",
+          "products": [
+            {
+              "name": "Amber®Mill H C10",
+              "geometry": "10x8x15",
+              "height": 8,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-1-1.webp"
+            },
+            {
+              "name": "Amber®Mill H C12",
+              "geometry": "12x10x15",
+              "height": 10,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-1-2.webp"
+            },
+            {
+              "name": "Amber®Mill H C14",
+              "geometry": "14x12x18",
+              "height": 12,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-1-3.webp"
+            }
+          ]
+        },
+        {
+          "name": "Hybrid Ceramic",
+          "products": [
+            {
+              "name": "Fiber Block 19x15.5x40",
+              "geometry": "Fiber 19x15.5x40",
+              "height": 15.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-2-1.webp"
+            },
+            {
+              "name": "Hybrid Ceramic (C10)10.5x8.5x15",
+              "geometry": "10.5x8.5x15",
+              "height": 8.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-2-2.webp"
+            },
+            {
+              "name": "Hybrid Ceramic (C12)12.5x10.5x15",
+              "geometry": "12.5x10.5x15",
+              "height": 10.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-2-3.webp"
+            },
+            {
+              "name": "Hybrid Ceramic (C14)14.5x12.5x18",
+              "geometry": "14.5x12.5x18",
+              "height": 12.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-2-4.webp"
+            },
+            {
+              "name": "Hybrid Ceramic (L14)14.5x14.5x18",
+              "geometry": "14.5x14.5x18",
+              "height": 14.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-2-5.webp"
+            },
+            {
+              "name": "Hybrid Ceramic (L16)16x14.5x18",
+              "geometry": "16x14.5x18",
+              "height": 14.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-2-6.webp"
+            },
+            {
+              "name": "Hybrid Ceramic (Long) 19x15x36",
+              "geometry": "19x15x36",
+              "height": 15,
+              "image": "assets/images/millfix-hyperdent-materials/material-1-2-7.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amber_Dry Block",
+      "subgroups": [
+        {
+          "name": "A1 / 00",
+          "products": [
+            {
+              "name": "Dry-Mill 21x16.8x20",
+              "geometry": "21x16.8.5x20",
+              "height": 16.8,
+              "image": "assets/images/millfix-hyperdent-materials/material-2-1-1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hybrid Ceramic Disc",
+      "subgroups": [
+        {
+          "name": "Hybrid Ceramic",
+          "products": [
+            {
+              "name": "Hybrid Ceramic D98xL08",
+              "geometry": "Disc_D98xL8",
+              "height": 8,
+              "image": "assets/images/millfix-hyperdent-materials/material-3-1-1.webp"
+            },
+            {
+              "name": "Hybrid Ceramic D98xL10",
+              "geometry": "Disc_D98xL10",
+              "height": 10,
+              "image": "assets/images/millfix-hyperdent-materials/material-3-1-2.webp"
+            },
+            {
+              "name": "Hybrid Ceramic D98xL12",
+              "geometry": "Disc_D98xL12",
+              "height": 12,
+              "image": "assets/images/millfix-hyperdent-materials/material-3-1-3.webp"
+            },
+            {
+              "name": "Hybrid Ceramic D98xL14",
+              "geometry": "Disc_D98xL14",
+              "height": 14,
+              "image": "assets/images/millfix-hyperdent-materials/material-3-1-4.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PEEK Block",
+      "subgroups": [
+        {
+          "name": "PEEK",
+          "products": [
+            {
+              "name": "PEEK Block 8x8x15",
+              "geometry": "8x8x15",
+              "height": 8,
+              "image": "assets/images/millfix-hyperdent-materials/material-4-1-1.webp"
+            },
+            {
+              "name": "PEEK Block 10x8.5x15",
+              "geometry": "10x8.5x15",
+              "height": 8.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-4-1-2.webp"
+            },
+            {
+              "name": "PEEK Block 12.5x10.5x15",
+              "geometry": "12.5x10.5x15",
+              "height": 10.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-4-1-3.webp"
+            },
+            {
+              "name": "PEEK Block 14.5x12.5x18",
+              "geometry": "14.5x12.5x18",
+              "height": 12.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-4-1-4.webp"
+            },
+            {
+              "name": "PEEK Block 14.5x14.5x18",
+              "geometry": "14.5x14.5x18",
+              "height": 14.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-4-1-5.webp"
+            },
+            {
+              "name": "PEEK Block 16x14.5x18",
+              "geometry": "16x14.5x18",
+              "height": 14.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-4-1-6.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PEEK Disc",
+      "subgroups": [
+        {
+          "name": "PEEK",
+          "products": [
+            {
+              "name": "PEEK D98xL10",
+              "geometry": "Disc_D98xL10",
+              "height": 10,
+              "image": "assets/images/millfix-hyperdent-materials/material-5-1-1.webp"
+            },
+            {
+              "name": "PEEK D98xL12",
+              "geometry": "Disc_D98xL12",
+              "height": 12,
+              "image": "assets/images/millfix-hyperdent-materials/material-5-1-2.webp"
+            },
+            {
+              "name": "PEEK D98xL14",
+              "geometry": "Disc_D98xL14",
+              "height": 14,
+              "image": "assets/images/millfix-hyperdent-materials/material-5-1-3.webp"
+            },
+            {
+              "name": "PEEK D98xL16",
+              "geometry": "Disc_D98xL16",
+              "height": 16,
+              "image": "assets/images/millfix-hyperdent-materials/material-5-1-4.webp"
+            },
+            {
+              "name": "PEEK D98xL18",
+              "geometry": "Disc_D98xL18",
+              "height": 18,
+              "image": "assets/images/millfix-hyperdent-materials/material-5-1-5.webp"
+            },
+            {
+              "name": "PEEK D98xL20",
+              "geometry": "Disc_D98xL20",
+              "height": 20,
+              "image": "assets/images/millfix-hyperdent-materials/material-5-1-6.webp"
+            },
+            {
+              "name": "PEEK D98xL22",
+              "geometry": "Disc_D98xL22",
+              "height": 22,
+              "image": "assets/images/millfix-hyperdent-materials/material-5-1-7.webp"
+            },
+            {
+              "name": "PEEK D98xL25",
+              "geometry": "Disc_D98xL25",
+              "height": 25,
+              "image": "assets/images/millfix-hyperdent-materials/material-5-1-8.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PMMA Block",
+      "subgroups": [
+        {
+          "name": "PMMA",
+          "products": [
+            {
+              "name": "PMMA 18x16x18",
+              "geometry": "18x16x18",
+              "height": 16,
+              "image": "assets/images/millfix-hyperdent-materials/material-6-1-1.webp"
+            },
+            {
+              "name": "PMMA 19x15.5x36",
+              "geometry": "19x15.5x36",
+              "height": 15.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-6-1-2.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PMMA Disc",
+      "subgroups": [
+        {
+          "name": "PMMA",
+          "products": [
+            {
+              "name": "PMMA D98xL10",
+              "geometry": "Disc_D98xL10",
+              "height": 10,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-1.webp"
+            },
+            {
+              "name": "PMMA D98xL12",
+              "geometry": "Disc_D98xL12",
+              "height": 12,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-2.webp"
+            },
+            {
+              "name": "PMMA D98xL14",
+              "geometry": "Disc_D98xL14",
+              "height": 14,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-3.webp"
+            },
+            {
+              "name": "PMMA D98xL16",
+              "geometry": "Disc_D98xL16",
+              "height": 16,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-4.webp"
+            },
+            {
+              "name": "PMMA D98xL18",
+              "geometry": "Disc_D98xL18",
+              "height": 18,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-5.webp"
+            },
+            {
+              "name": "PMMA D98xL20",
+              "geometry": "Disc_D98xL20",
+              "height": 20,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-6.webp"
+            },
+            {
+              "name": "PMMA D98xL22",
+              "geometry": "Disc_D98xL22",
+              "height": 22,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-7.webp"
+            },
+            {
+              "name": "PMMA D98xL25",
+              "geometry": "Disc_D98xL25",
+              "height": 25,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-8.webp"
+            },
+            {
+              "name": "PMMA D98xL30",
+              "geometry": "Disc_D98xL30",
+              "height": 30,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-9.webp"
+            },
+            {
+              "name": "PMMA D98xL35",
+              "geometry": "Disc_D98xL35",
+              "height": 35,
+              "image": "assets/images/millfix-hyperdent-materials/material-7-1-10.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zirconia",
+      "subgroups": [
+        {
+          "name": "Sintering Metal",
+          "products": [
+            {
+              "name": "Sintering Metal D98xL10",
+              "geometry": "Disc_D98xL10",
+              "height": 10,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-1-1.webp"
+            },
+            {
+              "name": "Sintering Metal D98xL12",
+              "geometry": "Disc_D98xL12",
+              "height": 12,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-1-2.webp"
+            },
+            {
+              "name": "Sintering Metal D98xL14",
+              "geometry": "Disc_D98xL14",
+              "height": 14,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-1-3.webp"
+            },
+            {
+              "name": "Sintering Metal D98xL16",
+              "geometry": "Disc_D98xL16",
+              "height": 16,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-1-4.webp"
+            },
+            {
+              "name": "Sintering Metal D98xL18",
+              "geometry": "Disc_D98xL18",
+              "height": 18,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-1-5.webp"
+            },
+            {
+              "name": "Sintering Metal D98xL20",
+              "geometry": "Disc_D98xL20",
+              "height": 20,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-1-6.webp"
+            },
+            {
+              "name": "Sintering Metal D98xL22",
+              "geometry": "Disc_D98xL22",
+              "height": 22,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-1-7.webp"
+            },
+            {
+              "name": "Sintering Metal D98xL25",
+              "geometry": "Disc_D98xL25",
+              "height": 25,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-1-8.webp"
+            }
+          ]
+        },
+        {
+          "name": "Zirconia",
+          "products": [
+            {
+              "name": "Zirconia D98xL10",
+              "geometry": "Disc_D98xL10",
+              "height": 10,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-1.webp"
+            },
+            {
+              "name": "Zirconia D98xL12",
+              "geometry": "Disc_D98xL12",
+              "height": 12,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-2.webp"
+            },
+            {
+              "name": "Zirconia D98xL14",
+              "geometry": "Disc_D98xL14",
+              "height": 14,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-3.webp"
+            },
+            {
+              "name": "Zirconia D98xL16",
+              "geometry": "Disc_D98xL16",
+              "height": 16,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-4.webp"
+            },
+            {
+              "name": "Zirconia D98xL18",
+              "geometry": "Disc_D98xL18",
+              "height": 18,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-5.webp"
+            },
+            {
+              "name": "Zirconia D98xL20",
+              "geometry": "Disc_D98xL20",
+              "height": 20,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-6.webp"
+            },
+            {
+              "name": "Zirconia D98xL22",
+              "geometry": "Disc_D98xL22",
+              "height": 22,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-7.webp"
+            },
+            {
+              "name": "Zirconia D98xL25",
+              "geometry": "Disc_D98xL25",
+              "height": 25,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-8.webp"
+            },
+            {
+              "name": "Zirconia D98xL30",
+              "geometry": "Disc_D98xL30",
+              "height": 30,
+              "image": "assets/images/millfix-hyperdent-materials/material-8-2-9.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wax Disc",
+      "subgroups": [
+        {
+          "name": "Wax",
+          "products": [
+            {
+              "name": "Wax D98xL10",
+              "geometry": "Disc_D98xL10",
+              "height": 10,
+              "image": "assets/images/millfix-hyperdent-materials/material-9-1-1.webp"
+            },
+            {
+              "name": "Wax D98xL12",
+              "geometry": "Disc_D98xL12",
+              "height": 12,
+              "image": "assets/images/millfix-hyperdent-materials/material-9-1-2.webp"
+            },
+            {
+              "name": "Wax D98xL14",
+              "geometry": "Disc_D98xL14",
+              "height": 14,
+              "image": "assets/images/millfix-hyperdent-materials/material-9-1-3.webp"
+            },
+            {
+              "name": "Wax D98xL16",
+              "geometry": "Disc_D98xL16",
+              "height": 16,
+              "image": "assets/images/millfix-hyperdent-materials/material-9-1-4.webp"
+            },
+            {
+              "name": "Wax D98xL18",
+              "geometry": "Disc_D98xL18",
+              "height": 18,
+              "image": "assets/images/millfix-hyperdent-materials/material-9-1-5.webp"
+            },
+            {
+              "name": "Wax D98xL20",
+              "geometry": "Disc_D98xL20",
+              "height": 20,
+              "image": "assets/images/millfix-hyperdent-materials/material-9-1-6.webp"
+            },
+            {
+              "name": "Wax D98xL22",
+              "geometry": "Disc_D98xL22",
+              "height": 22,
+              "image": "assets/images/millfix-hyperdent-materials/material-9-1-7.webp"
+            },
+            {
+              "name": "Wax D98xL25",
+              "geometry": "Disc_D98xL25",
+              "height": 25,
+              "image": "assets/images/millfix-hyperdent-materials/material-9-1-8.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zirconia Block",
+      "subgroups": [
+        {
+          "name": "Zirconia",
+          "products": [
+            {
+              "name": "Zirconia 14.5x14.5x18",
+              "geometry": "14.5x14.5x18",
+              "height": 14.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-10-1-1.webp"
+            },
+            {
+              "name": "Zirconia 15.5x15.5x36",
+              "geometry": "15.5x15.5x36",
+              "height": 15.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-10-1-2.webp"
+            },
+            {
+              "name": "Zirconia 19x15.5x20",
+              "geometry": "19x15.5x20",
+              "height": 15.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-10-1-3.webp"
+            },
+            {
+              "name": "Zirconia 19x15.5x36",
+              "geometry": "19x15.5x36",
+              "height": 15.5,
+              "image": "assets/images/millfix-hyperdent-materials/material-10-1-4.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

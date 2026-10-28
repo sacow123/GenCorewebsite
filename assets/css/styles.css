@@ -1293,7 +1293,11 @@ body:has(#sec-mai-settings .mai-settings-operation-border:is(:hover,:focus-visib
 html:is([lang="en"],[lang="ja"],[lang="es"]) #sec-mai-settings .mai-wet-to-dry-photos .mai-wet-to-dry-ko { display:none; }
 html:is([lang="en"],[lang="ja"],[lang="es"]) #sec-mai-settings .mai-wet-to-dry-photos .mai-wet-to-dry-international { display:block; }
 
-/* Measured callouts on the Korean wet-to-dry confirmation only. */
+/* The international confirmation places its OK button below the Korean one. */
+html:is([lang="en"],[lang="ja"],[lang="es"]) #sec-mai-settings .mai-wet-to-dry-guide .mai-settings-operation-border[data-operation-border="2"] { left:52.24%!important;top:68.47%!important;width:7.96%!important;height:5.31%!important; }
+html:is([lang="en"],[lang="ja"],[lang="es"]) #sec-mai-settings .mai-wet-to-dry-guide .mai-settings-operation-border[data-operation-border="2"] + .mai-settings-callout-anchor { left:52.24%!important;top:71.125%!important; }
+
+/* Measured callouts shared by the wet-to-dry confirmation photos. */
 #sec-mai-settings .mai-wet-to-dry-guide:has(.mai-settings-operation-border:hover,.mai-settings-operation-border:focus-visible,.mai-settings-operation-border[aria-expanded="true"]) .mai-settings-operation-border { opacity:.15; }
 #sec-mai-settings .mai-wet-to-dry-guide .mai-settings-operation-border:is(:hover,:focus-visible,[aria-expanded="true"]) { opacity:1!important;animation:none!important;background:rgba(255,204,0,.10);box-shadow:0 0 0 2px rgba(255,204,0,.18); }
 #sec-mai-settings .mai-wet-to-dry-guide:has(.mai-settings-operation-border:hover) .mai-settings-operation-border:not(:hover) + .mai-settings-callout-anchor .mai-settings-callout { opacity:0;visibility:hidden; }
@@ -1326,3 +1330,164 @@ html:is([lang="en"],[lang="ja"],[lang="es"]) #sec-mai-settings .mai-wet-to-dry-p
 #sec-mai-settings .mai-settings-callout[data-direction="right"]::before, #sec-mai-settings .mai-settings-callout[data-direction="right"]::after { top:var(--cal-tip-y,50%); }
 
 
+
+/* Cleaning controls are scoped to the third settings photo. */
+#sec-mai-settings .mai-settings-cleaning-image .mai-settings-callout { bottom:15px; }
+#sec-mai-settings .mai-settings-cleaning-image:has([data-cleaning-border]:is(:hover,:focus-visible,[aria-expanded="true"])) [data-cleaning-border] { opacity:.15; }
+#sec-mai-settings .mai-settings-cleaning-image [data-cleaning-border]:is(:hover,:focus-visible,[aria-expanded="true"]) { opacity:1!important;animation:none!important;background:rgba(255,204,0,.10);box-shadow:0 0 0 2px rgba(255,204,0,.18); }
+#sec-mai-settings .mai-settings-cleaning-image [data-cleaning-border]:is(:hover,:focus-visible,[aria-expanded="true"]) + .mai-settings-callout-anchor .mai-settings-callout { opacity:1;visibility:visible; }
+#sec-mai-settings .mai-settings-cleaning-image:has([data-cleaning-border]:hover) [data-cleaning-border]:not(:hover) + .mai-settings-callout-anchor .mai-settings-callout { opacity:0;visibility:hidden; }
+
+
+/* Fourth settings photo controls. */
+#sec-mai-settings .mai-settings-other-image:has(.mai-settings-operation-border:is(:hover,:focus-visible,[aria-expanded="true"])) .mai-settings-operation-border { opacity:.15; }
+#sec-mai-settings .mai-settings-other-image .mai-settings-operation-border:is(:hover,:focus-visible,[aria-expanded="true"]) { opacity:1!important;animation:none!important;background:rgba(255,204,0,.10);box-shadow:0 0 0 2px rgba(255,204,0,.18); }
+#sec-mai-settings .mai-settings-other-image:has(.mai-settings-operation-border:hover) .mai-settings-operation-border:not(:hover) + .mai-settings-callout-anchor .mai-settings-callout { opacity:0;visibility:hidden; }
+
+/* Jump links for the four settings photos. */
+#sec-mai-settings .mai-settings-photo-nav { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px; }
+#sec-mai-settings .mai-settings-photo-nav a { padding:9px 14px;border:1px solid #c4b5fd;border-radius:8px;background:#f5f3ff;color:#6d28d9;font-weight:700;text-decoration:none; }
+#sec-mai-settings .mai-settings-photo-nav a:is(:hover,:focus-visible) { background:#ede9fe;outline:2px solid #a78bfa;outline-offset:2px; }
+#sec-mai-settings [data-settings-photo] { scroll-margin-top:80px; }
+
+/* Fourth photo: popup bodies sit to the right of their measured tips. */
+#sec-mai-settings .mai-settings-other-image .mai-settings-callout[data-direction="left"] { bottom:auto;top:var(--cal-top,0px);transform:none; }
+#sec-mai-settings .mai-settings-other-image .mai-settings-callout[data-direction="left"]::before,
+#sec-mai-settings .mai-settings-other-image .mai-settings-callout[data-direction="left"]::after { left:auto;right:100%;top:var(--cal-tip-y,50%);bottom:auto;transform:translateY(-50%);border:12px solid transparent;border-left:0;border-right:15px solid #ffcc00; }
+#sec-mai-settings .mai-settings-other-image .mai-settings-callout[data-direction="left"]::after { border:7px solid transparent;border-left:0;border-right:7px solid rgba(20,15,35,.45); }
+
+/* Material categories belong only to the M AI hyperDENT blanks page. */
+#sec-mai-hd-blank .mai-blank-materials { display:flex;flex-direction:column;gap:8px; }
+#sec-mai-hd-blank .mai-blank-material { border:1px solid #bae6fd;border-radius:8px;background:#f0f9ff;overflow:hidden; }
+#sec-mai-hd-blank .mai-blank-material > summary { padding:13px 16px;color:#075985;font-weight:700;cursor:pointer; }
+#sec-mai-hd-blank .mai-blank-material > summary:is(:hover,:focus-visible) { background:#e0f2fe; }
+#sec-mai-hd-blank .mai-blank-material > summary:focus-visible { outline:2px solid #0284c7;outline-offset:-3px; }
+#sec-mai-hd-blank .mai-blank-material[open] > summary { border-bottom:1px solid #bae6fd; }
+#sec-mai-hd-blank .mai-blank-material-content { min-height:48px;padding:16px;background:#fff; }
+
+#sec-mai-hd-blank .mai-blank-materials-toggle > summary { padding:14px 16px;border:1px solid #c4b5fd;border-radius:8px;background:#f5f3ff;color:#6d28d9;font-weight:800;cursor:pointer; }
+#sec-mai-hd-blank .mai-blank-materials-toggle > summary:focus-visible { outline:2px solid #8b5cf6;outline-offset:3px; }
+#sec-mai-hd-blank .mai-blank-materials-toggle > .mai-blank-materials { margin-top:12px; }
+
+/* Nested material groups from the supplied hyperDENT references. */
+#sec-mai-hd-blank .mai-blank-submaterial + .mai-blank-submaterial { margin-top:8px; }
+#sec-mai-hd-blank .mai-blank-submaterial > summary { padding:8px 10px;color:#075985;font-weight:700;cursor:pointer;border-radius:6px; }
+#sec-mai-hd-blank .mai-blank-submaterial > summary:is(:hover,:focus-visible) { background:#e0f2fe; }
+#sec-mai-hd-blank .mai-blank-swatch { display:inline-block;width:22px;height:22px;margin:0 8px 0 4px;border:1px solid #2563eb;vertical-align:middle;background:#fff8dc; }
+#sec-mai-hd-blank .mai-blank-swatch.hass { background:linear-gradient(#fff,#ffe17b); }
+#sec-mai-hd-blank .mai-blank-swatch.glass { background:linear-gradient(#fff,#9b26ff); }
+#sec-mai-hd-blank .mai-blank-swatch.emax { background:#da62dd; }
+#sec-mai-hd-blank .mai-blank-swatch.metal { background:linear-gradient(#fff,#8d98a2); }
+#sec-mai-hd-blank .mai-blank-swatch.duraflex { background:linear-gradient(#dac0ff,#fff); }
+#sec-mai-hd-blank .mai-blank-submaterial-content { min-height:40px;margin:8px 10px 0 38px;border-left:2px solid #e0f2fe; }
+
+#sec-mai-hd-blank .mai-blank-swatch.zirconia { background:linear-gradient(to bottom,#fff8dc 0%,#fff8dc 70%,#ffe17b 70%,#ffe17b 100%); }
+#sec-mai-hd-blank .mai-blank-swatch.wax { background:linear-gradient(#fff,#70ff89); }
+
+/* Product cards for the first material group. */
+#sec-mai-hd-blank .mai-blank-submaterial-content:has(.mai-blank-product-grid) { margin:12px 0 0;border-left:0; }
+#sec-mai-hd-blank .mai-blank-product-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:16px; }
+#sec-mai-hd-blank .mai-blank-product { display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #c7d2fe;border-radius:8px;background:#fff;min-width:0; }
+#sec-mai-hd-blank .mai-blank-product img { width:43%;max-width:170px;height:auto;object-fit:contain;flex-shrink:0; }
+#sec-mai-hd-blank .mai-blank-product dl { margin:0;min-width:0;line-height:1.3; }
+#sec-mai-hd-blank .mai-blank-product dt { color:#1d4ed8;font-size:11px;margin-top:5px; }
+#sec-mai-hd-blank .mai-blank-product dt:first-child { margin-top:0; }
+#sec-mai-hd-blank .mai-blank-product dd { margin:0;color:#111827;font-size:14px;overflow-wrap:anywhere; }
+@media(max-width:480px) { #sec-mai-hd-blank .mai-blank-product { padding:10px;gap:8px; } #sec-mai-hd-blank .mai-blank-product img { width:36%; } }
+
+#sec-mai-hd-blank .mai-blank-dimensions-card { margin-top:24px;padding:20px;border:1px solid #c4b5fd;border-radius:12px;background:#fff; }
+#sec-mai-hd-blank .mai-blank-dimensions-card h3 { margin:0 0 16px;font-size:20px;font-weight:800;color:#374151; }
+#sec-mai-hd-blank .mai-blank-dimensions-images { display:flex;align-items:center;gap:20px;overflow-x:auto; }
+#sec-mai-hd-blank .mai-blank-dimensions-images img { display:block;flex:0 0 calc((100% - 20px)/2);width:calc((100% - 20px)/2);min-width:240px;height:auto;object-fit:contain;border-radius:8px; }
+
+#sec-mai-hd-blank .mai-blank-dimensions-images img { flex-basis:calc((100% - 20px)*.35);width:calc((100% - 20px)*.35);min-width:0;cursor:zoom-in; }
+#sec-mai-hd-blank .mai-blank-dimensions-images img:focus-visible { outline:3px solid #8b5cf6;outline-offset:3px; }
+
+/* Four cards per row; small groups use their actual item count. */
+#sec-mai-hd-blank .mai-blank-product-grid { grid-template-columns:repeat(var(--product-columns,4),minmax(0,1fr));gap:12px; }
+#sec-mai-hd-blank .mai-blank-product { flex-direction:column;align-items:stretch;gap:8px;padding:12px; }
+#sec-mai-hd-blank .mai-blank-product img { width:100%;height:110px;max-width:none;object-fit:contain; }
+#sec-mai-hd-blank .mai-blank-product dd { font-size:13px; }
+#sec-mai-hd-blank .mai-blank-product dt { font-size:11px; }
+@media(max-width:700px) { #sec-mai-hd-blank .mai-blank-product-grid { grid-template-columns:repeat(min(2,var(--product-columns,4)),minmax(0,1fr)); } }
+@media(max-width:420px) { #sec-mai-hd-blank .mai-blank-product-grid { grid-template-columns:1fr; } }
+
+/* Share spare row space between the remaining cards as well. */
+#sec-mai-hd-blank .mai-blank-product-grid { display:flex;flex-wrap:wrap; }
+#sec-mai-hd-blank .mai-blank-product-grid > .mai-blank-product { box-sizing:border-box;flex:1 1 calc((100% - 36px)/4);min-width:0; }
+@media(max-width:700px) { #sec-mai-hd-blank .mai-blank-product-grid > .mai-blank-product { flex-basis:calc((100% - 12px)/2); } }
+@media(max-width:420px) { #sec-mai-hd-blank .mai-blank-product-grid > .mai-blank-product { flex-basis:100%; } }
+
+/* Lithium Disilicate Disc / Glass Ceramic: two rows of three. */
+@media(min-width:701px) {
+  #sec-mai-hd-blank [data-material="7"] .mai-blank-product-grid > .mai-blank-product { flex-basis:calc((100% - 24px)/3); }
+}
+
+/* MillFix material catalogue: independently scoped to its own page. */
+/* Material categories belong only to the M AI hyperDENT blanks page. */
+#sec-mf-hd-blanks .mai-blank-materials { display:flex;flex-direction:column;gap:8px; }
+#sec-mf-hd-blanks .mai-blank-material { border:1px solid #bae6fd;border-radius:8px;background:#f0f9ff;overflow:hidden; }
+#sec-mf-hd-blanks .mai-blank-material > summary { padding:13px 16px;color:#075985;font-weight:700;cursor:pointer; }
+#sec-mf-hd-blanks .mai-blank-material > summary:is(:hover,:focus-visible) { background:#e0f2fe; }
+#sec-mf-hd-blanks .mai-blank-material > summary:focus-visible { outline:2px solid #0284c7;outline-offset:-3px; }
+#sec-mf-hd-blanks .mai-blank-material[open] > summary { border-bottom:1px solid #bae6fd; }
+#sec-mf-hd-blanks .mai-blank-material-content { min-height:48px;padding:16px;background:#fff; }
+
+#sec-mf-hd-blanks .mai-blank-materials-toggle > summary { padding:14px 16px;border:1px solid #c4b5fd;border-radius:8px;background:#f5f3ff;color:#6d28d9;font-weight:800;cursor:pointer; }
+#sec-mf-hd-blanks .mai-blank-materials-toggle > summary:focus-visible { outline:2px solid #8b5cf6;outline-offset:3px; }
+#sec-mf-hd-blanks .mai-blank-materials-toggle > .mai-blank-materials { margin-top:12px; }
+
+/* Nested material groups from the supplied hyperDENT references. */
+#sec-mf-hd-blanks .mai-blank-submaterial + .mai-blank-submaterial { margin-top:8px; }
+#sec-mf-hd-blanks .mai-blank-submaterial > summary { padding:8px 10px;color:#075985;font-weight:700;cursor:pointer;border-radius:6px; }
+#sec-mf-hd-blanks .mai-blank-submaterial > summary:is(:hover,:focus-visible) { background:#e0f2fe; }
+#sec-mf-hd-blanks .mai-blank-swatch { display:inline-block;width:22px;height:22px;margin:0 8px 0 4px;border:1px solid #2563eb;vertical-align:middle;background:#fff8dc; }
+#sec-mf-hd-blanks .mai-blank-swatch.hass { background:linear-gradient(#fff,#ffe17b); }
+#sec-mf-hd-blanks .mai-blank-swatch.glass { background:linear-gradient(#fff,#9b26ff); }
+#sec-mf-hd-blanks .mai-blank-swatch.emax { background:#da62dd; }
+#sec-mf-hd-blanks .mai-blank-swatch.metal { background:linear-gradient(#fff,#8d98a2); }
+#sec-mf-hd-blanks .mai-blank-swatch.duraflex { background:linear-gradient(#dac0ff,#fff); }
+#sec-mf-hd-blanks .mai-blank-submaterial-content { min-height:40px;margin:8px 10px 0 38px;border-left:2px solid #e0f2fe; }
+
+#sec-mf-hd-blanks .mai-blank-swatch.zirconia { background:linear-gradient(to bottom,#fff8dc 0%,#fff8dc 70%,#ffe17b 70%,#ffe17b 100%); }
+#sec-mf-hd-blanks .mai-blank-swatch.wax { background:linear-gradient(#fff,#70ff89); }
+
+/* Product cards for the first material group. */
+#sec-mf-hd-blanks .mai-blank-submaterial-content:has(.mai-blank-product-grid) { margin:12px 0 0;border-left:0; }
+#sec-mf-hd-blanks .mai-blank-product-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:16px; }
+#sec-mf-hd-blanks .mai-blank-product { display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #c7d2fe;border-radius:8px;background:#fff;min-width:0; }
+#sec-mf-hd-blanks .mai-blank-product img { width:43%;max-width:170px;height:auto;object-fit:contain;flex-shrink:0; }
+#sec-mf-hd-blanks .mai-blank-product dl { margin:0;min-width:0;line-height:1.3; }
+#sec-mf-hd-blanks .mai-blank-product dt { color:#1d4ed8;font-size:11px;margin-top:5px; }
+#sec-mf-hd-blanks .mai-blank-product dt:first-child { margin-top:0; }
+#sec-mf-hd-blanks .mai-blank-product dd { margin:0;color:#111827;font-size:14px;overflow-wrap:anywhere; }
+@media(max-width:480px) { #sec-mf-hd-blanks .mai-blank-product { padding:10px;gap:8px; } #sec-mf-hd-blanks .mai-blank-product img { width:36%; } }
+
+#sec-mf-hd-blanks .mai-blank-dimensions-card { margin-top:24px;padding:20px;border:1px solid #c4b5fd;border-radius:12px;background:#fff; }
+#sec-mf-hd-blanks .mai-blank-dimensions-card h3 { margin:0 0 16px;font-size:20px;font-weight:800;color:#374151; }
+#sec-mf-hd-blanks .mai-blank-dimensions-images { display:flex;align-items:center;gap:20px;overflow-x:auto; }
+#sec-mf-hd-blanks .mai-blank-dimensions-images img { display:block;flex:0 0 calc((100% - 20px)/2);width:calc((100% - 20px)/2);min-width:240px;height:auto;object-fit:contain;border-radius:8px; }
+
+#sec-mf-hd-blanks .mai-blank-dimensions-images img { flex-basis:calc((100% - 20px)*.35);width:calc((100% - 20px)*.35);min-width:0;cursor:zoom-in; }
+#sec-mf-hd-blanks .mai-blank-dimensions-images img:focus-visible { outline:3px solid #8b5cf6;outline-offset:3px; }
+
+/* Four cards per row; small groups use their actual item count. */
+#sec-mf-hd-blanks .mai-blank-product-grid { grid-template-columns:repeat(var(--product-columns,4),minmax(0,1fr));gap:12px; }
+#sec-mf-hd-blanks .mai-blank-product { flex-direction:column;align-items:stretch;gap:8px;padding:12px; }
+#sec-mf-hd-blanks .mai-blank-product img { width:100%;height:110px;max-width:none;object-fit:contain; }
+#sec-mf-hd-blanks .mai-blank-product dd { font-size:13px; }
+#sec-mf-hd-blanks .mai-blank-product dt { font-size:11px; }
+@media(max-width:700px) { #sec-mf-hd-blanks .mai-blank-product-grid { grid-template-columns:repeat(min(2,var(--product-columns,4)),minmax(0,1fr)); } }
+@media(max-width:420px) { #sec-mf-hd-blanks .mai-blank-product-grid { grid-template-columns:1fr; } }
+
+/* Share spare row space between the remaining cards as well. */
+#sec-mf-hd-blanks .mai-blank-product-grid { display:flex;flex-wrap:wrap; }
+#sec-mf-hd-blanks .mai-blank-product-grid > .mai-blank-product { box-sizing:border-box;flex:1 1 calc((100% - 36px)/4);min-width:0; }
+@media(max-width:700px) { #sec-mf-hd-blanks .mai-blank-product-grid > .mai-blank-product { flex-basis:calc((100% - 12px)/2); } }
+@media(max-width:420px) { #sec-mf-hd-blanks .mai-blank-product-grid > .mai-blank-product { flex-basis:100%; } }
+
+
+/* Equal-width MillFix disk and block guide cards. */
+#sec-mf-hd-blanks .mf-blank-dimensions-row { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:24px; }
+#sec-mf-hd-blanks .mf-blank-dimensions-row > .mai-blank-dimensions-card { margin-top:0;min-width:0; }
+@media(max-width:600px) { #sec-mf-hd-blanks .mf-blank-dimensions-row { grid-template-columns:1fr; } }

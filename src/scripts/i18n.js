@@ -6534,3 +6534,97 @@ Object.assign(TRANSLATIONS.ja, {"mai-wet-to-dry-faq-link":"切削液加工 ↔�
 Object.assign(TRANSLATIONS.es, {"mai-wet-to-dry-faq-link":"Fresado con refrigerante ↔️ fresado en seco: ver cómo cambiar (clic)"});
 
 Object.assign(TRANSLATIONS.es, {"mai-settings-cal-title-1":"Calibración AI de disco","mai-settings-cal-desc-1":"Ejecute la calibración AI para mecanizar discos.","mai-settings-explanation-title-1":"Calibración AI de disco","mai-settings-explanation-body-1":"Este es el proceso de calibración para mecanizar discos.","mai-settings-cal-title-2":"Calibración AI de premill","mai-settings-cal-desc-2":"Ejecute la calibración AI de premill V1.2 para mecanizar bloques premill.","mai-settings-explanation-title-2":"Calibración manual de disco","mai-settings-explanation-body-2":"Este es el proceso de calibración manual para mecanizar discos. Al utilizar la máquina por primera vez o después de formatear, ejecute siempre la calibración AI de disco antes de la calibración manual.","mai-settings-cal-title-3":"Calibración manual de disco","mai-settings-cal-desc-3":"Ejecute la calibración manual para mecanizar discos.","mai-settings-explanation-title-3":"Calibración AI de premill","mai-settings-explanation-body-3":"Este es el proceso de calibración para mecanizar barras redondas (bloques premill).","mai-settings-cal-title-4":"Calibración del alojamiento de herramientas (automática)","mai-settings-cal-desc-4":"Ejecute la calibración para corregir automáticamente las coordenadas del alojamiento de herramientas.","mai-settings-explanation-title-4":"Calibración del alojamiento de herramientas (automática)","mai-settings-explanation-body-4":"Este proceso corrige las coordenadas del alojamiento de herramientas necesarias para devolver las herramientas y operaciones similares. Recomendamos no modificarlo salvo que exista un problema.","mai-settings-cal-title-5":"Calibración del alojamiento de herramientas (manual)","mai-settings-cal-desc-5":"Ejecute la calibración para corregir manualmente las coordenadas del alojamiento de herramientas.","mai-settings-explanation-title-5":"Calibración del alojamiento de herramientas (manual)","mai-settings-explanation-body-5":"Este proceso corrige las coordenadas del alojamiento de herramientas necesarias para devolver las herramientas y operaciones similares. Recomendamos no modificarlo salvo que exista un problema."});
+
+// Shared wet-to-dry photo callouts.
+Object.assign(TRANSLATIONS.ko, {"mai-wet-dry-step-1":"①클릭!","mai-wet-dry-step-2":"②안내문 확인 후 클릭"});
+Object.assign(TRANSLATIONS.en, {"mai-wet-dry-step-1":"①Click!","mai-wet-dry-step-2":"②Read the notice, then click"});
+Object.assign(TRANSLATIONS.ja, {"mai-wet-dry-step-1":"①クリック！","mai-wet-dry-step-2":"②案内文を確認してクリック"});
+Object.assign(TRANSLATIONS.es, {"mai-wet-dry-step-1":"①¡Haga clic!","mai-wet-dry-step-2":"②Lea el aviso y haga clic"});
+
+Object.assign(TRANSLATIONS.ko, {"mai-cleaning-title-1":"Milling Room Cleaning","mai-cleaning-desc-1":"청소하기 편한 위치로 스핀들 및 암을 이동시킵니다.","mai-cleaning-title-2":"Cleaning Information","mai-cleaning-desc-2":"기계 청소 관련 정보창으로 이동합니다."});
+
+Object.assign(TRANSLATIONS.en, {"mai-cleaning-title-1":"Milling Room Cleaning","mai-cleaning-desc-1":"Moves the spindle and arm to a position convenient for cleaning.","mai-cleaning-title-2":"Cleaning Information","mai-cleaning-desc-2":"Opens the machine cleaning information window."});
+
+Object.assign(TRANSLATIONS.ja, {"mai-cleaning-title-1":"Milling Room Cleaning","mai-cleaning-desc-1":"清掃しやすい位置にスピンドルとアームを移動します。","mai-cleaning-title-2":"Cleaning Information","mai-cleaning-desc-2":"機械の清掃に関する情報ウィンドウを開きます。"});
+
+Object.assign(TRANSLATIONS.es, {"mai-cleaning-title-1":"Milling Room Cleaning","mai-cleaning-desc-1":"Mueve el husillo y el brazo a una posición que facilita la limpieza.","mai-cleaning-title-2":"Cleaning Information","mai-cleaning-desc-2":"Abre la ventana de información sobre la limpieza de la máquina."});
+
+Object.assign(TRANSLATIONS.ko, {"mai-axis-jog-title":"Axis Jog","mai-axis-jog-desc":"화면 터치 및 키보드 조작을 통해 스핀들 과 암을 조작할 수 있습니다."});
+
+Object.assign(TRANSLATIONS.en, {"mai-axis-jog-title":"Axis Jog","mai-axis-jog-desc":"You can control the spindle and arm using the touchscreen and keyboard."});
+
+Object.assign(TRANSLATIONS.ja, {"mai-axis-jog-title":"Axis Jog","mai-axis-jog-desc":"画面のタッチとキーボード操作でスピンドルとアームを操作できます。"});
+
+Object.assign(TRANSLATIONS.es, {"mai-axis-jog-title":"Axis Jog","mai-axis-jog-desc":"Puede controlar el husillo y el brazo mediante la pantalla táctil y el teclado."});
+
+Object.assign(TRANSLATIONS.ko, {"mai-other-title-1":"Teamviewer","mai-other-desc-1":"원격 지원을 위한 Teamviewer를 실행합니다.","mai-other-title-2":"Exit Control program","mai-other-desc-2":"컨트롤 프로그램만 종료합니다.","mai-other-title-3":"Parameter I/O list","mai-other-desc-3":"설정값 페이지로 이동합니다."});
+
+Object.assign(TRANSLATIONS.en, {"mai-other-title-1":"Teamviewer","mai-other-desc-1":"Launches Teamviewer for remote support.","mai-other-title-2":"Exit Control program","mai-other-desc-2":"Closes only the control program.","mai-other-title-3":"Parameter I/O list","mai-other-desc-3":"Opens the settings page."});
+
+Object.assign(TRANSLATIONS.ja, {"mai-other-title-1":"Teamviewer","mai-other-desc-1":"リモートサポート用のTeamviewerを起動します。","mai-other-title-2":"Exit Control program","mai-other-desc-2":"コントロールプログラムのみを終了します。","mai-other-title-3":"Parameter I/O list","mai-other-desc-3":"設定値ページを開きます。"});
+
+Object.assign(TRANSLATIONS.es, {"mai-other-title-1":"Teamviewer","mai-other-desc-1":"Inicia Teamviewer para recibir asistencia remota.","mai-other-title-2":"Exit Control program","mai-other-desc-2":"Cierra únicamente el programa de control.","mai-other-title-3":"Parameter I/O list","mai-other-desc-3":"Abre la página de ajustes."});
+
+Object.assign(TRANSLATIONS.ko, {"mai-tool-care-intro":"공구 상태는 가공 결과물에 직접적인 영향을 미치는 매우 중요한 요소입니다.","mai-tool-care-time":"공구별 사용 권장 시간","mai-tool-care-reference":"을 참고하시고","mai-tool-care-replace":"공구를 교체","mai-tool-care-manage":" 및 관리하시는 걸 권장합니다."});
+
+Object.assign(TRANSLATIONS.en, {"mai-tool-care-intro":"Tool condition is a very important factor that directly affects milling results.","mai-tool-care-time":"Recommended usage time for each tool","mai-tool-care-reference":" should be used as a reference.","mai-tool-care-replace":"Replace tools","mai-tool-care-manage":" and maintain them as recommended."});
+
+Object.assign(TRANSLATIONS.ja, {"mai-tool-care-intro":"工具の状態は加工結果に直接影響する非常に重要な要素です。","mai-tool-care-time":"工具ごとの推奨使用時間","mai-tool-care-reference":"を参考にして、","mai-tool-care-replace":"工具の交換","mai-tool-care-manage":"および管理を行うことを推奨します。"});
+
+Object.assign(TRANSLATIONS.es, {"mai-tool-care-intro":"El estado de las herramientas es un factor muy importante que afecta directamente al resultado del fresado.","mai-tool-care-time":"El tiempo de uso recomendado para cada herramienta","mai-tool-care-reference":" debe utilizarse como referencia.","mai-tool-care-replace":"Sustituya las herramientas","mai-tool-care-manage":" y realice su mantenimiento según lo recomendado."});
+
+Object.assign(TRANSLATIONS.ko, {"mai-blank-material-1":"Lithium Disilicate Block","mai-blank-material-2":"Hybrid Ceramic Block","mai-blank-material-3":"Co.Cr. Disc","mai-blank-material-4":"Amber_Dry Block","mai-blank-material-5":"DuraFlex","mai-blank-material-6":"Lithium Silicate Block","mai-blank-material-7":"Lithium Disilicate Disc","mai-blank-material-8":"Ti. Block","mai-blank-material-9":"Hybrid Ceramic Disc","mai-blank-material-10":"PEEK Block","mai-blank-material-11":"PEEK Disc","mai-blank-material-12":"PMMA Block","mai-blank-material-13":"PMMA Disc","mai-blank-material-14":"Pre-Mill+Reverse","mai-blank-material-15":"Zirconia Disc","mai-blank-material-16":"Ti. Disc","mai-blank-material-17":"Wax Block","mai-blank-material-18":"Wax Disc","mai-blank-material-19":"Zirconia Block"});
+
+Object.assign(TRANSLATIONS.en, {"mai-blank-material-1":"Lithium Disilicate Block","mai-blank-material-2":"Hybrid Ceramic Block","mai-blank-material-3":"Co.Cr. Disc","mai-blank-material-4":"Amber_Dry Block","mai-blank-material-5":"DuraFlex","mai-blank-material-6":"Lithium Silicate Block","mai-blank-material-7":"Lithium Disilicate Disc","mai-blank-material-8":"Ti. Block","mai-blank-material-9":"Hybrid Ceramic Disc","mai-blank-material-10":"PEEK Block","mai-blank-material-11":"PEEK Disc","mai-blank-material-12":"PMMA Block","mai-blank-material-13":"PMMA Disc","mai-blank-material-14":"Pre-Mill+Reverse","mai-blank-material-15":"Zirconia Disc","mai-blank-material-16":"Ti. Disc","mai-blank-material-17":"Wax Block","mai-blank-material-18":"Wax Disc","mai-blank-material-19":"Zirconia Block"});
+
+Object.assign(TRANSLATIONS.ja, {"mai-blank-material-1":"Lithium Disilicate Block","mai-blank-material-2":"Hybrid Ceramic Block","mai-blank-material-3":"Co.Cr. Disc","mai-blank-material-4":"Amber_Dry Block","mai-blank-material-5":"DuraFlex","mai-blank-material-6":"Lithium Silicate Block","mai-blank-material-7":"Lithium Disilicate Disc","mai-blank-material-8":"Ti. Block","mai-blank-material-9":"Hybrid Ceramic Disc","mai-blank-material-10":"PEEK Block","mai-blank-material-11":"PEEK Disc","mai-blank-material-12":"PMMA Block","mai-blank-material-13":"PMMA Disc","mai-blank-material-14":"Pre-Mill+Reverse","mai-blank-material-15":"Zirconia Disc","mai-blank-material-16":"Ti. Disc","mai-blank-material-17":"Wax Block","mai-blank-material-18":"Wax Disc","mai-blank-material-19":"Zirconia Block"});
+
+Object.assign(TRANSLATIONS.es, {"mai-blank-material-1":"Lithium Disilicate Block","mai-blank-material-2":"Hybrid Ceramic Block","mai-blank-material-3":"Co.Cr. Disc","mai-blank-material-4":"Amber_Dry Block","mai-blank-material-5":"DuraFlex","mai-blank-material-6":"Lithium Silicate Block","mai-blank-material-7":"Lithium Disilicate Disc","mai-blank-material-8":"Ti. Block","mai-blank-material-9":"Hybrid Ceramic Disc","mai-blank-material-10":"PEEK Block","mai-blank-material-11":"PEEK Disc","mai-blank-material-12":"PMMA Block","mai-blank-material-13":"PMMA Disc","mai-blank-material-14":"Pre-Mill+Reverse","mai-blank-material-15":"Zirconia Disc","mai-blank-material-16":"Ti. Disc","mai-blank-material-17":"Wax Block","mai-blank-material-18":"Wax Disc","mai-blank-material-19":"Zirconia Block"});
+
+Object.assign(TRANSLATIONS.ko, {"mai-blank-materials-toggle":"M AI에서 가공 가능한 재료 확인하기(클릭)"});
+
+Object.assign(TRANSLATIONS.en, {"mai-blank-materials-toggle":"View materials that can be milled with M AI (click)"});
+
+Object.assign(TRANSLATIONS.ja, {"mai-blank-materials-toggle":"M AIで加工可能な材料を確認（クリック）"});
+
+Object.assign(TRANSLATIONS.es, {"mai-blank-materials-toggle":"Ver los materiales que se pueden fresar con M AI (clic)"});
+
+Object.assign(TRANSLATIONS.ko, {"mai-blank-submaterial-1-1":"Hass","mai-blank-submaterial-1-2":"Glass Ceramic","mai-blank-submaterial-1-3":"e.max","mai-blank-submaterial-2-1":"Hass","mai-blank-submaterial-2-2":"Hybrid Ceramic","mai-blank-submaterial-3-1":"Metal","mai-blank-submaterial-4-1":"A1 / 00","mai-blank-submaterial-5-1":"DuraFlex","mai-blank-submaterial-6-1":"C1","mai-blank-submaterial-7-1":"Glass Ceramic","mai-blank-submaterial-8-1":"Metal","mai-blank-submaterial-9-1":"Hybrid Ceramic","mai-blank-submaterial-10-1":"PEEK","mai-blank-submaterial-11-1":"PEEK","mai-blank-submaterial-12-1":"PMMA","mai-blank-submaterial-13-1":"PMMA","mai-blank-submaterial-14-1":"Metal"});
+
+Object.assign(TRANSLATIONS.en, {"mai-blank-submaterial-1-1":"Hass","mai-blank-submaterial-1-2":"Glass Ceramic","mai-blank-submaterial-1-3":"e.max","mai-blank-submaterial-2-1":"Hass","mai-blank-submaterial-2-2":"Hybrid Ceramic","mai-blank-submaterial-3-1":"Metal","mai-blank-submaterial-4-1":"A1 / 00","mai-blank-submaterial-5-1":"DuraFlex","mai-blank-submaterial-6-1":"C1","mai-blank-submaterial-7-1":"Glass Ceramic","mai-blank-submaterial-8-1":"Metal","mai-blank-submaterial-9-1":"Hybrid Ceramic","mai-blank-submaterial-10-1":"PEEK","mai-blank-submaterial-11-1":"PEEK","mai-blank-submaterial-12-1":"PMMA","mai-blank-submaterial-13-1":"PMMA","mai-blank-submaterial-14-1":"Metal"});
+
+Object.assign(TRANSLATIONS.ja, {"mai-blank-submaterial-1-1":"Hass","mai-blank-submaterial-1-2":"Glass Ceramic","mai-blank-submaterial-1-3":"e.max","mai-blank-submaterial-2-1":"Hass","mai-blank-submaterial-2-2":"Hybrid Ceramic","mai-blank-submaterial-3-1":"Metal","mai-blank-submaterial-4-1":"A1 / 00","mai-blank-submaterial-5-1":"DuraFlex","mai-blank-submaterial-6-1":"C1","mai-blank-submaterial-7-1":"Glass Ceramic","mai-blank-submaterial-8-1":"Metal","mai-blank-submaterial-9-1":"Hybrid Ceramic","mai-blank-submaterial-10-1":"PEEK","mai-blank-submaterial-11-1":"PEEK","mai-blank-submaterial-12-1":"PMMA","mai-blank-submaterial-13-1":"PMMA","mai-blank-submaterial-14-1":"Metal"});
+
+Object.assign(TRANSLATIONS.es, {"mai-blank-submaterial-1-1":"Hass","mai-blank-submaterial-1-2":"Glass Ceramic","mai-blank-submaterial-1-3":"e.max","mai-blank-submaterial-2-1":"Hass","mai-blank-submaterial-2-2":"Hybrid Ceramic","mai-blank-submaterial-3-1":"Metal","mai-blank-submaterial-4-1":"A1 / 00","mai-blank-submaterial-5-1":"DuraFlex","mai-blank-submaterial-6-1":"C1","mai-blank-submaterial-7-1":"Glass Ceramic","mai-blank-submaterial-8-1":"Metal","mai-blank-submaterial-9-1":"Hybrid Ceramic","mai-blank-submaterial-10-1":"PEEK","mai-blank-submaterial-11-1":"PEEK","mai-blank-submaterial-12-1":"PMMA","mai-blank-submaterial-13-1":"PMMA","mai-blank-submaterial-14-1":"Metal"});
+
+Object.assign(TRANSLATIONS.ko, {"mai-blank-submaterial-15-1":"Sintering Metal","mai-blank-submaterial-15-2":"Zirconia","mai-blank-submaterial-16-1":"Metal","mai-blank-submaterial-17-1":"Wax","mai-blank-submaterial-18-1":"Wax","mai-blank-submaterial-19-1":"Zirconia"});
+
+Object.assign(TRANSLATIONS.en, {"mai-blank-submaterial-15-1":"Sintering Metal","mai-blank-submaterial-15-2":"Zirconia","mai-blank-submaterial-16-1":"Metal","mai-blank-submaterial-17-1":"Wax","mai-blank-submaterial-18-1":"Wax","mai-blank-submaterial-19-1":"Zirconia"});
+
+Object.assign(TRANSLATIONS.ja, {"mai-blank-submaterial-15-1":"Sintering Metal","mai-blank-submaterial-15-2":"Zirconia","mai-blank-submaterial-16-1":"Metal","mai-blank-submaterial-17-1":"Wax","mai-blank-submaterial-18-1":"Wax","mai-blank-submaterial-19-1":"Zirconia"});
+
+Object.assign(TRANSLATIONS.es, {"mai-blank-submaterial-15-1":"Sintering Metal","mai-blank-submaterial-15-2":"Zirconia","mai-blank-submaterial-16-1":"Metal","mai-blank-submaterial-17-1":"Wax","mai-blank-submaterial-18-1":"Wax","mai-blank-submaterial-19-1":"Zirconia"});
+
+Object.assign(TRANSLATIONS.ko, {"mai-blank-field-name":"Name","mai-blank-field-geometry":"Blank geometry","mai-blank-field-material":"Material","mai-blank-field-color":"Color","mai-blank-field-height":"Height"});
+
+Object.assign(TRANSLATIONS.en, {"mai-blank-field-name":"Name","mai-blank-field-geometry":"Blank geometry","mai-blank-field-material":"Material","mai-blank-field-color":"Color","mai-blank-field-height":"Height"});
+
+Object.assign(TRANSLATIONS.ja, {"mai-blank-field-name":"名前","mai-blank-field-geometry":"ブランク形状","mai-blank-field-material":"材料","mai-blank-field-color":"色","mai-blank-field-height":"高さ"});
+
+Object.assign(TRANSLATIONS.es, {"mai-blank-field-name":"Nombre","mai-blank-field-geometry":"Geometría del bloque","mai-blank-field-material":"Material","mai-blank-field-color":"Color","mai-blank-field-height":"Altura"});
+
+Object.assign(TRANSLATIONS.ko, {"mai-blank-dimensions-title":"블록 재료 규격"});
+
+Object.assign(TRANSLATIONS.en, {"mai-blank-dimensions-title":"Block Material Dimensions"});
+
+Object.assign(TRANSLATIONS.ja, {"mai-blank-dimensions-title":"ブロック材料の寸法"});
+
+Object.assign(TRANSLATIONS.es, {"mai-blank-dimensions-title":"Dimensiones del material en bloque"});
+
+Object.assign(TRANSLATIONS.ko, {"mf-blank-material-1":"Hybrid Ceramic Block","mf-blank-material-1-1":"Hass","mf-blank-material-1-2":"Hybrid Ceramic","mf-blank-material-2":"Amber_Dry Block","mf-blank-material-2-1":"A1 / 00","mf-blank-material-3":"Hybrid Ceramic Disc","mf-blank-material-3-1":"Hybrid Ceramic","mf-blank-material-4":"PEEK Block","mf-blank-material-4-1":"PEEK","mf-blank-material-5":"PEEK Disc","mf-blank-material-5-1":"PEEK","mf-blank-material-6":"PMMA Block","mf-blank-material-6-1":"PMMA","mf-blank-material-7":"PMMA Disc","mf-blank-material-7-1":"PMMA","mf-blank-material-8":"Zirconia","mf-blank-material-8-1":"Sintering Metal","mf-blank-material-8-2":"Zirconia","mf-blank-material-9":"Wax Disc","mf-blank-material-9-1":"Wax","mf-blank-material-10":"Zirconia Block","mf-blank-material-10-1":"Zirconia","mf-blank-materials-toggle":"MillFix에서 가공 가능한 재료 확인하기(클릭)","mf-blank-8t-note":"8T 두께 디스크를 사용하려면 8T Jig Ring이 필요합니다."});
+
+Object.assign(TRANSLATIONS.en, {"mf-blank-material-1":"Hybrid Ceramic Block","mf-blank-material-1-1":"Hass","mf-blank-material-1-2":"Hybrid Ceramic","mf-blank-material-2":"Amber_Dry Block","mf-blank-material-2-1":"A1 / 00","mf-blank-material-3":"Hybrid Ceramic Disc","mf-blank-material-3-1":"Hybrid Ceramic","mf-blank-material-4":"PEEK Block","mf-blank-material-4-1":"PEEK","mf-blank-material-5":"PEEK Disc","mf-blank-material-5-1":"PEEK","mf-blank-material-6":"PMMA Block","mf-blank-material-6-1":"PMMA","mf-blank-material-7":"PMMA Disc","mf-blank-material-7-1":"PMMA","mf-blank-material-8":"Zirconia","mf-blank-material-8-1":"Sintering Metal","mf-blank-material-8-2":"Zirconia","mf-blank-material-9":"Wax Disc","mf-blank-material-9-1":"Wax","mf-blank-material-10":"Zirconia Block","mf-blank-material-10-1":"Zirconia","mf-blank-materials-toggle":"View materials that can be milled with MillFix (click)","mf-blank-8t-note":"An 8T Jig Ring is required to use an 8T disk."});
+
+Object.assign(TRANSLATIONS.ja, {"mf-blank-material-1":"Hybrid Ceramic Block","mf-blank-material-1-1":"Hass","mf-blank-material-1-2":"Hybrid Ceramic","mf-blank-material-2":"Amber_Dry Block","mf-blank-material-2-1":"A1 / 00","mf-blank-material-3":"Hybrid Ceramic Disc","mf-blank-material-3-1":"Hybrid Ceramic","mf-blank-material-4":"PEEK Block","mf-blank-material-4-1":"PEEK","mf-blank-material-5":"PEEK Disc","mf-blank-material-5-1":"PEEK","mf-blank-material-6":"PMMA Block","mf-blank-material-6-1":"PMMA","mf-blank-material-7":"PMMA Disc","mf-blank-material-7-1":"PMMA","mf-blank-material-8":"Zirconia","mf-blank-material-8-1":"Sintering Metal","mf-blank-material-8-2":"Zirconia","mf-blank-material-9":"Wax Disc","mf-blank-material-9-1":"Wax","mf-blank-material-10":"Zirconia Block","mf-blank-material-10-1":"Zirconia","mf-blank-materials-toggle":"MillFixで加工可能な材料を確認（クリック）","mf-blank-8t-note":"8Tディスクを使用するには8T Jig Ringが必要です。"});
+
+Object.assign(TRANSLATIONS.es, {"mf-blank-material-1":"Hybrid Ceramic Block","mf-blank-material-1-1":"Hass","mf-blank-material-1-2":"Hybrid Ceramic","mf-blank-material-2":"Amber_Dry Block","mf-blank-material-2-1":"A1 / 00","mf-blank-material-3":"Hybrid Ceramic Disc","mf-blank-material-3-1":"Hybrid Ceramic","mf-blank-material-4":"PEEK Block","mf-blank-material-4-1":"PEEK","mf-blank-material-5":"PEEK Disc","mf-blank-material-5-1":"PEEK","mf-blank-material-6":"PMMA Block","mf-blank-material-6-1":"PMMA","mf-blank-material-7":"PMMA Disc","mf-blank-material-7-1":"PMMA","mf-blank-material-8":"Zirconia","mf-blank-material-8-1":"Sintering Metal","mf-blank-material-8-2":"Zirconia","mf-blank-material-9":"Wax Disc","mf-blank-material-9-1":"Wax","mf-blank-material-10":"Zirconia Block","mf-blank-material-10-1":"Zirconia","mf-blank-materials-toggle":"Ver los materiales que se pueden fresar con MillFix (clic)","mf-blank-8t-note":"Se necesita un 8T Jig Ring para utilizar un disco de 8T."});

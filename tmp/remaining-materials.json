@@ -1,0 +1,732 @@
+[
+  {
+    "material": 3,
+    "sub": 1,
+    "color": "Metal",
+    "products": [
+      {
+        "name": "CoCr D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-1.webp"
+      },
+      {
+        "name": "CoCr D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-2.webp"
+      },
+      {
+        "name": "CoCr D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-3.webp"
+      },
+      {
+        "name": "CoCr D98xL15",
+        "geometry": "Disc_D98xL15",
+        "height": 15,
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-4.webp"
+      },
+      {
+        "name": "CoCr D98xL16",
+        "geometry": "Disc_D98xL16",
+        "height": 16,
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-5.webp"
+      },
+      {
+        "name": "CoCr D98xL18",
+        "geometry": "Disc_D98xL18",
+        "height": 18,
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-6.webp"
+      }
+    ]
+  },
+  {
+    "material": 4,
+    "sub": 1,
+    "color": "A1 / 00",
+    "products": [
+      {
+        "name": "Dry-Mill 21x16.8x20",
+        "geometry": "21x16.8.5x20",
+        "height": 16.8,
+        "image": "assets/images/mai-hyperdent-materials/material-4-1-1.webp"
+      }
+    ]
+  },
+  {
+    "material": 5,
+    "sub": 1,
+    "color": "DuraFlex",
+    "products": [
+      {
+        "name": "DuraFlex D98xL15",
+        "geometry": "Disc_D98xL15",
+        "height": 15,
+        "image": "assets/images/mai-hyperdent-materials/material-5-1-1.webp"
+      },
+      {
+        "name": "DuraFlex D98xL20",
+        "geometry": "Disc_D98xL20",
+        "height": 20,
+        "image": "assets/images/mai-hyperdent-materials/material-5-1-2.webp"
+      },
+      {
+        "name": "DuraFlex D98xL25",
+        "geometry": "Disc_D98xL25",
+        "height": 25,
+        "image": "assets/images/mai-hyperdent-materials/material-5-1-3.webp"
+      },
+      {
+        "name": "DuraFlex D98xL30",
+        "geometry": "Disc_D98xL30",
+        "height": 30,
+        "image": "assets/images/mai-hyperdent-materials/material-5-1-4.webp"
+      }
+    ]
+  },
+  {
+    "material": 6,
+    "sub": 1,
+    "color": "C1",
+    "products": [
+      {
+        "name": "GC Initial®LiSi Block 14",
+        "geometry": "14.7x12.7x18",
+        "height": 12.7,
+        "image": "assets/images/mai-hyperdent-materials/material-6-1-1.webp"
+      }
+    ]
+  },
+  {
+    "material": 7,
+    "sub": 1,
+    "color": "Glass Ceramic",
+    "products": [
+      {
+        "name": "Glass Ceramic D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "imageName": "Glsass Ceramic D98xL10",
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-1.webp"
+      },
+      {
+        "name": "Glass Ceramic D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "imageName": "Glsass Ceramic D98xL12",
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-2.webp"
+      },
+      {
+        "name": "Glass Ceramic D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "imageName": "Glsass Ceramic D98xL14",
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-3.webp"
+      },
+      {
+        "name": "Rosetta®SM D98xL08",
+        "geometry": "Disc_Hass-08T",
+        "height": 8,
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-4.webp"
+      },
+      {
+        "name": "Rosetta®SM D98xL10",
+        "geometry": "Disc_Hass-10T",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-5.webp"
+      },
+      {
+        "name": "Rosetta®SM D98xL12",
+        "geometry": "Disc_Hass-12T",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-6.webp"
+      }
+    ]
+  },
+  {
+    "material": 8,
+    "sub": 1,
+    "color": "Metal",
+    "products": [
+      {
+        "name": "GN-I® Ti. Block_L",
+        "geometry": "GN-I® Ti. Block_L",
+        "height": 0,
+        "image": "assets/images/mai-hyperdent-materials/material-8-1-1.webp"
+      },
+      {
+        "name": "GN-I® Ti. Block_M",
+        "geometry": "GN-I® Ti. Block_M",
+        "height": 0,
+        "image": "assets/images/mai-hyperdent-materials/material-8-1-2.webp"
+      }
+    ]
+  },
+  {
+    "material": 9,
+    "sub": 1,
+    "color": "Hybrid Ceramic",
+    "products": [
+      {
+        "name": "Hybrid Ceramic D98xL08",
+        "geometry": "Disc_D98xL8",
+        "height": 8,
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-1.webp"
+      },
+      {
+        "name": "Hybrid Ceramic D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-2.webp"
+      },
+      {
+        "name": "Hybrid Ceramic D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-3.webp"
+      },
+      {
+        "name": "Hybrid Ceramic D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-4.webp"
+      },
+      {
+        "name": "Hybrid Ceramic D98xL20",
+        "geometry": "Disc_D98xL20",
+        "height": 20,
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-5.webp"
+      }
+    ]
+  },
+  {
+    "material": 10,
+    "sub": 1,
+    "color": "PEEK",
+    "products": [
+      {
+        "name": "PEEK Block 10x8.5x15",
+        "geometry": "10x8.5x15",
+        "height": 8.5,
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-1.webp"
+      },
+      {
+        "name": "PEEK Block 12.5x10.5x15",
+        "geometry": "12.5x10.5x15",
+        "height": 10.5,
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-2.webp"
+      },
+      {
+        "name": "PEEK Block 14.5x12.5x18",
+        "geometry": "14.5x12.5x18",
+        "height": 12.5,
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-3.webp"
+      },
+      {
+        "name": "PEEK Block 14.5x14.5x18",
+        "geometry": "14.5x14.5x18",
+        "height": 14.5,
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-4.webp"
+      },
+      {
+        "name": "PEEK Block 16x14.5x18",
+        "geometry": "16x14.5x18",
+        "height": 14.5,
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-5.webp"
+      },
+      {
+        "name": "PEEK Block 8x8x15",
+        "geometry": "8x8x15",
+        "height": 8,
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-6.webp"
+      }
+    ]
+  },
+  {
+    "material": 11,
+    "sub": 1,
+    "color": "PEEK",
+    "products": [
+      {
+        "name": "PEEK D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-1.webp"
+      },
+      {
+        "name": "PEEK D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-2.webp"
+      },
+      {
+        "name": "PEEK D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-3.webp"
+      },
+      {
+        "name": "PEEK D98xL16",
+        "geometry": "Disc_D98xL16",
+        "height": 16,
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-4.webp"
+      },
+      {
+        "name": "PEEK D98xL18",
+        "geometry": "Disc_D98xL18",
+        "height": 18,
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-5.webp"
+      },
+      {
+        "name": "PEEK D98xL20",
+        "geometry": "Disc_D98xL20",
+        "height": 20,
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-6.webp"
+      },
+      {
+        "name": "PEEK D98xL22",
+        "geometry": "Disc_D98xL22",
+        "height": 22,
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-7.webp"
+      },
+      {
+        "name": "PEEK D98xL25",
+        "geometry": "Disc_D98xL25",
+        "height": 25,
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-8.webp"
+      }
+    ]
+  },
+  {
+    "material": 12,
+    "sub": 1,
+    "color": "PMMA",
+    "products": [
+      {
+        "name": "PMMA 18x16x18",
+        "geometry": "18x16x18",
+        "height": 16,
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-1.webp"
+      },
+      {
+        "name": "PMMA 19x15.5x40",
+        "geometry": "19x15.5x40",
+        "height": 15.5,
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-2.webp"
+      },
+      {
+        "name": "PMMA 19x19x55",
+        "geometry": "19x19x55",
+        "height": 19,
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-3.webp"
+      },
+      {
+        "name": "VITA CAD-Temp® CT-40",
+        "geometry": "VITA CAD-Temp® CT-40_Freeform",
+        "height": 0,
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-4.webp"
+      },
+      {
+        "name": "VITA CAD-Temp® CT-55",
+        "geometry": "VITA CAD-Temp® CT-55_Freeform",
+        "height": 0,
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-5.webp"
+      }
+    ]
+  },
+  {
+    "material": 13,
+    "sub": 1,
+    "color": "PMMA",
+    "products": [
+      {
+        "name": "PMMA D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-1.webp"
+      },
+      {
+        "name": "PMMA D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-2.webp"
+      },
+      {
+        "name": "PMMA D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-3.webp"
+      },
+      {
+        "name": "PMMA D98xL16",
+        "geometry": "Disc_D98xL16",
+        "height": 16,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-4.webp"
+      },
+      {
+        "name": "PMMA D98xL18",
+        "geometry": "Disc_D98xL18",
+        "height": 18,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-5.webp"
+      },
+      {
+        "name": "PMMA D98xL20",
+        "geometry": "Disc_D98xL20",
+        "height": 20,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-6.webp"
+      },
+      {
+        "name": "PMMA D98xL22",
+        "geometry": "Disc_D98xL22",
+        "height": 22,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-7.webp"
+      },
+      {
+        "name": "PMMA D98xL25",
+        "geometry": "Disc_D98xL25",
+        "height": 25,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-8.webp"
+      },
+      {
+        "name": "PMMA D98xL30",
+        "geometry": "Disc_D98xL30",
+        "height": 30,
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-9.webp"
+      }
+    ]
+  },
+  {
+    "material": 14,
+    "sub": 1,
+    "color": "Metal",
+    "products": [
+      {
+        "name": "premill_0.2",
+        "geometry": "Pre-Mill_D10_0.2",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-14-1-1.webp"
+      },
+      {
+        "name": "Pre-Mill_D10xL20+Reverse",
+        "geometry": "Pre-Mill_D10+Reverse",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-14-1-2.webp"
+      },
+      {
+        "name": "Pre-Mill_D12xL20+Reverse",
+        "geometry": "Pre-Mill_D12+Reverse",
+        "height": 11.999,
+        "image": "assets/images/mai-hyperdent-materials/material-14-1-3.webp"
+      },
+      {
+        "name": "Pre-Mill_D14xL20+Reverse",
+        "geometry": "Pre-Mill_D14+Reverse",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-14-1-4.webp"
+      }
+    ]
+  },
+  {
+    "material": 15,
+    "sub": 1,
+    "color": "Sintering Metal",
+    "products": [
+      {
+        "name": "Sintering Metal D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-1.webp"
+      },
+      {
+        "name": "Sintering Metal D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-2.webp"
+      },
+      {
+        "name": "Sintering Metal D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-3.webp"
+      },
+      {
+        "name": "Sintering Metal D98xL16",
+        "geometry": "Disc_D98xL16",
+        "height": 16,
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-4.webp"
+      },
+      {
+        "name": "Sintering Metal D98xL18",
+        "geometry": "Disc_D98xL18",
+        "height": 18,
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-5.webp"
+      },
+      {
+        "name": "Sintering Metal D98xL20",
+        "geometry": "Disc_D98xL20",
+        "height": 20,
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-6.webp"
+      },
+      {
+        "name": "Sintering Metal D98xL22",
+        "geometry": "Disc_D98xL22",
+        "height": 22,
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-7.webp"
+      },
+      {
+        "name": "Sintering Metal D98xL25",
+        "geometry": "Disc_D98xL25",
+        "height": 25,
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-8.webp"
+      }
+    ]
+  },
+  {
+    "material": 15,
+    "sub": 2,
+    "color": "Zirconia",
+    "products": [
+      {
+        "name": "Zirconia D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-1.webp"
+      },
+      {
+        "name": "Zirconia D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-2.webp"
+      },
+      {
+        "name": "Zirconia D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-3.webp"
+      },
+      {
+        "name": "Zirconia D98xL15",
+        "geometry": "Disc_D98xL15",
+        "height": 15,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-4.webp"
+      },
+      {
+        "name": "Zirconia D98xL16",
+        "geometry": "Disc_D98xL16",
+        "height": 16,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-5.webp"
+      },
+      {
+        "name": "Zirconia D98xL18",
+        "geometry": "Disc_D98xL18",
+        "height": 18,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-6.webp"
+      },
+      {
+        "name": "Zirconia D98xL20",
+        "geometry": "Disc_D98xL20",
+        "height": 20,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-7.webp"
+      },
+      {
+        "name": "Zirconia D98xL22",
+        "geometry": "Disc_D98xL22",
+        "height": 22,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-8.webp"
+      },
+      {
+        "name": "Zirconia D98xL25",
+        "geometry": "Disc_D98xL25",
+        "height": 25,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-9.webp"
+      },
+      {
+        "name": "Zirconia D98xL28",
+        "geometry": "Disc_D98xL28",
+        "height": 28,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-10.webp"
+      },
+      {
+        "name": "Zirconia D98xL30",
+        "geometry": "Disc_D98xL30",
+        "height": 30,
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-11.webp"
+      }
+    ]
+  },
+  {
+    "material": 16,
+    "sub": 1,
+    "color": "Metal",
+    "products": [
+      {
+        "name": "Titanium D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-1.webp"
+      },
+      {
+        "name": "Titanium D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-2.webp"
+      },
+      {
+        "name": "Titanium D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-3.webp"
+      },
+      {
+        "name": "Titanium D98xL16",
+        "geometry": "Disc_D98xL16",
+        "height": 16,
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-4.webp"
+      },
+      {
+        "name": "Titanium D98xL18",
+        "geometry": "Disc_D98xL18",
+        "height": 18,
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-5.webp"
+      },
+      {
+        "name": "Titanium D98xL20",
+        "geometry": "Disc_D98xL20",
+        "height": 20,
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-6.webp"
+      },
+      {
+        "name": "Titanium D98xL22",
+        "geometry": "Disc_D98xL22",
+        "height": 22,
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-7.webp"
+      },
+      {
+        "name": "Titanium D98xL25",
+        "geometry": "Disc_D98xL25",
+        "height": 25,
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-8.webp"
+      }
+    ]
+  },
+  {
+    "material": 17,
+    "sub": 1,
+    "color": "Wax",
+    "products": [
+      {
+        "name": "VITA CAD-Waxx® CW-40/15",
+        "geometry": "15x14x40",
+        "height": 14,
+        "imageName": "VITA CAD-Waxx® CW-4015",
+        "image": "assets/images/mai-hyperdent-materials/material-17-1-1.webp"
+      }
+    ]
+  },
+  {
+    "material": 18,
+    "sub": 1,
+    "color": "Wax",
+    "products": [
+      {
+        "name": "Wax D98xL10",
+        "geometry": "Disc_D98xL10",
+        "height": 10,
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-1.webp"
+      },
+      {
+        "name": "Wax D98xL12",
+        "geometry": "Disc_D98xL12",
+        "height": 12,
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-2.webp"
+      },
+      {
+        "name": "Wax D98xL14",
+        "geometry": "Disc_D98xL14",
+        "height": 14,
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-3.webp"
+      },
+      {
+        "name": "Wax D98xL16",
+        "geometry": "Disc_D98xL16",
+        "height": 16,
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-4.webp"
+      },
+      {
+        "name": "Wax D98xL18",
+        "geometry": "Disc_D98xL18",
+        "height": 18,
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-5.webp"
+      },
+      {
+        "name": "Wax D98xL20",
+        "geometry": "Disc_D98xL20",
+        "height": 20,
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-6.webp"
+      },
+      {
+        "name": "Wax D98xL22",
+        "geometry": "Disc_D98xL22",
+        "height": 22,
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-7.webp"
+      },
+      {
+        "name": "Wax D98xL25",
+        "geometry": "Disc_D98xL25",
+        "height": 25,
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-8.webp"
+      }
+    ]
+  },
+  {
+    "material": 19,
+    "sub": 1,
+    "color": "Zirconia",
+    "products": [
+      {
+        "name": "Zirconia 14.5x14.5x18",
+        "geometry": "14.5x14.5x18",
+        "height": 14.5,
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-1.webp"
+      },
+      {
+        "name": "Zirconia 15.5x15.5x40",
+        "geometry": "15.5x15.5x40",
+        "height": 15.5,
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-2.webp"
+      },
+      {
+        "name": "Zirconia 19x15.5x20",
+        "geometry": "19x15.5x20",
+        "height": 15.5,
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-3.webp"
+      },
+      {
+        "name": "Zirconia 19x15.5x40",
+        "geometry": "19x15.5x40",
+        "height": 15.5,
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-4.webp"
+      },
+      {
+        "name": "Zirconia 19x15.5x55",
+        "geometry": "19x15.5x55",
+        "height": 15.5,
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-5.webp"
+      },
+      {
+        "name": "Zirconia 19x19x55",
+        "geometry": "19x19x55",
+        "height": 19,
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-6.webp"
+      },
+      {
+        "name": "Zirconia 25x22x65",
+        "geometry": "25x22x65",
+        "height": 22,
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-7.webp"
+      }
+    ]
+  }
+]
