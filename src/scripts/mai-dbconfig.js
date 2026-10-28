@@ -21,7 +21,7 @@
     ja: { open: '画像を見る', close: '画像を閉じる', offset: '増分境界オフセット', angle: '増分境界角度', note: ['計算中に「境界オフセットまたは角度が小さすぎる」などのエラーが発生した場合は、', 'これらの値を少し大きくして再試行してください。'] }
   };
   let family = '', type = '', selectedMaterial = '', activeRecord = null;
-  const icons = { Abutment: 'abutment', Crown: 'crown', Bridge: 'bridge', Coping: 'coping', 'Inlay/Onlay': 'inlay-onlay', 'Over Structure': 'assets/images/sec-mf-Tutorials/overstructure_icon.webp', 'Denture & Frame': 'denture-frame', Other: null };
+  const icons = { Abutment: 'abutment', Crown: 'crown', Bridge: 'bridge', Coping: 'coping', 'Inlay/Onlay': 'inlay-onlay', 'Over Structure': 'assets/images/dbconfig-filter-icons/over-structure-purple.webp', 'Denture & Frame': 'denture-frame', Other: null };
   const extraFamilyCopy = {
     ko: { Other: '기타', Connector: '커넥터', Interface: '인터페이스', 'Screw Head (T-cut)': '스크류 헤드 (T-cut)', 'Screw Hole Finishing (expansion)': '스크류 홀 정삭 (확장)', 'Userdefined areas': '사용자 정의 영역 확인' },
     en: { Other: 'Other', Connector: 'Connector', Interface: 'Interface', 'Screw Head (T-cut)': 'Screw Head (T-cut)', 'Screw Hole Finishing (expansion)': 'Screw Hole Finishing (expansion)', 'Userdefined areas': 'User-defined area check' },

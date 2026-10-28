@@ -14,8 +14,8 @@
             #sec-mai-hd-settings-db .dbconfig-prosthesis-type.is-active { background:linear-gradient(135deg, #fff 0%, #faf5ff 100%); border:2px solid #7c3aed; color:#6d28d9; box-shadow:0 5px 16px rgba(124,58,237,.10); }
             #sec-mai-hd-settings-db .dbconfig-prosthesis-icon { width:120px; height:76px; display:grid; place-items:center; }
             #sec-mai-hd-settings-db .dbconfig-prosthesis-icon img { display:block; max-width:118px; max-height:76px; object-fit:contain; }
-            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail { --dbconfig-detail-connector-x:50%; position:relative; display:flex; flex-wrap:nowrap; gap:8px; margin-top:34px; padding:22px; border:1px solid #d1d5db; border-radius:18px; background:#fff; }
-            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail .dbconfig-filter-button { min-height:44px; padding:8px 12px; font-size:14px; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail { --dbconfig-detail-connector-x:50%; position:relative; display:flex; flex-wrap:wrap; gap:8px; margin-top:34px; padding:22px; border:1px solid #d1d5db; border-radius:18px; background:#fff; }
+            #sec-mai-hd-settings-db .dbconfig-prosthesis-detail .dbconfig-filter-button { max-width:100%; overflow-wrap:anywhere; min-height:44px; padding:8px 12px; font-size:14px; }
             #sec-mai-hd-settings-db .dbconfig-prosthesis-detail .dbconfig-filter-button:first-child { white-space:nowrap; }
             #sec-mai-hd-settings-db .dbconfig-prosthesis-detail::before { content:''; position:absolute; top:-34px; left:var(--dbconfig-detail-connector-x); width:1px; height:34px; background:#a78bfa; transform:translateX(-50%); }
             #sec-mai-hd-settings-db .dbconfig-prosthesis-detail[hidden] { display:none; }
