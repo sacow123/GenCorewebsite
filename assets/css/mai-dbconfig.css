@@ -24,7 +24,7 @@
             @media (max-width:640px) { #sec-mai-hd-settings-db .dbconfig-filter-group { grid-template-columns:1fr; gap:10px; } #sec-mai-hd-settings-db .dbconfig-filter-label { padding-top:0; } #sec-mai-hd-settings-db .dbconfig-prosthesis-picker { width:100%; } #sec-mai-hd-settings-db .dbconfig-prosthesis-types { grid-template-columns:repeat(2, minmax(100px, 1fr)); gap:10px; } #sec-mai-hd-settings-db .dbconfig-prosthesis-type { min-height:155px; font-size:14px; } #sec-mai-hd-settings-db .dbconfig-prosthesis-icon { width:84px; height:54px; } #sec-mai-hd-settings-db .dbconfig-prosthesis-icon img { max-width:82px; max-height:54px; } #sec-mai-hd-settings-db .dbconfig-prosthesis-detail { flex-wrap:wrap; } }
           
 
-#sec-mai-hd-settings-db .mai-template-list button{border:0;background:transparent;color:inherit;text-align:left;font:inherit;cursor:pointer;padding:5px 0;overflow-wrap:anywhere}
+#sec-mai-hd-settings-db .mai-template-list button{border:0;background:transparent;color:inherit;text-align:left;font:inherit;font-weight:700;text-decoration:underline;text-decoration-color:#d8b4fe;text-underline-offset:4px;cursor:pointer;padding:5px 0;overflow-wrap:anywhere}
 #sec-mai-hd-settings-db .mai-template-list button:hover,#sec-mai-hd-settings-db .mai-template-list button:focus-visible{color:#7c3aed;text-decoration:underline}
 #sec-mai-hd-settings-db .mai-template-group{background:var(--bg-color,#fff);border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-top:16px;box-shadow:0 2px 4px rgba(0,0,0,.02)}
 #sec-mai-hd-settings-db .mai-template-group h4{color:#a855f7;margin:0 0 12px;border-bottom:2px solid #f3e8ff;padding-bottom:8px}

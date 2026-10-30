@@ -7280,7 +7280,7 @@ body:has([data-simple-hotspot="nc-status"]:hover, [data-simple-hotspot="nc-statu
 
     let lastSectionId = 'sec-mf-hd-features'; // 기본값
 
-    function openFeatureModal(key, originSectionId) {
+    function openFeatureModal(key, originSectionId, pushHistory = true) {
       const data = FEATURE_DATA[key];
       if (!data) return;
       if (originSectionId) lastSectionId = originSectionId;
@@ -7294,9 +7294,10 @@ body:has([data-simple-hotspot="nc-status"]:hover, [data-simple-hotspot="nc-statu
       } else {
         mBody.innerHTML = buildFeatureHTML(data);
       }
-      modal.style.display = 'flex';
+      const isInstallArticle = window.InstallArticleNavigation?.isFeature(key);
+      modal.style.display = isInstallArticle ? 'none' : 'flex';
       mBody.scrollTop = 0;
-      history.replaceState(null, null, `#feature-${key}`);
+      if (!isInstallArticle) history.replaceState(null, null, `#feature-${key}`);
       // Apply current language translations to dynamically built modal content
       if (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[currentLang]) {
         const dict = TRANSLATIONS[currentLang];
@@ -7313,6 +7314,7 @@ body:has([data-simple-hotspot="nc-status"]:hover, [data-simple-hotspot="nc-statu
       if (currentLang !== 'ko' && typeof sanitizeMissingTranslationDom === 'function') {
         sanitizeMissingTranslationDom(currentLang, modal);
       }
+      if (isInstallArticle) window.InstallArticleNavigation.showFeature(key, mTitle, mBody, pushHistory);
     }
     window.openFeatureModal = openFeatureModal;
 
@@ -7356,7 +7358,7 @@ body:has([data-simple-hotspot="nc-status"]:hover, [data-simple-hotspot="nc-statu
       if (hash.startsWith('#feature-')) {
         const key = hash.replace('#feature-', '');
         if (FEATURE_DATA[key]) {
-          openFeatureModal(key);
+          openFeatureModal(key, undefined, false);
         }
       }
     }
@@ -7891,5 +7893,6 @@ body:has([data-simple-hotspot="nc-status"]:hover, [data-simple-hotspot="nc-statu
   <script src="src/scripts/mai-fixtures.js"></script>
   <script src="src/scripts/implantinterface.js"></script>
 <script src="src/scripts/faq-deep-links.js"></script>
+<script src="src/scripts/millfix-install-articles.js"></script>
 </body>
 </html>
