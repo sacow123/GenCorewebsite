@@ -1,0 +1,35 @@
+{
+  "article": "Ti_Abutment bridge_EXT/INT (Fast mode)",
+  "sourceRevision": "260830",
+  "otherRecordsUnchanged": 69,
+  "originalDbHashesUnchanged": true,
+  "sourceAndResourceCheck": "passed",
+  "browserEnvironment": "http://127.0.0.1:8080/사용자 매뉴얼.html",
+  "languageSequence": [
+    "ko",
+    "en",
+    "ja",
+    "en",
+    "ko"
+  ],
+  "changedArticleKoreanResidual": {
+    "en": 0,
+    "ja": 0
+  },
+  "toolImagePopupVerified": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "mobile": {
+    "width": 390,
+    "documentScrollWidth": 390,
+    "articleClientWidth": 315,
+    "articleScrollWidth": 315
+  },
+  "screenshots": [
+    "en.png",
+    "ja.png",
+    "mobile.png"
+  ]
+}

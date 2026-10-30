@@ -1,0 +1,62 @@
+{
+  "template": "Ti_Abutment bridge_EXT/INT",
+  "insertBefore": "Finishing inside abutment bases_[M1.0BxL10] 3x (strauman no Cat)",
+  "insert": {
+    "title": "Finishing inside abutment bases_[M1.5Rx07] (no cate Finishing)",
+    "descriptions": [
+      {
+        "ko": "XY 여유량 : 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
+        "en": "XY allowance: Adjusts the fit inside the abutment base.",
+        "ja": "XY余裕量：アバットメントベース内部の適合を調整できます。",
+        "bold": true
+      }
+    ]
+  },
+  "replaceTitles": [
+    "Finishing inside abutment bases_[M1.0BxL10] 3x (strauman no Cat)",
+    "Finishing inside abutment bases_[M0.6BxL06] (strauman no Cat)"
+  ],
+  "descriptions": [
+    {
+      "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
+      "en": "Finishes the inside of the abutment base with a 1.0 mm diameter tool.",
+      "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。",
+      "bold": true
+    },
+    {
+      "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 켜짐)",
+      "en": "Calculate: Choose whether to run this process. (Default: On)",
+      "ja": "計算：この工程を実行するか選択できます。（初期値：ON）",
+      "bold": true
+    },
+    {
+      "ko": "여유량: 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
+      "en": "Allowance: Adjusts the fit inside the abutment base.",
+      "ja": "余裕量：アバットメントベース内部の適合を調整できます。",
+      "bold": true
+    },
+    {
+      "ko": "스트라우만 아래 사진 인터페이스를 가공하려는 경우, 카테고리 혹은 인터페이스 라이브러리를 붙이지 말고 해당 공정을 켜두세요.",
+      "en": "To machine the Straumann interface shown in the photo below, leave this process enabled without assigning a category or an interface library.",
+      "ja": "下の写真のストローマンインターフェースを加工する場合は、カテゴリーやインターフェースライブラリを割り当てず、この工程を有効にしてください。",
+      "photo": {
+        "src": "assets/images/sec-mai-Dbconfig/straumann-interface.webp",
+        "label": {
+          "ko": "사진 확인하기(클릭)",
+          "en": "View photo (click)",
+          "ja": "写真を確認（クリック）"
+        },
+        "alt": {
+          "ko": "스트라우만 어버트먼트 베이스 내부 인터페이스",
+          "en": "Internal interface of a Straumann abutment base",
+          "ja": "ストローマンアバットメントベース内部のインターフェース"
+        }
+      }
+    },
+    {
+      "ko": "그 외의 경우 카테고리를 별도로 설정하거나, 인터페이스 라이브러리를 붙인 경우 해당 공정은 생략됩니다.",
+      "en": "In other cases, this process is skipped when a category is set separately or an interface library is assigned.",
+      "ja": "それ以外の場合、カテゴリーを別途設定するか、インターフェースライブラリを割り当てると、この工程は省略されます。"
+    }
+  ]
+}

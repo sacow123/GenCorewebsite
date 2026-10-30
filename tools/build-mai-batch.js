@@ -152,5 +152,19 @@ const records=source.map(record=>{
   const subtitle=material==='Wax'?record.title.replace(/^(Wax_|WAX - )/,''):record.title.slice(material.length+1);
   return {title:record.title,subtitle,source:record.source,material,type,family,conditions,uda,interfaces,tools:uniqueTools,processes,images:[],sourceToolCount:tools.length};
 });
+// User correction applies only to the standard Ti abutment bridge template.
+const bridgeUpdate = JSON.parse(fs.readFileSync('tools/mai-ti-abutment-bridge-update.json', 'utf8'));
+const bridgeRecord = records.find(record => record.title === bridgeUpdate.template);
+for (const process of bridgeRecord.processes) {
+  if (!bridgeUpdate.replaceTitles.includes(process.title)) continue;
+  const original = process.descriptions;
+  process.descriptions = bridgeUpdate.descriptions.map((description, index) => ({...description, ...(original[index] ? {sourceText:original[index].sourceText || original[index].en} : {})}));
+}
+bridgeRecord.processes.splice(bridgeRecord.processes.findIndex(process => process.title === bridgeUpdate.insertBefore), 0, bridgeUpdate.insert);
+// Replace only the Fast bridge article with the verified 260830 DB snapshot.
+const fastUpdate = JSON.parse(fs.readFileSync('tools/mai-ti-fast-260830.json', 'utf8'));
+const fastIndex = records.findIndex(record => record.title === fastUpdate.record.title);
+if (fastIndex < 0) throw Error('Missing Fast bridge article');
+records[fastIndex] = fastUpdate.record;
 fs.writeFileSync('src/data/mai-batch-templates.js','// Source: supplied Pre-Mill, Pre-Mil+Rev., Ti, Wax, Zirconia HTML exports.\n// Generated with node tools/build-mai-batch.js.\nwindow.MaiBatchTemplates = '+JSON.stringify(records,null,2)+';\n');
 console.log('Built '+records.length+' templates:',records.reduce((counts,r)=>(counts[r.material]=(counts[r.material]||0)+1,counts),{}));

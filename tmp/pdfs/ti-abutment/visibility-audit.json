@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Ti_Abutment",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "included": true
+  },
+  {
+    "name": "Ti_Abutment (Conlog)",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "included": true
+  },
+  {
+    "name": "Ti_Abutment_Angled-MUA (Tap+F1.5)",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "included": true
+  },
+  {
+    "name": "Ti_Abutment bridge_EXT/INT",
+    "partTypes": [
+      "abutment_bridge"
+    ],
+    "included": true
+  },
+  {
+    "name": "Ti_Abutment bridge_EXT/INT (Fast)",
+    "partTypes": [
+      "abutment_bridge"
+    ],
+    "included": true
+  },
+  {
+    "name": "Ti_Abutment bridge_Cat.13_ICMC",
+    "partTypes": [],
+    "included": false
+  }
+]

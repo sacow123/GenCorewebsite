@@ -117,7 +117,12 @@
     const a = selected.getBoundingClientRect(), b = detail.getBoundingClientRect();
     detail.style.setProperty('--dbconfig-detail-connector-x', (a.left + a.width / 2 - b.left) + 'px');
   }
-  const listMarkup = items => '<ul>' + items.map(item => '<li>' + escape(item[language()]) + '</li>').join('') + '</ul>';
+  const listMarkup = items => '<ul>' + items.map(item => {
+    const lang = language();
+    const photo = item.photo;
+    const disclosure = photo ? '<details class="mai-process-photo" style="margin-top:10px"><summary style="cursor:pointer;color:#7c3aed;text-decoration:underline">' + escape(photo.label[lang]) + '</summary><img src="' + escape(photo.src) + '" alt="' + escape(photo.alt[lang]) + '" loading="lazy" style="display:block;width:100%;max-width:481px;height:auto;margin-top:12px;border-radius:8px"></details>' : '';
+    return '<li>' + (item.bold ? '<strong>' + escape(item[lang]) + '</strong>' : escape(item[lang])) + disclosure + '</li>';
+  }).join('') + '</ul>';
   const cardSection = (label, content) => '<section class="hybrid-card-section"><h4><span aria-hidden="true"></span>' + escape(label) + '</h4>' + content + '</section>';
   function renderDetail() {
     const record = activeRecord, lang = language(), c = copy[lang];
@@ -126,7 +131,8 @@
     function toolsMarkup(optional) {
       const tools = record.tools.filter(t => t.optional === optional);
       if (!tools.length) return '';
-      return '<p class="hybrid-tool-group">' + (optional ? c.optional : c.basic) + '<small>' + (optional ? c.optionalHint : c.basicHint) + '</small></p><div class="hybrid-tool-grid ' + (optional ? 'conditional' : 'basic') + '">' + tools.map(t => '<div class="hybrid-tool' + (optional ? ' is-conditional' : '') + '">' + (t.id && t.name ? '<button type="button" data-mai-image class="mai-template-tool-photo" aria-label="' + escape(imageCopy[lang].open + ': ' + t.id + ' ' + t.name) + '"><img loading="lazy" src="assets/images/sec-mai-tools/tool-list/t' + (t.imageId || t.id).slice(1).padStart(2, '0') + '.webp" alt="' + escape(t.id + ' ' + t.name) + '"></button>' : '') + '<strong>' + escape(t.id) + '</strong><em>' + escape(t.name) + '</em>' + t.comments.map(comment => '<small>' + escape(comment[lang]) + '</small>').join('') + '</div>').join('') + '</div>';
+      const hint = record.toolHints?.[optional ? 'optional' : 'basic']?.[lang] || (optional ? c.optionalHint : c.basicHint);
+      return '<p class="hybrid-tool-group">' + (optional ? c.optional : c.basic) + '<small>' + escape(hint) + '</small></p><div class="hybrid-tool-grid ' + (optional ? 'conditional' : 'basic') + '">' + tools.map(t => '<div class="hybrid-tool' + (optional ? ' is-conditional' : '') + '">' + (t.id && t.name ? '<button type="button" data-mai-image class="mai-template-tool-photo" aria-label="' + escape(imageCopy[lang].open + ': ' + t.id + ' ' + t.name) + '"><img loading="lazy" src="assets/images/sec-mai-tools/tool-list/t' + (t.imageId || t.id).slice(1).padStart(2, '0') + '.webp" alt="' + escape(t.id + ' ' + t.name) + '"></button>' : '') + '<strong>' + escape(t.id) + '</strong><em>' + escape(t.name) + '</em>' + t.comments.map(comment => '<small>' + escape(comment[lang]) + '</small>').join('') + '</div>').join('') + '</div>';
     }
     const illustrations = (process = '') => {
       const images = (record.images || []).filter(img => (img.process || '') === process);
