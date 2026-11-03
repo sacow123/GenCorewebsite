@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <ftdefault_table>
+      <ftdefault>
+         <version>1</version>
+         <rfilter type="blankgeometrygroup">236c0061-5a14-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value>c:\users\public\documents\open mind\mdf\din_iso.mdf::MAI</value>
+         </vfilter>
+         <ref>af457365-23bd-411c-94f6-ebdb4b148812</ref>
+      </ftdefault>
+   </ftdefault_table>
+</fmDatabase>

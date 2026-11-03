@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <sinterframeprofile_table>
+      <sinterframeprofile id="ae61c3b1-aefb-11ef-9ec5-14857f7eaaee">
+         <version>1</version>
+         <name>Zirconia</name>
+         <wallReducedHeight>0</wallReducedHeight>
+         <wallHeight>10</wallHeight>
+         <wallTopAlignPart>0</wallTopAlignPart>
+         <wallTopOffset>0</wallTopOffset>
+         <wallCenterOffset>0</wallCenterOffset>
+         <wallThickness>3.5</wallThickness>
+         <baseHeight>2</baseHeight>
+         <baseExtendedWidth>2</baseExtendedWidth>
+         <supportPlateThickness>0</supportPlateThickness>
+         <addBaseConnectors>1</addBaseConnectors>
+         <material type="material">8de032e3-d612-11ea-b84c-c8f750809c07</material>
+      </sinterframeprofile>
+   </sinterframeprofile_table>
+</fmDatabase>

@@ -1,0 +1,187 @@
+<namedProfile_millstrategy id="9a791183-8c27-11f0-bc59-ec4c8c8ee783">
+         <version>2</version>
+         <name>Ti_Connector_cut</name>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>bitesplint_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>bitesplint_single:Over Structure</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <data type="millstrategy" id="9a791184-8c27-11f0-bc59-ec4c8c8ee783">
+            <version>5</version>
+            <settype>gpbc</settype>
+            <setparams type="properties">
+               <prepthickness>0</prepthickness>
+               <millbound_strategy>offset</millbound_strategy>
+               <milloffset>3.5</milloffset>
+               <milloffset_angle>3</milloffset_angle>
+               <milloffset_angle2>10</milloffset_angle2>
+               <milloffset_angle2fromthick>17</milloffset_angle2fromthick>
+               <millincoffset_ovwren>1</millincoffset_ovwren>
+               <millincoffset_ovwrenres>bigger&lt;double&gt;(&quot;0&quot;)</millincoffset_ovwrenres>
+               <millincoffset>0</millincoffset>
+               <milloffset_incangle_ovwren>1</milloffset_incangle_ovwren>
+               <milloffset_incangle>0</milloffset_incangle>
+               <milloffset_skipislandremoval>0</milloffset_skipislandremoval>
+               <milloffset_height>eq</milloffset_height>
+               <milloffsetheight_offset>4</milloffsetheight_offset>
+               <minspace>0</minspace>
+               <outermill_ortho>1</outermill_ortho>
+               <coolant>1</coolant>
+               <tooltip>1</tooltip>
+               <cleardisttostock>4</cleardisttostock>
+               <cleardist>1</cleardist>
+               <checkfixture3x>1</checkfixture3x>
+               <checkfixture5x>1</checkfixture5x>
+               <fixtureallowance>0</fixtureallowance>
+               <reducefactor>0.9</reducefactor>
+               <splitmodel>0</splitmodel>
+               <5xangleinc>0.05</5xangleinc>
+               <pathcomp2d>cen</pathcomp2d>
+               <segmentmindisttoelement>4</segmentmindisttoelement>
+               <segmentminwidth>4</segmentminwidth>
+               <partialcavityoffset>0</partialcavityoffset>
+               <comment1/>
+               <comment2/>
+               <checkpartinblank>-1</checkpartinblank>
+               <checkpartinfixture>-1</checkpartinfixture>
+               <checkmillboundinblank>-1</checkmillboundinblank>
+               <checkmillboundinfixture>-1</checkmillboundinfixture>
+               <checkconnectorexist>-1</checkconnectorexist>
+               <checkconnectorinblank>-1</checkconnectorinblank>
+               <checkscrewchanneloutopeninblank>-1</checkscrewchanneloutopeninblank>
+               <needarchcurve>0</needarchcurve>
+               <needoccdir>0</needoccdir>
+            </setparams>
+            <job type="millstrategyjob" id="9a7912b2-8c27-11f0-bc59-ec4c8c8ee783">
+               <version>6</version>
+               <jobtype>cutconnectors</jobtype>
+               <parameters type="properties">
+                  <joboid>ae0456fa-c1ec-11ef-9edf-14857f7eaaee</joboid>
+                  <jobname>Cut / Connectors_[M2.0B_L12] -CAV</jobname>
+                  <calculate>1</calculate>
+                  <condcalc>off</condcalc>
+                  <condvalid>val</condvalid>
+                  <condval>12</condval>
+                  <main_strategy>stoc2</main_strategy>
+                  <tool type="tool">316525e3-8c4a-11eb-90ba-9ebe69c4d33b</tool>
+                  <spindlespeed>0|22000</spindlespeed>
+                  <feedrate>0|1000</feedrate>
+                  <jcoolant>0|-1</jcoolant>
+                  <conid>cut</conid>
+                  <sideid>cav</sideid>
+                  <rectstock>1</rectstock>
+                  <bothside>0</bothside>
+                  <percentage>100</percentage>
+                  <allowancepoly>0.015</allowancepoly>
+                  <cpar>0</cpar>
+                  <addheight>0.1</addheight>
+                  <stepdown>0.08</stepdown>
+                  <stepfactor>0.07</stepfactor>
+                  <stepover>0.1</stepover>
+                  <collcheck>1</collcheck>
+                  <collavoid>1</collavoid>
+                  <precision>0.01</precision>
+                  <jobcomment>[JOBFULLNAME]</jobcomment>
+                  <nctspretc/>
+                  <nctsposttc/>
+                  <nctsprefirstpos/>
+                  <nctspostfirstpos/>
+                  <nctspostlastpos/>
+                  <nctpretc/>
+                  <nctposttc/>
+                  <nctprefirstpos/>
+                  <nctpostfirstpos/>
+                  <nctpostlastpos/>
+               </parameters>
+               <objectid>9a7912b2-8c27-11f0-bc59-ec4c8c8ee783</objectid>
+            </job>
+            <job type="millstrategyjob" id="9a7912b5-8c27-11f0-bc59-ec4c8c8ee783">
+               <version>6</version>
+               <jobtype>cutconnectors</jobtype>
+               <parameters type="properties">
+                  <joboid>a7f45832-21be-11f0-9f1f-14857f7eaaee</joboid>
+                  <jobname>Cut / Reduce connectors_[M2.0B_L12] -CAV</jobname>
+                  <calculate>1</calculate>
+                  <condcalc>off</condcalc>
+                  <condvalid>val</condvalid>
+                  <condval>12</condval>
+                  <main_strategy>stoc2</main_strategy>
+                  <tool type="tool">316525e3-8c4a-11eb-90ba-9ebe69c4d33b</tool>
+                  <spindlespeed>0|22000</spindlespeed>
+                  <feedrate>0|1000</feedrate>
+                  <jcoolant>0|-1</jcoolant>
+                  <conid>red</conid>
+                  <sideid>cav</sideid>
+                  <rectstock>1</rectstock>
+                  <bothside>0</bothside>
+                  <percentage>100</percentage>
+                  <allowancepoly>0.015</allowancepoly>
+                  <cpar>0</cpar>
+                  <addheight>0.1</addheight>
+                  <stepdown>0.08</stepdown>
+                  <stepfactor>0.07</stepfactor>
+                  <stepover>0.1</stepover>
+                  <collcheck>1</collcheck>
+                  <collavoid>1</collavoid>
+                  <precision>0.01</precision>
+                  <jobcomment>[JOBFULLNAME]</jobcomment>
+                  <nctspretc/>
+                  <nctsposttc/>
+                  <nctsprefirstpos/>
+                  <nctspostfirstpos/>
+                  <nctspostlastpos/>
+                  <nctpretc/>
+                  <nctposttc/>
+                  <nctprefirstpos/>
+                  <nctpostfirstpos/>
+                  <nctpostlastpos/>
+               </parameters>
+               <objectid>9a7912b5-8c27-11f0-bc59-ec4c8c8ee783</objectid>
+            </job>
+            <profile type="millstrategy">0</profile>
+            <isprofilevalid>1</isprofilevalid>
+            <password>AgYLWh8BQgQ=</password>
+            <codeid/>
+            <codever>0</codever>
+         </data>
+      </namedProfile_millstrategy>

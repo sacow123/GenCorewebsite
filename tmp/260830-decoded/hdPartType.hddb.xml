@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <parttype_table>
+      <parttype id="08e4bcb9-3178-11f1-84b6-98bd8003105a">
+         <name>lowerpartial_single</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcba-3178-11f1-84b6-98bd8003105a">
+         <name>upperpartial_single</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcbb-3178-11f1-84b6-98bd8003105a">
+         <name>veneer_single</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcbc-3178-11f1-84b6-98bd8003105a">
+         <name>veneer_bridge</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcbd-3178-11f1-84b6-98bd8003105a">
+         <name>secondarytelescope_single</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcbe-3178-11f1-84b6-98bd8003105a">
+         <name>secondarytelescope_bridge</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcbf-3178-11f1-84b6-98bd8003105a">
+         <name>bitesplinttooth_single</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcc0-3178-11f1-84b6-98bd8003105a">
+         <name>reducedabutmentcrown_single</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcc1-3178-11f1-84b6-98bd8003105a">
+         <name>reducedabutmentcrown_bridge</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcc2-3178-11f1-84b6-98bd8003105a">
+         <name>thimble_bridge</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcc3-3178-11f1-84b6-98bd8003105a">
+         <name>postandcore_single</name>
+         <valid>0</valid>
+      </parttype>
+      <parttype id="08e4bcc4-3178-11f1-84b6-98bd8003105a">
+         <name>redsuprastruct_single</name>
+         <valid>0</valid>
+      </parttype>
+   </parttype_table>
+</fmDatabase>

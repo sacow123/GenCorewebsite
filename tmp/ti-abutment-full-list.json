@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Ti_Connector_cut",
+    "types": [
+      "cap_single",
+      "cap_bridge",
+      "crown_single",
+      "crown_bridge",
+      "abutment_single",
+      "abutment_bridge",
+      "abutmentcrown_single",
+      "abutmentcrown_bridge",
+      "bitesplint_single",
+      "bitesplint_single:Over Structure"
+    ],
+    "file": "hdNPmillstrategy.hddb"
+  },
+  {
+    "name": "Ti_Abutment",
+    "types": [
+      "abutment_single"
+    ],
+    "file": "hdNPmillstrategyvariantprofile.hddb"
+  },
+  {
+    "name": "Ti_Abutment (Conlog)",
+    "types": [
+      "abutment_single"
+    ],
+    "file": "hdNPmillstrategyvariantprofile.hddb"
+  },
+  {
+    "name": "Ti_Abutment_Angled-MUA (Tap+F1.5)",
+    "types": [
+      "abutment_single"
+    ],
+    "file": "hdNPmillstrategyvariantprofile.hddb"
+  }
+]

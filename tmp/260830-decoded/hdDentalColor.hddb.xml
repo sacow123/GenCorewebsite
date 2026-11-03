@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <color_table>
+      <color id="70bea01d-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>00</name>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+      </color>
+      <color id="70bea01f-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>A1</name>
+         <red>252</red>
+         <green>243</green>
+         <blue>222</blue>
+      </color>
+      <color id="70bea021-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>A2</name>
+         <red>249</red>
+         <green>230</green>
+         <blue>185</blue>
+      </color>
+      <color id="70bea023-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>A3</name>
+         <red>247</red>
+         <green>220</green>
+         <blue>157</blue>
+      </color>
+      <color id="70bea025-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>A3.5</name>
+         <red>244</red>
+         <green>210</green>
+         <blue>130</blue>
+      </color>
+      <color id="70bea027-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>A4</name>
+         <red>241</red>
+         <green>198</green>
+         <blue>97</blue>
+      </color>
+      <color id="70bea029-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>B1</name>
+         <red>250</red>
+         <green>242</green>
+         <blue>203</blue>
+      </color>
+      <color id="70bea02b-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>B2</name>
+         <red>248</red>
+         <green>236</green>
+         <blue>171</blue>
+      </color>
+      <color id="70bea02d-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>B3</name>
+         <red>243</red>
+         <green>226</green>
+         <blue>131</blue>
+      </color>
+      <color id="70bea02f-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>B4</name>
+         <red>240</red>
+         <green>219</green>
+         <blue>98</blue>
+      </color>
+      <color id="70bea031-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>C1</name>
+         <red>247</red>
+         <green>240</green>
+         <blue>206</blue>
+      </color>
+      <color id="70bea033-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>C2</name>
+         <red>241</red>
+         <green>232</green>
+         <blue>180</blue>
+      </color>
+      <color id="70bea035-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>C3</name>
+         <red>237</red>
+         <green>225</green>
+         <blue>156</blue>
+      </color>
+      <color id="70bea037-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>C4</name>
+         <red>233</red>
+         <green>218</green>
+         <blue>131</blue>
+      </color>
+      <color id="70bea039-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>D2</name>
+         <red>240</red>
+         <green>231</green>
+         <blue>191</blue>
+      </color>
+      <color id="70bea03b-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>D3</name>
+         <red>234</red>
+         <green>219</green>
+         <blue>162</blue>
+      </color>
+      <color id="70bea03d-0347-11ed-bda5-a0510ba771db">
+         <version>1</version>
+         <name>D4</name>
+         <red>228</red>
+         <green>210</green>
+         <blue>137</blue>
+      </color>
+   </color_table>
+</fmDatabase>

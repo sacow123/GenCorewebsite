@@ -5,12 +5,12 @@ vm.runInNewContext(fs.readFileSync('src/data/mai-batch-templates.js','utf8'),con
 const records=context.window.MaiBatchTemplates;
 const sources=JSON.parse(fs.readFileSync('tools/mai-batch-source.json','utf8'));
 const fastUpdate=JSON.parse(fs.readFileSync('tools/mai-ti-fast-260830.json','utf8'));
-assert.equal(records.length,70);assert.equal(new Set(records.map(r=>r.title)).size,70);
-assert.deepEqual(records.reduce((count,r)=>(count[r.material]=(count[r.material]||0)+1,count),{}),{'Pre-Mil+Rev.':16,'Pre-Mill':4,Ti:26,Wax:5,Zirconia:19});
+assert.equal(records.length,73);assert.equal(new Set(records.map(r=>r.title)).size,73);
+assert.deepEqual(records.reduce((count,r)=>(count[r.material]=(count[r.material]||0)+1,count),{}),{'Pre-Mil+Rev.':16,'Pre-Mill':4,Ti:29,Wax:5,Zirconia:19});
 const headings=new Set(['Tools list used','Tool pocket #','Tools','Comment','User-define area(UDA) available','Overwritable process']);
 const exceptions=[];
-for(const source of sources){
-  const record=records.find(r=>r.title===source.title);assert(record,source.title);
+for(const record of records){
+  const source=sources.find(s=>s.title===record.title);
   const texts=[...record.conditions,...record.uda,...record.interfaces,...record.tools.flatMap(t=>t.comments),...record.processes.flatMap(p=>p.descriptions)];
   const preserved=[...texts.map(t=>t.sourceText||t.en),...record.tools.flatMap(t=>[t.id,t.name]),...record.processes.map(p=>p.title)];
   if(record.title===fastUpdate.record.title){
@@ -23,7 +23,8 @@ for(const source of sources){
       if(job.fields.includes('calculate_ovwren'))assert(process.descriptions.some(d=>d.en.includes('(Default: '+(job.calculate==='1'?'On':'Off')+')')),'Wrong DB default: '+job.name);
     }
     assert(record.uda.some(d=>d.en.startsWith('Category 10: T24_M2.0T_L06')),'Missing Bar Retention category 10');
-  }else{
+  }else if(record.sourceRevision!=='260830' && record.title!=='Interface_Test'){
+    assert(source,'Missing legacy source: '+record.title);
     for(const line of source.lines)if(!headings.has(line))assert(preserved.includes(line),'Lost source line in '+record.title+': '+line);
     assert.equal(record.sourceToolCount,source.lines.filter(l=>/^T\d+$/.test(l)).length,'Source tool count mismatch: '+record.title);
   }
@@ -38,7 +39,7 @@ for(const source of sources){
     if(tool.id&&tool.name)assert(fs.existsSync('assets/images/sec-mai-tools/tool-list/t'+(tool.imageId||tool.id).slice(1).padStart(2,'0')+'.webp'),'Missing tool resource: '+tool.id);
     if(record.tools.some(t=>t!==tool&&t.id===tool.id&&t.name!==tool.name))exceptions.push({title:record.title,issue:'Source repeats pocket with different tool names',id:tool.id,name:tool.name});
   }
-  assert.equal(record.images.length,source.images.length);
+  assert.equal(record.images.length,source?source.images.length:0);
 }
 for(const page of ['사용자 매뉴얼.html','src/index.template.html']){
   const html=fs.readFileSync(page,'utf8');assert(html.includes('src/data/mai-batch-templates.js'));assert(html.indexOf('src/data/mai-batch-templates.js')<html.indexOf('src/scripts/mai-dbconfig.js'));
@@ -47,5 +48,5 @@ const renderer=fs.readFileSync('src/scripts/mai-dbconfig.js','utf8');
 assert(renderer.includes('window.MaiBatchTemplates'));
 for(const family of new Set(records.map(r=>r.family)))assert(renderer.includes(family),'Unreachable family: '+family);
 fs.writeFileSync('tools/mai-batch-source-exceptions.json',JSON.stringify(exceptions,null,2)+'\n');
-console.log('PASS: 70 records; legacy sources preserved except the explicitly replaced Fast 260830 snapshot; DB defaults, KO/EN/JA fields and resources checked. Browser verification is separate.');
+console.log('PASS: 73 records; legacy sources preserved except the explicitly replaced 260830 snapshots; KO/EN/JA fields and resources checked. Browser verification is separate.');
 console.log('Source anomalies retained:',exceptions.length);

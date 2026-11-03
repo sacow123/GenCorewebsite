@@ -54,7 +54,7 @@ const records = source.map(record => {
     else {if(!processes.length)throw Error('Unattached description');processes.at(-1).descriptions.push(localize(line));}
   }
   const type=record.title.slice('Hybrid Ceramic_'.length).split('_')[0];
-  const family=type.startsWith('Abutment')?'Abutment':type.startsWith('Inlay/Onlay')?'Inlay/Onlay':/bridge$/i.test(type)?'Bridge':'Crown';
+  const family=type.startsWith('Abutment')?'Abutment':type.startsWith('Inlay')?'Inlay/Onlay':/bridge$/i.test(type)?'Bridge':'Crown';
   return {title:record.title,source:record.source,material:'Hybrid Ceramic',type,family,conditions:lines.slice(0,toolsAt).map(localize),uda:lines.slice(udaAt+1,processesAt).map(localize),tools,processes,
     images:record.images.map(src=>({source:src,src:'assets/images/sec-mai-dbconfig/hybrid-ceramic/boundary-settings.webp',process:'General settings',alt:{ko:'가공 경계 오프셋과 각도 설정 원본 이미지',en:'Original milling boundary offset and angle settings image',ja:'加工境界のオフセットと角度の設定の原画像'}}))};
 });

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <connectorprofile_table>
+      <connectorprofile id="9289ac37-e52d-11ef-9efa-14857f7eaaee">
+         <version>8</version>
+         <name>Ti. Disc</name>
+         <shapetype>0</shapetype>
+         <angle>3</angle>
+         <size>1.8</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>3</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>85</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>0</ignoreequator>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="33f09b62-e921-11ef-9efc-14857f7eaaee">
+         <version>8</version>
+         <name>Pre-Mill</name>
+         <shapetype>0</shapetype>
+         <angle>10</angle>
+         <size>0.4</size>
+         <width>0.1</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>3</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>80</cutdepth>
+         <cutsafetydist>0.1</cutsafetydist>
+         <ignoreequator>1</ignoreequator>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <useforscrewchannel>1</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="adee2868-eff9-11ef-9f02-14857f7eaaee">
+         <version>8</version>
+         <name>PMMA</name>
+         <shapetype>0</shapetype>
+         <angle>3</angle>
+         <size>2</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>2</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>80</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>0</ignoreequator>
+         <material type="material">a901547e-5df2-11ef-8bca-181deae7bdc2</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="4e9e524a-f4c4-11ef-9f04-14857f7eaaee">
+         <version>8</version>
+         <name>Lithium Disilicate Disc</name>
+         <shapetype>0</shapetype>
+         <angle>10</angle>
+         <size>3</size>
+         <width>2</width>
+         <disttoprep>0</disttoprep>
+         <groupsize>3</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>0</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>1</ignoreequator>
+         <material type="material">0794f270-562b-11ef-8bc9-181deae7bdc2</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="7405b733-f4ec-11ef-9f04-14857f7eaaee">
+         <version>8</version>
+         <name>Lithium Disilicate Block</name>
+         <shapetype>0</shapetype>
+         <angle>10</angle>
+         <size>3.5</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>2</groupsize>
+         <honourpontics>0</honourpontics>
+         <cutdepth>50</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>1</ignoreequator>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="023ffe9b-f958-11ef-9f08-14857f7eaaee">
+         <version>8</version>
+         <name>Wax</name>
+         <shapetype>0</shapetype>
+         <angle>3</angle>
+         <size>2</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>2</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>75</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>1</ignoreequator>
+         <material type="material">142507e3-50db-11e7-9748-b00594f36797</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="3ef45d7b-fe4b-11ef-9f0a-14857f7eaaee">
+         <version>8</version>
+         <name>Hybrid Ceramic Block</name>
+         <shapetype>0</shapetype>
+         <angle>10</angle>
+         <size>3.5</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>3</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>0</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>1</ignoreequator>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="600118ad-fef5-11ef-9f0a-14857f7eaaee">
+         <version>8</version>
+         <name>Co.Cr. Disc</name>
+         <shapetype>0</shapetype>
+         <angle>3</angle>
+         <size>1.8</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>2</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>88</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>0</ignoreequator>
+         <material type="material">a3459606-c1e7-11e2-abb2-685d43313a48</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="91fea0cb-ff12-11ef-9f0b-14857f7eaaee">
+         <version>8</version>
+         <name>Zirconia</name>
+         <shapetype>0</shapetype>
+         <angle>3</angle>
+         <size>2</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>2</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>70</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>0</ignoreequator>
+         <material type="material">8de032e3-d612-11ea-b84c-c8f750809c07</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="813edb50-1371-11f0-9f13-14857f7eaaee">
+         <version>8</version>
+         <name>Hybrid Ceramic Disc</name>
+         <shapetype>0</shapetype>
+         <angle>8</angle>
+         <size>3.5</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>3</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>80</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>1</ignoreequator>
+         <material type="material">349f049a-be21-11eb-a186-9061aeceecac</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="7ad3ad83-2cc7-11f1-a4c5-ec4c8c8ee783">
+         <version>8</version>
+         <name>DuraFlex</name>
+         <shapetype>0</shapetype>
+         <angle>3</angle>
+         <size>2</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>2</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>80</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>0</ignoreequator>
+         <material type="material">b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="984368f3-7cca-11f1-a4d7-ec4c8c8ee783">
+         <version>8</version>
+         <name>NewProfile</name>
+         <shapetype>0</shapetype>
+         <angle>15</angle>
+         <size>2.6</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>3</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>0</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>0</ignoreequator>
+         <material type="material">0bae45c3-2d8e-11f1-a4c5-ec4c8c8ee783</material>
+         <useforscrewchannel>0</useforscrewchannel>
+      </connectorprofile>
+      <connectorprofile id="3b8a9ce4-9aaf-11f1-a4de-ec4c8c8ee783">
+         <version>8</version>
+         <name>NewProfile</name>
+         <shapetype>0</shapetype>
+         <angle>10</angle>
+         <size>0.6</size>
+         <width>2</width>
+         <disttoprep>1</disttoprep>
+         <groupsize>3</groupsize>
+         <honourpontics>1</honourpontics>
+         <cutdepth>50</cutdepth>
+         <cutsafetydist>0</cutsafetydist>
+         <ignoreequator>0</ignoreequator>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <useforscrewchannel>1</useforscrewchannel>
+      </connectorprofile>
+   </connectorprofile_table>
+</fmDatabase>

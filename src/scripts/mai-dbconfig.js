@@ -10,6 +10,17 @@
   };
   const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const language = () => typeof currentLang !== 'undefined' && copy[currentLang] ? currentLang : 'en';
+  // Ti bridge membership follows all selected DB part types, including shared tools.
+  const tiBridgeTitles = new Set([
+    'Ti_Abutment bridge_EXT/INT',
+    'Ti_Abutment bridge_EXT/INT (Fast mode)',
+    'Ti_Userdefined areas_Check (not mill)',
+    'Ti_Connector_cut',
+    'Ti_Screw Head (T-cut)',
+    'Ti_Screw Hole Finishing (expansion)',
+    'Ti_Interface_Finishing (expansion)',
+    'Ti_bridge_T_cut Tool test (not mill)'
+  ]);
   const imageCopy = {
     ko: { open: '사진 확대', title: '확대 사진', close: '확대 사진 닫기' },
     en: { open: 'Enlarge photo', title: 'Enlarged photo', close: 'Close enlarged photo' },
@@ -21,6 +32,14 @@
     ja: { open: '画像を見る', close: '画像を閉じる', offset: '増分境界オフセット', angle: '増分境界角度', note: ['計算中に「境界オフセットまたは角度が小さすぎる」などのエラーが発生した場合は、', 'これらの値を少し大きくして再試行してください。'] }
   };
   let family = '', type = '', selectedMaterial = '', activeRecord = null;
+  const prosthesisTypeNames = new Map();
+  const prosthesisTypeKey = value => String(value || '').trim().replace(/\s+/g, ' ').toLowerCase();
+  const capitalizeProsthesisWords = value => String(value || '').trim().replace(/\s+/g, ' ').split(' ').map(word => word.replace(/[a-z]/i, letter => letter.toUpperCase())).join(' ');
+  records.forEach(record => {
+    const key = prosthesisTypeKey(record.type);
+    if (!prosthesisTypeNames.has(key)) prosthesisTypeNames.set(key, capitalizeProsthesisWords(record.type));
+  });
+  const prosthesisTypeName = value => prosthesisTypeNames.get(prosthesisTypeKey(value)) || value;
   const icons = { Abutment: 'abutment', Crown: 'crown', Bridge: 'bridge', Coping: 'coping', 'Inlay/Onlay': 'inlay-onlay', 'Over Structure': 'assets/images/dbconfig-filter-icons/over-structure-purple.webp', 'Denture & Frame': 'denture-frame', Other: null };
   const extraFamilyCopy = {
     ko: { Other: '기타', Connector: '커넥터', Interface: '인터페이스', 'Screw Head (T-cut)': '스크류 헤드 (T-cut)', 'Screw Hole Finishing (expansion)': '스크류 홀 정삭 (확장)', 'Userdefined areas': '사용자 정의 영역 확인' },
@@ -94,10 +113,19 @@
     }));
     const details = section.querySelector('.dbconfig-prosthesis-detail');
     details.hidden = !family;
-    const types = [...new Set(materialRecords.filter(r => r.family === family).map(r => r.type))];
-    const dentureLabels = { 'Denture teeth': 'Denture teeth', 'Flexible denture': 'flexible', 'Full denture': 'full', 'Partial Frame': 'partial frame' };
-    details.replaceChildren(...['', ...types].map(value => filterButton(value ? (family === 'Denture & Frame' ? dentureLabels[value] || value : family === 'Other' ? extraFamilyCopy[language()][value] || value : value) : c.all, type === value, () => { type = value; renderFilters(); })));
-    const visible = materialRecords.filter(r => (!family || r.family === family) && (!type || r.type === type));
+    const types = [...new Set(materialRecords.filter(r => r.family === family).map(r => prosthesisTypeName(r.type)))];
+    const typeLabel = value => {
+      const dictionary = extraFamilyCopy[language()];
+      const translationKey = Object.keys(dictionary).find(key => prosthesisTypeKey(key) === prosthesisTypeKey(value));
+      const label = family === 'Other' && translationKey ? dictionary[translationKey] : value;
+      return language() === 'en' ? capitalizeProsthesisWords(label) : label;
+    };
+    details.replaceChildren(...['', ...types].map(value => filterButton(value ? typeLabel(value) : c.all, type === value, () => { type = value; renderFilters(); })));
+    const visible = materialRecords.filter(r => {
+      if (r.material === 'Ti' && family === 'Abutment' && prosthesisTypeKey(type) === 'abutment bridge') return tiBridgeTitles.has(r.title);
+      if (r.material === 'Ti' && family === 'Abutment' && prosthesisTypeKey(type) === 'abutment' && r.title === 'Ti_Connector_cut') return true;
+      return (!family || r.family === family) && (!type || prosthesisTypeKey(r.type) === prosthesisTypeKey(type));
+    });
     section.querySelector('.mai-template-groups').replaceChildren(...[...new Set(visible.map(r => r.material))].map(material => {
       const group = document.createElement('div'), heading = document.createElement('h4'), list = document.createElement('ul');
       group.className = 'mai-template-group'; heading.textContent = material; list.className = 'card-list mai-template-list';

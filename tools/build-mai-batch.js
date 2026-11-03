@@ -166,5 +166,17 @@ const fastUpdate = JSON.parse(fs.readFileSync('tools/mai-ti-fast-260830.json', '
 const fastIndex = records.findIndex(record => record.title === fastUpdate.record.title);
 if (fastIndex < 0) throw Error('Missing Fast bridge article');
 records[fastIndex] = fastUpdate.record;
+records.push(JSON.parse(fs.readFileSync('tools/mai-ti-tcut-test-260830.json', 'utf8')));
+// Only Ti / Abutment is replaced; crowns, bridges and other materials retain their data.
+const abutmentUpdates = require('./build-mai-ti-abutment.js');
+const oldAbutmentTitles = new Set(['Ti_Abutment', 'Ti_Abutment (Con-log)', 'Ti_Connector_cut']);
+const abutmentPosition = records.findIndex(r => oldAbutmentTitles.has(r.title));
+for (let i = records.length - 1; i >= 0; i--) if (oldAbutmentTitles.has(records[i].title)) records.splice(i, 1);
+records.splice(abutmentPosition, 0, ...abutmentUpdates);
+// The hyperDENT Abutment list also exposes this shared interface test profile.
+const interfaceIndex = records.findIndex(r => r.title === 'Interface_Test');
+const interfaceRecord = records.splice(interfaceIndex, 1)[0];
+interfaceRecord.subtitle = 'Interface_Test';
+records.splice(abutmentPosition + 1, 0, interfaceRecord);
 fs.writeFileSync('src/data/mai-batch-templates.js','// Source: supplied Pre-Mill, Pre-Mil+Rev., Ti, Wax, Zirconia HTML exports.\n// Generated with node tools/build-mai-batch.js.\nwindow.MaiBatchTemplates = '+JSON.stringify(records,null,2)+';\n');
 console.log('Built '+records.length+' templates:',records.reduce((counts,r)=>(counts[r.material]=(counts[r.material]||0)+1,counts),{}));

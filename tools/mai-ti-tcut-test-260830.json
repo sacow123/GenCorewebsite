@@ -1,0 +1,108 @@
+{
+  "title": "Ti_bridge_T_cut Tool test (not mill)",
+  "subtitle": "bridge_T_cut Tool test (not mill)",
+  "material": "Ti",
+  "type": "Screw Head (T-cut)",
+  "family": "Other",
+  "sourceRevision": "260830",
+  "conditions": [
+    {
+      "ko": "어버트먼트 브릿지의 T-cut 공구 테스트용 템플릿입니다. 원본 표기: not mill.",
+      "en": "T-cut tool test template for abutment bridges. Original label: not mill.",
+      "ja": "アバットメントブリッジのT-cut工具テスト用テンプレートです。原文表記：not mill。"
+    },
+    {
+      "ko": "적용 파트 타입: Abutment bridge / Abutment crown bridge",
+      "en": "Applicable part types: Abutment bridge / Abutment crown bridge",
+      "ja": "対象パーツタイプ：Abutment bridge / Abutment crown bridge"
+    }
+  ],
+  "processes": [
+    {
+      "title": "Roughing occlusal side_[M3.0Bx12] 2nd",
+      "descriptions": [
+        {
+          "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
+          "en": "Stored calculation default: On. Execution depends on geometry conditions.",
+          "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+        }
+      ]
+    },
+    {
+      "title": "Finishing inside abutment bases_[M1.5Bx10] 3+2X",
+      "descriptions": [
+        {
+          "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
+          "en": "Stored calculation default: On. Execution depends on geometry conditions.",
+          "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+        }
+      ]
+    },
+    {
+      "title": "Finishing inside abutment bases_[M1.5Rx07] (no cate Finishing)",
+      "descriptions": [
+        {
+          "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
+          "en": "Stored calculation default: On. Execution depends on geometry conditions.",
+          "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+        }
+      ]
+    },
+    {
+      "title": "Plane Finishing inside abutment bases_[M1.5F_L07]",
+      "descriptions": [
+        {
+          "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
+          "en": "Stored calculation default: On. Execution depends on geometry conditions.",
+          "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+        }
+      ]
+    },
+    {
+      "title": "Screw channel machining (angulated) T-cut -(Test)",
+      "descriptions": [
+        {
+          "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
+          "en": "Stored calculation default: On. Execution depends on geometry conditions.",
+          "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+        }
+      ]
+    }
+  ],
+  "uda": [],
+  "interfaces": [],
+  "tools": [
+    {
+      "id": "T9",
+      "name": "M3.0B_L12",
+      "optional": true,
+      "comments": []
+    },
+    {
+      "id": "T11",
+      "name": "M1.5B_L10",
+      "optional": true,
+      "comments": []
+    },
+    {
+      "id": "T18",
+      "name": "M1.5R_L07",
+      "optional": true,
+      "comments": []
+    },
+    {
+      "id": "T17",
+      "name": "M1.5F_L07",
+      "optional": true,
+      "comments": []
+    },
+    {
+      "id": "T23",
+      "name": "M1.5T_L08",
+      "optional": true,
+      "comments": []
+    }
+  ],
+  "images": [],
+  "sourceToolCount": 5
+}

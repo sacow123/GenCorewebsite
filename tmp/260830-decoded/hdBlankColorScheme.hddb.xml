@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <blankcolorscheme_table>
+      <blankcolorscheme id="ce2d6557-3fcf-11ed-bdba-8c04ba42194c">
+         <version>3</version>
+         <name>PMMA</name>
+         <layer type="layer" id="0d8558dd-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>13562103</topcolor>
+            <bottomcolor>13562103</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="f04e67f1-6b95-11ed-9d4f-14857f7eaaee">
+         <version>3</version>
+         <name>Hybrid Ceramic</name>
+         <layer type="layer" id="0d8558df-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>10345719</topcolor>
+            <bottomcolor>16777215</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="01d4aa82-964d-11ee-9e04-14857f7eaaee">
+         <version>3</version>
+         <name>Sintering Metal</name>
+         <layer type="layer" id="0d8558e1-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>16777215</topcolor>
+            <bottomcolor>12632256</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="a1582af5-06ed-11ec-8383-683e261e4299">
+         <version>3</version>
+         <name>Metal</name>
+         <layer type="layer" id="0d8558e3-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>16777215</topcolor>
+            <bottomcolor>10526880</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="4211ab82-5860-11ef-8bc9-181deae7bdc2">
+         <version>3</version>
+         <name>Wax</name>
+         <layer type="layer" id="0d8558e5-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>16777215</topcolor>
+            <bottomcolor>8454016</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="738dacd9-5860-11ef-8bc9-181deae7bdc2">
+         <version>3</version>
+         <name>Glass Ceramic</name>
+         <layer type="layer" id="0d8558e7-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>16777215</topcolor>
+            <bottomcolor>16711808</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="32e1f3c9-a4c7-11eb-8377-683e261e4299">
+         <version>3</version>
+         <name>Hass</name>
+         <layer type="layer" id="0d8558e9-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>16777215</topcolor>
+            <bottomcolor>13366010</bottomcolor>
+            <height>25</height>
+         </layer>
+         <layer type="layer" id="0d8558ea-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>13366010</topcolor>
+            <bottomcolor>11267320</bottomcolor>
+            <height>25</height>
+         </layer>
+         <layer type="layer" id="0d8558eb-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>11267320</topcolor>
+            <bottomcolor>8643315</bottomcolor>
+            <height>25</height>
+         </layer>
+         <layer type="layer" id="0d8558ec-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>8643315</topcolor>
+            <bottomcolor>6478832</bottomcolor>
+            <height>25</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="a59803cd-4b48-11ec-8366-683e261e4299">
+         <version>3</version>
+         <name>C1</name>
+         <layer type="layer" id="0d8558ee-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>13562103</topcolor>
+            <bottomcolor>13562103</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="a59803b4-4b48-11ec-8366-683e261e4299">
+         <version>3</version>
+         <name>D2</name>
+         <layer type="layer" id="0d8558f0-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>12576752</topcolor>
+            <bottomcolor>12576752</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="a59803ac-4b48-11ec-8366-683e261e4299">
+         <version>3</version>
+         <name>e.max</name>
+         <layer type="layer" id="0d8558f2-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>14314726</topcolor>
+            <bottomcolor>14314726</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="4b42bf06-a349-11eb-8377-683e261e4299">
+         <version>3</version>
+         <name>Zirconia</name>
+         <layer type="layer" id="0d8558f4-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>16777215</topcolor>
+            <bottomcolor>16777215</bottomcolor>
+            <height>30</height>
+         </layer>
+         <layer type="layer" id="0d8558f5-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>14611452</topcolor>
+            <bottomcolor>14611452</bottomcolor>
+            <height>40</height>
+         </layer>
+         <layer type="layer" id="0d8558f6-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>10345719</topcolor>
+            <bottomcolor>10345719</bottomcolor>
+            <height>30</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="db1d3377-613f-11ef-9e7d-14857f7eaaee">
+         <version>3</version>
+         <name>A1 / 00</name>
+         <toothcolor type="color">70bea01f-0347-11ed-bda5-a0510ba771db</toothcolor>
+         <layer type="layer" id="0d8558f8-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>14611452</topcolor>
+            <bottomcolor>16777215</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="db1d337a-613f-11ef-9e7d-14857f7eaaee">
+         <version>3</version>
+         <name>A3 / 00</name>
+         <toothcolor type="color">70bea023-0347-11ed-bda5-a0510ba771db</toothcolor>
+         <layer type="layer" id="0d8558fa-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>10345719</topcolor>
+            <bottomcolor>16777215</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="6c4c8368-d4b3-11ef-9eec-14857f7eaaee">
+         <version>3</version>
+         <name>PEEK</name>
+         <toothcolor type="color">70bea01f-0347-11ed-bda5-a0510ba771db</toothcolor>
+         <layer type="layer" id="0d8558fc-4bce-11f0-8410-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>14611452</topcolor>
+            <bottomcolor>14611452</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="0220c338-2cc7-11f1-a4c5-ec4c8c8ee783">
+         <version>3</version>
+         <name>DuraFlex</name>
+         <layer type="layer" id="0220c339-2cc7-11f1-a4c5-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>14720731</topcolor>
+            <bottomcolor>16777215</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+      <blankcolorscheme id="47e6e674-1649-11ee-a95d-18c04db240d8">
+         <version>3</version>
+         <name>Medentika</name>
+         <layer type="layer" id="67d145dd-6b83-11f1-a4d4-ec4c8c8ee783">
+            <version>3</version>
+            <topcolor>12632256</topcolor>
+            <bottomcolor>12632256</bottomcolor>
+            <height>100</height>
+         </layer>
+      </blankcolorscheme>
+   </blankcolorscheme_table>
+</fmDatabase>

@@ -1022,7 +1022,7 @@ window.MaiHybridTemplates = [
     "source": "Hybrid Ceramic_Inlay Crown bridge_SCRP_3+2X 9a3cfb3e905883f4b6190116726e2219.html",
     "material": "Hybrid Ceramic",
     "type": "Inlay/Crown bridge",
-    "family": "Bridge",
+    "family": "Inlay/Onlay",
     "conditions": [
       {
         "ko": "단일 삽입 방향(3+2축).",
@@ -1209,7 +1209,7 @@ window.MaiHybridTemplates = [
     "source": "Hybrid Ceramic_Inlay Crown bridge_SCRP_3+2X_D0 6 5aecfb3e9058830ebdc601ba68a7fa60.html",
     "material": "Hybrid Ceramic",
     "type": "Inlay/Crown bridge",
-    "family": "Bridge",
+    "family": "Inlay/Onlay",
     "conditions": [
       {
         "ko": "하이브리드 세라믹 블록 및 디스크에서 인레이/크라운 브릿지를 가공하는 템플릿입니다. 하나의 브릿지에 인레이와 크라운이 혼합된 경우에도 사용할 수 있습니다.",
@@ -1390,7 +1390,7 @@ window.MaiHybridTemplates = [
     "source": "Hybrid Ceramic_Inlay Crown bridge_SCRP_5X 6d2cfb3e905883be8bfa0130570db913.html",
     "material": "Hybrid Ceramic",
     "type": "Inlay/Crown bridge",
-    "family": "Bridge",
+    "family": "Inlay/Onlay",
     "conditions": [
       {
         "ko": "하이브리드 세라믹 블록 및 디스크에서 인레이/크라운 브릿지를 가공하는 템플릿입니다. 하나의 브릿지에 인레이와 크라운이 혼합된 경우에도 사용할 수 있습니다.",
@@ -1572,7 +1572,7 @@ window.MaiHybridTemplates = [
     "source": "Hybrid Ceramic_Inlay Crown bridge_SCRP_5X_D0 6 b75cfb3e9058822c866b81ed34c25cd6.html",
     "material": "Hybrid Ceramic",
     "type": "Inlay/Crown bridge",
-    "family": "Bridge",
+    "family": "Inlay/Onlay",
     "conditions": [
       {
         "ko": "하이브리드 세라믹 블록 및 디스크에서 인레이/크라운 브릿지를 가공하는 템플릿입니다. 하나의 브릿지에 인레이와 크라운이 혼합된 경우에도 사용할 수 있습니다.",
