@@ -1,5 +1,10 @@
 # Project Coding Rules
 
+## UDA Display
+
+- Show the user-defined area (UDA) section as a collapsed, clickable disclosure by default.
+- Summarize available category numbers into odd/even groups (for example, `유형 1/3/5 사용 가능` and `유형 2/4/6 사용 가능`) instead of repeating tool/process rows. Use only categories present in the source and keep localized wording wired to the language switcher.
+
 ## Protected Local Entry — 사용자 명시 승인 없이 변경 금지
 
 - `index.html`을 `file:///`로 열면 `http://127.0.0.1:8080/index.html`로 자동 이동해야 합니다. 기존 query와 hash를 유지합니다.

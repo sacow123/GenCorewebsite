@@ -1,0 +1,186 @@
+
+1. 
+2. 
+3. 
+4. 
+5. 
+1. Purpose on User defined area(사용자 정의 영역의 목적)
+User defined area(UDA) is the function to set individual insertion direction for milling areas that are inaccessible through standard roughing, rest-machining or finishing direction.
+사용자 정의 영역은 기존 황삭 및 정삭 방향으로는 가공할 수 없는 영역을 가공하기 위해 별도로 삽입 방향을 지정하는 기능입니다. 
+[IMAGE image.png]
+
+[IMAGE image%201.png]
+
+For example, in a full-arch case like the one in this picture, non- milling areas are inevitable regardless of the tilt direction.
+예를 들면, 이런 악궁 전체를 다루는 보철물의 경우 어느 방향으로 틀어도 미 가공 영역이 발생할 수밖에 없습니다. 
+The function allow you to set an additional and individual insertion direction while maintaining the previously set milling direction. 
+설정했던 가공 방향은 유지한 상태로 별도의 가공 방향을 설정하는 기능입니다. 
+[IMAGE image%202.png]
+
+2. How to set and check the UDA insertion direction (사용자 정의 영역 삽입 방향 설정 및 확인 방법)
+
+
+[IMAGE image%203.png]
+
+Click the ‘more’ icon. Then click the User-def. area icon.
+‘ 더 많은’ 아이콘을 클릭하세요. 그런 다음 사용자 정의 영역 아이콘을 클릭하세요
+[IMAGE image%204.png]
+
+Click the ‘show undercut areas’. Then non-milling areas(=under cut areas) will be marked on STL
+‘언더컷 영역 보기’를 누르시면, 미가공영역이 STL 위에 표시됩니다. 
+
+
+[IMAGE image%205.png]
+
+Taking 3 dots on the marked area to defined it. You can adjust UDA by dragging it or adding new ones.
+미가공영역을 포함하게 점 3개를 찍어주세요. 점을 이동하거나, 추가해서 사용자 정의 영역을 수정하실 수 있습니다. 
+
+
+[IMAGE image%206.png]
+
+By setting the UDA as shown in the photo, the C-clamp will tilt to  the angle displayed in the right-top of the screen, allowing for machining from the current screen view. 
+※CAUTION: Please do not exceed 30-degrees on the Z-axis (MAI)(marked by a red circle)
+※CAUTION: Please do not exceed 22-degrees on the Z-axis (MillFix)(marked by a red circle)
+사진과 같이 사용자 정의 영역 설정을 하시면 가공 시 오른쪽 위에 표시된 각도로 C클램프가 기울어져 해당 시점에서 가공을 합니다. 
+※주의: Z축은 절대로 30도를 넘기지 마세요. (MAI)(사진 속 빨간 원으로 표시된 부분)
+※주의: Z축은 절대로 22도를 넘기지 마세요. (MillFix)(사진 속 빨간 원으로 표시된 부분)
+
+
+[IMAGE image%207.png]
+
+The purple area (UDA) will be machined at that specific tilt angle.
+보라색 영역(사용자 정의 영역)을 당 각도로 기울여 가공할 것입니다. 
+[IMAGE image%208.png]
+
+[IMAGE image%209.png]
+
+3.The role of each category number( 각 카테고리의 역할)
+For 90º milling, you should set category 2/4/6, not 1/3/5. Let’s take a look at the example below to verify.
+90도 가공을 하시려면 카테고리를 1/3/5가 아닌 2/4/6으로 잡아야 합니다. 아래 예시를 보며 확인해봅시다.
+[IMAGE image%2010.png]
+
+There are many non-milling areas on the front side of the STL.
+전면부에 많은 양의 언더컷이 있습니다.
+[IMAGE image%2011.png]
+
+It requires lots of tilted angles to mill these under cut areas. So, let’s try to mill 90 degrees milling from the open side of the blank.
+이 언더컷을 0º 시점에서 가공하려면 지나치게 기울여야 하기에, 우리는 소재의 개방된 영역으로 90º 가공을 시도할 것입니다. 
+[IMAGE image%2012.png]
+
+The spindle will likely mill from this point of view.
+스핀들은 이 시점에서 가공할 것입니다.
+[IMAGE image%2013.png]
+
+I will select only a portion of the anterior area as an example.(Object Feature=Category 1)
+예시를 위해 전치부의 일부만 잡아보겠습니다. (유형 = 카테고리1)
+[IMAGE image%2014.png]
+
+The finishing process has straight side-to-side (horizontal) toolpaths.
+마지막 정삭 공정의 공구 경로는 좌-우로 움직이는 수평 방향입니다. 
+[IMAGE image%2015.png]
+
+In contrast, the finishing UDA process has up-down and curved toolpaths. Because of this, the texture direction changes only in the undercut-adjusted areas of the actual workpiece, which compromises the aesthetics.
+이와 달리 사용자 정의 영역의 정삭 공정은 상하 그리고 곡선 방향의 공구 경로입니다. 이 때문에 사용자 정의 영역을 설정한 부분만 결의 방향이 달라져 표면이 매끄럽게 나오지 않습니다. 
+
+
+[IMAGE image%2016.png]
+
+[IMAGE image%2017.png]
+
+[IMAGE image%2018.png]
+
+Looking at the case for Category 2, the UDA toolpaths have straight side-side direction same as finishing process, resulting in a smoother surface 
+카테고리 2번의 경우를 보면 사용자 정의 영역의 결 방향과 정삭의 결 방향이 일치하는 걸 확인할 수 있습니다. 이로인해 카테고리 1번의 경우보다 더 매끄러운 표면을 표현할 수 있습니다. 
+[IMAGE image%2019.png]
+
+List of tools used by category number.
+카테고리 종류 별 사용되는 공구 종류
+4. Recommended setting for UDA(사용자 정의 영역 권장 설정 방법) Over Structure(상부 구조물)
+Over structure is the type of prosthesis that has the most un-milled areas. In particular, the buccal side has many un-milled areas because the STL file must be fitted within the blank. 
+상부 구조물은 미가공 영역이 가장 많이 나오는 보철물 유형입니다. 특히나 협면측은 STL 파일을 소재 안에 맞춰서 넣어서 미가공영역이 주로 발생합니다. 
+[IMAGE image%2020.png]
+
+[IMAGE image%2021.png]
+
+The anterior embrasure can be milled at 90 degrees. We recommend setting UDA at 90 º from the midline to the mesial side of the canine. (Set CAT 2 or 4 or 6) 
+Setting the UDA beyond this range is ineffective for 90º milling. The same applies to other types of prosthesis as well. 
+전치부의 치간부분은 90도로 가공이 가능합니다. 사용자 정의 영역 설정 시 정중선에서 견치 근심면까지 설정하시는 걸 추천드립니다. (카테고리 2/4/6 중 하나를 골라주세요)
+이 범위 밖은 90도 가공이 의미가 없습니다. 다른 보철물도 마찬가지입니다. 
+[IMAGE image%2022.png]
+
+[IMAGE image%2023.png]
+
+For other areas, set the UDA by slightly tilting it more or less from the 0º or 180º position (Keep the tilt within 30 degrees in Z-axis)(Set CAT 1 or 3 or 5)
+그 외 부분에서는 0도 혹은 180도에서 조금씩 각도를 조절해 사용자 정의 영역을 설정해주세요. (Z축 기준30도를 초과하지 마시오)(카테고리 1/3/5 중 하나를 골라주세요)
+
+
+[IMAGE image%2024.png]
+
+[IMAGE image%2025.png]
+
+UDA setup completed
+사용자 정의 영역 설정 후
+[IMAGE 2f2d2e7a-d342-461c-b41e-9d5476bc7a1a.png]
+
+[IMAGE eb67e392-9968-4dd3-bafa-04ab48dcd6df.png]
+
+[IMAGE aebcb535-000a-4cee-ad7d-665b9adb3e17.png]
+
+[IMAGE cd315867-10cd-4c5c-b95f-aefca8a42e38.png]
+
+The toolpaths for the UDA after setup.
+설정 끝난 사용자 정의 영역의 공구 경로
+5. UDA Utilization(UDA의 활용)Setting tooth pocket.
+[IMAGE image%2026.png]
+
+When you set the tooth pocket in hyperDENT—whether automatically or manually—you might realize it is not that easy.
+하이퍼덴트에서 Tooth pocket 선택 후 tooth pocket을 설정해보면 (자동, 수동 둘 다) 제대로 잘 안 잡힌다는 걸 느끼셨을 겁니다. 
+[IMAGE image%2027.png]
+
+We recommend setting the tooth pocket using UDA function first, and then changing the UDA type to ‘tooth pocket’
+먼저 사용자 정의 영역을 이용해 tooth pocket 을 설정하고 다음에 사용자 정의 영역을 tooth pocket 으로 바꾸는 걸 권장합니다. 
+[IMAGE image%2028.png]
+
+Setting tooth pocket area using UDA function. 
+사용자 정의 영역 기능을 이용해 tooth pocket을 설정하는 중
+[IMAGE image%2029.png]
+
+Once the setup is completed, select UDA you just set. Right-click on it and select ‘Change type of margin line’ menu. Then, change the UDA type to tooth pocket. 
+설정이 끝난 사용자 정의 영역을 선택하세요. 우클릭 하시면 ‘ Change type of margin line’ 메뉴가 보이는데 이를 선택해 사용자 정의 영역을 tooth pocket으로 변경하세요.  
+[IMAGE image%2030.png]
+
+[IMAGE image%2031.png]
+
+[IMAGE image%2032.png]
+
+
+Setting coping
+[IMAGE image%2033.png]
+
+We are looking at a denture again. Setting the margin line( coping menu in hyperDENT) is quite difficult, whether automatically or manually. Even when it is set, there is no need to define the whole area  shown in the image. 
+다시 덴처를 한번 보겠습니다. 덴처에서도 마진 라인( 하이퍼덴트에서는 코핑)을 설정하는 건 수동, 자동 둘 다 어렵습니다. 심지어 잡는다 하더라도 저 표시된 넓은 영역 전부를 선택할 필요는 없습니다. 
+[IMAGE image%2034.png]
+
+We only just need to set on this partial area shown on picture. 
+우리는  사진에 표시된 저 부분에만 마진라인을 설정하면 됩니다. 
+[IMAGE image%2035.png]
+
+Change type of margin line same as before. This time, change UDA type to ‘Coping (=margin line)’
+아까와 같이 마진 라인 유형을 변경해주세요. 이번에는 사용자 정의 영역을 코핑으로 변경하세요.
+
+
+
+
+※More details for ‘Denture’, please check this video. Denture base/teeth in hyperDENT 
+※’덴처’에 대해 더 자세한 점은 해당 동영상을 참고해주세요. Denture base/teeth in hyperDENT 
+
+
+
+
+
+
+
+
+
+
+[IMAGE prep_userdefined_64.png]

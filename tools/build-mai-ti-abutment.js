@@ -34,6 +34,7 @@ module.exports = source.records.map(raw => {
   for (const job of raw.jobs) {
     const p = job.p;
     const fields = Object.keys(p).filter(k => k.endsWith('_ovwren') && p[k] === '1').map(k => k.slice(0,-7));
+    if (!fields.length || (p.calculate !== '1' && !fields.includes('calculate'))) continue;
     if (raw.name === 'Interface_Test' && p.calculate === '0' && !fields.includes('calculate')) continue;
     // Also show fixed variant differences, without implying that they are editable.
     if (!fields.length && raw.name !== 'Ti_Connector_cut' && !raw.overrides.some(o => o.key === job.id + '##calculate')) continue;

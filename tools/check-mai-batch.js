@@ -5,8 +5,8 @@ vm.runInNewContext(fs.readFileSync('src/data/mai-batch-templates.js','utf8'),con
 const records=context.window.MaiBatchTemplates;
 const sources=JSON.parse(fs.readFileSync('tools/mai-batch-source.json','utf8'));
 const fastUpdate=JSON.parse(fs.readFileSync('tools/mai-ti-fast-260830.json','utf8'));
-assert.equal(records.length,73);assert.equal(new Set(records.map(r=>r.title)).size,73);
-assert.deepEqual(records.reduce((count,r)=>(count[r.material]=(count[r.material]||0)+1,count),{}),{'Pre-Mil+Rev.':16,'Pre-Mill':4,Ti:29,Wax:5,Zirconia:19});
+assert.equal(records.length,70);assert.equal(new Set(records.map(r=>r.title)).size,70);
+assert.deepEqual(records.reduce((count,r)=>(count[r.material]=(count[r.material]||0)+1,count),{}),{'Pre-Mil+Rev.':16,'Pre-Mill':4,Ti:26,Wax:5,Zirconia:19});
 const headings=new Set(['Tools list used','Tool pocket #','Tools','Comment','User-define area(UDA) available','Overwritable process']);
 const exceptions=[];
 for(const record of records){
@@ -48,5 +48,5 @@ const renderer=fs.readFileSync('src/scripts/mai-dbconfig.js','utf8');
 assert(renderer.includes('window.MaiBatchTemplates'));
 for(const family of new Set(records.map(r=>r.family)))assert(renderer.includes(family),'Unreachable family: '+family);
 fs.writeFileSync('tools/mai-batch-source-exceptions.json',JSON.stringify(exceptions,null,2)+'\n');
-console.log('PASS: 73 records; legacy sources preserved except the explicitly replaced 260830 snapshots; KO/EN/JA fields and resources checked. Browser verification is separate.');
+console.log('PASS: 70 records; legacy sources preserved except the explicitly replaced 260830 snapshots; KO/EN/JA fields and resources checked. Browser verification is separate.');
 console.log('Source anomalies retained:',exceptions.length);

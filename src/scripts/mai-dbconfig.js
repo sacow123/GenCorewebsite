@@ -122,6 +122,7 @@
     };
     details.replaceChildren(...['', ...types].map(value => filterButton(value ? typeLabel(value) : c.all, type === value, () => { type = value; renderFilters(); })));
     const visible = materialRecords.filter(r => {
+      if (r.material === 'Ti' && family === 'Abutment' && ['abutment crown', 'abutment crown bridge'].includes(prosthesisTypeKey(type))) return (r.partTypes || []).includes(prosthesisTypeKey(type) === 'abutment crown' ? 'abutmentcrown_single' : 'abutmentcrown_bridge');
       if (r.material === 'Ti' && family === 'Abutment' && prosthesisTypeKey(type) === 'abutment bridge') return tiBridgeTitles.has(r.title);
       if (r.material === 'Ti' && family === 'Abutment' && prosthesisTypeKey(type) === 'abutment' && r.title === 'Ti_Connector_cut') return true;
       return (!family || r.family === family) && (!type || prosthesisTypeKey(r.type) === prosthesisTypeKey(type));
@@ -152,6 +153,28 @@
     return '<li>' + (item.bold ? '<strong>' + escape(item[lang]) + '</strong>' : escape(item[lang])) + disclosure + '</li>';
   }).join('') + '</ul>';
   const cardSection = (label, content) => '<section class="hybrid-card-section"><h4><span aria-hidden="true"></span>' + escape(label) + '</h4>' + content + '</section>';
+  const disclosureSection = (label, content, lang) => {
+    const hint = {ko:'(클릭)', en:'(Click)', ja:'（クリック）'}[lang];
+    return '<details class="hybrid-card-section mai-uda-toggle"><summary><h4><span aria-hidden="true"></span>' + escape(label) + ' ' + hint + '</h4></summary>' + content + '</details>';
+  };
+  function udaSection(record, lang, label) {
+    const categories = new Set();
+    const other = [];
+    record.uda.forEach(item => {
+      const match = (item.en || '').match(/^\s*Category\s*(\d+(?:\s*\/\s*\d+)*)\s*:/i);
+      if (match) match[1].split('/').forEach(value => categories.add(Number(value.trim())));
+      else other.push(item);
+    });
+    const format = {
+      ko: values => '유형 ' + values + ' 사용 가능',
+      en: values => 'Categories ' + values + ' available',
+      ja: values => 'タイプ ' + values + ' 使用可能'
+    };
+    const groups = [1, 0].map(parity => [...categories].filter(n => n % 2 === parity).sort((a, b) => a - b)).filter(values => values.length);
+    const content = groups.length ? '<ul>' + groups.map(values => '<li>' + escape(format[lang](values.join('/'))) + '</li>').join('') + '</ul>' : '';
+    return disclosureSection(label, content + (other.length ? listMarkupForUda(other, lang) : ''), lang);
+  }
+  const listMarkupForUda = (items, lang) => '<ul>' + items.map(item => '<li>' + escape(item[lang]) + '</li>').join('') + '</ul>';
   function renderDetail() {
     const record = activeRecord, lang = language(), c = copy[lang];
     title.textContent = record.title;
@@ -178,7 +201,7 @@
       const labels = boundaryImageCopy[lang];
       return '<ul><li>' + escape(labels.offset) + '</li><li>' + escape(labels.angle) + '</li></ul><p class="hybrid-adjustment-note"><strong>※</strong> ' + labels.note.map(escape).join('<br>') + '</p>';
     };
-    body.innerHTML = window.GenCoreMaterialTemplateCard.styles() + '<article class="hybrid-template-card" lang="' + lang + '"><span class="hybrid-template-card__tag">M AI TEMPLATE</span><h3>' + escape(record.material) + '</h3><p class="hybrid-template-card__subtitle">' + escape((record.subtitle || record.title.slice(record.material.length + 1)).replace(/_/g, ' · ')) + '</p>' + cardSection(c.conditions, listMarkup(record.conditions) + illustrations()) + (record.processes.length ? cardSection(c.adjustable, record.processes.map(p => '<div class="hybrid-adjustment-group"><h5>' + escape(p.titleText?.[lang] || p.title) + '</h5>' + processDescriptions(p) + illustrations(p.title) + '</div>').join('')) : '') + (record.uda.length ? cardSection(c.uda, listMarkup(record.uda)) : '') + ((record.interfaces || []).length ? cardSection('Implant Interfaces wall', listMarkup(record.interfaces)) : '') + (record.tools.length ? '<section class="hybrid-tools"><h4><span aria-hidden="true"></span>' + c.tools + '</h4>' + toolsMarkup(false) + toolsMarkup(true) + '</section>' : '') + '</article>';
+    body.innerHTML = window.GenCoreMaterialTemplateCard.styles() + '<article class="hybrid-template-card" lang="' + lang + '"><span class="hybrid-template-card__tag">M AI TEMPLATE</span><h3>' + escape(record.material) + '</h3><p class="hybrid-template-card__subtitle">' + escape((record.subtitle || record.title.slice(record.material.length + 1)).replace(/_/g, ' · ')) + '</p>' + cardSection(c.conditions, listMarkup(record.conditions) + illustrations()) + (record.processes.length ? cardSection(c.adjustable, record.processes.map(p => '<div class="hybrid-adjustment-group"><h5>' + escape(p.titleText?.[lang] || p.title) + '</h5>' + processDescriptions(p) + illustrations(p.title) + '</div>').join('')) : '') + (record.uda.length ? udaSection(record, lang, c.uda) : '') + ((record.interfaces || []).length ? disclosureSection('Implant Interfaces wall', listMarkup(record.interfaces), lang) : '') + (record.tools.length ? '<section class="hybrid-tools"><h4><span aria-hidden="true"></span>' + c.tools + '</h4>' + toolsMarkup(false) + toolsMarkup(true) + '</section>' : '') + '</article>';
   }
   function open(record, push = true) {
     activeRecord = record; renderDetail();

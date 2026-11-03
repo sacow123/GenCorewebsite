@@ -48,3 +48,10 @@
 /* Original M AI tool-list WebP, rotated clockwise so the cutting edge faces up. */
 #mai-template-modal .mai-template-tool-photo{position:relative;width:74px;height:130px;margin:0 auto 6px;overflow:clip}
 #mai-template-modal .mai-template-tool-photo img{position:absolute;left:50%;top:-10px;width:440px;max-width:none;height:auto;transform:rotate(90deg) translateY(-50%);transform-origin:top left}
+.mai-uda-toggle > summary { cursor: pointer; display: flex; align-items: center; gap: 12px; list-style: none; }
+.mai-uda-toggle > summary::-webkit-details-marker { display: none; }
+.mai-uda-toggle > summary::after { content: '⌄'; margin-left: auto; color: #7c3aed; font-size: 22px; }
+.mai-uda-toggle[open] > summary::after { transform: rotate(180deg); }
+.mai-uda-toggle > summary h4 { margin-bottom: 0; }
+.mai-uda-toggle[open] > summary { margin-bottom: 12px; }
+.mai-uda-toggle > summary:focus-visible { outline: 2px solid #7c3aed; outline-offset: 5px; border-radius: 4px; }

@@ -178,5 +178,19 @@ const interfaceIndex = records.findIndex(r => r.title === 'Interface_Test');
 const interfaceRecord = records.splice(interfaceIndex, 1)[0];
 interfaceRecord.subtitle = 'Interface_Test';
 records.splice(abutmentPosition + 1, 0, interfaceRecord);
+const crownUpdates = require('./build-mai-ti-crowns.js');
+for (const record of crownUpdates) {
+  const previous = records.find(r => r.title === record.title);
+  if (previous && !/^Ti_Abutment Crown/i.test(record.title)) {
+    record.type = previous.type;
+    record.family = previous.family;
+  }
+}
+const crownTitles = new Set(crownUpdates.map(r => r.title));
+for (let i = records.length - 1; i >= 0; i--) {
+  const r = records[i];
+  if (r.material === 'Ti' && (/^Abutment Crown/i.test(r.type) || crownTitles.has(r.title))) records.splice(i, 1);
+}
+records.push(...crownUpdates);
 fs.writeFileSync('src/data/mai-batch-templates.js','// Source: supplied Pre-Mill, Pre-Mil+Rev., Ti, Wax, Zirconia HTML exports.\n// Generated with node tools/build-mai-batch.js.\nwindow.MaiBatchTemplates = '+JSON.stringify(records,null,2)+';\n');
 console.log('Built '+records.length+' templates:',records.reduce((counts,r)=>(counts[r.material]=(counts[r.material]||0)+1,counts),{}));

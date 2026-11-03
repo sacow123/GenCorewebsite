@@ -9,8 +9,11 @@ for(const raw of source.records){
   const record=records.find(r=>r.sourceProfileId===raw.id);
   assert(record,raw.name); assert.equal(record.title,raw.name); assert.equal(record.sourceRevision,'260830');
   assert.equal(raw.unmatched.length,0);
+  const visibleJobs=raw.jobs.filter(j=>Object.keys(j.p).some(k=>k.endsWith('_ovwren')&&j.p[k]==='1')&&(j.p.calculate==='1'||j.p.calculate_ovwren==='1'));
+  assert.deepEqual(Array.from(record.processes.slice(1),p=>p.title),visibleJobs.map(j=>j.p.jobname),'Unexpected adjustable job in '+raw.name);
   for(const job of raw.jobs){
     const fields=Object.keys(job.p).filter(k=>k.endsWith('_ovwren')&&job.p[k]==='1');
+    if(!fields.length||(job.p.calculate!=='1'&&!fields.includes('calculate_ovwren')))continue;
     if(raw.name==='Interface_Test'&&job.p.calculate==='0'&&!fields.includes('calculate_ovwren'))continue;
     if(!fields.length&&raw.name!=='Ti_Connector_cut'&&!raw.overrides.some(o=>o.key===job.id+'##calculate'))continue;
     const p=record.processes.find(p=>p.sourceJobId===job.id);assert(p,'Missing job '+job.p.jobname);

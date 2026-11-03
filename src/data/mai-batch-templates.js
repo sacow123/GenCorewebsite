@@ -3059,116 +3059,6 @@ window.MaiBatchTemplates = [
     "sourceToolCount": 4
   },
   {
-    "title": "Ti_Connector_cut",
-    "subtitle": "Connector_cut",
-    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
-    "material": "Ti",
-    "type": "Connector",
-    "family": "Other",
-    "conditions": [
-      {
-        "ko": "Ti 디스크의 커넥터 가공용 템플릿입니다.",
-        "en": "Template for machining connectors in Ti discs.",
-        "ja": "Tiディスクのコネクター加工用テンプレートです。"
-      },
-      {
-        "ko": "파트 타입: Abutment",
-        "en": "Part type: Abutment",
-        "ja": "パーツタイプ：Abutment"
-      },
-      {
-        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: Ti_Connector_cut",
-        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: Ti_Connector_cut",
-        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：Ti_Connector_cut"
-      },
-      {
-        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
-        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
-        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
-      }
-    ],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
-            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
-            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
-          },
-          {
-            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
-            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
-            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
-          }
-        ]
-      },
-      {
-        "title": "Cut / Connectors_[M2.0B_L12] -CAV",
-        "descriptions": [
-          {
-            "ko": "연결 공구: T10_M2.0B_L12",
-            "en": "Linked tool: T10_M2.0B_L12",
-            "ja": "割り当て工具：T10_M2.0B_L12"
-          },
-          {
-            "ko": "계산 기본값: 켜짐",
-            "en": "Calculate default: On",
-            "ja": "計算の初期値：ON"
-          }
-        ],
-        "sourceJobId": "9a7912b2-8c27-11f0-bc59-ec4c8c8ee783"
-      },
-      {
-        "title": "Cut / Reduce connectors_[M2.0B_L12] -CAV",
-        "descriptions": [
-          {
-            "ko": "연결 공구: T10_M2.0B_L12",
-            "en": "Linked tool: T10_M2.0B_L12",
-            "ja": "割り当て工具：T10_M2.0B_L12"
-          },
-          {
-            "ko": "계산 기본값: 켜짐",
-            "en": "Calculate default: On",
-            "ja": "計算の初期値：ON"
-          }
-        ],
-        "sourceJobId": "9a7912b5-8c27-11f0-bc59-ec4c8c8ee783"
-      }
-    ],
-    "uda": [],
-    "interfaces": [],
-    "tools": [
-      {
-        "id": "T10",
-        "name": "M2.0B_L12",
-        "optional": false,
-        "comments": []
-      }
-    ],
-    "toolHints": {
-      "basic": {
-        "ko": "공정·형상 조건에 따라 사용",
-        "en": "Used according to process and geometry conditions",
-        "ja": "工程・形状条件に応じて使用"
-      },
-      "optional": {
-        "ko": "해당 조건에 따라 사용",
-        "en": "Used when the corresponding conditions apply",
-        "ja": "該当条件に応じて使用"
-      }
-    },
-    "images": [],
-    "sourceToolCount": 1,
-    "sourceRevision": "260830",
-    "sourceProfileId": "9a791183-8c27-11f0-bc59-ec4c8c8ee783"
-  },
-  {
     "title": "Interface_Test",
     "subtitle": "Interface_Test",
     "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
@@ -3521,58 +3411,6 @@ window.MaiBatchTemplates = [
             "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
           }
         ]
-      },
-      {
-        "title": "Finishing outer areas cavity side (cap)_[M1.5Bx10]",
-        "descriptions": [
-          {
-            "ko": "직경 1.5mm 공구로 캐비티 측 외측 영역을 정삭합니다.",
-            "en": "Finishes the outer cavity-side areas with a 1.5 mm diameter tool.",
-            "ja": "直径1.5mmの工具でキャビティ側の外側領域を仕上げます。"
-          },
-          {
-            "ko": "연결 공구: T11_M1.5B_L10",
-            "en": "Linked tool: T11_M1.5B_L10",
-            "ja": "割り当て工具：T11_M1.5B_L10"
-          },
-          {
-            "ko": "계산 기본값: 꺼짐",
-            "en": "Calculate default: Off",
-            "ja": "計算の初期値：OFF"
-          },
-          {
-            "ko": "스텝다운: 깊이 방향 가공 간격을 조정할 수 있습니다. (기본값: 0.1)",
-            "en": "Stepdown: Adjusts the machining interval in the depth direction. (Default: 0.1)",
-            "ja": "ステップダウン：深さ方向の加工間隔を調整できます。（初期値：0.1）"
-          }
-        ],
-        "sourceJobId": "8a5f8c95-c23f-11ee-b5fd-d85ed3abfe3c"
-      },
-      {
-        "title": "Finishing outer areas cavity side (cap)_[M1.0Bx10]",
-        "descriptions": [
-          {
-            "ko": "직경 1mm 공구로 캐비티 측 외측 영역을 정삭합니다.",
-            "en": "Finishes the outer cavity-side areas with a 1 mm diameter tool.",
-            "ja": "直径1mmの工具でキャビティ側の外側領域を仕上げます。"
-          },
-          {
-            "ko": "연결 공구: T12_M1.0B_L10",
-            "en": "Linked tool: T12_M1.0B_L10",
-            "ja": "割り当て工具：T12_M1.0B_L10"
-          },
-          {
-            "ko": "계산 기본값: 꺼짐",
-            "en": "Calculate default: Off",
-            "ja": "計算の初期値：OFF"
-          },
-          {
-            "ko": "스텝다운: 깊이 방향 가공 간격을 조정할 수 있습니다. (기본값: 0.1)",
-            "en": "Stepdown: Adjusts the machining interval in the depth direction. (Default: 0.1)",
-            "ja": "ステップダウン：深さ方向の加工間隔を調整できます。（初期値：0.1）"
-          }
-        ],
-        "sourceJobId": "8a5f8c9b-c23f-11ee-b5fd-d85ed3abfe3c"
       },
       {
         "title": "Fissure machining D1",
@@ -3974,64 +3812,6 @@ window.MaiBatchTemplates = [
           }
         ],
         "sourceJobId": "8a5f8c95-c23f-11ee-b5fd-d85ed3abfe3c"
-      },
-      {
-        "title": "Finishing outer areas cavity side (cap)_[M1.0Bx10]",
-        "descriptions": [
-          {
-            "ko": "직경 1mm 공구로 캐비티 측 외측 영역을 정삭합니다.",
-            "en": "Finishes the outer cavity-side areas with a 1 mm diameter tool.",
-            "ja": "直径1mmの工具でキャビティ側の外側領域を仕上げます。"
-          },
-          {
-            "ko": "연결 공구: T12_M1.0B_L10",
-            "en": "Linked tool: T12_M1.0B_L10",
-            "ja": "割り当て工具：T12_M1.0B_L10"
-          },
-          {
-            "ko": "계산 기본값: 꺼짐",
-            "en": "Calculate default: Off",
-            "ja": "計算の初期値：OFF"
-          },
-          {
-            "ko": "스텝다운: 깊이 방향 가공 간격을 조정할 수 있습니다. (기본값: 0.1)",
-            "en": "Stepdown: Adjusts the machining interval in the depth direction. (Default: 0.1)",
-            "ja": "ステップダウン：深さ方向の加工間隔を調整できます。（初期値：0.1）"
-          }
-        ],
-        "sourceJobId": "8a5f8c9b-c23f-11ee-b5fd-d85ed3abfe3c"
-      },
-      {
-        "title": "Plane Finishing inside abutment bases_[M1.0B_L10]",
-        "descriptions": [
-          {
-            "ko": "연결 공구: T12_M1.0B_L10",
-            "en": "Linked tool: T12_M1.0B_L10",
-            "ja": "割り当て工具：T12_M1.0B_L10"
-          },
-          {
-            "ko": "계산 기본값: 켜짐",
-            "en": "Calculate default: On",
-            "ja": "計算の初期値：ON"
-          }
-        ],
-        "sourceJobId": "973ce754-738c-11f1-a4d4-ec4c8c8ee783"
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0Bx10]",
-        "descriptions": [
-          {
-            "ko": "연결 공구: T12_M1.0B_L10",
-            "en": "Linked tool: T12_M1.0B_L10",
-            "ja": "割り当て工具：T12_M1.0B_L10"
-          },
-          {
-            "ko": "계산 기본값: 꺼짐",
-            "en": "Calculate default: Off",
-            "ja": "計算の初期値：OFF"
-          }
-        ],
-        "sourceJobId": "887a1d4a-b2c5-11ef-9ec8-14857f7eaaee"
       },
       {
         "title": "Fissure machining D1",
@@ -4485,22 +4265,6 @@ window.MaiBatchTemplates = [
           }
         ],
         "sourceJobId": "a5f4a159-c23f-11ee-b5fd-d85ed3abfe3c"
-      },
-      {
-        "title": "finishing occlusal side  [M1.5F_L07]-Angle",
-        "descriptions": [
-          {
-            "ko": "연결 공구: T17_M1.5F_L07",
-            "en": "Linked tool: T17_M1.5F_L07",
-            "ja": "割り当て工具：T17_M1.5F_L07"
-          },
-          {
-            "ko": "계산 기본값: 켜짐",
-            "en": "Calculate default: On",
-            "ja": "計算の初期値：ON"
-          }
-        ],
-        "sourceJobId": "571dace1-4739-11f0-840d-ec4c8c8ee783"
       },
       {
         "title": "Fissure machining [M0.6BXL03]",
@@ -6165,2535 +5929,6 @@ window.MaiBatchTemplates = [
     "sourceToolCount": 18
   },
   {
-    "title": "Ti_Abutment crown",
-    "subtitle": "Abutment crown",
-    "source": "Ti_Abutment crown bf9cfb3e9058827d8e9a014b8d254459.html",
-    "material": "Ti",
-    "type": "Abutment crown",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 어버트먼트 크라운을 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment crown in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントクラウンを加工するテンプレートです。"
-      },
-      {
-        "ko": "유형이 적용된 어버트먼트 인터페이스와 적용되지 않은 인터페이스 모두에 사용합니다.",
-        "en": "For both the Abutment interface that has categories applied and not applied.",
-        "ja": "カテゴリが適用されたアバットメントインターフェースと適用されていないものの両方に使用します。"
-      }
-    ],
-    "uda": [
-      {
-        "ko": "유형 1/2 : T12_M1.0B_L10",
-        "en": "Category 1/2: T12_M1.0B_L10",
-        "ja": "カテゴリ1/2 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 3/4 : T13_M0.6B_L03",
-        "en": "Category 3/4:T13_M0.6B_L03",
-        "ja": "カテゴリ3/4 : T13_M0.6B_L03"
-      }
-    ],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ],
-        "imageId": "T28"
-      }
-    ],
-    "processes": [
-      {
-        "title": "Fissure machining D1",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 켜짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: On)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：ON）"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Abutment Crown bridge_Cat.10_B0.6 finish",
-    "subtitle": "Abutment Crown bridge_Cat.10_B0.6 finish",
-    "source": "Ti_Abutment Crown bridge_Cat 10_B0 6 finish e6ccfb3e905882d0a7ec01382dab5f53.html",
-    "material": "Ti",
-    "type": "Abutment Crown bridge",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "250410 버전부터 …_EXT/INT 템플릿에 통합됨",
-        "en": "Merged into the …_EXT/INT template from version 250410.",
-        "ja": "バージョン250410以降、…_EXT/INTテンプレートに統合されています。",
-        "sourceText": "250410 버전부터 …_EXT/INT 템플릿에 통합됨"
-      },
-      {
-        "ko": "Ti 디스크에서 어버트먼트 크라운 브릿지를 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment crown bridge in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントクラウンブリッジを加工するテンプレートです。"
-      },
-      {
-        "ko": "형상이 좁은 어버트먼트 인터페이스용입니다.",
-        "en": "For the Abutment Interface has a narrow shape.",
-        "ja": "形状が狭いアバットメントインターフェース用です。"
-      }
-    ],
-    "uda": [],
-    "interfaces": [],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Abutment Crown bridge_Cat.10_F0.5 finish",
-    "subtitle": "Abutment Crown bridge_Cat.10_F0.5 finish",
-    "source": "Ti_Abutment Crown bridge_Cat 10_F0 5 finish 500cfb3e90588219ac7681bcdc91e629.html",
-    "material": "Ti",
-    "type": "Abutment Crown bridge",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "250410 버전부터 …_EXT/INT 템플릿에 통합됨",
-        "en": "Merged into the …_EXT/INT template from version 250410.",
-        "ja": "バージョン250410以降、…_EXT/INTテンプレートに統合されています。",
-        "sourceText": "250410 버전부터 …_EXT/INT 템플릿에 통합됨"
-      },
-      {
-        "ko": "Ti 디스크에서 어버트먼트 브릿지를 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment bridge in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントブリッジを加工するテンプレートです。"
-      },
-      {
-        "ko": "형상이 좁은 어버트먼트 인터페이스용입니다.",
-        "en": "For the Abutment Interface that has a narrow shape.",
-        "ja": "形状が狭いアバットメントインターフェース用です。"
-      }
-    ],
-    "uda": [],
-    "interfaces": [],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Abutment Crown bridge_EXT/INT (Fast mode)",
-    "subtitle": "Abutment Crown bridge_EXT/INT (Fast mode)",
-    "source": "Ti_Abutment Crown bridge_EXT INT (Fast mode) 2f4cfb3e9058838fa3c90140bbfb52a5.html",
-    "material": "Ti",
-    "type": "Abutment Crown bridge",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 어버트먼트 크라운 브릿지를 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment crown bridge in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントクラウンブリッジを加工するテンプレートです。"
-      },
-      {
-        "ko": "유형이 적용된 어버트먼트 인터페이스와 적용되지 않은 인터페이스에 사용합니다.",
-        "en": "For the Abutment interface that has categories applied and not applied.",
-        "ja": "カテゴリが適用されたアバットメントインターフェースと適用されていないものに使用します。"
-      },
-      {
-        "ko": "단순한 디자인에만 사용합니다.",
-        "en": "For the simple design only.",
-        "ja": "シンプルなデザインにのみ使用します。"
-      },
-      {
-        "ko": "공구 소모가 빨라질 수 있습니다.",
-        "en": "It may facilitate tool consumption.",
-        "ja": "工具の消耗が早まる場合があります。"
-      }
-    ],
-    "uda": [
-      {
-        "ko": "유형 1/2 : T12_M1.0B_L10",
-        "en": "Category 1/2: T12_M1.0B_L10",
-        "ja": "カテゴリ1/2 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 3/4 : T13_M0.6B_L03",
-        "en": "Category 3/4:T13_M0.6B_L03",
-        "ja": "カテゴリ3/4 : T13_M0.6B_L03"
-      }
-    ],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋",
-            "en": "Incremental Boundary offset",
-            "ja": "増分境界オフセット"
-          },
-          {
-            "ko": "가공 경계의 오프셋을 조정할 수 있습니다.",
-            "en": "You can adjust milling boundary offset.",
-            "ja": "加工境界のオフセットを調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0BxL10] 3x (strauman no Cat)",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          },
-          {
-            "ko": "여유량: 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance : Available to adjust the fit inside of abutment bases",
-            "ja": "余裕量：アバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Restmachining inside abutment bases_[M0.6Bx10] (strauman no Cat)",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 어버트먼트 베이스 내부의 잔삭을 가공합니다.",
-            "en": "Restmachining process inside abutment bases with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具でアバットメントベース内部の残削加工を行います。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate: Selectable operate this process or skip,(Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M0.6BxL06] (strauman no Cat)",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          },
-          {
-            "ko": "여유량: 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance : Available to adjust the fit inside of abutment bases",
-            "ja": "余裕量：アバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Abutment Crown bridge_EXT/INT",
-    "subtitle": "Abutment Crown bridge_EXT/INT",
-    "source": "Ti_Abutment Crown bridge_EXT INT 1c6cfb3e905882098e5b819b578f113e.html",
-    "material": "Ti",
-    "type": "Abutment Crown bridge",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 어버트먼트 크라운 브릿지를 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment crown bridge in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントクラウンブリッジを加工するテンプレートです。"
-      },
-      {
-        "ko": "유형이 적용된 어버트먼트 인터페이스와 적용되지 않은 인터페이스에 사용합니다.",
-        "en": "For the Abutment interface that has categories applied and not applied.",
-        "ja": "カテゴリが適用されたアバットメントインターフェースと適用されていないものに使用します。"
-      }
-    ],
-    "uda": [
-      {
-        "ko": "유형 1/2 : T12_M1.0B_L10",
-        "en": "Category 1/2: T12_M1.0B_L10",
-        "ja": "カテゴリ1/2 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 3/4 : T13_M0.6B_L03",
-        "en": "Category 3/4:T13_M0.6B_L03",
-        "ja": "カテゴリ3/4 : T13_M0.6B_L03"
-      }
-    ],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋",
-            "en": "Incremental Boundary offset",
-            "ja": "増分境界オフセット"
-          },
-          {
-            "ko": "가공 경계의 오프셋을 조정할 수 있습니다.",
-            "en": "You can adjust milling boundary offset.",
-            "ja": "加工境界のオフセットを調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0BxL10] 3x (strauman no Cat)",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 켜짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: On)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：ON）"
-          },
-          {
-            "ko": "여유량: 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance : Available to adjust the fit inside of abutment bases",
-            "ja": "余裕量：アバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M0.6BxL06] (strauman no Cat)",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 켜짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: On)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：ON）"
-          },
-          {
-            "ko": "여유량: 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance : Available to adjust the fit inside of abutment bases",
-            "ja": "余裕量：アバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Abutment Crown bridge_NCS -(highness)",
-    "subtitle": "Abutment Crown bridge_NCS -(highness)",
-    "source": "Ti_Abutment Crown bridge_NCS -(highness) f50cfb3e9058820684e2817fdfa46eb7.html",
-    "material": "Ti",
-    "type": "Abutment Crown bridge",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 어버트먼트 크라운 브릿지를 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment crown bridge in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントクラウンブリッジを加工するテンプレートです。"
-      },
-      {
-        "ko": "Highness 시스템의 어버트먼트 인터페이스용입니다.",
-        "en": "For the Abutment Interface of the Highness system",
-        "ja": "Highnessシステムのアバットメントインターフェース用です。"
-      }
-    ],
-    "uda": [
-      {
-        "ko": "유형 1/2 : T12_M1.0B_L10",
-        "en": "Category 1/2: T12_M1.0B_L10",
-        "ja": "カテゴリ1/2 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 3/4 : T13_M0.6B_L03",
-        "en": "Category 3/4:T13_M0.6B_L03",
-        "ja": "カテゴリ3/4 : T13_M0.6B_L03"
-      }
-    ],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋",
-            "en": "Incremental Boundary offset",
-            "ja": "増分境界オフセット"
-          },
-          {
-            "ko": "가공 경계의 오프셋을 조정할 수 있습니다.",
-            "en": "You can adjust milling boundary offset.",
-            "ja": "加工境界のオフセットを調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0BxL10]",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "여유량 XY: X축과 Y축만 변경하여 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance XY : Available to adjust (only X&Y axes) the fit inside of abutment bases",
-            "ja": "余裕量XY：X軸とY軸のみを変更してアバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0F_L06]_(highness)",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "여유량 XY: X축과 Y축만 변경하여 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance XY : Available to adjust (only X&Y axes) the fit inside of abutment bases",
-            "ja": "余裕量XY：X軸とY軸のみを変更してアバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Abutment Crown bridge_NCS -(M-Fix)",
-    "subtitle": "Abutment Crown bridge_NCS -(M-Fix)",
-    "source": "Ti_Abutment Crown bridge_NCS -(M-Fix) 90dcfb3e90588346b40981a1cad07e36.html",
-    "material": "Ti",
-    "type": "Abutment Crown bridge",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 어버트먼트 크라운 브릿지를 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment crown bridge in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントクラウンブリッジを加工するテンプレートです。"
-      },
-      {
-        "ko": "Highness 시스템의 어버트먼트 인터페이스용입니다.",
-        "en": "For the Abutment Interface of the Highness system",
-        "ja": "Highnessシステムのアバットメントインターフェース用です。"
-      }
-    ],
-    "uda": [
-      {
-        "ko": "유형 1/2 : T12_M1.0B_L10",
-        "en": "Category 1/2: T12_M1.0B_L10",
-        "ja": "カテゴリ1/2 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 3/4 : T13_M0.6B_L03",
-        "en": "Category 3/4:T13_M0.6B_L03",
-        "ja": "カテゴリ3/4 : T13_M0.6B_L03"
-      }
-    ],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋",
-            "en": "Incremental Boundary offset",
-            "ja": "増分境界オフセット"
-          },
-          {
-            "ko": "가공 경계의 오프셋을 조정할 수 있습니다.",
-            "en": "You can adjust milling boundary offset.",
-            "ja": "加工境界のオフセットを調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0BxL10]",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "여유량 XY: X축과 Y축만 변경하여 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance XY : Available to adjust (only X&Y axes) the fit inside of abutment bases",
-            "ja": "余裕量XY：X軸とY軸のみを変更してアバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.5RxL07]_M-Fix",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "여유량 XY: X축과 Y축만 변경하여 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance XY : Available to adjust (only X&Y axes) the fit inside of abutment bases",
-            "ja": "余裕量XY：X軸とY軸のみを変更してアバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Abutment Crown bridge_No Interface_B0.6_Hole Cat.1_Strauman",
-    "subtitle": "Abutment Crown bridge_No Interface_B0.6_Hole Cat.1_Strauman",
-    "source": "Ti_Abutment Crown bridge_No Interface_B0 6_Hole Ca 6e8cfb3e905882c084e601199ea0fc05.html",
-    "material": "Ti",
-    "type": "Abutment Crown bridge",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "250410 버전부터 …_EXT/INT 템플릿에 통합됨",
-        "en": "Merged into the …_EXT/INT template from version 250410.",
-        "ja": "バージョン250410以降、…_EXT/INTテンプレートに統合されています。",
-        "sourceText": "250410 버전부터 …_EXT/INT 템플릿에 통합됨"
-      },
-      {
-        "ko": "Ti 디스크에서 어버트먼트 브릿지를 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment bridge in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントブリッジを加工するテンプレートです。"
-      },
-      {
-        "ko": "Staumann 시스템에서 형상이 좁은 어버트먼트 인터페이스용입니다.",
-        "en": "For the Abutment interface that has a narrow shape in Staumann system.",
-        "ja": "Staumannシステムの形状が狭いアバットメントインターフェース用です。"
-      }
-    ],
-    "uda": [],
-    "interfaces": [],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Abutment Crown_NCS -(highness)",
-    "subtitle": "Abutment Crown_NCS -(highness)",
-    "source": "Ti_Abutment Crown_NCS -(highness) 385cfb3e9058821aa117019e68099100.html",
-    "material": "Ti",
-    "type": "Abutment Crown",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 어버트먼트 크라운을 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment crown in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントクラウンを加工するテンプレートです。"
-      },
-      {
-        "ko": "Highness 시스템의 어버트먼트 인터페이스용입니다.",
-        "en": "For the Abutment Interface of the Highness system",
-        "ja": "Highnessシステムのアバットメントインターフェース用です。"
-      }
-    ],
-    "uda": [
-      {
-        "ko": "유형 1/2 : T12_M1.0B_L10",
-        "en": "Category 1/2: T12_M1.0B_L10",
-        "ja": "カテゴリ1/2 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 3/4 : T13_M0.6B_L03",
-        "en": "Category 3/4:T13_M0.6B_L03",
-        "ja": "カテゴリ3/4 : T13_M0.6B_L03"
-      }
-    ],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋",
-            "en": "Incremental Boundary offset",
-            "ja": "増分境界オフセット"
-          },
-          {
-            "ko": "가공 경계의 오프셋을 조정할 수 있습니다.",
-            "en": "You can adjust milling boundary offset.",
-            "ja": "加工境界のオフセットを調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0BxL10]",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "여유량 XY: X축과 Y축만 변경하여 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance XY : Available to adjust (only X&Y axes) the fit inside of abutment bases",
-            "ja": "余裕量XY：X軸とY軸のみを変更してアバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0F_L06]_(highness)",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "여유량 XY: X축과 Y축만 변경하여 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance XY : Available to adjust (only X&Y axes) the fit inside of abutment bases",
-            "ja": "余裕量XY：X軸とY軸のみを変更してアバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 15
-  },
-  {
-    "title": "Ti_Abutment Crown_NCS -(M-Fix)",
-    "subtitle": "Abutment Crown_NCS -(M-Fix)",
-    "source": "Ti_Abutment Crown_NCS -(M-Fix) 456cfb3e905882a79122016071e16734.html",
-    "material": "Ti",
-    "type": "Abutment Crown",
-    "family": "Abutment",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 어버트먼트 크라운을 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment crown in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントクラウンを加工するテンプレートです。"
-      },
-      {
-        "ko": "M-Fix 시스템의 어버트먼트 인터페이스용입니다.",
-        "en": "For the Abutment Interface of the M-Fix system",
-        "ja": "M-Fixシステムのアバットメントインターフェース用です。"
-      }
-    ],
-    "uda": [
-      {
-        "ko": "유형 1/2 : T12_M1.0B_L10",
-        "en": "Category 1/2: T12_M1.0B_L10",
-        "ja": "カテゴリ1/2 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 3/4 : T13_M0.6B_L03",
-        "en": "Category 3/4:T13_M0.6B_L03",
-        "ja": "カテゴリ3/4 : T13_M0.6B_L03"
-      }
-    ],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋",
-            "en": "Incremental Boundary offset",
-            "ja": "増分境界オフセット"
-          },
-          {
-            "ko": "가공 경계의 오프셋을 조정할 수 있습니다.",
-            "en": "You can adjust milling boundary offset.",
-            "ja": "加工境界のオフセットを調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0BxL10]",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "여유량 XY: X축과 Y축만 변경하여 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance XY : Available to adjust (only X&Y axes) the fit inside of abutment bases",
-            "ja": "余裕量XY：X軸とY軸のみを変更してアバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.5RxL07]_M-Fix",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "여유량 XY: X축과 Y축만 변경하여 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance XY : Available to adjust (only X&Y axes) the fit inside of abutment bases",
-            "ja": "余裕量XY：X軸とY軸のみを変更してアバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 15
-  },
-  {
     "title": "Ti_Coping Bridge_5X",
     "subtitle": "Coping Bridge_5X",
     "source": "Ti_Coping Bridge_5X e5acfb3e90588394b7f001f39971f9a5.html",
@@ -9632,725 +6867,6 @@ window.MaiBatchTemplates = [
     ],
     "images": [],
     "sourceToolCount": 8
-  },
-  {
-    "title": "Ti_Interface_Finishing (expansion)",
-    "subtitle": "Interface_Finishing (expansion)",
-    "source": "Ti_Interface_Finishing (expansion) a3dcfb3e905883dd8f5081af3344801b.html",
-    "material": "Ti",
-    "type": "Interface",
-    "family": "Other",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 인터페이스 벽을 확장 가공하는 전용 템플릿입니다.",
-        "en": "This is only for expansion milling wall of interface in the Ti. Disc.",
-        "ja": "Tiディスクでインターフェースの壁を拡張加工する専用テンプレートです。"
-      },
-      {
-        "ko": "유형이 적용된 어버트먼트 인터페이스와 적용되지 않은 인터페이스에 사용합니다.",
-        "en": "For the Abutment interface that has categories applied and not applied.",
-        "ja": "カテゴリが適用されたアバットメントインターフェースと適用されていないものに使用します。"
-      }
-    ],
-    "uda": [],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "Screw channel machining_occlusal_[M1.5FRx15]",
-        "descriptions": [
-          {
-            "ko": "직경 1.5mm 플랫 라운드 공구로 교합면 측(0°)의 스크류 채널을 가공합니다.",
-            "en": "Occlusal(0º) side, screw channel machining process with flat round 1.5mm diameter tool",
-            "ja": "直径1.5mmのフラットラウンド工具で咬合面側（0°）のスクリューチャンネルを加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          },
-          {
-            "ko": "스크류 채널 반경 오프셋: 교합면 측 스크류 채널의 반경을 조정할 수 있습니다.",
-            "en": "screw channel radius offset : Available to adjust the radius occlusal side of screw channel.",
-            "ja": "スクリューチャンネルの半径オフセット：咬合面側のスクリューチャンネルの半径を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Screw channel machining_occlusal(Angled)_[M1.5FRx15]",
-        "descriptions": [
-          {
-            "ko": "직경 1.5mm 플랫 라운드 공구로 교합면 측(0°)의 앵글드 스크류 채널을 가공합니다.",
-            "en": "Occlusal(0º) side, angled screw channel machining process with flat round 1.5mm diameter tool",
-            "ja": "直径1.5mmのフラットラウンド工具で咬合面側（0°）のアングルドスクリューチャンネルを加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          },
-          {
-            "ko": "스크류 채널 반경 오프셋: 교합면 측 스크류 채널의 반경을 조정할 수 있습니다.",
-            "en": "screw channel radius offset : Available to adjust the radius occlusal side of screw channel.",
-            "ja": "スクリューチャンネルの半径オフセット：咬合面側のスクリューチャンネルの半径を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Screw channel machining_cavity_[M1.0Bx10]",
-        "descriptions": [
-          {
-            "ko": "직경 1.5mm 플랫 라운드 공구로 캐비티 측(180°)의 스크류 채널을 가공합니다.",
-            "en": "Cavity(180º) side, screw channel machining process with flat round 1.5mm diameter tool",
-            "ja": "直径1.5mmのフラットラウンド工具でキャビティ側（180°）のスクリューチャンネルを加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          },
-          {
-            "ko": "스크류 채널 반경 오프셋: 캐비티 측 스크류 채널의 반경을 조정할 수 있습니다.",
-            "en": "screw channel radius offset : Available to adjust the radius cavity side of screw channel",
-            "ja": "スクリューチャンネルの半径オフセット：キャビティ側のスクリューチャンネルの半径を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Cut/Reduce connector_[M2.0B_L12] -CAV",
-        "descriptions": [
-          {
-            "ko": "직경 2.0mm 공구로 캐비티 측(180°)의 커넥터를 가공합니다.",
-            "en": "Cavity side(180º), connector milling process with 2.0mm diameter tool",
-            "ja": "直径2.0mmの工具でキャビティ側（180°）のコネクターを加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Screw Head (T-cut)",
-    "subtitle": "Screw Head (T-cut)",
-    "source": "Ti_Screw Head (T-cut) f98cfb3e9058832f8435011eb2a70391.html",
-    "material": "Ti",
-    "type": "Screw Head (T-cut)",
-    "family": "Other",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 스크류 헤드를 가공하는 전용 템플릿입니다.",
-        "en": "This is only for milling screw head in the Ti. Disc.",
-        "ja": "Tiディスクでスクリューヘッドを加工する専用テンプレートです。"
-      }
-    ],
-    "uda": [],
-    "interfaces": [],
-    "tools": [
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": false,
-        "comments": [
-          {
-            "ko": "캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "Cut/Reduce connector_[M2.0B_L12] -CAV",
-        "descriptions": [
-          {
-            "ko": "직경 2.0mm 공구로 캐비티 측(180°)의 커넥터를 가공합니다.",
-            "en": "Cavity side(180º), connector milling process with 2.0mm diameter tool",
-            "ja": "直径2.0mmの工具でキャビティ側（180°）のコネクターを加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 1
-  },
-  {
-    "title": "Ti_Screw Hole Finishing (expansion)",
-    "subtitle": "Screw Hole Finishing (expansion)",
-    "source": "Ti_Screw Hole Finishing (expansion) fa1cfb3e9058827ba0bf01ad1ef4af7c.html",
-    "material": "Ti",
-    "type": "Screw Hole Finishing (expansion)",
-    "family": "Other",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 어버트먼트 브릿지를 가공하는 템플릿입니다.",
-        "en": "This is for milling an Abutment bridge in the Ti. Disc.",
-        "ja": "Tiディスクでアバットメントブリッジを加工するテンプレートです。"
-      },
-      {
-        "ko": "유형이 적용된 어버트먼트 인터페이스와 적용되지 않은 인터페이스에 사용합니다.",
-        "en": "For the Abutment interface that has categories applied and not applied.",
-        "ja": "カテゴリが適用されたアバットメントインターフェースと適用されていないものに使用します。"
-      },
-      {
-        "ko": "단순한 디자인에만 사용합니다.",
-        "en": "For the simple design only.",
-        "ja": "シンプルなデザインにのみ使用します。"
-      },
-      {
-        "ko": "공구 소모가 빨라질 수 있습니다.",
-        "en": "It may facilitate tool consumption.",
-        "ja": "工具の消耗が早まる場合があります。"
-      }
-    ],
-    "uda": [
-      {
-        "ko": "유형 1/2 : T12_M1.0B_L10",
-        "en": "Category 1/2: T12_M1.0B_L10",
-        "ja": "カテゴリ1/2 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 3/4 : T13_M0.6B_L03",
-        "en": "Category 3/4:T13_M0.6B_L03",
-        "ja": "カテゴリ3/4 : T13_M0.6B_L03"
-      }
-    ],
-    "interfaces": [
-      {
-        "ko": "임플란트 인터페이스 벽에 사용할 수 있습니다.",
-        "en": "Walls of implant interfaces available",
-        "ja": "インプラントインターフェースの壁に使用できます。"
-      },
-      {
-        "ko": "유형 1 : T18_M1.5R_L07",
-        "en": "Category1: T18_M1.5R_L07",
-        "ja": "カテゴリ1 : T18_M1.5R_L07"
-      },
-      {
-        "ko": "유형 2 : T17_M1.5F_L07",
-        "en": "Category2: T17_M1.5F_L07",
-        "ja": "カテゴリ2 : T17_M1.5F_L07"
-      },
-      {
-        "ko": "유형 3 : T11_M1.5B_L10",
-        "en": "Category3: T11_M1.5B_L10",
-        "ja": "カテゴリ3 : T11_M1.5B_L10"
-      },
-      {
-        "ko": "유형 4 : T12_M1.0B_L10",
-        "en": "Category4: T12_M1.0B_L10",
-        "ja": "カテゴリ4 : T12_M1.0B_L10"
-      },
-      {
-        "ko": "유형 5 : T19_M1.0F_L06",
-        "en": "Category5: T19_M1.0F_L06",
-        "ja": "カテゴリ5 : T19_M1.0F_L06"
-      },
-      {
-        "ko": "유형 6 : T13_M0.6B_L03",
-        "en": "Category6: T13_M0.6B_L03",
-        "ja": "カテゴリ6 : T13_M0.6B_L03"
-      },
-      {
-        "ko": "유형 7 : T20_M0.5F_L06",
-        "en": "Category7: T20_M0.5F_L06",
-        "ja": "カテゴリ7 : T20_M0.5F_L06"
-      }
-    ],
-    "tools": [
-      {
-        "id": "T9",
-        "name": "M3.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T10",
-        "name": "M2.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T11",
-        "name": "M1.5B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T12",
-        "name": "M1.0B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T13",
-        "name": "M0.6B",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T14",
-        "name": "M2.0BL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T15",
-        "name": "M1.5RL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T16",
-        "name": "M1.5FL",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T17",
-        "name": "M1.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T18",
-        "name": "M1.5R",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T19",
-        "name": "M1.0F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T20",
-        "name": "M0.5F",
-        "optional": false,
-        "comments": []
-      },
-      {
-        "id": "T23",
-        "name": "M1.5T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 1.5mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 1.5 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が1.5mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T24",
-        "name": "M2.0T",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 캐비티 측 직경이 2.0mm를 초과하는 앵글드 스크류 홀용입니다.",
-            "en": "Optional, For the Angled Screw hole which has more than 2.0 mm diameter in cavity side",
-            "ja": "任意：キャビティ側の直径が2.0mmを超えるアングルドスクリューホール用です。"
-          }
-        ]
-      },
-      {
-        "id": "T25",
-        "name": "M2.0TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 2.0mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 2.0mm screw hole only",
-            "ja": "任意：2.0mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T26",
-        "name": "M1.8TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.8mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.8mm screw hole only",
-            "ja": "任意：1.8mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T27",
-        "name": "M1.6TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.6mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.6mm screw hole only",
-            "ja": "任意：1.6mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      },
-      {
-        "id": "T28",
-        "name": "M1.4TH",
-        "optional": true,
-        "comments": [
-          {
-            "ko": "선택 사항: 1.4mm 스크류 홀의 나사 가공 전용입니다.",
-            "en": "Optional, For the Thread process of 1.4mm screw hole only",
-            "ja": "任意：1.4mmスクリューホールのねじ加工専用です。"
-          }
-        ]
-      }
-    ],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋",
-            "en": "Incremental Boundary offset",
-            "ja": "増分境界オフセット"
-          },
-          {
-            "ko": "가공 경계의 오프셋을 조정할 수 있습니다.",
-            "en": "You can adjust milling boundary offset.",
-            "ja": "加工境界のオフセットを調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M1.0BxL10] 3x (strauman no Cat)",
-        "descriptions": [
-          {
-            "ko": "직경 1.0mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 1.0mm diameter tool",
-            "ja": "直径1.0mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          },
-          {
-            "ko": "여유량: 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance : Available to adjust the fit inside of abutment bases",
-            "ja": "余裕量：アバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Finishing inside abutment bases_[M0.6BxL06] (strauman no Cat)",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 어버트먼트 베이스 내부를 정삭합니다.",
-            "en": "Finishing process inside abutment bases with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具でアバットメントベース内部を仕上げます。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          },
-          {
-            "ko": "여유량: 어버트먼트 베이스 내부의 적합을 조정할 수 있습니다.",
-            "en": "Allowance : Available to adjust the fit inside of abutment bases",
-            "ja": "余裕量：アバットメントベース内部の適合を調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Restmachining inside abutment bases_[M0.6Bx10] (strauman no Cat)",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 어버트먼트 베이스 내부의 잔삭을 가공합니다.",
-            "en": "Restmachining process inside abutment bases with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具でアバットメントベース内部の残削加工を行います。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate: Selectable operate this process or skip,(Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 18
-  },
-  {
-    "title": "Ti_Userdefined areas_Check (not mill)",
-    "subtitle": "Userdefined areas_Check (not mill)",
-    "source": "Ti_Userdefined areas_Check (not mill) 998cfb3e9058837ab8c18187bf72871d.html",
-    "material": "Ti",
-    "type": "Userdefined areas",
-    "family": "Other",
-    "conditions": [
-      {
-        "ko": "Ti 디스크에서 실제 가공 없이 사용자 정의 영역의 계산 가능 여부만 확인하는 템플릿입니다.",
-        "en": "This is not for milling just to check whether the user defined area can be calculated in the Ti. Disc.",
-        "ja": "Tiディスクで実際の加工を行わず、ユーザー定義領域を計算できるかのみを確認するテンプレートです。"
-      }
-    ],
-    "uda": [],
-    "interfaces": [],
-    "tools": [],
-    "processes": [
-      {
-        "title": "General settings",
-        "titleText": {
-          "ko": "일반 설정",
-          "en": "General settings",
-          "ja": "一般設定"
-        },
-        "descriptions": [
-          {
-            "ko": "증분식 경계 옵셋",
-            "en": "Incremental Boundary offset",
-            "ja": "増分境界オフセット"
-          },
-          {
-            "ko": "가공 경계의 오프셋을 조정할 수 있습니다.",
-            "en": "You can adjust milling boundary offset.",
-            "ja": "加工境界のオフセットを調整できます。"
-          }
-        ]
-      },
-      {
-        "title": "Fissure machining_[M0.6Bx03]",
-        "descriptions": [
-          {
-            "ko": "직경 0.6mm 공구로 교합면의 그루브를 가공합니다.",
-            "en": "Occlusal groove machining process with 0.6mm diameter tool",
-            "ja": "直径0.6mmの工具で咬合面の溝を加工します。"
-          },
-          {
-            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다. (기본값: 꺼짐)",
-            "en": "Calculate : Selectable operate this process or skip, (Default: Off)",
-            "ja": "計算：この工程を実行するか選択できます。（初期値：OFF）"
-          }
-        ]
-      }
-    ],
-    "images": [],
-    "sourceToolCount": 0
   },
   {
     "title": "WAX - Coping_5X",
@@ -15022,72 +11538,3834 @@ window.MaiBatchTemplates = [
     "sourceToolCount": 4
   },
   {
-    "title": "Ti_bridge_T_cut Tool test (not mill)",
-    "subtitle": "bridge_T_cut Tool test (not mill)",
+    "title": "Ti_Abutment Crown bridge_EXT/INT",
+    "subtitle": "Abutment Crown bridge_EXT/INT",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
     "material": "Ti",
-    "type": "Screw Head (T-cut)",
-    "family": "Other",
-    "sourceRevision": "260830",
+    "type": "Abutment Crown Bridge",
+    "family": "Abutment",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
     "conditions": [
       {
-        "ko": "어버트먼트 브릿지의 T-cut 공구 테스트용 템플릿입니다. 원본 표기: not mill.",
-        "en": "T-cut tool test template for abutment bridges. Original label: not mill.",
-        "ja": "アバットメントブリッジのT-cut工具テスト用テンプレートです。原文表記：not mill。"
+        "ko": "Ti 디스크용 Ti_Abutment Crown bridge_EXT/INT 템플릿입니다.",
+        "en": "Ti disc template: Ti_Abutment Crown bridge_EXT/INT.",
+        "ja": "Tiディスク用テンプレート：Ti_Abutment Crown bridge_EXT/INT。"
       },
       {
-        "ko": "적용 파트 타입: Abutment bridge / Abutment crown bridge",
-        "en": "Applicable part types: Abutment bridge / Abutment crown bridge",
-        "ja": "対象パーツタイプ：Abutment bridge / Abutment crown bridge"
+        "ko": "적용 보철물: Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Abutment Crown bridge (Bar) -260825",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Abutment Crown bridge (Bar) -260825",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Abutment Crown bridge (Bar) -260825"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
       }
     ],
     "processes": [
       {
-        "title": "Roughing occlusal side_[M3.0Bx12] 2nd",
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
         "descriptions": [
           {
-            "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
-            "en": "Stored calculation default: On. Execution depends on geometry conditions.",
-            "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
           }
         ]
       },
       {
-        "title": "Finishing inside abutment bases_[M1.5Bx10] 3+2X",
+        "title": "Finishing abutment outside_[M1.5Bx10]",
         "descriptions": [
           {
-            "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
-            "en": "Stored calculation default: On. Execution depends on geometry conditions.",
-            "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+            "ko": "연결 공구: T11_M1.5B_L10",
+            "en": "Linked tool: T11_M1.5B_L10",
+            "ja": "割り当て工具：T11_M1.5B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
           }
-        ]
+        ],
+        "sourceJobId": "ddd7271d-7429-11f1-a4d4-ec4c8c8ee783"
       },
       {
         "title": "Finishing inside abutment bases_[M1.5Rx07] (no cate Finishing)",
         "descriptions": [
           {
-            "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
-            "en": "Stored calculation default: On. Execution depends on geometry conditions.",
-            "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+            "ko": "연결 공구: T18_M1.5R_L07",
+            "en": "Linked tool: T18_M1.5R_L07",
+            "ja": "割り当て工具：T18_M1.5R_L07"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "bea2235f-738b-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0Bx10] 3x (strauman no Cat)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "여유량: 0 (기본값)",
+            "en": "Allowance: 0 (Default)",
+            "ja": "余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "4718e052-6528-11ef-9e7f-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M0.6Bx06] (strauman no Cat)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "여유량: 0 (기본값)",
+            "en": "Allowance: 0 (Default)",
+            "ja": "余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "4718e058-6528-11ef-9e7f-14857f7eaaee"
+      },
+      {
+        "title": "Fissure machining [M0.6BXL03]",
+        "descriptions": [
+          {
+            "ko": "직경 0.6mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 0.6 mm diameter tool.",
+            "ja": "直径0.6mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "a3cb811b-910d-11ef-9ea1-14857f7eaaee"
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/2/3/4: T12_M1.0B_L10 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 1/2/3/4: T12_M1.0B_L10 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー1/2/3/4：T12_M1.0B_L10 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip / 90deg (기본값: 켜짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip / 90deg (Default: On)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip / 90deg（初期値：ON）"
+      },
+      {
+        "ko": "유형 3/4: T13_M0.6B_L03 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 3/4: T13_M0.6B_L03 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー3/4：T13_M0.6B_L03 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      }
+    ],
+    "interfaces": [
+      {
+        "ko": "유형 1: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 1: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー1：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T17_M1.5F_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T17_M1.5F_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T17_M1.5F_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T11_M1.5B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 3: T11_M1.5B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー3：T11_M1.5B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T12_M1.0B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 4: T12_M1.0B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー4：T12_M1.0B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 5: T19_M1.0F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 5: T19_M1.0F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー5：T19_M1.0F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 6: T13_M0.6B_L03 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 6: T13_M0.6B_L03 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー6：T13_M0.6B_L03 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 7: T20_M0.5F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 7: T20_M0.5F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー7：T20_M0.5F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 13: T17_M1.5F_L07 / 내벽 (기본값: 꺼짐)",
+        "en": "Category 13: T17_M1.5F_L07 / Inner wall (Default: Off)",
+        "ja": "カテゴリー13：T17_M1.5F_L07 / 内壁（初期値：OFF）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T1",
+        "name": "Z2.0B_L20",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T9",
+        "name": "M3.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T14",
+        "name": "M2.0BL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T16",
+        "name": "M1.5FL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T17",
+        "name": "M1.5F_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T18",
+        "name": "M1.5R_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T19",
+        "name": "M1.0F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T20",
+        "name": "M0.5F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T23",
+        "name": "M1.5T_L08",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
           }
         ]
       },
       {
-        "title": "Plane Finishing inside abutment bases_[M1.5F_L07]",
-        "descriptions": [
+        "id": "T24",
+        "name": "M2.0T_L06",
+        "optional": true,
+        "comments": [
           {
-            "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
-            "en": "Stored calculation default: On. Execution depends on geometry conditions.",
-            "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
           }
         ]
       },
       {
-        "title": "Screw channel machining (angulated) T-cut -(Test)",
+        "id": "T25",
+        "name": "M2.0TH_L06(P0.4)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T26",
+        "name": "M1.8TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T27",
+        "name": "M1.6TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T28",
+        "name": "M1.4TH_L06(P0.3)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 19,
+    "sourceRevision": "260830",
+    "sourceProfileId": "563f7753-2c4f-11ef-9e61-14857f7eaaee"
+  },
+  {
+    "title": "Ti_Abutment crown",
+    "subtitle": "Abutment crown",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Abutment Crown",
+    "family": "Abutment",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Abutment crown 템플릿입니다.",
+        "en": "Ti disc template: Ti_Abutment crown.",
+        "ja": "Tiディスク用テンプレート：Ti_Abutment crown。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown",
+        "en": "Applicable prostheses: Abutment Crown",
+        "ja": "適用補綴物：Abutment Crown"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Abutment/Abutment crown -260625",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Abutment/Abutment crown -260625",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Abutment/Abutment crown -260625"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
         "descriptions": [
           {
-            "ko": "DB에 저장된 계산 기본값: 켜짐. 형상 조건에 따라 실행됩니다.",
-            "en": "Stored calculation default: On. Execution depends on geometry conditions.",
-            "ja": "DBに保存された計算初期値：ON。形状条件に応じて実行されます。"
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Finishing outer areas cavity side (cap)_[M1.5Bx10]",
+        "descriptions": [
+          {
+            "ko": "직경 1.5mm 공구로 캐비티 측 외측 영역을 정삭합니다.",
+            "en": "Finishes the outer cavity-side areas with a 1.5 mm diameter tool.",
+            "ja": "直径1.5mmの工具でキャビティ側の外側領域を仕上げます。"
+          },
+          {
+            "ko": "연결 공구: T11_M1.5B_L10",
+            "en": "Linked tool: T11_M1.5B_L10",
+            "ja": "割り当て工具：T11_M1.5B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "스텝다운: 깊이 방향 가공 간격을 조정할 수 있습니다. (기본값: 0.1)",
+            "en": "Stepdown: Adjusts the machining interval in the depth direction. (Default: 0.1)",
+            "ja": "ステップダウン：深さ方向の加工間隔を調整できます。（初期値：0.1）"
+          }
+        ],
+        "sourceJobId": "8a5f8c95-c23f-11ee-b5fd-d85ed3abfe3c"
+      },
+      {
+        "title": "Finishing outer areas cavity side (cap)_[M1.0Bx10]",
+        "descriptions": [
+          {
+            "ko": "직경 1mm 공구로 캐비티 측 외측 영역을 정삭합니다.",
+            "en": "Finishes the outer cavity-side areas with a 1 mm diameter tool.",
+            "ja": "直径1mmの工具でキャビティ側の外側領域を仕上げます。"
+          },
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "스텝다운: 깊이 방향 가공 간격을 조정할 수 있습니다. (기본값: 0.1)",
+            "en": "Stepdown: Adjusts the machining interval in the depth direction. (Default: 0.1)",
+            "ja": "ステップダウン：深さ方向の加工間隔を調整できます。（初期値：0.1）"
+          }
+        ],
+        "sourceJobId": "8a5f8c9b-c23f-11ee-b5fd-d85ed3abfe3c"
+      },
+      {
+        "title": "Fissure machining D1",
+        "descriptions": [
+          {
+            "ko": "직경 1mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 1 mm diameter tool.",
+            "ja": "直径1mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "a5f4a159-c23f-11ee-b5fd-d85ed3abfe3c"
+      },
+      {
+        "title": "Fissure machining [M0.6BXL03]",
+        "descriptions": [
+          {
+            "ko": "직경 0.6mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 0.6 mm diameter tool.",
+            "ja": "直径0.6mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "8432b4f4-d19f-11ef-9ee9-14857f7eaaee"
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/2/3/4: T12_M1.0B_L10 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 1/2/3/4: T12_M1.0B_L10 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー1/2/3/4：T12_M1.0B_L10 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3/4: T13_M0.6B_L03 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 3/4: T13_M0.6B_L03 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー3/4：T13_M0.6B_L03 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      }
+    ],
+    "interfaces": [
+      {
+        "ko": "유형 1: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 1: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー1：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T17_M1.5F_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T17_M1.5F_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T17_M1.5F_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T11_M1.5B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 3: T11_M1.5B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー3：T11_M1.5B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T12_M1.0B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 4: T12_M1.0B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー4：T12_M1.0B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 5: T19_M1.0F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 5: T19_M1.0F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー5：T19_M1.0F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 6: T13_M0.6B_L03 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 6: T13_M0.6B_L03 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー6：T13_M0.6B_L03 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 7: T20_M0.5F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 7: T20_M0.5F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー7：T20_M0.5F_L06 / 外壁・内壁（初期値：ON）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T9",
+        "name": "M3.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T14",
+        "name": "M2.0BL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T16",
+        "name": "M1.5FL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T17",
+        "name": "M1.5F_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T18",
+        "name": "M1.5R_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T19",
+        "name": "M1.0F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T20",
+        "name": "M0.5F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T23",
+        "name": "M1.5T_L08",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T24",
+        "name": "M2.0T_L06",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T25",
+        "name": "M2.0TH_L06(P0.4)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T26",
+        "name": "M1.8TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T27",
+        "name": "M1.6TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T28",
+        "name": "M1.4TH_L06(P0.3)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 18,
+    "sourceRevision": "260830",
+    "sourceProfileId": "e413707a-c282-11ee-8e03-ecdd8dcde457"
+  },
+  {
+    "title": "Ti_Abutment Crown bridge_NCS (highnees)",
+    "subtitle": "Abutment Crown bridge_NCS (highnees)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Abutment Crown Bridge",
+    "family": "Abutment",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Abutment Crown bridge_NCS (highnees) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Abutment Crown bridge_NCS (highnees).",
+        "ja": "Tiディスク用テンプレート：Ti_Abutment Crown bridge_NCS (highnees)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Abutment Crown bridge_NCS -260630",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Abutment Crown bridge_NCS -260630",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Abutment Crown bridge_NCS -260630"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Finishing abutment outside_[M1.5Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T11_M1.5B_L10",
+            "en": "Linked tool: T11_M1.5B_L10",
+            "ja": "割り当て工具：T11_M1.5B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "0a3dc4fe-742a-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside copings_[M1.0Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "여유량: 0 (기본값)",
+            "en": "Allowance: 0 (Default)",
+            "ja": "余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "7ddfe35c-e83f-11ef-9efb-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0B_L10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "961628e9-e844-11ef-9efb-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0F_L06]_(highnees)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T19_M1.0F_L06",
+            "en": "Linked tool: T19_M1.0F_L06",
+            "ja": "割り当て工具：T19_M1.0F_L06"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "9267ea57-e858-11ef-9efb-14857f7eaaee"
+      },
+      {
+        "title": "Fissure machining [M0.6BXL03]",
+        "descriptions": [
+          {
+            "ko": "직경 0.6mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 0.6 mm diameter tool.",
+            "ja": "直径0.6mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "7ddfe3a7-e83f-11ef-9efb-14857f7eaaee"
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/2/3/4: T12_M1.0B_L10 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 1/2/3/4: T12_M1.0B_L10 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー1/2/3/4：T12_M1.0B_L10 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip / 90deg (기본값: 켜짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip / 90deg (Default: On)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip / 90deg（初期値：ON）"
+      },
+      {
+        "ko": "유형 3/4: T13_M0.6B_L03 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 3/4: T13_M0.6B_L03 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー3/4：T13_M0.6B_L03 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      }
+    ],
+    "interfaces": [
+      {
+        "ko": "유형 1: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 1: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー1：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T17_M1.5F_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T17_M1.5F_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T17_M1.5F_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T11_M1.5B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 3: T11_M1.5B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー3：T11_M1.5B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T12_M1.0B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 4: T12_M1.0B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー4：T12_M1.0B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 5: T19_M1.0F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 5: T19_M1.0F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー5：T19_M1.0F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 6: T13_M0.6B_L03 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 6: T13_M0.6B_L03 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー6：T13_M0.6B_L03 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 7: T20_M0.5F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 7: T20_M0.5F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー7：T20_M0.5F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 30: T24_M2.0T_L06 / 내벽 (기본값: 꺼짐)",
+        "en": "Category 30: T24_M2.0T_L06 / Inner wall (Default: Off)",
+        "ja": "カテゴリー30：T24_M2.0T_L06 / 内壁（初期値：OFF）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T1",
+        "name": "Z2.0B_L20",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T9",
+        "name": "M3.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T14",
+        "name": "M2.0BL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T16",
+        "name": "M1.5FL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T17",
+        "name": "M1.5F_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T18",
+        "name": "M1.5R_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T19",
+        "name": "M1.0F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T20",
+        "name": "M0.5F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T23",
+        "name": "M1.5T_L08",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T25",
+        "name": "M2.0TH_L06(P0.4)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T26",
+        "name": "M1.8TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T27",
+        "name": "M1.6TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T28",
+        "name": "M1.4TH_L06(P0.3)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 18,
+    "sourceRevision": "260830",
+    "sourceProfileId": "aabdefe1-e844-11ef-9efb-14857f7eaaee"
+  },
+  {
+    "title": "Ti_Abutment Crown_NCS (highnees)",
+    "subtitle": "Abutment Crown_NCS (highnees)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Abutment Crown",
+    "family": "Abutment",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Abutment Crown_NCS (highnees) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Abutment Crown_NCS (highnees).",
+        "ja": "Tiディスク用テンプレート：Ti_Abutment Crown_NCS (highnees)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown",
+        "en": "Applicable prostheses: Abutment Crown",
+        "ja": "適用補綴物：Abutment Crown"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Abutment Crown_NCS -260630",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Abutment Crown_NCS -260630",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Abutment Crown_NCS -260630"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Finishing abutment outside_[M1.5Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T11_M1.5B_L10",
+            "en": "Linked tool: T11_M1.5B_L10",
+            "ja": "割り当て工具：T11_M1.5B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "901d4ff3-742a-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0B_L10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "60d82d39-e9a2-11ef-9efc-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0F_L06]_(highnees)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T19_M1.0F_L06",
+            "en": "Linked tool: T19_M1.0F_L06",
+            "ja": "割り当て工具：T19_M1.0F_L06"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "60d82d5a-e9a2-11ef-9efc-14857f7eaaee"
+      },
+      {
+        "title": "Fissure machining [M0.6BXL03]",
+        "descriptions": [
+          {
+            "ko": "직경 0.6mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 0.6 mm diameter tool.",
+            "ja": "直径0.6mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "60d82d69-e9a2-11ef-9efc-14857f7eaaee"
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/2/3/4: T12_M1.0B_L10 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 1/2/3/4: T12_M1.0B_L10 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー1/2/3/4：T12_M1.0B_L10 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip / 90deg (기본값: 켜짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip / 90deg (Default: On)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip / 90deg（初期値：ON）"
+      },
+      {
+        "ko": "유형 3/4: T13_M0.6B_L03 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 3/4: T13_M0.6B_L03 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー3/4：T13_M0.6B_L03 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      }
+    ],
+    "interfaces": [
+      {
+        "ko": "유형 30: T24_M2.0T_L06 / 내벽 (기본값: 꺼짐)",
+        "en": "Category 30: T24_M2.0T_L06 / Inner wall (Default: Off)",
+        "ja": "カテゴリー30：T24_M2.0T_L06 / 内壁（初期値：OFF）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T9",
+        "name": "M3.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T14",
+        "name": "M2.0BL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T16",
+        "name": "M1.5FL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T19",
+        "name": "M1.0F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T23",
+        "name": "M1.5T_L08",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 10,
+    "sourceRevision": "260830",
+    "sourceProfileId": "1e474cfe-e9a3-11ef-9efc-14857f7eaaee"
+  },
+  {
+    "title": "Ti_Abutment Crown bridge_EXT/INT (Fast)",
+    "subtitle": "Abutment Crown bridge_EXT/INT (Fast)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Abutment Crown Bridge",
+    "family": "Abutment",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Abutment Crown bridge_EXT/INT (Fast) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Abutment Crown bridge_EXT/INT (Fast).",
+        "ja": "Tiディスク用テンプレート：Ti_Abutment Crown bridge_EXT/INT (Fast)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Abutment Crown bridge_(Fast)-260825",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Abutment Crown bridge_(Fast)-260825",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Abutment Crown bridge_(Fast)-260825"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Finishing abutment outside_[M1.5Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T11_M1.5B_L10",
+            "en": "Linked tool: T11_M1.5B_L10",
+            "ja": "割り当て工具：T11_M1.5B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "f287db3c-7429-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.5Rx07] (no cate Finishing)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T18_M1.5R_L07",
+            "en": "Linked tool: T18_M1.5R_L07",
+            "ja": "割り当て工具：T18_M1.5R_L07"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "f36c70b2-738b-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0Bx10] 3x (strauman no Cat)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "여유량: 0 (기본값)",
+            "en": "Allowance: 0 (Default)",
+            "ja": "余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "45c90427-0928-11f0-9f0f-14857f7eaaee"
+      },
+      {
+        "title": "Restmachining inside abutment bases_[M0.6Bx10] (strauman no Cat)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "45c9042a-0928-11f0-9f0f-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M0.6Bx06] (strauman no Cat)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "여유량: 0 (기본값)",
+            "en": "Allowance: 0 (Default)",
+            "ja": "余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "45c9042d-0928-11f0-9f0f-14857f7eaaee"
+      },
+      {
+        "title": "Fissure machining [M0.6BXL03]",
+        "descriptions": [
+          {
+            "ko": "직경 0.6mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 0.6 mm diameter tool.",
+            "ja": "直径0.6mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "e49d4aea-f316-11ef-9f04-14857f7eaaee"
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/2/3/4: T12_M1.0B_L10 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 1/2/3/4: T12_M1.0B_L10 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー1/2/3/4：T12_M1.0B_L10 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip / 90deg (기본값: 켜짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip / 90deg (Default: On)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip / 90deg（初期値：ON）"
+      },
+      {
+        "ko": "유형 3/4: T13_M0.6B_L03 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 3/4: T13_M0.6B_L03 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー3/4：T13_M0.6B_L03 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      },
+      {
+        "ko": "유형 10: T24_M2.0T_L06 / 정삭 (기본값: 켜짐)",
+        "en": "Category 10: T24_M2.0T_L06 / Finishing (Default: On)",
+        "ja": "カテゴリー10：T24_M2.0T_L06 / 仕上げ（初期値：ON）"
+      }
+    ],
+    "interfaces": [
+      {
+        "ko": "유형 1: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 1: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー1：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T17_M1.5F_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T17_M1.5F_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T17_M1.5F_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T11_M1.5B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 3: T11_M1.5B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー3：T11_M1.5B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T12_M1.0B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 4: T12_M1.0B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー4：T12_M1.0B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 5: T19_M1.0F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 5: T19_M1.0F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー5：T19_M1.0F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 6: T13_M0.6B_L03 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 6: T13_M0.6B_L03 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー6：T13_M0.6B_L03 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 7: T20_M0.5F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 7: T20_M0.5F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー7：T20_M0.5F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 13: T17_M1.5F_L07 / 내벽 (기본값: 꺼짐)",
+        "en": "Category 13: T17_M1.5F_L07 / Inner wall (Default: Off)",
+        "ja": "カテゴリー13：T17_M1.5F_L07 / 内壁（初期値：OFF）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T1",
+        "name": "Z2.0B_L20",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T9",
+        "name": "M3.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T14",
+        "name": "M2.0BL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T16",
+        "name": "M1.5FL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T17",
+        "name": "M1.5F_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T18",
+        "name": "M1.5R_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T19",
+        "name": "M1.0F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T20",
+        "name": "M0.5F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T23",
+        "name": "M1.5T_L08",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T24",
+        "name": "M2.0T_L06",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T25",
+        "name": "M2.0TH_L06(P0.4)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T26",
+        "name": "M1.8TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T27",
+        "name": "M1.6TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T28",
+        "name": "M1.4TH_L06(P0.3)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 19,
+    "sourceRevision": "260830",
+    "sourceProfileId": "a0b77d57-0953-11f0-9f0f-14857f7eaaee"
+  },
+  {
+    "title": "Ti_Abutment Crown_NCS (M-Fix)",
+    "subtitle": "Abutment Crown_NCS (M-Fix)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Abutment Crown",
+    "family": "Abutment",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Abutment Crown_NCS (M-Fix) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Abutment Crown_NCS (M-Fix).",
+        "ja": "Tiディスク用テンプレート：Ti_Abutment Crown_NCS (M-Fix)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown",
+        "en": "Applicable prostheses: Abutment Crown",
+        "ja": "適用補綴物：Abutment Crown"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Abutment Crown_NCS -260630",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Abutment Crown_NCS -260630",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Abutment Crown_NCS -260630"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Finishing abutment outside_[M1.5Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T11_M1.5B_L10",
+            "en": "Linked tool: T11_M1.5B_L10",
+            "ja": "割り当て工具：T11_M1.5B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "901d4ff3-742a-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0B_L10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "60d82d39-e9a2-11ef-9efc-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.5RxL07]_M-Fix",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T18_M1.5R_L07",
+            "en": "Linked tool: T18_M1.5R_L07",
+            "ja": "割り当て工具：T18_M1.5R_L07"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0.015 (기본값)",
+            "en": "XY allowance: 0.015 (Default)",
+            "ja": "XY余裕量：0.015（初期値）"
+          }
+        ],
+        "sourceJobId": "10be8143-345d-11f0-9f28-14857f7eaaee"
+      },
+      {
+        "title": "Fissure machining [M0.6BXL03]",
+        "descriptions": [
+          {
+            "ko": "직경 0.6mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 0.6 mm diameter tool.",
+            "ja": "直径0.6mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "60d82d69-e9a2-11ef-9efc-14857f7eaaee"
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/2/3/4: T12_M1.0B_L10 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 1/2/3/4: T12_M1.0B_L10 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー1/2/3/4：T12_M1.0B_L10 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip / 90deg (기본값: 켜짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip / 90deg (Default: On)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip / 90deg（初期値：ON）"
+      },
+      {
+        "ko": "유형 3/4: T13_M0.6B_L03 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 3/4: T13_M0.6B_L03 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー3/4：T13_M0.6B_L03 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      }
+    ],
+    "interfaces": [
+      {
+        "ko": "유형 30: T24_M2.0T_L06 / 내벽 (기본값: 켜짐)",
+        "en": "Category 30: T24_M2.0T_L06 / Inner wall (Default: On)",
+        "ja": "カテゴリー30：T24_M2.0T_L06 / 内壁（初期値：ON）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T9",
+        "name": "M3.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T14",
+        "name": "M2.0BL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T18",
+        "name": "M1.5R_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T24",
+        "name": "M2.0T_L06",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 9,
+    "sourceRevision": "260830",
+    "sourceProfileId": "2097f0cc-345d-11f0-9f28-14857f7eaaee"
+  },
+  {
+    "title": "Ti_Abutment Crown bridge_NCS (M-Fix)",
+    "subtitle": "Abutment Crown bridge_NCS (M-Fix)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Abutment Crown Bridge",
+    "family": "Abutment",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Abutment Crown bridge_NCS (M-Fix) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Abutment Crown bridge_NCS (M-Fix).",
+        "ja": "Tiディスク用テンプレート：Ti_Abutment Crown bridge_NCS (M-Fix)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Abutment Crown bridge_NCS -260630",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Abutment Crown bridge_NCS -260630",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Abutment Crown bridge_NCS -260630"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Finishing abutment outside_[M1.5Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T11_M1.5B_L10",
+            "en": "Linked tool: T11_M1.5B_L10",
+            "ja": "割り当て工具：T11_M1.5B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "0a3dc4fe-742a-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside copings_[M1.0Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "여유량: 0 (기본값)",
+            "en": "Allowance: 0 (Default)",
+            "ja": "余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "7ddfe35c-e83f-11ef-9efb-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0B_L10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "961628e9-e844-11ef-9efb-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.5RxL07]_M-Fix",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T18_M1.5R_L07",
+            "en": "Linked tool: T18_M1.5R_L07",
+            "ja": "割り当て工具：T18_M1.5R_L07"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0.015 (기본값)",
+            "en": "XY allowance: 0.015 (Default)",
+            "ja": "XY余裕量：0.015（初期値）"
+          }
+        ],
+        "sourceJobId": "cd18ebd9-346b-11f0-9f28-14857f7eaaee"
+      },
+      {
+        "title": "Fissure machining [M0.6BXL03]",
+        "descriptions": [
+          {
+            "ko": "직경 0.6mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 0.6 mm diameter tool.",
+            "ja": "直径0.6mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "7ddfe3a7-e83f-11ef-9efb-14857f7eaaee"
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T10_M2.0B_L12 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T10_M2.0B_L12 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T10_M2.0B_L12 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 잔여 가공 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Restmachining (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 削り残し加工（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 정삭 (기본값: 켜짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Finishing (Default: On)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 仕上げ（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/2/3/4: T12_M1.0B_L10 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 1/2/3/4: T12_M1.0B_L10 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー1/2/3/4：T12_M1.0B_L10 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip / 90deg (기본값: 켜짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip / 90deg (Default: On)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip / 90deg（初期値：ON）"
+      },
+      {
+        "ko": "유형 3/4: T13_M0.6B_L03 / 잔여 가공 / Clip (기본값: 켜짐)",
+        "en": "Category 3/4: T13_M0.6B_L03 / Restmachining / Clip (Default: On)",
+        "ja": "カテゴリー3/4：T13_M0.6B_L03 / 削り残し加工 / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      }
+    ],
+    "interfaces": [
+      {
+        "ko": "유형 1: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 1: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー1：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T17_M1.5F_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T17_M1.5F_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T17_M1.5F_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T11_M1.5B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 3: T11_M1.5B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー3：T11_M1.5B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T12_M1.0B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 4: T12_M1.0B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー4：T12_M1.0B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 5: T19_M1.0F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 5: T19_M1.0F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー5：T19_M1.0F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 6: T13_M0.6B_L03 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 6: T13_M0.6B_L03 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー6：T13_M0.6B_L03 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 7: T20_M0.5F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 7: T20_M0.5F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー7：T20_M0.5F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 30: T24_M2.0T_L06 / 내벽 (기본값: 켜짐)",
+        "en": "Category 30: T24_M2.0T_L06 / Inner wall (Default: On)",
+        "ja": "カテゴリー30：T24_M2.0T_L06 / 内壁（初期値：ON）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T1",
+        "name": "Z2.0B_L20",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T9",
+        "name": "M3.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T14",
+        "name": "M2.0BL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T16",
+        "name": "M1.5FL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T17",
+        "name": "M1.5F_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T18",
+        "name": "M1.5R_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T19",
+        "name": "M1.0F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T20",
+        "name": "M0.5F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T23",
+        "name": "M1.5T_L08",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T24",
+        "name": "M2.0T_L06",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T25",
+        "name": "M2.0TH_L06(P0.4)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T26",
+        "name": "M1.8TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T27",
+        "name": "M1.6TH_L06(P0.35)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      },
+      {
+        "id": "T28",
+        "name": "M1.4TH_L06(P0.3)",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "해당 나사산 조건에 따라 사용합니다.",
+            "en": "Used when the corresponding thread condition applies.",
+            "ja": "該当するねじ条件に応じて使用します。"
+          }
+        ]
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 19,
+    "sourceRevision": "260830",
+    "sourceProfileId": "d70e1f5c-346b-11f0-9f28-14857f7eaaee"
+  },
+  {
+    "title": "Ti_Screw Hole Finishing (expansion)",
+    "subtitle": "Screw Hole Finishing (expansion)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Screw Hole Finishing (expansion)",
+    "family": "Other",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Screw Hole Finishing (expansion) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Screw Hole Finishing (expansion).",
+        "ja": "Tiディスク用テンプレート：Ti_Screw Hole Finishing (expansion)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown Bridge / Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge / Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge / Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Screw Hole Finishing (expansion) -250818",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Screw Hole Finishing (expansion) -250818",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Screw Hole Finishing (expansion) -250818"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Screwchannel machining_occlusal_[M1.5FRx15]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T15_M1.5RL_L15",
+            "en": "Linked tool: T15_M1.5RL_L15",
+            "ja": "割り当て工具：T15_M1.5RL_L15"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "추가 반경: 0.05 (기본값)",
+            "en": "Additional radius: 0.05 (Default)",
+            "ja": "追加半径：0.05（初期値）"
+          }
+        ],
+        "sourceJobId": "00050a4e-41a0-11f0-acdd-ec4c8c8ee783"
+      },
+      {
+        "title": "Screwchannel machining_occlusal(Angled)_[M1.5FRx15]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T15_M1.5RL_L15",
+            "en": "Linked tool: T15_M1.5RL_L15",
+            "ja": "割り当て工具：T15_M1.5RL_L15"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "추가 반경: 0.05 (기본값)",
+            "en": "Additional radius: 0.05 (Default)",
+            "ja": "追加半径：0.05（初期値）"
+          }
+        ],
+        "sourceJobId": "00050a5a-41a0-11f0-acdd-ec4c8c8ee783"
+      },
+      {
+        "title": "Screwchannel machining_cavity_[M1.0Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "추가 반경: 0.05 (기본값)",
+            "en": "Additional radius: 0.05 (Default)",
+            "ja": "追加半径：0.05（初期値）"
+          }
+        ],
+        "sourceJobId": "00050a72-41a0-11f0-acdd-ec4c8c8ee783"
+      },
+      {
+        "title": "Cut / Reduce connectors_[M2.0B_L12] -CAV",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T10_M2.0B_L12",
+            "en": "Linked tool: T10_M2.0B_L12",
+            "ja": "割り当て工具：T10_M2.0B_L12"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "00050b44-41a0-11f0-acdd-ec4c8c8ee783"
+      }
+    ],
+    "uda": [],
+    "interfaces": [
+      {
+        "ko": "유형 1: T18_M1.5R_L07 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 1: T18_M1.5R_L07 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー1：T18_M1.5R_L07 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 2: T18_M1.5R_L07 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 2: T18_M1.5R_L07 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー2：T18_M1.5R_L07 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 2: T17_M1.5F_L07 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 2: T17_M1.5F_L07 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー2：T17_M1.5F_L07 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 3: T11_M1.5B_L10 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 3: T11_M1.5B_L10 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー3：T11_M1.5B_L10 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 4: T12_M1.0B_L10 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 4: T12_M1.0B_L10 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー4：T12_M1.0B_L10 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 5: T19_M1.0F_L06 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 5: T19_M1.0F_L06 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー5：T19_M1.0F_L06 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 6: T13_M0.6B_L03 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 6: T13_M0.6B_L03 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー6：T13_M0.6B_L03 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 7: T20_M0.5F_L06 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 7: T20_M0.5F_L06 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー7：T20_M0.5F_L06 / 外壁・内壁（初期値：OFF）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 3,
+    "sourceRevision": "260830",
+    "sourceProfileId": "20488293-7c19-11f0-8436-ec4c8c8ee783"
+  },
+  {
+    "title": "Ti_Interface_Finishing (expansion)",
+    "subtitle": "Interface_Finishing (expansion)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Interface",
+    "family": "Other",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Interface_Finishing (expansion) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Interface_Finishing (expansion).",
+        "ja": "Tiディスク用テンプレート：Ti_Interface_Finishing (expansion)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown Bridge / Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge / Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge / Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Screw Hole Finishing (expansion) -250818",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Screw Hole Finishing (expansion) -250818",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Screw Hole Finishing (expansion) -250818"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Screwchannel machining_occlusal_[M1.5FRx15]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T15_M1.5RL_L15",
+            "en": "Linked tool: T15_M1.5RL_L15",
+            "ja": "割り当て工具：T15_M1.5RL_L15"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "추가 반경: 0.05 (기본값)",
+            "en": "Additional radius: 0.05 (Default)",
+            "ja": "追加半径：0.05（初期値）"
+          }
+        ],
+        "sourceJobId": "00050a4e-41a0-11f0-acdd-ec4c8c8ee783"
+      },
+      {
+        "title": "Screwchannel machining_occlusal(Angled)_[M1.5FRx15]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T15_M1.5RL_L15",
+            "en": "Linked tool: T15_M1.5RL_L15",
+            "ja": "割り当て工具：T15_M1.5RL_L15"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "추가 반경: 0.05 (기본값)",
+            "en": "Additional radius: 0.05 (Default)",
+            "ja": "追加半径：0.05（初期値）"
+          }
+        ],
+        "sourceJobId": "00050a5a-41a0-11f0-acdd-ec4c8c8ee783"
+      },
+      {
+        "title": "Screwchannel machining_cavity_[M1.0Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "추가 반경: 0.05 (기본값)",
+            "en": "Additional radius: 0.05 (Default)",
+            "ja": "追加半径：0.05（初期値）"
+          }
+        ],
+        "sourceJobId": "00050a72-41a0-11f0-acdd-ec4c8c8ee783"
+      },
+      {
+        "title": "Cut / Reduce connectors_[M2.0B_L12] -CAV",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T10_M2.0B_L12",
+            "en": "Linked tool: T10_M2.0B_L12",
+            "ja": "割り当て工具：T10_M2.0B_L12"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "00050b44-41a0-11f0-acdd-ec4c8c8ee783"
+      }
+    ],
+    "uda": [],
+    "interfaces": [
+      {
+        "ko": "유형 1: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 1: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー1：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T18_M1.5R_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T18_M1.5R_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T18_M1.5R_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 2: T17_M1.5F_L07 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 2: T17_M1.5F_L07 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー2：T17_M1.5F_L07 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T11_M1.5B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 3: T11_M1.5B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー3：T11_M1.5B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T12_M1.0B_L10 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 4: T12_M1.0B_L10 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー4：T12_M1.0B_L10 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 5: T19_M1.0F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 5: T19_M1.0F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー5：T19_M1.0F_L06 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 6: T13_M0.6B_L03 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 6: T13_M0.6B_L03 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー6：T13_M0.6B_L03 / 外壁・内壁（初期値：ON）"
+      },
+      {
+        "ko": "유형 7: T20_M0.5F_L06 / 외벽·내벽 (기본값: 켜짐)",
+        "en": "Category 7: T20_M0.5F_L06 / Outer wall / Inner wall (Default: On)",
+        "ja": "カテゴリー7：T20_M0.5F_L06 / 外壁・内壁（初期値：ON）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T15",
+        "name": "M1.5RL_L15",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T17",
+        "name": "M1.5F_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T18",
+        "name": "M1.5R_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T19",
+        "name": "M1.0F_L06",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T20",
+        "name": "M0.5F_L06",
+        "optional": false,
+        "comments": []
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 9,
+    "sourceRevision": "260830",
+    "sourceProfileId": "4b9d07c8-7c19-11f0-8436-ec4c8c8ee783"
+  },
+  {
+    "title": "Ti_bridge_T_cut Tool test (not mill)",
+    "subtitle": "bridge_T_cut Tool test (not mill)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Screw Head (T-cut)",
+    "family": "Other",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_bridge_T_cut Tool test (not mill) 템플릿입니다.",
+        "en": "Ti disc template: Ti_bridge_T_cut Tool test (not mill).",
+        "ja": "Tiディスク用テンプレート：Ti_bridge_T_cut Tool test (not mill)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown Bridge / Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge / Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge / Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: MAI_Ti_Abutment Crown bridge (Bar) -260825",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: MAI_Ti_Abutment Crown bridge (Bar) -260825",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：MAI_Ti_Abutment Crown bridge (Bar) -260825"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Finishing abutment outside_[M1.5Bx10]",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T11_M1.5B_L10",
+            "en": "Linked tool: T11_M1.5B_L10",
+            "ja": "割り当て工具：T11_M1.5B_L10"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "ddd7271d-7429-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.5Rx07] (no cate Finishing)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T18_M1.5R_L07",
+            "en": "Linked tool: T18_M1.5R_L07",
+            "ja": "割り当て工具：T18_M1.5R_L07"
+          },
+          {
+            "ko": "계산 기본값: 켜짐",
+            "en": "Calculate default: On",
+            "ja": "計算の初期値：ON"
+          },
+          {
+            "ko": "XY 여유량: 0 (기본값)",
+            "en": "XY allowance: 0 (Default)",
+            "ja": "XY余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "bea2235f-738b-11f1-a4d4-ec4c8c8ee783"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M1.0Bx10] 3x (strauman no Cat)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T12_M1.0B_L10",
+            "en": "Linked tool: T12_M1.0B_L10",
+            "ja": "割り当て工具：T12_M1.0B_L10"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "여유량: 0 (기본값)",
+            "en": "Allowance: 0 (Default)",
+            "ja": "余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "4718e052-6528-11ef-9e7f-14857f7eaaee"
+      },
+      {
+        "title": "Finishing inside abutment bases_[M0.6Bx06] (strauman no Cat)",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          },
+          {
+            "ko": "여유량: 0 (기본값)",
+            "en": "Allowance: 0 (Default)",
+            "ja": "余裕量：0（初期値）"
+          }
+        ],
+        "sourceJobId": "4718e058-6528-11ef-9e7f-14857f7eaaee"
+      },
+      {
+        "title": "Fissure machining [M0.6BXL03]",
+        "descriptions": [
+          {
+            "ko": "직경 0.6mm 공구로 교합면의 피셔 영역을 가공합니다.",
+            "en": "Machines occlusal fissures with a 0.6 mm diameter tool.",
+            "ja": "直径0.6mmの工具で咬合面の裂溝を加工します。"
+          },
+          {
+            "ko": "연결 공구: T13_M0.6B_L03",
+            "en": "Linked tool: T13_M0.6B_L03",
+            "ja": "割り当て工具：T13_M0.6B_L03"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "a3cb811b-910d-11ef-9ea1-14857f7eaaee"
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T10_M2.0B_L12 / 잔여 가공 (기본값: 꺼짐)",
+        "en": "Category 1/3: T10_M2.0B_L12 / Restmachining (Default: Off)",
+        "ja": "カテゴリー1/3：T10_M2.0B_L12 / 削り残し加工（初期値：OFF）"
+      },
+      {
+        "ko": "유형 2/4: T10_M2.0B_L12 / 잔여 가공 (기본값: 꺼짐)",
+        "en": "Category 2/4: T10_M2.0B_L12 / Restmachining (Default: Off)",
+        "ja": "カテゴリー2/4：T10_M2.0B_L12 / 削り残し加工（初期値：OFF）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 잔여 가공 (기본값: 꺼짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Restmachining (Default: Off)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 削り残し加工（初期値：OFF）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 잔여 가공 (기본값: 꺼짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Restmachining (Default: Off)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 削り残し加工（初期値：OFF）"
+      },
+      {
+        "ko": "유형 1/3: T11_M1.5B_L10 / 정삭 (기본값: 꺼짐)",
+        "en": "Category 1/3: T11_M1.5B_L10 / Finishing (Default: Off)",
+        "ja": "カテゴリー1/3：T11_M1.5B_L10 / 仕上げ（初期値：OFF）"
+      },
+      {
+        "ko": "유형 2/4: T11_M1.5B_L10 / 정삭 (기본값: 꺼짐)",
+        "en": "Category 2/4: T11_M1.5B_L10 / Finishing (Default: Off)",
+        "ja": "カテゴリー2/4：T11_M1.5B_L10 / 仕上げ（初期値：OFF）"
+      },
+      {
+        "ko": "유형 1/2/3/4: T12_M1.0B_L10 / 잔여 가공 / Clip (기본값: 꺼짐)",
+        "en": "Category 1/2/3/4: T12_M1.0B_L10 / Restmachining / Clip (Default: Off)",
+        "ja": "カテゴリー1/2/3/4：T12_M1.0B_L10 / 削り残し加工 / Clip（初期値：OFF）"
+      },
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：OFF）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip / 90deg (기본값: 꺼짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip / 90deg (Default: Off)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip / 90deg（初期値：OFF）"
+      },
+      {
+        "ko": "유형 3/4: T13_M0.6B_L03 / 잔여 가공 / Clip (기본값: 꺼짐)",
+        "en": "Category 3/4: T13_M0.6B_L03 / Restmachining / Clip (Default: Off)",
+        "ja": "カテゴリー3/4：T13_M0.6B_L03 / 削り残し加工 / Clip（初期値：OFF）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 꺼짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: Off)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：OFF）"
+      }
+    ],
+    "interfaces": [
+      {
+        "ko": "유형 1: T18_M1.5R_L07 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 1: T18_M1.5R_L07 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー1：T18_M1.5R_L07 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 2: T18_M1.5R_L07 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 2: T18_M1.5R_L07 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー2：T18_M1.5R_L07 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 2: T17_M1.5F_L07 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 2: T17_M1.5F_L07 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー2：T17_M1.5F_L07 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 3: T11_M1.5B_L10 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 3: T11_M1.5B_L10 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー3：T11_M1.5B_L10 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 4: T12_M1.0B_L10 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 4: T12_M1.0B_L10 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー4：T12_M1.0B_L10 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 5: T19_M1.0F_L06 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 5: T19_M1.0F_L06 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー5：T19_M1.0F_L06 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 6: T13_M0.6B_L03 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 6: T13_M0.6B_L03 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー6：T13_M0.6B_L03 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 7: T20_M0.5F_L06 / 외벽·내벽 (기본값: 꺼짐)",
+        "en": "Category 7: T20_M0.5F_L06 / Outer wall / Inner wall (Default: Off)",
+        "ja": "カテゴリー7：T20_M0.5F_L06 / 外壁・内壁（初期値：OFF）"
+      },
+      {
+        "ko": "유형 13: T17_M1.5F_L07 / 내벽 (기본값: 꺼짐)",
+        "en": "Category 13: T17_M1.5F_L07 / Inner wall (Default: Off)",
+        "ja": "カテゴリー13：T17_M1.5F_L07 / 内壁（初期値：OFF）"
+      }
+    ],
+    "tools": [
+      {
+        "id": "T9",
+        "name": "M3.0B_L12",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T11",
+        "name": "M1.5B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T17",
+        "name": "M1.5F_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T18",
+        "name": "M1.5R_L07",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T23",
+        "name": "M1.5T_L08",
+        "optional": true,
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 7,
+    "sourceRevision": "260830",
+    "sourceProfileId": "a8d3b1a1-eb76-11f0-a4ab-ec4c8c8ee783"
+  },
+  {
+    "title": "Ti_Userdefined areas_Check (not mill)",
+    "subtitle": "Userdefined areas_Check (not mill)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Userdefined areas",
+    "family": "Other",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Userdefined areas_Check (not mill) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Userdefined areas_Check (not mill).",
+        "ja": "Tiディスク用テンプレート：Ti_Userdefined areas_Check (not mill)。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: Ti_Userdefined areas_Check (not mill)",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: Ti_Userdefined areas_Check (not mill)",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：Ti_Userdefined areas_Check (not mill)"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      }
+    ],
+    "uda": [
+      {
+        "ko": "유형 1/3: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 1/3: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー1/3：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 2/4: T12_M1.0B_L10 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 2/4: T12_M1.0B_L10 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー2/4：T12_M1.0B_L10 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 3: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 3: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー3：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      },
+      {
+        "ko": "유형 4: T13_M0.6B_L03 / 정삭 / Clip (기본값: 켜짐)",
+        "en": "Category 4: T13_M0.6B_L03 / Finishing / Clip (Default: On)",
+        "ja": "カテゴリー4：T13_M0.6B_L03 / 仕上げ / Clip（初期値：ON）"
+      }
+    ],
+    "interfaces": [],
+    "tools": [
+      {
+        "id": "T12",
+        "name": "M1.0B_L10",
+        "optional": false,
+        "comments": []
+      },
+      {
+        "id": "T13",
+        "name": "M0.6B_L03",
+        "optional": false,
+        "comments": []
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 2,
+    "sourceRevision": "260830",
+    "sourceProfileId": "7de521b1-819f-11f0-8438-ec4c8c8ee783"
+  },
+  {
+    "title": "Ti_Connector_cut",
+    "subtitle": "Connector_cut",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Connector",
+    "family": "Other",
+    "partTypes": [
+      "abutmentcrown_single",
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Connector_cut 템플릿입니다.",
+        "en": "Ti disc template: Ti_Connector_cut.",
+        "ja": "Tiディスク用テンプレート：Ti_Connector_cut。"
+      },
+      {
+        "ko": "적용 보철물: Abutment Crown / Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown / Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown / Abutment Crown Bridge"
+      },
+      {
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: Ti_Connector_cut",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: Ti_Connector_cut",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：Ti_Connector_cut"
+      },
+      {
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
           }
         ]
       }
@@ -15096,37 +15374,141 @@ window.MaiBatchTemplates = [
     "interfaces": [],
     "tools": [
       {
-        "id": "T9",
-        "name": "M3.0B_L12",
-        "optional": true,
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
         "comments": []
+      }
+    ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
+    "images": [],
+    "sourceToolCount": 1,
+    "sourceRevision": "260830",
+    "sourceProfileId": "9a791183-8c27-11f0-bc59-ec4c8c8ee783"
+  },
+  {
+    "title": "Ti_Screw Head (T-cut)",
+    "subtitle": "Screw Head (T-cut)",
+    "source": "hdNPmillstrategy.hddb + hdNPmillstrategyvariantprofile.hddb + hdTool.hddb",
+    "material": "Ti",
+    "type": "Screw Head (T-cut)",
+    "family": "Other",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "conditions": [
+      {
+        "ko": "Ti 디스크용 Ti_Screw Head (T-cut) 템플릿입니다.",
+        "en": "Ti disc template: Ti_Screw Head (T-cut).",
+        "ja": "Tiディスク用テンプレート：Ti_Screw Head (T-cut)。"
       },
       {
-        "id": "T11",
-        "name": "M1.5B_L10",
-        "optional": true,
-        "comments": []
+        "ko": "적용 보철물: Abutment Crown Bridge",
+        "en": "Applicable prostheses: Abutment Crown Bridge",
+        "ja": "適用補綴物：Abutment Crown Bridge"
       },
       {
-        "id": "T18",
-        "name": "M1.5R_L07",
-        "optional": true,
-        "comments": []
+        "ko": "기준 DB: DB_M.Ai_V10.1.X_260830_R1 / 기본 전략: Ti_Screw Head (T-cut)",
+        "en": "Source DB: DB_M.Ai_V10.1.X_260830_R1 / Base strategy: Ti_Screw Head (T-cut)",
+        "ja": "基準DB：DB_M.Ai_V10.1.X_260830_R1 / 基本ストラテジー：Ti_Screw Head (T-cut)"
       },
       {
-        "id": "T17",
-        "name": "M1.5F_L07",
-        "optional": true,
+        "ko": "계산이 켜진 공정도 형상·카테고리·홀 조건에 따라 생략될 수 있습니다.",
+        "en": "Enabled processes may still be skipped depending on geometry, category, or hole conditions.",
+        "ja": "計算がONの工程でも、形状・カテゴリー・ホール条件により省略される場合があります。"
+      }
+    ],
+    "processes": [
+      {
+        "title": "General settings",
+        "titleText": {
+          "ko": "일반 설정",
+          "en": "General settings",
+          "ja": "一般設定"
+        },
+        "descriptions": [
+          {
+            "ko": "증분식 경계 옵셋: 가공 경계의 추가 옵셋을 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary offset: Adjusts the additional milling boundary offset. (Default: 0)",
+            "ja": "増分境界オフセット：加工境界の追加オフセットを調整できます。（初期値：0）"
+          },
+          {
+            "ko": "증분식 경계 각도: 가공 경계의 추가 각도를 조정할 수 있습니다. (기본값: 0)",
+            "en": "Incremental boundary angle: Adjusts the additional milling boundary angle. (Default: 0)",
+            "ja": "増分境界角度：加工境界の追加角度を調整できます。（初期値：0）"
+          }
+        ]
+      },
+      {
+        "title": "Cut / Reduce connectors_[M2.0B_L12] -CAV",
+        "descriptions": [
+          {
+            "ko": "연결 공구: T10_M2.0B_L12",
+            "en": "Linked tool: T10_M2.0B_L12",
+            "ja": "割り当て工具：T10_M2.0B_L12"
+          },
+          {
+            "ko": "계산 기본값: 꺼짐",
+            "en": "Calculate default: Off",
+            "ja": "計算の初期値：OFF"
+          },
+          {
+            "ko": "계산: 이 공정의 실행 여부를 선택할 수 있습니다.",
+            "en": "Calculate: Choose whether to run this process.",
+            "ja": "計算：この工程を実行するか選択できます。"
+          }
+        ],
+        "sourceJobId": "438bec6f-bdfc-11f0-a4a1-ec4c8c8ee783"
+      }
+    ],
+    "uda": [],
+    "interfaces": [],
+    "tools": [
+      {
+        "id": "T10",
+        "name": "M2.0B_L12",
+        "optional": false,
         "comments": []
       },
       {
         "id": "T23",
         "name": "M1.5T_L08",
         "optional": true,
-        "comments": []
+        "comments": [
+          {
+            "ko": "앵글드 스크류 채널의 T-cut 공정에서 사용합니다.",
+            "en": "Used in T-cut processes for angled screw channels.",
+            "ja": "アングルドスクリューチャンネルのT-cut工程で使用します。"
+          }
+        ]
       }
     ],
+    "toolHints": {
+      "basic": {
+        "ko": "공정·형상 조건에 따라 사용",
+        "en": "Used according to process and geometry conditions",
+        "ja": "工程・形状条件に応じて使用"
+      },
+      "optional": {
+        "ko": "해당 조건에 따라 사용",
+        "en": "Used when the corresponding conditions apply",
+        "ja": "該当条件に応じて使用"
+      }
+    },
     "images": [],
-    "sourceToolCount": 5
+    "sourceToolCount": 2,
+    "sourceRevision": "260830",
+    "sourceProfileId": "438bec2d-bdfc-11f0-a4a1-ec4c8c8ee783"
   }
 ];
