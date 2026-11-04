@@ -1715,12 +1715,21 @@
       }
 
     };
-    FEATURE_DATA['interface-manual-category'] = { title: '<span data-i18n="interface-manual-category-title">Interface 가공을 위한 수동 카테고리 설정법 - M AI only.</span>', steps: [] };
+    FEATURE_DATA['interface-manual-category'] = { title: '<span data-i18n="interface-manual-category-title">Interface 가공을 위한 수동 카테고리 설정법 - M AI only.</span>', steps: [], disclosures: [
+      { id: 'external', label: '<span data-i18n="interface-type-external">External 타입 (클릭)</span>' },
+      { id: 'internal', label: '<span data-i18n="interface-type-internal">Internal 타입 (클릭)</span>' }
+    ] };
     FEATURE_DATA['nc-file-editing-notepad'] = { title: '<span data-i18n="nc-file-editing-notepad-title">NC 파일 수정방법 - 메모장</span>' };
 
     // ── Build modal HTML ──────────────────────────────────────────────
     function buildFeatureHTML(data) {
       let html = '';
+      if (data.disclosures) {
+        return data.disclosures.map(item => `<details class="interface-type-disclosure" style="margin:0 0 16px;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;background:#fff;">
+          <summary style="padding:18px 20px;background:#f8fafc;color:#374151;font-size:18px;font-weight:700;cursor:pointer;">${item.label}</summary>
+          <div id="interface-type-${item.id}" style="min-height:48px;padding:20px;border-top:1px solid #e2e8f0;"></div>
+        </details>`).join('');
+      }
 
       // 스크롤 스탬프 (바로가기 버튼)
       if (data.steps && data.steps.length > 1) {

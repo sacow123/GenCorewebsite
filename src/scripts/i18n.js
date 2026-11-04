@@ -6631,6 +6631,10 @@ Object.assign(TRANSLATIONS.es, {"mf-blank-material-1":"Hybrid Ceramic Block","mf
 
 // Interface manual category feature title.
 Object.assign(TRANSLATIONS.ko, {"interface-manual-category-title":"Interface 가공을 위한 수동 카테고리 설정법 - M AI only."});
+Object.assign(TRANSLATIONS.ko, {"interface-type-external":"External 타입 (클릭)","interface-type-internal":"Internal 타입 (클릭)"});
+Object.assign(TRANSLATIONS.en, {"interface-type-external":"External type (click)","interface-type-internal":"Internal type (click)"});
+Object.assign(TRANSLATIONS.ja, {"interface-type-external":"External タイプ（クリック）","interface-type-internal":"Internal タイプ（クリック）"});
+Object.assign(TRANSLATIONS.es, {"interface-type-external":"Tipo External (clic)","interface-type-internal":"Tipo Internal (clic)"});
 Object.assign(TRANSLATIONS.en, {"interface-manual-category-title":"Manual Category Setup for Interface Machining - M AI only."});
 Object.assign(TRANSLATIONS.ja, {"interface-manual-category-title":"Interface加工のための手動カテゴリー設定方法 - M AI only."});
 Object.assign(TRANSLATIONS.es, {"interface-manual-category-title":"Configuración manual de categorías para el mecanizado de Interface - M AI only."});
@@ -6644,3 +6648,59 @@ Object.assign(TRANSLATIONS.ja, {"uda-guide-text-0":"1. ユーザー定義領域�
 Object.assign(TRANSLATIONS.ko, {"uda-guide-heading-1":"1. 사용자 정의 영역의 목적","uda-guide-text-0":"사용자 정의 영역은 기존 황삭 및 정삭 방향으로는 가공할 수 없는 영역을 가공하기 위해 별도로 삽입 방향을 지정하는 기능입니다.","uda-guide-heading-2":"2. 사용자 정의 영역 삽입 방향 설정 및 확인 방법","uda-guide-text-2":"","uda-guide-heading-3":"3. 각 카테고리의 역할","uda-guide-text-8":"90도 가공을 하시려면 카테고리를 1/3/5가 아닌 2/4/6으로 잡아야 합니다. 아래 예시를 보며 확인해봅시다.","uda-guide-caption-16":"카테고리 종류 별 사용되는 공구 종류","uda-guide-heading-4":"4. 사용자 정의 영역 권장 설정 방법 — 상부 구조물","uda-guide-text-16":"상부 구조물은 미가공 영역이 가장 많이 나오는 보철물 유형입니다. 특히나 협면측은 STL 파일을 소재 안에 맞춰서 넣어서 미가공영역이 주로 발생합니다.","uda-guide-caption-20":"설정 끝난 사용자 정의 영역의 공구 경로","uda-guide-heading-5":"5. UDA의 활용 — Tooth pocket 설정","uda-guide-text-20":""});
 Object.assign(TRANSLATIONS.en, {"uda-guide-heading-1":"1. Purpose of User-defined Areas","uda-guide-text-0":"User defined area(UDA) is the function to set individual insertion direction for milling areas that are inaccessible through standard roughing, rest-machining or finishing direction.","uda-guide-heading-2":"2. Setting and Checking the UDA Insertion Direction","uda-guide-text-2":"","uda-guide-heading-3":"3. The Role of Each Category","uda-guide-text-8":"For 90º milling, you should set category 2/4/6, not 1/3/5. Let’s take a look at the example below to verify.","uda-guide-caption-16":"List of tools used by category number.","uda-guide-heading-4":"4. Recommended UDA Settings — Over Structure","uda-guide-text-16":"Over structure is the type of prosthesis that has the most un-milled areas. In particular, the buccal side has many un-milled areas because the STL file must be fitted within the blank.","uda-guide-caption-20":"The toolpaths for the UDA after setup.","uda-guide-heading-5":"5. UDA Utilization — Setting Tooth Pocket","uda-guide-text-20":""});
 Object.assign(TRANSLATIONS.ja, {"uda-guide-heading-1":"1. ユーザー定義領域の目的","uda-guide-text-0":"ユーザー定義領域（UDA）は、通常の荒加工・残材加工・仕上げ方向では加工できない領域に、個別の挿入方向を設定する機能です。","uda-guide-heading-2":"2. UDAの挿入方向の設定と確認方法","uda-guide-text-2":"","uda-guide-heading-3":"3. 各カテゴリー番号の役割","uda-guide-text-8":"90度加工には、カテゴリー1/3/5ではなく2/4/6を設定します。以下の例で確認します。","uda-guide-caption-16":"カテゴリー別の使用工具一覧。","uda-guide-heading-4":"4. UDAの推奨設定：上部構造（Over Structure）","uda-guide-text-16":"上部構造は未加工領域が特に多い補綴物です。STLを素材内に収める必要があるため、特に頬側に未加工領域が発生します。","uda-guide-caption-20":"設定後のUDA工具経路。","uda-guide-heading-5":"5. UDAの活用：Tooth pocketの設定","uda-guide-text-20":""});
+
+Object.assign(TRANSLATIONS.ko, {"interface-manual-intro-1":"인터페이스를 가공해야하는데, 라이브러리에 해당 인터페이스가 없는 경우가 종종 있습니다.<br><br>이때 인터페이스의 제작을 의뢰할 수도 있겠지만, 급한 경우에는 수동으로 인터페이스 가공을 정할 수도 있습니다.","interface-manual-intro-2":"Fixture를 기준으로 External, Internal 두 종류로 나눠서 각 유형의 수동 인터페이스 설정 방법을 알아보겠습니다."});
+
+Object.assign(TRANSLATIONS.en, {"interface-manual-intro-1":"When you need to machine an interface, you may find that the corresponding interface is not available in the library.<br><br>You can request that the interface be created, but in urgent cases, you can also configure interface machining manually.","interface-manual-intro-2":"Based on the fixture, we will divide interfaces into two types, External and Internal, and explain how to configure each type manually."});
+
+Object.assign(TRANSLATIONS.ja, {"interface-manual-intro-1":"インターフェースを加工する際、ライブラリに該当するインターフェースがない場合があります。<br><br>その場合はインターフェースの作成を依頼することもできますが、急ぎの場合は手動でインターフェースの加工を設定することもできます。","interface-manual-intro-2":"Fixtureを基準にExternalとInternalの2種類に分け、それぞれの手動インターフェース設定方法を説明します。"});
+
+Object.assign(TRANSLATIONS.es, {"interface-manual-intro-1":"Al mecanizar una interfaz, a veces la interfaz correspondiente no está disponible en la biblioteca.<br><br>Puede solicitar su creación, pero si es urgente, también puede configurar manualmente el mecanizado de la interfaz.","interface-manual-intro-2":"Tomando el Fixture como referencia, dividiremos las interfaces en dos tipos, External e Internal, y explicaremos cómo configurar cada tipo manualmente."});
+
+Object.assign(TRANSLATIONS.ko, {"interface-manual-tools":"사용되는 공구(클릭)","interface-manual-request-notes":"인터페이스 제작 의뢰 시 주의사항(클릭)"});
+
+Object.assign(TRANSLATIONS.en, {"interface-manual-tools":"Tools used (click)","interface-manual-request-notes":"Precautions when requesting interface creation (click)"});
+
+Object.assign(TRANSLATIONS.ja, {"interface-manual-tools":"使用する工具（クリック）","interface-manual-request-notes":"インターフェースの作成を依頼する際の注意事項（クリック）"});
+
+Object.assign(TRANSLATIONS.es, {"interface-manual-tools":"Herramientas utilizadas (clic)","interface-manual-request-notes":"Precauciones al solicitar la creación de una interfaz (clic)"});
+
+Object.assign(TRANSLATIONS.ko, {"interface-manual-tools-photo-alt":"인터페이스 가공에 사용되는 공구 목록"});
+
+Object.assign(TRANSLATIONS.en, {"interface-manual-tools-photo-alt":"List of tools used for interface machining"});
+
+Object.assign(TRANSLATIONS.ja, {"interface-manual-tools-photo-alt":"インターフェース加工に使用する工具一覧"});
+
+Object.assign(TRANSLATIONS.es, {"interface-manual-tools-photo-alt":"Lista de herramientas utilizadas para mecanizar interfaces"});
+
+Object.assign(TRANSLATIONS.ko, {"interface-tool-category-1":"유형 1","interface-tool-category-2":"유형 2","interface-tool-category-3":"유형 3","interface-tool-category-4":"유형 4","interface-tool-category-5":"유형 5","interface-tool-category-6":"유형 6","interface-tool-category-7":"유형 7"});
+
+Object.assign(TRANSLATIONS.en, {"interface-tool-category-1":"Category 1","interface-tool-category-2":"Category 2","interface-tool-category-3":"Category 3","interface-tool-category-4":"Category 4","interface-tool-category-5":"Category 5","interface-tool-category-6":"Category 6","interface-tool-category-7":"Category 7"});
+
+Object.assign(TRANSLATIONS.ja, {"interface-tool-category-1":"タイプ 1","interface-tool-category-2":"タイプ 2","interface-tool-category-3":"タイプ 3","interface-tool-category-4":"タイプ 4","interface-tool-category-5":"タイプ 5","interface-tool-category-6":"タイプ 6","interface-tool-category-7":"タイプ 7"});
+
+Object.assign(TRANSLATIONS.es, {"interface-tool-category-1":"Tipo 1","interface-tool-category-2":"Tipo 2","interface-tool-category-3":"Tipo 3","interface-tool-category-4":"Tipo 4","interface-tool-category-5":"Tipo 5","interface-tool-category-6":"Tipo 6","interface-tool-category-7":"Tipo 7"});
+
+Object.assign(TRANSLATIONS.ko, {"interface-manual-internal-intro":"체결부가 외부로 돌출되지 않고, 안으로 들어간 Fixture 에 결합하기 위해 우리는 Interface(연결부)가 외부로 돌출된 보철물을 가공해야합니다. 이 경우에는 유형( = Category, 이후 CAT) 설정을 어떻게 해야하는지 알아보겠습니다."});
+
+Object.assign(TRANSLATIONS.en, {"interface-manual-internal-intro":"To connect to a Fixture whose connection is recessed rather than protruding outward, we need to machine a prosthesis with an outward-protruding Interface (connection). Let us look at how to set the category (= Category, hereafter CAT) in this case."});
+
+Object.assign(TRANSLATIONS.ja, {"interface-manual-internal-intro":"接合部が外側に突出せず、内側にくぼんだFixtureに結合するためには、Interface（接続部）が外側に突出した補綴物を加工する必要があります。この場合のタイプ（＝Category、以下CAT）の設定方法を説明します。"});
+
+Object.assign(TRANSLATIONS.es, {"interface-manual-internal-intro":"Para conectar con un Fixture cuya zona de unión está hundida hacia el interior, debemos mecanizar una prótesis con una Interface (conexión) que sobresalga hacia el exterior. Veamos cómo configurar el tipo (= Category, en adelante CAT) en este caso."});
+
+Object.assign(TRANSLATIONS.ko, {"interface-open-new-window":"새 창으로 열기"});
+
+Object.assign(TRANSLATIONS.en, {"interface-open-new-window":"Open in new window"});
+
+Object.assign(TRANSLATIONS.ja, {"interface-open-new-window":"新しいウィンドウで開く"});
+
+Object.assign(TRANSLATIONS.es, {"interface-open-new-window":"Abrir en una ventana nueva"});
+
+Object.assign(TRANSLATIONS.ko, {"interface-open-detail":"상세 보기"});
+
+Object.assign(TRANSLATIONS.en, {"interface-open-detail":"View details"});
+
+Object.assign(TRANSLATIONS.ja, {"interface-open-detail":"詳細を見る"});
+
+Object.assign(TRANSLATIONS.es, {"interface-open-detail":"Ver detalles"});
