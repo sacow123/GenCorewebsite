@@ -477,7 +477,9 @@
       'auto-tool-pocket-calibration.html',
       'manual-tool-pocket-calibration.html'
     ]);
-    const documentName = location.pathname.split('/').pop();
+    // Vercel cleanUrls removes .html; keep the manual disk behavior identical.
+    const routeName = location.pathname.split('/').pop();
+    const documentName = routeName === 'manual-disk-calibration' ? `${routeName}.html` : routeName;
     if (!calibrationDocuments.has(documentName) || document.querySelector('.mai-ui2-calibration-step-style')) return;
 
     const style = document.createElement('style');
@@ -565,7 +567,7 @@
   }
 
   function installManualDiskCalibrationLayout() {
-    if (!location.pathname.endsWith('/manual-disk-calibration.html') || document.querySelector('.mai-ui2-manual-disk-layout')) return;
+    if (!/\/manual-disk-calibration(?:\.html)?$/.test(location.pathname) || document.querySelector('.mai-ui2-manual-disk-layout')) return;
     const instructions = [
       { text: ['10-12mm 두께의 왁스 디스크, 디지털 버니어 캘리퍼스, T10-M2.0B 툴을 준비하세요.', 'C-클램프 지그에 왁스 디스크를 장착하세요.', '장착 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.'] },
       { text: ['NC파일을 불러오면 “A cube milling start” 버튼을 눌러 A-큐브 가공을 시작하세요. 가공 후 “Next” 버튼을 눌러 다음 단계로 진행하세요.'], notes: ['만약 왁스 디스크가 이미 사용된 것이라면 A-큐브의 모양이 잘 나오도록 방향을 조절해서 장착하세요.', '가공이 끝난 A-큐브는 12시 방향 윗부분에 특정 표시가 있습니다. 양 옆의 커넥터를 커터로 절단해 디스크에서 떼어내세요.'] },
