@@ -6,6 +6,7 @@
   // Body-only translations for the ten M AI UI 2.0 legacy manuals. The export
   // keeps its source formatting; this table changes only visible text nodes.
   const rows = [
+    ['큐브 단차 측정하는 방법 영상으로 확인 (클릭)', 'Watch how to measure the cube step (click)', 'キューブの段差測定方法を動画で確認（クリック）'],
     ["캘리브레이션 V1.2와 달리 프리밀 블럭의 머리 + 몸통부분의 길이를 측정하세요.","Unlike Calibration V1.2, measure the combined length of the premill block head and body.","キャリブレーションV1.2とは異なり、プリミルブロックの頭部＋胴体部分の長さを測定してください。"],
     ["캘리브레이션 진행중.....","Calibration in progress.....","キャリブレーション実行中....."],
     ["캘리브레이션이 끝나면 위와 같은 메시지가 팝업됩니다. OK를 눌러 진행바랍니다.","When calibration is complete, the message shown above appears. Click OK to continue.","キャリブレーションが完了すると、上のようなメッセージが表示されます。OKを押して進めてください。"],
@@ -299,6 +300,9 @@
 
   function translate(lang) {
     document.documentElement.lang = lang;
+    document.querySelectorAll('.mai-ui2-cube-step-video iframe').forEach((frame) => {
+      frame.title = lang === 'en' ? 'How to measure the cube step' : lang === 'ja' ? 'キューブの段差測定方法' : '큐브 단차 측정 방법';
+    });
     const entries = dictionary[lang];
     const blocks = Array.from(document.body.querySelectorAll('p, li, h1, h2, h3, h4, h5, h6, figcaption, summary, td, th'));
     blocks.forEach((block) => {
@@ -599,6 +603,10 @@
       .mai-ui2-manual-disk-text > p:last-of-type { margin-bottom: 0; }
       .mai-ui2-manual-disk-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 12px; padding: 14px 16px; border-radius: 10px; background: #f3e8ff; color: #374151; line-height: 1.65; }
       .mai-ui2-manual-disk-note-icon { flex: 0 0 auto; font-size: 1.35em; line-height: 1.25; }
+      .mai-ui2-cube-step-video { margin-top: 12px; border: 1px solid #c4b5fd; border-radius: 10px; background: #f5f3ff; overflow: hidden; }
+      .mai-ui2-cube-step-video summary { padding: 16px; cursor: pointer; line-height: 1.65; }
+      .mai-ui2-cube-step-video summary:focus-visible { outline: 2px solid #7c3aed; outline-offset: -3px; }
+      .mai-ui2-cube-step-video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
       .mai-ui2-image-dialog img { width: 100%; }
       @media (max-width: 720px) { .mai-ui2-manual-disk-card { margin: 18px 0; padding: 14px; } .mai-ui2-manual-disk-text { margin-top: 14px; padding: 14px; } }
     `;
@@ -628,6 +636,29 @@
         textCard.append(note);
       });
       textColumn.append(textCard);
+      // Show the measurement video below the A-cube and B-cube warnings.
+      if (index === 2 || index === 5) {
+        const videoCard = document.createElement('details');
+        videoCard.className = 'mai-ui2-cube-step-video';
+        const summary = document.createElement('summary');
+        summary.textContent = '큐브 단차 측정하는 방법 영상으로 확인 (클릭)';
+        videoCard.append(summary);
+        videoCard.addEventListener('toggle', () => {
+          if (videoCard.open && !videoCard.querySelector('iframe')) {
+            const frame = document.createElement('iframe');
+            frame.src = 'https://www.youtube.com/embed/gvbUdXuJLHI?start=82';
+            const lang = document.documentElement.lang;
+            frame.title = lang === 'en' ? 'How to measure the cube step' : lang === 'ja' ? 'キューブの段差測定方法' : '큐브 단차 측정 방법';
+            frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            frame.allowFullscreen = true;
+            videoCard.append(frame);
+          } else if (!videoCard.open) {
+            videoCard.querySelector('iframe')?.remove();
+          }
+          reportHeight();
+        });
+        textCard.append(videoCard);
+      }
       photoColumn.style.width = '100%';
     });
     reportHeight();
