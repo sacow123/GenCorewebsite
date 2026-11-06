@@ -41,22 +41,22 @@
     ko: [
       ['높이를 잘 설정했다면 사진과 같이 화살표 모양과 테두리가 생겼을 겁니다.\n설정한 높이 만큼의 벽을, 화살표 방향으로 가공한다는 표시입니다.'],
       ["'다음' 화살표를 눌러, 혹은 생성된 테두리 내지 화살표를 눌러 여러분이 설정한 카테고리를 선택하세요."],
-      ["2가지를 확인해주시면 됩니다. 우리가 설정한 벽이 '외부', '내부'로 잘 인식 되었는지.\n가공할 인터페이스 카테고리의 유형이 몇번인지(기본 유형은 1입니다) 확인하세요."]
+      ["우리가 설정한 벽이 '외부'(혹은 내부)로 잘 인식 되었는지. 가공할 인터페이스 카테고리의 유형이 몇번인지(기본 유형은 1입니다) 확인하세요.\n\n※사진 속 예시는 Internal 타입의 Fixture에 들어가기 위해 외부로 돌출된 Interface입니다.\n따라서 '외부' 로 설정되는 것이 정상입니다."]
     ],
     en: [
       ['If the height is set correctly, arrows and an outline will appear as shown in the image.\nThey indicate that the wall will be machined to the specified height in the direction of the arrows.'],
       ['Click the "Next" arrow, or click the generated outline or arrows, to select the category you have defined.'],
-      ['Check two things: whether the wall you defined is correctly recognized as "External" or "Internal".\nCheck the type number of the interface category to be machined (the default type is 1).']
+      ['Check whether the wall you defined is correctly recognized as "External" (or Internal). Check the type number of the interface category to be machined (the default type is 1).\n\n※The example in the image is an outward-protruding Interface that fits into an Internal-type Fixture.\nTherefore, "External" is the correct setting.']
     ],
     ja: [
       ['高さが正しく設定されていれば、画像のように矢印と輪郭が表示されます。\n設定した高さの壁を、矢印の方向に加工することを示しています。'],
       ['「次へ」の矢印、または生成された輪郭や矢印をクリックして、設定したカテゴリーを選択してください。'],
-      ['次の2点を確認してください。設定した壁が「外部」「内部」として正しく認識されているか。\n加工するインターフェースカテゴリーのタイプ番号を確認してください（デフォルトのタイプは1です）。']
+      ['設定した壁が「外部」（または内部）として正しく認識されているか、加工するインターフェースカテゴリーのタイプ番号は何番かを確認してください（デフォルトのタイプは1です）。\n\n※画像の例は、InternalタイプのFixtureに入るように外側へ突出したInterfaceです。\nしたがって、「外部」に設定されるのが正常です。']
     ],
     es: [
       ['Si la altura está bien configurada, aparecerán flechas y un contorno como en la imagen.\nIndican que la pared se mecanizará hasta la altura definida en la dirección de las flechas.'],
       ['Haga clic en la flecha "Siguiente", o en el contorno o las flechas generadas, para seleccionar la categoría que ha definido.'],
-      ['Compruebe dos cosas: si la pared definida se reconoce correctamente como "Externa" o "Interna".\nCompruebe el número de tipo de la categoría de interfaz que se mecanizará (el tipo predeterminado es 1).']
+      ['Compruebe si la pared definida se reconoce correctamente como "Externa" (o Interna). Compruebe el número de tipo de la categoría de interfaz que se mecanizará (el tipo predeterminado es 1).\n\n※El ejemplo de la imagen es una Interface que sobresale hacia fuera para encajar en un Fixture de tipo Internal.\nPor lo tanto, "Externa" es la configuración correcta.']
     ]
   };
   Object.keys(continuation).forEach(lang => steps[lang].push(...continuation[lang]));
