@@ -4,6 +4,39 @@
   if (!isLocalAuthoringEnvironment) return;
 
   const PANEL_ID = 'gencore-image-measure-tool';
+  const messages = {
+    '비율 측정 모드를 켠 뒤 사진을 클릭하거나 드래그하세요.': ['Turn on ratio measurement, then click or drag on a photo.','比率測定をオンにして写真をクリックまたはドラッグしてください。','Active la medición de proporciones y haga clic o arrastre sobre una foto.'],
+    '사진을 클릭하거나 드래그해 X% / Y% 값을 측정하세요.': ['Click or drag on a photo to measure X% / Y%.','写真をクリックまたはドラッグしてX% / Y%を測定してください。','Haga clic o arrastre sobre una foto para medir X% / Y%.'],
+    '대상 사진: 아직 선택하지 않았습니다.': ['Target photo: not selected yet.','対象写真：まだ選択されていません。','Foto de destino: aún no seleccionada.'],
+    '대상 사진: ': ['Target photo: ','対象写真：','Foto de destino: '],
+    '비율 복사': ['Copy ratio','比率をコピー','Copiar proporción'],
+    '⌖ 비율 측정': ['⌖ Ratio measurement','⌖ 比率測定','⌖ Medición de proporciones'],
+    '✕ 측정 종료': ['✕ End measurement','✕ 測定終了','✕ Finalizar medición'],
+    '복사되었습니다.': ['Copied.','コピーしました。','Copiado.'],
+    '복사에 실패했습니다.': ['Copy failed.','コピーに失敗しました。','Error al copiar.'],
+    '이름 없는 사진': ['Unnamed photo','名前のない写真','Foto sin nombre'],
+    '사진: ': ['Photo: ','写真：','Foto: '],
+    '사진 X:': ['Photo X:','写真 X:','Foto X:'],
+    '시작 X:': ['Start X:','開始 X:','Inicio X:'],
+    '가로:': ['Width:','幅：','Ancho:'],
+    '세로:': ['Height:','高さ：','Alto:']
+  };
+  function localized(text) {
+    const lang = typeof currentLang !== 'undefined' ? currentLang : document.documentElement.lang;
+    const index = {en:0,ja:1,es:2}[lang];
+    if (index === undefined) return text;
+    for (const [original, values] of Object.entries(messages)) text = text.split(original).join(values[index]);
+    return text;
+  }
+  function refreshLanguage() {
+    const panel = document.getElementById(PANEL_ID);
+    if (!panel) return;
+    panel.querySelector('.gencore-measure-toggle').textContent = localized(enabled ? '✕ 측정 종료' : '⌖ 비율 측정');
+    panel.querySelector('[data-measure-copy]').textContent = localized('비율 복사');
+    panel.querySelector('[data-measure-target]').textContent = localized(lockedImageLabel ? '대상 사진: '+lockedImageLabel : '대상 사진: 아직 선택하지 않았습니다.');
+    setReadout(lockedResult || (enabled ? '사진을 클릭하거나 드래그해 X% / Y% 값을 측정하세요.' : '비율 측정 모드를 켠 뒤 사진을 클릭하거나 드래그하세요.'), Boolean(lockedResult));
+  }
+
   const helperUrl = document.currentScript?.src || new URL('htmls/measurement_tool.js', location.href).href;
   let enabled = false, drag = null, lockedResult = '', lockedImageLabel = '', marker = null, selection = null;
   const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
@@ -36,7 +69,7 @@
   function setReadout(text, canCopy) {
     const panel = document.getElementById(PANEL_ID);
     const readout = panel?.querySelector('[data-measure-readout]');
-    if (readout) readout.textContent = text;
+    if (readout) readout.textContent = localized(text);
     const copy = panel?.querySelector('[data-measure-copy]');
     if (copy) copy.disabled = !canCopy;
   }
@@ -44,7 +77,7 @@
     const target = document.querySelector(`#${PANEL_ID} [data-measure-target]`);
     if (!target) return;
     lockedImageLabel = image ? imageLabel(image) : '';
-    target.textContent = lockedImageLabel ? `대상 사진: ${lockedImageLabel}` : '대상 사진: 아직 선택하지 않았습니다.';
+    target.textContent = localized(lockedImageLabel ? `대상 사진: ${lockedImageLabel}` : '대상 사진: 아직 선택하지 않았습니다.');
   }
   async function copyResult() {
     if (!lockedResult) return;
@@ -78,7 +111,7 @@
     const toggle = document.querySelector(`#${PANEL_ID} .gencore-measure-toggle`);
     if (toggle) {
       toggle.setAttribute('aria-pressed', String(enabled));
-      toggle.textContent = enabled ? '✕ 측정 종료' : '⌖ 비율 측정';
+      toggle.textContent = localized(enabled ? '✕ 측정 종료' : '⌖ 비율 측정');
     }
     if (!enabled) { drag = null; clearVisuals(); }
     setReadout(enabled ? '사진을 클릭하거나 드래그해 X% / Y% 값을 측정하세요.' : '비율 측정 모드를 켠 뒤 사진을 클릭하거나 드래그하세요.', Boolean(lockedResult));
@@ -175,13 +208,15 @@
   }
   function init() {
     createPanel();
+    window.addEventListener('gencore-language-changed', refreshLanguage);
+    refreshLanguage();
     window.addEventListener('gencore-measure-mode', event => applyEnabled(event.detail));
     window.addEventListener('gencore-measure-result', event => {
       lockedResult = event.detail.result;
       lockedImageLabel = event.detail.label;
       setReadout(lockedResult, true);
       const target = document.querySelector(`#${PANEL_ID} [data-measure-target]`);
-      if (target) target.textContent = `대상 사진: ${lockedImageLabel}`;
+      if (target) target.textContent = localized(`대상 사진: ${lockedImageLabel}`);
     });
     try { applyEnabled(window.top.document.documentElement.dataset.gencoreMeasureEnabled === 'true'); } catch { applyEnabled(false); }
     window.addEventListener('pointerdown', onPointerDown, true); window.addEventListener('pointermove', onPointerMove, true); window.addEventListener('pointerup', onPointerUp, true);

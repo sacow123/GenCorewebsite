@@ -1,0 +1,27 @@
+const fs=require('fs'),z=require('zlib');const root='C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본/';
+const base=z.inflateRawSync(fs.readFileSync(root+'hdNPmillstrategy.hddb').subarray(10));
+const h=Array.from({length:320},()=>new Uint32Array(256));for(let i=0;i<base.length;i++)h[i%320][base[i]]++;
+const score=Array.from({length:256},(_,v)=>v===32?3:v===10||v===13?1.4:/[a-zA-Z0-9]/.test(String.fromCharCode(v))?1.6:/[<>/="._:-]/.test(String.fromCharCode(v))?1.3:v>=32&&v<127?0:v>=128?-4:-10);
+const key=Buffer.alloc(320);for(let i=0;i<320;i++){let best=-Infinity;for(let k=0;k<256;k++){let s=0;for(let v=0;v<256;v++)s+=h[i][v]*score[v^k];if(s>best){best=s;key[i]=k;}}}
+const decode=n=>{const raw=fs.readFileSync(root+n);if(raw[0]!==31)return raw.toString('utf8');const b=z.inflateRawSync(raw.subarray(10));return Buffer.from(b.map((v,i)=>v^key[i%320])).toString('utf8');};
+
+const out='tools';fs.mkdirSync(out,{recursive:true});
+const ent=s=>s.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&apos;/g,"'").replace(/&amp;/g,'&');
+const get=(s,t)=>ent(s.match(new RegExp('<'+t+'(?: [^>]*)?>([\\s\\S]*?)</'+t+'>'))?.[1]||'');
+const props=s=>Object.fromEntries([...s.matchAll(/<([^<>\s/]+)(?: [^>]*)?>([^<>]*)<\/\1>/g)].map(m=>[m[1],ent(m[2])]));
+const strategy=decode('hdNPmillstrategy.hddb');
+const bases=new Map([...strategy.matchAll(/<namedProfile_millstrategy id="([^"]+)">([\s\S]*?)<\/namedProfile_millstrategy>/g)].map(m=>[m[1],{id:m[1],name:get(m[2],'name'),globals:props(m[2].match(/<setparams[^>]*>([\s\S]*?)<\/setparams>/)?.[1]||''),jobs:[...m[2].matchAll(/<job type="millstrategyjob" id="([^"]+)">([\s\S]*?)<\/job>/g)].map(j=>({id:j[1],type:get(j[2],'jobtype'),objectid:get(j[2],'objectid'),p:props(j[2].match(/<parameters[^>]*>([\s\S]*?)<\/parameters>/)?.[1]||'')}))}]));
+const tools=new Map([...decode('hdTool.hddb').matchAll(/<tool id="([^"]+)">([\s\S]*?)<\/tool>/g)].map(m=>[m[1],{id:m[1],...props(m[2])}]));
+const variants=[...decode('hdNPmillstrategyvariantprofile.hddb').matchAll(/<namedProfile_millstrategyvariantprofile id="([^"]+)">([\s\S]*?)<\/namedProfile_millstrategyvariantprofile>/g)].map(m=>({partTypes:[...m[2].matchAll(/<vfilter[^>]*>\s*<name>type<\/name>\s*<value>([^<]*)<\/value>\s*<\/vfilter>/g)].map(x=>x[1]),material:get(m[2],'rfilter'),id:m[1],name:get(m[2],'name'),base:get(m[2],'baseprofile'),type:get(m[2].match(/<vfilter type="fvalue">\s*<name>type<\/name>([\s\S]*?)<\/vfilter>/)?.[1]||'','value'),overrides:[...m[2].matchAll(/<overridden(Prop|Restriction)_key>([\s\S]*?)<\/overridden\1_key>\s*<overridden\1_jobType>([\s\S]*?)<\/overridden\1_jobType>\s*<overridden\1_jobLabel>([\s\S]*?)<\/overridden\1_jobLabel>\s*<overridden\1_val>([\s\S]*?)<\/overridden\1_val>/g)].map(x=>({kind:x[1],key:ent(x[2]),type:ent(x[3]),label:ent(x[4]),value:ent(x[5])}))}));
+const records=variants.map(v=>{const b=bases.get(v.base);if(!b)throw Error('Missing base '+v.name);const jobs=structuredClone(b.jobs),globals=structuredClone(b.globals);let applied=0;const unmatched=[];for(const o of v.overrides){if(o.kind!=='Prop')continue;const [id,field]=o.key.split('##');if(id==='globals'){globals[field]=o.value;applied++;continue;}let j=jobs.find(j=>j.id===id||j.objectid===id||j.p.joboid===id);if(!j){unmatched.push(o);continue;}j.p[field]=o.value;applied++;}return {...v,baseName:b.name,globals,jobs,applied,unmatched,tools:[...new Set(jobs.map(j=>j.p.tool).filter(Boolean))].map(id=>tools.get(id)||{id,name:'미확인 공구'})};});
+
+
+
+
+const materialXml=decode('hdMaterial.hddb');
+const materials=[...materialXml.matchAll(/<material id="([^"]+)">([\s\S]*?)<\/material>/g)].map(m=>({id:m[1],name:get(m[2],'name'),parent:get(m[2],'belongstogroup')}));
+
+console.log('Variants',variants.length,'Bases',bases.size);
+console.log('Profile coverage',records.reduce((a,r)=>{const m=materials.find(m=>m.id===r.material);const k=m?.name||('UNRESOLVED:'+r.material);a[k]=(a[k]||0)+1;return a;},{}));
+console.log('No types',records.filter(r=>!r.partTypes.length).map(r=>({name:r.name,material:r.material})));
+fs.writeFileSync('tmp/all-profile-filters.json',JSON.stringify({variants:[...decode('hdNPmillstrategyvariantprofile.hddb').matchAll(/<namedProfile_millstrategyvariantprofile id="([^"]+)">([\s\S]*?)<\/namedProfile_millstrategyvariantprofile>/g)].map(m=>({id:m[1],name:get(m[2],'name'),material:get(m[2],'rfilter'),filters:[...m[2].matchAll(/<vfilter[^>]*>([\s\S]*?)<\/vfilter>/g)].map(x=>x[1])})),bases:[...strategy.matchAll(/<namedProfile_millstrategy id="([^"]+)">([\s\S]*?)<\/namedProfile_millstrategy>/g)].map(m=>({id:m[1],name:get(m[2],'name'),material:get(m[2],'rfilter'),filters:[...m[2].matchAll(/<vfilter[^>]*>([\s\S]*?)<\/vfilter>/g)].map(x=>x[1])}))},null,2));

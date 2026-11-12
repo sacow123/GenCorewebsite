@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "counts": {
+    "Ti": 26,
+    "CoCr": 11,
+    "Glass Ceramic": 8,
+    "Wax": 6,
+    "Zirconia": 25,
+    "Pre-Mill": 4,
+    "Pre-Mil+Rev.": 17,
+    "Hybrid Ceramic": 21,
+    "PEEK": 10,
+    "PMMA": 30,
+    "DuraFlex": 4,
+    "Amber_Dry": 3,
+    "Medentika Pre-mill": 2
+  },
+  "sourceHashes": true,
+  "screenVerification": "NOT RUN: explicitly deferred by user",
+  "checked": "catalog membership, tools, images, adjustable jobs/defaults, KO/EN/JA fields, script order, protected local entry"
+}

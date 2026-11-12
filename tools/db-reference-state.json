@@ -1,0 +1,595 @@
+{
+  "updated": "2026-11-11",
+  "canonicalSource": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본/",
+  "scope": {
+    "material": "CoCr",
+    "family": "Abutment",
+    "type": "Abutment Crown Bridge"
+  },
+  "sourceSnapshot": "tools/mai-cocr-bridge-260830-source.json",
+  "extract": "node tools/extract-mai-cocr-original.cjs",
+  "build": "node tools/build-mai-cocr.js",
+  "check": "node tools/check-mai-cocr.js",
+  "referenceLayout": "mai-template-Ti_Abutment",
+  "runtime": "src/data/mai-cocr-templates.js",
+  "verifiedEnvironment": "http://127.0.0.1:8080/사용자%20매뉴얼.html",
+  "templates": [
+    "CoCr_Abutment Crown Bridge",
+    "CoCr_Abutment Crown Bridge_NCS (highnees)",
+    "CoCr_Abutment Crown Bridge_NCS (M-Fix)"
+  ],
+  "findings": {
+    "missingBasicTemplateAdded": true,
+    "toolsPerTemplate": 18,
+    "editableJobsPerTemplate": 4,
+    "generalSettings": [
+      "millincoffset",
+      "milloffset_incangle"
+    ],
+    "baseFinishingXYDefaults": {
+      "standard": "0",
+      "highnees": "0",
+      "M-Fix": "0.015"
+    },
+    "copingAllowanceDefault": "-0.015",
+    "udaCategories": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "validation": {
+    "sourceHashes": true,
+    "variantOverridesUnmatched": 0,
+    "languageSequence": [
+      "ko",
+      "en",
+      "ja",
+      "en",
+      "ko"
+    ],
+    "renderedChecks": "output/verification/cocr-260830/rendered-checks.json",
+    "photoViewerLanguages": [
+      "ko",
+      "en",
+      "ja"
+    ]
+  },
+  "pendingScope": "Actual browser verification remains deferred. Current runtime no longer uses legacy HTML/export catalogs for M.Ai template lists.",
+  "unrelatedObservation": "Existing temporary ratio measurement panel retains Korean help text in EN/JA. Outside this data-only change; no site-wide translation completion claimed.",
+  "reconciledScopes": [
+    {
+      "material": "CoCr",
+      "family": "Abutment",
+      "type": "Abutment Crown Bridge",
+      "sourceSnapshot": "tools/mai-cocr-bridge-260830-source.json",
+      "templates": [
+        "CoCr_Abutment Crown Bridge",
+        "CoCr_Abutment Crown Bridge_NCS (highnees)",
+        "CoCr_Abutment Crown Bridge_NCS (M-Fix)"
+      ],
+      "validation": {
+        "sourceHashes": true,
+        "variantOverridesUnmatched": 0,
+        "languageSequence": [
+          "ko",
+          "en",
+          "ja",
+          "en",
+          "ko"
+        ],
+        "renderedChecks": "output/verification/cocr-260830/rendered-checks.json",
+        "photoViewerLanguages": [
+          "ko",
+          "en",
+          "ja"
+        ]
+      }
+    },
+    {
+      "material": "CoCr",
+      "family": "Abutment",
+      "type": "Abutment Crown",
+      "sourceSnapshot": "tools/mai-cocr-crown-260830-source.json",
+      "templates": [
+        {
+          "title": "CoCr_Abutment Crown",
+          "tools": 18
+        },
+        {
+          "title": "CoCr_Abutment Crown_NCS (highnees)",
+          "tools": 12
+        },
+        {
+          "title": "CoCr_Abutment Crown_NCS (M-Fix)",
+          "tools": 11
+        }
+      ],
+      "editableJobsPerTemplate": 2,
+      "validation": {
+        "sourceHashes": true,
+        "variantOverridesUnmatched": 0,
+        "languageSequence": [
+          "ko",
+          "en",
+          "ja",
+          "en",
+          "ko"
+        ],
+        "renderedChecks": "output/verification/cocr-crown-260830/rendered-checks.json",
+        "photoViewerLanguages": [
+          "ko",
+          "en",
+          "ja"
+        ],
+        "outsideScopeRecordsUnchanged": true
+      }
+    }
+  ],
+  "overnightInstructions": {
+    "orderedScopes": [
+      "CoCr Crown/Bridge/Coping",
+      "Glass Ceramic all prostheses",
+      "Hybrid Ceramic all prostheses",
+      "PEEK all prostheses",
+      "PMMA all prostheses",
+      "Pre-Mill / Pre-Mill+Reverse all prostheses"
+    ],
+    "canonicalSource": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본/",
+    "usageResetAuthorized": false,
+    "usageResetsManagedByUser": true,
+    "shutdownWhenFiveHourRemainingPercentBelow": 10,
+    "browserVerification": "Deferred by explicit user request until next workday; code and language wiring only tonight.",
+    "progress": "All 167 assigned original profiles applied; 284-profile inventory accounted for; 748 source-material/prosthesis matrix checks passed; actual screen review pending."
+  },
+  "nextUserContactInstruction": "At the first user message next morning, report yesterday applied scopes, remaining scopes, source/static validation, deferred actual browser verification, usage/reset/shutdown outcome before further work. Do not imply extracted-only data was applied.",
+  "currentBatch": {
+    "status": "source-and-browser-verified",
+    "canonicalSource": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본/",
+    "scope": "All materials and assigned prosthesis types in the 260830 original DB; no legacy runtime fallback.",
+    "sourceSnapshot": "tools/mai-selected-260830-source.json",
+    "runtime": "src/data/mai-original-260830-templates.js",
+    "totalTemplates": 167,
+    "originalProfileInventory": 284,
+    "originalMaterials": 34,
+    "assignedProsthesisTypes": 22,
+    "auditedMaterialTypeCells": 748,
+    "sourceAudit": {
+      "missing": 0,
+      "extra": 0,
+      "nameMismatch": 0,
+      "report": "output/verification/mai-original-260830/full-coverage.json"
+    },
+    "counts": {
+      "CoCr": 11,
+      "Glass Ceramic": 8,
+      "Hybrid Ceramic": 21,
+      "PEEK": 10,
+      "PMMA": 30,
+      "Pre-Mill": 4,
+      "Pre-Mil+Rev.": 17,
+      "Ti": 26,
+      "Wax": 6,
+      "Zirconia": 25,
+      "DuraFlex": 4,
+      "Amber_Dry": 3,
+      "Medentika Pre-mill": 2
+    },
+    "unassignedProfiles": {
+      "count": 117,
+      "reason": "No prosthesis type assigned in the original database; inventory retained in the audit report."
+    },
+    "disabledPartTypes": [
+      {
+        "id": "08e4bcb9-3178-11f1-84b6-98bd8003105a",
+        "name": "lowerpartial_single",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcba-3178-11f1-84b6-98bd8003105a",
+        "name": "upperpartial_single",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcbb-3178-11f1-84b6-98bd8003105a",
+        "name": "veneer_single",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcbc-3178-11f1-84b6-98bd8003105a",
+        "name": "veneer_bridge",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcbd-3178-11f1-84b6-98bd8003105a",
+        "name": "secondarytelescope_single",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcbe-3178-11f1-84b6-98bd8003105a",
+        "name": "secondarytelescope_bridge",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcbf-3178-11f1-84b6-98bd8003105a",
+        "name": "bitesplinttooth_single",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcc0-3178-11f1-84b6-98bd8003105a",
+        "name": "reducedabutmentcrown_single",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcc1-3178-11f1-84b6-98bd8003105a",
+        "name": "reducedabutmentcrown_bridge",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcc2-3178-11f1-84b6-98bd8003105a",
+        "name": "thimble_bridge",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcc3-3178-11f1-84b6-98bd8003105a",
+        "name": "postandcore_single",
+        "valid": "0"
+      },
+      {
+        "id": "08e4bcc4-3178-11f1-84b6-98bd8003105a",
+        "name": "redsuprastruct_single",
+        "valid": "0"
+      }
+    ],
+    "userPartTypes": [
+      {
+        "id": "c353e88b-4a97-11f0-840f-ec4c8c8ee783",
+        "baseType": "crown_single",
+        "name": "Veneer",
+        "displayName": "Veneer"
+      },
+      {
+        "id": "b0ad1186-9e93-11f0-bc69-ec4c8c8ee783",
+        "baseType": "bitesplint_single",
+        "name": "Over Structure",
+        "displayName": "Over Structure"
+      },
+      {
+        "id": "220790ad-9e94-11f0-bc69-ec4c8c8ee783",
+        "baseType": "bitesplint_single",
+        "name": "Full denture",
+        "displayName": "Full denture"
+      },
+      {
+        "id": "5ac06cfe-a7f9-11f0-bc70-ec4c8c8ee783",
+        "baseType": "model_single",
+        "name": "Partial Frame",
+        "displayName": "Partial Frame"
+      },
+      {
+        "id": "7d007540-a7f9-11f0-bc70-ec4c8c8ee783",
+        "baseType": "model_single",
+        "name": "Flexible denture",
+        "displayName": "Flexible denture"
+      },
+      {
+        "id": "ed63dc35-a964-11f0-bc75-ec4c8c8ee783",
+        "baseType": "model_single",
+        "name": "denture Teeth",
+        "displayName": "denture Teeth"
+      },
+      {
+        "id": "1bd3ba43-0180-11f1-a4b7-ec4c8c8ee783",
+        "baseType": "bitesplint_single",
+        "name": "Night Guard",
+        "displayName": "Night Guard"
+      }
+    ],
+    "nativeMaterialSelector": "Removed at user request on 2026-11-12. UI uses the existing material-group buttons only; native-material coverage remains in the audit data.",
+    "browserVerification": {
+      "status": "passed",
+      "verifiedAt": "2026-11-12T02:25:10.465Z",
+      "environment": "http://127.0.0.1:8080/사용자%20매뉴얼.html#sec-mai-hd-settings-db",
+      "scope": "M.Ai DB template selector and 167 template detail pages",
+      "details": 501,
+      "templatesPerLanguage": {
+        "ko": 167,
+        "en": 167,
+        "ja": 167
+      },
+      "currentRevisionChecks": 501,
+      "currentFilterObservations": {
+        "ko": 100,
+        "en": 100,
+        "ja": 100
+      },
+      "groupsPerLanguage": {
+        "ko": 13,
+        "en": 13,
+        "ja": 13
+      },
+      "failures": [],
+      "sourceMatrix": {
+        "cells": 748,
+        "missing": 0,
+        "extra": 0,
+        "nameMismatch": 0
+      },
+      "languageReturn": {
+        "sequence": [
+          "ko",
+          "en",
+          "ja",
+          "en",
+          "ko"
+        ],
+        "passed": true
+      },
+      "layout": {
+        "desktop": {
+          "cards": {
+            "boxes": [
+              {
+                "font": "13.8293px",
+                "text": "Abutment",
+                "width": 80.98958587646484
+              },
+              {
+                "font": "15.083px",
+                "text": "Crown",
+                "width": 81.00695037841797
+              },
+              {
+                "font": "15.083px",
+                "text": "Bridge",
+                "width": 81.00695037841797
+              },
+              {
+                "font": "15.083px",
+                "text": "Coping",
+                "width": 81.00695037841797
+              },
+              {
+                "font": "12.1511px",
+                "text": "Inlay/Onlay",
+                "width": 81.00695037841797
+              },
+              {
+                "font": "9.2288px",
+                "text": "Over Structure",
+                "width": 81.00695037841797
+              },
+              {
+                "font": "8.23475px",
+                "text": "Denture & Frame",
+                "width": 81.00695037841797
+              },
+              {
+                "font": "15.083px",
+                "text": "その他",
+                "width": 81.00695037841797
+              }
+            ],
+            "overflow": [],
+            "rows": [
+              399
+            ]
+          },
+          "overlap": [],
+          "subtypes": {
+            "boxes": [
+              {
+                "font": "14px",
+                "text": "すべて",
+                "width": 67.44792175292969
+              },
+              {
+                "font": "14px",
+                "text": "Inlay/Onlay",
+                "width": 102.4652862548828
+              },
+              {
+                "font": "14px",
+                "text": "Inlay/Onlay Crown",
+                "width": 150.50347900390625
+              },
+              {
+                "font": "14px",
+                "text": "Inlay/Onlay Bridge",
+                "width": 150.60765075683594
+              },
+              {
+                "font": "14px",
+                "text": "Inlay/Onlay Crown Bridge",
+                "width": 198.6632080078125
+              }
+            ],
+            "overflow": [],
+            "rows": [
+              621
+            ]
+          },
+          "viewport": 2133
+        },
+        "mobile": {
+          "cards": {
+            "boxes": [
+              {
+                "font": "5.96447px",
+                "text": "Abutment",
+                "width": 37.43055725097656
+              },
+              {
+                "font": "9px",
+                "text": "Crown",
+                "width": 37.43055725097656
+              },
+              {
+                "font": "9px",
+                "text": "Bridge",
+                "width": 37.43055725097656
+              },
+              {
+                "font": "8.23864px",
+                "text": "Coping",
+                "width": 37.44791793823242
+              },
+              {
+                "font": "5.34564px",
+                "text": "Inlay/Onlay",
+                "width": 37.43055725097656
+              },
+              {
+                "font": "4.00518px",
+                "text": "Over Structure",
+                "width": 37.43055725097656
+              },
+              {
+                "font": "4px",
+                "text": "Denture & Frame",
+                "width": 37.43055725097656
+              },
+              {
+                "font": "9px",
+                "text": "その他",
+                "width": 37.44791793823242
+              }
+            ],
+            "overflow": [],
+            "rows": [
+              713
+            ]
+          },
+          "overlap": [],
+          "subtypes": {
+            "boxes": [
+              {
+                "font": "6.68937px",
+                "text": "すべて",
+                "width": 29.861112594604492
+              },
+              {
+                "font": "6.68937px",
+                "text": "Inlay/Onlay",
+                "width": 46.61458587646485
+              },
+              {
+                "font": "6.68937px",
+                "text": "Inlay/Onlay Crown",
+                "width": 69.54861450195312
+              },
+              {
+                "font": "6.68937px",
+                "text": "Inlay/Onlay Bridge",
+                "width": 69.61805725097656
+              },
+              {
+                "font": "6.68937px",
+                "text": "Inlay/Onlay Crown Bridge",
+                "width": 92.55208587646484
+              }
+            ],
+            "overflow": [],
+            "rows": [
+              835
+            ]
+          },
+          "viewport": 433
+        }
+      },
+      "photos": "First available tool photo per template checked during full browser passes; all tool-photo buttons and source assets checked. Current KO and first 48 EN records refreshed without reopening photo popups.",
+      "fixes": [
+        "Scoped picker label fitting prevents wrapping",
+        "Measurement helper language refresh",
+        "Removed native-material dropdown",
+        "Source DB line retained without base-strategy text"
+      ],
+      "screenshots": [
+        "ko-final-verified.jpg",
+        "en-current-verified.jpg",
+        "ja-desktop-verified.jpg",
+        "ja-mobile-verified.jpg"
+      ],
+      "remainingFiveHourPercent": 47,
+      "resetsConsumed": 0
+    },
+    "tomorrowReview": [
+      "Report this scope and pending browser review before responding to the first morning message.",
+      "At http://127.0.0.1:8080/사용자%20매뉴얼.html#sec-mai-hd-settings-db inspect material groups and the native-material selector.",
+      "Review every populated material/prosthesis combination against full-coverage.json; open details, UDA, interfaces and tool photos.",
+      "Check KO -> EN -> JA -> EN -> KO and user-facing attributes in the actual screen.",
+      "Check Zirconia / Abutment Crown Bridge shows the six screenshot-matched templates.",
+      "Check single-row prosthesis picker and the upright abutment icon on desktop/mobile."
+    ],
+    "resetsConsumed": 0,
+    "verificationReport": "output/verification/mai-original-260830/live/final-report.json",
+    "pendingScope": [],
+    "lastObservedFiveHourRemainingPercent": 47,
+    "shutdown": "Not performed: remaining usage 47%, above requested 10% threshold."
+  },
+  "latestLayoutChange": {
+    "scope": "DB prosthesis family picker only",
+    "behavior": "Single row at all widths; cards/icons/fonts scale with container width and visible card count; removed 6/3/2-column wrapping rules.",
+    "screenVerification": "Passed actual desktop/mobile single-row and icon-overlap checks; see live/final-report.json.",
+    "files": [
+      "assets/css/mai-dbconfig.css",
+      "src/scripts/mai-dbconfig.js"
+    ]
+  },
+  "previousBatch": {
+    "status": "code-applied-browser-review-deferred",
+    "canonicalSource": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본/",
+    "sourceSnapshot": "tools/mai-selected-260830-source.json",
+    "runtime": "src/data/mai-original-260830-templates.js",
+    "sourceIndex": "tools/mai-original-260830-index.json",
+    "sourceValidation": "output/verification/mai-original-260830/source-check.json",
+    "counts": {
+      "CoCr": 11,
+      "Glass Ceramic": 8,
+      "Hybrid Ceramic": 21,
+      "PEEK": 10,
+      "PMMA": 30,
+      "Pre-Mill": 4,
+      "Pre-Mil+Rev.": 17,
+      "Zirconia": 6
+    },
+    "totalTemplates": 107,
+    "scope": "All selectable original profiles for the requested materials, including profiles shared across prosthesis types.",
+    "languageFields": [
+      "ko",
+      "en",
+      "ja"
+    ],
+    "browserValidation": "NOT RUN for this batch, by explicit user exception. Previous six CoCr abutment articles retain their existing content and prior review history.",
+    "tomorrowReview": [
+      "Select each requested material and every available prosthesis subtype.",
+      "Open every article and inspect conditions, default values, ranges, tools.",
+      "Toggle Korean -> English -> Japanese -> English -> Korean; expand UDA/interfaces; open tool images.",
+      "Confirm missing-photo T21_G0.3B_L03 remains text-only without broken image.",
+      "Review original template list versus removed outdated export names and cosmetic route aliases."
+    ],
+    "notes": [
+      "Variant overrides and applicable numeric restrictions retained.",
+      "Ti/Wax/Zirconia stay on their existing data path.",
+      "Original sources remain read-only.",
+      "Protected 8080 local entry/auth behavior unchanged."
+    ],
+    "resetsConsumed": 0,
+    "lastObservedFiveHourRemainingPercent": 95,
+    "shutdown": "Not performed: last observed remaining usage was above the latest requested 10% threshold.",
+    "zirconiaCorrection": {
+      "scope": "Only Zirconia / Abutment Crown Bridge reconciled; other Zirconia legacy subtypes retained.",
+      "templates": [
+        "Zirconia_Screw Head (T-cut)",
+        "Zirconia_Abutment crown bridge_D0.6",
+        "Zirconia_Abutment Crown Bridge_NCS (highnees)",
+        "Zirconia_Abutment Crown Bridge_NCS (Megalink)",
+        "Zirconia_Abutment Crown Bridge_NCS (M-Fix)",
+        "Zirconia_Abutment Crown Bridge_NCS (Urdent)"
+      ],
+      "iconFix": "Explicit image width/height and object-fit:contain within nonshrinking constrained icon slot.",
+      "screenVerification": "Not run; existing user deferral retained."
+    }
+  }
+}

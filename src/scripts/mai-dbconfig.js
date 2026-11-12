@@ -1,7 +1,10 @@
 (() => {
   'use strict';
   const section = document.getElementById('sec-mai-hd-settings-db');
-  const records = [...(window.MaiCoCrTemplates || []), ...(window.MaiGlassTemplates || []), ...(window.MaiHybridTemplates || []), ...(window.MaiPeekTemplates || []), ...(window.MaiPmmaTemplates || []), ...(window.MaiBatchTemplates || [])];
+  const canonicalRecords = window.MaiOriginal260830Templates || [];
+  const records = canonicalRecords;
+  const memberships = r => r.filterMemberships || [{type:r.type, family:r.family}];
+  const inFamily = (r, value) => memberships(r).some(m => m.family === value);
   if (!section || !records.length) return;
   const copy = {
     ko: { intro: '소재별 포함 템플릿 목록입니다.', material: '소재', prosthesis: '보철물 종류', all: '전체', filters: '템플릿 필터', conditions: '사용 조건', adjustable: '조정 가능 항목', uda: '사용자 정의 영역 (UDA)', tools: '공구', basic: '기본 사용 공구', basicHint: '항상 사용', optional: '조건부 사용 공구', optionalHint: '조건에 따라 사용', close: '닫기' },
@@ -10,17 +13,6 @@
   };
   const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const language = () => typeof currentLang !== 'undefined' && copy[currentLang] ? currentLang : 'en';
-  // Ti bridge membership follows all selected DB part types, including shared tools.
-  const tiBridgeTitles = new Set([
-    'Ti_Abutment bridge_EXT/INT',
-    'Ti_Abutment bridge_EXT/INT (Fast mode)',
-    'Ti_Userdefined areas_Check (not mill)',
-    'Ti_Connector_cut',
-    'Ti_Screw Head (T-cut)',
-    'Ti_Screw Hole Finishing (expansion)',
-    'Ti_Interface_Finishing (expansion)',
-    'Ti_bridge_T_cut Tool test (not mill)'
-  ]);
   const imageCopy = {
     ko: { open: '사진 확대', title: '확대 사진', close: '확대 사진 닫기' },
     en: { open: 'Enlarge photo', title: 'Enlarged photo', close: 'Close enlarged photo' },
@@ -103,7 +95,7 @@
     materials.replaceChildren(...['', ...new Set(records.map(r => r.material))].map(value => filterButton(value || c.all, selectedMaterial === value, () => { selectedMaterial = value; family = type = ''; renderFilters(); })));
     const materialRecords = records.filter(r => !selectedMaterial || r.material === selectedMaterial);
     const families = section.querySelector('.dbconfig-prosthesis-types');
-    families.replaceChildren(...Object.keys(icons).filter(value => materialRecords.some(r => r.family === value)).map(value => {
+    families.replaceChildren(...Object.keys(icons).filter(value => materialRecords.some(r => inFamily(r, value))).map(value => {
       const label = extraFamilyCopy[language()][value] || value;
       const button = filterButton(label, family === value, () => { family = family === value ? '' : value; type = ''; renderFilters(); });
       button.className = 'dbconfig-prosthesis-type' + (family === value ? ' is-active' : '');
@@ -111,9 +103,10 @@
       button.innerHTML = '<span class="dbconfig-prosthesis-icon">' + (icon ? '<img src="' + icon + '" alt="">' : '') + '</span><span>' + escape(label) + '</span>';
       return button;
     }));
+    families.style.setProperty('--prosthesis-count', Math.max(1, families.childElementCount));
     const details = section.querySelector('.dbconfig-prosthesis-detail');
     details.hidden = !family;
-    const types = [...new Set(materialRecords.filter(r => r.family === family).map(r => prosthesisTypeName(r.type)))];
+    const types = [...new Set(materialRecords.flatMap(r => memberships(r).filter(m => m.family === family).map(m => prosthesisTypeName(m.type))))];
     const typeLabel = value => {
       const dictionary = extraFamilyCopy[language()];
       const translationKey = Object.keys(dictionary).find(key => prosthesisTypeKey(key) === prosthesisTypeKey(value));
@@ -121,10 +114,9 @@
       return language() === 'en' ? capitalizeProsthesisWords(label) : label;
     };
     details.replaceChildren(...['', ...types].map(value => filterButton(value ? typeLabel(value) : c.all, type === value, () => { type = value; renderFilters(); })));
+    details.style.setProperty('--detail-count', Math.max(1, details.childElementCount));
     const visible = materialRecords.filter(r => {
-      if (r.material === 'Ti' && family === 'Abutment' && ['abutment crown', 'abutment crown bridge'].includes(prosthesisTypeKey(type))) return (r.partTypes || []).includes(prosthesisTypeKey(type) === 'abutment crown' ? 'abutmentcrown_single' : 'abutmentcrown_bridge');
-      if (r.material === 'Ti' && family === 'Abutment' && prosthesisTypeKey(type) === 'abutment bridge') return tiBridgeTitles.has(r.title);
-      if (r.material === 'Ti' && family === 'Abutment' && prosthesisTypeKey(type) === 'abutment' && r.title === 'Ti_Connector_cut') return true;
+      if (r.sourceCatalog) return memberships(r).some(m => (!family || m.family === family) && (!type || prosthesisTypeKey(m.type) === prosthesisTypeKey(type)));
       return (!family || r.family === family) && (!type || prosthesisTypeKey(r.type) === prosthesisTypeKey(type));
     });
     section.querySelector('.mai-template-groups').replaceChildren(...[...new Set(visible.map(r => r.material))].map(material => {
@@ -137,7 +129,25 @@
       }));
       group.append(heading, list); return group;
     }));
-    requestAnimationFrame(updateConnector);
+    if (!visible.length) {
+      const empty = document.createElement('p');
+      empty.className = 'dbconfig-filter-empty';
+      empty.textContent = {ko:'선택한 조건에 연결된 템플릿이 원본 DB에 없습니다.',en:'The original DB has no templates assigned to the selected conditions.',ja:'選択した条件に割り当てられたテンプレートはオリジナルDBにありません。'}[language()];
+      section.querySelector('.mai-template-groups').append(empty);
+    }
+    requestAnimationFrame(() => {fitPickerLabels();updateConnector();});
+  }
+  function fitPickerLabels() {
+    const buttons=[...section.querySelectorAll('.dbconfig-prosthesis-types button, .dbconfig-prosthesis-detail button')];
+    buttons.forEach(button=>button.style.removeProperty('font-size'));
+    for(let pass=0;pass<3;pass++) for(const button of buttons){
+      if(!button.clientWidth)continue;
+      const style=getComputedStyle(button), label=button.querySelector('span:last-child') || button;
+      const padding=parseFloat(style.paddingLeft)+parseFloat(style.paddingRight);
+      const available=button.clientWidth-padding;
+      const required=label===button?button.scrollWidth-padding:label.scrollWidth;
+      if(required>available+.5)button.style.fontSize=Math.max(4,parseFloat(style.fontSize)*available/required-.1)+'px';
+    }
   }
   function updateConnector() {
     const selected = section.querySelector('.dbconfig-prosthesis-type.is-active');
@@ -183,7 +193,7 @@
       const tools = record.tools.filter(t => t.optional === optional);
       if (!tools.length) return '';
       const hint = record.toolHints?.[optional ? 'optional' : 'basic']?.[lang] || (optional ? c.optionalHint : c.basicHint);
-      return '<p class="hybrid-tool-group">' + (optional ? c.optional : c.basic) + '<small>' + escape(hint) + '</small></p><div class="hybrid-tool-grid ' + (optional ? 'conditional' : 'basic') + '">' + tools.map(t => '<div class="hybrid-tool' + (optional ? ' is-conditional' : '') + '">' + (t.id && t.name ? '<button type="button" data-mai-image class="mai-template-tool-photo" aria-label="' + escape(imageCopy[lang].open + ': ' + t.id + ' ' + t.name) + '"><img loading="lazy" src="assets/images/sec-mai-tools/tool-list/t' + (t.imageId || t.id).slice(1).padStart(2, '0') + '.webp" alt="' + escape(t.id + ' ' + t.name) + '"></button>' : '') + '<strong>' + escape(t.id) + '</strong><em>' + escape(t.name) + '</em>' + t.comments.map(comment => '<small>' + escape(comment[lang]) + '</small>').join('') + '</div>').join('') + '</div>';
+      return '<p class="hybrid-tool-group">' + (optional ? c.optional : c.basic) + '<small>' + escape(hint) + '</small></p><div class="hybrid-tool-grid ' + (optional ? 'conditional' : 'basic') + '">' + tools.map(t => '<div class="hybrid-tool' + (optional ? ' is-conditional' : '') + '">' + (t.id && t.name && t.imageAvailable !== false ? '<button type="button" data-mai-image class="mai-template-tool-photo" aria-label="' + escape(imageCopy[lang].open + ': ' + t.id + ' ' + t.name) + '"><img loading="lazy" src="assets/images/sec-mai-tools/tool-list/t' + (t.imageId || t.id).slice(1).padStart(2, '0') + '.webp" alt="' + escape(t.id + ' ' + t.name) + '"></button>' : '') + '<strong>' + escape(t.id) + '</strong><em>' + escape(t.name) + '</em>' + t.comments.map(comment => '<small>' + escape(comment[lang]) + '</small>').join('') + '</div>').join('') + '</div>';
     }
     const illustrations = (process = '') => {
       const images = (record.images || []).filter(img => (img.process || '') === process);
@@ -197,7 +207,7 @@
       return photos;
     };
     const processDescriptions = process => {
-      if (process.title !== 'General settings' || record.material !== 'Hybrid Ceramic') return listMarkup(process.descriptions);
+      if (process.title !== 'General settings' || record.material !== 'Hybrid Ceramic' || record.sourceCatalog) return listMarkup(process.descriptions);
       const labels = boundaryImageCopy[lang];
       return '<ul><li>' + escape(labels.offset) + '</li><li>' + escape(labels.angle) + '</li></ul><p class="hybrid-adjustment-note"><strong>※</strong> ' + labels.note.map(escape).join('<br>') + '</p>';
     };
@@ -213,11 +223,14 @@
   close.addEventListener('click', hide);
   window.addEventListener('gencore-language-changed', () => { renderFilters(); if (activeRecord && modal.classList.contains('active')) renderDetail(); updateImageLabels(); });
   window.addEventListener('hashchange', () => { if (imageViewer.open) imageViewer.close(); });
-  window.addEventListener('resize', updateConnector);
+  window.addEventListener('resize', () => {fitPickerLabels();updateConnector();});
+  document.fonts?.ready.then(fitPickerLabels);
   renderFilters();
   function route() {
     if (!location.hash.startsWith('#mai-template-')) return;
-    const record = records.find(r => r.title === decodeURIComponent(location.hash.slice(14)));
+    const requested = decodeURIComponent(location.hash.slice(14));
+    const canonicalTitle = window.MaiOriginal260830Aliases?.[requested] || requested;
+    const record = records.find(r => r.title === canonicalTitle);
     if (record) open(record, false);
   }
   window.addEventListener('hashchange', route);

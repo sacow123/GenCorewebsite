@@ -6681,7 +6681,7 @@ Object.assign(TRANSLATIONS.ja, {"interface-tool-category-1":"タイプ 1","inter
 
 Object.assign(TRANSLATIONS.es, {"interface-tool-category-1":"Tipo 1","interface-tool-category-2":"Tipo 2","interface-tool-category-3":"Tipo 3","interface-tool-category-4":"Tipo 4","interface-tool-category-5":"Tipo 5","interface-tool-category-6":"Tipo 6","interface-tool-category-7":"Tipo 7"});
 
-Object.assign(TRANSLATIONS.ko, {"interface-manual-internal-intro":"체결부가 외부로 돌출되지 않고, 안으로 들어간 Fixture 에 결합하기 위해 우리는 Interface(연결부)가 외부로 돌출된 보철물을 가공해야합니다. 이 경우에는 유형( = Category, 이후 CAT) 설정을 어떻게 해야하는지 알아보겠습니다."});
+Object.assign(TRANSLATIONS.ko, {"interface-manual-internal-intro":"Fixture의 체결부가 외부로 돌출되지 않고, 안으로 들어간 Fixture 에 결합하기 위해 우리는 Interface 가 외부로 돌출된 보철물을 가공해야합니다. 이 경우에는 유형( = Category  혹은 CAT) 설정을 어떻게 해야하는지 알아보겠습니다."});
 
 Object.assign(TRANSLATIONS.en, {"interface-manual-internal-intro":"To connect to a Fixture whose connection is recessed rather than protruding outward, we need to machine a prosthesis with an outward-protruding Interface (connection). Let us look at how to set the category (= Category, hereafter CAT) in this case."});
 

@@ -72,5 +72,12 @@ const records = source.map(record => {
   return { title: record.title, source: record.source, material: 'CoCr', type, family,
     conditions: lines.slice(0, toolsAt).map(localize), uda: lines.slice(udaAt + 1, processesAt).map(localize), tools, processes };
 });
+// Only the requested crown and bridge scopes is replaced by effective 260830-original DB records.
+const bridgeRecords = [...require('./build-mai-cocr-bridge.js'), ...require('./build-mai-cocr-crown.js')];
+for (const updated of bridgeRecords) {
+  const index = records.findIndex(record => record.title === updated.title);
+  if (index < 0) records.push(updated);
+  else records[index] = updated;
+}
 fs.writeFileSync('src/data/mai-cocr-templates.js', '// Source: supplied CoCr HTML exports. Generated with node tools/build-mai-cocr.js.\nwindow.MaiCoCrTemplates = ' + JSON.stringify(records, null, 2) + ';\n');
 console.log('Built ' + records.length + ' CoCr templates with Korean, English and Japanese text.');

@@ -35,3 +35,7 @@
 - When the user provides a `file:///C:/Users/USER/Documents/GitHub/GenCorewebsite/...` URL and asks to directly check, inspect, or verify it, automatically convert the project-relative path to `http://127.0.0.1:8766/...` and launch the read-only local preview server with `node tools/preview-server.js 8766` if it is not already running.
 - Do not ask the user to convert URLs, start a server, or provide a localhost URL. Open the converted URL yourself and verify the actual rendered screen.
 - When the user asks for proof of direct verification, provide a screenshot of the inspected target section and state that the screenshot was captured from the local preview of the supplied file URL.
+
+## Sentence Line Breaks
+
+- 설명·본문·캡션은 별도 요청이 없어도 문장 단위로 줄바꿈합니다. 사용자가 특정 줄바꿈을 명시하면 그 지정을 우선합니다. 문구의 의미와 내용은 유지합니다.
