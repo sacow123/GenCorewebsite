@@ -91,8 +91,64 @@
     title.innerHTML = document.getElementById('screwchannel-category-guide-title').innerHTML;
     const frame = document.getElementById('screwchannel-category-guide-document');
     body.replaceChildren(frame);
+    bindGuideZoom(frame);
     show('screw-channel-category', push);
   }
+  // The guide iframe grows to the full article height. Its own fixed overlay
+  // would therefore be centered in that long document, outside the viewport.
+  const guideZoom = document.createElement('dialog');
+  guideZoom.id = 'screw-guide-image-zoom';
+  guideZoom.style.cssText = 'position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;border:0;padding:52px 20px 20px;background:rgba(9,17,27,.94);overflow:hidden;';
+  guideZoom.innerHTML = '<button type="button" style="position:absolute;top:12px;right:20px;width:44px;height:44px;border:1px solid #ffffff66;border-radius:50%;background:#0004;color:white;font-size:28px;cursor:pointer">×</button><img alt="" style="display:block;width:100%;height:100%;object-fit:contain">';
+  document.body.append(guideZoom);
+  let guideZoomOrigin;
+  let guideOverflow;
+  function closeGuideZoom() { if (guideZoom.open) guideZoom.close(); }
+  guideZoom.querySelector('button').addEventListener('click', closeGuideZoom);
+  guideZoom.addEventListener('click', event => { if (event.target === guideZoom) closeGuideZoom(); });
+  guideZoom.addEventListener('close', () => {
+    document.body.style.overflow = guideOverflow || '';
+    guideZoom.querySelector('img').removeAttribute('src');
+    guideZoomOrigin?.postMessage({type:'gencore-screw-zoom-closed'}, '*');
+  });
+  function openGuideZoom(event) {
+    const frame = document.getElementById('screwchannel-category-guide-document');
+    if (!frame || event.source !== frame.contentWindow || event.data?.type !== 'gencore-screw-image-zoom') return;
+    const src = new URL(event.data.src, frame.src);
+    if (src.origin !== new URL(frame.src).origin) return;
+    guideZoomOrigin = event.source;
+    const image = guideZoom.querySelector('img');
+    image.src = src.href;
+    image.alt = event.data.alt || '';
+    guideZoom.querySelector('button').setAttribute('aria-label', event.data.closeLabel || 'Close');
+    if (!guideZoom.open) {
+      guideOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      guideZoom.showModal();
+    }
+  }
+  window.addEventListener('message', openGuideZoom);
+  window.openScrewGuideImageZoom = (data, source) => openGuideZoom({data, source});
+  const boundGuideDocuments = new WeakSet();
+  function bindGuideZoom(frame) {
+    try {
+      const doc = frame.contentDocument;
+      if (!doc || boundGuideDocuments.has(doc)) return;
+      boundGuideDocuments.add(doc);
+      doc.addEventListener('click', event => {
+        const button = event.target.closest('.image-button');
+        if (!button || doc.documentElement.dataset.gencoreMeasureEnabled === 'true') return;
+        const image = button.querySelector('img');
+        if (!image) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        openGuideZoom({source:frame.contentWindow,data:{type:'gencore-screw-image-zoom',src:image.src,alt:image.alt,closeLabel:doc.querySelector('.close')?.getAttribute('aria-label')}});
+      }, true);
+    } catch { /* Isolated file frames use the postMessage path. */ }
+  }
+  const guideFrame = document.getElementById('screwchannel-category-guide-document');
+  guideFrame?.addEventListener('load', () => bindGuideZoom(guideFrame));
+  window.addEventListener('hashchange', closeGuideZoom);
   back.addEventListener('click', () => {
     if (history.state?.featureArticle) history.back();
     else location.hash = listId;

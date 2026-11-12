@@ -1496,3 +1496,8 @@ html:is([lang="en"],[lang="ja"],[lang="es"]) #sec-mai-settings .mai-wet-to-dry-g
 #sec-mai-hd-blank .mai-blank-family{border:1px solid #b9d7ed;border-radius:10px;overflow:hidden;margin:10px 0;background:#fff}
 #sec-mai-hd-blank .mai-blank-family>summary{cursor:pointer;padding:14px 16px;background:#eaf4fb;color:#075680;font-weight:700}
 #sec-mai-hd-blank .mai-blank-family-content{padding:4px 12px 12px}
+
+/* Material families: scoped to the M AI blank catalog. */
+#sec-mf-hd-blanks .mai-blank-family{border:1px solid #b9d7ed;border-radius:10px;overflow:hidden;margin:10px 0;background:#fff}
+#sec-mf-hd-blanks .mai-blank-family>summary{cursor:pointer;padding:14px 16px;background:#eaf4fb;color:#075680;font-weight:700}
+#sec-mf-hd-blanks .mai-blank-family-content{padding:4px 12px 12px}

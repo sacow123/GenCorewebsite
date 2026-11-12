@@ -1,4 +1,5 @@
 /* Shared footer and page controls. */
+document.write('<script src="src/scripts/article-image-zoom.js"><\/script>');
 document.write(`
 </main>
 </div>
