@@ -11,7 +11,7 @@
   const closeButton = dialog.querySelector('button');
   let scrolls = [], origin, overflow;
   const tracked = new WeakSet();
-  const selector = '.content-section,.image-button,.cat2-image-open,.internal-image-card,.internal-images,.preinstall-requirements,.mai-blank-dimensions-images,#feature-modal-body,.mai-ui2-import figure.image,[data-image-zoom]';
+  const selector = '.content-section,main article,body>article,[role="dialog"],[id$="-modal"],dialog,.image-button,.cat2-image-open,.internal-image-card,.internal-images,.preinstall-requirements,.mai-blank-dimensions-images,#feature-modal-body,.mai-ui2-import figure.image,[data-image-zoom]';
   function captureScroll(photo) {
     const result = [], seen = new Set();
     let node = photo;
@@ -59,9 +59,10 @@
       if (event.type === 'keydown' && !['Enter',' '].includes(event.key)) return;
       if (doc.documentElement.dataset.gencoreMeasureEnabled === 'true') return;
       const target = event.target;
-      if (!target.closest || target.closest('dialog,.hyperdent-image-lightbox,.mai-ui2-image-lightbox')) return;
+      if (!target.closest || target.closest('#article-image-zoom,#screw-guide-image-zoom,#mai-template-image-viewer,.cat2-lightbox,.hyperdent-image-lightbox,.mai-ui2-image-lightbox,#faq-image-lightbox')) return;
       const photo = target.closest('img') || target.closest('.image-button,.cat2-image-open,[data-image-zoom],.mai-ui2-import figure.image a')?.querySelector('img');
       if (!photo || !photo.src) return;
+      if (/\/(?:brand|icons)\//i.test(photo.src) || photo.alt === 'icon') return;
       const zoomCursor = doc.defaultView.getComputedStyle(photo).cursor === 'zoom-in';
       const embeddedArticle = doc !== document && photo.closest('main,article');
       if (!photo.closest(selector) && !zoomCursor && !embeddedArticle) return;
