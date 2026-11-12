@@ -1,0 +1,1306 @@
+{
+  "root": "C:/hyperDENT_Settings_MAI_25.08.19/DB/DB_M.Ai_V10.1.X_2601030_R1",
+  "checks": [
+    {
+      "name": "hdMaterial.hddb",
+      "sha256": "ccca8af6d5655c9f20a29e7cbec8dd644a167bb0286dfe414e1e99064bba4599"
+    },
+    {
+      "name": "hdBlankType.hddb",
+      "sha256": "43f4cb119982c87e08cd857d1b43a0eeb399cf9648c63c59a48222bcf8b5040d"
+    },
+    {
+      "name": "hdBlankGeometry.hddb",
+      "sha256": "39bad1a8bd91acefae82a05d16ebfcc42bc4962555eb10118e740c71449177bc"
+    }
+  ],
+  "materials": [
+    {
+      "id": "c3424854-5ef8-11ea-a13f-02553e376030",
+      "name": "Glass Ceramic",
+      "group": "1"
+    },
+    {
+      "id": "af457365-13bd-410c-95f6-ebdb4b148867",
+      "name": "Sintering Metal Disc",
+      "group": "0"
+    },
+    {
+      "id": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "name": "Zirconia Disc",
+      "group": "0"
+    },
+    {
+      "id": "142507e3-50db-11e7-9748-b00594f36797",
+      "name": "Wax",
+      "group": "1"
+    },
+    {
+      "id": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "name": "PMMA Disc",
+      "group": "0"
+    },
+    {
+      "id": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "name": "Wax Disc",
+      "group": "0"
+    },
+    {
+      "id": "349f049a-be21-11eb-a186-9061aeceecac",
+      "name": "Hybrid Ceramic Disc",
+      "group": "0"
+    },
+    {
+      "id": "22f89bb2-956b-11ee-9e03-14857f7eaaee",
+      "name": "Ti. Premilled",
+      "group": "1"
+    },
+    {
+      "id": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "name": "Ti. Disc",
+      "group": "0"
+    },
+    {
+      "id": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "name": "Premill blank",
+      "group": "0"
+    },
+    {
+      "id": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "name": "Premill+Reverse",
+      "group": "0"
+    },
+    {
+      "id": "ada74698-a34f-11ec-a8ed-18c04db240d8",
+      "name": "Ti. Premill",
+      "group": "1"
+    },
+    {
+      "id": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "name": "Lithium Disilicate Block",
+      "group": "0"
+    },
+    {
+      "id": "a3459606-c1e7-11e2-abb2-685d43313a48",
+      "name": "Co.Cr. Disc",
+      "group": "0"
+    },
+    {
+      "id": "c2ab90a9-5622-11ef-8bc9-181deae7bdc2",
+      "name": "Wax Block",
+      "group": "0"
+    },
+    {
+      "id": "c512eb1e-5629-11ef-8bc9-181deae7bdc2",
+      "name": "PMMA Block",
+      "group": "0"
+    },
+    {
+      "id": "eb876623-5629-11ef-8bc9-181deae7bdc2",
+      "name": "Zirconia Block",
+      "group": "0"
+    },
+    {
+      "id": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "name": "Hybrid Ceramic Block",
+      "group": "0"
+    },
+    {
+      "id": "0794f270-562b-11ef-8bc9-181deae7bdc2",
+      "name": "Lithium Disilicate Disc",
+      "group": "0"
+    },
+    {
+      "id": "123ed703-562b-11ef-8bc9-181deae7bdc2",
+      "name": "Lithium Silicate Block",
+      "group": "0"
+    },
+    {
+      "id": "fe4b491c-5858-11ef-8bc9-181deae7bdc2",
+      "name": "Hybrid Ceramic",
+      "group": "1"
+    },
+    {
+      "id": "2545497b-5859-11ef-8bc9-181deae7bdc2",
+      "name": "Feldspar Block",
+      "group": "0"
+    },
+    {
+      "id": "a901547e-5df2-11ef-8bca-181deae7bdc2",
+      "name": "PMMA",
+      "group": "1"
+    },
+    {
+      "id": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "name": "PEEK Disc",
+      "group": "0"
+    },
+    {
+      "id": "c7eafbff-5df2-11ef-8bca-181deae7bdc2",
+      "name": "PEEK Block",
+      "group": "0"
+    },
+    {
+      "id": "569efd20-6d42-11ec-836e-683e261e4299",
+      "name": "Ti. Block",
+      "group": "0"
+    },
+    {
+      "id": "8de032e3-d612-11ea-b84c-c8f750809c07",
+      "name": "Zirconia",
+      "group": "1"
+    },
+    {
+      "id": "f6636105-da3b-11ef-9eee-14857f7eaaee",
+      "name": "PEEK",
+      "group": "1"
+    },
+    {
+      "id": "9d1b4cd9-2c13-11f1-a4c5-ec4c8c8ee783",
+      "name": "Acetal Resin",
+      "group": "1"
+    },
+    {
+      "id": "b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783",
+      "name": "DuraFlex",
+      "group": "0"
+    },
+    {
+      "id": "f8c564dc-2d8d-11f1-a4c5-ec4c8c8ee783",
+      "name": "Amber_Dry",
+      "group": "1"
+    },
+    {
+      "id": "0bae45c3-2d8e-11f1-a4c5-ec4c8c8ee783",
+      "name": "Amber_Dry Block",
+      "group": "0"
+    },
+    {
+      "id": "24d66cca-d32b-11f1-a52e-ec4c8c8ee783",
+      "name": "Amber_Dry Disk",
+      "group": "0"
+    },
+    {
+      "id": "3e49b2f2-df0d-11e2-9ca8-d067e5382eae",
+      "name": "Medentika premilled blanks",
+      "group": "0"
+    },
+    {
+      "id": "90657b08-9236-11f1-9606-98bd8003105a",
+      "name": "Premill+REV",
+      "group": "1"
+    },
+    {
+      "id": "5859805d-974e-11eb-a198-18c04db240d8",
+      "name": "Straumann premilled blanks",
+      "group": "0"
+    },
+    {
+      "id": "008bda29-dd92-11f1-a536-ec4c8c8ee783",
+      "name": "Medentika",
+      "group": "1"
+    }
+  ],
+  "expected": [
+    {
+      "id": "1439cfc3-95a3-11e1-8de4-0026831895e8",
+      "name": "PMMA D98xL14",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "2d631b69-95a3-11e1-8de4-0026831895e8",
+      "name": "PMMA D98xL18",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "c06e9767-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "fab640a3-1b7d-11e7-8b06-b00594f36797",
+      "name": "PMMA D98xL25",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "22a9f8a2-4787-11e3-8706-0cd29242f0cb"
+    },
+    {
+      "id": "cf930cfd-4703-11e8-8a68-9061aeceed56",
+      "name": "PMMA D98xL30",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "33e7ba24-e494-11e5-9273-b3b74293faad"
+    },
+    {
+      "id": "35e686c2-bebe-11eb-a186-9061aeceecac",
+      "name": "Wax D98xL10",
+      "material": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "69a6d816-bebe-11eb-a186-9061aeceecac",
+      "name": "Wax D98xL12",
+      "material": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "8a061f0d-bebe-11eb-a186-9061aeceecac",
+      "name": "Wax D98xL14",
+      "material": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "b7764778-bebe-11eb-a186-9061aeceecac",
+      "name": "Wax D98xL16",
+      "material": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "geometry": "152e2edf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "824d2f70-dcd4-11e4-a60c-0cd29242f0cb",
+      "name": "Wax D98xL18",
+      "material": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "geometry": "c06e9767-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "8847c438-dcd4-11e4-a60c-0cd29242f0cb",
+      "name": "Wax D98xL20",
+      "material": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "geometry": "fb411bdf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "ef11d9c9-bebe-11eb-a186-9061aeceecac",
+      "name": "Wax D98xL22",
+      "material": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "geometry": "22ab4214-40cd-11e0-9472-bcaec507987a"
+    },
+    {
+      "id": "15f2c956-bebf-11eb-a186-9061aeceecac",
+      "name": "Wax D98xL25",
+      "material": "c0155e6b-c2c7-11e2-a2c6-74e54352c191",
+      "geometry": "22a9f8a2-4787-11e3-8706-0cd29242f0cb"
+    },
+    {
+      "id": "aec1ab10-4770-11e3-8706-0cd29242f0cb",
+      "name": "Zirconia D98xL10",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "f2db0579-04cf-11de-a0e6-002170b360ab",
+      "name": "Zirconia D98xL12",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "cf8ba03d-028b-11de-a0e2-002186a4af5a",
+      "name": "Zirconia D98xL14",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "33d22783-028c-11de-a0e2-002186a4af5a",
+      "name": "Zirconia D98xL16",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "152e2edf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "d3b1166f-028c-11de-a0e2-002186a4af5a",
+      "name": "Zirconia D98xL18",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "c06e9767-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "62184ac5-589d-11de-ae72-002170b360ab",
+      "name": "Zirconia D98xL20",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "fb411bdf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "de262e01-42ad-11e2-9638-000df07f4570",
+      "name": "Zirconia D98xL22",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "22ab4214-40cd-11e0-9472-bcaec507987a"
+    },
+    {
+      "id": "5d5fa923-4787-11e3-8706-0cd29242f0cb",
+      "name": "Zirconia D98xL25",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "22a9f8a2-4787-11e3-8706-0cd29242f0cb"
+    },
+    {
+      "id": "84f69992-be29-11eb-a186-9061aeceecac",
+      "name": "Hybrid Ceramic D98xL10",
+      "material": "349f049a-be21-11eb-a186-9061aeceecac",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "b8964d04-be29-11eb-a186-9061aeceecac",
+      "name": "Hybrid Ceramic D98xL12",
+      "material": "349f049a-be21-11eb-a186-9061aeceecac",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "fd6ee3c3-be29-11eb-a186-9061aeceecac",
+      "name": "Hybrid Ceramic D98xL14",
+      "material": "349f049a-be21-11eb-a186-9061aeceecac",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "9d6bef3e-b0df-11ed-9d7a-14857f7eaaee",
+      "name": "PMMA D98xL12",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "b47e788c-b0df-11ed-9d7a-14857f7eaaee",
+      "name": "PMMA D98xL16",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "152e2edf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "bc34967f-b0df-11ed-9d7a-14857f7eaaee",
+      "name": "PMMA D98xL20",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "fb411bdf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "fc5a2a5a-f54c-11ed-9da2-14857f7eaaee",
+      "name": "PMMA D98xL10",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "057a5f17-f54d-11ed-9da2-14857f7eaaee",
+      "name": "Zirconia D98xL30",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "33e7ba24-e494-11e5-9273-b3b74293faad"
+    },
+    {
+      "id": "7b76983b-f554-11ed-9da2-14857f7eaaee",
+      "name": "Hybrid Ceramic D98xL08",
+      "material": "349f049a-be21-11eb-a186-9061aeceecac",
+      "geometry": "3a199548-f54d-11ed-9da2-14857f7eaaee"
+    },
+    {
+      "id": "7a69dfb2-635f-11ee-9de2-14857f7eaaee",
+      "name": "Sintering Metal D98xL10",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "84d728a8-635f-11ee-9de2-14857f7eaaee",
+      "name": "Sintering Metal D98xL12",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "8ad29e98-635f-11ee-9de2-14857f7eaaee",
+      "name": "Sintering Metal D98xL14",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "8ad29e9a-635f-11ee-9de2-14857f7eaaee",
+      "name": "Sintering Metal D98xL16",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "152e2edf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "948962d2-635f-11ee-9de2-14857f7eaaee",
+      "name": "Sintering Metal D98xL18",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "c06e9767-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "948962d4-635f-11ee-9de2-14857f7eaaee",
+      "name": "Sintering Metal D98xL20",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "fb411bdf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "9dedd712-635f-11ee-9de2-14857f7eaaee",
+      "name": "Sintering Metal D98xL22",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "22ab4214-40cd-11e0-9472-bcaec507987a"
+    },
+    {
+      "id": "9dedd714-635f-11ee-9de2-14857f7eaaee",
+      "name": "Sintering Metal D98xL25",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "22a9f8a2-4787-11e3-8706-0cd29242f0cb"
+    },
+    {
+      "id": "7f5f08a1-97cd-11ee-9e05-14857f7eaaee",
+      "name": "PMMA D98xL22",
+      "material": "d38f2765-39b1-11de-bb9d-001a6b79c1a5",
+      "geometry": "22ab4214-40cd-11e0-9472-bcaec507987a"
+    },
+    {
+      "id": "e3d55529-aacd-11ee-9e0f-14857f7eaaee",
+      "name": "Titanium D98xL14",
+      "material": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "a0ba2ccd-df89-11ee-9e2f-14857f7eaaee",
+      "name": "Titanium D98xL12",
+      "material": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "a6e7db38-df89-11ee-9e2f-14857f7eaaee",
+      "name": "Titanium D98xL10",
+      "material": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "ad6b3547-df89-11ee-9e2f-14857f7eaaee",
+      "name": "Titanium D98xL16",
+      "material": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "geometry": "152e2edf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "ad6b3549-df89-11ee-9e2f-14857f7eaaee",
+      "name": "Titanium D98xL18",
+      "material": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "geometry": "c06e9767-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "2e126b88-5860-11ef-8bc9-181deae7bdc2",
+      "name": "Titanium D98xL20",
+      "material": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "geometry": "fb411bdf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "354f6b5b-5860-11ef-8bc9-181deae7bdc2",
+      "name": "Titanium D98xL25",
+      "material": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "geometry": "22a9f8a2-4787-11e3-8706-0cd29242f0cb"
+    },
+    {
+      "id": "e6c5fa5b-3142-11ec-9160-f01faf0ca9d6",
+      "name": "GN-I® Ti. Block_L",
+      "material": "569efd20-6d42-11ec-836e-683e261e4299",
+      "geometry": "bf6daf80-3142-11ec-9160-f01faf0ca9d6"
+    },
+    {
+      "id": "f055c7c2-3142-11ec-9160-f01faf0ca9d6",
+      "name": "GN-I® Ti. Block_M",
+      "material": "569efd20-6d42-11ec-836e-683e261e4299",
+      "geometry": "d3d31584-3142-11ec-9160-f01faf0ca9d6"
+    },
+    {
+      "id": "541561d3-a34a-11eb-8377-683e261e4299",
+      "name": "Amber®Mill C12",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "2fa00c99-6862-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "5b280103-bd0e-11eb-837a-683e261e4299",
+      "name": "Amber®Mill C14",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "8dfb1230-6862-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "be7c64a8-bd12-11eb-837a-683e261e4299",
+      "name": "Amber®Mill H C10",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "df55f7fa-6921-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "6b525c9a-bd12-11eb-837a-683e261e4299",
+      "name": "Amber®Mill H C12",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "2fa00c99-6862-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "8a8eedb4-bd12-11eb-837a-683e261e4299",
+      "name": "Amber®Mill H C14",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "8dfb1230-6862-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "70eaad90-4790-11ec-8964-00d86184a5e5",
+      "name": "GC Initial®LiSi Block 14",
+      "material": "123ed703-562b-11ef-8bc9-181deae7bdc2",
+      "geometry": "4b8a3990-4790-11ec-8964-00d86184a5e5"
+    },
+    {
+      "id": "1380393e-bd2e-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 8x8x15",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "b121c839-686b-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "80b15501-bd2d-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 10x8.5x15",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "e082eede-686b-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "e407a144-bd2d-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 12x10x15",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "2fa00c99-6862-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "c962860e-ca7c-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 12.5x10.5x16",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "a7b5f3d2-6924-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "6ab72861-ca69-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 12x12x15",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "c5d57d9e-6920-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "3ad4acfc-bd2e-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 14x12x18",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "8dfb1230-6862-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "d6311193-ca68-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 14.5x14.5x18",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "195cce6e-69f8-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "8d2fbcce-ca7c-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 18x16x18",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "74533a21-69cb-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "f1d8005b-88e2-11e9-9cd0-f4939fef9b1e",
+      "name": "Glass Ceramic 15.5x15.5x32",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "1596f8a6-ca77-11eb-837a-683e261e4299"
+    },
+    {
+      "id": "b1435609-bd2e-11eb-837a-683e261e4299",
+      "name": "Glass Ceramic 15.5x15.5x40",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "4cc02564-ca77-11eb-837a-683e261e4299"
+    },
+    {
+      "id": "19b0c3d7-bd2f-11eb-837a-683e261e4299",
+      "name": "Hybrid Ceramic 12x10x15",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "2fa00c99-6862-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "144e9004-ca7a-11eb-837a-683e261e4299",
+      "name": "Hybrid Ceramic 12.5x10.5x16",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "a7b5f3d2-6924-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "ed18b9b5-bd2e-11eb-837a-683e261e4299",
+      "name": "Hybrid Ceramic 14x12x18",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "8dfb1230-6862-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "24a11435-bd30-11eb-837a-683e261e4299",
+      "name": "Hybrid Ceramic 14.5x14.5x18",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "195cce6e-69f8-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "28a23692-ccfb-11eb-837c-683e261e4299",
+      "name": "Hybrid Ceramic 12x14x18",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "0a087904-ccfb-11eb-837c-683e261e4299"
+    },
+    {
+      "id": "f20f549d-9b5c-11eb-8374-683e261e4299",
+      "name": "IPS e.max® B32",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "0b22d26c-69c5-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "a24c4a7f-9b5b-11eb-8374-683e261e4299",
+      "name": "IPS e.max® C14",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "3f0915a8-517f-11eb-889c-f4939fef9b1e"
+    },
+    {
+      "id": "77fc0b4f-3f65-11e5-8b1c-b00594f36797",
+      "name": "IPS e.max® C16",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "c93be2bc-ca77-11eb-837a-683e261e4299"
+    },
+    {
+      "id": "5542e8d3-9b5c-11eb-8374-683e261e4299",
+      "name": "IPS e.max® I12",
+      "material": "4ca07349-35a5-11e0-aca3-485b3982cf1c",
+      "geometry": "a7b5f3d2-6924-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "fa3b4300-bd2c-11eb-837a-683e261e4299",
+      "name": "Zirconia 19x15.5x20",
+      "material": "eb876623-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "e0a68f97-bd2c-11eb-837a-683e261e4299"
+    },
+    {
+      "id": "ca99c89b-bd2c-11eb-837a-683e261e4299",
+      "name": "Zirconia 19x15.5x40",
+      "material": "eb876623-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "b5d68d47-8545-11ea-a146-a44cc835bc01"
+    },
+    {
+      "id": "0395be76-bd2d-11eb-837a-683e261e4299",
+      "name": "Zirconia 19x15.5x55",
+      "material": "eb876623-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "eb4f41ad-bd2c-11eb-837a-683e261e4299"
+    },
+    {
+      "id": "0cbeaae4-bd2d-11eb-837a-683e261e4299",
+      "name": "Zirconia 25x22x65",
+      "material": "eb876623-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "29f67b9f-9505-11ea-a147-a44cc835bc01"
+    },
+    {
+      "id": "69e4d1e4-ca7d-11eb-837a-683e261e4299",
+      "name": "PMMA 18x16x18",
+      "material": "c512eb1e-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "74533a21-69cb-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "836a53c6-ca7d-11eb-837a-683e261e4299",
+      "name": "PMMA 19x15.5x40",
+      "material": "c512eb1e-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "b5d68d47-8545-11ea-a146-a44cc835bc01"
+    },
+    {
+      "id": "6e848c99-cca9-11eb-837c-683e261e4299",
+      "name": "PMMA 19x19x55",
+      "material": "c512eb1e-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "f8d58e16-9504-11ea-a147-a44cc835bc01"
+    },
+    {
+      "id": "87822f3a-c9b0-11eb-879b-4074e0a77ed8",
+      "name": "VITA CAD-Temp® CT-40",
+      "material": "c512eb1e-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "87822f38-c9b0-11eb-879b-4074e0a77ed8"
+    },
+    {
+      "id": "21e1ba82-c9b3-11eb-879b-4074e0a77ed8",
+      "name": "VITA CAD-Temp® CT-55",
+      "material": "c512eb1e-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "4c6e4ed4-c9b3-11eb-879b-4074e0a77ed8"
+    },
+    {
+      "id": "82ce7b50-bd30-11eb-837a-683e261e4299",
+      "name": "VITA CAD-Waxx® CW-40/15",
+      "material": "c2ab90a9-5622-11ef-8bc9-181deae7bdc2",
+      "geometry": "71670629-9505-11ea-a147-a44cc835bc01"
+    },
+    {
+      "id": "fadaba8f-ca7c-11eb-837a-683e261e4299",
+      "name": "Zirconia 14.5x14.5x18",
+      "material": "eb876623-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "195cce6e-69f8-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "2e23287a-ca7d-11eb-837a-683e261e4299",
+      "name": "Zirconia 15.5x15.5x40",
+      "material": "eb876623-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "4cc02564-ca77-11eb-837a-683e261e4299"
+    },
+    {
+      "id": "4a36e2fd-ca7d-11eb-837a-683e261e4299",
+      "name": "Zirconia 19x19x55",
+      "material": "eb876623-5629-11ef-8bc9-181deae7bdc2",
+      "geometry": "f8d58e16-9504-11ea-a147-a44cc835bc01"
+    },
+    {
+      "id": "d1397432-8052-11ef-9e94-14857f7eaaee",
+      "name": "Hybrid Ceramic D98xL20",
+      "material": "349f049a-be21-11eb-a186-9061aeceecac",
+      "geometry": "fb411bdf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "36501efd-9a40-11ef-9eab-14857f7eaaee",
+      "name": "Titanium D98xL22",
+      "material": "3926141c-956b-11ee-9e03-14857f7eaaee",
+      "geometry": "22ab4214-40cd-11e0-9472-bcaec507987a"
+    },
+    {
+      "id": "0f6d85f4-cda1-11ef-9ee7-14857f7eaaee",
+      "name": "PEEK D98xL12",
+      "material": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "858bca40-d86a-11ef-9eee-14857f7eaaee",
+      "name": "PEEK D98xL14",
+      "material": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "d6da4e5f-d961-11ef-9eee-14857f7eaaee",
+      "name": "PEEK D98xL10",
+      "material": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "e0fcbe0b-d961-11ef-9eee-14857f7eaaee",
+      "name": "PEEK D98xL16",
+      "material": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "152e2edf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "e8b16f45-d961-11ef-9eee-14857f7eaaee",
+      "name": "PEEK D98xL18",
+      "material": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "c06e9767-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "f01ca940-d961-11ef-9eee-14857f7eaaee",
+      "name": "PEEK D98xL20",
+      "material": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "fb411bdf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "fcd56b43-d961-11ef-9eee-14857f7eaaee",
+      "name": "PEEK D98xL22",
+      "material": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "22ab4214-40cd-11e0-9472-bcaec507987a"
+    },
+    {
+      "id": "fcd56b45-d961-11ef-9eee-14857f7eaaee",
+      "name": "PEEK D98xL25",
+      "material": "c7eafbfe-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "22a9f8a2-4787-11e3-8706-0cd29242f0cb"
+    },
+    {
+      "id": "16c55211-d963-11ef-9eee-14857f7eaaee",
+      "name": "PEEK Block 8x8x15",
+      "material": "c7eafbff-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "b121c839-686b-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "8ff8662e-d963-11ef-9eee-14857f7eaaee",
+      "name": "PEEK Block 10x8.5x15",
+      "material": "c7eafbff-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "e082eede-686b-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "a72caea3-d963-11ef-9eee-14857f7eaaee",
+      "name": "PEEK Block 12.5x10.5x15",
+      "material": "c7eafbff-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "a658fd90-dcd1-11ec-9d08-14857f7eaaee"
+    },
+    {
+      "id": "b9ff3b41-d963-11ef-9eee-14857f7eaaee",
+      "name": "PEEK Block 14.5x12.5x18",
+      "material": "c7eafbff-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "93a6a1d1-dcd1-11ec-9d08-14857f7eaaee"
+    },
+    {
+      "id": "ccf3986a-d963-11ef-9eee-14857f7eaaee",
+      "name": "PEEK Block 14.5x14.5x18",
+      "material": "c7eafbff-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "195cce6e-69f8-11ea-a141-a44cc835bc01"
+    },
+    {
+      "id": "d603a744-d963-11ef-9eee-14857f7eaaee",
+      "name": "PEEK Block 16x14.5x18",
+      "material": "c7eafbff-5df2-11ef-8bca-181deae7bdc2",
+      "geometry": "56bd85fa-dcd0-11ec-9d08-14857f7eaaee"
+    },
+    {
+      "id": "6691c39c-f27a-11ef-9f03-14857f7eaaee",
+      "name": "Glsass Ceramic D98xL10",
+      "material": "0794f270-562b-11ef-8bc9-181deae7bdc2",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "f7dd235a-f34b-11ef-9f04-14857f7eaaee",
+      "name": "Glsass Ceramic D98xL12",
+      "material": "0794f270-562b-11ef-8bc9-181deae7bdc2",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "64262911-af01-11f0-87de-ec4c8c8ee783",
+      "name": "Rosetta®SM D98xL10",
+      "material": "0794f270-562b-11ef-8bc9-181deae7bdc2",
+      "geometry": "59c2a0f6-af01-11f0-87de-ec4c8c8ee783"
+    },
+    {
+      "id": "4da02872-b917-11f0-a4a1-ec4c8c8ee783",
+      "name": "Glsass Ceramic D98xL14",
+      "material": "0794f270-562b-11ef-8bc9-181deae7bdc2",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "7caf4344-b9db-11f0-a4a1-ec4c8c8ee783",
+      "name": "Rosetta®SM D98xL08",
+      "material": "0794f270-562b-11ef-8bc9-181deae7bdc2",
+      "geometry": "6b87e470-b9db-11f0-a4a1-ec4c8c8ee783"
+    },
+    {
+      "id": "869fa473-b9db-11f0-a4a1-ec4c8c8ee783",
+      "name": "Rosetta®SM D98xL12",
+      "material": "0794f270-562b-11ef-8bc9-181deae7bdc2",
+      "geometry": "5bdd1e7b-b9db-11f0-a4a1-ec4c8c8ee783"
+    },
+    {
+      "id": "27f5de7d-c42e-11f0-a4a3-ec4c8c8ee783",
+      "name": "Hybrid Ceramic 14.5x12.5x18.5",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "93a6a1d1-dcd1-11ec-9d08-14857f7eaaee"
+    },
+    {
+      "id": "883e07bd-dbac-11f0-a4a9-ec4c8c8ee783",
+      "name": "Hybrid Ceramic 10x12x15.5",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "6b7b00d0-dbac-11f0-a4a9-ec4c8c8ee783"
+    },
+    {
+      "id": "dcf48b9c-2cc6-11f1-a4c5-ec4c8c8ee783",
+      "name": "DuraFlex D98xL20",
+      "material": "b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783",
+      "geometry": "fb411bdf-028c-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "8b9d79f3-3165-11f1-a4c7-ec4c8c8ee783",
+      "name": "DuraFlex D98xL25",
+      "material": "b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783",
+      "geometry": "22a9f8a2-4787-11e3-8706-0cd29242f0cb"
+    },
+    {
+      "id": "97e1a00b-3165-11f1-a4c7-ec4c8c8ee783",
+      "name": "DuraFlex D98xL30",
+      "material": "b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783",
+      "geometry": "33e7ba24-e494-11e5-9273-b3b74293faad"
+    },
+    {
+      "id": "9f4b71e5-3165-11f1-a4c7-ec4c8c8ee783",
+      "name": "DuraFlex D98xL15",
+      "material": "b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783",
+      "geometry": "54c2c765-db05-11e5-8aa7-e6f1371b6ba8"
+    },
+    {
+      "id": "abe939f3-559d-11f1-a4cf-ec4c8c8ee783",
+      "name": "Hybrid Ceramic 19x15.5x40",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "b5d68d47-8545-11ea-a146-a44cc835bc01"
+    },
+    {
+      "id": "14307214-694d-11f1-a4d4-ec4c8c8ee783",
+      "name": "Fiber Block 19x15.5x40",
+      "material": "f87bfaf3-562a-11ef-8bc9-181deae7bdc2",
+      "geometry": "fcc7eff8-694c-11f1-a4d4-ec4c8c8ee783"
+    },
+    {
+      "id": "6dc2d7fd-738a-11f1-a4d4-ec4c8c8ee783",
+      "name": "Zirconia D98xL15",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "54c2c765-db05-11e5-8aa7-e6f1371b6ba8"
+    },
+    {
+      "id": "8a689ffa-2d8a-11f1-a4c5-ec4c8c8ee783",
+      "name": "Dry-Mill C16 MT",
+      "material": "0bae45c3-2d8e-11f1-a4c5-ec4c8c8ee783",
+      "geometry": "55402d87-2d8a-11f1-a4c5-ec4c8c8ee783"
+    },
+    {
+      "id": "8baf9fb8-7fbf-11f1-a4d7-ec4c8c8ee783",
+      "name": "Zirconia D98xL28",
+      "material": "b5a796e5-028b-11de-a0e2-002186a4af5a",
+      "geometry": "80484768-7fbf-11f1-a4d7-ec4c8c8ee783"
+    },
+    {
+      "id": "53621bca-d32b-11f1-a52e-ec4c8c8ee783",
+      "name": "Amber_Dry Disk D98xL14",
+      "material": "24d66cca-d32b-11f1-a52e-ec4c8c8ee783",
+      "geometry": "b5a796e7-028b-11de-a0e2-002186a4af5a"
+    },
+    {
+      "id": "7c23de48-d828-11f1-a532-ec4c8c8ee783",
+      "name": "Amber_Dry Disk D98xL12",
+      "material": "24d66cca-d32b-11f1-a52e-ec4c8c8ee783",
+      "geometry": "dcbd779d-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "821f3f56-d828-11f1-a532-ec4c8c8ee783",
+      "name": "Amber_Dry Disk D98xL10",
+      "material": "24d66cca-d32b-11f1-a52e-ec4c8c8ee783",
+      "geometry": "cfa2eaf7-04cc-11de-a0e6-002170b360ab"
+    },
+    {
+      "id": "f3d712d6-d2b4-11f1-9619-98bd8003105a",
+      "name": "D10 (0.1)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "e3909dd4-d2b3-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "bc59f472-d2b1-11f1-9619-98bd8003105a",
+      "name": "D10 (0.1)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "d1a2e9d5-d2b1-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "d2c984df-b661-11f1-9611-98bd8003105a",
+      "name": "D10 (0.2)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "be4e0e06-b661-11f1-9611-98bd8003105a"
+    },
+    {
+      "id": "c16a9cf1-d2af-11f1-9619-98bd8003105a",
+      "name": "D10 (0.2)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "ac575ed4-d2af-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "a8222cb4-981c-11eb-8374-683e261e4299",
+      "name": "D10 (0.3)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "9856aa9d-4b2b-11e7-9678-6c4008b97e9b"
+    },
+    {
+      "id": "ad780c19-a0d9-11ec-9ce0-14857f7eaaee",
+      "name": "D10 (0.3)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "bca9e972-a0da-11ec-9ce0-14857f7eaaee"
+    },
+    {
+      "id": "12da7cbd-d2b5-11f1-9619-98bd8003105a",
+      "name": "D12 (0.1)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "152d0b97-d2b4-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "2c5e5a04-d2b5-11f1-9619-98bd8003105a",
+      "name": "D12 (0.1)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "2a1cdbbf-d2b4-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "08ca59fb-d2b5-11f1-9619-98bd8003105a",
+      "name": "D12 (0.2)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "0bd4f590-d2b4-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "210cf795-d2b5-11f1-9619-98bd8003105a",
+      "name": "D12 (0.2)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "20975245-d2b4-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "fc5c5373-2765-11ed-9d2d-14857f7eaaee",
+      "name": "D12 (0.3)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "8d0a355d-2765-11ed-9d2d-14857f7eaaee"
+    },
+    {
+      "id": "fc5c5375-2765-11ed-9d2d-14857f7eaaee",
+      "name": "D12 (0.3)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "f5216fd6-2765-11ed-9d2d-14857f7eaaee"
+    },
+    {
+      "id": "47204c75-d2b5-11f1-9619-98bd8003105a",
+      "name": "D14 (0.1)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "46cef1f2-d2b4-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "61f17446-d2b5-11f1-9619-98bd8003105a",
+      "name": "D14 (0.1)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "5c8a0c2c-d2b4-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "3dda03ed-d2b5-11f1-9619-98bd8003105a",
+      "name": "D14 (0.2)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "3ec3facc-d2b4-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "5873c25b-d2b5-11f1-9619-98bd8003105a",
+      "name": "D14 (0.2)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "5661dcab-d2b4-11f1-9619-98bd8003105a"
+    },
+    {
+      "id": "ebae8774-e7c7-11ec-9d0e-14857f7eaaee",
+      "name": "D14 (0.3)",
+      "material": "bd6d005e-69de-11e2-97c2-3085a99772af",
+      "geometry": "e0c3336d-e7c7-11ec-9d0e-14857f7eaaee"
+    },
+    {
+      "id": "c50864c0-e7c7-11ec-9d0e-14857f7eaaee",
+      "name": "D14 (0.3)+Reverse",
+      "material": "75c57801-417f-11e5-82b0-7427ea498abd",
+      "geometry": "b993baad-e7c7-11ec-9d0e-14857f7eaaee"
+    }
+  ],
+  "selected": [
+    {
+      "id": "8a689ffa-2d8a-11f1-a4c5-ec4c8c8ee783",
+      "name": "Dry-Mill C16 MT",
+      "material": "Amber_Dry Block",
+      "geometry": "Dry C16 20.5x16.6x20.5",
+      "height": "16.6",
+      "color": "Dry mill",
+      "sourceImage": "blankTypeImages/btype_Dry-Mill C16 MT.png"
+    },
+    {
+      "id": "53621bca-d32b-11f1-a52e-ec4c8c8ee783",
+      "name": "Amber_Dry Disk D98xL14",
+      "material": "Amber_Dry Disk",
+      "geometry": "Disc_D98xL14",
+      "height": "14",
+      "color": "Dry mill",
+      "sourceImage": "blankTypeImages/btype_Amber_Dry Disk D98xL14.png"
+    },
+    {
+      "id": "7c23de48-d828-11f1-a532-ec4c8c8ee783",
+      "name": "Amber_Dry Disk D98xL12",
+      "material": "Amber_Dry Disk",
+      "geometry": "Disc_D98xL12",
+      "height": "12",
+      "color": "Dry mill",
+      "sourceImage": "blankTypeImages/btype_Amber_Dry Disk D98xL12.png"
+    },
+    {
+      "id": "821f3f56-d828-11f1-a532-ec4c8c8ee783",
+      "name": "Amber_Dry Disk D98xL10",
+      "material": "Amber_Dry Disk",
+      "geometry": "Disc_D98xL10",
+      "height": "10",
+      "color": "Dry mill",
+      "sourceImage": "blankTypeImages/btype_Amber_Dry Disk D98xL10.png"
+    },
+    {
+      "id": "f3d712d6-d2b4-11f1-9619-98bd8003105a",
+      "name": "D10 (0.1)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D10 (0.1)",
+      "height": "10",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D10 (0.1).png"
+    },
+    {
+      "id": "bc59f472-d2b1-11f1-9619-98bd8003105a",
+      "name": "D10 (0.1)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D10 (0.1)+Reverse",
+      "height": "10",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D10 (0.1).png"
+    },
+    {
+      "id": "d2c984df-b661-11f1-9611-98bd8003105a",
+      "name": "D10 (0.2)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D10 (0.2)",
+      "height": "10",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D10 (0.2).png"
+    },
+    {
+      "id": "c16a9cf1-d2af-11f1-9619-98bd8003105a",
+      "name": "D10 (0.2)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D10 (0.2)+Reverse",
+      "height": "10",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D10 (0.2).png"
+    },
+    {
+      "id": "a8222cb4-981c-11eb-8374-683e261e4299",
+      "name": "D10 (0.3)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D10 (0.3)",
+      "height": "10",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D10 (0.3).png"
+    },
+    {
+      "id": "ad780c19-a0d9-11ec-9ce0-14857f7eaaee",
+      "name": "D10 (0.3)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D10 (0.3)+Reverse",
+      "height": "10",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D10 (0.3)+Reverse.png"
+    },
+    {
+      "id": "12da7cbd-d2b5-11f1-9619-98bd8003105a",
+      "name": "D12 (0.1)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D12 (0.1)",
+      "height": "12",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D12 (0.1).png"
+    },
+    {
+      "id": "2c5e5a04-d2b5-11f1-9619-98bd8003105a",
+      "name": "D12 (0.1)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D12 (0.1)+Reverse",
+      "height": "12",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D12 (0.1).png"
+    },
+    {
+      "id": "08ca59fb-d2b5-11f1-9619-98bd8003105a",
+      "name": "D12 (0.2)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D12 (0.2)",
+      "height": "12",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D12 (0.2).png"
+    },
+    {
+      "id": "210cf795-d2b5-11f1-9619-98bd8003105a",
+      "name": "D12 (0.2)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D12 (0.2)+Reverse",
+      "height": "12",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D12 (0.2).png"
+    },
+    {
+      "id": "fc5c5373-2765-11ed-9d2d-14857f7eaaee",
+      "name": "D12 (0.3)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D12 (0.3)",
+      "height": "11.999",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D12 (0.3).png"
+    },
+    {
+      "id": "fc5c5375-2765-11ed-9d2d-14857f7eaaee",
+      "name": "D12 (0.3)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D12 (0.3)+Reverse",
+      "height": "11.999",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D12 (0.3)+Reverse.png"
+    },
+    {
+      "id": "47204c75-d2b5-11f1-9619-98bd8003105a",
+      "name": "D14 (0.1)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D14 (0.1)",
+      "height": "14",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D14 (0.1).png"
+    },
+    {
+      "id": "61f17446-d2b5-11f1-9619-98bd8003105a",
+      "name": "D14 (0.1)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D14 (0.1)+Reverse",
+      "height": "14",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D14 (0.1).png"
+    },
+    {
+      "id": "3dda03ed-d2b5-11f1-9619-98bd8003105a",
+      "name": "D14 (0.2)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D14 (0.2)",
+      "height": "14",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D14 (0.2).png"
+    },
+    {
+      "id": "5873c25b-d2b5-11f1-9619-98bd8003105a",
+      "name": "D14 (0.2)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D14 (0.2)+Reverse",
+      "height": "14",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D14 (0.2).png"
+    },
+    {
+      "id": "ebae8774-e7c7-11ec-9d0e-14857f7eaaee",
+      "name": "D14 (0.3)",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D14 (0.3)",
+      "height": "14",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D14 (0.3).png"
+    },
+    {
+      "id": "c50864c0-e7c7-11ec-9d0e-14857f7eaaee",
+      "name": "D14 (0.3)+Reverse",
+      "material": "Premill+Reverse",
+      "geometry": "Pre-Mill_D14 (0.3)+Reverse",
+      "height": "14",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_D14 (0.3)+Reverse.png"
+    }
+  ],
+  "menuOnly": [
+    "Medentika premilled blanks",
+    "Straumann premilled blanks"
+  ],
+  "legacyPremill": [
+    {
+      "id": "a8222cb4-981c-11eb-8374-683e261e4299",
+      "name": "Pre-Mill_D10xL20",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D10",
+      "height": "10",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_Pre-Mill_D10xL20.png",
+      "root": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본"
+    },
+    {
+      "id": "ad780c19-a0d9-11ec-9ce0-14857f7eaaee",
+      "name": "Pre-Mill_D10xL20+Reverse",
+      "material": "Pre-Mill+Reverse",
+      "geometry": "Pre-Mill_D10+Reverse",
+      "height": "10",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_Pre-Mill_D10xL20+Reverse.png",
+      "root": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본"
+    },
+    {
+      "id": "fc5c5373-2765-11ed-9d2d-14857f7eaaee",
+      "name": "Pre-Mill_D12xL20",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D12",
+      "height": "11.999",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_Pre-Mill_D12xL20.png",
+      "root": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본"
+    },
+    {
+      "id": "fc5c5375-2765-11ed-9d2d-14857f7eaaee",
+      "name": "Pre-Mill_D12xL20+Reverse",
+      "material": "Pre-Mill+Reverse",
+      "geometry": "Pre-Mill_D12+Reverse",
+      "height": "11.999",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_Pre-Mill_D12xL20+Reverse.png",
+      "root": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본"
+    },
+    {
+      "id": "ebae8774-e7c7-11ec-9d0e-14857f7eaaee",
+      "name": "Pre-Mill_D14xL20",
+      "material": "Premill blank",
+      "geometry": "Pre-Mill_D14",
+      "height": "14",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_Pre-Mill_D14xL20.png",
+      "root": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본"
+    },
+    {
+      "id": "c50864c0-e7c7-11ec-9d0e-14857f7eaaee",
+      "name": "Pre-Mill_D14xL20+Reverse",
+      "material": "Pre-Mill+Reverse",
+      "geometry": "Pre-Mill_D14+Reverse",
+      "height": "14",
+      "color": "Metal",
+      "sourceImage": "blankTypeImages/btype_Pre-Mill_D14xL20+Reverse.png",
+      "root": "C:/hyperDENT_Settings_MAI_25.08.19/DB/260830_원본"
+    }
+  ]
+}

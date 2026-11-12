@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <toolholder_table>
+      <toolholder id="3c944910-3766-11ef-8e54-d85ed3abfe3c">
+         <version>2</version>
+         <name>MAI</name>
+         <headdiameter1>0</headdiameter1>
+         <headdiameter2>0</headdiameter2>
+         <headlength1>0</headlength1>
+         <headlength2>0</headlength2>
+         <diameter1>0</diameter1>
+         <diameter2>0</diameter2>
+         <length1>0</length1>
+         <length2>0</length2>
+         <headpoly type="polyline2d">
+            <p>28,0</p>
+            <p>28,4.26</p>
+            <p>44.8,4.26</p>
+            <p>44.8,9.5</p>
+            <p>56,9.5</p>
+            <p>56,31.5</p>
+            <p>100,47.5</p>
+            <p>100,55</p>
+         </headpoly>
+         <hldrpoly type="polyline2d">
+            <p>12,0</p>
+            <p>12,4.2</p>
+            <p>14,4.2</p>
+            <p>14,27.7</p>
+         </hldrpoly>
+      </toolholder>
+      <toolholder id="50f7ded8-5f9c-11ef-9362-4c496c52fcaf">
+         <version>2</version>
+         <name>MAI 0.3_holder</name>
+         <headdiameter1>0</headdiameter1>
+         <headdiameter2>0</headdiameter2>
+         <headlength1>0</headlength1>
+         <headlength2>0</headlength2>
+         <diameter1>0</diameter1>
+         <diameter2>0</diameter2>
+         <length1>0</length1>
+         <length2>0</length2>
+         <headpoly type="polyline2d">
+            <p>80,0</p>
+            <p>80,22</p>
+         </headpoly>
+         <hldrpoly type="polyline2d">
+            <p>0.8,0</p>
+            <p>2.78,5.9</p>
+            <p>6,9.31</p>
+            <p>6,17.5</p>
+            <p>11.21,17.5</p>
+            <p>11.21,21.7</p>
+            <p>14,21.7</p>
+            <p>14,45.2</p>
+            <p>28,45.2</p>
+            <p>28,49.46</p>
+            <p>44.8,49.46</p>
+            <p>44.8,54.7</p>
+         </hldrpoly>
+      </toolholder>
+      <toolholder id="2e945379-5f9a-11ef-9362-4c496c52fcaf">
+         <version>2</version>
+         <name>MAI 0.6_holder</name>
+         <headdiameter1>0</headdiameter1>
+         <headdiameter2>0</headdiameter2>
+         <headlength1>0</headlength1>
+         <headlength2>0</headlength2>
+         <diameter1>0</diameter1>
+         <diameter2>0</diameter2>
+         <length1>0</length1>
+         <length2>0</length2>
+         <headpoly type="polyline2d">
+            <p>80,0</p>
+            <p>80,22</p>
+         </headpoly>
+         <hldrpoly type="polyline2d">
+            <p>1.5,0</p>
+            <p>6,4.32</p>
+            <p>6,13.2</p>
+            <p>11.21,13.2</p>
+            <p>11.21,17.4</p>
+            <p>14,17.4</p>
+            <p>14,40.9</p>
+            <p>28,40.9</p>
+            <p>28,45.16</p>
+            <p>44.8,45.16</p>
+            <p>44.8,50.4</p>
+         </hldrpoly>
+      </toolholder>
+   </toolholder_table>
+</fmDatabase>

@@ -1,0 +1,43 @@
+{
+  "menus": [
+    "Zirconia Disc",
+    "Zirconia Block",
+    "Amber_Dry Block",
+    "Amber_Dry Disk",
+    "Wax Disc",
+    "Wax Block",
+    "Lithium Disilicate Block",
+    "Lithium Silicate Block",
+    "Lithium Disilicate Disc",
+    "Hybrid Ceramic Block",
+    "Hybrid Ceramic Disc",
+    "Co.Cr. Disc",
+    "Ti. Block",
+    "Ti. Disc",
+    "PEEK Block",
+    "PEEK Disc",
+    "PMMA Block",
+    "PMMA Disc",
+    "DuraFlex",
+    "Premill blank",
+    "Pre-Mill+Reverse",
+    "Medentika premilled blanks",
+    "Straumann premilled blanks"
+  ],
+  "expectedNonSpecialistBlanks": 121,
+  "missing": 0,
+  "restoredOriginalPremill": [
+    "Pre-Mill_D10xL20",
+    "Pre-Mill_D10xL20+Reverse",
+    "Pre-Mill_D12xL20",
+    "Pre-Mill_D12xL20+Reverse",
+    "Pre-Mill_D14xL20",
+    "Pre-Mill_D14xL20+Reverse"
+  ],
+  "menuOnlyManufacturers": [
+    "Medentika premilled blanks",
+    "Straumann premilled blanks"
+  ],
+  "productCards": 133,
+  "legacyCardsRetained": 12
+}

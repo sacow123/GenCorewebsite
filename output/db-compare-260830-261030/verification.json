@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "side": 0,
+      "independentVariantComparisons": 174
+    },
+    {
+      "side": 1,
+      "independentVariantComparisons": 180
+    }
+  ],
+  "sourceHashesUnchanged": true,
+  "unmatchedOverrides": [
+    0,
+    0
+  ]
+}

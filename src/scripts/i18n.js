@@ -5405,10 +5405,10 @@ Object.assign(TRANSLATIONS.ja, {
 });
 
 const LANG_OPTION_LABELS = {
-  ko: { ko: "🇰🇷 한국어", en: "🇺🇸 English", ja: "🇯🇵 日本語", es: "🇪🇸 Español" },
-  en: { ko: "Korean", en: "English", ja: "Japanese", es: "Spanish" },
-  ja: { ko: "韓国語", en: "英語", ja: "日本語", es: "スペイン語" },
-  es: { ko: "Coreano", en: "Inglés", ja: "Japonés", es: "Español" }
+  ko: { ...LANG_LABELS, es: "🇪🇸 Español (준비중)" },
+  en: { ...LANG_LABELS, es: "🇪🇸 Español (Coming soon)" },
+  ja: { ...LANG_LABELS, es: "🇪🇸 Español (準備中)" },
+  es: { ...LANG_LABELS, es: "🇪🇸 Español (Próximamente)" }
 };
 
 let currentLang = "ko";
@@ -5475,7 +5475,7 @@ function applyLanguage(lang) {
   });
   // Update lang button label
   const btn = document.getElementById("langBtnLabel");
-  if (btn) btn.textContent = LANG_LABELS[lang];
+  if (btn) btn.textContent = LANG_OPTION_LABELS[lang]?.[lang] || LANG_LABELS[lang];
   // Mark active dropdown item
   document.querySelectorAll(".lang-dropdown button").forEach(b => {
     b.classList.toggle("active", b.dataset.lang === lang);
@@ -5965,11 +5965,21 @@ Object.assign(TRANSLATIONS.es, {
 
 Object.assign(TRANSLATIONS.ko, {
   "thread-guide-title": "나사산 생성 방법",
+  "thread-guide-condition-23": "ISO M2.3 - 1.9 → 지름 2.3 mm 나사용",
+  "thread-guide-condition-26": "ISO M2.6 - 2.1 → 지름 2.6 mm 나사용",
+  "thread-guide-condition-30": "ISO M3.0 - 2.5 → 지름 3.0 mm 나사용",
+  "thread-guide-added-261030": "261030 추가",
+  "thread-guide-table-spec": "나사산 규격",
+  "thread-guide-table-hole": "홀 지름 (mm)",
+  "thread-guide-table-tool": "사용 공구",
+  "thread-guide-table-version": "추가 버전",
+  "thread-guide-tool-position-note": "<strong>⚠️ISO M1.6과 ISO M3.0은 동일한 T27 공구 위치<br>&nbsp;&nbsp;&nbsp;&nbsp;ISO M1.8과 ISO M2.6은 동일한 T26 공구 위치를 사용합니다.</strong><br>가공할 나사산 규격에 맞는 공구인지 확인한 후 장착해 주세요.",
+  "thread-guide-design-warning": "나사산이 생성될 부분은 원통형으로 디자인 해주시기 바랍니다.<br>나사산을 반영해 디자인 된 hole을 하이퍼덴트에서 인식하지 못합니다.<br>나사산을 생성할 부분을 원통형으로 디자인하세요.",
   "thread-guide-intro": "M AI는 보철물에 나사산을 생성할 수 있습니다. 아래 단계에 따라 hyperDENT에서 나사산을 설정하세요.",
   "thread-guide-step-01-heading": "1. 나사산 생성 영역을 Holes로 설정", "thread-guide-step-01": "나사산을 생성할 영역은 <strong>Implant interface</strong>가 아닌 <strong>Holes</strong>로 설정하세요.",
   "thread-guide-step-02-heading": "2. Hole 생성", "thread-guide-step-02": "Holes 메뉴에서 나사산이 생성될 위치에 세 점을 클릭하여 Hole을 설정하세요.",
   "thread-guide-step-03-heading": "3. Use Thread 활성화", "thread-guide-step-03": "하단의 <strong>Use Thread</strong> 체크박스를 선택하세요.",
-  "thread-guide-step-04-heading": "4. 나사산 조건 확인", "thread-guide-step-04": "M AI는 네 가지 나사산 조건을 제공합니다.",
+  "thread-guide-step-04-heading": "4. 나사산 조건 확인", "thread-guide-step-04": "M AI는 다음 나사산 조건을 제공합니다.",
   "thread-guide-condition-14": "ISO M1.4 - 1.1 → 지름 1.4 mm 나사용", "thread-guide-condition-16": "ISO M1.6 - 1.25 → 지름 1.6 mm 나사용", "thread-guide-condition-18": "ISO M1.8 - 1.45 → 지름 1.8 mm 나사용", "thread-guide-condition-20": "ISO M2 - 1.6 → 지름 2.0 mm 나사용",
   "thread-guide-step-05-heading": "5. 나사산 조건 선택", "thread-guide-step-05": "설정하려는 나사 종류에 맞는 조건을 선택하세요.",
   "thread-guide-step-06-heading": "6. Hole 지름 설정", "thread-guide-step-06": "선택한 나사산 조건에 맞게 Hole 지름을 설정하세요.",
@@ -5984,11 +5994,21 @@ Object.assign(TRANSLATIONS.ko, {
 
 Object.assign(TRANSLATIONS.en, {
   "thread-guide-title": "How to Create Threads",
+  "thread-guide-condition-23": "ISO M2.3 - 1.9 → For screws with a 2.3 mm diameter.",
+  "thread-guide-condition-26": "ISO M2.6 - 2.1 → For screws with a 2.6 mm diameter.",
+  "thread-guide-condition-30": "ISO M3.0 - 2.5 → For screws with a 3.0 mm diameter.",
+  "thread-guide-added-261030": "Added in 261030",
+  "thread-guide-table-spec": "Thread specification",
+  "thread-guide-table-hole": "Hole diameter (mm)",
+  "thread-guide-table-tool": "Tool used",
+  "thread-guide-table-version": "Added in",
+  "thread-guide-tool-position-note": "<strong>⚠️ISO M1.6 and ISO M3.0 share tool position T27.<br>&nbsp;&nbsp;&nbsp;&nbsp;ISO M1.8 and ISO M2.6 share tool position T26.</strong><br>Check that the tool matches the thread specification to be machined before installing it.",
+  "thread-guide-design-warning": "Please design the area where the thread will be created as a cylinder.<br>hyperDENT cannot recognize a hole that has been designed with thread geometry.<br>Design the area where the thread will be created as a cylinder.",
   "thread-guide-intro": "M AI can create threaded holes in prostheses. Follow the steps below to configure a threaded hole in hyperDENT.",
   "thread-guide-step-01-heading": "1. Set the thread area to Holes", "thread-guide-step-01": "Set the area where you want to create a thread to <strong>Holes</strong>, not <strong>Implant interface</strong>.",
   "thread-guide-step-02-heading": "2. Create the hole", "thread-guide-step-02": "In the Holes menu, click three points where the thread will be created to set the hole.",
   "thread-guide-step-03-heading": "3. Enable Use Thread", "thread-guide-step-03": "Select the <strong>Use Thread</strong> checkbox at the bottom.",
-  "thread-guide-step-04-heading": "4. Check the available thread conditions", "thread-guide-step-04": "M AI provides four thread conditions.",
+  "thread-guide-step-04-heading": "4. Check the available thread conditions", "thread-guide-step-04": "M AI provides the following thread conditions.",
   "thread-guide-condition-14": "ISO M1.4 - 1.1 → For screws with a 1.4 mm diameter.", "thread-guide-condition-16": "ISO M1.6 - 1.25 → For screws with a 1.6 mm diameter.", "thread-guide-condition-18": "ISO M1.8 - 1.45 → For screws with a 1.8 mm diameter.", "thread-guide-condition-20": "ISO M2 - 1.6 → For screws with a 2.0 mm diameter.",
   "thread-guide-step-05-heading": "5. Select the thread condition", "thread-guide-step-05": "Select the condition that matches the screw type you are setting.",
   "thread-guide-step-06-heading": "6. Set the hole diameter", "thread-guide-step-06": "Set the hole diameter to match the selected thread condition.",
@@ -6003,11 +6023,21 @@ Object.assign(TRANSLATIONS.en, {
 
 Object.assign(TRANSLATIONS.ja, {
   "thread-guide-title": "ねじ山の作成方法",
+  "thread-guide-condition-23": "ISO M2.3 - 1.9 → 直径2.3 mmのねじ用",
+  "thread-guide-condition-26": "ISO M2.6 - 2.1 → 直径2.6 mmのねじ用",
+  "thread-guide-condition-30": "ISO M3.0 - 2.5 → 直径3.0 mmのねじ用",
+  "thread-guide-added-261030": "261030追加",
+  "thread-guide-table-spec": "ねじ規格",
+  "thread-guide-table-hole": "穴径 (mm)",
+  "thread-guide-table-tool": "使用工具",
+  "thread-guide-table-version": "追加バージョン",
+  "thread-guide-tool-position-note": "<strong>⚠️ISO M1.6とISO M3.0は同じT27工具位置を使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;ISO M1.8とISO M2.6は同じT26工具位置を使用します。</strong><br>加工するねじ規格に合った工具であることを確認してから装着してください。",
+  "thread-guide-design-warning": "ねじ山を作成する部分は円筒形で設計してください。<br>ねじ山の形状を反映して設計されたholeは、hyperDENTでは認識できません。<br>ねじ山を作成する部分を円筒形で設計してください。",
   "thread-guide-intro": "M AIでは補綴物にねじ山付きの穴を作成できます。以下の手順でhyperDENTのねじ山を設定します。",
   "thread-guide-step-01-heading": "1. ねじ山の作成領域をHolesに設定", "thread-guide-step-01": "ねじ山を作成する領域は、<strong>Implant interface</strong>ではなく<strong>Holes</strong>に設定します。",
   "thread-guide-step-02-heading": "2. Holeを作成", "thread-guide-step-02": "Holesメニューで、ねじ山を作成する位置を3点クリックしてHoleを設定します。",
   "thread-guide-step-03-heading": "3. Use Threadを有効化", "thread-guide-step-03": "下部の<strong>Use Thread</strong>チェックボックスを選択します。",
-  "thread-guide-step-04-heading": "4. 使用可能なねじ山条件を確認", "thread-guide-step-04": "M AIには4種類のねじ山条件があります。",
+  "thread-guide-step-04-heading": "4. 使用可能なねじ山条件を確認", "thread-guide-step-04": "M AIでは以下のねじ山条件を使用できます。",
   "thread-guide-condition-14": "ISO M1.4 - 1.1 → 直径1.4 mmのねじ用", "thread-guide-condition-16": "ISO M1.6 - 1.25 → 直径1.6 mmのねじ用", "thread-guide-condition-18": "ISO M1.8 - 1.45 → 直径1.8 mmのねじ用", "thread-guide-condition-20": "ISO M2 - 1.6 → 直径2.0 mmのねじ用",
   "thread-guide-step-05-heading": "5. ねじ山条件を選択", "thread-guide-step-05": "設定するねじの種類に合った条件を選択します。",
   "thread-guide-step-06-heading": "6. Holeの直径を設定", "thread-guide-step-06": "選択したねじ山条件に合わせてHoleの直径を設定します。",
@@ -6704,3 +6734,19 @@ Object.assign(TRANSLATIONS.en, {"interface-open-detail":"View details"});
 Object.assign(TRANSLATIONS.ja, {"interface-open-detail":"詳細を見る"});
 
 Object.assign(TRANSLATIONS.es, {"interface-open-detail":"Ver detalles"});
+
+// Names match the 261030 New Blank menu; manufacturer variants are intentionally omitted.
+for (const lang of ['ko','en','ja','es']) Object.assign(TRANSLATIONS[lang], {
+  'mai-blank-material-20':'Amber_Dry Disk',
+  'mai-blank-material-21':'Premill blank',
+  'mai-blank-material-22':'Medentika premilled blanks',
+  'mai-blank-material-23':'Straumann premilled blanks',
+  'mai-blank-submaterial-20-1':'Dry mill',
+  'mai-blank-submaterial-21-1':'Metal'
+});
+
+// M AI blank material family disclosures.
+Object.assign(TRANSLATIONS.ko, {"mai-blank-family-zirconia":"Zirconia 계열","mai-blank-family-glass":"Glass 계열","mai-blank-family-metal":"Metal 계열","mai-blank-family-premill":"Premill blank 계열"});
+Object.assign(TRANSLATIONS.en, {"mai-blank-family-zirconia":"Zirconia group","mai-blank-family-glass":"Glass group","mai-blank-family-metal":"Metal group","mai-blank-family-premill":"Premill blank group"});
+Object.assign(TRANSLATIONS.ja, {"mai-blank-family-zirconia":"Zirconia系","mai-blank-family-glass":"Glass系","mai-blank-family-metal":"Metal系","mai-blank-family-premill":"Premill blank系"});
+Object.assign(TRANSLATIONS.es, {"mai-blank-family-zirconia":"Grupo Zirconia","mai-blank-family-glass":"Grupo Glass","mai-blank-family-metal":"Grupo Metal","mai-blank-family-premill":"Grupo Premill blank"});

@@ -240,6 +240,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
       let hashId = window.location.hash.substring(1);
+      if (hashId.indexOf('search:') === 0) {
+        var restoredQuery = decodeURIComponent(hashId.slice(7));
+        if (restoredQuery.trim() && searchInput) {
+          searchInput.value = restoredQuery;
+          runSearch(restoredQuery);
+        }
+        return;
+      }
       // Remove any query params or trailing slashes that might be added by messenger apps
       hashId = hashId.split('?')[0].split('/')[0];
       
@@ -454,8 +462,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // finding content outside the currently open manual without making the initial
   // page load heavier.
   var siteSearchIndexPromise = null;
+  var siteSearchIndexLanguage = null;
 
   function buildSiteSearchIndex() {
+    var language = typeof currentLang === 'string' ? currentLang : 'ko';
+    if (siteSearchIndexLanguage !== language) {
+      siteSearchIndexPromise = null;
+      siteSearchIndexLanguage = language;
+    }
     if (siteSearchIndexPromise) return siteSearchIndexPromise;
 
     siteSearchIndexPromise = new Promise(function(resolve) {
@@ -469,22 +483,78 @@ document.addEventListener("DOMContentLoaded", () => {
       var temporaryFrames = [];
       var timeoutId;
 
+      function searchableText(html) {
+        var parsed = new DOMParser().parseFromString(html || '', 'text/html');
+        parsed.querySelectorAll('script, style, noscript').forEach(function(node) { node.remove(); });
+        parsed.querySelectorAll('[data-i18n]').forEach(function(node) {
+          if (typeof getI18nText !== 'function') return;
+          var value = getI18nText(language, node.getAttribute('data-i18n'), node.innerHTML);
+          if (value) node.innerHTML = value;
+        });
+        return parsed.body.textContent.replace(/\s+/g, ' ').trim();
+      }
+
+      function collectFeatureBodies() {
+        return fetch('src/data/feature-search.json').then(function(response) {
+          if (!response.ok) throw new Error('Feature search data: ' + response.status);
+          return response.json();
+        }).then(function(features) {
+          return Promise.all(features.map(function(feature) {
+            return Promise.all(feature.pages.map(function(page) {
+              return fetch(encodeURI(page)).then(function(response) {
+                if (!response.ok) throw new Error('Feature document: ' + response.status);
+                return response.text();
+              }).then(searchableText);
+            })).then(function(documents) {
+              var entry = entries.find(function(item) { return item.featureKey === feature.key; });
+              if (!entry) {
+                entry = {type:'feature',featureKey:feature.key,parentSectionId:'sec-mf-hd-features',
+                  titleText:searchableText(feature.title),breadcrumb:''};
+                entries.push(entry);
+              }
+              entry.contentText = searchableText(feature.html) + ' ' + documents.join(' ');
+            });
+          }));
+        });
+      }
+
       function collectDocument(sourceDocument) {
         if (!sourceDocument) return;
+        var lang = typeof currentLang === 'string' ? currentLang : 'ko';
+        sourceDocument.querySelectorAll('[data-i18n]').forEach(function(node) {
+          if (typeof getI18nText !== 'function') return;
+          var translated = getI18nText(lang, node.getAttribute('data-i18n'), node.innerHTML);
+          if (translated) node.innerHTML = translated;
+        });
         sourceDocument.querySelectorAll('.content-section[id]').forEach(function(section) {
           if (section.id === 'section-search' || section.id === 'section-home') return;
           if (entries.some(function(entry) { return entry.sectionId === section.id; })) return;
 
-          var navItem = sourceDocument.querySelector('.nav-item[data-section="' + section.id + '"]');
-          if (!navItem) return;
+          var navItem = sourceDocument.querySelector('.nav-item[data-section="' + section.id + '"]') ||
+            document.querySelector('.nav-item[data-section="' + section.id + '"]');
+          var heading = section.querySelector('h2, h3');
+          if (!navItem && !heading) return;
           var cleanSection = section.cloneNode(true);
           cleanSection.querySelectorAll('script, style, noscript').forEach(function(node) { node.remove(); });
           entries.push({
+            type: 'section',
             sectionId: section.id,
-            titleText: navItem.textContent.replace(/\s+/g, ' ').trim(),
+            titleText: (navItem || heading).textContent.replace(/\s+/g, ' ').trim(),
             contentText: cleanSection.textContent.replace(/\s+/g, ' ').trim(),
-            breadcrumb: getBreadcrumb(navItem)
+            breadcrumb: navItem ? getBreadcrumb(navItem) : ''
           });
+        });
+        sourceDocument.querySelectorAll('.feature-card[data-feature-key]').forEach(function(card) {
+          var key = card.dataset.featureKey;
+          if (entries.some(function(entry) { return entry.featureKey === key; })) return;
+          var section = card.closest('.content-section');
+          var nav = section && (sourceDocument.querySelector('.nav-item[data-section="' + section.id + '"]') ||
+            document.querySelector('.nav-item[data-section="' + section.id + '"]'));
+          entries.push({type:'feature', featureKey:key,
+            parentSectionId:section ? section.id : 'sec-mf-hd-features',
+            titleText:card.textContent.replace(/\s+/g, ' ').trim(),
+            contentText:card.textContent.replace(/\s+/g, ' ').trim(),
+            breadcrumb:nav ? getBreadcrumb(nav) : ''});
         });
       }
 
@@ -498,7 +568,35 @@ document.addEventListener("DOMContentLoaded", () => {
         settled = true;
         clearTimeout(timeoutId);
         temporaryFrames.forEach(function(frame) { frame.remove(); });
+        entries.sort(function(a, b) {
+          var left = (a.type === 'feature' ? '1' : '0') + (a.sectionId || a.featureKey);
+          var right = (b.type === 'feature' ? '1' : '0') + (b.sectionId || b.featureKey);
+          return left.localeCompare(right);
+        });
         resolve(entries);
+      }
+
+      // Fetch complete HTML rather than racing iframe/video loads against a timer.
+      // All pages and feature cards must be indexed before results are rendered.
+      if (window.location.protocol !== 'file:') {
+        Promise.all(pageFiles.map(function(page) {
+          if (page === currentPage) {
+            collectDocument(document.cloneNode(true));
+            return Promise.resolve();
+          }
+          return fetch(encodeURI(page)).then(function(response) {
+            if (!response.ok) throw new Error('Search page: ' + response.status);
+            return response.text();
+          }).then(function(html) {
+            collectDocument(new DOMParser().parseFromString(html, 'text/html'));
+          });
+        })).then(collectFeatureBodies).then(finish).catch(function(error) {
+          // A failed request must not permanently cache an incomplete index.
+          siteSearchIndexPromise = null;
+          console.error('Unable to build complete search index', error);
+          finish();
+        });
+        return;
       }
 
       // Nested tutorial iframes can keep a document's load event pending.  Its own
@@ -543,9 +641,11 @@ document.addEventListener("DOMContentLoaded", () => {
     return siteSearchIndexPromise;
   }
 
+  var searchRequestId = 0;
   function runSearch(query) {
+    var requestId = ++searchRequestId;
     buildSiteSearchIndex().then(function(siteSearchEntries) {
-      renderSearch(query, siteSearchEntries);
+      if (requestId === searchRequestId) renderSearch(query, siteSearchEntries);
     });
   }
 
@@ -561,14 +661,11 @@ document.addEventListener("DOMContentLoaded", () => {
     var searchRegex = new RegExp(regexStr, 'i');
     var searchRegexGlobal = new RegExp('(' + regexStr + ')', 'gi');
 
-    // Search all indexed sections, including the content in the split pages.
-    var navItems = Array.from(document.querySelectorAll('.nav-item[data-section]'));
-    // Search in feature-cards (modals)
-    var featureCards = Array.from(document.querySelectorAll('.feature-card[data-feature-key]'));
-    
+    // Sections and feature cards both come from the same complete site index.
     var results = [];
 
     siteSearchEntries.forEach(function(entry) {
+      if (entry.type === 'feature') return;
       var sectionId = entry.sectionId;
 
       // Skip if this sectionId is already in results (deduplication)
@@ -596,26 +693,25 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    featureCards.forEach(function(card) {
-      var featureKey = card.dataset.featureKey;
+    siteSearchEntries.filter(function(entry) { return entry.type === 'feature'; }).forEach(function(entry) {
+      var featureKey = entry.featureKey;
       // Skip if already in results
       if (results.some(function(r) { return r.type === 'feature' && r.featureKey === featureKey; })) return;
       
-      var titleText = card.textContent.trim().replace(/\s+/g, ' ');
+      var titleText = entry.titleText;
       
-      if (searchRegex.test(titleText)) {
-        var snippet = titleText;
+      if (searchRegex.test(titleText) || searchRegex.test(entry.contentText || '')) {
+        var bodyText = entry.contentText || titleText;
+        var bodyMatch = searchRegex.exec(bodyText);
+        var bodyStart = bodyMatch ? Math.max(0, bodyMatch.index - 40) : 0;
+        var snippet = bodyText.slice(bodyStart, bodyStart + 160);
+        if (bodyStart) snippet = '...' + snippet;
         snippet = snippet.replace(searchRegexGlobal, '<mark style="background:rgba(124,58,237,0.15); color:var(--primary); border-radius:3px; padding:0 2px;">$1</mark>');
         
         // Find breadcrumb from its parent section
-        var parentSection = card.closest('section');
-        var breadcrumb = "";
-        if (parentSection) {
-            var navItem = document.querySelector('.nav-item[data-section="' + parentSection.id + '"]');
-            if (navItem) breadcrumb = getBreadcrumb(navItem);
-        }
+        var breadcrumb = entry.breadcrumb;
 
-        results.push({ type: 'feature', featureKey: featureKey, parentSectionId: parentSection ? parentSection.id : 'sec-mf-hd-features', titleText: "✨ " + titleText.substring(0, 30) + (titleText.length > 30 ? "..." : ""), snippet: snippet, breadcrumb: breadcrumb });
+        results.push({ type: 'feature', featureKey: featureKey, parentSectionId: entry.parentSectionId, titleText: "✨ " + titleText.substring(0, 30) + (titleText.length > 30 ? "..." : ""), snippet: snippet, breadcrumb: breadcrumb });
       }
     });
 
@@ -625,7 +721,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".nav-item").forEach(function(n) { n.classList.remove("active"); });
     document.getElementById("section-search").classList.add("active");
     // Push search state to browser history
-    history.pushState({ searchQuery: query }, null, '#search:' + encodeURIComponent(query));
+    var searchHash = '#search:' + encodeURIComponent(query);
+    if (window.location.hash === searchHash) history.replaceState({ searchQuery: query }, null, searchHash);
+    else history.pushState({ searchQuery: query }, null, searchHash);
 
     // Update title/subtitle
     searchResultsTitle.textContent = '🔍 검색 결과: "' + query + '"';
@@ -686,6 +784,14 @@ document.addEventListener("DOMContentLoaded", () => {
           var type = card.dataset.type;
           var targetId = card.dataset.target;
           var sectionToOpen = type === 'feature' ? card.dataset.parent : targetId;
+          if (type === 'feature') {
+            var featurePage = getSectionPage(sectionToOpen);
+            var currentPage = decodeURIComponent(window.location.pathname).split('/').pop() || 'index.html';
+            if (featurePage && featurePage !== currentPage) {
+              window.location.assign(encodeURI(featurePage) + '#feature-' + encodeURIComponent(targetId));
+              return;
+            }
+          }
           
           // Show the section
           showSection(sectionToOpen);

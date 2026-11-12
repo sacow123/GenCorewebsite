@@ -1,0 +1,1377 @@
+[
+  {
+    "name": "Lithium Disilicate Block",
+    "products": [
+      {
+        "values": [
+          "Amber®Mill C12",
+          "12x10x15",
+          "Lithium Disilicate Block",
+          "Hass",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hass-1.webp"
+      },
+      {
+        "values": [
+          "Amber®Mill C14",
+          "14x12x18",
+          "Lithium Disilicate Block",
+          "Hass",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hass-2.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 10x8.5x15",
+          "10x8.5x15",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "8.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-1.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 12.5x10.5x16",
+          "12.5x10.5x16",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "10.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-2.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 12x10x15",
+          "12x10x15",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-3.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 12x12x15",
+          "12x12x15",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-4.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 14.5x14.5x18",
+          "14.5x14.5x18",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "14.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-5.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 14x12x18",
+          "14x12x18",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-6.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 15.5x15.5x32",
+          "15.5x15.5x32",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-7.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 15.5x15.5x40",
+          "15.5x15.5x40",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-8.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 18x16x18",
+          "18x16x18",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-9.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic 8x8x15",
+          "8x8x15",
+          "Lithium Disilicate Block",
+          "Glass Ceramic",
+          "8 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/glass-ceramic-10.webp"
+      },
+      {
+        "values": [
+          "IPS e.max® B32",
+          "15.1x15.1x32",
+          "Lithium Disilicate Block",
+          "e.max",
+          "15.1 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/emax-1.webp"
+      },
+      {
+        "values": [
+          "IPS e.max® C14",
+          "14.5x12.4x18",
+          "Lithium Disilicate Block",
+          "e.max",
+          "12.4 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/emax-2.webp"
+      },
+      {
+        "values": [
+          "IPS e.max® C16",
+          "17.8x15.8x18",
+          "Lithium Disilicate Block",
+          "e.max",
+          "15.8 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/emax-3.webp"
+      },
+      {
+        "values": [
+          "IPS e.max® I12",
+          "12.5x10.5x16",
+          "Lithium Disilicate Block",
+          "e.max",
+          "10.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/emax-4.webp"
+      }
+    ]
+  },
+  {
+    "name": "Hybrid Ceramic Block",
+    "products": [
+      {
+        "values": [
+          "Amber®Mill H C10",
+          "10x8x15",
+          "Hybrid Ceramic Block",
+          "Hass",
+          "8 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-hass-1.webp"
+      },
+      {
+        "values": [
+          "Amber®Mill H C12",
+          "12x10x15",
+          "Hybrid Ceramic Block",
+          "Hass",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-hass-2.webp"
+      },
+      {
+        "values": [
+          "Amber®Mill H C14",
+          "14x12x18",
+          "Hybrid Ceramic Block",
+          "Hass",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-hass-3.webp"
+      },
+      {
+        "values": [
+          "Fiber Block 19x15.5x40",
+          "Fiber 19x15.5x40",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-1.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic 10x12x15.5",
+          "10x12.2x15.5",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "12.2 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-2.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic 12.5x10.5x16",
+          "12.5x10.5x16",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "10.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-3.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic 12x10x15",
+          "12x10x15",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-4.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic 12x14x18",
+          "12x14x18",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-5.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic 14.5x12.5x18.5",
+          "14.5x12.5x18",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "12.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-6.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic 14.5x14.5x18",
+          "14.5x14.5x18",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "14.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-7.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic 14x12x18",
+          "14x12x18",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-8.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic 19x15.5x40",
+          "19x15.5x40",
+          "Hybrid Ceramic Block",
+          "Hybrid Ceramic",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/hybrid-block-ceramic-9.webp"
+      }
+    ]
+  },
+  {
+    "name": "Co.Cr. Disc",
+    "products": [
+      {
+        "values": [
+          "CoCr D98xL10",
+          "Disc_D98xL10",
+          "Co.Cr. Disc",
+          "Metal",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-1.webp"
+      },
+      {
+        "values": [
+          "CoCr D98xL12",
+          "Disc_D98xL12",
+          "Co.Cr. Disc",
+          "Metal",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-2.webp"
+      },
+      {
+        "values": [
+          "CoCr D98xL14",
+          "Disc_D98xL14",
+          "Co.Cr. Disc",
+          "Metal",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-3.webp"
+      },
+      {
+        "values": [
+          "CoCr D98xL15",
+          "Disc_D98xL15",
+          "Co.Cr. Disc",
+          "Metal",
+          "15 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-4.webp"
+      },
+      {
+        "values": [
+          "CoCr D98xL16",
+          "Disc_D98xL16",
+          "Co.Cr. Disc",
+          "Metal",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-5.webp"
+      },
+      {
+        "values": [
+          "CoCr D98xL18",
+          "Disc_D98xL18",
+          "Co.Cr. Disc",
+          "Metal",
+          "18 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-3-1-6.webp"
+      }
+    ]
+  },
+  {
+    "name": "Amber_Dry Block",
+    "products": [
+      {
+        "values": [
+          "Dry-Mill 21x16.8x20",
+          "21x16.8.5x20",
+          "Amber_Dry Block",
+          "A1 / 00",
+          "16.8 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-4-1-1.webp"
+      }
+    ]
+  },
+  {
+    "name": "DuraFlex",
+    "products": [
+      {
+        "values": [
+          "DuraFlex D98xL15",
+          "Disc_D98xL15",
+          "DuraFlex",
+          "DuraFlex",
+          "15 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-5-1-2.webp"
+      },
+      {
+        "values": [
+          "DuraFlex D98xL20",
+          "Disc_D98xL20",
+          "DuraFlex",
+          "DuraFlex",
+          "20 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-5-1-2.webp"
+      },
+      {
+        "values": [
+          "DuraFlex D98xL25",
+          "Disc_D98xL25",
+          "DuraFlex",
+          "DuraFlex",
+          "25 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-5-1-2.webp"
+      },
+      {
+        "values": [
+          "DuraFlex D98xL30",
+          "Disc_D98xL30",
+          "DuraFlex",
+          "DuraFlex",
+          "30 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-5-1-2.webp"
+      }
+    ]
+  },
+  {
+    "name": "Lithium Silicate Block",
+    "products": [
+      {
+        "values": [
+          "GC Initial®LiSi Block 14",
+          "14.7x12.7x18",
+          "Lithium Silicate Block",
+          "C1",
+          "12.7 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-6-1-1.webp"
+      }
+    ]
+  },
+  {
+    "name": "Lithium Disilicate Disc",
+    "products": [
+      {
+        "values": [
+          "Glass Ceramic D98xL10",
+          "Disc_D98xL10",
+          "Lithium Disilicate Disc",
+          "Glass Ceramic",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-1.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic D98xL12",
+          "Disc_D98xL12",
+          "Lithium Disilicate Disc",
+          "Glass Ceramic",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-2.webp"
+      },
+      {
+        "values": [
+          "Glass Ceramic D98xL14",
+          "Disc_D98xL14",
+          "Lithium Disilicate Disc",
+          "Glass Ceramic",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-3.webp"
+      },
+      {
+        "values": [
+          "Rosetta®SM D98xL08",
+          "Disc_Hass-08T",
+          "Lithium Disilicate Disc",
+          "Glass Ceramic",
+          "8 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-4.webp"
+      },
+      {
+        "values": [
+          "Rosetta®SM D98xL10",
+          "Disc_Hass-10T",
+          "Lithium Disilicate Disc",
+          "Glass Ceramic",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-5.webp"
+      },
+      {
+        "values": [
+          "Rosetta®SM D98xL12",
+          "Disc_Hass-12T",
+          "Lithium Disilicate Disc",
+          "Glass Ceramic",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-7-1-6.webp"
+      }
+    ]
+  },
+  {
+    "name": "Ti. Block",
+    "products": [
+      {
+        "values": [
+          "GN-I® Ti. Block_L",
+          "GN-I® Ti. Block_L",
+          "Ti. Block",
+          "Metal",
+          "0 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-8-1-1.webp"
+      },
+      {
+        "values": [
+          "GN-I® Ti. Block_M",
+          "GN-I® Ti. Block_M",
+          "Ti. Block",
+          "Metal",
+          "0 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-8-1-2.webp"
+      }
+    ]
+  },
+  {
+    "name": "Hybrid Ceramic Disc",
+    "products": [
+      {
+        "values": [
+          "Hybrid Ceramic D98xL08",
+          "Disc_D98xL8",
+          "Hybrid Ceramic Disc",
+          "Hybrid Ceramic",
+          "8 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-1.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic D98xL10",
+          "Disc_D98xL10",
+          "Hybrid Ceramic Disc",
+          "Hybrid Ceramic",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-2.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic D98xL12",
+          "Disc_D98xL12",
+          "Hybrid Ceramic Disc",
+          "Hybrid Ceramic",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-3.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic D98xL14",
+          "Disc_D98xL14",
+          "Hybrid Ceramic Disc",
+          "Hybrid Ceramic",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-4.webp"
+      },
+      {
+        "values": [
+          "Hybrid Ceramic D98xL20",
+          "Disc_D98xL20",
+          "Hybrid Ceramic Disc",
+          "Hybrid Ceramic",
+          "20 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-9-1-5.webp"
+      }
+    ]
+  },
+  {
+    "name": "PEEK Block",
+    "products": [
+      {
+        "values": [
+          "PEEK Block 10x8.5x15",
+          "10x8.5x15",
+          "PEEK Block",
+          "PEEK",
+          "8.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-1.webp"
+      },
+      {
+        "values": [
+          "PEEK Block 12.5x10.5x15",
+          "12.5x10.5x15",
+          "PEEK Block",
+          "PEEK",
+          "10.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-2.webp"
+      },
+      {
+        "values": [
+          "PEEK Block 14.5x12.5x18",
+          "14.5x12.5x18",
+          "PEEK Block",
+          "PEEK",
+          "12.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-3.webp"
+      },
+      {
+        "values": [
+          "PEEK Block 14.5x14.5x18",
+          "14.5x14.5x18",
+          "PEEK Block",
+          "PEEK",
+          "14.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-4.webp"
+      },
+      {
+        "values": [
+          "PEEK Block 16x14.5x18",
+          "16x14.5x18",
+          "PEEK Block",
+          "PEEK",
+          "14.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-5.webp"
+      },
+      {
+        "values": [
+          "PEEK Block 8x8x15",
+          "8x8x15",
+          "PEEK Block",
+          "PEEK",
+          "8 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-10-1-6.webp"
+      }
+    ]
+  },
+  {
+    "name": "PEEK Disc",
+    "products": [
+      {
+        "values": [
+          "PEEK D98xL10",
+          "Disc_D98xL10",
+          "PEEK Disc",
+          "PEEK",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-1.webp"
+      },
+      {
+        "values": [
+          "PEEK D98xL12",
+          "Disc_D98xL12",
+          "PEEK Disc",
+          "PEEK",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-2.webp"
+      },
+      {
+        "values": [
+          "PEEK D98xL14",
+          "Disc_D98xL14",
+          "PEEK Disc",
+          "PEEK",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-3.webp"
+      },
+      {
+        "values": [
+          "PEEK D98xL16",
+          "Disc_D98xL16",
+          "PEEK Disc",
+          "PEEK",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-4.webp"
+      },
+      {
+        "values": [
+          "PEEK D98xL18",
+          "Disc_D98xL18",
+          "PEEK Disc",
+          "PEEK",
+          "18 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-5.webp"
+      },
+      {
+        "values": [
+          "PEEK D98xL20",
+          "Disc_D98xL20",
+          "PEEK Disc",
+          "PEEK",
+          "20 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-6.webp"
+      },
+      {
+        "values": [
+          "PEEK D98xL22",
+          "Disc_D98xL22",
+          "PEEK Disc",
+          "PEEK",
+          "22 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-7.webp"
+      },
+      {
+        "values": [
+          "PEEK D98xL25",
+          "Disc_D98xL25",
+          "PEEK Disc",
+          "PEEK",
+          "25 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-11-1-8.webp"
+      }
+    ]
+  },
+  {
+    "name": "PMMA Block",
+    "products": [
+      {
+        "values": [
+          "PMMA 18x16x18",
+          "18x16x18",
+          "PMMA Block",
+          "PMMA",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-1.webp"
+      },
+      {
+        "values": [
+          "PMMA 19x15.5x40",
+          "19x15.5x40",
+          "PMMA Block",
+          "PMMA",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-2.webp"
+      },
+      {
+        "values": [
+          "PMMA 19x19x55",
+          "19x19x55",
+          "PMMA Block",
+          "PMMA",
+          "19 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-3.webp"
+      },
+      {
+        "values": [
+          "VITA CAD-Temp® CT-40",
+          "VITA CAD-Temp® CT-40_Freeform",
+          "PMMA Block",
+          "PMMA",
+          "0 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-4.webp"
+      },
+      {
+        "values": [
+          "VITA CAD-Temp® CT-55",
+          "VITA CAD-Temp® CT-55_Freeform",
+          "PMMA Block",
+          "PMMA",
+          "0 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-12-1-5.webp"
+      }
+    ]
+  },
+  {
+    "name": "PMMA Disc",
+    "products": [
+      {
+        "values": [
+          "PMMA D98xL10",
+          "Disc_D98xL10",
+          "PMMA Disc",
+          "PMMA",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-1.webp"
+      },
+      {
+        "values": [
+          "PMMA D98xL12",
+          "Disc_D98xL12",
+          "PMMA Disc",
+          "PMMA",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-2.webp"
+      },
+      {
+        "values": [
+          "PMMA D98xL14",
+          "Disc_D98xL14",
+          "PMMA Disc",
+          "PMMA",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-3.webp"
+      },
+      {
+        "values": [
+          "PMMA D98xL16",
+          "Disc_D98xL16",
+          "PMMA Disc",
+          "PMMA",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-4.webp"
+      },
+      {
+        "values": [
+          "PMMA D98xL18",
+          "Disc_D98xL18",
+          "PMMA Disc",
+          "PMMA",
+          "18 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-5.webp"
+      },
+      {
+        "values": [
+          "PMMA D98xL20",
+          "Disc_D98xL20",
+          "PMMA Disc",
+          "PMMA",
+          "20 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-6.webp"
+      },
+      {
+        "values": [
+          "PMMA D98xL22",
+          "Disc_D98xL22",
+          "PMMA Disc",
+          "PMMA",
+          "22 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-7.webp"
+      },
+      {
+        "values": [
+          "PMMA D98xL25",
+          "Disc_D98xL25",
+          "PMMA Disc",
+          "PMMA",
+          "25 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-8.webp"
+      },
+      {
+        "values": [
+          "PMMA D98xL30",
+          "Disc_D98xL30",
+          "PMMA Disc",
+          "PMMA",
+          "30 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-13-1-9.webp"
+      }
+    ]
+  },
+  {
+    "name": "Pre-Mill+Reverse",
+    "products": [
+      {
+        "values": [
+          "premill_0.2",
+          "Pre-Mill_D10_0.2",
+          "Pre-Mill+Reverse",
+          "Metal",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-14-1-1.webp"
+      },
+      {
+        "values": [
+          "Pre-Mill_D10xL20+Reverse",
+          "Pre-Mill_D10+Reverse",
+          "Pre-Mill+Reverse",
+          "Metal",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-14-1-2.webp"
+      },
+      {
+        "values": [
+          "Pre-Mill_D12xL20+Reverse",
+          "Pre-Mill_D12+Reverse",
+          "Pre-Mill+Reverse",
+          "Metal",
+          "11.999 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-14-1-3.webp"
+      },
+      {
+        "values": [
+          "Pre-Mill_D14xL20+Reverse",
+          "Pre-Mill_D14+Reverse",
+          "Pre-Mill+Reverse",
+          "Metal",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-14-1-4.webp"
+      }
+    ]
+  },
+  {
+    "name": "Zirconia Disc",
+    "products": [
+      {
+        "values": [
+          "Sintering Metal D98xL10",
+          "Disc_D98xL10",
+          "Zirconia Disc",
+          "Sintering Metal",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-1.webp"
+      },
+      {
+        "values": [
+          "Sintering Metal D98xL12",
+          "Disc_D98xL12",
+          "Zirconia Disc",
+          "Sintering Metal",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-2.webp"
+      },
+      {
+        "values": [
+          "Sintering Metal D98xL14",
+          "Disc_D98xL14",
+          "Zirconia Disc",
+          "Sintering Metal",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-3.webp"
+      },
+      {
+        "values": [
+          "Sintering Metal D98xL16",
+          "Disc_D98xL16",
+          "Zirconia Disc",
+          "Sintering Metal",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-4.webp"
+      },
+      {
+        "values": [
+          "Sintering Metal D98xL18",
+          "Disc_D98xL18",
+          "Zirconia Disc",
+          "Sintering Metal",
+          "18 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-5.webp"
+      },
+      {
+        "values": [
+          "Sintering Metal D98xL20",
+          "Disc_D98xL20",
+          "Zirconia Disc",
+          "Sintering Metal",
+          "20 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-6.webp"
+      },
+      {
+        "values": [
+          "Sintering Metal D98xL22",
+          "Disc_D98xL22",
+          "Zirconia Disc",
+          "Sintering Metal",
+          "22 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-7.webp"
+      },
+      {
+        "values": [
+          "Sintering Metal D98xL25",
+          "Disc_D98xL25",
+          "Zirconia Disc",
+          "Sintering Metal",
+          "25 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-1-8.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL10",
+          "Disc_D98xL10",
+          "Zirconia Disc",
+          "Zirconia",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-1.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL12",
+          "Disc_D98xL12",
+          "Zirconia Disc",
+          "Zirconia",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-2.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL14",
+          "Disc_D98xL14",
+          "Zirconia Disc",
+          "Zirconia",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-3.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL15",
+          "Disc_D98xL15",
+          "Zirconia Disc",
+          "Zirconia",
+          "15 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-4.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL16",
+          "Disc_D98xL16",
+          "Zirconia Disc",
+          "Zirconia",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-5.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL18",
+          "Disc_D98xL18",
+          "Zirconia Disc",
+          "Zirconia",
+          "18 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-6.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL20",
+          "Disc_D98xL20",
+          "Zirconia Disc",
+          "Zirconia",
+          "20 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-7.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL22",
+          "Disc_D98xL22",
+          "Zirconia Disc",
+          "Zirconia",
+          "22 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-8.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL25",
+          "Disc_D98xL25",
+          "Zirconia Disc",
+          "Zirconia",
+          "25 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-9.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL28",
+          "Disc_D98xL28",
+          "Zirconia Disc",
+          "Zirconia",
+          "28 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-10.webp"
+      },
+      {
+        "values": [
+          "Zirconia D98xL30",
+          "Disc_D98xL30",
+          "Zirconia Disc",
+          "Zirconia",
+          "30 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-15-2-11.webp"
+      }
+    ]
+  },
+  {
+    "name": "Ti. Disc",
+    "products": [
+      {
+        "values": [
+          "Titanium D98xL10",
+          "Disc_D98xL10",
+          "Ti. Disc",
+          "Metal",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-1.webp"
+      },
+      {
+        "values": [
+          "Titanium D98xL12",
+          "Disc_D98xL12",
+          "Ti. Disc",
+          "Metal",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-2.webp"
+      },
+      {
+        "values": [
+          "Titanium D98xL14",
+          "Disc_D98xL14",
+          "Ti. Disc",
+          "Metal",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-3.webp"
+      },
+      {
+        "values": [
+          "Titanium D98xL16",
+          "Disc_D98xL16",
+          "Ti. Disc",
+          "Metal",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-4.webp"
+      },
+      {
+        "values": [
+          "Titanium D98xL18",
+          "Disc_D98xL18",
+          "Ti. Disc",
+          "Metal",
+          "18 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-5.webp"
+      },
+      {
+        "values": [
+          "Titanium D98xL20",
+          "Disc_D98xL20",
+          "Ti. Disc",
+          "Metal",
+          "20 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-6.webp"
+      },
+      {
+        "values": [
+          "Titanium D98xL22",
+          "Disc_D98xL22",
+          "Ti. Disc",
+          "Metal",
+          "22 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-7.webp"
+      },
+      {
+        "values": [
+          "Titanium D98xL25",
+          "Disc_D98xL25",
+          "Ti. Disc",
+          "Metal",
+          "25 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-16-1-8.webp"
+      }
+    ]
+  },
+  {
+    "name": "Wax Block",
+    "products": [
+      {
+        "values": [
+          "VITA CAD-Waxx® CW-40/15",
+          "15x14x40",
+          "Wax Block",
+          "Wax",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-17-1-1.webp"
+      }
+    ]
+  },
+  {
+    "name": "Wax Disc",
+    "products": [
+      {
+        "values": [
+          "Wax D98xL10",
+          "Disc_D98xL10",
+          "Wax Disc",
+          "Wax",
+          "10 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-1.webp"
+      },
+      {
+        "values": [
+          "Wax D98xL12",
+          "Disc_D98xL12",
+          "Wax Disc",
+          "Wax",
+          "12 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-2.webp"
+      },
+      {
+        "values": [
+          "Wax D98xL14",
+          "Disc_D98xL14",
+          "Wax Disc",
+          "Wax",
+          "14 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-3.webp"
+      },
+      {
+        "values": [
+          "Wax D98xL16",
+          "Disc_D98xL16",
+          "Wax Disc",
+          "Wax",
+          "16 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-4.webp"
+      },
+      {
+        "values": [
+          "Wax D98xL18",
+          "Disc_D98xL18",
+          "Wax Disc",
+          "Wax",
+          "18 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-5.webp"
+      },
+      {
+        "values": [
+          "Wax D98xL20",
+          "Disc_D98xL20",
+          "Wax Disc",
+          "Wax",
+          "20 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-6.webp"
+      },
+      {
+        "values": [
+          "Wax D98xL22",
+          "Disc_D98xL22",
+          "Wax Disc",
+          "Wax",
+          "22 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-7.webp"
+      },
+      {
+        "values": [
+          "Wax D98xL25",
+          "Disc_D98xL25",
+          "Wax Disc",
+          "Wax",
+          "25 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-18-1-8.webp"
+      }
+    ]
+  },
+  {
+    "name": "Zirconia Block",
+    "products": [
+      {
+        "values": [
+          "Zirconia 14.5x14.5x18",
+          "14.5x14.5x18",
+          "Zirconia Block",
+          "Zirconia",
+          "14.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-1.webp"
+      },
+      {
+        "values": [
+          "Zirconia 15.5x15.5x40",
+          "15.5x15.5x40",
+          "Zirconia Block",
+          "Zirconia",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-2.webp"
+      },
+      {
+        "values": [
+          "Zirconia 19x15.5x20",
+          "19x15.5x20",
+          "Zirconia Block",
+          "Zirconia",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-3.webp"
+      },
+      {
+        "values": [
+          "Zirconia 19x15.5x40",
+          "19x15.5x40",
+          "Zirconia Block",
+          "Zirconia",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-4.webp"
+      },
+      {
+        "values": [
+          "Zirconia 19x15.5x55",
+          "19x15.5x55",
+          "Zirconia Block",
+          "Zirconia",
+          "15.5 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-5.webp"
+      },
+      {
+        "values": [
+          "Zirconia 19x19x55",
+          "19x19x55",
+          "Zirconia Block",
+          "Zirconia",
+          "19 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-6.webp"
+      },
+      {
+        "values": [
+          "Zirconia 25x22x65",
+          "25x22x65",
+          "Zirconia Block",
+          "Zirconia",
+          "22 mm"
+        ],
+        "image": "assets/images/mai-hyperdent-materials/material-19-1-7.webp"
+      }
+    ]
+  }
+]

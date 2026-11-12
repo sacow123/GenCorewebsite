@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <fixturetypeproperties_table>
+      <fixturetypeproperties id="736d7b79-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>94dd3102-9b5c-4ab4-98e8-f0549b3787e8</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b7a-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>ae457365-13cd-410c-94f6-ebdb4b148970</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b7b-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>ae457365-13cd-410c-94f6-ebdb4b148969</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b7c-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>94dd3102-936c-4ab4-98e8-f0549b3787e8</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b7d-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>94dd3102-9b5c-7ab4-98e8-f0549b3787e8</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b7e-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>ae457365-13cd-410c-91f6-ebdb4b148969</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b7f-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>BX5P - Premill Jig</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b80-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>BX5P - Disk</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b81-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>94dd3102-9b6c-4ab4-98e8-f0549b3787e8</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b82-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>94dd3102-9b5c-4ab4-98e8-f0549b3487e8</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b83-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>94dd3102-9b7c-4ab4-98e8-f0549b3787e9</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b84-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>94dd3102-9b5c-4ab4-98e8-f0549b3787e9</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b85-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>RS5 slice jig</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b86-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>S5 slice jig</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b87-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>S5II - 6P - Box</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b88-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>S5II - Disk</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="736d7b8a-6610-11ed-9d4d-14857f7eaaee">
+         <version>1</version>
+         <ref>34dc1372-2b4c-7ab1-11e8-f0781b0557e6</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="596a171f-6a2a-11ed-9d4f-14857f7eaaee">
+         <version>1</version>
+         <ref>X5 - Disk</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>1</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="355ef2db-a542-11ee-9e0e-14857f7eaaee">
+         <version>1</version>
+         <ref>af457365-13bd-410c-94f6-ebdb4b148833</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometrygroup">4ae0110d-5a14-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value>c:\users\public\documents\open mind\mdf\din_iso.mdf::MAI</value>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>1</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>2</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>0</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="355ef2dc-a542-11ee-9e0e-14857f7eaaee">
+         <version>1</version>
+         <ref>af457365-13bd-410c-94f6-ebdb4b148811</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="355ef2dd-a542-11ee-9e0e-14857f7eaaee">
+         <version>1</version>
+         <ref>af457365-13bd-410c-94f6-ebdb4b148868</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometry">9856aa9d-4b2b-11e7-9678-6c4008b97e9b</rfilter>
+         <rfilter type="blankgeometry">b6a20b06-7c70-11ef-9e8f-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">8d0a355d-2765-11ed-9d2d-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">c0e7e8b1-7c70-11ef-9e8f-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">e0c3336d-e7c7-11ec-9d0e-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">53b43c3d-ca9d-11f0-a4a5-ec4c8c8ee783</rfilter>
+         <rfilter type="blankgeometry">05337852-63d0-11f1-a4d0-ec4c8c8ee783</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value>c:\users\public\documents\open mind\mdf\din_iso.mdf::MAI</value>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>1</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>1</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="4c162a46-d513-11ee-9e29-14857f7eaaee">
+         <version>1</version>
+         <ref>af457365-23bd-411c-94f6-ebdb4b148811</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometrygroup">236c0061-5a14-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value>c:\users\public\documents\open mind\mdf\din_iso.mdf::MAI</value>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>1</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>1</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>2</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>3</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="4c162a47-d513-11ee-9e29-14857f7eaaee">
+         <version>1</version>
+         <ref>af457365-13bd-411c-94f6-ebdb4b148811</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>1</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="4d4e420c-3a77-11ef-8e54-d85ed3abfe3c">
+         <version>1</version>
+         <ref>af457365-13bd-410c-94f6-ebdb4b148821</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>1</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="77cb83fc-3a77-11ef-8e54-d85ed3abfe3c">
+         <version>1</version>
+         <ref>ab457365-13bd-211c-92f6-abcd4b148888</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="4b48e6b0-5f80-11ef-8bca-181deae7bdc2">
+         <version>1</version>
+         <ref>af457365-13bd-410c-94f6-ebdb4b148869</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometry">bca9e972-a0da-11ec-9ce0-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">f5216fd6-2765-11ed-9d2d-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">b993baad-e7c7-11ec-9d0e-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">6efca018-7c68-11ef-9e8f-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">9a59d5d9-7c70-11ef-9e8f-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">a578cf9e-7c70-11ef-9e8f-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">e9cf57f7-b20f-11ef-9ec7-14857f7eaaee</rfilter>
+         <rfilter type="blankgeometry">28389fba-8f9d-11f0-bc5e-ec4c8c8ee783</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value>c:\users\public\documents\open mind\mdf\din_iso.mdf::MAI</value>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>1</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>1</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="e1811709-7178-11ef-9e88-14857f7eaaee">
+         <version>1</version>
+         <ref>af457365-23bd-411c-94f6-ebdb4b148812</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometrygroup">236c0061-5a14-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value>c:\users\public\documents\open mind\mdf\din_iso.mdf::MAI</value>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>1</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>1</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="df9e6f6e-857a-11f1-a4da-ec4c8c8ee783">
+         <version>1</version>
+         <ref>af457365-13bd-410c-94f6-ebdb4b148870</ref>
+         <rfilter type="blankgeometrygroup">0</rfilter>
+         <rfilter type="blankgeometrygroup">424caa63-7474-11f1-a4d4-ec4c8c8ee783</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value>c:\users\public\documents\open mind\mdf\din_iso.mdf::MAI</value>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>1</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+      <fixturetypeproperties id="356edb62-9aad-11f1-a4de-ec4c8c8ee783">
+         <version>1</version>
+         <ref>af457365-13bd-410c-94f6-ebdb4b148834</ref>
+         <rfilter type="blankgeometry">0</rfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <getncstrigger/>
+         <ptiltaxis>any</ptiltaxis>
+         <calcinnccs>0</calcinnccs>
+         <toolchangeoptimization>-1</toolchangeoptimization>
+         <enableopenfixture>0</enableopenfixture>
+         <viewrotationaxispreference>0</viewrotationaxispreference>
+         <ignoreboundbox>0</ignoreboundbox>
+         <createtraverses>1</createtraverses>
+         <pro_speed>0</pro_speed>
+         <pro_overl>1</pro_overl>
+         <pro_conct>0</pro_conct>
+         <pro_screw>0</pro_screw>
+         <off_con>0.2</off_con>
+         <useautonest>1</useautonest>
+         <nst_user>0</nst_user>
+         <error/>
+         <err_dir>0</err_dir>
+         <err_cos>4</err_cos>
+         <err_mag>4</err_mag>
+      </fixturetypeproperties>
+   </fixturetypeproperties_table>
+</fmDatabase>

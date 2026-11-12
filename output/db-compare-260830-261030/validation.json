@@ -1,0 +1,18 @@
+{
+  "parsed": [
+    21,
+    21
+  ],
+  "skipped": [
+    {
+      "side": 0,
+      "file": "hdSinterFrameProfileParameters.hddb",
+      "reason": "Byte-identical; different encoding"
+    },
+    {
+      "side": 1,
+      "file": "hdSinterFrameProfileParameters.hddb",
+      "reason": "Byte-identical; different encoding"
+    }
+  ]
+}

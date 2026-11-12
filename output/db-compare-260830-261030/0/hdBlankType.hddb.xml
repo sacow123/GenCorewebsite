@@ -1,0 +1,2625 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2">
+   <blanktype_table>
+      <blanktype id="1439cfc3-95a3-11e1-8de4-0026831895e8">
+         <version>5</version>
+         <name>PMMA D98xL14</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="2d631b69-95a3-11e1-8de4-0026831895e8">
+         <version>5</version>
+         <name>PMMA D98xL18</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">c06e9767-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="fab640a3-1b7d-11e7-8b06-b00594f36797">
+         <version>5</version>
+         <name>PMMA D98xL25</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">22a9f8a2-4787-11e3-8706-0cd29242f0cb</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="cf930cfd-4703-11e8-8a68-9061aeceed56">
+         <version>5</version>
+         <name>PMMA D98xL30</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">33e7ba24-e494-11e5-9273-b3b74293faad</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="35e686c2-bebe-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Wax D98xL10</name>
+         <material type="material">c0155e6b-c2c7-11e2-a2c6-74e54352c191</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="69a6d816-bebe-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Wax D98xL12</name>
+         <material type="material">c0155e6b-c2c7-11e2-a2c6-74e54352c191</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="8a061f0d-bebe-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Wax D98xL14</name>
+         <material type="material">c0155e6b-c2c7-11e2-a2c6-74e54352c191</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="b7764778-bebe-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Wax D98xL16</name>
+         <material type="material">c0155e6b-c2c7-11e2-a2c6-74e54352c191</material>
+         <geometry type="blankgeometry">152e2edf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="824d2f70-dcd4-11e4-a60c-0cd29242f0cb">
+         <version>5</version>
+         <name>Wax D98xL18</name>
+         <material type="material">c0155e6b-c2c7-11e2-a2c6-74e54352c191</material>
+         <geometry type="blankgeometry">c06e9767-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="8847c438-dcd4-11e4-a60c-0cd29242f0cb">
+         <version>5</version>
+         <name>Wax D98xL20</name>
+         <material type="material">c0155e6b-c2c7-11e2-a2c6-74e54352c191</material>
+         <geometry type="blankgeometry">fb411bdf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="ef11d9c9-bebe-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Wax D98xL22</name>
+         <material type="material">c0155e6b-c2c7-11e2-a2c6-74e54352c191</material>
+         <geometry type="blankgeometry">22ab4214-40cd-11e0-9472-bcaec507987a</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="15f2c956-bebf-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Wax D98xL25</name>
+         <material type="material">c0155e6b-c2c7-11e2-a2c6-74e54352c191</material>
+         <geometry type="blankgeometry">22a9f8a2-4787-11e3-8706-0cd29242f0cb</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="aec1ab10-4770-11e3-8706-0cd29242f0cb">
+         <version>5</version>
+         <name>Zirconia D98xL10</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="f2db0579-04cf-11de-a0e6-002170b360ab">
+         <version>5</version>
+         <name>Zirconia D98xL12</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="cf8ba03d-028b-11de-a0e2-002186a4af5a">
+         <version>5</version>
+         <name>Zirconia D98xL14</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="33d22783-028c-11de-a0e2-002186a4af5a">
+         <version>5</version>
+         <name>Zirconia D98xL16</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">152e2edf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="d3b1166f-028c-11de-a0e2-002186a4af5a">
+         <version>5</version>
+         <name>Zirconia D98xL18</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">c06e9767-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="62184ac5-589d-11de-ae72-002170b360ab">
+         <version>5</version>
+         <name>Zirconia D98xL20</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">fb411bdf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="de262e01-42ad-11e2-9638-000df07f4570">
+         <version>5</version>
+         <name>Zirconia D98xL22</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">22ab4214-40cd-11e0-9472-bcaec507987a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="5d5fa923-4787-11e3-8706-0cd29242f0cb">
+         <version>5</version>
+         <name>Zirconia D98xL25</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">22a9f8a2-4787-11e3-8706-0cd29242f0cb</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="84f69992-be29-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Hybrid Ceramic D98xL10</name>
+         <material type="material">349f049a-be21-11eb-a186-9061aeceecac</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="b8964d04-be29-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Hybrid Ceramic D98xL12</name>
+         <material type="material">349f049a-be21-11eb-a186-9061aeceecac</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="fd6ee3c3-be29-11eb-a186-9061aeceecac">
+         <version>5</version>
+         <name>Hybrid Ceramic D98xL14</name>
+         <material type="material">349f049a-be21-11eb-a186-9061aeceecac</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="9d6bef3e-b0df-11ed-9d7a-14857f7eaaee">
+         <version>5</version>
+         <name>PMMA D98xL12</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="b47e788c-b0df-11ed-9d7a-14857f7eaaee">
+         <version>5</version>
+         <name>PMMA D98xL16</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">152e2edf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="bc34967f-b0df-11ed-9d7a-14857f7eaaee">
+         <version>5</version>
+         <name>PMMA D98xL20</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">fb411bdf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="fc5a2a5a-f54c-11ed-9da2-14857f7eaaee">
+         <version>5</version>
+         <name>PMMA D98xL10</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="057a5f17-f54d-11ed-9da2-14857f7eaaee">
+         <version>5</version>
+         <name>Zirconia D98xL30</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">33e7ba24-e494-11e5-9273-b3b74293faad</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="7b76983b-f554-11ed-9da2-14857f7eaaee">
+         <version>5</version>
+         <name>Hybrid Ceramic D98xL08</name>
+         <material type="material">349f049a-be21-11eb-a186-9061aeceecac</material>
+         <geometry type="blankgeometry">3a199548-f54d-11ed-9da2-14857f7eaaee</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="7a69dfb2-635f-11ee-9de2-14857f7eaaee">
+         <version>5</version>
+         <name>Sintering Metal D98xL10</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">01d4aa82-964d-11ee-9e04-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="84d728a8-635f-11ee-9de2-14857f7eaaee">
+         <version>5</version>
+         <name>Sintering Metal D98xL12</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">01d4aa82-964d-11ee-9e04-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="8ad29e98-635f-11ee-9de2-14857f7eaaee">
+         <version>5</version>
+         <name>Sintering Metal D98xL14</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">01d4aa82-964d-11ee-9e04-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="8ad29e9a-635f-11ee-9de2-14857f7eaaee">
+         <version>5</version>
+         <name>Sintering Metal D98xL16</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">152e2edf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">01d4aa82-964d-11ee-9e04-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="948962d2-635f-11ee-9de2-14857f7eaaee">
+         <version>5</version>
+         <name>Sintering Metal D98xL18</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">c06e9767-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">01d4aa82-964d-11ee-9e04-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="948962d4-635f-11ee-9de2-14857f7eaaee">
+         <version>5</version>
+         <name>Sintering Metal D98xL20</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">fb411bdf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">01d4aa82-964d-11ee-9e04-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="9dedd712-635f-11ee-9de2-14857f7eaaee">
+         <version>5</version>
+         <name>Sintering Metal D98xL22</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">22ab4214-40cd-11e0-9472-bcaec507987a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">01d4aa82-964d-11ee-9e04-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="9dedd714-635f-11ee-9de2-14857f7eaaee">
+         <version>5</version>
+         <name>Sintering Metal D98xL25</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">22a9f8a2-4787-11e3-8706-0cd29242f0cb</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">01d4aa82-964d-11ee-9e04-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="7f5f08a1-97cd-11ee-9e05-14857f7eaaee">
+         <version>5</version>
+         <name>PMMA D98xL22</name>
+         <material type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</material>
+         <geometry type="blankgeometry">22ab4214-40cd-11e0-9472-bcaec507987a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="e3d55529-aacd-11ee-9e0f-14857f7eaaee">
+         <version>5</version>
+         <name>Titanium D98xL14</name>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="a0ba2ccd-df89-11ee-9e2f-14857f7eaaee">
+         <version>5</version>
+         <name>Titanium D98xL12</name>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="a6e7db38-df89-11ee-9e2f-14857f7eaaee">
+         <version>5</version>
+         <name>Titanium D98xL10</name>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="ad6b3547-df89-11ee-9e2f-14857f7eaaee">
+         <version>5</version>
+         <name>Titanium D98xL16</name>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <geometry type="blankgeometry">152e2edf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="ad6b3549-df89-11ee-9e2f-14857f7eaaee">
+         <version>5</version>
+         <name>Titanium D98xL18</name>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <geometry type="blankgeometry">c06e9767-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="2e126b88-5860-11ef-8bc9-181deae7bdc2">
+         <version>5</version>
+         <name>Titanium D98xL20</name>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <geometry type="blankgeometry">fb411bdf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="354f6b5b-5860-11ef-8bc9-181deae7bdc2">
+         <version>5</version>
+         <name>Titanium D98xL25</name>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <geometry type="blankgeometry">22a9f8a2-4787-11e3-8706-0cd29242f0cb</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="e6c5fa5b-3142-11ec-9160-f01faf0ca9d6">
+         <version>5</version>
+         <name>GN-I® Ti. Block_L</name>
+         <material type="material">569efd20-6d42-11ec-836e-683e261e4299</material>
+         <geometry type="blankgeometry">bf6daf80-3142-11ec-9160-f01faf0ca9d6</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="f055c7c2-3142-11ec-9160-f01faf0ca9d6">
+         <version>5</version>
+         <name>GN-I® Ti. Block_M</name>
+         <material type="material">569efd20-6d42-11ec-836e-683e261e4299</material>
+         <geometry type="blankgeometry">d3d31584-3142-11ec-9160-f01faf0ca9d6</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="541561d3-a34a-11eb-8377-683e261e4299">
+         <version>5</version>
+         <name>Amber®Mill C12</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">2fa00c99-6862-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">32e1f3c9-a4c7-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="5b280103-bd0e-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Amber®Mill C14</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">8dfb1230-6862-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">32e1f3c9-a4c7-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="be7c64a8-bd12-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Amber®Mill H C10</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">df55f7fa-6921-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">32e1f3c9-a4c7-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="6b525c9a-bd12-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Amber®Mill H C12</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">2fa00c99-6862-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">32e1f3c9-a4c7-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="8a8eedb4-bd12-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Amber®Mill H C14</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">8dfb1230-6862-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">32e1f3c9-a4c7-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="70eaad90-4790-11ec-8964-00d86184a5e5">
+         <version>5</version>
+         <name>GC Initial®LiSi Block 14</name>
+         <material type="material">123ed703-562b-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">4b8a3990-4790-11ec-8964-00d86184a5e5</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a59803cd-4b48-11ec-8366-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="1380393e-bd2e-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 8x8x15</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">b121c839-686b-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="80b15501-bd2d-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 10x8.5x15</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">e082eede-686b-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="e407a144-bd2d-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 12x10x15</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">2fa00c99-6862-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="c962860e-ca7c-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 12.5x10.5x16</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">a7b5f3d2-6924-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="6ab72861-ca69-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 12x12x15</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">c5d57d9e-6920-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="3ad4acfc-bd2e-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 14x12x18</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">8dfb1230-6862-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="d6311193-ca68-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 14.5x14.5x18</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">195cce6e-69f8-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="8d2fbcce-ca7c-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 18x16x18</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">74533a21-69cb-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="f1d8005b-88e2-11e9-9cd0-f4939fef9b1e">
+         <version>5</version>
+         <name>Glass Ceramic 15.5x15.5x32</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">1596f8a6-ca77-11eb-837a-683e261e4299</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="b1435609-bd2e-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Glass Ceramic 15.5x15.5x40</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">4cc02564-ca77-11eb-837a-683e261e4299</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="19b0c3d7-bd2f-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Hybrid Ceramic 12x10x15</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">2fa00c99-6862-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="144e9004-ca7a-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Hybrid Ceramic 12.5x10.5x16</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">a7b5f3d2-6924-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="ed18b9b5-bd2e-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Hybrid Ceramic 14x12x18</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">8dfb1230-6862-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="24a11435-bd30-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Hybrid Ceramic 14.5x14.5x18</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">195cce6e-69f8-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="28a23692-ccfb-11eb-837c-683e261e4299">
+         <version>5</version>
+         <name>Hybrid Ceramic 12x14x18</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">0a087904-ccfb-11eb-837c-683e261e4299</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="f20f549d-9b5c-11eb-8374-683e261e4299">
+         <version>5</version>
+         <name>IPS e.max® B32</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">0b22d26c-69c5-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a59803ac-4b48-11ec-8366-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="a24c4a7f-9b5b-11eb-8374-683e261e4299">
+         <version>5</version>
+         <name>IPS e.max® C14</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">3f0915a8-517f-11eb-889c-f4939fef9b1e</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a59803ac-4b48-11ec-8366-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="77fc0b4f-3f65-11e5-8b1c-b00594f36797">
+         <version>5</version>
+         <name>IPS e.max® C16</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">c93be2bc-ca77-11eb-837a-683e261e4299</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a59803ac-4b48-11ec-8366-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="5542e8d3-9b5c-11eb-8374-683e261e4299">
+         <version>5</version>
+         <name>IPS e.max® I12</name>
+         <material type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</material>
+         <geometry type="blankgeometry">a7b5f3d2-6924-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a59803ac-4b48-11ec-8366-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="fa3b4300-bd2c-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Zirconia 19x15.5x20</name>
+         <material type="material">eb876623-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">e0a68f97-bd2c-11eb-837a-683e261e4299</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="ca99c89b-bd2c-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Zirconia 19x15.5x40</name>
+         <material type="material">eb876623-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">b5d68d47-8545-11ea-a146-a44cc835bc01</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="0395be76-bd2d-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Zirconia 19x15.5x55</name>
+         <material type="material">eb876623-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">eb4f41ad-bd2c-11eb-837a-683e261e4299</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="0cbeaae4-bd2d-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Zirconia 25x22x65</name>
+         <material type="material">eb876623-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">29f67b9f-9505-11ea-a147-a44cc835bc01</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="69e4d1e4-ca7d-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>PMMA 18x16x18</name>
+         <material type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">74533a21-69cb-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="836a53c6-ca7d-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>PMMA 19x15.5x40</name>
+         <material type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">b5d68d47-8545-11ea-a146-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="6e848c99-cca9-11eb-837c-683e261e4299">
+         <version>5</version>
+         <name>PMMA 19x19x55</name>
+         <material type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">f8d58e16-9504-11ea-a147-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="87822f3a-c9b0-11eb-879b-4074e0a77ed8">
+         <version>5</version>
+         <name>VITA CAD-Temp® CT-40</name>
+         <material type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">87822f38-c9b0-11eb-879b-4074e0a77ed8</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="21e1ba82-c9b3-11eb-879b-4074e0a77ed8">
+         <version>5</version>
+         <name>VITA CAD-Temp® CT-55</name>
+         <material type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">4c6e4ed4-c9b3-11eb-879b-4074e0a77ed8</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0.6</partoffset>
+         <colorscheme type="blankcolorscheme">ce2d6557-3fcf-11ed-bdba-8c04ba42194c</colorscheme>
+      </blanktype>
+      <blanktype id="82ce7b50-bd30-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>VITA CAD-Waxx® CW-40/15</name>
+         <material type="material">c2ab90a9-5622-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">71670629-9505-11ea-a147-a44cc835bc01</geometry>
+         <transparency>0.3</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4211ab82-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="fadaba8f-ca7c-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Zirconia 14.5x14.5x18</name>
+         <material type="material">eb876623-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">195cce6e-69f8-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="2e23287a-ca7d-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Zirconia 15.5x15.5x40</name>
+         <material type="material">eb876623-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">4cc02564-ca77-11eb-837a-683e261e4299</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="4a36e2fd-ca7d-11eb-837a-683e261e4299">
+         <version>5</version>
+         <name>Zirconia 19x19x55</name>
+         <material type="material">eb876623-5629-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">f8d58e16-9504-11ea-a147-a44cc835bc01</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="255bec0f-7704-11ef-9e8d-14857f7eaaee">
+         <version>5</version>
+         <name>CoCr D98xL10</name>
+         <material type="material">a3459606-c1e7-11e2-abb2-685d43313a48</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="324595b5-7704-11ef-9e8d-14857f7eaaee">
+         <version>5</version>
+         <name>CoCr D98xL12</name>
+         <material type="material">a3459606-c1e7-11e2-abb2-685d43313a48</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="324595b7-7704-11ef-9e8d-14857f7eaaee">
+         <version>5</version>
+         <name>CoCr D98xL14</name>
+         <material type="material">a3459606-c1e7-11e2-abb2-685d43313a48</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="4283030f-7704-11ef-9e8d-14857f7eaaee">
+         <version>5</version>
+         <name>CoCr D98xL16</name>
+         <material type="material">a3459606-c1e7-11e2-abb2-685d43313a48</material>
+         <geometry type="blankgeometry">152e2edf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="49852397-7704-11ef-9e8d-14857f7eaaee">
+         <version>5</version>
+         <name>CoCr D98xL18</name>
+         <material type="material">a3459606-c1e7-11e2-abb2-685d43313a48</material>
+         <geometry type="blankgeometry">c06e9767-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="d1397432-8052-11ef-9e94-14857f7eaaee">
+         <version>5</version>
+         <name>Hybrid Ceramic D98xL20</name>
+         <material type="material">349f049a-be21-11eb-a186-9061aeceecac</material>
+         <geometry type="blankgeometry">fb411bdf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="36501efd-9a40-11ef-9eab-14857f7eaaee">
+         <version>5</version>
+         <name>Titanium D98xL22</name>
+         <material type="material">3926141c-956b-11ee-9e03-14857f7eaaee</material>
+         <geometry type="blankgeometry">22ab4214-40cd-11e0-9472-bcaec507987a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="a8222cb4-981c-11eb-8374-683e261e4299">
+         <version>5</version>
+         <name>Pre-Mill_D10xL20</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">9856aa9d-4b2b-11e7-9678-6c4008b97e9b</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="ad780c19-a0d9-11ec-9ce0-14857f7eaaee">
+         <version>5</version>
+         <name>Pre-Mill_D10xL20+Reverse</name>
+         <material type="material">75c57801-417f-11e5-82b0-7427ea498abd</material>
+         <geometry type="blankgeometry">bca9e972-a0da-11ec-9ce0-14857f7eaaee</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="fc5c5373-2765-11ed-9d2d-14857f7eaaee">
+         <version>5</version>
+         <name>Pre-Mill_D12xL20</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">8d0a355d-2765-11ed-9d2d-14857f7eaaee</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="fc5c5375-2765-11ed-9d2d-14857f7eaaee">
+         <version>5</version>
+         <name>Pre-Mill_D12xL20+Reverse</name>
+         <material type="material">75c57801-417f-11e5-82b0-7427ea498abd</material>
+         <geometry type="blankgeometry">f5216fd6-2765-11ed-9d2d-14857f7eaaee</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="ebae8774-e7c7-11ec-9d0e-14857f7eaaee">
+         <version>5</version>
+         <name>Pre-Mill_D14xL20</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">e0c3336d-e7c7-11ec-9d0e-14857f7eaaee</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="c50864c0-e7c7-11ec-9d0e-14857f7eaaee">
+         <version>5</version>
+         <name>Pre-Mill_D14xL20+Reverse</name>
+         <material type="material">75c57801-417f-11e5-82b0-7427ea498abd</material>
+         <geometry type="blankgeometry">b993baad-e7c7-11ec-9d0e-14857f7eaaee</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="0f6d85f4-cda1-11ef-9ee7-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK D98xL12</name>
+         <material type="material">c7eafbfe-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="858bca40-d86a-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK D98xL14</name>
+         <material type="material">c7eafbfe-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="d6da4e5f-d961-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK D98xL10</name>
+         <material type="material">c7eafbfe-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="e0fcbe0b-d961-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK D98xL16</name>
+         <material type="material">c7eafbfe-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">152e2edf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="e8b16f45-d961-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK D98xL18</name>
+         <material type="material">c7eafbfe-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">c06e9767-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="f01ca940-d961-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK D98xL20</name>
+         <material type="material">c7eafbfe-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">fb411bdf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="fcd56b43-d961-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK D98xL22</name>
+         <material type="material">c7eafbfe-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">22ab4214-40cd-11e0-9472-bcaec507987a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="fcd56b45-d961-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK D98xL25</name>
+         <material type="material">c7eafbfe-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">22a9f8a2-4787-11e3-8706-0cd29242f0cb</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="16c55211-d963-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK Block 8x8x15</name>
+         <material type="material">c7eafbff-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">b121c839-686b-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="8ff8662e-d963-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK Block 10x8.5x15</name>
+         <material type="material">c7eafbff-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">e082eede-686b-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="a72caea3-d963-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK Block 12.5x10.5x15</name>
+         <material type="material">c7eafbff-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">a658fd90-dcd1-11ec-9d08-14857f7eaaee</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="b9ff3b41-d963-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK Block 14.5x12.5x18</name>
+         <material type="material">c7eafbff-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">93a6a1d1-dcd1-11ec-9d08-14857f7eaaee</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="ccf3986a-d963-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK Block 14.5x14.5x18</name>
+         <material type="material">c7eafbff-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">195cce6e-69f8-11ea-a141-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="d603a744-d963-11ef-9eee-14857f7eaaee">
+         <version>5</version>
+         <name>PEEK Block 16x14.5x18</name>
+         <material type="material">c7eafbff-5df2-11ef-8bca-181deae7bdc2</material>
+         <geometry type="blankgeometry">56bd85fa-dcd0-11ec-9d08-14857f7eaaee</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">6c4c8368-d4b3-11ef-9eec-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="6691c39c-f27a-11ef-9f03-14857f7eaaee">
+         <version>5</version>
+         <name>Glsass Ceramic D98xL10</name>
+         <material type="material">0794f270-562b-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">cfa2eaf7-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="f7dd235a-f34b-11ef-9f04-14857f7eaaee">
+         <version>5</version>
+         <name>Glsass Ceramic D98xL12</name>
+         <material type="material">0794f270-562b-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">dcbd779d-04cc-11de-a0e6-002170b360ab</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="041e1b06-fef2-11ef-9f0a-14857f7eaaee">
+         <version>5</version>
+         <name>CoCr D98xL15</name>
+         <material type="material">a3459606-c1e7-11e2-abb2-685d43313a48</material>
+         <geometry type="blankgeometry">54c2c765-db05-11e5-8aa7-e6f1371b6ba8</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="dd4bc672-aa39-11f0-bc7e-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_Hybrid-Ceramic_Custom C14 (Cuff-2mm)</name>
+         <material type="material">75c57801-417f-11e5-82b0-7427ea498abd</material>
+         <geometry type="blankgeometry">a27ad123-aa39-11f0-bc7e-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="64262911-af01-11f0-87de-ec4c8c8ee783">
+         <version>5</version>
+         <name>Rosetta®SM D98xL10</name>
+         <material type="material">0794f270-562b-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">59c2a0f6-af01-11f0-87de-ec4c8c8ee783</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="4da02872-b917-11f0-a4a1-ec4c8c8ee783">
+         <version>5</version>
+         <name>Glsass Ceramic D98xL14</name>
+         <material type="material">0794f270-562b-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">b5a796e7-028b-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="7caf4344-b9db-11f0-a4a1-ec4c8c8ee783">
+         <version>5</version>
+         <name>Rosetta®SM D98xL08</name>
+         <material type="material">0794f270-562b-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">6b87e470-b9db-11f0-a4a1-ec4c8c8ee783</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="869fa473-b9db-11f0-a4a1-ec4c8c8ee783">
+         <version>5</version>
+         <name>Rosetta®SM D98xL12</name>
+         <material type="material">0794f270-562b-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">5bdd1e7b-b9db-11f0-a4a1-ec4c8c8ee783</geometry>
+         <transparency>0.7</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">738dacd9-5860-11ef-8bc9-181deae7bdc2</colorscheme>
+      </blanktype>
+      <blanktype id="27f5de7d-c42e-11f0-a4a3-ec4c8c8ee783">
+         <version>5</version>
+         <name>Hybrid Ceramic 14.5x12.5x18.5</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">93a6a1d1-dcd1-11ec-9d08-14857f7eaaee</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="883e07bd-dbac-11f0-a4a9-ec4c8c8ee783">
+         <version>5</version>
+         <name>Hybrid Ceramic 10x12x15.5</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">6b7b00d0-dbac-11f0-a4a9-ec4c8c8ee783</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="198cd449-02ee-11f1-a4b7-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D12xL19.25(Meden)+Reverse</name>
+         <material type="material">75c57801-417f-11e5-82b0-7427ea498abd</material>
+         <geometry type="blankgeometry">0603425a-02ef-11f1-a4b7-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="7e62fa2c-02ee-11f1-a4b7-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D16xL20(Meden)+Reverse</name>
+         <material type="material">75c57801-417f-11e5-82b0-7427ea498abd</material>
+         <geometry type="blankgeometry">12a176e2-02ef-11f1-a4b7-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="0dfc9b64-034a-11f1-a4b7-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D12xL14.75_Medentika</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">cad4af89-02d6-11f1-a4b7-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="2ac27a24-034a-11f1-a4b7-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D16xL15.5_Medentika</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">d8762724-02d6-11f1-a4b7-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="78dc5f86-034e-11f1-a4b7-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D12xL20(Meden)+Reverse</name>
+         <material type="material">75c57801-417f-11e5-82b0-7427ea498abd</material>
+         <geometry type="blankgeometry">c14d3736-02ee-11f1-a4b7-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="cf84f5b1-034e-11f1-a4b7-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D12xL15.5_Medentika</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">b336b714-02d6-11f1-a4b7-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="4f8f86e3-03aa-11f1-a4b7-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D12xL12.9_Medentika</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">38b8c791-03aa-11f1-a4b7-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="dd3bdefb-4a86-11f0-840e-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D12xL15.5_CAMLOG</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">b5f9b741-4a86-11f0-840e-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="4bad2347-2360-11f1-a4c3-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D20+Reverse</name>
+         <material type="material">75c57801-417f-11e5-82b0-7427ea498abd</material>
+         <geometry type="blankgeometry">cb10c227-235f-11f1-a4c3-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="dcf48b9c-2cc6-11f1-a4c5-ec4c8c8ee783">
+         <version>5</version>
+         <name>DuraFlex D98xL20</name>
+         <material type="material">b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783</material>
+         <geometry type="blankgeometry">fb411bdf-028c-11de-a0e2-002186a4af5a</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">0220c338-2cc7-11f1-a4c5-ec4c8c8ee783</colorscheme>
+      </blanktype>
+      <blanktype id="8b9d79f3-3165-11f1-a4c7-ec4c8c8ee783">
+         <version>5</version>
+         <name>DuraFlex D98xL25</name>
+         <material type="material">b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783</material>
+         <geometry type="blankgeometry">22a9f8a2-4787-11e3-8706-0cd29242f0cb</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">0220c338-2cc7-11f1-a4c5-ec4c8c8ee783</colorscheme>
+      </blanktype>
+      <blanktype id="97e1a00b-3165-11f1-a4c7-ec4c8c8ee783">
+         <version>5</version>
+         <name>DuraFlex D98xL30</name>
+         <material type="material">b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783</material>
+         <geometry type="blankgeometry">33e7ba24-e494-11e5-9273-b3b74293faad</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">0220c338-2cc7-11f1-a4c5-ec4c8c8ee783</colorscheme>
+      </blanktype>
+      <blanktype id="9f4b71e5-3165-11f1-a4c7-ec4c8c8ee783">
+         <version>5</version>
+         <name>DuraFlex D98xL15</name>
+         <material type="material">b0dbb357-2c15-11f1-a4c5-ec4c8c8ee783</material>
+         <geometry type="blankgeometry">54c2c765-db05-11e5-8aa7-e6f1371b6ba8</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">0220c338-2cc7-11f1-a4c5-ec4c8c8ee783</colorscheme>
+      </blanktype>
+      <blanktype id="abe939f3-559d-11f1-a4cf-ec4c8c8ee783">
+         <version>5</version>
+         <name>Hybrid Ceramic 19x15.5x40</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">b5d68d47-8545-11ea-a146-a44cc835bc01</geometry>
+         <transparency>0.4</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="274a5a40-63d0-11f1-a4d0-ec4c8c8ee783">
+         <version>5</version>
+         <name>Pre-Mill_D16xL14.75_Medentika</name>
+         <material type="material">bd6d005e-69de-11e2-97c2-3085a99772af</material>
+         <geometry type="blankgeometry">05337852-63d0-11f1-a4d0-ec4c8c8ee783</geometry>
+         <transparency>0.5</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">a1582af5-06ed-11ec-8383-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="14307214-694d-11f1-a4d4-ec4c8c8ee783">
+         <version>5</version>
+         <name>Fiber Block 19x15.5x40</name>
+         <material type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</material>
+         <geometry type="blankgeometry">fcc7eff8-694c-11f1-a4d4-ec4c8c8ee783</geometry>
+         <transparency>0.65</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">f04e67f1-6b95-11ed-9d4f-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="6dc2d7fd-738a-11f1-a4d4-ec4c8c8ee783">
+         <version>5</version>
+         <name>Zirconia D98xL15</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">54c2c765-db05-11e5-8aa7-e6f1371b6ba8</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="8a689ffa-2d8a-11f1-a4c5-ec4c8c8ee783">
+         <version>5</version>
+         <name>Dry-Mill 21x16.8x20</name>
+         <material type="material">0bae45c3-2d8e-11f1-a4c5-ec4c8c8ee783</material>
+         <geometry type="blankgeometry">55402d87-2d8a-11f1-a4c5-ec4c8c8ee783</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">db1d3377-613f-11ef-9e7d-14857f7eaaee</colorscheme>
+      </blanktype>
+      <blanktype id="8baf9fb8-7fbf-11f1-a4d7-ec4c8c8ee783">
+         <version>5</version>
+         <name>Zirconia D98xL28</name>
+         <material type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</material>
+         <geometry type="blankgeometry">80484768-7fbf-11f1-a4d7-ec4c8c8ee783</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">4b42bf06-a349-11eb-8377-683e261e4299</colorscheme>
+      </blanktype>
+      <blanktype id="9c831e86-f0c9-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.109</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">a22e6f99-f0c2-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="c81f9317-f0c9-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.109IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">a7844fc8-f0c9-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="e87b4a28-f0c9-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.110</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">e87b4a24-f0c9-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="fbcddf5c-f0c9-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.110IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">f41ac16b-f0c9-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="301b13e3-f0ca-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.111</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">2999077a-f0ca-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="3ede7dc9-f0ca-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.111IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">380f3f08-f0ca-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="6420ec41-f0ca-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.112</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">5bb41283-f0ca-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="a19958d5-f0ca-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.112IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">6ebef133-f0ca-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="aeb3e248-f0ca-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.252</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">aeb3e244-f0ca-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="cd15debf-f0ca-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.252IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">cd15debd-f0ca-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="eda39829-f0ca-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.253</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">eda39825-f0ca-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="f71d8d5e-f0ca-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.253IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">f71d8d5c-f0ca-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="12d2afbb-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.296</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">12d2afb7-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="1c63902a-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.296IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">1c639028-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="3ad5f44a-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.297</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">32fea3d8-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="44dde5fb-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.297IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">3ad5f448-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="6e18a3e1-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.298</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">636f6d31-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="74796105-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.298IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">636f6d36-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="953a673c-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.299</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">7e91e3a7-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="953a673e-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.299IO</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">7e91e3ac-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="e9062b86-f0cb-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.300</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">e09ed652-f0cb-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="03f6076b-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.301</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">03f60767-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="1d8583c3-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.302</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">1d8583bf-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="3a59764c-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>135.303</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">341393bc-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="8fb3b436-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>936226</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">88d0df3b-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="a060fb65-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>936227</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">a060fb61-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="b45bf5c0-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>950781</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">b45bf5bc-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="ca4d4b3f-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>950782</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">bde44ca7-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="db0a7c22-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>950783</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">d19af554-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="ffb5623c-f0cc-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>Blank1153854</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">ffb56238-f0cc-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="2309fc76-f0cd-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>Blank1154988</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">0c66919a-f0cd-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="445e445d-f0cd-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>Blank1154988_10mm</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">3e5f971a-f0cd-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="54e89a25-f0cd-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>Blank1154990</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">54e89a21-f0cd-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="63921301-f0cd-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>Blank1154990_10mm</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">639212fd-f0cd-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="7abaa567-f0cd-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>Blank1583855</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">7abaa563-f0cd-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="8cd77f81-f0cd-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>Blank1584989</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">8cd77f7d-f0cd-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="aaab8551-f0cd-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>Blank1584989_10mm</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">97cad6dd-f0cd-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="9667d05e-f184-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3701001</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">9667d05a-f184-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="8aaf1d17-f184-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3701002</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">7e456c0b-f184-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="fbe2dff7-f0cd-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3702001</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">fbe2dff3-f0cd-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="253d8709-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3702002</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">1c81a99f-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="33d35966-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3702003</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">2cc4bb53-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="47689b4c-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3702004</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">3f540843-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="59d492da-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3703001</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">47689b4f-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="6acb0b72-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3703002</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">61b6e938-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="749a9f42-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3703003</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">749a9f3e-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="84d45606-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>CD3703004</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">7e343468-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="9da8afc1-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>coneD34</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">9da8afbd-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="bbddefa2-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>coneD40</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">a7ade8c0-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="bbddefa4-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>coneD50</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">ae76eb8d-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="e559b3e4-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>hexD34</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">cf75cbd9-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="ec0518b4-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>hexD40</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">d6cb9179-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="ec0518b6-f0ce-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>hexD50</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">df1c0356-f0ce-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="0833ebfd-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>L_1PC</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">0833ebf9-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="192c0300-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>M_1PC</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">1330eca5-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="51fe4149-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>NP1111_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">49e9513e-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="3d4b7b29-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>NP1111_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">3d4b7b25-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="6f16353d-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>NP1115_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">6f163539-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="631fd8dc-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>NP1115_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">5ce2c46f-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="9474dd20-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>OPPM-M-TI-11</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">9474dd1c-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="a7144ac8-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>OPPM-M-TI-16</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">a0c54c3a-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="c0ff539f-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PF35</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">c0ff539b-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="dc6e1955-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PF40</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">cb237612-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="f07b7e11-f0cf-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PF45</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">e5dfb58a-f0cf-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="716e5826-f15b-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PF50</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">65c53e49-f15b-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="7ccc8c4c-f15b-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PF60</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">65c53e4e-f15b-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="8fdfc98a-f15b-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PPMB3</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">89a566ab-f15b-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="bc8fdd6c-f15b-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PPMB4</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">b0e38c20-f15b-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="e40372dd-f15b-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PreFace_LConicalOnePiece</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">e40372d9-f15b-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="ff051cad-f15b-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PreFace_LPlatformOnePiece</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">f70acef7-f15b-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="7c6a4b70-f15d-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PreFace_MConicalOnePiece</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">7c6a4b6c-f15d-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="8c7254d7-f15d-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PreFace_MPlatformOnePiece</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">8673deea-f15d-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="9a798d99-f15d-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PreFace_SConicalOnePiece</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">9a798d95-f15d-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="a5d07f4f-f15d-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PreFace_SPlatformOnePiece</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">a5d07f4b-f15d-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="c54408e9-f15d-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PreFace_v2_11,5</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">c54408e5-f15d-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="d5c3dc7e-f15d-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>PreFace_v2_16</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">cf88586b-f15d-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="9f78b519-f163-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>RP1211_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">96607f17-f163-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="6deaf563-f163-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>RP1211_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">67a6c736-f163-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="c0b24c2b-f163-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>RP1215_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">b84f4300-f163-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="aaaefd62-f163-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>RP1215_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">9f78b51c-f163-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="f61d4532-f163-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>RS1411_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">ed60e26b-f163-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="e28b8379-f163-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>RS1411_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">db4e460b-f163-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="13aa240c-f164-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>RS1415_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">0d10593c-f164-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="01696f10-f164-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>RS1415_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">f61d4535-f163-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="35018a0c-f17d-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>S_1PC</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">35018a08-f17d-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="fb79af3d-f17d-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_NC_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">f50de8cc-f17d-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="0cf96ff5-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_NC_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">0589e683-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="19cca9ac-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_NT_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">19cca9a8-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="2cc6750d-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_NT_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">252380fe-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="4b1eec95-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_RB WB_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">4b1eec91-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="61865618-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_RB WB_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">59e29d78-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="8534893e-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_RC_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">6b9515da-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="93b29915-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_RC_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">8d586064-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="bc31d8e0-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_RN_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">bc31d8dc-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="879c72ff-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_RN_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">b191cfda-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="e3d14921-f17e-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_RT_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">e3d1491d-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="08c86b11-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_RT_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">f22b0248-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="261391cf-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_WB_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">f22b0248-f17e-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="40e188e8-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_WB_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">3180cc9a-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="61e29049-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_WN_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">61e29045-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="74986503-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_WN_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">6cd2b378-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="960371a4-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_WT_large</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">8c32e1bc-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="a05bb357-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>STMNTi_pre-milled_WT_small</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">960371a7-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="ad8573ad-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TN70BlankF</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">ad8573a9-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="da130445-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TN70BlankFTN0535</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">da130441-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="ee7b234f-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TO70BlankF</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">e84a166e-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="fd06d90a-f17f-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TO70BlankFTO0551</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">f5f5cf8a-f17f-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="053bd1b3-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TPM-M-TI-N11</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">053bd1af-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="1825efb2-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TPM-M-TI-N16</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">1033c411-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="22e523c6-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TPM-M-TI-R11</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">1825efb5-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="3296247a-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TPM-M-TI-R16</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">2a75153a-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="424e7d36-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TV70BlankF</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">3aa9732f-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="4ec67334-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>TV70BlankFTV05350550</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">485fbead-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="74a9802d-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>UNP1711_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">74a98029-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="57398265-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>UNP1711_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">57398261-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="c85f8242-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>UNP1715_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">c85f823e-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="bd96cc95-f180-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>UNP1715_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">7ff436bb-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="895142e2-f182-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>WP1311_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">80476769-f182-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="616da1f4-f182-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>WP1311_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">d7bce8e2-f180-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="ade3ef31-f182-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>WP1315_10</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">a70a20ef-f182-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+      <blanktype id="99dc7a7d-f182-11ee-9662-d85ed3abfc18">
+         <version>5</version>
+         <name>WP1315_7</name>
+         <material type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</material>
+         <geometry type="blankgeometry">9143f123-f182-11ee-9662-d85ed3abfc18</geometry>
+         <transparency>0.6</transparency>
+         <partalignment>center</partalignment>
+         <partoffset>0</partoffset>
+         <colorscheme type="blankcolorscheme">47e6e674-1649-11ee-a95d-18c04db240d8</colorscheme>
+      </blanktype>
+   </blanktype_table>
+</fmDatabase>

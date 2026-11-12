@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2" structureversion="3">
+   <default_table>
+      <default>
+         <version>2</version>
+         <rfilter type="material">0794f270-562b-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategy">d7105ee4-b480-11f0-a1f1-84144dcdbae9</profile>
+      </default>
+   </default_table>
+</fmDatabase>

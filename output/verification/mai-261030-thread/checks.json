@@ -1,0 +1,23 @@
+[
+  {
+    "adjustableHasThread": false,
+    "afterInterface": true,
+    "hasNewThreads": true,
+    "threadOpen": true,
+    "title": "CoCr_Abutment Crown Bridge_NCS (highnees)"
+  },
+  {
+    "adjustableHasThread": false,
+    "defaultCollapsed": true,
+    "hasNewThreads": true,
+    "threadOpen": true,
+    "title": "Ti_Abutment Crown bridge_EXT/INT"
+  },
+  {
+    "adjustableHasThread": false,
+    "defaultCollapsed": true,
+    "hasNewThreads": true,
+    "threadOpen": true,
+    "title": "Pre-Mil+Rev._Abutment_90°_M_D1.0"
+  }
+]

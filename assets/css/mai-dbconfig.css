@@ -48,6 +48,15 @@
 #mai-template-modal .mai-template-tool-photo{position:relative;width:74px;height:130px;margin:0 auto 6px;overflow:clip}
 #mai-template-modal .mai-template-tool-photo img{position:absolute;left:50%;top:-10px;width:440px;max-width:none;height:auto;transform:rotate(90deg) translateY(-50%);transform-origin:top left}
 .mai-uda-toggle > summary { cursor: pointer; display: flex; align-items: center; gap: 12px; list-style: none; }
+#mai-template-modal .hybrid-template-card .mai-version-update { color: #5424d8; }
+#mai-template-modal .mai-process-heading, #mai-template-modal .mai-template-meta { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:start; gap:8px; }
+#mai-template-modal .mai-process-heading { margin-bottom:8px; }
+#mai-template-modal .mai-process-heading h5 { margin:0; }
+#mai-template-modal .mai-version-badge { justify-self:end; padding:3px 8px; border-radius:5px; background:#f2ecff; color:#5424d8; font-size:12px; font-weight:700; line-height:1.5; white-space:nowrap; }
+#mai-template-modal .mai-template-meta { align-items:center; }
+#mai-template-modal .mai-template-meta .hybrid-template-card__tag { justify-self:start; }
+#mai-template-modal .mai-thread-guide { margin:0 0 12px; }
+#mai-template-modal .mai-thread-guide a { color:#5424d8; font-size:16px; font-weight:700; text-decoration:underline; text-underline-offset:3px; }
 .mai-uda-toggle > summary::-webkit-details-marker { display: none; }
 .mai-uda-toggle > summary::after { content: '⌄'; margin-left: auto; color: #7c3aed; font-size: 22px; }
 .mai-uda-toggle[open] > summary::after { transform: rotate(180deg); }
@@ -65,4 +74,5 @@
 #sec-mai-hd-settings-db .dbconfig-prosthesis-detail { flex-wrap:nowrap; gap:clamp(2px, .8cqw, 8px); padding:clamp(6px, 2cqw, 22px); }
 #sec-mai-hd-settings-db .dbconfig-prosthesis-detail .dbconfig-filter-button { flex:1 1 auto; min-width:0; white-space:nowrap; overflow-wrap:normal; padding:clamp(4px, 1cqw, 8px) clamp(2px, 1cqw, 12px); font-size:clamp(4px, calc(100cqw / var(--detail-count, 5) / 10), 14px); }
 
-#sec-mai-hd-settings-db .dbconfig-prosthesis-type > span:last-child {white-space:nowrap;overflow-wrap:normal;min-width:0;}
+/* Keep long prosthesis names inside their own card at every picker width. */
+#sec-mai-hd-settings-db .dbconfig-prosthesis-type > span:last-child { display:block; width:100%; max-width:100%; min-width:0; white-space:normal; overflow-wrap:normal; word-break:normal; hyphens:none; font-size:clamp(6px, calc(100cqw / var(--prosthesis-count, 8) / 8), 12px); line-height:1.35; }

@@ -1,0 +1,82 @@
+Files [ 486, 618 ] { changed: 18, added: 277, removed: 145, unchanged: 323 }
+Changed DB [
+  'hdBlankColorScheme.hddb',
+  'hdBlankGeometry.hddb',
+  'hdBlankGeometryGroup.hddb',
+  'hdBlankType.hddb',
+  'hdConnectorProfile.hddb',
+  'hdFixtureTypeDefaults.hddb',
+  'hdFixtureTypeProperties.hddb',
+  'hdMaterial.hddb',
+  'hdNPmillstrategy.hddb',
+  'hdNPmillstrategyvariantprofile.hddb',
+  'hdNPmillstrategyvariantprofileDefaults.hddb',
+  'hdPartType.hddb',
+  'hdTool.hddb',
+  'hdUserPartType.hddb',
+  'hdconnectorProfileParameters.hddb'
+]
+Record counts {
+  'hdBlankColorScheme.hddb': { counts: [ 16, 18 ], changed: 2, added: 2 },
+  'hdBlankGeometry.hddb': { counts: [ 197, 199 ], changed: 7, removed: 136, added: 138 },
+  'hdBlankGeometryGroup.hddb': { counts: [ 4, 5 ], removed: 1, added: 2 },
+  'hdBlankType.hddb': { counts: [ 262, 263 ], removed: 138, changed: 7, added: 139 },
+  'hdConnectorProfile.hddb': { counts: [ 13, 16 ], changed: 3, added: 3 },
+  'hdconnectorProfileParameters.hddb': { counts: [ 13, 15 ], changed: 1 },
+  'hdDentalColor.hddb': { counts: [ 17, 17 ] },
+  'hdFixtureTypeDefaults.hddb': { counts: [ 1, 2 ], changed: 1 },
+  'hdFixtureTypeProperties.hddb': { counts: [ 29, 29 ], changed: 5 },
+  'hdMachineProperties.hddb': { counts: [ 15, 15 ] },
+  'hdMaterial.hddb': { counts: [ 34, 37 ], changed: 5, removed: 2, added: 5 },
+  'hdNPmillstrategy.hddb': { counts: [ 110, 116 ], changed: 58, removed: 1, added: 7 },
+  'hdNPmillstrategyDefaults.hddb': { counts: [ 1, 1 ] },
+  'hdNPmillstrategyuserprofileDefaults.hddb': { counts: [ 0, 0 ] },
+  'hdNPmillstrategyvariantprofile.hddb': { counts: [ 178, 230 ], changed: 89, removed: 4, added: 10 },
+  'hdNPmillstrategyvariantprofileDefaults.hddb': { counts: [ 150, 69 ], changed: 1 },
+  'hdPartType.hddb': { counts: [ 12, 12 ], removed: 12, added: 12 },
+  'hdSinterFrameProfile.hddb': { counts: [ 1, 1 ] },
+  'hdTool.hddb': { counts: [ 50, 53 ], changed: 2, added: 3 },
+  'hdToolHolder.hddb': { counts: [ 3, 3 ] },
+  'hdUserPartType.hddb': { counts: [ 7, 8 ], added: 1 }
+}
+Effective records [
+  { base: 110, variant: 174, unmatched: 0 },
+  { base: 116, variant: 180, unmatched: 0 }
+]
+Effective diffs {
+  'variant changed': 101,
+  'variant removed': 4,
+  'base changed': 58,
+  'base removed': 1,
+  'variant added': 10,
+  'base added': 7
+}
+Added/removed [
+  [ 'variant', 'removed', 'PMMA_Abutment crown bridge_5X' ],
+  [ 'variant', 'removed', 'PEEK_Abutment Crown Bridge_5x' ],
+  [ 'variant', 'removed', 'PEEK_Crown Bridge_SCRP_5x' ],
+  [ 'variant', 'removed', 'PMMA_Abutment bridge' ],
+  [ 'base', 'removed', 'MAI_PMMA_Abutment bridge -260630' ],
+  [ 'variant', 'added', 'Dry_Inlay/Onlay Bridge' ],
+  [ 'variant', 'added', 'Dry_Inlay/Onlay' ],
+  [ 'variant', 'added', 'Dry_Crown_SCRP' ],
+  [ 'variant', 'added', 'Dry_Coping/Crown_SCRP Bridge' ],
+  [ 'variant', 'added', 'Dry_Coping/Veneer' ],
+  [ 'variant', 'added', 'PMMA_Abutment crown' ],
+  [ 'variant', 'added', 'CoCr_Interface_Finishing (expansion)' ],
+  [ 'variant', 'added', 'CoCr_Screw Hole Finishing (expansion)' ],
+  [ 'variant', 'added', 'Pre-Mil_Abutment_M_90" -Medentika' ],
+  [ 'variant', 'added', 'Ti_Retainer' ],
+  [ 'base', 'added', 'MAI_PMMA_Abutment crown -260928' ],
+  [
+    'base',
+    'added',
+    'MAI_CoCr_Screw Hole_Interface_(expansion)_260928'
+  ],
+  [ 'base', 'added', '[RuMa]_MAI_Ti_Retainer' ],
+  [ 'base', 'added', 'MAI_Dry_Coping/Crown_SCRP -261104' ],
+  [ 'base', 'added', 'MAI_Dry_Inlay/Onlay -261031' ],
+  [ 'base', 'added', 'MAI_Dry_Inlay/Onlay Bridge -261029' ],
+  [ 'base', 'added', 'MAI_Dry_Coping/Crown_SCRP Bridge -261031' ]
+]
+Default associations [ 154, 119 ] [ 154, 113 ] { removed: 79, changed: 8, added: 38 }

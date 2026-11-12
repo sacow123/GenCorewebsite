@@ -2,8 +2,9 @@
   "name": "gencore-manual",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo \"No build required for static site\"",
-    "vercel-build": "echo \"No build required for static site\"",
+    "build": "node tools/build-feature-search.cjs",
+    "vercel-build": "node tools/build-feature-search.cjs",
+    "build:search": "node tools/build-feature-search.cjs",
     "serve": "node tools/local-server.js",
     "check:i18n": "node tools/check-i18n.js",
     "check:i18n:ko-en": "node tools/check-i18n.js --lang ko,en",

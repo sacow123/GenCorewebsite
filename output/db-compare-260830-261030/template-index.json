@@ -1,0 +1,1829 @@
+[
+  {
+    "id": "e9aef886-9aaa-11f1-a4de-ec4c8c8ee783",
+    "name": "Pre-Mil_Abutment_M_D1.0 -Medentika",
+    "base": "MAI_Pre-Mil_Abutment_Ofs.0.04 -261012 (Meden)",
+    "material": "Medentika",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "eefca77e-fcfb-11f0-a4b2-ec4c8c8ee783",
+    "name": "Zirconia_Coping_Bridge_5x",
+    "base": "MAI_Zirconia_Coping/Crown_Bridge -edge 261110",
+    "material": "Zirconia",
+    "partTypes": [
+      "cap_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "bda83c28-fcfd-11f0-a4b2-ec4c8c8ee783",
+    "name": "Zirconia_Crown_5x_D0.6",
+    "base": "MAI_Zirconia_Coping/Crown_SCRP -edge 261110",
+    "material": "Zirconia",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "d442a54d-fcfa-11f0-a4b2-ec4c8c8ee783",
+    "name": "Zirconia_Crown_Bridge_5x_D0.6",
+    "base": "MAI_Zirconia_Coping/Crown_Bridge -edge 261110",
+    "material": "Zirconia",
+    "partTypes": [
+      "crown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "563f7753-2c4f-11ef-9e61-14857f7eaaee",
+    "name": "Ti_Abutment Crown bridge_EXT/INT",
+    "base": "MAI_Ti_Abutment Crown bridge (Bar) -261007",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "744ad8e9-d4af-11ef-9eec-14857f7eaaee",
+    "name": "Ti_Abutment bridge_EXT/INT",
+    "base": "MAI_Ti_Abutment Crown bridge (Bar) -261007",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutment_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "ba0a6b64-6460-11ef-9e7f-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_M_D1.0",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.04 -261008",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "d9c2843f-e28d-11ee-9e32-14857f7eaaee",
+    "name": "Pre-Mill_Abutment_M_D1.0",
+    "base": "MAI_Pre-Mil_Abutment_Ofs.0.04 -260729",
+    "material": "Premill blank",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "fc14a93b-7dfb-11ee-b5c7-d85ed3abfe3c",
+    "name": "PMMA_Coping bridge_SCRP",
+    "base": "MAI_PMMA_Coping/Crown bridge_SCRP -260323",
+    "material": "PMMA",
+    "partTypes": [
+      "cap_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "9f298080-3733-11ef-8e54-d85ed3abfe3c",
+    "name": "PMMA_Crown bridge_SCRP_D0.6",
+    "base": "MAI_PMMA_Coping/Crown bridge_SCRP -260323",
+    "material": "PMMA",
+    "partTypes": [
+      "crown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "aa34de85-da21-11ef-9eee-14857f7eaaee",
+    "name": "PEEK_Abutment Crown",
+    "base": "MAI_PEEK_Abutment Crown (metal tool) -260928",
+    "material": "PEEK",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "dcff1fc3-e50b-11ee-9e33-14857f7eaaee",
+    "name": "Hybrid Ceramic_Crown_SCRP_D0.6",
+    "base": "MAI_Hybrid Ceramic_Crown_SCRP -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "f6b9a98a-7389-11f1-a4d4-ec4c8c8ee783",
+    "name": "Hybrid Ceramic_Abutment Crown",
+    "base": "MAI_Hybrid Ceramic_Abutment Crown -260928",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "94c04370-d3fd-11f1-a52f-ec4c8c8ee783",
+    "name": "Dry_Inlay/Onlay Bridge",
+    "base": "MAI_Dry_Inlay/Onlay Bridge -261029",
+    "material": "Amber_Dry",
+    "partTypes": [
+      "onlay_bridge"
+    ],
+    "status": "added"
+  },
+  {
+    "id": "a3d131f5-d365-11f1-a52e-ec4c8c8ee783",
+    "name": "Dry_Inlay/Onlay",
+    "base": "MAI_Dry_Inlay/Onlay -261031",
+    "material": "Amber_Dry",
+    "partTypes": [
+      "onlay_single"
+    ],
+    "status": "added"
+  },
+  {
+    "id": "78c704d7-d32c-11f1-a52e-ec4c8c8ee783",
+    "name": "Dry_Crown_SCRP",
+    "base": "MAI_Dry_Coping/Crown_SCRP -261104",
+    "material": "Amber_Dry",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "added"
+  },
+  {
+    "id": "bd6b2b28-5b6b-11f1-a4cf-ec4c8c8ee783",
+    "name": "CoCr_Abutment Crown",
+    "base": "MAI_CoCr_Abutment Crown_260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "ba75df02-7700-11ef-9e8d-14857f7eaaee",
+    "name": "CoCr_Crown_5X",
+    "base": "MAI_CoCr_Coping/Crown/SCRP -260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "7ea7e281-7700-11ef-9e8d-14857f7eaaee",
+    "name": "CoCr_Coping_5X",
+    "base": "MAI_CoCr_Coping/Crown/SCRP -260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "cap_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "f0f886b4-76fe-11ef-9e8d-14857f7eaaee",
+    "name": "CoCr_Crown Bridge_5X",
+    "base": "MAI_CoCr_Coping/Crown Bridge/SCRP -260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "crown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "e1a82bf6-76ff-11ef-9e8d-14857f7eaaee",
+    "name": "CoCr_Coping Bridge_5X",
+    "base": "MAI_CoCr_Coping/Crown Bridge/SCRP -260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "cap_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "ef52c06b-fcfd-11f0-a4b2-ec4c8c8ee783",
+    "name": "Zirconia_Coping / Veneer",
+    "base": "MAI_Zirconia_Coping/Crown_SCRP -edge 261110",
+    "material": "Zirconia",
+    "partTypes": [
+      "cap_single",
+      "crown_single:Veneer"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "33f00f3a-929d-11ef-9ea4-14857f7eaaee",
+    "name": "Zirconia_Inlay/Onlay_D0.6",
+    "base": "MAI_Zirconia_Inlay/Onlay -261110",
+    "material": "Zirconia",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "649f265a-3a95-11ef-8e54-d85ed3abfe3c",
+    "name": "Zirconia_Abutment crown bridge_D0.6",
+    "base": "MAI_Zirconia_Abutment crown bridge -260928",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "daa70a8a-6511-11ef-9e7f-14857f7eaaee",
+    "name": "Glass Ceramic_Crown / Veneer",
+    "base": "MAI_Glass Ceramic_Crown_SCRP_Angled_Veneer -260228",
+    "material": "Glass Ceramic",
+    "partTypes": [
+      "crown_single",
+      "crown_single:Veneer"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "b55afcc2-7dfb-11ee-b5c7-d85ed3abfe3c",
+    "name": "PMMA_Coping / Veneer",
+    "base": "MAI_PMMA_Coping/Crown_SCRP -260323",
+    "material": "PMMA",
+    "partTypes": [
+      "cap_single",
+      "crown_single:Veneer"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "0b8e702c-3a96-11ef-8e54-d85ed3abfe3c",
+    "name": "PMMA_Abutment crown bridge",
+    "base": "MAI_PMMA_Abutment crown bridge -260928",
+    "material": "PMMA",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "de8394a9-da10-11ef-9eee-14857f7eaaee",
+    "name": "PEEK_Abutment Crown Bridge",
+    "base": "MAI_PEEK_Abutment Crown Bridge_SCRP (metal tool) -260928",
+    "material": "PEEK",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "a7774b77-64f9-11ef-9e7f-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_D0.6",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "ddae0237-6513-11ef-9e7f-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X_D0.6",
+    "base": "MAI_Hybrid Ceramic_Inlay/Crown bridge_SCRP -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "crown_bridge",
+      "onlaycrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "d1fb3e2c-64f7-11ef-9e7f-14857f7eaaee",
+    "name": "Hybrid Ceramic_Coping_Veneer",
+    "base": "MAI_Hybrid Ceramic_Crown_SCRP -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "cap_single",
+      "crown_single:Veneer"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "5a400443-dbbe-11f0-a4a9-ec4c8c8ee783",
+    "name": "Hybrid Ceramic_Coping_Veneer (Fast)",
+    "base": "MAI_Hybrid Ceramic_Crown_SCRP (Fast) -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "cap_single",
+      "crown_single:Veneer"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "f2fd5d35-737a-11f1-a4d4-ec4c8c8ee783",
+    "name": "Hybrid Ceramic_Abutment Crown bridge",
+    "base": "MAI_Hybrid Ceramic_Abutment Crown bridge -260928",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "c66b2a87-ed43-11f0-a4ab-ec4c8c8ee783",
+    "name": "Glass Inlay/Onlay_D0.6 Fast-II",
+    "base": "MAI_Glass Inlay/Onlay_Fast-II 260228",
+    "material": "Lithium Disilicate Block",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "1a092e6e-6375-11ef-9e7e-14857f7eaaee",
+    "name": "Glass Ceramic_Inlay/Onlay_D0.6",
+    "base": "MAI_Glass Ceramic_Inlay/Onlay -260228",
+    "material": "Glass Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "204c4f1d-d9f6-11ee-9e2d-14857f7eaaee",
+    "name": "Glass Ceramic_Crown / Veneer _D0.6",
+    "base": "MAI_Glass Ceramic_Crown_SCRP_Angled_Veneer -260228",
+    "material": "Glass Ceramic",
+    "partTypes": [
+      "crown_single",
+      "crown_single:Veneer"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "96481c4b-d434-11f1-a530-ec4c8c8ee783",
+    "name": "Dry_Coping/Crown_SCRP Bridge",
+    "base": "MAI_Dry_Coping/Crown_SCRP Bridge -261031",
+    "material": "Amber_Dry",
+    "partTypes": [
+      "cap_bridge",
+      "crown_bridge"
+    ],
+    "status": "added"
+  },
+  {
+    "id": "a01309f3-d32c-11f1-a52e-ec4c8c8ee783",
+    "name": "Dry_Coping/Veneer",
+    "base": "MAI_Dry_Coping/Crown_SCRP -261104",
+    "material": "Amber_Dry",
+    "partTypes": [
+      "cap_single",
+      "crown_single:Veneer"
+    ],
+    "status": "added"
+  },
+  {
+    "id": "c5cdc271-5b6b-11f1-a4cf-ec4c8c8ee783",
+    "name": "CoCr_Abutment Crown Bridge",
+    "base": "MAI_CoCr_Abutment Crown Bridge_261007",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "9ba7ca76-66b5-11ef-9e7f-14857f7eaaee",
+    "name": "Ti_Abutment Crown bridge_Cat.13_ICMC",
+    "base": "MAI_Ti_Abutment Crown bridge (Bar) -261007",
+    "material": "Ti. Disc",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "dc9c8616-c282-11ee-8e03-ecdd8dcde457",
+    "name": "Ti_Abutment",
+    "base": "MAI_Ti_Abutment/Abutment crown -261028",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "e413707a-c282-11ee-8e03-ecdd8dcde457",
+    "name": "Ti_Abutment crown",
+    "base": "MAI_Ti_Abutment/Abutment crown -261028",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "b48a93eb-7dfc-11ee-b5c7-d85ed3abfe3c",
+    "name": "Ti_Coping Bridge_5X",
+    "base": "MAI_Ti_Coping/Crown Bridge/SCRP -260119",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "cap_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "d9ca5ed3-7de2-11ee-b5c7-d85ed3abfe3c",
+    "name": "Ti_Crown Bridge_5X",
+    "base": "MAI_Ti_Coping/Crown Bridge/SCRP -260119",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "crown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "751503ad-7dfc-11ee-b5c7-d85ed3abfe3c",
+    "name": "Ti_Coping_5X",
+    "base": "MAI_Ti_Coping/Crown/SCRP -260119",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "cap_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "786254cc-7de2-11ee-b5c7-d85ed3abfe3c",
+    "name": "Ti_Crown_5X",
+    "base": "MAI_Ti_Coping/Crown/SCRP -260119",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "643ecc56-702b-11ef-9e88-14857f7eaaee",
+    "name": "Wax_Coping bridge_5X",
+    "base": "MAI_Wax_Coping/Crown bridge_SCRP -260629",
+    "material": "Wax Disc",
+    "partTypes": [
+      "cap_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "a47a2c55-702b-11ef-9e88-14857f7eaaee",
+    "name": "Wax_Crown bridge_5X_D0.6",
+    "base": "MAI_Wax_Coping/Crown bridge_SCRP -260629",
+    "material": "Wax Disc",
+    "partTypes": [
+      "crown_bridge",
+      "onlaycrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "fb9e29ef-df6f-11ee-9e2f-14857f7eaaee",
+    "name": "WAX - Coping_5X",
+    "base": "MAI_Wax_Coping/Crown_SCRP -260629",
+    "material": "Wax Disc",
+    "partTypes": [
+      "cap_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "e4a7784d-df6f-11ee-9e2f-14857f7eaaee",
+    "name": "WAX - Crown_5X_D0.6",
+    "base": "MAI_Wax_Coping/Crown_SCRP -260629",
+    "material": "Wax Disc",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "3adab0c8-70ce-11ef-9e88-14857f7eaaee",
+    "name": "Wax_Inlay/Onlay -D0.6",
+    "base": "MAI_Wax_Inlay/Onlay -260629",
+    "material": "Wax Disc",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "f72238fb-7dfa-11ee-b5c7-d85ed3abfe3c",
+    "name": "Zirconia_Coping bridge_5X",
+    "base": "MAI_Zirconia_Coping/Crown bridge_SCRP -260122",
+    "material": "Zirconia",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "53884cd8-3734-11ef-8e54-d85ed3abfe3c",
+    "name": "Zirconia_Crown bridge_5X_D0.3",
+    "base": "MAI_Zirconia_Coping/Crown bridge_SCRP -260122",
+    "material": "Zirconia",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "0c5f0168-7d4e-11ee-b5c6-d85ed3abfe3c",
+    "name": "Zirconia_Crown bridge_5X_D0.6",
+    "base": "MAI_Zirconia_Coping/Crown bridge_SCRP -260122",
+    "material": "Zirconia",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "88573996-7df7-11ee-b5c7-d85ed3abfe3c",
+    "name": "Zirconia_Coping_5X",
+    "base": "MAI_Zirconia_Coping/Crown_SCRP -260123",
+    "material": "Zirconia",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "f9c0dc7f-3733-11ef-8e54-d85ed3abfe3c",
+    "name": "Zirconia_Crown_5X_D0.3",
+    "base": "MAI_Zirconia_Coping/Crown_SCRP -260123",
+    "material": "Zirconia",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "8f68ccc2-7df7-11ee-b5c7-d85ed3abfe3c",
+    "name": "Zirconia_Crown_5X_D0.6",
+    "base": "MAI_Zirconia_Coping/Crown_SCRP -260123",
+    "material": "Zirconia",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "a6e40bec-e28d-11ee-9e32-14857f7eaaee",
+    "name": "Pre-Mill_Abutment_M_D1.5",
+    "base": "MAI_Pre-Mil_Abutment_Ofs.0.04 -260729",
+    "material": "Premill blank",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "541e7bc3-6fff-11ef-9e88-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment crown_M_D0.6",
+    "base": "MAI_Pre-Mil+Rev_Abutment crown_Ofs.0.04 -261007",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "531fd723-64ff-11ef-9e7f-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_L_D1.0",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.06 -261008",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "906f9545-65d5-11ef-9e7f-14857f7eaaee",
+    "name": "Pre-Mill_Abutment_L_D1.0",
+    "base": "MAI_Pre-Mill_Abutment_Ofs.0.06 -260323",
+    "material": "Premill blank",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "72b0e9b0-65d5-11ef-9e7f-14857f7eaaee",
+    "name": "Pre-Mill_Abutment_L_D1.5",
+    "base": "MAI_Pre-Mill_Abutment_Ofs.0.06 -260323",
+    "material": "Premill blank",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "5574d100-7b36-11ef-9e8e-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_M_D1.0_s",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.04_tool.06 -261008",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "3ac29d44-7c72-11ef-9e8f-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_M_D1.0_ss",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.04_tool.08 -261008",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "d480e24b-7c72-11ef-9e8f-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_L_D1.0_s",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.06_tool.06 -261008",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "1b006113-7c73-11ef-9e8f-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_L_D1.0_ss",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.06_tool.08 -261008",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "b33aa7ee-8052-11ef-9e94-14857f7eaaee",
+    "name": "Hybrid Ceramic_Abutment Crown_NCS (M-Fix)",
+    "base": "MAI_Hybrid Ceramic_Abutment Crown_NCS (M-Fix) -251030",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "33ad0ae5-852d-11ef-9e96-14857f7eaaee",
+    "name": "Hybrid Ceramic_Abutment Crown bridge_NCS (M-Fix)",
+    "base": "MAI_Hybrid Ceramic_Abutment Crown bridge (M-Fix) -251030",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "e12832e3-89d1-11ef-9e99-14857f7eaaee",
+    "name": "Zirconia_Abutment Crown Bridge_NCS (M-Fix)",
+    "base": "MAI_Zirconia_Abutment Crown Bridge_NCS -260630",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "c8d6ee3a-89d2-11ef-9e99-14857f7eaaee",
+    "name": "Zirconia_Abutment Crown_NCS (M-Fix)",
+    "base": "MAI_Zirconia_Abutment Crown NCS -260625",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "14bc5a6f-9295-11ef-9ea4-14857f7eaaee",
+    "name": "Zirconia_Inlay/Onlay bridge_D0.6",
+    "base": "MAI_Zirconia_Inlay/Onlay bridge -260506",
+    "material": "Zirconia",
+    "partTypes": [
+      "onlay_bridge",
+      "onlaycrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "f5b38ba8-9295-11ef-9ea4-14857f7eaaee",
+    "name": "Zirconia_Inlay/Onlay bridge_D0.3",
+    "base": "MAI_Zirconia_Inlay/Onlay bridge -260506",
+    "material": "Zirconia",
+    "partTypes": [
+      "onlay_bridge",
+      "onlaycrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "31295893-6514-11ef-9e7f-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X",
+    "base": "MAI_Hybrid Ceramic_Inlay/Crown bridge_SCRP -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "crown_bridge",
+      "onlaycrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "2d90ab9c-70df-11ef-9e88-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "6d3e817e-70df-11ef-9e88-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "7a02a11e-abdd-11ef-9ec0-14857f7eaaee",
+    "name": "Zirconia_Abutment Crown_NCS (highnees)",
+    "base": "MAI_Zirconia_Abutment Crown NCS -260625",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "52be39d0-b209-11ef-9ec7-14857f7eaaee",
+    "name": "Zirconia_Abutment Crown Bridge_NCS (highnees)",
+    "base": "MAI_Zirconia_Abutment Crown Bridge_NCS -260630",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "19dfdb04-b2c9-11ef-9ec8-14857f7eaaee",
+    "name": "Ti_Abutment (Conlog)",
+    "base": "MAI_Ti_Abutment/Abutment crown -261028",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "73150228-c41d-11ef-9ee0-14857f7eaaee",
+    "name": "CoCr_Abutment Crown Bridge_NCS (highnees)",
+    "base": "MAI_CoCr_Abutment Crown Bridge_NCS -261007",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "5f6d0dab-c41e-11ef-9ee0-14857f7eaaee",
+    "name": "CoCr_Abutment Crown_NCS (highnees)",
+    "base": "MAI_CoCr_Abutment Crown_NCS -260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "a9898490-cda3-11ef-9ee7-14857f7eaaee",
+    "name": "PEEK_Crown/SCRP_D0.6",
+    "base": "MAI_PEEK_Coping/Crown_SCRP (metal tool) -260519",
+    "material": "PEEK",
+    "partTypes": [
+      "crown_single",
+      "crown_single:Veneer"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "d0c079bc-966a-11ef-9ea9-14857f7eaaee",
+    "name": "PMMA_Abutment crown bridge_NCS (highnees)",
+    "base": "MAI_PMMA_Abutment crown bridge_NCS -260630",
+    "material": "PMMA",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "918a805c-c8cc-11ef-9ee3-14857f7eaaee",
+    "name": "PMMA_Abutment crown bridge_NCS (M-Fix)",
+    "base": "MAI_PMMA_Abutment crown bridge_NCS -260630",
+    "material": "PMMA",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "348eff03-aae3-11ef-9ebb-14857f7eaaee",
+    "name": "PMMA_Abutment crown_NCS (highnees)",
+    "base": "MAI_PMMA_Abutment crown_NSC -260630",
+    "material": "PMMA",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "61c0168c-c8cd-11ef-9ee3-14857f7eaaee",
+    "name": "PMMA_Abutment crown_NCS (M-Fix)",
+    "base": "MAI_PMMA_Abutment crown_NSC -260630",
+    "material": "PMMA",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "5a963708-a7c7-11ef-9eba-14857f7eaaee",
+    "name": "PMMA_Crown bridge_SCRP",
+    "base": "MAI_PMMA_Coping/Crown bridge_SCRP -260323",
+    "material": "PMMA",
+    "partTypes": [
+      "crown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "e62384ac-a7cb-11ef-9eba-14857f7eaaee",
+    "name": "PMMA_Crown_SCRP",
+    "base": "MAI_PMMA_Coping/Crown_SCRP -260323",
+    "material": "PMMA",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "a1158631-7dcd-11ee-b5c7-d85ed3abfe3c",
+    "name": "PMMA_Crown_SCRP_D0.6",
+    "base": "MAI_PMMA_Coping/Crown_SCRP -260323",
+    "material": "PMMA",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "59ebff2c-d4af-11ef-9eec-14857f7eaaee",
+    "name": "Ti_Abutment bridge_Cat.13_ICMC",
+    "base": "MAI_Ti_Abutment Crown bridge (Bar) -261007",
+    "material": "Ti. Disc",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "8e9045a5-d87c-11ef-9eee-14857f7eaaee",
+    "name": "Pre-Mil+Rev_Abutment_90°_M_D1.0_mini",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.04_Mini -261008",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "33649da8-d950-11ef-9eee-14857f7eaaee",
+    "name": "CoCr_Abutment Crown Bridge_NCS (M-Fix)",
+    "base": "MAI_CoCr_Abutment Crown Bridge_NCS -261007",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "5a8ca05b-d951-11ef-9eee-14857f7eaaee",
+    "name": "CoCr_Abutment Crown_NCS (M-Fix)",
+    "base": "MAI_CoCr_Abutment Crown_NCS -260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "c5b98e70-da1e-11ef-9eee-14857f7eaaee",
+    "name": "PEEK_Crown Bridge_SCRP",
+    "base": "MAI_PEEK_Crown Bridge_SCRP (metal tool) -260916",
+    "material": "PEEK",
+    "partTypes": [
+      "cap_bridge",
+      "crown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "8074cdc4-da1f-11ef-9eee-14857f7eaaee",
+    "name": "PEEK_Over-Structure",
+    "base": "MAI_PEEK_Crown Bridge_SCRP (metal tool) -260916",
+    "material": "PEEK",
+    "partTypes": [
+      "bitesplint_single:Over Structure"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "aabdefe1-e844-11ef-9efb-14857f7eaaee",
+    "name": "Ti_Abutment Crown bridge_NCS (highnees)",
+    "base": "MAI_Ti_Abutment Crown bridge_NCS -261007",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "1e474cfe-e9a3-11ef-9efc-14857f7eaaee",
+    "name": "Ti_Abutment Crown_NCS (highnees)",
+    "base": "MAI_Ti_Abutment Crown_NCS -260630",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "882a1755-08a4-11f0-9f0e-14857f7eaaee",
+    "name": "PMMA_Full denture (normal)",
+    "base": "MAI_PMMA_denture -260423",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "bitesplint_single:Full denture"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "9b44cf45-0940-11f0-9f0f-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_L_D1.5",
+    "base": "MAI_Pre-Mil+Rev_Abutment_1.5mm_Ofs.0.06-261007",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "37372741-0941-11f0-9f0f-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_L_D1.5_s",
+    "base": "MAI_Pre-Mil+Rev_Abutment_1.5mm_Ofs.0.06_tool.06 -261007",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "26ccaa6d-0942-11f0-9f0f-14857f7eaaee",
+    "name": "Pre-Mil+Rev._Abutment_90°_L_D1.5_ss",
+    "base": "MAI_Pre-Mil+Rev_Abutment_1.5mm_Ofs.0.06_tool.08 -261007",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "a0b77d57-0953-11f0-9f0f-14857f7eaaee",
+    "name": "Ti_Abutment Crown bridge_EXT/INT (Fast)",
+    "base": "MAI_Ti_Abutment Crown bridge_(Fast)-261007",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "e2788bb5-0953-11f0-9f0f-14857f7eaaee",
+    "name": "Ti_Abutment bridge_EXT/INT (Fast)",
+    "base": "MAI_Ti_Abutment Crown bridge_(Fast)-261007",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutment_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "ae3d717e-1128-11f0-9f11-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ +08 -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "fba1131d-1128-11f0-9f11-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ +08 -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "44c75828-1129-11f0-9f11-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.08]",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ +08 -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "ed6bdacc-112a-11f0-9f11-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ +05 -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "1705749a-112b-11f0-9f11-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ +05 -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "5089ed0b-112b-11f0-9f11-14857f7eaaee",
+    "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.05]",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay/ +05 -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "61639734-1b36-11f0-9f17-14857f7eaaee",
+    "name": "Ti_Abutment_Angled-MUA (Tap+F1.5)",
+    "base": "MAI_Ti_Abutment/Abutment crown -261028",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "2097f0cc-345d-11f0-9f28-14857f7eaaee",
+    "name": "Ti_Abutment Crown_NCS (M-Fix)",
+    "base": "MAI_Ti_Abutment Crown_NCS -260630",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "d70e1f5c-346b-11f0-9f28-14857f7eaaee",
+    "name": "Ti_Abutment Crown bridge_NCS (M-Fix)",
+    "base": "MAI_Ti_Abutment Crown bridge_NCS -261007",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "fb61ebec-3527-11f0-9f29-14857f7eaaee",
+    "name": "PMMA_Coping/Crown (Fast)",
+    "base": "MAI_PMMA_Coping/Crown_SCRP_Fast 260126",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "cap_single",
+      "crown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "0474d05f-3529-11f0-9f29-14857f7eaaee",
+    "name": "PMMA_Coping/Crown Bridge (Fast)",
+    "base": "MAI_PMMA_Coping/Crown Bridge_SCRP_Fast 260126",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "cap_bridge",
+      "crown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "73ffc09d-4818-11f0-840d-ec4c8c8ee783",
+    "name": "Zirconia_Abutment Crown_NCS (Megalink)",
+    "base": "MAI_Zirconia_Abutment Crown NCS -260625",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "cd437827-4818-11f0-840d-ec4c8c8ee783",
+    "name": "Zirconia_Abutment Crown Bridge_NCS (Megalink)",
+    "base": "MAI_Zirconia_Abutment Crown Bridge_NCS -260630",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "9997f1c3-4d08-11f0-8410-ec4c8c8ee783",
+    "name": "Pre-Mil+Rev_Abutment_Locator",
+    "base": "MAI_Pre-Mil+Rev_Abutment_Locator_Ofs.0.06 -261007",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "72e314e2-4d0a-11f0-8410-ec4c8c8ee783",
+    "name": "PEEK_Full/partial_denture",
+    "base": "MAI_PEEK_Crown Bridge_SCRP (metal tool) -260916",
+    "material": "PEEK",
+    "partTypes": [
+      "bitesplint_single:Full/partial_denture"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "385e6b6e-77f3-11f0-8432-ec4c8c8ee783",
+    "name": "Glass Ceramic_Inlay/Onlay_1st -Cavity",
+    "base": "MAI_Glass Ceramic_Inlay/Onlay (매몰법) -260228",
+    "material": "Lithium Disilicate Disc",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "6e15ade3-77f3-11f0-8432-ec4c8c8ee783",
+    "name": "Glass Ceramic_Inlay/Onlay_2st -Occlusal",
+    "base": "MAI_Glass Ceramic_Inlay/Onlay (매몰법) -260228",
+    "material": "Lithium Disilicate Disc",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "72686093-7802-11f0-8432-ec4c8c8ee783",
+    "name": "Zirconia_Over Structure",
+    "base": "MAI_Zirconia_Over Structure 261110",
+    "material": "Zirconia",
+    "partTypes": [
+      "bitesplint_single:Over Structure"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "20488293-7c19-11f0-8436-ec4c8c8ee783",
+    "name": "Ti_Screw Hole Finishing (expansion)",
+    "base": "MAI_Ti_Screw Hole Finishing (expansion) -250818",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "4b9d07c8-7c19-11f0-8436-ec4c8c8ee783",
+    "name": "Ti_Interface_Finishing (expansion)",
+    "base": "MAI_Ti_Screw Hole Finishing (expansion) -250818",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "d193821e-819e-11f0-8438-ec4c8c8ee783",
+    "name": "PMMA_Interface_Finishing (expansion)",
+    "base": "MAI_PMMA_Screw Hole Finishing (expansion) -250818",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "41eb2c02-819f-11f0-8438-ec4c8c8ee783",
+    "name": "PMMA_Screw Hole Finishing (expansion)",
+    "base": "MAI_PMMA_Screw Hole Finishing (expansion) -250818",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "f1b299e0-9298-11f0-bc5f-ec4c8c8ee783",
+    "name": "Pre-Mil+Rev._Abutment_90°_M_D1.0_bb",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.04_tool.00-261008",
+    "material": "Premill+Reverse",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "9ace11b1-9299-11f0-bc5f-ec4c8c8ee783",
+    "name": "Pre-Mil+Rev._Abutment_90°_M_D1.0_b",
+    "base": "MAI_Pre-Mil+Rev_Abutment_90°_Ofs.0.04_tool.02 -261008",
+    "material": "Premill+Reverse",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "a17aa0b3-944c-11f0-bc5f-ec4c8c8ee783",
+    "name": "MAI_Ti_Jig (Cowell_UP_SQ)",
+    "base": "MAI_Ti_Jig(Cowell) 250919",
+    "material": "Ti. Disc",
+    "partTypes": [],
+    "status": "unchanged"
+  },
+  {
+    "id": "d31103a7-944d-11f0-bc5f-ec4c8c8ee783",
+    "name": "MAI_Ti_Jig (Cowell_Down)",
+    "base": "MAI_Ti_Jig(Cowell) 250919",
+    "material": "Ti. Disc",
+    "partTypes": [],
+    "status": "unchanged"
+  },
+  {
+    "id": "9639856d-9e94-11f0-bc69-ec4c8c8ee783",
+    "name": "PMMA_Partial framework",
+    "base": "MAI_PMMA_Partial_denture_Model -260824",
+    "material": "PMMA",
+    "partTypes": [
+      "model_single:Partial Frame"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "3f5520f4-a7f9-11f0-bc70-ec4c8c8ee783",
+    "name": "PMMA_Flexible denture",
+    "base": "MAI_PMMA_Partial_denture_Model -260824",
+    "material": "PMMA",
+    "partTypes": [
+      "model_single:Flexible denture"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "ea708f99-a965-11f0-bc75-ec4c8c8ee783",
+    "name": "PMMA_denture Teeth",
+    "base": "MAI_PMMA_Partial_denture_Model -260824",
+    "material": "PMMA",
+    "partTypes": [
+      "model_single:denture Teeth"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "cbe56917-b469-11f0-a1f1-84144dcdbae9",
+    "name": "Ti_Partial framework",
+    "base": "MAI_Ti_Partial denture_Model -260120",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "model_single:Partial Frame"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "cf5e5f98-b46d-11f0-a1f1-84144dcdbae9",
+    "name": "PMMA_Over-Structure",
+    "base": "MAI_PMMA_Over-Structure -260916",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "bitesplint_single:Over Structure"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "345934f3-d1b1-11f0-a4a5-ec4c8c8ee783",
+    "name": "Zirconia_Abutment Crown_NCS (Urdent)",
+    "base": "MAI_Zirconia_Abutment Crown NCS -260625",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "9d3c3417-d1b1-11f0-a4a5-ec4c8c8ee783",
+    "name": "Zirconia_Abutment Crown Bridge_NCS (Urdent)",
+    "base": "MAI_Zirconia_Abutment Crown Bridge_NCS -260630",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "dcff1c56-d5bd-11f0-a4a7-ec4c8c8ee783",
+    "name": "Wax_Partial framework",
+    "base": "MAI_Wax_Partial_denture_Model -2512010",
+    "material": "Wax Disc",
+    "partTypes": [
+      "model_single:Partial Frame"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "86509a4e-d97e-11f0-a4a9-ec4c8c8ee783",
+    "name": "Ti_Over-Structure",
+    "base": "MAI_Ti_Over-Structure -260916",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "bitesplint_single:Over Structure"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "964c9ab6-dbb7-11f0-a4a9-ec4c8c8ee783",
+    "name": "PMMA_Inlay/Onlay D0.6",
+    "base": "MAI_PMMA_Inlay/Onlay -260228",
+    "material": "PMMA",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "725fa8d3-dbb8-11f0-a4a9-ec4c8c8ee783",
+    "name": "PEEK_Inlay/Onlay -D0.6",
+    "base": "MAI_PEEK_Inlay/Onlay -260228",
+    "material": "PEEK",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "f4295547-dbbc-11f0-a4a9-ec4c8c8ee783",
+    "name": "PEEK_Coping",
+    "base": "MAI_PEEK_Coping/Crown_SCRP (metal tool) -260519",
+    "material": "PEEK",
+    "partTypes": [
+      "cap_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "3816be2c-dbbe-11f0-a4a9-ec4c8c8ee783",
+    "name": "Hybrid Ceramic_Crown_SCRP -D0.6 (Fast)",
+    "base": "MAI_Hybrid Ceramic_Crown_SCRP (Fast) -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "f6cba8aa-dbc0-11f0-a4a9-ec4c8c8ee783",
+    "name": "Hybrid Ceramic_Inlay/Onlay -D0.6 (Fast)",
+    "base": "MAI_Hybrid Ceramic_Inlay/Onlay (Fast) -260228",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "8dc46466-dbc1-11f0-a4a9-ec4c8c8ee783",
+    "name": "Zirconia_Crown_SCRP (Fast)",
+    "base": "MAI_Zirconia_Coping/Crown_SCRP -fast (251210)",
+    "material": "Zirconia",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "aeb2942c-dbc1-11f0-a4a9-ec4c8c8ee783",
+    "name": "Zirconia_Coping (Fast)",
+    "base": "MAI_Zirconia_Coping/Crown_SCRP -fast (251210)",
+    "material": "Zirconia",
+    "partTypes": [
+      "cap_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "a26e9220-9d01-11f0-bc66-ec4c8c8ee783",
+    "name": "Hybrid Ceramic_Over-Structure",
+    "base": "MAI_Hybrid Ceramic_Over-Structure -260916",
+    "material": "Hybrid Ceramic",
+    "partTypes": [
+      "bitesplint_single:Over Structure"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "bdd5fa67-e51b-11f0-a4ab-ec4c8c8ee783",
+    "name": "Pre-Mil+Rev_Abutment_M_D1.0",
+    "base": "MAI_Pre-Mil+Rev_Abutment_Ofs.0.04 -251230",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "cc12b880-e51b-11f0-a4ab-ec4c8c8ee783",
+    "name": "Pre-Mil+Rev_Abutment_M_D1.5",
+    "base": "MAI_Pre-Mil+Rev_Abutment_Ofs.0.04 -251230",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "96c1a9af-e520-11f0-a4ab-ec4c8c8ee783",
+    "name": "Pre-Mil+Rev_Abutment_L_D1.0",
+    "base": "MAI_Pre-Mil+Rev_Abutment_Ofs.0.06 -251230",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "a8997832-e520-11f0-a4ab-ec4c8c8ee783",
+    "name": "Pre-Mil+Rev_Abutment_L_D1.5",
+    "base": "MAI_Pre-Mil+Rev_Abutment_Ofs.0.06 -251230",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "a0905e02-e619-11f0-a4ab-ec4c8c8ee783",
+    "name": "CoCr_Partial Frame",
+    "base": "MAI_CoCr_Partial denture_Model -251231",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "model_single:Partial Frame"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "6ce46a78-e7ad-11f0-a4ab-ec4c8c8ee783",
+    "name": "Zirconia_Crown/Scrp Bridge (Fast)",
+    "base": "MAI_Zirconia_Coping/Crown_Bridge -fast -251210",
+    "material": "Zirconia",
+    "partTypes": [
+      "crown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "8bc78d63-e7ad-11f0-a4ab-ec4c8c8ee783",
+    "name": "Zirconia_Coping Bridge (Fast)",
+    "base": "MAI_Zirconia_Coping/Crown_Bridge -fast -251210",
+    "material": "Zirconia",
+    "partTypes": [
+      "cap_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "a8d3b1a1-eb76-11f0-a4ab-ec4c8c8ee783",
+    "name": "Ti_bridge_T_cut Tool test (not mill)",
+    "base": "MAI_Ti_Abutment Crown bridge (Bar) -261007",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "d689ff7f-fcfb-11f0-a4b2-ec4c8c8ee783",
+    "name": "Zirconia_Crown_Bridge_5x_D0.3",
+    "base": "MAI_Zirconia_Coping/Crown_Bridge -edge 261110",
+    "material": "Zirconia",
+    "partTypes": [
+      "crown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "df956650-fcfd-11f0-a4b2-ec4c8c8ee783",
+    "name": "Zirconia_Crown_5x_D0.3",
+    "base": "MAI_Zirconia_Coping/Crown_SCRP -edge 261110",
+    "material": "Zirconia",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "c511b9a3-def3-11f0-a4a9-ec4c8c8ee783",
+    "name": "PMMA_Monolithic denture base (Semi)",
+    "base": "MAI_PMMA_Monolithic denture -260423",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "bitesplint_single:Full denture"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "0fe75b59-def5-11f0-a4a9-ec4c8c8ee783",
+    "name": "PMMA_Monolithic denture (Finishing)",
+    "base": "MAI_PMMA_Monolithic denture -260423",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "bitesplint_single:Full denture"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "29d654cd-dfd5-11f0-a4a9-ec4c8c8ee783",
+    "name": "PMMA_Monolithic denture Teeth",
+    "base": "MAI_PMMA_Monolithic denture Teeth -260206",
+    "material": "PMMA",
+    "partTypes": [
+      "model_single:denture Teeth"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "54fb0aa1-0180-11f1-a4b7-ec4c8c8ee783",
+    "name": "PMMA_Night Guard",
+    "base": "MAI_PMMA_Night Guard -260206",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "bitesplint_single:Night Guard"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "a71cc81f-0df5-11f1-a4bb-ec4c8c8ee783",
+    "name": "Ti_Inlay/Onlay",
+    "base": "MAI_Ti_Inlay/Onlay -260228",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "ba0f11cc-0df5-11f1-a4bb-ec4c8c8ee783",
+    "name": "Ti_Inlay/Onlay Bridge",
+    "base": "MAI_Ti_Inlay/Onlay Bridge -260228",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "onlay_bridge",
+      "onlaycrown_bridge"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "d8d90a1e-4d07-11f0-8410-ec4c8c8ee783",
+    "name": "Pre-Mil+Rev_Abutment_Angled-MUA (Tap+F1.5)",
+    "base": "MAI_Pre-Mil+Rev_Angle-MUA_Ofs.0.04 -261028",
+    "material": "Premill+Reverse",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "3e05b609-1289-11f1-a4bc-ec4c8c8ee783",
+    "name": "Glass Ceramic_Crown / Veneer_D0.6_Fast-II",
+    "base": "MAI_Glass Ceramic_Crown_Fast-II -260228",
+    "material": "Lithium Disilicate Block",
+    "partTypes": [
+      "crown_single",
+      "crown_single:Veneer"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "5c360e40-36ee-11f1-a4c7-ec4c8c8ee783",
+    "name": "DuraFlex_Flexible denture",
+    "base": "MAI_DuraFlex_Partial_denture_Model -260407",
+    "material": "DuraFlex",
+    "partTypes": [
+      "model_single:Flexible denture"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "94e707e7-36ee-11f1-a4c7-ec4c8c8ee783",
+    "name": "DuraFlex_Partial Frame",
+    "base": "MAI_DuraFlex_Partial_denture_Model -260407",
+    "material": "DuraFlex",
+    "partTypes": [
+      "model_single:Partial Frame"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "206298bb-3ea1-11f1-a4cb-ec4c8c8ee783",
+    "name": "PMMA_Full denture (Fast)",
+    "base": "MAI_PMMA_denture -Fast 260423",
+    "material": "PMMA Disc",
+    "partTypes": [
+      "bitesplint_single:Full denture"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "93528c5e-3f78-11f1-a4cb-ec4c8c8ee783",
+    "name": "TCS-nylon_Monolithic denture base (semi)",
+    "base": "MAI_TCS-nylon_Monolithic denture -260423",
+    "material": "DuraFlex",
+    "partTypes": [
+      "bitesplint_single:Full denture"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "f38c509c-3f78-11f1-a4cb-ec4c8c8ee783",
+    "name": "TCS-nylon_Monolithic denture (Finising)",
+    "base": "MAI_TCS-nylon_Monolithic denture -260423",
+    "material": "DuraFlex",
+    "partTypes": [
+      "bitesplint_single:Full denture"
+    ],
+    "status": "unchanged"
+  },
+  {
+    "id": "f3f3b32c-7066-11f1-a4d4-ec4c8c8ee783",
+    "name": "Glass Ceramic_Crown bridge_Fast-II",
+    "base": "MAI_Glass Ceramic_Crown bridge_Fast-II -260610",
+    "material": "Lithium Disilicate Block",
+    "partTypes": [
+      "crown_bridge",
+      "onlay_bridge",
+      "onlaycrown_bridge"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "205c423f-def1-11f0-a4a9-ec4c8c8ee783",
+    "name": "Zirconia_Abutment crown",
+    "base": "MAI_Zirconia_Abutment crown  -260928",
+    "material": "Zirconia",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "2872080b-74ad-11ef-9e89-14857f7eaaee",
+    "name": "Zirconia_Abutment crown bridge_Category_(ICMC only)",
+    "base": "MAI_Zirconia_Abutment crown bridge -260928",
+    "material": "Zirconia",
+    "partTypes": [],
+    "status": "changed"
+  },
+  {
+    "id": "430b4790-7cca-11f1-a4d7-ec4c8c8ee783",
+    "name": "Dry-Mill_Crown_SCRP (Fast)",
+    "base": "MAI_Dry-Mill_Coping/Crown_SCRP (Fast) -261103",
+    "material": "Amber_Dry Block",
+    "partTypes": [
+      "crown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "1ba51496-7cd7-11f1-a4d7-ec4c8c8ee783",
+    "name": "Dry-Mill_Inlay/Onlay (Fast)",
+    "base": "MAI_Dry-Mill_Inlay/Onlay (Fast) -261108",
+    "material": "Amber_Dry Block",
+    "partTypes": [
+      "onlay_single",
+      "onlaycrown_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "ad498fea-7e09-11f1-a4d7-ec4c8c8ee783",
+    "name": "Dry-Mill_Veneer (Fast)",
+    "base": "MAI_Dry-Mill_Coping/Crown_SCRP (Fast) -261103",
+    "material": "Amber_Dry Block",
+    "partTypes": [
+      "crown_single:Veneer"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "0f01d738-9aab-11f1-a4de-ec4c8c8ee783",
+    "name": "Pre-Mil_Abutment_M_D1.5 -Medentika",
+    "base": "MAI_Pre-Mil_Abutment_Ofs.0.04 -261012 (Meden)",
+    "material": "Medentika",
+    "partTypes": [
+      "abutment_single"
+    ],
+    "status": "changed"
+  },
+  {
+    "id": "e14b75c7-a513-11f1-a4df-ec4c8c8ee783",
+    "name": "PMMA_Abutment crown",
+    "base": "MAI_PMMA_Abutment crown -260928",
+    "material": "PMMA",
+    "partTypes": [
+      "abutmentcrown_single"
+    ],
+    "status": "added"
+  },
+  {
+    "id": "ebec5335-b1a8-11f1-a4f2-ec4c8c8ee783",
+    "name": "CoCr_Interface_Finishing (expansion)",
+    "base": "MAI_CoCr_Screw Hole_Interface_(expansion)_260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "abutment_single",
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "added"
+  },
+  {
+    "id": "87aac378-b1a9-11f1-a4f2-ec4c8c8ee783",
+    "name": "CoCr_Screw Hole Finishing (expansion)",
+    "base": "MAI_CoCr_Screw Hole_Interface_(expansion)_260928",
+    "material": "Co.Cr. Disc",
+    "partTypes": [
+      "abutment_single",
+      "abutment_bridge",
+      "abutmentcrown_bridge"
+    ],
+    "status": "added"
+  },
+  {
+    "id": "5c5c623a-c5d2-11f1-a516-ec4c8c8ee783",
+    "name": "Pre-Mil_Abutment_M_90\" -Medentika",
+    "base": "MAI_Pre-Mil_Abutment_Ofs.0.04 -261012 (Meden)",
+    "material": "Medentika",
+    "partTypes": [],
+    "status": "added"
+  },
+  {
+    "id": "43436eda-cde2-11f1-a525-ec4c8c8ee783",
+    "name": "Ti_Retainer",
+    "base": "[RuMa]_MAI_Ti_Retainer",
+    "material": "Ti. Disc",
+    "partTypes": [
+      "model_single:Retainer"
+    ],
+    "status": "added"
+  }
+]

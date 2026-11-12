@@ -45,6 +45,43 @@
   function showFeature(key, sourceTitle, sourceBody, push = true) {
     title.innerHTML = sourceTitle.innerHTML;
     body.replaceChildren(...sourceBody.childNodes);
+    if (key === 'create-thread') {
+      const warning = document.createElement('aside');
+      warning.className = 'thread-design-warning';
+      warning.setAttribute('role', 'note');
+      warning.style.cssText = 'display:flex;align-items:flex-start;gap:12px;margin:0 0 24px;padding:18px 20px;border:1px solid #f59e0b;border-left:5px solid #f59e0b;border-radius:10px;background:#fffbeb;color:#92400e;font-weight:700;line-height:1.8;overflow-wrap:anywhere;';
+      const fallback = 'Please design the area where the thread will be created as a cylinder.<br>hyperDENT cannot recognize a hole that has been designed with thread geometry.<br>Design the area where the thread will be created as a cylinder.';
+      const lang = typeof currentLang === 'undefined' ? 'ko' : currentLang;
+      const text = typeof getI18nText === 'function' ? getI18nText(lang, 'thread-guide-design-warning', fallback) : fallback;
+      warning.innerHTML = '<span aria-hidden="true">⚠️</span><div data-i18n="thread-guide-design-warning" style="min-width:0;">' + text + '</div>';
+      body.prepend(warning);
+      const conditions = body.querySelector('[data-i18n="thread-guide-condition-20"]')?.closest('ul');
+      if (conditions) {
+        const specs = [
+          ['M1.4','1.1','T28_M1.4TH_L06(P0.3)'],
+          ['M1.6','1.25','T27_M1.6TH_L06(P0.35)'],
+          ['M1.8','1.45','T26_M1.8TH_L06(P0.35)'],
+          ['M2','1.6','T25_M2.0TH_L06(P0.4)'],
+          ['M2.3','1.9','T25_M2.0TH_L06(P0.4)'],
+          ['M2.6','2.1','T26_M2.6TH_L06(P0.45)'],
+          ['M3.0','2.5','T27_M3.0TH_L06(P0.5)']
+        ];
+        const translated = (key, fallback) => typeof getI18nText === 'function' ? getI18nText(lang, key, fallback) : fallback;
+        const labels = [['thread-guide-table-spec','Thread specification'],['thread-guide-table-hole','Hole diameter (mm)'],['thread-guide-table-tool','Tool used'],['thread-guide-table-version','Added in']];
+        const container = document.createElement('div');
+        container.className = 'thread-conditions-table';
+        container.innerHTML = '<style>#hyperdent-feature-article .thread-conditions-table{width:100%;overflow-x:auto;margin:12px 0 20px}#hyperdent-feature-article .thread-conditions-table table{width:100%;border-collapse:collapse;text-align:left;font-size:15px;line-height:1.6;color:var(--text-color,#374151)}#hyperdent-feature-article .thread-conditions-table th,#hyperdent-feature-article .thread-conditions-table td{padding:12px 14px;border-bottom:1px solid #e5e7eb;vertical-align:middle}#hyperdent-feature-article .thread-conditions-table th{background:#f3f0fa;color:#5424d8;font-weight:700;white-space:nowrap}#hyperdent-feature-article .thread-conditions-table td:first-child,#hyperdent-feature-article .thread-conditions-table td:nth-child(2){white-space:nowrap}#hyperdent-feature-article .thread-conditions-table td:nth-child(3){overflow-wrap:anywhere;min-width:155px}#hyperdent-feature-article .thread-conditions-table .thread-added-badge{display:inline-block;padding:2px 7px;border-radius:5px;background:#f2ecff;color:#5424d8;font-size:12px;font-weight:700;white-space:nowrap}</style>' +
+          '<table><thead><tr>' + labels.map(([key,fallback]) => '<th scope="col" data-i18n="' + key + '">' + translated(key,fallback) + '</th>').join('') + '</tr></thead><tbody>' +
+          specs.map(([spec,hole,tool], index) => '<tr><td>ISO ' + spec + '</td><td>' + hole + '</td><td>' + tool.replace(/\(P[^)]*\)$/, '') + '</td><td>' + (index >= 4 ? '<span class="thread-added-badge" data-i18n="thread-guide-added-261030">' + translated('thread-guide-added-261030','Added in 261030') + '</span>' : '—') + '</td></tr>').join('') + '</tbody></table>';
+        const toolNote = document.createElement('aside');
+        toolNote.className = 'thread-tool-position-note';
+        toolNote.setAttribute('role', 'note');
+        toolNote.setAttribute('data-i18n', 'thread-guide-tool-position-note');
+        toolNote.style.cssText = 'margin:0 0 24px;padding:14px 18px;border-left:4px solid #f59e0b;border-radius:8px;background:#fffbeb;color:#92400e;font-size:15px;line-height:1.8;overflow-wrap:anywhere;';
+        toolNote.innerHTML = translated('thread-guide-tool-position-note', '<strong>⚠️ISO M1.6 and ISO M3.0 share tool position T27.<br>&nbsp;&nbsp;&nbsp;&nbsp;ISO M1.8 and ISO M2.6 share tool position T26.</strong><br>Check that the tool matches the thread specification to be machined before installing it.');
+        conditions.replaceWith(container, toolNote);
+      }
+    }
     show(key, push);
   }
   function showGuide(push = true) {

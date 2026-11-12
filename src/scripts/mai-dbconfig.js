@@ -2,7 +2,40 @@
   'use strict';
   const section = document.getElementById('sec-mai-hd-settings-db');
   const canonicalRecords = window.MaiOriginal260830Templates || [];
-  const records = canonicalRecords;
+  const revision = window.Mai261030Updates || {updates:{},additions:[],labels:{}};
+  const records = canonicalRecords.map(original => {
+    const update = revision.updates[original.sourceProfileId];
+    const originalThreads = revision.originalThreads?.[original.sourceProfileId] || [];
+    if (!update && !originalThreads.length) return original;
+    const record = structuredClone(original);
+    for (const process of originalThreads) {
+      if (!record.processes.some(p => p.sourceJobId === process.sourceJobId || p.title === process.title)) record.processes.push(structuredClone(process));
+    }
+    if (!update) return record;
+    for (const job of update.jobs) {
+      let process = record.processes.find(p => p.sourceJobId === job.sourceJobId);
+      if (!process) {
+        process = {title:job.title,sourceJobId:job.sourceJobId,descriptions:job.baselineDescriptions || []};
+        const paired5x = ['calculate','selectable'].includes(job.kind) && /3\+2/.test(job.title) ? record.processes.findIndex(p => /90.*5x/i.test(p.title)) : -1;
+        if (paired5x >= 0) record.processes.splice(paired5x, 0, process);
+        else record.processes.push(process);
+      }
+      if (job.kind === 'calculate') process.descriptions = process.descriptions.map(item => {
+        if (!item.en.startsWith('Calculate default:') || item.en.includes('(260830)')) return item;
+        return {...item,ko:item.ko+' (260830 기준)',en:item.en+' (260830)',ja:item.ja+'（260830基準）'};
+      });
+      if (job.kind === 'added') process.addedIn = '261030';
+      process.descriptions.push(...job.descriptions.map(item => {
+        const description = {...item,versionUpdate:job.kind !== 'added'};
+        if (job.kind === 'added') for (const lang of ['ko','en','ja']) {
+          const prefix = revision.labels.added[lang] + (lang === 'ja' ? '：' : ':');
+          if (description[lang].startsWith(prefix)) description[lang] = description[lang].slice(prefix.length).trimStart();
+        }
+        return description;
+      }));
+    }
+    return record;
+  }).concat(revision.additions);
   const memberships = r => r.filterMemberships || [{type:r.type, family:r.family}];
   const inFamily = (r, value) => memberships(r).some(m => m.family === value);
   if (!section || !records.length) return;
@@ -124,7 +157,7 @@
       group.className = 'mai-template-group'; heading.textContent = material; list.className = 'card-list mai-template-list';
       list.replaceChildren(...visible.filter(r => r.material === material).map(record => {
         const li = document.createElement('li'), button = document.createElement('button');
-        button.type = 'button'; button.textContent = record.title; button.dataset.maiTemplate = record.title;
+        button.type = 'button'; button.textContent = record.title + (record.sourceRevision === '261030' ? ' — ' + revision.labels.added[language()] : ''); button.dataset.maiTemplate = record.title;
         button.addEventListener('click', () => open(record)); li.append(button); return li;
       }));
       group.append(heading, list); return group;
@@ -156,16 +189,25 @@
     const a = selected.getBoundingClientRect(), b = detail.getBoundingClientRect();
     detail.style.setProperty('--dbconfig-detail-connector-x', (a.left + a.width / 2 - b.left) + 'px');
   }
-  const listMarkup = items => '<ul>' + items.map(item => {
+  const listText = (item, lang) => String(item[lang])
+    .replace(/연결 공구:/g, '사용 공구:')
+    .replace(/Linked tool:/g, 'Tool used:')
+    .replace(/割り当て工具：/g, '使用工具：')
+    .replace(/\s*\(기본값:\s*(?:켜짐|꺼짐)\)/g, '')
+    .replace(/\s*\(Default:\s*(?:On|Off)\)/gi, '')
+    .replace(/\s*（初期値：(?:ON|OFF)）/g, '');
+  const listMarkup = items => '<ul>' + items.filter(item => !/Calculate default/i.test(item.en || '') && !/계산 기본값/.test(item.ko || '')).map(item => {
     const lang = language();
     const photo = item.photo;
     const disclosure = photo ? '<details class="mai-process-photo" style="margin-top:10px"><summary style="cursor:pointer;color:#7c3aed;text-decoration:underline">' + escape(photo.label[lang]) + '</summary><img src="' + escape(photo.src) + '" alt="' + escape(photo.alt[lang]) + '" loading="lazy" style="display:block;width:100%;max-width:481px;height:auto;margin-top:12px;border-radius:8px"></details>' : '';
-    return '<li>' + (item.bold ? '<strong>' + escape(item[lang]) + '</strong>' : escape(item[lang])) + disclosure + '</li>';
+    const text = escape(listText(item, lang));
+    return '<li' + (item.versionUpdate ? ' class="mai-version-update"' : '') + '>' + (item.bold ? '<strong>' + text + '</strong>' : text) + disclosure + '</li>';
   }).join('') + '</ul>';
   const cardSection = (label, content) => '<section class="hybrid-card-section"><h4><span aria-hidden="true"></span>' + escape(label) + '</h4>' + content + '</section>';
   const disclosureSection = (label, content, lang) => {
     const hint = {ko:'(클릭)', en:'(Click)', ja:'（クリック）'}[lang];
-    return '<details class="hybrid-card-section mai-uda-toggle"><summary><h4><span aria-hidden="true"></span>' + escape(label) + ' ' + hint + '</h4></summary>' + content + '</details>';
+    const threadGuide = label === 'Thread machining' ? '<p class="mai-thread-guide"><a href="#feature-create-thread">' + escape({ko:'Thread(나사산) 생성 방법',en:'How to create a thread',ja:'Thread（ねじ山）の作成方法'}[lang]) + '</a></p>' : '';
+    return '<details class="hybrid-card-section mai-uda-toggle"><summary><h4><span aria-hidden="true"></span>' + escape(label) + ' ' + hint + '</h4></summary>' + threadGuide + content + '</details>';
   };
   function udaSection(record, lang, label) {
     const categories = new Set();
@@ -187,6 +229,10 @@
   const listMarkupForUda = (items, lang) => '<ul>' + items.map(item => '<li>' + escape(item[lang]) + '</li>').join('') + '</ul>';
   function renderDetail() {
     const record = activeRecord, lang = language(), c = copy[lang];
+    const isThreadPreparation = process => /screwchannel[\s_]+thread/i.test(process.title);
+    const isThreadProcess = process => /(?:^|[\s_])thread(?:[\s_]|$)/i.test(process.title);
+    const adjustableProcesses = record.processes.filter(process => !isThreadProcess(process) && !isThreadPreparation(process));
+    const threadProcesses = record.processes.filter(process => isThreadProcess(process) && !isThreadPreparation(process));
     title.textContent = record.title;
     window.TemplateArticleNavigation.updateLabels();
     function toolsMarkup(optional) {
@@ -207,11 +253,29 @@
       return photos;
     };
     const processDescriptions = process => {
+      if (isThreadProcess(process) && !isThreadPreparation(process)) {
+        const category = process.title.match(/\bcat\s*(\d+)\b/i)?.[1];
+        if (category) {
+          const number = String(Number(category));
+          const descriptions = process.descriptions.slice();
+          const defaultIndex = descriptions.findIndex(item => /Calculate default/i.test(item.en || ''));
+          descriptions.splice(defaultIndex < 0 ? descriptions.length : defaultIndex, 0, {
+            ko:'CAT 설정: ' + number,
+            en:'CAT setting: ' + number,
+            ja:'CAT 設定：' + number
+          });
+          return listMarkup(descriptions);
+        }
+      }
       if (process.title !== 'General settings' || record.material !== 'Hybrid Ceramic' || record.sourceCatalog) return listMarkup(process.descriptions);
       const labels = boundaryImageCopy[lang];
       return '<ul><li>' + escape(labels.offset) + '</li><li>' + escape(labels.angle) + '</li></ul><p class="hybrid-adjustment-note"><strong>※</strong> ' + labels.note.map(escape).join('<br>') + '</p>';
     };
-    body.innerHTML = window.GenCoreMaterialTemplateCard.styles() + '<article class="hybrid-template-card" lang="' + lang + '"><span class="hybrid-template-card__tag">M AI TEMPLATE</span><h3>' + escape(record.material) + '</h3><p class="hybrid-template-card__subtitle">' + escape((record.subtitle || record.title.slice(record.material.length + 1)).replace(/_/g, ' · ')) + '</p>' + cardSection(c.conditions, listMarkup(record.conditions) + illustrations()) + (record.processes.length ? cardSection(c.adjustable, record.processes.map(p => '<div class="hybrid-adjustment-group"><h5>' + escape(p.titleText?.[lang] || p.title) + '</h5>' + processDescriptions(p) + illustrations(p.title) + '</div>').join('')) : '') + (record.uda.length ? udaSection(record, lang, c.uda) : '') + ((record.interfaces || []).length ? disclosureSection('Implant Interfaces wall', listMarkup(record.interfaces), lang) : '') + (record.tools.length ? '<section class="hybrid-tools"><h4><span aria-hidden="true"></span>' + c.tools + '</h4>' + toolsMarkup(false) + toolsMarkup(true) + '</section>' : '') + '</article>';
+    const addedBadge = '<span class="mai-version-badge">' + escape(revision.labels.added?.[lang] || '261030') + '</span>';
+    const templateTag = '<span class="hybrid-template-card__tag">M AI TEMPLATE</span>';
+    const templateMeta = record.sourceRevision === '261030' ? '<div class="mai-template-meta">' + templateTag + addedBadge + '</div>' : templateTag;
+    const processMarkup = processes => processes.map(p => '<div class="hybrid-adjustment-group"><div class="mai-process-heading"><h5>' + escape(p.titleText?.[lang] || p.title) + '</h5>' + (p.addedIn ? addedBadge : '') + '</div>' + processDescriptions(p) + illustrations(p.title) + '</div>').join('');
+    body.innerHTML = window.GenCoreMaterialTemplateCard.styles() + '<article class="hybrid-template-card" lang="' + lang + '">' + templateMeta + '<h3>' + escape(record.material) + '</h3><p class="hybrid-template-card__subtitle">' + escape((record.subtitle || record.title.slice(record.material.length + 1)).replace(/_/g, ' · ')) + '</p>' + cardSection(c.conditions, listMarkup(record.conditions) + illustrations()) + (adjustableProcesses.length ? disclosureSection(c.adjustable, processMarkup(adjustableProcesses), lang) : '') + (record.uda.length ? udaSection(record, lang, c.uda) : '') + ((record.interfaces || []).length ? disclosureSection('Implant Interfaces wall', listMarkup(record.interfaces), lang) : '') + (threadProcesses.length ? disclosureSection('Thread machining', processMarkup(threadProcesses), lang) : '') + (record.tools.length ? '<section class="hybrid-tools"><h4><span aria-hidden="true"></span>' + c.tools + '</h4>' + toolsMarkup(false) + toolsMarkup(true) + '</section>' : '') + '</article>';
   }
   function open(record, push = true) {
     activeRecord = record; renderDetail();

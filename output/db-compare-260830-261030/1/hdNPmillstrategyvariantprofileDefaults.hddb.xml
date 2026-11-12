@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fmDatabase version="2" structureversion="3">
+   <default_table>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">751503ad-7dfc-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">b48a93eb-7dfc-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">786254cc-7de2-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">d9ca5ed3-7de2-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">dc9c8616-c282-11ee-8e03-ecdd8dcde457</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">744ad8e9-d4af-11ef-9eec-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">e413707a-c282-11ee-8e03-ecdd8dcde457</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">563f7753-2c4f-11ef-9e61-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlay_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">a71cc81f-0df5-11f1-a4bb-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlay_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">ba0f11cc-0df5-11f1-a4bb-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">a71cc81f-0df5-11f1-a4bb-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">ba0f11cc-0df5-11f1-a4bb-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>bitesplint_single:Over Structure</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">86509a4e-d97e-11f0-a4a9-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">3926141c-956b-11ee-9e03-14857f7eaaee</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>model_single:Partial Frame</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">cbe56917-b469-11f0-a1f1-84144dcdbae9</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">b55afcc2-7dfb-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">fc14a93b-7dfb-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">a1158631-7dcd-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single:Veneer</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">e62384ac-a7cb-11ef-9eba-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">9f298080-3733-11ef-8e54-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">204c4f1d-d9f6-11ee-9e2d-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">f3f3b32c-7066-11f1-a4d4-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlay_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">1a092e6e-6375-11ef-9e7e-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single:Veneer</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">3e05b609-1289-11f1-a4bc-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">4ca07349-35a5-11e0-aca3-485b3982cf1c</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">1a092e6e-6375-11ef-9e7e-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">349f049a-be21-11eb-a186-9061aeceecac</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">dcff1fc3-e50b-11ee-9e33-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">349f049a-be21-11eb-a186-9061aeceecac</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single:Veneer</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">d1fb3e2c-64f7-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">349f049a-be21-11eb-a186-9061aeceecac</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">ddae0237-6513-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">349f049a-be21-11eb-a186-9061aeceecac</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">f6b9a98a-7389-11f1-a4d4-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">349f049a-be21-11eb-a186-9061aeceecac</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">f2fd5d35-737a-11f1-a4d4-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">349f049a-be21-11eb-a186-9061aeceecac</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlay_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">a7774b77-64f9-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">349f049a-be21-11eb-a186-9061aeceecac</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">a7774b77-64f9-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">349f049a-be21-11eb-a186-9061aeceecac</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">ddae0237-6513-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">dcff1fc3-e50b-11ee-9e33-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single:Veneer</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">d1fb3e2c-64f7-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">ddae0237-6513-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">f2fd5d35-737a-11f1-a4d4-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">f6b9a98a-7389-11f1-a4d4-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">f2fd5d35-737a-11f1-a4d4-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlay_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">a7774b77-64f9-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">a7774b77-64f9-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">f87bfaf3-562a-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">ddae0237-6513-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c6b72fc5-4635-11ee-a969-18c04db240d8</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">e9aef886-9aaa-11f1-a4de-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">b55afcc2-7dfb-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">fc14a93b-7dfb-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">a1158631-7dcd-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single:Veneer</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">e62384ac-a7cb-11ef-9eba-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">9f298080-3733-11ef-8e54-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">0b8e702c-3a96-11ef-8e54-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">bd6d005e-69de-11e2-97c2-3085a99772af</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">906f9545-65d5-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">75c57801-417f-11e5-82b0-7427ea498abd</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">531fd723-64ff-11ef-9e7f-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">75c57801-417f-11e5-82b0-7427ea498abd</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">541e7bc3-6fff-11ef-9e88-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">88573996-7df7-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>cap_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">f72238fb-7dfa-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">8f68ccc2-7df7-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_single:Veneer</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">8f68ccc2-7df7-11ee-b5c7-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>crown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">0c5f0168-7d4e-11ee-b5c6-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">9ee99819-589d-11ef-9e79-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">649f265a-3a95-11ef-8e54-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">205c423f-def1-11f0-a4a9-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">649f265a-3a95-11ef-8e54-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlay_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">33f00f3a-929d-11ef-9ea4-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlay_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">14bc5a6f-9295-11ef-9ea4-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">33f00f3a-929d-11ef-9ea4-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">b5a796e5-028b-11de-a0e2-002186a4af5a</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>onlaycrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">14bc5a6f-9295-11ef-9ea4-14857f7eaaee</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">0b8e702c-3a96-11ef-8e54-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">d38f2765-39b1-11de-bb9d-001a6b79c1a5</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">e14b75c7-a513-11f1-a4df-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutment_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">0b8e702c-3a96-11ef-8e54-d85ed3abfe3c</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_single</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">e14b75c7-a513-11f1-a4df-ec4c8c8ee783</profile>
+      </default>
+      <default>
+         <version>2</version>
+         <rfilter type="material">c512eb1e-5629-11ef-8bc9-181deae7bdc2</rfilter>
+         <vfilter type="fvalue">
+            <name>type</name>
+            <value>abutmentcrown_bridge</value>
+         </vfilter>
+         <vfilter type="fvalue">
+            <name>machinetool</name>
+            <value/>
+         </vfilter>
+         <profile type="millstrategyvariantprofile">0b8e702c-3a96-11ef-8e54-d85ed3abfe3c</profile>
+      </default>
+   </default_table>
+</fmDatabase>
