@@ -13,7 +13,9 @@
     ja: { tag: 'MILLFIX TEMPLATE', conditions: '使用条件', prepare: '準備', adjustable: '調整可能', uda: 'ユーザー定義領域 (UDA)', tools: '工具', basic: '基本使用工具', basicHint: '常に使用', conditional: '条件付き使用工具', conditionalHint: '条件に応じて使用', t37: '咬合溝加工がONの場合', t45: 'アングルドスクリューチャネル専用' }
   };
 
-  const escapeHtml = (value) => String(value || '').replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
+  // Hide numeric tool suffixes in every template label, description and attribute.
+  const displayToolText = value => String(value).replace(/(\b(?:T\d+_)?[A-Z]\d+(?:\.\d+)?[A-Z]+_L\d+)\(-?\d+\)/gi, '$1');
+  const escapeHtml = (value) => displayToolText(value || '').replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
   const normalizeToolCodes = (value) => String(value || '').replace(/\b(T\d{2})([A-Z]\d(?:\.\d+)?[A-Z]?)\b/g, '$1-$2');
   const cleanLine = (value) => normalizeToolCodes(value)
     .replace(/<br\s*\/?\s*>/gi, ' ')

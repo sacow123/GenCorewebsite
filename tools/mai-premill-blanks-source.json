@@ -1,0 +1,1528 @@
+{
+  "medentika": [
+    {
+      "name": "AB series",
+      "rows": [
+        [
+          "AB series",
+          "",
+          "Anthogyr",
+          "Axiom® Bone Level",
+          "3,4 - 5,2",
+          "",
+          "",
+          "AB9000-R",
+          "AB9000-R_AB Series_3.4-5.2_D11.5_Ti.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "AB9000-16R",
+          "AB9000-16R_AB Series_3.4-5.2_D16_Ti.",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "AT series",
+      "rows": [
+        [
+          "AT series",
+          "",
+          "Anthogyr",
+          "Axiom® Tissue Level",
+          "N",
+          "",
+          "",
+          "AT9000-R",
+          "AT9000-R_AT Series_N_D11.5_Ti.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "AT9000-16R",
+          "AT9000-16R_AT Series_N_D16_Ti.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "R",
+          "",
+          "",
+          "AT9010-R",
+          "AT9010-R_AT Series_R_D11.5_Ti.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "AT9010-16R",
+          "AT9010-16R_AT Series_R_D16_Ti.",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "B series",
+      "rows": [
+        [
+          "B series",
+          "",
+          "Bredent Medical",
+          "narrow SKY® / blue SKY® / blassic SKY®",
+          "NP",
+          "",
+          "",
+          "B9000-R",
+          "B9000-R_B series_NP_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "RP",
+          "",
+          "",
+          "B9001-R",
+          "B9001-R_B series_RP_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "B9000-16R",
+          "B9000-16R_B series_RP_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "BS series",
+      "rows": [
+        [
+          "BS series",
+          "",
+          "BEGO Implant Systems",
+          "Semados® S/SC/SCX/RS/RSX/RI",
+          "3,25 / 3,75",
+          "",
+          "",
+          "BS9000-R\nBS9000-16R",
+          "BS9000-R_BS series_3.25-3.75_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "BS9000-16R_BS series_3.25-3.75_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "3,25 / 3,75",
+          "PS",
+          "",
+          "",
+          "BS9000-R_BS series PS_3.25-3.75_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "BS9000-16R_BS series PS_3.25-3.75_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,1",
+          "",
+          "",
+          "",
+          "BS9000-R_BS series_4.1_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "BS9000-16R_BS series_4.1_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,1",
+          "PS",
+          "",
+          "",
+          "BS9000-R_BS series PS_4.1_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "BS9000-16R_BS series PS_4.1_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,5",
+          "",
+          "",
+          "",
+          "BS9000-R_BS series_4.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "BS9000-16R_BS series_4.5_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,5",
+          "PS",
+          "",
+          "",
+          "BS9000-R_BS series PS_4.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "BS9000-16R_BS series PS_4.5_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "5,5",
+          "",
+          "",
+          "",
+          "BS9000-R_BS series_5.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "BS9000-16R_BS series_5.5_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "5,5",
+          "PS",
+          "",
+          "",
+          "BS9000-R_BS series PS_5.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "BS9000-16R_BS series PS_5.5_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "C series",
+      "rows": [
+        [
+          "C series",
+          "",
+          "BioHorizons Camlog\n\nMEDENTiKA®",
+          "Camlog®\n\nPROCONE",
+          "3,3",
+          "",
+          "",
+          "C9000-R",
+          "C9000-R_C series_3.3_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "C9000-16R",
+          "C9000-16R_C series_3.3_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "3,8",
+          "",
+          "",
+          "C9010-R",
+          "C9010-R_C series_3.8_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "C9010-16R",
+          "C9010-16R_C series_3.8_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,3",
+          "",
+          "",
+          "C9020-R",
+          "C9020-R_C series_4.3_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "C9020-16R",
+          "C9020-16R_C series_4.3_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "5,0",
+          "",
+          "",
+          "C9030-R",
+          "C9030-R_C series_5.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "C9030-16R",
+          "C9030-16R_C series_5.0_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "6,0",
+          "",
+          "",
+          "C9040-R",
+          "C9040-R_C series_6.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "C9040-16R",
+          "C9040-16R_C series_6.0_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "CX series",
+      "rows": [
+        [
+          "CX series",
+          "",
+          "Medentis Medical",
+          "ICX®-Active, ICX®-Premium",
+          "3,75 - 4,8",
+          "",
+          "",
+          "CX9000-R",
+          "CX9000-R_CX series_3.75-4.8_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "CX9000-16R",
+          "CX9000-16R_CX series_3.75-4.8_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "D series",
+      "rows": [
+        [
+          "D series",
+          "",
+          "BioHorizons Camlog",
+          "Conelog®",
+          "3,3",
+          "",
+          "",
+          "D9000-R",
+          "D9000-R_D series_3.3_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "3,8 / 4,3",
+          "",
+          "",
+          "D9010-R",
+          "D9010-R_D series_3.8/4.3_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "D9010-16R",
+          "D9010-16R_D series_3.8/4.3_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "DT series",
+      "rows": [
+        [
+          "DT series",
+          "",
+          "Dentium",
+          "SuperLine, Implantium, Implantium II",
+          "3,6 - 7,0",
+          "",
+          "",
+          "DT9000-R",
+          "DT9000-R_DT series_3.6-7.0_D11.5_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "E series",
+      "rows": [
+        [
+          "E series",
+          "",
+          "Nobel Biocare",
+          "NobelReplace®\nReplace SelectTM\nNobelSpeedy® Replace",
+          "NP 3,5",
+          "",
+          "",
+          "E9000-R",
+          "E9000-R_E series_NP3.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "RP 4,3",
+          "",
+          "",
+          "E9010-R",
+          "E9010-R_E series_RP4.3_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "E9010-16R",
+          "E9010-16R_E series_RP4.3_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "WP 5,0",
+          "",
+          "",
+          "E9020-R",
+          "E9020-R_E series_WP5.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "E9020-16R",
+          "E9020-16R_E series_WP5.0_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "6,0",
+          "",
+          "",
+          "E9030-16R",
+          "E9030-16R_E series_6.0_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "EV series",
+      "rows": [
+        [
+          "EV series",
+          "",
+          "DENTSPLY SIRONA",
+          "ASTRA TECH OsseoSpeed® EV",
+          "3,0",
+          "",
+          "",
+          "EV9000-R",
+          "EV9000-R_EV series_3.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "EV9000-16R_EV series_3.0_D16_Ti.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "3,6",
+          "",
+          "",
+          "EV9010-R",
+          "EV9010-R_EV series_3.6_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "EV9010-16R",
+          "EV9010-16R_EV series_3.6_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,2",
+          "",
+          "",
+          "EV9020-R",
+          "EV9020-R_EV series_4.2_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "EV9020-16R",
+          "EV9020-16R_EV series_4.2_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,8",
+          "",
+          "",
+          "EV9030-R",
+          "EV9030-R_EV series_4.8_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "EV9030-16R",
+          "EV9030-16R_EV series_4.8_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "5,4",
+          "",
+          "",
+          "EV9040-R",
+          "EV9040-R_EV series_5.4_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "EV9040-16R",
+          "EV9040-16R_EV series_5.4_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "F Series",
+      "rows": [
+        [
+          "F Series",
+          "",
+          "Nobel Biocare",
+          "NobelActive® CC, NobelReplace® CC, NobelParallelTM CC",
+          "3,0",
+          "",
+          "",
+          "F9020-R",
+          "F9020-R_F Series_3.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "NP 3,5",
+          "",
+          "",
+          "F9000-R",
+          "F9000-R_F Series_NP3.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "F9000-16R",
+          "F9000-16R_F Series_NP3.5_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "RP 4,3/5,0",
+          "",
+          "",
+          "F9010-R",
+          "F9010-R_F Series_RP4.3/5.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "F9010-16R",
+          "F9010-16R_F Series_RP4.3/5.0_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "WP 5,5",
+          "",
+          "",
+          "F9030-R",
+          "F9030-R_F Series_WP5.5_D11.5_Ti.",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "GM series",
+      "rows": [
+        [
+          "GM series",
+          "",
+          "Neodent®",
+          "Grand Morse®",
+          "3,5 - 5,0",
+          "",
+          "",
+          "GM9000-R",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "H series",
+      "rows": [
+        [
+          "H series",
+          "",
+          "Zimvie",
+          "Biomet 3i Certain® Internal Connection",
+          "3,4",
+          "",
+          "",
+          "H9000-R",
+          "H9000-R_H series_3.4_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,1",
+          "",
+          "",
+          "H9010-R",
+          "H9010-R_H series_4.1_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "H9010-16R",
+          "H9010-16R_H series_4.1_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "5,0",
+          "",
+          "",
+          "H9020-16R",
+          "H9020-16R_H series_5.0_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "I series",
+      "rows": [
+        [
+          "I series",
+          "",
+          "Zimvie",
+          "Biomet 3i External Hex",
+          "3,4",
+          "",
+          "",
+          "I9000-R",
+          "I9000-R_I series_3.4_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,1",
+          "",
+          "",
+          "I9010-R",
+          "I9010-R_I series_4.1_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "5,0",
+          "",
+          "",
+          "I9020-16R",
+          "I9020-16R_I series_5.0_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "IPS series",
+      "rows": [
+        [
+          "IPS series",
+          "",
+          "MEDENTiKA®",
+          "Microcone®, Quattrocone®, Quattrocone30®",
+          "NI",
+          "",
+          "",
+          "1-90-02",
+          "1-90-02_IPS Series_NI_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "RI",
+          "",
+          "",
+          "2-90-02",
+          "2-90-02_IPS Series_RI_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "2-90-03",
+          "2-90-03_IPS Series_RI_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "AI",
+          "",
+          "",
+          "4-90-02",
+          "4-90-02_IPS Series_AI_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "4-90-03",
+          "4-90-03_IPS Series_AI_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "K series",
+      "rows": [
+        [
+          "K series",
+          "",
+          "Nobel Biocare",
+          "Brånemark System®, NobelSpeedy®, Groovy®",
+          "NP 3,5",
+          "",
+          "",
+          "K9000-R",
+          "K9000-R_K series_NP3.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "RP 4,1",
+          "",
+          "",
+          "K9010-R",
+          "K9010-R_K series_RP4.1_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "WP 5,1",
+          "",
+          "",
+          "K9020-16R",
+          "K9020-16R_K series_WP5.1_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "L series",
+      "rows": [
+        [
+          "L series",
+          "",
+          "Straumann",
+          "Bone Level, Bone Level Tapered",
+          "SC 2,9",
+          "",
+          "",
+          "L9020-R",
+          "L9020-R_L series_SC2.9_D11.5_Ti.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "NC 3,3",
+          "",
+          "",
+          "L9000-R",
+          "L9000-R_L series_NC3.3_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "L9000-16R",
+          "L9000-16R_L series_NC3.3_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "RC 4,1/4,8",
+          "",
+          "",
+          "L9010-R",
+          "L9010-R_L series_RC4.1/4.8_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "L9010-16R",
+          "L9010-16R_L series_RC4.1/4.8_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "LX series",
+      "rows": [
+        [
+          "LX series",
+          "",
+          "Straumann",
+          "BLX, BLC",
+          "RB/WB",
+          "",
+          "",
+          "LX9000-R",
+          "LX9000-R_LX series_RB/WB_D11.5_Ti.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "WB",
+          "",
+          "",
+          "LX9010-R",
+          "LX9010-R_LX series_WB_D11.5_Ti.",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "MG series",
+      "rows": [
+        [
+          "MG series",
+          "",
+          "Megagen",
+          " AnyRidge®",
+          "3,5 - 8,0",
+          "",
+          "",
+          "MG9000-R",
+          "MG9000-R_MG series_3.5-8.0_D11.5_Ti.",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "N series",
+      "rows": [
+        [
+          "N series",
+          "",
+          "Straumann",
+          " Tissue Level",
+          "NNC 3,5",
+          "",
+          "",
+          "N9030-R",
+          "N9030-R_N series_NNC3.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "RN 4,8",
+          "",
+          "",
+          "N9010-R",
+          "N9010-R_N series_RN4.8_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "N9010-16R",
+          "N9010-16R_N series_RN4.8_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "WN 6,5",
+          "",
+          "",
+          "N9020-R",
+          "N9020-R_N series_WN6.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "N9020-16R",
+          "N9020-16R_N series_WN6.5_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "NE series",
+      "rows": [
+        [
+          "NE series",
+          "",
+          "NEOSS®",
+          " ProActive®",
+          "3,5 - 6,5",
+          "",
+          "",
+          "NE9000-R",
+          "NE9000-R_NE series_3.5-6.5_D11.5_Ti.",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "OT series",
+      "rows": [
+        [
+          "OT series",
+          "",
+          "Osstem Implants\nHiOssen Implant®\nT-Plus Implant Tech",
+          "TS System\nET System\nA+ Implant, ST Implant",
+          "Mini",
+          "",
+          "",
+          "OT9000-R",
+          "OT9000-R_OT series_Mini_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "Regular",
+          "",
+          "",
+          "OT9010-R",
+          "OT9010-R_OT series_Regular_D11.5_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "R series",
+      "rows": [
+        [
+          "R series",
+          "",
+          "BioHorizons Camlog\nMIS\nZimVie",
+          "BioHorizons Tapered System\nSEVEN Internal Hex\nZimmer Tapered Screw-Vent®",
+          "3,5",
+          "",
+          "",
+          "R9000-R",
+          "R9000-R_R series_3.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "R9000-16R",
+          "R9000-16R_R series_3.5_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,5",
+          "",
+          "",
+          "R9010-R ",
+          "R9010-R _R series_4.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "R9010-16R",
+          "R9010-16R_R series_4.5_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "5,7",
+          "",
+          "",
+          "R9020-16R",
+          "R9020-16R_R series_5.7_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "S series",
+      "rows": [
+        [
+          "S series",
+          "",
+          "DENTSPLY SIRONA",
+          "ASTRA TECH OsseoSpeed® TX",
+          "3,0",
+          "",
+          "",
+          "S9030-R",
+          "S9030-R_S series_3.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "3,5 / 4,0",
+          "",
+          "",
+          "S9000-R",
+          "S9000-R_S series_3.5/4.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "S9000-16R",
+          "S9000-16R_S series_3.5/4.0_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,5 / 5,0",
+          "",
+          "",
+          "S9020-R",
+          "S9020-R_S series_4.5/5.0_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "S9020-16R",
+          "S9020-16R_S series_4.5/5.0_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "T series",
+      "rows": [
+        [
+          "T series",
+          "",
+          "DENTSPLY SIRONA",
+          "Xive® S",
+          "3,4",
+          "",
+          "",
+          "T9000-R",
+          "T9000-R_T series_3.4_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "3,8",
+          "",
+          "",
+          "T9005-R",
+          "T9005-R_T series_3.8_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "T9005-16R",
+          "T9005-16R_T series_3.8_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "4,5",
+          "",
+          "",
+          "T9010-R",
+          "T9010-R_T series_4.5_D11.5_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "T9010-16R",
+          "T9010-16R_T series_4.5_D16_Ti",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "5,5",
+          "",
+          "",
+          "T9020-16R",
+          "T9020-16R_T series_5.5_D16_Ti",
+          ""
+        ]
+      ]
+    },
+    {
+      "name": "Y series",
+      "rows": [
+        [
+          "Y series",
+          "",
+          "DENTSPLY SIRONA",
+          "ANKYLOS® C/X",
+          "C/ 3,5 - 7,0",
+          "",
+          "",
+          "Y9000-R",
+          "Y9000-R_Y series_C/3.5-7.0_D11.5_Ti.",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "/X 3,5 - 7,0",
+          "",
+          "",
+          "Y9000X-R",
+          "Y9000X-R_Y series_/X3.5-7.0_D11.5_Ti",
+          ""
+        ]
+      ]
+    }
+  ],
+  "straumann": [
+    [
+      "Bone Level / Bone Level Tapered",
+      "NC 3.3",
+      "Straumann_BoneLevel_NC_D11.5_Ti",
+      "Straumann_BoneLevel_NC_D16_Ti"
+    ],
+    [
+      "Bone Level / Bone Level Tapered",
+      "RC 4.1 / 4.8",
+      "Straumann_BoneLevel_RC_D11.5_Ti",
+      "Straumann_BoneLevel_RC_D16_Ti"
+    ],
+    [
+      "BLX / BLC",
+      "RB/WB",
+      "Straumann_BLX_RB/WB_D11.5_Ti",
+      "Straumann_BLX_RB/WB_D16_Ti"
+    ],
+    [
+      "BLX / BLC",
+      "WB",
+      "Straumann_BLX_WB_D11.5_Ti",
+      "Straumann_BLX_WB_D16_Ti"
+    ],
+    [
+      "Tissue Level",
+      "RN 4.8",
+      "Straumann_TissueLevel_RN_D11.5_Ti",
+      "Straumann_TissueLevel_RN_D16_Ti"
+    ],
+    [
+      "Tissue Level",
+      "WN 6.5",
+      "Straumann_TissueLevel_WN_D11.5_Ti",
+      "Straumann_TissueLevel_WN_D16_Ti"
+    ]
+  ]
+}

@@ -44,7 +44,9 @@
     en: { intro: 'Templates included by material.', material: 'Material', prosthesis: 'Prosthesis type', all: 'All', filters: 'Template filters', conditions: 'WHEN TO USE', adjustable: 'ADJUSTABLE', uda: 'USER-DEFINED AREA (UDA)', tools: 'TOOLS', basic: 'Basic tools', basicHint: 'Always used', optional: 'Conditional tools', optionalHint: 'Used when applicable', close: 'Close' },
     ja: { intro: '素材別の収録テンプレート一覧です。', material: '素材', prosthesis: '補綴物の種類', all: 'すべて', filters: 'テンプレートフィルター', conditions: '使用条件', adjustable: '調整可能な項目', uda: 'ユーザー定義領域 (UDA)', tools: '工具', basic: '基本使用工具', basicHint: '常に使用', optional: '条件付き使用工具', optionalHint: '条件に応じて使用', close: '閉じる' }
   };
-  const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  // Hide numeric tool suffixes in every template label, description and attribute.
+  const displayToolText = value => String(value).replace(/(\b(?:T\d+_)?[A-Z]\d+(?:\.\d+)?[A-Z]+_L\d+)\(-?\d+\)/gi, '$1');
+  const escape = value => displayToolText(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const language = () => typeof currentLang !== 'undefined' && copy[currentLang] ? currentLang : 'en';
   const imageCopy = {
     ko: { open: '사진 확대', title: '확대 사진', close: '확대 사진 닫기' },

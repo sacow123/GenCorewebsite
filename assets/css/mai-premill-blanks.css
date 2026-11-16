@@ -1,0 +1,41 @@
+/* All rules are limited to the searchable premill blank tables. */
+#sec-mai-hd-premill-brands [hidden] { display:none !important; }
+#sec-mai-hd-premill-brands .pm-toolbar { margin:24px 0; }
+#sec-mai-hd-premill-brands .pm-toolbar label { display:block;font-size:13px;font-weight:600;color:#696475;margin-bottom:8px; }
+#sec-mai-hd-premill-brands .pm-search-row { display:flex;gap:10px; }
+#sec-mai-hd-premill-brands input[type="search"] { flex:1;min-width:0;padding:12px 14px;border:1px solid #dedbe7;border-radius:8px;background:#fff;color:#24233a;font:inherit;font-size:14px; }
+#sec-mai-hd-premill-brands [data-pm-reset] { padding:10px 18px;border:1px solid #dedbe7;border-radius:8px;background:#fff;color:#7544cf;font:inherit;font-size:13px;cursor:pointer; }
+#sec-mai-hd-premill-brands :is(input,button,summary,.pm-table-scroll):focus-visible { outline:2px solid #7544cf;outline-offset:2px; }
+#sec-mai-hd-premill-brands .pm-results { margin:12px 0 0;color:#747586;font-size:12px; }
+#sec-mai-hd-premill-brands .mai-premill-brand { padding:0;border:1px solid #e5e1ec;border-radius:10px;overflow:hidden;background:#fff;margin:0 0 14px; }
+#sec-mai-hd-premill-brands .mai-premill-brand > summary { padding:18px 22px;cursor:pointer;color:#075985;font-size:18px;font-weight:700; }
+#sec-mai-hd-premill-brands .pm-count { float:right;background:#f1edf8;color:#7955a9;padding:3px 9px;border-radius:5px;font-size:12px; }
+#sec-mai-hd-premill-brands .pm-brand-content { padding:0 20px 20px;min-width:0; }
+#sec-mai-hd-premill-brands .pm-jig { margin:0 0 16px;color:#747586;font-size:12px; }
+#sec-mai-hd-premill-brands .pm-series { margin-bottom:22px; }
+#sec-mai-hd-premill-brands .pm-series:last-child { margin-bottom:0; }
+#sec-mai-hd-premill-brands .pm-series h3 { margin:0;padding:12px 14px;background:#e9f2f9;color:#075985;font-size:15px;border-radius:7px 7px 0 0; }
+#sec-mai-hd-premill-brands .pm-table-scroll { overflow-x:auto;max-width:100%;border:1px solid #e1e6ed;border-radius:0 0 7px 7px; }
+#sec-mai-hd-premill-brands table { width:100%;min-width:680px;border-collapse:collapse;font-size:13px;line-height:1.65;color:#24364a;table-layout:auto; }
+#sec-mai-hd-premill-brands thead { background:#f2f5fa; }
+#sec-mai-hd-premill-brands th { text-align:left;padding:11px 13px;font-weight:600;color:#536176;white-space:nowrap; }
+#sec-mai-hd-premill-brands td { padding:12px 13px;text-align:left;border-top:1px solid #e6eaf0;border-right:1px solid #edf0f4;white-space:pre-line;vertical-align:top;min-width:70px;word-break:normal;overflow-wrap:normal; }
+#sec-mai-hd-premill-brands td:last-child { border-right:0;white-space:pre;font:12px/1.8 Consolas,monospace;min-width:340px; }
+#sec-mai-hd-premill-brands td:nth-last-child(2) { white-space:pre-line;min-width:110px; }
+#sec-mai-hd-premill-brands [data-pm-brand="Straumann"] td:nth-last-child(-n+2) { white-space:pre;font:12px/1.8 Consolas,monospace; }
+#sec-mai-hd-premill-brands tbody tr:nth-child(even) { background:#f8fafc; }
+#sec-mai-hd-premill-brands tbody tr:hover { background:#f3effb; }
+#sec-mai-hd-premill-brands .pm-empty { color:#acb5c0; }
+#sec-mai-hd-premill-brands .pm-no-results { padding:28px;text-align:center;color:#747586;background:#fff;border:1px solid #e5e1ec;border-radius:10px; }
+#sec-mai-hd-premill-brands .pm-compatibility { background:#f5f9fc;border:1px solid #e1e6ed;border-bottom:0; }
+#sec-mai-hd-premill-brands .pm-compat-table { min-width:0;table-layout:fixed; }
+#sec-mai-hd-premill-brands .pm-compat-table th { width:40%;white-space:normal;background:#f5f9fc;padding:9px 13px;color:#657588;font-size:12px; }
+#sec-mai-hd-premill-brands .pm-compat-table th:last-child { width:60%; }
+#sec-mai-hd-premill-brands .pm-compat-table td { min-width:0;padding:8px 13px;white-space:pre-line;font-family:inherit;font-size:13px;line-height:1.7;font-weight:400;color:#24364a;overflow-wrap:anywhere;vertical-align:middle; }
+#sec-mai-hd-premill-brands .pm-compat-table td:empty { height:12px;padding-top:0;padding-bottom:0; }
+#sec-mai-hd-premill-brands .pm-compat-table tr:nth-child(even) { background:transparent; }
+@media(max-width:600px) {
+  #sec-mai-hd-premill-brands .pm-brand-content { padding:0 10px 12px; }
+  #sec-mai-hd-premill-brands .mai-premill-brand > summary { padding:16px 14px;font-size:16px; }
+  #sec-mai-hd-premill-brands [data-pm-reset] { padding:10px 12px; }
+}

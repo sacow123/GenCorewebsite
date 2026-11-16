@@ -1,6 +1,22 @@
 /* ===== i18n 다국어 전환 시스템 ===== */
 const TRANSLATIONS = {
   "ko": {
+    "mai-milling-0": "가공 시간 안내",
+    "mai-milling-1": "보철물 종류 및 소재별 참고 가공 시간",
+    "mai-milling-2": "보철물 종류",
+    "mai-milling-3": "인레이",
+    "mai-milling-4": "크라운",
+    "mai-milling-5": "3본 브릿지",
+    "mai-milling-6": "오버 스트럭처",
+    "mai-milling-7": "커스텀 어버트먼트",
+    "mai-milling-8": "Ibar",
+    "mai-milling-9": "Thimble",
+    "mai-milling-10": "고속 모드",
+    "mai-milling-11": "일반 모드",
+    "mai-milling-12": "가공 시간 미표기",
+    "mai-milling-13": "참고용",
+    "mai-milling-14": "가공 시간은 디자인, 파트 설정 및 소재 두께에 따라 달라집니다.",
+    "mai-milling-15": "표시된 시간은 참고용이며 모든 케이스에서 보장되지 않습니다.",
     "site-title": "GenCore Technical Support Center",
     "auth-logout": "로그아웃",
     "auth-access-title": "딜러 전용 사이트",
@@ -404,6 +420,22 @@ const TRANSLATIONS = {
     "mf-auto-3085": "환봉과 리버스 지그를 이용해"
   },
   "en": {
+    "mai-milling-0": "MILLING TIME GUIDE",
+    "mai-milling-1": "Reference milling times by restoration type and material",
+    "mai-milling-2": "Restoration",
+    "mai-milling-3": "Inlay",
+    "mai-milling-4": "Crown",
+    "mai-milling-5": "3-unit bridge",
+    "mai-milling-6": "Over structure",
+    "mai-milling-7": "Custom abutment",
+    "mai-milling-8": "Ibar",
+    "mai-milling-9": "Thimble",
+    "mai-milling-10": "Fast mode",
+    "mai-milling-11": "Normal mode",
+    "mai-milling-12": "No milling time specified",
+    "mai-milling-13": "REFERENCE ONLY",
+    "mai-milling-14": "Milling time depends on design, part settings and material thickness.",
+    "mai-milling-15": "These times are for reference only and are not guaranteed for every case.",
     "auth-logout": "Sign out",
     "auth-access-title": "Dealer-only site",
     "auth-access-subtitle": "Enter the shared password provided to authorized dealers.",
@@ -1632,6 +1664,22 @@ const TRANSLATIONS = {
     "mf-auto-2195": "Now process sequentially: NC1 (bar milling) -> NC2 (additional hole milling) -> Check fit -> NC3 (connector milling). Be sure to check the fit before running NC3."
   },
   "ja": {
+    "mai-milling-0": "加工時間ガイド",
+    "mai-milling-1": "補綴物の種類・素材別の参考加工時間",
+    "mai-milling-2": "補綴物の種類",
+    "mai-milling-3": "インレー",
+    "mai-milling-4": "クラウン",
+    "mai-milling-5": "3ユニットブリッジ",
+    "mai-milling-6": "オーバーストラクチャー",
+    "mai-milling-7": "カスタムアバットメント",
+    "mai-milling-8": "アイバー",
+    "mai-milling-9": "シンブル",
+    "mai-milling-10": "高速モード",
+    "mai-milling-11": "通常モード",
+    "mai-milling-12": "加工時間の記載なし",
+    "mai-milling-13": "参考情報",
+    "mai-milling-14": "加工時間はデザイン、パーツ設定、素材の厚さによって異なります。",
+    "mai-milling-15": "記載の時間は参考値であり、すべてのケースで保証されるものではありません。",
     "site-title": "GenCore テクニカルサポートセンター",
     "auth-logout": "ログアウト",
     "auth-access-title": "販売店専用サイト",
@@ -5437,7 +5485,8 @@ function applyLanguage(lang) {
   const preservesDbconfigFilters = activeSection?.id === "sec-mf-hd-dbconfig";
   const preservesMaiTools = activeSection?.id === "sec-mai-tools";
   const preservesTemplateArticle = activeSection?.classList.contains('template-detail-page') || activeSection?.id === 'sec-mai-hd-settings-db';
-  if (!preservesDbconfigFilters && !preservesMaiTools && !preservesTemplateArticle) restoreContentSection(activeSection);
+  const preservesPremillSearch = activeSection?.id === 'sec-mai-hd-premill-brands';
+  if (!preservesDbconfigFilters && !preservesMaiTools && !preservesTemplateArticle && !preservesPremillSearch) restoreContentSection(activeSection);
 
   currentLang = lang;
   try {
@@ -6750,3 +6799,9 @@ Object.assign(TRANSLATIONS.ko, {"mai-blank-family-zirconia":"Zirconia 계열","m
 Object.assign(TRANSLATIONS.en, {"mai-blank-family-zirconia":"Zirconia group","mai-blank-family-glass":"Glass group","mai-blank-family-metal":"Metal group","mai-blank-family-premill":"Premill blank group"});
 Object.assign(TRANSLATIONS.ja, {"mai-blank-family-zirconia":"Zirconia系","mai-blank-family-glass":"Glass系","mai-blank-family-metal":"Metal系","mai-blank-family-premill":"Premill blank系"});
 Object.assign(TRANSLATIONS.es, {"mai-blank-family-zirconia":"Grupo Zirconia","mai-blank-family-glass":"Grupo Glass","mai-blank-family-metal":"Grupo Metal","mai-blank-family-premill":"Grupo Premill blank"});
+
+// Searchable Medentika / Straumann premill tables.
+Object.assign(TRANSLATIONS.ko, {"premill-search":"제조사 · 시리즈 · 플랫폼 · 블랭크명 검색","premill-placeholder":"예: Anthogyr, AB series, NC, D16","premill-reset":"초기화","premill-brands":"제조사","premill-rows":"항목","premill-manufacturer":"제조사","premill-system":"호환 임플란트 시스템","premill-platform":"플랫폼","premill-d115":"D11.5 블랭크","premill-d16":"D16 블랭크","premill-no-results":"검색 결과가 없습니다. 다른 검색어를 입력하세요."});
+Object.assign(TRANSLATIONS.en, {"premill-search":"Search manufacturer, series, platform or blank name","premill-placeholder":"e.g. Anthogyr, AB series, NC, D16","premill-reset":"Reset","premill-brands":"manufacturers","premill-rows":"entries","premill-manufacturer":"Manufacturer","premill-system":"Compatible implant system","premill-platform":"Platform","premill-d115":"D11.5 blank","premill-d16":"D16 blank","premill-no-results":"No results. Try another search term."});
+Object.assign(TRANSLATIONS.ja, {"premill-search":"メーカー・シリーズ・プラットフォーム・ブランク名を検索","premill-placeholder":"例：Anthogyr、AB series、NC、D16","premill-reset":"リセット","premill-brands":"メーカー","premill-rows":"項目","premill-manufacturer":"メーカー","premill-system":"対応インプラントシステム","premill-platform":"プラットフォーム","premill-d115":"D11.5ブランク","premill-d16":"D16ブランク","premill-no-results":"検索結果がありません。別のキーワードを入力してください。"});
+Object.assign(TRANSLATIONS.es, {"premill-search":"Buscar fabricante, serie, plataforma o nombre del blank","premill-placeholder":"Ej.: Anthogyr, AB series, NC, D16","premill-reset":"Restablecer","premill-brands":"fabricantes","premill-rows":"entradas","premill-manufacturer":"Fabricante","premill-system":"Sistema de implante compatible","premill-platform":"Plataforma","premill-d115":"Blank D11.5","premill-d16":"Blank D16","premill-no-results":"Sin resultados. Pruebe otro término de búsqueda."});

@@ -15,3 +15,17 @@
   menu.removeAttribute('data-section');
   parent.append(menu, submenu);
 })();
+
+(function createMaiBlankSubmenu() {
+  const menu = document.getElementById('menu-sec-mai-hd-blank');
+  if (!menu || document.getElementById('nav-mai-hd-blank-parent')) return;
+  const parent = document.createElement('div');
+  parent.className = 'nav-parent';
+  parent.id = 'nav-mai-hd-blank-parent';
+  menu.insertAdjacentElement('beforebegin', parent);
+  menu.insertAdjacentHTML('beforeend', '<span class="nav-arrow"></span>');
+  const submenu = document.createElement('div');
+  submenu.className = 'sub-menu';
+  submenu.innerHTML = '<div class="nav-item" data-section="sec-mai-hd-premill-brands" id="menu-sec-mai-hd-premill-brands"><span>Medentika/ Straumann Pre-mill Blanks</span></div>';
+  parent.append(menu, submenu);
+})();
