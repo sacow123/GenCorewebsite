@@ -1,0 +1,18 @@
+html,body{background:transparent;min-width:0}
+/* The parent page already provides the temporary local measurement panel. */
+#gencore-image-measure-tool{display:none!important}
+@media only screen{body{margin:0;max-width:none}}
+#sme-content{padding:8px 10px 24px;max-width:1100px;margin:0 auto;box-sizing:border-box}
+#sme-content *{box-sizing:border-box}
+#sme-content,#sme-content *{font-weight:700!important}
+#sme-content .sme-jig-number{color:#dc2626}
+#sme-content h3{font-size:clamp(20px,3vw,28px);margin:8px 0 22px;line-height:1.4}
+#sme-content .page-body{padding:0}
+#sme-content p,#sme-content li{white-space:pre-line;overflow-wrap:anywhere;word-break:keep-all;line-height:1.7}
+#sme-content .callout{padding:18px;border-radius:12px;margin:18px 0;gap:14px}
+#sme-content .callout>div:last-child{min-width:0;flex:1}
+#sme-content figure.image{margin:18px 0;max-width:100%}
+#sme-content figure.image img{display:block;max-width:100%;height:auto;cursor:zoom-in;border-radius:8px}
+#sme-content .source{overflow-wrap:anywhere;white-space:normal;font-size:14px}
+#sme-content a:focus-visible{outline:3px solid #8b5cf6;outline-offset:4px}
+@media(max-width:600px){#sme-content{padding:4px 0 18px}#sme-content .callout{padding:12px;gap:8px}#sme-content .indented{padding-left:0}#sme-content ol{padding-inline-start:24px}}

@@ -6805,3 +6805,13 @@ Object.assign(TRANSLATIONS.ko, {"premill-search":"제조사 · 시리즈 · 플�
 Object.assign(TRANSLATIONS.en, {"premill-search":"Search manufacturer, series, platform or blank name","premill-placeholder":"e.g. Anthogyr, AB series, NC, D16","premill-reset":"Reset","premill-brands":"manufacturers","premill-rows":"entries","premill-manufacturer":"Manufacturer","premill-system":"Compatible implant system","premill-platform":"Platform","premill-d115":"D11.5 blank","premill-d16":"D16 blank","premill-no-results":"No results. Try another search term."});
 Object.assign(TRANSLATIONS.ja, {"premill-search":"メーカー・シリーズ・プラットフォーム・ブランク名を検索","premill-placeholder":"例：Anthogyr、AB series、NC、D16","premill-reset":"リセット","premill-brands":"メーカー","premill-rows":"項目","premill-manufacturer":"メーカー","premill-system":"対応インプラントシステム","premill-platform":"プラットフォーム","premill-d115":"D11.5ブランク","premill-d16":"D16ブランク","premill-no-results":"検索結果がありません。別のキーワードを入力してください。"});
 Object.assign(TRANSLATIONS.es, {"premill-search":"Buscar fabricante, serie, plataforma o nombre del blank","premill-placeholder":"Ej.: Anthogyr, AB series, NC, D16","premill-reset":"Restablecer","premill-brands":"fabricantes","premill-rows":"entradas","premill-manufacturer":"Fabricante","premill-system":"Sistema de implante compatible","premill-platform":"Plataforma","premill-d115":"Blank D11.5","premill-d16":"Blank D16","premill-no-results":"Sin resultados. Pruebe otro término de búsqueda."});
+
+Object.assign(TRANSLATIONS.ko, {"mai-premill-brands-pending-link":"Medentika/ Straumann Pre-mill Blanks(준비중) →"});
+Object.assign(TRANSLATIONS.en, {"mai-premill-brands-pending-link":"Medentika/ Straumann Pre-mill Blanks(Coming soon) →"});
+Object.assign(TRANSLATIONS.ja, {"mai-premill-brands-pending-link":"Medentika/ Straumann Pre-mill Blanks(準備中) →"});
+Object.assign(TRANSLATIONS.es, {"mai-premill-brands-pending-link":"Medentika/ Straumann Pre-mill Blanks(Próximamente) →"});
+
+Object.assign(TRANSLATIONS.ko, {"nav-mai-cal-premill-s-me":"AI 프리밀 캘리브레이션 - S ME"});
+Object.assign(TRANSLATIONS.en, {"nav-mai-cal-premill-s-me":"AI Premill Calibration - S ME"});
+Object.assign(TRANSLATIONS.ja, {"nav-mai-cal-premill-s-me":"AIプリミルキャリブレーション - S ME"});
+Object.assign(TRANSLATIONS.es, {"nav-mai-cal-premill-s-me":"Calibración premill AI - S ME"});

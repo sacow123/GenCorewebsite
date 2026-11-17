@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "sourceHashes": true,
+  "previousMaterialsUnchanged": true,
+  "woodrruffExcluded": true,
+  "report": [
+    {
+      "material": "Hybrid Ceramic",
+      "templates": 18,
+      "toolCards": 70
+    },
+    {
+      "material": "PMMA",
+      "templates": 17,
+      "toolCards": 96
+    },
+    {
+      "material": "PEEK",
+      "templates": 9,
+      "toolCards": 45
+    },
+    {
+      "material": "Wax",
+      "templates": 8,
+      "toolCards": 31
+    },
+    {
+      "material": "Zirconia",
+      "templates": 17,
+      "toolCards": 110
+    }
+  ]
+}

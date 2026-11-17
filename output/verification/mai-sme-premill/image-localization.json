@@ -1,0 +1,31 @@
+{
+  "source": "assets/images/mai-sme-premill/step-03.webp",
+  "destination": "assets/images/mai-sme-premill/step-03-international.webp",
+  "generated": "C:/Users/USER/.codex/generated_images/01a1e7e3-6c17-7ea0-94aa-c8079e13c9b1/exec-cdcfb97e-accb-4fa1-b473-669f9c902f38.png",
+  "regions": [
+    {
+      "left": 650,
+      "top": 410,
+      "width": 190,
+      "height": 70
+    },
+    {
+      "left": 1665,
+      "top": 335,
+      "width": 215,
+      "height": 80
+    }
+  ],
+  "changedPixelsOutsideLabels": 0,
+  "labels": [
+    "#3",
+    "#8"
+  ],
+  "preservedMeasurements": [
+    "14.70 mm",
+    "14.72 mm"
+  ],
+  "tool": "Built-in image_gen",
+  "prompt": "Replace only the yellow Korean labels 3번 슬롯 and 8번 슬롯 with #3 and #8; preserve the original photograph, framing and the exact caliper readings 14.70 mm and 14.72 mm.",
+  "integration": "Only generated label regions were composited into a lossless WebP copy; all decoded pixels outside those two regions match the original."
+}

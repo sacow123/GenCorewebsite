@@ -1,0 +1,1500 @@
+{
+  "url": "http://127.0.0.1:8080/사용자%20매뉴얼.html#sec-mai-cal-premill-s-me",
+  "checks": [
+    {
+      "lang": "ko",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 2,
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 3,
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 4,
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 6,
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 7,
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "closeLabel": "확대 사진 닫기"
+        }
+      ],
+      "pdfLinks": 2,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": null
+    },
+    {
+      "lang": "en",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "Selecting Jig No. 10 for V1.2 premill calibration",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "Diameter and height requirements for calibration blanks",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Checking slot origins inside the hyperDENT fixture after calibration",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "Selecting the type matching the mounted blank in hyperDENT",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "Positioning the abutment design relative to the bottom of the interface",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "Checking the abutment base line at the end of the blank",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "Selecting Jig No. 10 for V1.2 premill calibration",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 2,
+          "alt": "Diameter and height requirements for calibration blanks",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 3,
+          "alt": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 4,
+          "alt": "Checking slot origins inside the hyperDENT fixture after calibration",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 5,
+          "alt": "Selecting the type matching the mounted blank in hyperDENT",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 6,
+          "alt": "Positioning the abutment design relative to the bottom of the interface",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 7,
+          "alt": "Checking the abutment base line at the end of the blank",
+          "closeLabel": "Close enlarged photo"
+        }
+      ],
+      "pdfLinks": 2,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": 0
+    },
+    {
+      "lang": "ja",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2プリミルキャリブレーションでジグ番号10を選択する画面",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "キャリブレーション用ブランクの直径と高さの条件",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S MEジグの3番と8番のスロットに装着したブランクの高さの比較",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "キャリブレーション後にhyperDENTのフィクスチャ内部でスロットの原点を確認",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENTで装着したブランクに対応するタイプを選択",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "インターフェースの底面を基準にアバットメントのデザインを配置",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "ブランクの端でアバットメントのベースライン位置を確認",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2プリミルキャリブレーションでジグ番号10を選択する画面",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 2,
+          "alt": "キャリブレーション用ブランクの直径と高さの条件",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 3,
+          "alt": "S MEジグの3番と8番のスロットに装着したブランクの高さの比較",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 4,
+          "alt": "キャリブレーション後にhyperDENTのフィクスチャ内部でスロットの原点を確認",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENTで装着したブランクに対応するタイプを選択",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 6,
+          "alt": "インターフェースの底面を基準にアバットメントのデザインを配置",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 7,
+          "alt": "ブランクの端でアバットメントのベースライン位置を確認",
+          "closeLabel": "拡大写真を閉じる"
+        }
+      ],
+      "pdfLinks": 2,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": 0
+    },
+    {
+      "lang": "en",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "Selecting Jig No. 10 for V1.2 premill calibration",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "Diameter and height requirements for calibration blanks",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Checking slot origins inside the hyperDENT fixture after calibration",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "Selecting the type matching the mounted blank in hyperDENT",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "Positioning the abutment design relative to the bottom of the interface",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "Checking the abutment base line at the end of the blank",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "Selecting Jig No. 10 for V1.2 premill calibration",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 2,
+          "alt": "Diameter and height requirements for calibration blanks",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 3,
+          "alt": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 4,
+          "alt": "Checking slot origins inside the hyperDENT fixture after calibration",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 5,
+          "alt": "Selecting the type matching the mounted blank in hyperDENT",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 6,
+          "alt": "Positioning the abutment design relative to the bottom of the interface",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 7,
+          "alt": "Checking the abutment base line at the end of the blank",
+          "closeLabel": "Close enlarged photo"
+        }
+      ],
+      "pdfLinks": 2,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": 0
+    },
+    {
+      "lang": "ko",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 2,
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 3,
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 4,
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 6,
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 7,
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "closeLabel": "확대 사진 닫기"
+        }
+      ],
+      "pdfLinks": 2,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": null
+    },
+    {
+      "lang": "es",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "Selección del útil n.º 10 para la calibración premill V1.2",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "Requisitos de diámetro y altura de los bloques de calibración",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Comparación de las alturas de los bloques en las posiciones n.º 3 y n.º 8 del útil S ME",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Comprobación de los orígenes dentro del dispositivo de sujeción de hyperDENT tras la calibración",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "Selección en hyperDENT del tipo correspondiente al bloque montado",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "Colocación del diseño del pilar respecto a la base de la interfaz",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "Comprobación de la línea de base del pilar en el extremo del bloque",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "Selección del útil n.º 10 para la calibración premill V1.2",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 2,
+          "alt": "Requisitos de diámetro y altura de los bloques de calibración",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 3,
+          "alt": "Comparación de las alturas de los bloques en las posiciones n.º 3 y n.º 8 del útil S ME",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 4,
+          "alt": "Comprobación de los orígenes dentro del dispositivo de sujeción de hyperDENT tras la calibración",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 5,
+          "alt": "Selección en hyperDENT del tipo correspondiente al bloque montado",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 6,
+          "alt": "Colocación del diseño del pilar respecto a la base de la interfaz",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 7,
+          "alt": "Comprobación de la línea de base del pilar en el extremo del bloque",
+          "closeLabel": "Cerrar foto ampliada"
+        }
+      ],
+      "pdfLinks": 2,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": 0
+    },
+    {
+      "lang": "ko",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 2,
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 3,
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 4,
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 6,
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 7,
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "closeLabel": "확대 사진 닫기"
+        }
+      ],
+      "pdfLinks": 0,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": null
+    },
+    {
+      "lang": "ko",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 2,
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 3,
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 4,
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 6,
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 7,
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "closeLabel": "확대 사진 닫기"
+        }
+      ],
+      "pdfLinks": 0,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": null
+    },
+    {
+      "lang": "ko",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 2,
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 3,
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 4,
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 6,
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 7,
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "closeLabel": "확대 사진 닫기"
+        }
+      ],
+      "pdfLinks": 0,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": null
+    },
+    {
+      "lang": "ko",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 2,
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 3,
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 4,
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 6,
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 7,
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "closeLabel": "확대 사진 닫기"
+        }
+      ],
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": null,
+      "materialLinks": [
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "Medentika 프리밀 소재 보기 →"
+        },
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "Straumann 프리밀 소재 보기 →"
+        }
+      ],
+      "nonBoldText": [],
+      "slotPhoto": "../../images/mai-sme-premill/step-03.webp",
+      "revision": "bold-and-material-links"
+    },
+    {
+      "lang": "en",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "Selecting Jig No. 10 for V1.2 premill calibration",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "Diameter and height requirements for calibration blanks",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03-international.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Checking slot origins inside the hyperDENT fixture after calibration",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "Selecting the type matching the mounted blank in hyperDENT",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "Positioning the abutment design relative to the bottom of the interface",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "Checking the abutment base line at the end of the blank",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "Selecting Jig No. 10 for V1.2 premill calibration",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 2,
+          "alt": "Diameter and height requirements for calibration blanks",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 3,
+          "alt": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 4,
+          "alt": "Checking slot origins inside the hyperDENT fixture after calibration",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 5,
+          "alt": "Selecting the type matching the mounted blank in hyperDENT",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 6,
+          "alt": "Positioning the abutment design relative to the bottom of the interface",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 7,
+          "alt": "Checking the abutment base line at the end of the blank",
+          "closeLabel": "Close enlarged photo"
+        }
+      ],
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": 0,
+      "materialLinks": [
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "View Medentika premill blanks →"
+        },
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "View Straumann premill blanks →"
+        }
+      ],
+      "nonBoldText": [],
+      "slotPhoto": "../../images/mai-sme-premill/step-03-international.webp",
+      "revision": "bold-and-material-links"
+    },
+    {
+      "lang": "ja",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2プリミルキャリブレーションでジグ番号10を選択する画面",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "キャリブレーション用ブランクの直径と高さの条件",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S MEジグの3番と8番のスロットに装着したブランクの高さの比較",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03-international.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "キャリブレーション後にhyperDENTのフィクスチャ内部でスロットの原点を確認",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENTで装着したブランクに対応するタイプを選択",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "インターフェースの底面を基準にアバットメントのデザインを配置",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "ブランクの端でアバットメントのベースライン位置を確認",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2プリミルキャリブレーションでジグ番号10を選択する画面",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 2,
+          "alt": "キャリブレーション用ブランクの直径と高さの条件",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 3,
+          "alt": "S MEジグの3番と8番のスロットに装着したブランクの高さの比較",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 4,
+          "alt": "キャリブレーション後にhyperDENTのフィクスチャ内部でスロットの原点を確認",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENTで装着したブランクに対応するタイプを選択",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 6,
+          "alt": "インターフェースの底面を基準にアバットメントのデザインを配置",
+          "closeLabel": "拡大写真を閉じる"
+        },
+        {
+          "image": 7,
+          "alt": "ブランクの端でアバットメントのベースライン位置を確認",
+          "closeLabel": "拡大写真を閉じる"
+        }
+      ],
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": 0,
+      "materialLinks": [
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "Medentikaプリミル素材を見る →"
+        },
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "Straumannプリミル素材を見る →"
+        }
+      ],
+      "nonBoldText": [],
+      "slotPhoto": "../../images/mai-sme-premill/step-03-international.webp",
+      "revision": "bold-and-material-links"
+    },
+    {
+      "lang": "en",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "Selecting Jig No. 10 for V1.2 premill calibration",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "Diameter and height requirements for calibration blanks",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03-international.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Checking slot origins inside the hyperDENT fixture after calibration",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "Selecting the type matching the mounted blank in hyperDENT",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "Positioning the abutment design relative to the bottom of the interface",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "Checking the abutment base line at the end of the blank",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "Selecting Jig No. 10 for V1.2 premill calibration",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 2,
+          "alt": "Diameter and height requirements for calibration blanks",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 3,
+          "alt": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 4,
+          "alt": "Checking slot origins inside the hyperDENT fixture after calibration",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 5,
+          "alt": "Selecting the type matching the mounted blank in hyperDENT",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 6,
+          "alt": "Positioning the abutment design relative to the bottom of the interface",
+          "closeLabel": "Close enlarged photo"
+        },
+        {
+          "image": 7,
+          "alt": "Checking the abutment base line at the end of the blank",
+          "closeLabel": "Close enlarged photo"
+        }
+      ],
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": 0,
+      "materialLinks": [
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "View Medentika premill blanks →"
+        },
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "View Straumann premill blanks →"
+        }
+      ],
+      "nonBoldText": [],
+      "slotPhoto": "../../images/mai-sme-premill/step-03-international.webp",
+      "revision": "bold-and-material-links"
+    },
+    {
+      "lang": "ko",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 2,
+          "alt": "캘리브레이션용 블랭크의 직경과 높이 조건",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 3,
+          "alt": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 4,
+          "alt": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 5,
+          "alt": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 6,
+          "alt": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+          "closeLabel": "확대 사진 닫기"
+        },
+        {
+          "image": 7,
+          "alt": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+          "closeLabel": "확대 사진 닫기"
+        }
+      ],
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": null,
+      "materialLinks": [
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "Medentika 프리밀 소재 보기 →"
+        },
+        {
+          "href": "http://127.0.0.1:8080/%EC%82%AC%EC%9A%A9%EC%9E%90%20%EB%A7%A4%EB%89%B4%EC%96%BC.html#sec-mai-hd-premill-brands",
+          "target": "_parent",
+          "text": "Straumann 프리밀 소재 보기 →"
+        }
+      ],
+      "nonBoldText": [],
+      "slotPhoto": "../../images/mai-sme-premill/step-03.webp",
+      "revision": "bold-and-material-links"
+    },
+    {
+      "lang": "es",
+      "paragraphs": 15,
+      "photos": [
+        {
+          "alt": "Selección del útil n.º 10 para la calibración premill V1.2",
+          "height": 368.125,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-01.webp",
+          "width": 665.96875
+        },
+        {
+          "alt": "Requisitos de diámetro y altura de los bloques de calibración",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-02.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Comparación de las alturas de los bloques en las posiciones n.º 3 y n.º 8 del útil S ME",
+          "height": 173.515625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-03-international.webp",
+          "width": 616.421875
+        },
+        {
+          "alt": "Comprobación de los orígenes dentro del dispositivo de sujeción de hyperDENT tras la calibración",
+          "height": 319.984375,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-04.webp",
+          "width": 305.6875
+        },
+        {
+          "alt": "Selección en hyperDENT del tipo correspondiente al bloque montado",
+          "height": 357.5625,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-05.webp",
+          "width": 665.984375
+        },
+        {
+          "alt": "Colocación del diseño del pilar respecto a la base de la interfaz",
+          "height": 170.796875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-06.webp",
+          "width": 627.984375
+        },
+        {
+          "alt": "Comprobación de la línea de base del pilar en el extremo del bloque",
+          "height": 419.546875,
+          "loaded": true,
+          "src": "http://127.0.0.1:8080/assets/images/mai-sme-premill/step-07.webp",
+          "width": 627.984375
+        }
+      ],
+      "popups": [
+        {
+          "image": 1,
+          "alt": "Selección del útil n.º 10 para la calibración premill V1.2",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 2,
+          "alt": "Requisitos de diámetro y altura de los bloques de calibración",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 3,
+          "alt": "Comparación de las alturas de los bloques en las posiciones n.º 3 y n.º 8 del útil S ME",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 4,
+          "alt": "Comprobación de los orígenes dentro del dispositivo de sujeción de hyperDENT tras la calibración",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 5,
+          "alt": "Selección en hyperDENT del tipo correspondiente al bloque montado",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 6,
+          "alt": "Colocación del diseño del pilar respecto a la base de la interfaz",
+          "closeLabel": "Cerrar foto ampliada"
+        },
+        {
+          "image": 7,
+          "alt": "Comprobación de la línea de base del pilar en el extremo del bloque",
+          "closeLabel": "Cerrar foto ampliada"
+        }
+      ],
+      "pdfLinks": 0,
+      "frameTitle": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+      "koreanResidual": 0
+    }
+  ]
+}

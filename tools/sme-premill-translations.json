@@ -1,0 +1,185 @@
+{
+  "title": {
+    "ko": "S ME 프리밀 지그 사용 방법 (Medentika 홀더)",
+    "en": "How to use the S ME premill jig (Medentika holder)",
+    "ja": "S MEプリミルジグの使用方法（Medentikaホルダー）",
+    "es": "Cómo utilizar el útil premill S ME (soporte Medentika)"
+  },
+  "rows": [
+    [
+      "It needs to update the M AI Control program and the hyperDENT dbconfig",
+      "M AI 컨트롤 프로그램과 hyperDENT Dbconfig를 업데이트해야 합니다.",
+      "The M AI Control program and hyperDENT Dbconfig must be updated.",
+      "M AIコントロールプログラムとhyperDENT Dbconfigを更新する必要があります。",
+      "Es necesario actualizar el programa de control M AI y hyperDENT Dbconfig."
+    ],
+    [
+      "M AI Control program: 26.11.## version or later - DOWNLOAD",
+      "M AI 컨트롤 프로그램: 26.11.## 버전 이상",
+      "M AI Control program: version 26.11.## or later",
+      "M AIコントロールプログラム：バージョン26.11.##以降",
+      "Programa de control M AI: versión 26.11.## o posterior"
+    ],
+    [
+      "hyperDENT Dbconfig: DB_M.Ai_V10.1.X_2601030_R2 or later - DOWNLOAD",
+      "hyperDENT Dbconfig: DB_M.Ai_V10.1.X_2601030_R2 이상",
+      "hyperDENT Dbconfig: DB_M.Ai_V10.1.X_2601030_R2 or later",
+      "hyperDENT Dbconfig：DB_M.Ai_V10.1.X_2601030_R2以降",
+      "hyperDENT Dbconfig: DB_M.Ai_V10.1.X_2601030_R2 o posterior"
+    ],
+    [
+      "Please pay attention to check the manufacturer. The compatible premill blanks which has a Medentika holder are,",
+      "제조사를 반드시 확인해 주십시오.\nMedentika 홀더와 호환되는 프리밀 블랭크는 다음과 같습니다.",
+      "Please check the manufacturer carefully.\nThe following premill blanks are compatible with the Medentika holder:",
+      "メーカーを必ず確認してください。\nMedentikaホルダーに対応するプリミルブランクは次のとおりです。",
+      "Compruebe cuidadosamente el fabricante.\nLos siguientes bloques premill son compatibles con el soporte Medentika:"
+    ],
+    [
+      "Produced by Medentika (112EA)",
+      "Medentika 제조 (112종)",
+      "Manufactured by Medentika (112 types)",
+      "Medentika製（112種類）",
+      "Fabricados por Medentika (112 tipos)"
+    ],
+    [
+      "Produced by Straumann (12EA)",
+      "Straumann 제조 (12종)",
+      "Manufactured by Straumann (12 types)",
+      "Straumann製（12種類）",
+      "Fabricados por Straumann (12 tipos)"
+    ],
+    [
+      "Update the M AI Control program to “26.11.##” version.",
+      "M AI 컨트롤 프로그램을 “26.11.##” 버전으로 업데이트하십시오.",
+      "Update the M AI Control program to version “26.11.##”.",
+      "M AIコントロールプログラムをバージョン「26.11.##」に更新してください。",
+      "Actualice el programa de control M AI a la versión “26.11.##”."
+    ],
+    [
+      "A. The 2 blanks must have a same height with 11.5 diameter (Not available 16 diameter blanks and under 19mm length)",
+      "A. 두 블랭크는 높이가 같고 직경이 11.5mm여야 합니다.\n(직경 16mm 블랭크와 길이 19mm 미만의 블랭크는 사용할 수 없습니다.)",
+      "A. The two blanks must have the same height and a diameter of 11.5 mm.\n(Blanks with a diameter of 16 mm or a length below 19 mm cannot be used.)",
+      "A. 2本のブランクは高さが同じで、直径が11.5mmである必要があります。\n（直径16mm、または長さ19mm未満のブランクは使用できません。）",
+      "A. Los dos bloques deben tener la misma altura y un diámetro de 11.5 mm.\n(No se pueden utilizar bloques de 16 mm de diámetro ni de menos de 19 mm de longitud.)"
+    ],
+    [
+      "B. They must have a similar height when they were mounted in #3 and #8 slot of the S ME premill jig",
+      "B. S ME 프리밀 지그의 3번과 8번 슬롯에 장착했을 때 두 블랭크의 높이가 비슷해야 합니다.",
+      "B. The two blanks must be at similar heights when mounted in slots #3 and #8 of the S ME premill jig.",
+      "B. S MEプリミルジグの3番と8番のスロットに装着したとき、2本のブランクの高さがほぼ同じになる必要があります。",
+      "B. Los dos bloques deben quedar a una altura similar al montarlos en las posiciones n.º 3 y n.º 8 del útil premill S ME."
+    ],
+    [
+      "After the calibration is done, the origin point of each slots must be shown inside of fixture in hyperDENT.",
+      "캘리브레이션이 끝나면 hyperDENT에서 각 슬롯의 원점이 픽스처 내부에 표시되어야 합니다.",
+      "After calibration, the origin of each slot must appear inside the fixture in hyperDENT.",
+      "キャリブレーション完了後、hyperDENTで各スロットの原点がフィクスチャ内部に表示される必要があります。",
+      "Una vez finalizada la calibración, el origen de cada posición debe aparecer dentro del dispositivo de sujeción en hyperDENT."
+    ],
+    [
+      "Check if you applied the hyperDENT Dbconfig required.",
+      "필요한 hyperDENT Dbconfig가 적용되어 있는지 확인하십시오.",
+      "Check that the required hyperDENT Dbconfig has been applied.",
+      "必要なhyperDENT Dbconfigが適用されていることを確認してください。",
+      "Compruebe que se haya aplicado el hyperDENT Dbconfig requerido."
+    ],
+    [
+      "Check carefully the type of blanks mounted in the premill jig and select corresepond blank type in hyperDENT",
+      "프리밀 지그에 장착된 블랭크 유형을 주의 깊게 확인하고, hyperDENT에서 해당하는 블랭크 유형을 선택하십시오.",
+      "Carefully check the type of blanks mounted in the premill jig and select the corresponding blank type in hyperDENT.",
+      "プリミルジグに装着したブランクの種類をよく確認し、hyperDENTで対応するブランクタイプを選択してください。",
+      "Compruebe cuidadosamente el tipo de bloques montados en el útil premill y seleccione el tipo correspondiente en hyperDENT."
+    ],
+    [
+      "Place the abutment design in the blank, and position it based on the bottom of the interface.",
+      "어버트먼트 디자인을 블랭크 안에 배치하고, 인터페이스의 바닥을 기준으로 위치를 맞추십시오.",
+      "Place the abutment design in the blank and position it using the bottom of the interface as the reference.",
+      "アバットメントのデザインをブランク内に配置し、インターフェースの底面を基準に位置を合わせてください。",
+      "Coloque el diseño del pilar dentro del bloque y ajuste su posición tomando como referencia la base de la interfaz."
+    ],
+    [
+      "Check the position of the abutment base line is located in end of the blank or little bit outside.",
+      "어버트먼트 베이스 라인이 블랭크의 끝부분 또는 약간 바깥쪽에 위치하는지 확인하십시오.",
+      "Check that the abutment base line is at the end of the blank or slightly outside it.",
+      "アバットメントのベースラインがブランクの端、またはその少し外側に位置していることを確認してください。",
+      "Compruebe que la línea de base del pilar se encuentre en el extremo del bloque o ligeramente fuera de él."
+    ],
+    [
+      "Once you checked all above, run the calculating and milling as usual.",
+      "위의 모든 항목을 확인한 뒤, 평소와 같이 계산과 가공을 진행하십시오.",
+      "After checking all of the above, calculate and mill as usual.",
+      "上記のすべての項目を確認した後、通常どおり計算と加工を行ってください。",
+      "Tras comprobar todos los puntos anteriores, realice el cálculo y el fresado como de costumbre."
+    ]
+  ],
+  "jigStep": {
+    "ko": "<em><strong>지그 <span class=\"sme-jig-number\">번호 10</span></strong></em>을 선택하여 V1.2 프리밀 캘리브레이션을 수행하십시오.",
+    "en": "Perform V1.2 premill calibration with <em><strong>Jig <span class=\"sme-jig-number\">No. 10</span></strong></em> selected.",
+    "ja": "<em><strong>ジグ<span class=\"sme-jig-number\">番号10</span></strong></em>を選択して、V1.2プリミルキャリブレーションを実行してください。",
+    "es": "Realice la calibración premill V1.2 seleccionando el <em><strong>útil <span class=\"sme-jig-number\">n.º 10</span></strong></em>."
+  },
+  "imageAlt": [
+    {
+      "ko": "V1.2 프리밀 캘리브레이션의 지그 번호 10 선택 화면",
+      "en": "Selecting Jig No. 10 for V1.2 premill calibration",
+      "ja": "V1.2プリミルキャリブレーションでジグ番号10を選択する画面",
+      "es": "Selección del útil n.º 10 para la calibración premill V1.2"
+    },
+    {
+      "ko": "캘리브레이션용 블랭크의 직경과 높이 조건",
+      "en": "Diameter and height requirements for calibration blanks",
+      "ja": "キャリブレーション用ブランクの直径と高さの条件",
+      "es": "Requisitos de diámetro y altura de los bloques de calibración"
+    },
+    {
+      "ko": "S ME 지그의 3번과 8번 슬롯에 장착한 블랭크 높이 비교",
+      "en": "Comparing blank heights in slots #3 and #8 of the S ME jig",
+      "ja": "S MEジグの3番と8番のスロットに装着したブランクの高さの比較",
+      "es": "Comparación de las alturas de los bloques en las posiciones n.º 3 y n.º 8 del útil S ME"
+    },
+    {
+      "ko": "캘리브레이션 후 hyperDENT 픽스처 내부의 슬롯 원점 확인",
+      "en": "Checking slot origins inside the hyperDENT fixture after calibration",
+      "ja": "キャリブレーション後にhyperDENTのフィクスチャ内部でスロットの原点を確認",
+      "es": "Comprobación de los orígenes dentro del dispositivo de sujeción de hyperDENT tras la calibración"
+    },
+    {
+      "ko": "hyperDENT에서 장착된 블랭크에 맞는 유형 선택",
+      "en": "Selecting the type matching the mounted blank in hyperDENT",
+      "ja": "hyperDENTで装着したブランクに対応するタイプを選択",
+      "es": "Selección en hyperDENT del tipo correspondiente al bloque montado"
+    },
+    {
+      "ko": "인터페이스 바닥을 기준으로 어버트먼트 디자인 배치",
+      "en": "Positioning the abutment design relative to the bottom of the interface",
+      "ja": "インターフェースの底面を基準にアバットメントのデザインを配置",
+      "es": "Colocación del diseño del pilar respecto a la base de la interfaz"
+    },
+    {
+      "ko": "블랭크 끝부분의 어버트먼트 베이스 라인 위치 확인",
+      "en": "Checking the abutment base line at the end of the blank",
+      "ja": "ブランクの端でアバットメントのベースライン位置を確認",
+      "es": "Comprobación de la línea de base del pilar en el extremo del bloque"
+    }
+  ],
+  "materialLinks": [
+    {
+      "ko": "Medentika 프리밀 소재 보기 →",
+      "en": "View Medentika premill blanks →",
+      "ja": "Medentikaプリミル素材を見る →",
+      "es": "Ver bloques premill Medentika →"
+    },
+    {
+      "ko": "Straumann 프리밀 소재 보기 →",
+      "en": "View Straumann premill blanks →",
+      "ja": "Straumannプリミル素材を見る →",
+      "es": "Ver bloques premill Straumann →"
+    }
+  ],
+  "fixtureRequirement": {
+    "ko": "Fixtures_M.Ai_V10_260815 버전 이상",
+    "en": "Fixtures_M.Ai_V10_260815 or later",
+    "ja": "Fixtures_M.Ai_V10_260815以降",
+    "es": "Fixtures_M.Ai_V10_260815 o posterior"
+  }
+}

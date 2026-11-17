@@ -1,0 +1,58 @@
+[
+  {
+    "family": "Abutment",
+    "titles": [
+      "PMMA_Abutment crown bridge",
+      "PMMA_Abutment crown bridge_NCS_(highnees)",
+      "PMMA_Abutment crown_NCS (highnees)",
+      "PMMA_Abutment crown"
+    ]
+  },
+  {
+    "family": "Crown",
+    "titles": [
+      "PMMA_Coping_Crown_SCRP",
+      "PMMA_Crown_SCRP_D0.6",
+      "PMMA_Coping/Crown_(Fast mill)"
+    ]
+  },
+  {
+    "family": "Bridge",
+    "titles": [
+      "PMMA_Coping/Crown bridge_SCRP",
+      "PMMA_Crown bridge_SCRP_D0.6",
+      "PMMA_Coping/Crown_Bridge_(Fast mill)"
+    ]
+  },
+  {
+    "family": "Coping",
+    "titles": [
+      "PMMA_Coping/Crown bridge_SCRP",
+      "PMMA_Coping_Crown_SCRP",
+      "PMMA_Coping/Crown_(Fast mill)",
+      "PMMA_Coping/Crown_Bridge_(Fast mill)"
+    ]
+  },
+  {
+    "family": "Over Structure",
+    "titles": [
+      "PMMA_Over Structure"
+    ]
+  },
+  {
+    "family": "Denture & Frame",
+    "titles": [
+      "PMMA_Full denture",
+      "PMMA_Partial Frame",
+      "PMMA_Flexible denture",
+      "PMMA_denture Teeth",
+      "PMMA_Night Guard"
+    ]
+  },
+  {
+    "family": "Inlay / Onlay",
+    "titles": [
+      "PMMA_Inlay/Onlay -D0.6"
+    ]
+  }
+]

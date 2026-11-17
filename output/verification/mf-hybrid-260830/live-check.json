@@ -1,0 +1,547 @@
+{
+  "url": "http://127.0.0.1:8080/사용자%20매뉴얼.html",
+  "templates": 18,
+  "states": [
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X",
+      "lang": "ja",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X_D0.6",
+      "lang": "ja",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Crown_SCRP_5X_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X",
+      "lang": "ja",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X_D0.6",
+      "lang": "ja",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Crown bridge_SCRP_5X_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6",
+      "lang": "ja",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity",
+      "lang": "ja",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal",
+      "lang": "ja",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]",
+      "lang": "ja",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.08]",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]",
+      "lang": "ja",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.08]",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.08]",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.08]",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.08]",
+      "lang": "ja",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.08]",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.08]",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]",
+      "lang": "ja",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_D0.6 [+0.05]",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]",
+      "lang": "ja",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_1st -Cavity [+0.05]",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.05]",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.05]",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.05]",
+      "lang": "ja",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.05]",
+      "lang": "en",
+      "opened": 1,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.05]",
+      "lang": "ko",
+      "opened": 1,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay/ -Slow",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay/ -Slow",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay/ -Slow",
+      "lang": "ja",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay/ -Slow",
+      "lang": "en",
+      "opened": 2,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Inlay/Onlay/ -Slow",
+      "lang": "ko",
+      "opened": 2,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown_NCS (highnees)",
+      "lang": "ko",
+      "opened": 3,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown_NCS (highnees)",
+      "lang": "en",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown_NCS (highnees)",
+      "lang": "ja",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown_NCS (highnees)",
+      "lang": "en",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown_NCS (highnees)",
+      "lang": "ko",
+      "opened": 3,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge_NCS (highnees)",
+      "lang": "ko",
+      "opened": 3,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge_NCS (highnees)",
+      "lang": "en",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge_NCS (highnees)",
+      "lang": "ja",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge_NCS (highnees)",
+      "lang": "en",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge_NCS (highnees)",
+      "lang": "ko",
+      "opened": 3,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge",
+      "lang": "ko",
+      "opened": 3,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge",
+      "lang": "en",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge",
+      "lang": "ja",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge",
+      "lang": "en",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown bridge",
+      "lang": "ko",
+      "opened": 3,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown",
+      "lang": "ko",
+      "opened": 3,
+      "koreanResidual": null
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown",
+      "lang": "en",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown",
+      "lang": "ja",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown",
+      "lang": "en",
+      "opened": 3,
+      "koreanResidual": 0
+    },
+    {
+      "name": "Hybrid Ceramic_Abutment Crown",
+      "lang": "ko",
+      "opened": 3,
+      "koreanResidual": null
+    }
+  ],
+  "koreanResidual": 0
+}

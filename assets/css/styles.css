@@ -1501,3 +1501,8 @@ html:is([lang="en"],[lang="ja"],[lang="es"]) #sec-mai-settings .mai-wet-to-dry-g
 #sec-mf-hd-blanks .mai-blank-family{border:1px solid #b9d7ed;border-radius:10px;overflow:hidden;margin:10px 0;background:#fff}
 #sec-mf-hd-blanks .mai-blank-family>summary{cursor:pointer;padding:14px 16px;background:#eaf4fb;color:#075680;font-weight:700}
 #sec-mf-hd-blanks .mai-blank-family-content{padding:4px 12px 12px}
+
+/* Keep S ME visually one level below premill V1.2. */
+#nav-mai-cal-premill-v1-parent > .sub-menu > #menu-sec-mai-cal-premill-s-me { padding-left:90px; }
+#sec-mai-cal-premill-s-me,#sec-mai-cal-premill-s-me *{font-weight:700}
+body:has(#sec-mai-cal-premill-s-me.active) #article-image-zoom{box-sizing:border-box}

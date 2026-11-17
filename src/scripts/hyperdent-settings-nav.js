@@ -29,3 +29,17 @@
   submenu.innerHTML = '<div class="nav-item" data-section="sec-mai-hd-premill-brands" id="menu-sec-mai-hd-premill-brands"><span>Medentika/ Straumann Pre-mill Blanks</span></div>';
   parent.append(menu, submenu);
 })();
+
+(function createPremillSMeSubmenu() {
+  const menu = document.getElementById('menu-sec-mai-cal-premill-v1');
+  if (!menu || document.getElementById('nav-mai-cal-premill-v1-parent')) return;
+  const parent = document.createElement('div');
+  parent.className = 'nav-parent';
+  parent.id = 'nav-mai-cal-premill-v1-parent';
+  menu.insertAdjacentElement('beforebegin', parent);
+  menu.insertAdjacentHTML('beforeend', '<span class="nav-arrow"></span>');
+  const submenu = document.createElement('div');
+  submenu.className = 'sub-menu';
+  submenu.innerHTML = '<div class="nav-item" data-section="sec-mai-cal-premill-s-me" id="menu-sec-mai-cal-premill-s-me"><span class="icon-premill" aria-hidden="true"></span><span data-i18n="nav-mai-cal-premill-s-me">AI 프리밀 캘리브레이션 - S ME</span></div>';
+  parent.append(menu, submenu);
+})();

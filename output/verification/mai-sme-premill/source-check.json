@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "languages": [
+    "ko",
+    "en",
+    "ja",
+    "es"
+  ],
+  "images": 7,
+  "materialLinks": 2,
+  "archivedOriginalPdfs": [
+    {
+      "file": "GenCore_Medentika_premill_blanks_hyperDENT_261020.pdf",
+      "status": 200,
+      "bytes": 413727
+    },
+    {
+      "file": "GenCore_Straumann_premill_blanks_hyperDENT_261110.pdf",
+      "status": 200,
+      "bytes": 374733
+    }
+  ],
+  "sourceUnchanged": true
+}

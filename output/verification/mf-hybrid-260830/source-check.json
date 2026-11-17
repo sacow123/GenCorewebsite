@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "templates": 18,
+  "sourceHashes": true,
+  "checked": "variant overrides, memberships, adjustable jobs and defaults, tools, UDA, languages and protected local entry"
+}

@@ -1,0 +1,603 @@
+{
+  "url": "http://127.0.0.1:8080/사용자%20매뉴얼.html",
+  "templates": 17,
+  "states": [
+    {
+      "name": "PMMA_Full denture",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Full denture",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Full denture",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Full denture",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Full denture",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Abutment crown bridge",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Abutment crown bridge",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown bridge",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown bridge",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown bridge",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Abutment crown bridge_NCS_(highnees)",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Abutment crown bridge_NCS_(highnees)",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown bridge_NCS_(highnees)",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown bridge_NCS_(highnees)",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown bridge_NCS_(highnees)",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Abutment crown_NCS (highnees)",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Abutment crown_NCS (highnees)",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown_NCS (highnees)",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown_NCS (highnees)",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown_NCS (highnees)",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Coping/Crown bridge_SCRP",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Coping/Crown bridge_SCRP",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown bridge_SCRP",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown bridge_SCRP",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown bridge_SCRP",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Crown bridge_SCRP_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Crown bridge_SCRP_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Crown bridge_SCRP_D0.6",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Crown bridge_SCRP_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Crown bridge_SCRP_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Coping_Crown_SCRP",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Coping_Crown_SCRP",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping_Crown_SCRP",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping_Crown_SCRP",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping_Crown_SCRP",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Crown_SCRP_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Crown_SCRP_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Crown_SCRP_D0.6",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Crown_SCRP_D0.6",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Crown_SCRP_D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Partial Frame",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Partial Frame",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Partial Frame",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Partial Frame",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Partial Frame",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Coping/Crown_(Fast mill)",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Coping/Crown_(Fast mill)",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown_(Fast mill)",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown_(Fast mill)",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown_(Fast mill)",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Coping/Crown_Bridge_(Fast mill)",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Coping/Crown_Bridge_(Fast mill)",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown_Bridge_(Fast mill)",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown_Bridge_(Fast mill)",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Coping/Crown_Bridge_(Fast mill)",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Abutment crown",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Abutment crown",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Abutment crown",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Flexible denture",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Flexible denture",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Flexible denture",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Flexible denture",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Flexible denture",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_denture Teeth",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_denture Teeth",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_denture Teeth",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_denture Teeth",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_denture Teeth",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Over Structure",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Over Structure",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Over Structure",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Over Structure",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Over Structure",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Inlay/Onlay -D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Inlay/Onlay -D0.6",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Inlay/Onlay -D0.6",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Inlay/Onlay -D0.6",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Inlay/Onlay -D0.6",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Night Guard",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    },
+    {
+      "name": "PMMA_Night Guard",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Night Guard",
+      "lang": "ja",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Night Guard",
+      "lang": "en",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": 0
+    },
+    {
+      "name": "PMMA_Night Guard",
+      "lang": "ko",
+      "opened": 2,
+      "woodrruff": false,
+      "koreanResidual": null
+    }
+  ],
+  "koreanResidual": 0,
+  "woodrruff": false
+}

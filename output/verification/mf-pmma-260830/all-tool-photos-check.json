@@ -1,0 +1,861 @@
+{
+  "environment": "http://127.0.0.1:8080",
+  "templates": 17,
+  "cards": 96,
+  "missing": [],
+  "results": [
+    {
+      "name": "PMMA_Full denture",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5FL_L15",
+          "src": "assets/images/sec-mf-tools/t42-m15fl.webp",
+          "tool": "T42",
+          "width": 53.3125
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Abutment crown bridge",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5FL_L15",
+          "src": "assets/images/sec-mf-tools/t42-m15fl.webp",
+          "tool": "T42",
+          "width": 53.3125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5R_L07",
+          "src": "assets/images/sec-mf-tools/t44-m15r.webp",
+          "tool": "T44",
+          "width": 53.75
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "T1.6_L08",
+          "src": "assets/images/sec-mf-tools/t45-m16t.webp",
+          "tool": "T45",
+          "width": 43.34375
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Abutment crown bridge_NCS_(highnees)",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5FL_L15",
+          "src": "assets/images/sec-mf-tools/t42-m15fl.webp",
+          "tool": "T42",
+          "width": 53.3125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5R_L07",
+          "src": "assets/images/sec-mf-tools/t44-m15r.webp",
+          "tool": "T44",
+          "width": 53.75
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "T1.6_L08",
+          "src": "assets/images/sec-mf-tools/t45-m16t.webp",
+          "tool": "T45",
+          "width": 43.34375
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Abutment crown_NCS (highnees)",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5FL_L15",
+          "src": "assets/images/sec-mf-tools/t42-m15fl.webp",
+          "tool": "T42",
+          "width": 53.3125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5R_L07",
+          "src": "assets/images/sec-mf-tools/t44-m15r.webp",
+          "tool": "T44",
+          "width": 53.75
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "T1.6_L08",
+          "src": "assets/images/sec-mf-tools/t45-m16t.webp",
+          "tool": "T45",
+          "width": 43.34375
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Coping/Crown bridge_SCRP",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Crown bridge_SCRP_D0.6",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Coping_Crown_SCRP",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Crown_SCRP_D0.6",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Partial Frame",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Coping/Crown_(Fast mill)",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Coping/Crown_Bridge_(Fast mill)",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Abutment crown",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z2.0BX20",
+          "src": "assets/images/sec-mf-tools/t31-z20b.webp",
+          "tool": "T31",
+          "width": 61.6875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5FL_L15",
+          "src": "assets/images/sec-mf-tools/t42-m15fl.webp",
+          "tool": "T42",
+          "width": 53.3125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0F_L06",
+          "src": "assets/images/sec-mf-tools/t43-m10f.webp",
+          "tool": "T43",
+          "width": 53.3125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5R_L07",
+          "src": "assets/images/sec-mf-tools/t44-m15r.webp",
+          "tool": "T44",
+          "width": 53.75
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "T1.6_L08",
+          "src": "assets/images/sec-mf-tools/t45-m16t.webp",
+          "tool": "T45",
+          "width": 43.34375
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Flexible denture",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        }
+      ]
+    },
+    {
+      "name": "PMMA_denture Teeth",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Over Structure",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5FL_L15",
+          "src": "assets/images/sec-mf-tools/t42-m15fl.webp",
+          "tool": "T42",
+          "width": 53.3125
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Inlay/Onlay -D0.6",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        }
+      ]
+    },
+    {
+      "name": "PMMA_Night Guard",
+      "cards": [
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M2.0B_L15",
+          "src": "assets/images/sec-mf-tools/t38-m20b.webp",
+          "tool": "T38",
+          "width": 49.78125
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.0B_L15",
+          "src": "assets/images/sec-mf-tools/t39-m10b.webp",
+          "tool": "T39",
+          "width": 51.546875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.6BX05",
+          "src": "assets/images/sec-mf-tools/t33-z06b.webp",
+          "tool": "T33",
+          "width": 50.671875
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "Z0.3BX03",
+          "src": "assets/images/sec-mf-tools/t34-z03b.webp",
+          "tool": "T34",
+          "width": 48.90625
+        },
+        {
+          "height": 260,
+          "loaded": true,
+          "name": "M1.5FL_L15",
+          "src": "assets/images/sec-mf-tools/t42-m15fl.webp",
+          "tool": "T42",
+          "width": 53.3125
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "material": "PEEK",
+    "before": 9,
+    "after": 9,
+    "added": [],
+    "renamed": [
+      {
+        "before": "PEEK_Abutment Crown bridge",
+        "after": "PEEK_Abutment Crown Bridge"
+      },
+      {
+        "before": "PEEK_Flexible denture",
+        "after": "PEEK_Flexble denture"
+      }
+    ]
+  },
+  {
+    "material": "Wax",
+    "before": 8,
+    "after": 8,
+    "added": [],
+    "renamed": [
+      {
+        "before": "Wax_denture teeth",
+        "after": "Wax_denture Teeth"
+      }
+    ]
+  },
+  {
+    "material": "Zirconia",
+    "before": 15,
+    "after": 17,
+    "added": [
+      "Zirconia_Abutment Crown_NCS (Urdent)",
+      "Zirconia_Abutment Crown Bridge_NCS (Urdent)"
+    ],
+    "renamed": []
+  }
+]

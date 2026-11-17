@@ -1,0 +1,26 @@
+{
+  "source": "MillFix 260830_R1 original",
+  "beforeCount": 16,
+  "afterCount": 18,
+  "added": [
+    "Hybrid Ceramic_Abutment Crown bridge",
+    "Hybrid Ceramic_Abutment Crown"
+  ],
+  "renamed": [
+    {
+      "before": "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal [+0.05]",
+      "after": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.05]"
+    },
+    {
+      "before": "Hybrid Ceramic_Inlay/Onlay_2nd -Occlusal [+0.08]",
+      "after": "Hybrid Ceramic_Inlay/Onlay_2st -Occlusal [+0.08]"
+    }
+  ],
+  "checkedFields": [
+    "material and part memberships",
+    "resolved base strategy and variant overrides",
+    "adjustable process defaults and restrictions",
+    "UDA categories",
+    "linked tool number and specification"
+  ]
+}

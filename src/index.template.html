@@ -451,6 +451,7 @@
       <!-- INCLUDE: src/components/sections/sec-mai-ui2-folder-sharing.html -->
       <!-- INCLUDE: src/components/sections/sec-mai-ui3-folder-sharing.html -->
       <!-- INCLUDE: src/components/sections/sec-mai-calibration.html -->
+      <!-- INCLUDE: src/components/sections/sec-mai-cal-premill-s-me.html -->
       <!-- M AI° 컨트롤 프로그램 -->
       <!-- INCLUDE: src/components/sections/sec-mai-main-page.html -->
       <!-- INCLUDE: src/components/sections/sec-mai-tool-list.html -->
@@ -566,6 +567,12 @@
   <script src="src/data/mai-peek-templates.js"></script>
   <script src="src/data/mai-pmma-templates.js"></script>
   <script src="src/data/mai-batch-templates.js"></script>
+  <script src="src/data/mf-hybrid-260830-templates.js"></script>
+  <script src="src/data/mf-pmma-260830-templates.js"></script>
+  <script src="src/data/mf-peek-260830-templates.js"></script>
+  <script src="src/data/mf-wax-260830-templates.js"></script>
+  <script src="src/data/mf-zirconia-260830-templates.js"></script>
+  <script src="src/scripts/mf-hybrid-dbconfig.js"></script>
   <script src="src/scripts/template-article-navigation.js"></script>
   <script src="src/data/mai-original-260830-templates.js"></script>
   <script src="src/data/mai-261030-updates.js"></script>
@@ -602,6 +609,14 @@
       });
 
       function openTemplateModalByTitle(title, pushHistory = false) {
+        const canonical = window.MfHybridDbconfig?.render(title, typeof currentLang === 'undefined' ? 'ko' : currentLang);
+        if (canonical) {
+          modalTitle.textContent = canonical.title;
+          modalBody.innerHTML = canonical.html;
+          window.TemplateArticleNavigation.show('mf', canonical.title, pushHistory);
+          return;
+        }
+
         modalTitle.textContent = title;
         
         let db = null;
