@@ -14,5 +14,7 @@ html,body{background:transparent;min-width:0}
 #sme-content figure.image{margin:18px 0;max-width:100%}
 #sme-content figure.image img{display:block;max-width:100%;height:auto;cursor:zoom-in;border-radius:8px}
 #sme-content .source{overflow-wrap:anywhere;white-space:normal;font-size:14px}
+#sme-content .sme-download{display:inline-block;margin-inline-start:6px;padding:2px 10px;border:1px solid #7955a9;border-radius:6px;background:#f1edf8;color:#56358e;text-decoration:none}
+#sme-content .sme-download:is(:hover,:focus-visible){text-decoration:underline}
 #sme-content a:focus-visible{outline:3px solid #8b5cf6;outline-offset:4px}
 @media(max-width:600px){#sme-content{padding:4px 0 18px}#sme-content .callout{padding:12px;gap:8px}#sme-content .indented{padding-left:0}#sme-content ol{padding-inline-start:24px}}

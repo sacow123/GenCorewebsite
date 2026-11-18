@@ -17,7 +17,9 @@ const text=html=>html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
     if(lang!=='ko')assert(!/[가-힣ㄱ-ㅎㅏ-ㅣ]/.test(visible),'Korean residual '+lang);
     for(const row of translations.rows)assert(visible.includes(text(row[index+1])),'Missing translated source paragraph: '+lang+' '+row[0]);
     for(const alt of translations.imageAlt)assert(html.includes('alt="'+alt[lang]+'"'),'Missing translated image alt '+lang);
-    for(const reference of html.matchAll(/(?:src|href)="([^"]+)"/g)){
+    const driveLinks=/<a class="sme-download" href="https:\/\/drive\.google\.com\/file\/d\/[\w-]+\/view\?usp=sharing"[^>]*>[^<]*<\/a>/g;
+    assert.equal([...html.matchAll(driveLinks)].length,3);
+    for(const reference of html.replace(driveLinks,'').matchAll(/(?:src|href)="([^"]+)"/g)){
       assert(!/^https?:|^file:/i.test(reference[1]),'Unexpected remote or desktop asset');
       assert(fs.existsSync(path.resolve(base,decodeURIComponent(reference[1].split('#')[0]))),'Missing local asset '+reference[1]);
     }

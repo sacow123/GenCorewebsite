@@ -1,6 +1,7 @@
 // Import the supplied S ME export without changing the original files.
 const fs=require('fs'),path=require('path'),sharp=require('sharp'),crypto=require('crypto');
 const translations=require('./sme-premill-translations.json');
+const addDownloadLinks=require('./sme-premill-download-links.cjs');
 const directory=process.argv[2]||'C:/Users/USER/Desktop/ea54433e-351d-4a87-9010-75418932bbf9_ExportBlock-3903f74a-434c-4edb-bfcf-4e2bba139b4f';
 const sourceName=fs.readdirSync(directory).find(n=>n.startsWith('How to use the S ME premill jig')&&n.endsWith('.html'));
 if(!sourceName)throw Error('Missing S ME source HTML');
@@ -57,7 +58,7 @@ const norm=s=>s.trim().replace(/\s+/g,' ');
     if(!blankComparison.test(localized))throw Error('Missing S ME blank comparison image');
     localized=localized.replace(blankComparison,(_,image)=>image+'<p>'+esc(translations.calibrationBlanksNote[lang])+'</p>');
     if(/@@SME_/.test(localized))throw Error('Unresolved content marker');
-    contents[lang]='<h3>'+esc(translations.title[lang])+'</h3>'+localized;
+    contents[lang]='<h3>'+esc(translations.title[lang])+'</h3>'+addDownloadLinks(localized,lang);
   }
   fs.writeFileSync(docDir+'/content.js','// Generated with tools/import-sme-premill.cjs.\nwindow.SmePremillContent = '+JSON.stringify({title:translations.title,contents},null,2)+';\n');
   let head=original.match(/<head>[\s\S]*?<\/head>/)[0].replace(/<title>[\s\S]*?<\/title>/,'<title>'+esc(translations.title.ko)+'</title>').replace(/<style>@import[^<]*<\/style>/g,'');
