@@ -2,8 +2,9 @@
   "name": "gencore-manual",
   "version": "1.0.0",
   "scripts": {
-    "build": "node tools/build-feature-search.cjs",
-    "vercel-build": "node tools/build-feature-search.cjs",
+    "build": "npm run check:document-paths && npm run build:search",
+    "vercel-build": "npm run build",
+    "check:document-paths": "node tools/check-clean-document-paths.cjs",
     "build:search": "node tools/build-feature-search.cjs",
     "serve": "node tools/local-server.js",
     "check:i18n": "node tools/check-i18n.js",

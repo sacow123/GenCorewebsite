@@ -58,6 +58,7 @@ const norm=s=>s.trim().replace(/\s+/g,' ');
   }
   fs.writeFileSync(docDir+'/content.js','// Generated with tools/import-sme-premill.cjs.\nwindow.SmePremillContent = '+JSON.stringify({title:translations.title,contents},null,2)+';\n');
   let head=original.match(/<head>[\s\S]*?<\/head>/)[0].replace(/<title>[\s\S]*?<\/title>/,'<title>'+esc(translations.title.ko)+'</title>').replace(/<style>@import[^<]*<\/style>/g,'');
+  head=head.replace('<head>','<head>'+"<script data-sme-document-base>if(!location.pathname.endsWith('/')&&!/\\.html$/i.test(location.pathname)){const base=document.createElement('base');base.href=location.pathname+'/';document.head.appendChild(base);}</script>");
   head=head.replace('</head>',`<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="document.css"><script src="content.js" defer></script><script src="document.js" defer></script></head>`);
   fs.writeFileSync(docDir+'/index.html','<!DOCTYPE html><html lang="ko">'+head+'<body><article id="sme-content" class="page sans mai-ui2-import">'+contents.ko+'</article></body></html>');
   fs.writeFileSync(docDir+'/source-manifest.json',JSON.stringify(manifest,null,2));

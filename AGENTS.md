@@ -32,6 +32,8 @@
 
 ## Direct Visual Verification
 
+- For nested `assets/**/index.html` documents, verify that images, scripts, and styles resolve to the same files at the explicit HTML URL and the Vercel folder URL without a trailing slash. Keep `npm run check:document-paths` in the deployment build and check dynamic content in the browser before release.
+
 - When the user provides a `file:///C:/Users/USER/Documents/GitHub/GenCorewebsite/...` URL and asks to directly check, inspect, or verify it, automatically convert the project-relative path to `http://127.0.0.1:8766/...` and launch the read-only local preview server with `node tools/preview-server.js 8766` if it is not already running.
 - Do not ask the user to convert URLs, start a server, or provide a localhost URL. Open the converted URL yourself and verify the actual rendered screen.
 - When the user asks for proof of direct verification, provide a screenshot of the inspected target section and state that the screenshot was captured from the local preview of the supplied file URL.
