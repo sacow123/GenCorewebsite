@@ -48,7 +48,7 @@ const norm=s=>s.trim().replace(/\s+/g,' ');
       return '>'+esc(value)+'<';
     });
     localized=localized.replace('@@SME_JIG_STEP@@',translations.jigStep[lang]);
-    const versionRow=/(<ul[^>]*>\s*<li[^>]*>[^<]*DB_M\.Ai_V10\.1\.X_2601030_R2[^<]*<\/li>\s*<\/ul>)/;
+    const versionRow=/(<ul[^>]*>\s*<li[^>]*>[^<]*DB_M\.Ai_V10\.1\.X_2601030_R3[^<]*<\/li>\s*<\/ul>)/;
     if(!versionRow.test(localized))throw Error('Missing Dbconfig requirement row');
     localized=localized.replace(versionRow, '$1<ul class="bulleted-list"><li style="list-style-type:disc">'+esc(translations.fixtureRequirement[lang])+'</li></ul>');
     for(const i of translations.materialLinks.keys())localized=localized.replace('@@SME_MATERIAL_'+i+'@@',esc(translations.materialLinks[i][lang]));

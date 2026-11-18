@@ -4,7 +4,7 @@ const urls = [
   'https://drive.google.com/file/d/1l-rMxBckrTe0K9JQaUqYywi32HSFrXWx/view?usp=sharing'
 ];
 const labels = {ko:'다운로드', en:'Download', ja:'ダウンロード', es:'Descargar'};
-const requirements = [/26\.11\.17/, /DB_M\.Ai_V10\.1\.X_2601030_R2/, /Fixtures_M\.Ai_V10_260815/];
+const requirements = [/26\.11\.17/, /DB_M\.Ai_V10\.1\.X_2601030_R3/, /Fixtures_M\.Ai_V10_260815/];
 
 module.exports = function addDownloadLinks(html, lang) {
   return requirements.reduce((result, requirement, index) => {
