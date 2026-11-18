@@ -1,6 +1,14 @@
 /* Search the text tables without changing other material or interface pages. */
 (() => {
   const selector = '#sec-mai-hd-premill-brands';
+  document.querySelector(`${selector} .pm-calibration-note a`)?.addEventListener('click', event => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const sectionId = event.currentTarget.hash.slice(1);
+    const item = document.getElementById('menu-' + sectionId);
+    if (!item) return;
+    event.preventDefault();
+    item.click();
+  });
   const normalize = value => value.normalize('NFKC').toLocaleLowerCase().replace(/\s+/g, ' ').trim();
 
   function filter() {

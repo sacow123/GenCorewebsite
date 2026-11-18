@@ -35,6 +35,10 @@ const html = '<section id="sec-mai-hd-premill-brands" class="content-section">\n
   '<link rel="stylesheet" href="assets/css/mai-premill-blanks.css">\n' +
   '<h2>Medentika/ Straumann Pre-mill Blanks</h2><p class="subtitle">M AI hyperDENT</p>\n' +
   '<div class="pm-toolbar"><label for="premill-blank-search">' + label('search','제조사 · 시리즈 · 플랫폼 · 블랭크명 검색') + '</label><div class="pm-search-row"><input id="premill-blank-search" type="search" autocomplete="off" data-i18n-placeholder="premill-placeholder" placeholder="예: Anthogyr, AB series, NC, D16"><button type="button" data-pm-reset>' + label('reset','초기화') + '</button></div><p class="pm-results" role="status" aria-live="polite"><span data-pm-brands>2</span> ' + label('brands','제조사') + ' · <span data-pm-total>' + (count + data.straumann.length) + '</span> ' + label('rows','항목') + '</p></div>\n' +
+  '<p class="pm-calibration-note"><span aria-hidden="true">※</span> ' +
+  label('calibration-before','Medentika/ Straumann 프리밀 사용을 위해서는') +
+  ' <a href="#sec-mai-cal-premill-s-me" data-i18n="premill-calibration-link">S ME 캘리브레이션</a>' +
+  label('calibration-after','을 수행하셔야 합니다.') + '</p>\n' +
   brand('Medentika', medentika, count) + '\n' + brand('Straumann', '<div data-pm-group>' + straumann + '</div>', data.straumann.length) + '\n' +
   '<p class="pm-no-results" hidden data-i18n="premill-no-results">검색 결과가 없습니다. 다른 검색어를 입력하세요.</p>\n' +
   '<script src="src/scripts/mai-premill-blanks.js"></script>\n</section>\n';

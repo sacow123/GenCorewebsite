@@ -6815,3 +6815,8 @@ Object.assign(TRANSLATIONS.ko, {"nav-mai-cal-premill-s-me":"AI 프리밀 캘리�
 Object.assign(TRANSLATIONS.en, {"nav-mai-cal-premill-s-me":"AI Premill Calibration - S ME"});
 Object.assign(TRANSLATIONS.ja, {"nav-mai-cal-premill-s-me":"AIプリミルキャリブレーション - S ME"});
 Object.assign(TRANSLATIONS.es, {"nav-mai-cal-premill-s-me":"Calibración premill AI - S ME"});
+
+Object.assign(TRANSLATIONS.ko, {"premill-calibration-before":"Medentika/ Straumann 프리밀 사용을 위해서는","premill-calibration-link":"S ME 캘리브레이션","premill-calibration-after":"을 수행하셔야 합니다."});
+Object.assign(TRANSLATIONS.en, {"premill-calibration-before":"To use Medentika or Straumann premill blanks, you must perform","premill-calibration-link":"S ME calibration","premill-calibration-after":"."});
+Object.assign(TRANSLATIONS.ja, {"premill-calibration-before":"Medentika／Straumannのプリミルブランクを使用するには、","premill-calibration-link":"S MEキャリブレーション","premill-calibration-after":"を実施してください。"});
+Object.assign(TRANSLATIONS.es, {"premill-calibration-before":"Para usar bloques premill de Medentika o Straumann, debe realizar la","premill-calibration-link":"calibración S ME","premill-calibration-after":"."});

@@ -53,6 +53,9 @@ const norm=s=>s.trim().replace(/\s+/g,' ');
     for(const i of translations.materialLinks.keys())localized=localized.replace('@@SME_MATERIAL_'+i+'@@',esc(translations.materialLinks[i][lang]));
     if(lang!=='ko')localized=localized.replaceAll('step-03.webp','step-03-international.webp');
     for(const i of images.keys())localized=localized.replace('@@SME_ALT_'+i+'@@',esc(translations.imageAlt[i][lang]));
+    const blankComparison=/(<img\b[^>]*data-sme-image="2"[^>]*><\/a><\/figure><\/div><\/p>)/;
+    if(!blankComparison.test(localized))throw Error('Missing S ME blank comparison image');
+    localized=localized.replace(blankComparison,(_,image)=>image+'<p>'+esc(translations.calibrationBlanksNote[lang])+'</p>');
     if(/@@SME_/.test(localized))throw Error('Unresolved content marker');
     contents[lang]='<h3>'+esc(translations.title[lang])+'</h3>'+localized;
   }

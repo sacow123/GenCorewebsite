@@ -21,7 +21,7 @@ const text=html=>html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
       assert(!/^https?:|^file:/i.test(reference[1]),'Unexpected remote or desktop asset');
       assert(fs.existsSync(path.resolve(base,decodeURIComponent(reference[1].split('#')[0]))),'Missing local asset '+reference[1]);
     }
-    for(const phrase of ['26.11.##','DB_M.Ai_V10.1.X_2601030_R2','112','12','11.5','16','19'])assert(visible.includes(phrase),'Source requirement lost '+lang+' '+phrase);
+    for(const phrase of ['26.11.17','DB_M.Ai_V10.1.X_2601030_R2','112','12','11.5','16','19'])assert(visible.includes(phrase),'Source requirement lost '+lang+' '+phrase);
   }
   for(const file of [base+'/document.js','src/scripts/mai-sme-document.js','tools/import-sme-premill.cjs'])new vm.Script(fs.readFileSync(file,'utf8'));
   for(const file of ['사용자 매뉴얼.html','src/components/sections/sec-mai-cal-premill-s-me.html']){const html=fs.readFileSync(file,'utf8');assert(html.includes('data-document-id="mai-sme-premill"'));assert(html.includes('data-language-sync'));assert(html.includes('src/scripts/mai-sme-document.js'));}

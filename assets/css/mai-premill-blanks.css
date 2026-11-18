@@ -7,6 +7,9 @@
 #sec-mai-hd-premill-brands [data-pm-reset] { padding:10px 18px;border:1px solid #dedbe7;border-radius:8px;background:#fff;color:#7544cf;font:inherit;font-size:13px;cursor:pointer; }
 #sec-mai-hd-premill-brands :is(input,button,summary,.pm-table-scroll):focus-visible { outline:2px solid #7544cf;outline-offset:2px; }
 #sec-mai-hd-premill-brands .pm-results { margin:12px 0 0;color:#747586;font-size:12px; }
+#sec-mai-hd-premill-brands .pm-calibration-note { margin:0 0 16px;line-height:1.9;font-weight:700; }
+#sec-mai-hd-premill-brands .pm-calibration-note a { display:inline-block;padding:2px 10px;border:1px solid #7955a9;border-radius:6px;background:#f1edf8;color:#56358e;font-weight:inherit;text-decoration:none; }
+#sec-mai-hd-premill-brands .pm-calibration-note a:is(:hover,:focus-visible) { text-decoration:underline; }
 #sec-mai-hd-premill-brands .mai-premill-brand { padding:0;border:1px solid #e5e1ec;border-radius:10px;overflow:hidden;background:#fff;margin:0 0 14px; }
 #sec-mai-hd-premill-brands .mai-premill-brand > summary { padding:18px 22px;cursor:pointer;color:#075985;font-size:18px;font-weight:700; }
 #sec-mai-hd-premill-brands .pm-count { float:right;background:#f1edf8;color:#7955a9;padding:3px 9px;border-radius:5px;font-size:12px; }
